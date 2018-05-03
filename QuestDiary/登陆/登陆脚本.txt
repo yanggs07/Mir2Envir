@@ -1,0 +1,785 @@
+[@登陆设置]
+{
+
+#If
+#act
+set [101] 1
+
+#IF
+CHECKVAR HUMAN 坐骑等级3 > 0
+CHECKVAR HUMAN 坐骑等级3 < 4
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+CHANGEHUMABILITY 17 + <$S(坐骑技能3)> 864000
+
+#IF
+CHECKVAR HUMAN 坐骑等级4 > 0
+CHECKVAR HUMAN 坐骑等级4 < 4
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+CHANGEHUMABILITY 18 + <$S(坐骑技能4)> 864000
+
+#IF
+CHECKVAR HUMAN 坐骑等级5 > 0
+CHECKVAR HUMAN 坐骑等级5 < 4
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+CHANGEHUMABILITY 22 + <$S(坐骑技能5)> 864000
+
+#IF
+CHECK [487] 1
+#ACT
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN1.visible True
+SetClientUIProp Usr_zuoqi_JNAN2.visible True
+SetClientUIProp Usr_zuoqi_JNAN3.visible True
+SetClientUIProp Usr_zuoqi_JNAN4.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible True
+SetClientUIProp Usr_zuoqi_JNAN6.visible True
+SetClientUIProp Usr_zuoqi_JN.visible True
+SetClientUIProp Usr_zuoqi_JN_S1.visible True
+SetClientUIProp Usr_zuoqi_JN_S2.visible True
+SetClientUIProp Usr_zuoqi_JN_S3.visible True
+SetClientUIProp Usr_zuoqi_JN_S4.visible True
+SetClientUIProp Usr_zuoqi_JN_S5.visible True
+SetClientUIProp Usr_zuoqi_JN_S6.visible True
+SetClientUIProp Usr_zuoqi_JN_S7.visible True
+SetClientUIProp Usr_zuoqi_TSCT.visible False
+
+#IF
+CHECK [487] 0
+#ACT
+SetClientUIProp Usr_zuoqi_TSCT.visible False
+SetClientUIProp Usr_zuoqi_T.visible False
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP -1
+SetClientUIProp Usr_zuoqi_MA1.visible False
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP -1
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.DOWN -1
+SetClientUIProp Usr_zuoqi_JNCT.visible False
+SetClientUIProp Usr_zuoqi_JN.visible False
+SetClientUIProp Usr_zuoqi_JN_S3.visible False
+SetClientUIProp Usr_zuoqi_JN_S4.visible False
+SetClientUIProp Usr_zuoqi_JN_S5.visible False
+SetClientUIProp Usr_zuoqi_JN_S6.visible False
+SetClientUIProp Usr_zuoqi_JN_S7.visible False
+
+#IF
+CHECKVAR HUMAN 坐骑等级 = 1
+#ACT
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 31
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 30
+
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible False
+SetClientUIProp Usr_zuoqi_JNAN6.visible False
+
+#IF
+CHECKVAR HUMAN 坐骑等级 = 2
+#ACT
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 33
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 32
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible True
+SetClientUIProp Usr_zuoqi_JNAN6.visible False
+
+#IF
+CHECKVAR HUMAN 坐骑等级 = 3
+#ACT
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 35
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 34
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible True
+SetClientUIProp Usr_zuoqi_JNAN6.visible True
+
+#IF
+CHECK [101] 1
+#ACT
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN1.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN1.ImageIndex.UP 100
+SetClientUIProp Usr_gongti_longxiao_JN2.ImageIndex.UP 102
+SetClientUIProp Usr_gongti_longxiao_JN3.ImageIndex.UP 104
+SetClientUIProp Usr_gongti_longxiao_JN4.ImageIndex.UP 106
+SetClientUIProp Usr_gongti_longxiao_JN5.ImageIndex.UP 108
+
+#IF
+CHECK [101] 0
+#ACT
+SetClientUIProp Usr_gongti_S3.TEXT 无
+SetClientUIProp Usr_gongti_S5.TEXT 0)
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_JN6.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN5.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN4.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN3.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN2.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN1.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN1.ImageIndex.UP 90
+SetClientUIProp Usr_gongti_longxiao_JN2.ImageIndex.UP 91
+SetClientUIProp Usr_gongti_longxiao_JN3.ImageIndex.UP 92
+SetClientUIProp Usr_gongti_longxiao_JN4.ImageIndex.UP 93
+SetClientUIProp Usr_gongti_longxiao_JN5.ImageIndex.UP 94
+
+#IF
+CHECK [101] 1
+equal <$JOB> 0
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 力量+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　力量+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：力量+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 1
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 灵气+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　灵气+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：灵气+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 2
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 玄术+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　玄术+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：玄术+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 3
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 影杀+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　影杀+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：影杀+
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1999
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 < 2000
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 5
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 1800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 4
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 3
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 2
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 100
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 1
+#ACT
+MOV <$N(总属性显示)> <$HUMAN(龙啸等级)>
+MUL <$N(总属性数量)> <$HUMAN(龙啸等级)> 41
+CHANGEHUMABILITY 20 + <$N(总属性数量)> 8640000
+CHANGEHUMABILITY 23 + <$N(总属性数量)> 8640000
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 79
+CHECKVAR HUMAN 五元等级2 > 79
+CHECKVAR HUMAN 五元等级3 > 79
+CHECKVAR HUMAN 五元等级4 > 79
+CHECKVAR HUMAN 五元等级5 > 79
+#ACT
+CHANGEHUMABILITY 17 + 50000 86400000
+CHANGEHUMABILITY 20 + 50000 86400000
+CHANGEHUMABILITY 23 + 50000 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 63
+CHECKVAR HUMAN 五元等级2 > 63
+CHECKVAR HUMAN 五元等级3 > 63
+CHECKVAR HUMAN 五元等级4 > 63
+CHECKVAR HUMAN 五元等级5 > 63
+CHECKVAR HUMAN 五元等级1 < 80
+CHECKVAR HUMAN 五元等级2 < 80
+CHECKVAR HUMAN 五元等级3 < 80
+CHECKVAR HUMAN 五元等级4 < 80
+CHECKVAR HUMAN 五元等级5 < 80
+#ACT
+CHANGEHUMABILITY 17 + 40000 86400000
+CHANGEHUMABILITY 20 + 40000 86400000
+CHANGEHUMABILITY 23 + 40000 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 47
+CHECKVAR HUMAN 五元等级2 > 47
+CHECKVAR HUMAN 五元等级3 > 47
+CHECKVAR HUMAN 五元等级4 > 47
+CHECKVAR HUMAN 五元等级5 > 47
+CHECKVAR HUMAN 五元等级1 < 64
+CHECKVAR HUMAN 五元等级2 < 64
+CHECKVAR HUMAN 五元等级3 < 64
+CHECKVAR HUMAN 五元等级4 < 64
+CHECKVAR HUMAN 五元等级5 < 64
+#ACT
+CHANGEHUMABILITY 17 + 30000 86400000
+CHANGEHUMABILITY 20 + 30000 86400000
+CHANGEHUMABILITY 23 + 30000 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 31
+CHECKVAR HUMAN 五元等级2 > 31
+CHECKVAR HUMAN 五元等级3 > 31
+CHECKVAR HUMAN 五元等级4 > 31
+CHECKVAR HUMAN 五元等级5 > 31
+CHECKVAR HUMAN 五元等级1 < 48
+CHECKVAR HUMAN 五元等级2 < 48
+CHECKVAR HUMAN 五元等级3 < 48
+CHECKVAR HUMAN 五元等级4 < 48
+CHECKVAR HUMAN 五元等级5 < 48
+#ACT
+CHANGEHUMABILITY 17 + 20000 86400000
+CHANGEHUMABILITY 20 + 20000 86400000
+CHANGEHUMABILITY 23 + 20000 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 15
+CHECKVAR HUMAN 五元等级2 > 15
+CHECKVAR HUMAN 五元等级3 > 15
+CHECKVAR HUMAN 五元等级4 > 15
+CHECKVAR HUMAN 五元等级5 > 15
+CHECKVAR HUMAN 五元等级1 < 32
+CHECKVAR HUMAN 五元等级2 < 32
+CHECKVAR HUMAN 五元等级3 < 32
+CHECKVAR HUMAN 五元等级4 < 32
+CHECKVAR HUMAN 五元等级5 < 32
+#ACT
+CHANGEHUMABILITY 17 + 20000 86400000
+CHANGEHUMABILITY 20 + 20000 86400000
+CHANGEHUMABILITY 23 + 20000 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 0
+CHECKVAR HUMAN 五元等级1 < 81
+#ACT
+MUL <$N(五元属性1)> <$HUMAN(五元等级1)> 1250
+MUL <$N(五元属性2)> <$HUMAN(五元等级1)> 375
+CHANGEHUMABILITY 22 + <$N(五元属性1)> 86400000
+CHANGEHUMABILITY 21 + <$N(五元属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级2 > 0
+CHECKVAR HUMAN 五元等级2 < 81
+#ACT
+MUL <$N(五元属性1)> <$HUMAN(五元等级2)> 1875
+MUL <$N(五元属性2)> <$HUMAN(五元等级2)> 375
+CHANGEHUMABILITY 17 + <$N(五元属性1)> 86400000
+CHANGEHUMABILITY 21 + <$N(五元属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级3 > 0
+CHECKVAR HUMAN 五元等级3 < 81
+#ACT
+MUL <$N(五元属性1)> <$HUMAN(五元等级3)> 625
+MUL <$N(五元属性2)> <$HUMAN(五元等级3)> 375
+CHANGEHUMABILITY 21 + <$N(五元属性1)> 86400000
+CHANGEHUMABILITY 23 + <$N(五元属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级4 > 0
+CHECKVAR HUMAN 五元等级4 < 81
+#ACT
+MUL <$N(五元属性1)> <$HUMAN(五元等级4)> 625
+MUL <$N(五元属性2)> <$HUMAN(五元等级4)> 375
+CHANGEHUMABILITY 21 + <$N(五元属性1)> 86400000
+CHANGEHUMABILITY 23 + <$N(五元属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 五元等级5 > 0
+CHECKVAR HUMAN 五元等级5 < 81
+#ACT
+MUL <$N(五元属性1)> <$HUMAN(五元等级5)> 625
+MUL <$N(五元属性2)> <$HUMAN(五元等级5)> 375
+CHANGEHUMABILITY 21 + <$N(五元属性1)> 86400000
+CHANGEHUMABILITY 23 + <$N(五元属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 护体等级 > 98
+#ACT
+CALCVAR HUMAN 护体属性 = 250000
+SAVEVAR HUMAN 护体属性 ..\QuestDiary\数据文件\炼体系统\护体\当前等级.txt
+
+#IF
+CHECKVAR HUMAN 强体等级 > 10
+#ACT
+CALCVAR HUMAN 强体属性1 = 81500
+CALCVAR HUMAN 强体属性2 = 172600
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 10
+#ACT
+CALCVAR HUMAN 体魄属性 = 83000
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+
+#IF
+CHECKVAR HUMAN 护体属性 > 0
+#ACT
+CHANGEHUMABILITY 22 + <$HUMAN(护体属性)> 86400000
+
+#IF
+CHECKVAR HUMAN 强体属性1 > 0
+#ACT
+CHANGEHUMABILITY 20 + <$HUMAN(强体属性1)> 86400000
+
+#IF
+CHECKVAR HUMAN 强体属性2 > 0
+#ACT
+CHANGEHUMABILITY 23 + <$HUMAN(强体属性2)> 86400000
+
+#IF
+CHECKVAR HUMAN 体魄属性 > 0
+#ACT
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+
+#IF
+CHECKVAR HUMAN 洗髓等级 > 0
+CHECKVAR HUMAN 洗髓等级 < 12
+#ACT
+CHANGEHUMABILITY 23 + <$HUMAN(洗髓属性1)> 86400000
+CHANGEHUMABILITY 20 + <$HUMAN(洗髓属性2)> 86400000
+CHANGEHUMABILITY 17 + <$HUMAN(洗髓属性3)> 86400000
+CHANGEHUMABILITY 22 + <$HUMAN(洗髓属性4)> 86400000
+
+#IF
+CHECKVAR HUMAN 龙啸技能1 > 0
+CHECKVAR HUMAN 龙啸技能1 < 31
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能1)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验1)>
+MUL <$N(技能属性1)> P20 66
+CHANGEHUMABILITY 17 + <$N(技能属性1)> 86400000
+
+#IF
+CHECKVAR HUMAN 龙啸技能2 > 0
+CHECKVAR HUMAN 龙啸技能2 < 31
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验2)>
+MUL <$N(技能属性21)> P20 52
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验2)>
+MUL <$N(技能属性22)> P20 66
+CHANGEHUMABILITY 20 + <$N(技能属性21)> 8640000
+CHANGEHUMABILITY 23 + <$N(技能属性22)> 8640000
+
+#IF
+CHECKVAR HUMAN 龙啸技能3 > 0
+CHECKVAR HUMAN 龙啸技能3 < 31
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能3)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验3)>
+MUL <$N(技能属性3)> P20 83
+CHANGEHUMABILITY 22 + <$N(技能属性3)> 86400000
+
+#IF
+CHECKVAR HUMAN 龙啸技能4 > 0
+CHECKVAR HUMAN 龙啸技能4 < 31
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能4)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验4)>
+MUL <$N(技能属性4)> P20 1
+CHANGEHUMABILITY 19 + <$N(技能属性4)> 86400000
+
+#IF
+CHECKVAR HUMAN 龙啸技能5 > 0
+CHECKVAR HUMAN 龙啸技能5 < 31
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能5)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验5)>
+MUL <$N(技能属性5)> P20 1
+CHANGEHUMABILITY 18 + <$N(技能属性5)> 86400000
+
+#IF
+CHECKVAR HUMAN 军衔等级 > 49
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible True
+SetClientUIProp Usr_junxian_CT2.Visible False
+SetClientUIProp Usr_junxian_CT3.Visible False
+SetClientUIProp Usr_junxian_xq.Visible False
+SetClientUIProp Usr_junxian_S19.Visible False
+SetClientUIProp Usr_junxian_SJ1.Visible False
+
+#IF
+CHECKVAR HUMAN 军衔等级 > 0
+CHECKVAR HUMAN 军衔等级 < 50
+#ACT
+SetClientUIProp Usr_junxian_xq.Visible True
+SetClientUIProp Usr_junxian_S19.Visible True
+SetClientUIProp Usr_junxian_SJ1.Visible True
+
+#IF
+CHECKVAR HUMAN 军衔等级 = 9
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible False
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible True
+#IF
+CHECKVAR HUMAN 军衔等级 < 9
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible False
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible False
+
+#IF
+CHECKVAR HUMAN 军衔等级 > 9
+CHECKVAR HUMAN 军衔等级 < 50
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible True
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible True
+
+#IF
+CHECKVAR HUMAN 军衔等级 < 1
+#ACT
+SetClientUIProp Usr_junxianAN.Visible False
+
+#IF
+CHECKVAR HUMAN 军衔等级 > 0
+CHECKVAR HUMAN 军衔等级 < 51
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S21.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S22.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S5.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S6.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S7.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S8.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S9.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S10.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S11.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+SENDMSG 7 测试：原始魔血值=<$MX>，原始神圣下限=<$HEARTPOWER>，原始神圣上限=<$HEARTMAXPOWER>，
+
+DIV <$N(魔血上限)> <$MX> 100
+MUL <$N(魔血上限)> <$N(魔血上限)> <$S(军衔属性4)>
+DIV <$N(神圣下限)> <$HEARTPOWER> 100
+MUL <$N(神圣下限)> <$N(神圣下限)> <$S(军衔属性5)>
+DIV <$N(神圣上限)> <$HEARTMAXPOWER> 100
+MUL <$N(神圣上限)> <$N(神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 + <$S(军衔属性1)> 864000
+CHANGEHUMABILITY 20 + <$S(军衔属性2)> 864000
+CHANGEHUMABILITY 23 + <$S(军衔属性6)> 864000
+CHANGEHUMABILITY 17 + <$N(魔血上限)> 864000
+CHANGEHUMABILITY 20 + <$N(神圣下限)> 864000
+CHANGEHUMABILITY 23 + <$N(神圣上限)> 864000
+
+MOV <$N(下级等级)> <$HUMAN(军衔等级)>
+INC <$N(下级等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$N(下级等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$N(下级等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$N(下级等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$N(下级等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$N(下级等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S23.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S24.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S12.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S13.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S14.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S15.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S16.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S17.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S18.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(军衔等级)>
+SetClientUIProp Usr_junxian_S19.TEXT <$S(军衔需求数量)>　
+
+#IF
+large <$MX> 0
+#ACT
+SetClientUIProp Usr_DWSWXFBasic_MX.TEXT <$MX>　
+
+
+
+
+#IF
+CHECKFENGHAO 十星主宰者
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+sendmsg 0 十星主宰者<$USERNAME>来到了<$SERVERNAME>！
+break
+#IF
+CHECKFENGHAO 69 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的一星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 70 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的二星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 71 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的三星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 72 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的四星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 73 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的五星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 74 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的六星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 75 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的七星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 76 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的八星主宰者大人<$USERNAME>进入游戏！
+break
+#IF
+CHECKFENGHAO 77 1
+#ACT
+SENDMSG 7 尊敬的主宰者大人，欢迎您的到来！
+SENDMSG 0 尊敬的九星主宰者大人<$USERNAME>进入游戏！
+BREAK
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

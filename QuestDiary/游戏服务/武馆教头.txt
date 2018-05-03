@@ -1,0 +1,305 @@
+[@武馆教头]
+{
+真正的勇士，可以失去生命，但不能没有挑战！\
+只有真正的勇士，才了解战斗的意义！\
+不仅是为了胜利，更是为了寻找自己的使命和存在的意义！\
+<如何成为王师教头/@王师教头>\
+<查询声望和荣誉值点数/@talkwith>\
+<师傅如何收徒/@如何收徒>\
+<我要拜师/@@InPutStrinG88>                     <解除师徒关系/@解除关系>\
+<了解挑战详情/@tiaozhan>                 <离开/@exit>
+
+[@tiaozhan]
+那个月圆之夜玛法颠峰的决斗情形,\
+怕是已经没有人记得清了.\
+如今返回家园之路有天险相阻;\
+南面石原半兽人又虎视耽耽!\
+玛法大陆不仅需要实力超群的勇士来守卫,\
+更需要有后起之秀来不断延续这一使命!\
+国王现已颁令举行"群英挑战赛",寻找真正的强者!\
+<了解挑战规则/@ttaa1>\
+<了解挑战积分规则/@ttaa2>
+
+[@ttaa1]
+1.双方面对面站,点击"排行榜"钮旁的"挑战"钮即可申请挑战\
+2.双方抵押道具,完毕后确定,即自动传入挑战地图,挑战开始\
+3.抵押时,仓库须有足够空间,以确保能放下双方抵押物的总量\
+4.一方被击倒,或离开挑战地图,或离线均判定未挑战失败\
+5.五分钟内未分胜负,则判定为双方战平\
+6.挑战时须公平单挑:不能带英雄,不能补给,不能使用传送类道具\
+7.胜利方可获得挑战积分,还可以获得失败方抵押的道具\
+8.抵押的道具需要在挑战结束后在仓库中获取\
+<了解挑战积分规则/@ttaa2>       <返回/@tiaozhan>
+
+[@ttaa2]
+挑战结束后,会按照以下规则给予.扣除积分\
+1.挑战双方一方级别为35级以下时,双方没有积分变化\
+2.双方级别都达到35级且相差10级以内时,\
+胜方获得一点积分,负方扣除一点积分\
+3.双方级别都达到35级且相差10级以上时,\
+胜方获得二点积分,负方扣除二点积分\
+4.若负方挑战前积分已达到负五分,则双方没有积分变化\ \
+<了解挑战规则/@ttaa1>       <返回/@tiaozhan>
+
+[@王师教头]
+比奇国王号召所有勇士成为王师教头来保卫玛法大陆，\
+只要现在收徒，你就会成为王师教头，\
+以后你所收的徒弟都成为王师徒弟。\
+你可以找金牌尊者申请成为王师教头\ \
+<王师教头可以获得的奖赏/@王师教头1>\ \
+<返回/@武馆教头>                   <离开/@exit>
+
+[@王师教头1]
+兽人的进攻迫在眉睫，比奇边境村烽火连连。\
+为了抵抗兽人的进攻，\
+比奇国王号召天下英雄豪杰担负起培养玛法年轻勇士的责任。\
+成为王师教头后，只要你培养的王师弟子顺利出师，\
+并达到一定的等级时，国王会有丰厚的奖励给你，\
+次外，你还可以额外得到你<每一个>徒弟在35级到46级修炼过程中，\
+所获得<经验5%>作为奖赏。\
+<返回/@武馆教头>
+
+[@解除关系]
+您想解除什么关系？\
+徒弟离开师父要交五万，\
+师傅离开徒弟需要十万。\
+请按照您的实际情况选择。\
+<离开师父/@离开师父>\
+<离开徒弟/@离开徒弟>\
+<返回/@Main>\
+
+[@离开师父]
+#IF
+CheckStringlength <$SFNAME> > 3
+#ACT
+#elseACT
+break
+#elseSAY
+你目前还没有师傅，无法使用此功能。\ \
+<返回/@解除关系>
+
+#IF
+CheckOnline <$SFNAME>
+#ACT
+MOV S1
+MOV S2
+MOV S2 <$SFNAME>
+MOV S1 <
+INC S1 S2
+INC S1 /FColor=249>
+break
+#SAY
+你目前的师傅为:<$STR(S1)>\ \ \
+<确认断绝师徒关系/@离开师父1>\ \
+<返回/@解除关系>
+#elseACT
+break
+#elseSAY
+你的师傅目前处于离线状态，无法与其断绝师徒关系！\
+
+[@离开师父1]
+#IF
+CheckOnline <$SFNAME>
+#ACT
+#elseACT
+break
+#elseSAY
+你的师傅目前处于离线状态，无法与其断绝师徒关系！\
+
+#IF
+CHECKLEVELEX < 35
+HAVEMASTER
+checkgold 50000
+#ACT
+take 金币 50000
+MOV A63
+MOV A63 <$USERNAME>
+hcall <$SFNAME> @徒弟脱离师傅
+DELMASTER
+break
+#SAY
+你已经和你师傅脱离关系了
+
+#ELSEACT
+break
+#ELSESAY
+失败：\
+1-你没有师傅\
+2-你没有50000金币\
+3-你等级高于34级\
+
+[@离开徒弟]
+你想将哪位弟子逐出师门：\ 
+<大徒弟/@大徒弟>:<$TDNAME1>\
+<二徒弟/@二徒弟>:<$TDNAME2>\ 
+<三徒弟/@三徒弟>:<$TDNAME3>\
+<四徒弟/@四徒弟>:<$TDNAME4>\ 
+<五徒弟/@五徒弟>:<$TDNAME5>\ \
+<返回/@解除关系>
+
+[@大徒弟] 
+#IF
+#ACT 
+DELAPPRENTICE <$TDNAME1> 
+break
+
+[@二徒弟] 
+#IF
+#ACT 
+DELAPPRENTICE <$TDNAME2> 
+break
+
+[@三徒弟] 
+#IF
+#ACT 
+DELAPPRENTICE <$TDNAME3> 
+break
+
+[@四徒弟] 
+#IF
+#ACT 
+DELAPPRENTICE <$TDNAME4> 
+break
+
+[@五徒弟] 
+#IF
+#ACT 
+DELAPPRENTICE <$TDNAME5> 
+break
+
+[@NoApprentice]
+#act
+messagebox 你没有徒弟还想删除徒弟？没事找事吧？
+
+[@DelApprenticeEnd]
+#act
+messagebox 删除徒弟成功。
+
+[@InPutStrinG88] 
+#if
+CheckMaster
+#act
+messagebox 你都已经拜了别人为师，怎么还拜师!
+Break
+#if
+CHECKLEVELEX > 27
+#act
+messagebox 以你目前的修为来看，已经不需要师傅了！
+Break
+#if
+#act
+master Receiver <$STR(S51)> 27
+
+[@RequestMaster]
+#if
+#act
+MOV A78 <$USERNAME>
+master requestmaster <$STR(S51)> 
+CLOSE
+
+[@MasterNoRead]
+对方拒绝收徒,需要对方输入命令: @<$CMD_READMASTERMSG> 允许收徒后才能拜师\ \
+
+[@MasterNoRead1]
+#act
+messagebox <$STR(S51)>已不能再收徒弟了!请另找别的师傅吧
+
+[@StartGetMaster]
+你确认要拜「<$STR(S51)>」为师？\ \
+<确认/@RequestMaster>
+
+[@StartMaster]
+尊敬的<$USERNAME>，您好！\
+有人正准备向你提出拜师请求。\ \
+
+[@WateMaster]
+#if
+#act
+SENDMSG 0 <$STR(A78)>向自己仰慕已久的前辈<$STR(S51)>递交了拜师帖，希望能够拜入<$STR(S51)>门下!
+
+[@MasterErr]
+#act
+messagebox 你找了个什么人做师父，怎么现在还是别人的徒弟？
+
+[@MasterLevelErr]
+#act
+messagebox 你找个什么师父呀，等级这么低？还没达到35级？
+
+[@MasterCheckDir]
+#act
+messagebox <$STR(S51)>不在线!
+
+[@HumanTypeErr]
+#act
+messagebox <$STR(S51)>不可以做你的师父!
+
+[@解除师徒关系]
+#if
+havemaster
+#act
+unmaster
+#elseact
+messagebox 你都没师父，跑来做什么？
+
+[@UnMasterTypeErr]
+#act
+messagebox 你对面站了个什么东西，怎么不太像人来的。
+
+[@UnIsMaster]
+#act
+messagebox 必须由徒弟发出请求！
+
+[@UnMasterError]
+#act
+messagebox 不要来捣乱！
+
+[@StartUnMaster]
+出师仪式现在开始！！！\ \
+是否确定真的要脱离师徒关系？\ \
+<确定/@RequestUnMaster>
+
+[@WateUnMaster]
+出师仪式现在开始！！！\ \
+
+[@RequestUnMaster]
+#if
+havemaster
+#act
+unmaster requestunmaster
+
+[@WateUnMaster]
+你已向对方发出请求，请耐心等待对方的答复。
+
+[@ExeMasterFail]
+#act
+messagebox 你都没师父，跑来做什么？
+
+[@如何收徒]
+#IF
+check [340] 0
+#SAY
+只要你的等级高于44级，就可以收徒了，\
+当然在第一次收徒前你必须在聊天框中输入:@允许收徒\
+这样你才能接受别人的拜师请求，\
+如果你不输入:@允许收徒，将拒绝所有人对自己的拜师请求\
+@允许收徒的指令可自由操作。\　\
+<返回/@main>
+#ACT
+SET [340] 1
+ChangeExp + 500000
+SENDMSG 6 恭喜:你完成了<等级3　王师弟子>任务。
+BREAK
+#elseACT
+BREAK
+#elseSAY
+只要你的等级高于44级，就可以收徒了，\
+当然在第一次收徒前你必须在聊天框中输入:@允许收徒\
+这样你才能接受别人的拜师请求，\
+如果你不输入:@允许收徒，将拒绝所有人对自己的拜师请求\
+@允许收徒的指令可自由操作。\　\
+<返回/@main>
+;=======================================================
+[@talkwith]
+您目前的声望值:<$CREDITPOINT>\
+<离开/@exit>
+}

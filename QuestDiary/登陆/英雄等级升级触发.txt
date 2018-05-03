@@ -1,0 +1,226 @@
+[@英雄等级升级触发]
+
+{
+
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB WIZARD
+GENDER MAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(男) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(男) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB WIZARD
+GENDER WOMAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 超级黄色药粉 1 Hero
+GIVE 超级灰色药粉 1 Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(女) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(女) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB TAOIST
+GENDER WOMAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 超级黄色药粉 1 Hero
+GIVE 超级灰色药粉 1 Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(女) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(女) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB TAOIST
+GENDER MAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(男) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(男) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB WARRIOR
+GENDER MAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(男) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(男) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+#IF
+CHECKHEROLEVEL = 50
+CHECKHEROJOB WARRIOR
+GENDER WOMAN HERO
+#ACT
+READSKILLNG Hero
+GIVE 主宰之冠 1 HERO
+GIVE 主宰神剑 1 HERO
+GIVE 主宰护腕 2 HERO
+GIVE 主宰神甲(女) 1 HERO
+GIVE 主宰之戒 2 HERO
+GIVE 主宰项链 1 HERO
+GIVE 主宰腰带 1 HERO
+GIVE 主宰之靴 1 HERO
+GIVE 魔血石(大) 1 HERO
+GIVE 主宰斗笠 1 HERO
+GIVE 主宰勋章 1 HERO
+TakeOnItem 主宰神甲(女) 0 HERO
+TakeOnItem 主宰神剑 1 HERO
+TakeOnItem 主宰勋章 2 HERO
+TakeOnItem 主宰项链 3 HERO
+TakeOnItem 主宰之冠 4 HERO
+TakeOnItem 主宰护腕 5 HERO
+TakeOnItem 主宰护腕 6 HERO
+TakeOnItem 主宰之戒 7 HERO
+TakeOnItem 主宰之戒 8 HERO
+TakeOnItem 主宰腰带 10 HERO
+TakeOnItem 主宰之靴 11 HERO
+TakeOnItem 魔血石(大) 12 HERO
+TakeOnItem 主宰斗笠 13 HERO
+BREAK
+
+
+
+#IF
+CHECKHEROLEVEL = 100
+CHECKHEROJOB Warrior
+#ACT
+ADDSKILL 白日门血魄(战) 3 HERO 1
+BREAK
+
+#IF
+CHECKHEROLEVEL = 100
+CHECKHEROJOB WIZARD
+#ACT
+ADDSKILL 白日门血魄(法) 3 HERO 1
+BREAK
+
+#IF
+CHECKHEROLEVEL = 100
+CHECKHEROJOB Taoist
+#ACT
+ADDSKILL 白日门血魄(道) 3 HERO 1
+BREAK
+
+
+}

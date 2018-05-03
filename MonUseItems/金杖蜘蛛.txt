@@ -1,0 +1,8 @@
+[Info]
+;探索收费模式(0金币，1元宝，2金刚石，3灵符)
+ButchChargeClass=3
+;探索每次收费点数
+ButchChargeCount=1
+;怪挖是否进入触发，1=进，0=不进
+ButchCloneItem=1
+

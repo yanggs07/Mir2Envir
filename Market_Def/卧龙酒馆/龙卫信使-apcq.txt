@@ -1,0 +1,999 @@
+[@main]
+玛法的勇士！神龙帝国的后裔，我已经感受到你体内觉醒的血脉正在\
+沸腾！现在你的文莱--伟大的新龙卫等待着你！我这里有一本<龙卫手记>，\
+他记载着三龙卫对于武学的心得，可以帮助你找到龙卫晋升之路。获得\
+龙卫手记传承的人必须是达到<实力顶峰>的人，否则将无法承受这股无比\
+的力量。等级达到200级者可直接领悟心法！\  \
+
+<主号龙卫心法/@领悟心法1>\  \
+<英雄龙卫心法/@应承领悟心法>\
+
+
+[@应承领悟心法]
+玛法的勇士！神龙帝国的后裔，我已经感受到你题内觉醒的血脉正在\
+沸腾！现在你的文莱--伟大的新龙卫等待着你！我这里有一本<龙卫手记>，\
+他记载着三龙卫对于武学的心得，可以帮助你找到龙卫晋升之路。获得\
+龙卫手记传承的人必须是达到<实力顶峰>的人，否则将无法承受这股无比\
+的力量。\  \
+<参悟英雄龙卫手记/@领悟英雄心法>(领悟英雄心法-英雄等级达200级)      \  
+<关于英雄强化技能/@强化BB技能>            \
+<关于英雄龙卫技能/@英雄龙卫技能>            \
+
+
+[@领悟心法1]
+玛法的勇士！神龙帝国的后裔，我已经感受到你体内觉醒的血脉正在\
+沸腾！现在你的文莱--伟大的新龙卫等待着你！我这里有一本<龙卫手记>，\
+他记载着三龙卫对于武学的心得，可以帮助你找到龙卫晋升之路。获得\
+龙卫手记传承的人必须是达到<实力顶峰>的人，否则将无法承受这股无比\
+的力量。等级达到200级者可直接领悟心法！\  \
+
+<参悟龙卫手记/@领悟心法>(领悟心法-等级达200级)            <了解详情/@详情>\  \
+<关于龙卫技能/@龙卫技能>       <关于龙神技能/@龙神技能>      <龙怒技能相关/@龙怒技能11>     \
+
+[@龙神技能]
+心法达到20级的勇士可以修炼龙神技能，我知道修炼方法，但是修炼\
+神功需要两样狐月至宝辅助，那就是白虎胆和青龙精，至于如何获得\
+这两样至包，我也不得而知，不过听说狐族的狐王曾经试图寻取他们，\
+但是后来再也没有消息了，近闻有人在狐月山看到狐王的幻影，你\
+可以前去调查一番。<注：接受任务需要递交一个龙神技能凭证。>\  \
+
+<使用龙神技能凭证兑换白虎胆和青龙精/@兑换白虎胆和青龙精>(绑定给予)\
+<使用白虎胆和青龙精修炼神技/@修炼神技>(练习神技和强化神技)\
+
+
+
+[@修炼神技]
+<学习神技/@XXSJ>\
+\
+<强化神技/@QHSJ>\
+[@XXSJ]
+<学习十步一杀/@学习十步一杀>(心法等级达20级)   \
+<学习冰霜群雨/@学习冰霜群雨>(心法等级达30级)   \
+<学习天雷乱舞/@学习天雷乱舞>(心法等级达20级)   \
+<学习怒噬回天/@学习怒噬回天>(心法等级达20级)   \
+<学习死亡之眼/@学习死亡之眼>(心法等级达20级)   \
+
+[@QHSJ]
+你可以使用一个青龙精和一个白虎胆在我这里兑换一本
+强化神技技能书(绑定给予)\
+\
+<兑换强化十步一杀/@强化十步一杀>\  
+<兑换强化冰霜群雨/@强化冰霜群雨>\  
+<兑换强化天雷乱舞/@强化天雷乱舞>\  
+<兑换强化死亡之眼/@强化死亡之眼>\  
+<兑换强化怒噬回天/@强化怒噬回天>\  
+
+[@强化十步一杀]
+#IF
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+GIVE 强化十步一杀 1
+#ELSEACT
+Messagebox 〖提示〗你你没有足够的材料，不能兑换！
+BREAK
+
+[@强化冰霜群雨]
+#IF
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+GIVE 强化冰霜群雨 1
+#ELSEACT
+Messagebox 〖提示〗你你没有足够的材料，不能兑换！
+BREAK
+
+
+[@强化天雷乱舞]
+#IF
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+GIVE 强化天雷乱舞 1
+#ELSEACT
+Messagebox 〖提示〗你你没有足够的材料，不能兑换！
+BREAK
+
+[@强化怒噬回天]
+#IF
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+GIVE 强化怒噬回天 1
+#ELSEACT
+Messagebox 〖提示〗你你没有足够的材料，不能兑换！
+BREAK
+
+[@强化死亡之眼]
+#IF
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+GIVE 强化死亡之眼 1
+#ELSEACT
+Messagebox 〖提示〗你你没有足够的材料，不能兑换！
+BREAK
+
+
+
+
+
+
+
+
+[@学习天雷乱舞]
+#IF
+CHECKJOB wizard
+CHECKSKILL 龙卫心法 > 19
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 天雷乱舞 1
+SENDMSG 0 恭喜：玩家『%S』成功学习<天雷乱舞>从此纵横玛法，傲视群雄！ 250 58
+SendCenterMsg 251 1 <$USERNAME>在龙卫信使处成功学习天雷乱舞，从此纵横玛法，傲视群雄 1 5 1
+#ELSEACT
+Messagebox 〖提示〗你心法等级不足20，或者你不是法师，不能学习！
+BREAK
+
+
+
+
+
+
+
+
+
+
+[@学习十步一杀]
+#IF
+CHECKJOB warrior
+CHECKSKILL 龙卫心法 > 19
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 十步一杀 1
+SENDMSG 0 恭喜：玩家『%S』成功学习<十步一杀>从此纵横玛法，傲视群雄！ 250 58
+SendCenterMsg 251 1 <$USERNAME>在龙卫信使处成功学习十步一杀，从此纵横玛法，傲视群雄 1 5 1
+#ELSEACT
+Messagebox 〖提示〗你心法等级不足20，或者你不是战士，不能学习！
+BREAK
+
+
+
+
+[@学习怒噬回天]
+#IF
+CHECKJOB taoist
+CHECKSKILL 龙卫心法 > 19
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 怒噬回天 1
+SENDMSG 0 恭喜：玩家『%S』成功学习<怒噬回天>从此纵横玛法，傲视群雄！ 250 58
+SendCenterMsg 251 1 <$USERNAME>在龙卫信使处成功学习怒噬回天，从此纵横玛法，傲视群雄 1 5 1
+#ELSEACT
+Messagebox 〖提示〗你心法等级不足20，或者你不是道士，不能学习！
+BREAK
+
+
+[@学习冰霜群雨]
+#IF
+CHECKJOB wizard
+CHECKSKILL 龙卫心法 > 19
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 冰霜群雨 1
+SENDMSG 0 恭喜：玩家『%S』成功学习<冰霜群雨>从此纵横玛法，傲视群雄！ 250 58
+SendCenterMsg 251 1 <$USERNAME>在龙卫信使处成功学习冰霜群雨，从此纵横玛法，傲视群雄 1 5 1
+#ELSEACT
+Messagebox 〖提示〗你心法等级不足20，或者你不是法师，不能学习！
+BREAK
+
+
+[@学习死亡之眼]
+#IF
+CHECKJOB taoist
+CHECKSKILL 龙卫心法 > 19
+CHECKITEM 白虎胆 1
+CHECKITEM 青龙精 1
+#ACT
+TAKE 白虎胆 1
+TAKE 青龙精 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 死亡之眼 1
+SENDMSG 0 恭喜：玩家『%S』成功学习<死亡之眼>从此纵横玛法，傲视群雄！ 250 58
+SendCenterMsg 251 1 <$USERNAME>在龙卫信使处成功学习死亡之眼，从此纵横玛法，傲视群雄 1 5 1
+#ELSEACT
+Messagebox 〖提示〗你心法等级不足20，或者你不是道士，不能学习！
+BREAK
+
+[@兑换白虎胆和青龙精]
+#IF
+CHECKITEM 龙神技能凭证 1
+#ACT
+TAKE 龙神技能凭证 1
+GIVE 白虎胆 1
+GIVE 青龙精 1
+#ELSEACT
+Messagebox 〖提示〗你没有龙神技能凭证，不能兑换！
+BREAK
+
+
+
+[@龙卫技能]
+随着心法的成长，勇士们可以领悟更强大的龙卫技能，不过能不能\
+获得龙卫技能我说了不酸，你必须要带上<龙卫技能凭证>，带可以\
+获得龙卫技能。\  \
+<查看龙卫技能/@查看龙卫技能>\  \
+
+<兑换龙卫技能书/@兑换龙卫技能书>\   \
+
+<返回/@main>  \
+
+[@兑换龙卫技能书]
+使用龙卫技能平整可以兑换龙卫技能书，龙卫技能凭证可以通过商铺购买！\  \
+
+<我是战士，我要兑换纵横剑术/@兑换纵横剑术>\
+<我是法师，我要兑换冰霜雪雨/@兑换冰霜雪雨>\
+<我是道士，我要兑换裂神符/@兑换裂神符>\  \
+<返回/@main>  \
+
+
+
+[@查看龙卫技能]
+<战士龙卫技能:纵横剑术>，学会以后，在龙卫境界下，平砍攻击伤害\
+提高，且可以对正前方三个目标同时造成伤害，还有一定概率使目标\
+进入减速状态，对心法等级越低的目标，减速效果越明显。\
+<法师龙卫技能:冰霜雪雨>，学会以后，在龙卫境界下，使用流星火雨\
+特效变为冰雨，伤害提高，并且可以消耗对方的魔法值。\
+<道士龙卫技能:裂神符>，学会以后，在龙卫境界下，使用灵魂火符技\
+能，火符攻击速度提升，并且可以弹射最多三个目标，真气状态下可\
+以弹射最多5个目标。\
+<心法等级达到40级，才能学习龙卫技能。>      <返回/@main>  \
+
+
+[@兑换纵横剑术]
+#IF
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1
+GIVE 纵横剑术 1
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，不能兑换！
+BREAK
+
+
+[@兑换冰霜雪雨]
+#IF
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1
+GIVE 冰霜雪雨 1
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，不能兑换！
+BREAK
+
+
+[@兑换裂神符]
+#IF
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1
+GIVE 裂神符 1
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，不能兑换！
+BREAK
+
+
+
+
+
+
+
+
+
+[@领悟心法]
+#IF
+#ACT
+OPENSAVVYHEART
+
+
+
+
+[@详情]
+你想知道什么？\  \
+<自创师门/@自创>                    <师门弟子/@弟子>\  \   
+<公共师门/@公共>\  \  
+<返回/@main> 
+
+[@自创]
+1、自创师门需要玩家等级达到999级，同时已经自创了心法。自创的\
+   师门最多可接收20名弟子。弟子等级低于999级。\
+2、师父可当面向弟子展示龙卫境界，弟子在师父施展的招意中根据\
+   自身天赋不同，领悟传承心法。\
+3、弟子的传承心法名称与师父相同。传承心法修炼的等级上限由师父\
+   的传承心法等级上限决定。\
+4、加入师门的弟子，完成除魔任务可以提高师门人气值，且除魔任务\
+<下一页/@自创1>                    <返回/@详情>  
+
+[@自创1]
+   的难度将下降，师父可消耗人气值领取称号。\
+5、师父与弟子同时参与战斗，师父在施展龙卫境界时，有几率触发\
+   师门隐藏实力。\
+6、师父可将弟子逐出师门，弟子会因为逐出，而丧失所有的传承心法。\ \
+<上一页/@自创>                    <返回/@详情>  
+
+[@公共]
+1、因师门有限，比奇国王特开放公共师门。\
+2、凡等级未达到999级，未加入师门的勇土可拜入"比奇王国公共师门"。\
+3、公共师门弟子只能通过日常的战斗来领悟传承心法，无法通过师父的\
+   演示进行领悟。\
+4、公共师门弟子能够修炼的传承心法等级上限为一级。\
+5、一旦退出公共师门，则弟子的传承心法将遗忘。\
+ <返回/@详情>  
+
+[@弟子]
+.................\
+
+ <返回/@详情>  
+
+[@领悟英雄心法]
+英雄等级达到200级以后就能和主号一起进入龙卫境界\
+自动领悟心法！\  \
+
+
+
+<返回/@main> \
+
+
+
+
+
+
+
+[@英雄龙卫技能]
+随着心法的成长，勇士们可以领悟更强大的英雄龙卫技能，不过能不能\
+获得英雄龙卫技能我说了不算，你必须要把英雄等级提升至200\
+领悟心法后带上<龙卫技能凭证>，才可以学习英雄龙卫技能 \  \
+
+<查看英雄龙卫技能/@查看英雄龙卫技能>\  \
+
+<学习英雄龙卫技能/@兑换英雄龙卫技能书>\   \
+
+<返回/@main>  \
+
+[@兑换英雄龙卫技能书]
+使用龙卫技能凭证可以学习英雄龙卫技能，龙卫技能凭证可以通过商铺购买！\  \
+
+<我是英雄战士，我要学习白日门雄纵横剑术/@兑换英雄纵横剑术>\
+<我是英雄法师，我要学习白日门冰霜雪雨/@兑换英雄冰霜雪雨>\
+<我是英雄道士，我要学习白日门裂神符/@兑换英雄裂神符>\  \
+<返回/@main>  \
+
+
+
+[@查看英雄龙卫技能]
+<战士英雄龙卫技能:白日门纵横剑术>，学会以后，在龙卫境界下，平砍攻击伤害\
+提高，且可以对正前方三个目标同时造成伤害，还有一定概率使目标\
+进入减速状态，对心法等级越低的目标，减速效果越明显。\
+<法师英雄龙卫技能:白日门冰霜雪雨>，学会以后，在龙卫境界下，使用流星火雨\
+特效变为冰雨，伤害提高，并且可以消耗对方的魔法值。\
+<道士英雄龙卫技能:白日门裂神符>，学会以后，在龙卫境界下，使用灵魂火符技\
+能，火符攻击速度提升，并且可以弹射最多三个目标，真气状态下可\
+以弹射最多5个目标。\
+ <返回/@main>  \
+
+
+[@兑换英雄纵横剑术]
+#IF
+CHECKHEROJOB WARRIOR Hero
+CHECKheroLEVEL > 998
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 白日门纵横剑术 1 HERO
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，或者英雄等级没达到200，不能兑换！
+BREAK
+
+
+[@兑换英雄冰霜雪雨]
+#IF
+CHECKHEROJOB  wizard Hero
+CHECKheroLEVEL > 998
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1
+PLAYVIDEO data\update.wmv
+ADDSKILL 白日门冰霜雪雨 1 HERO
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，或者英雄等级没达到200，不能兑换！
+BREAK
+
+
+[@兑换英雄裂神符]
+#IF
+CHECKHEROJOB  taoist Hero
+CHECKheroLEVEL > 998
+CHECKITEM 龙卫技能凭证 1
+#ACT
+TAKE 龙卫技能凭证 1 
+PLAYVIDEO data\update.wmv
+ADDSKILL 白日门裂神符 1 HERO
+
+#ELSEACT
+Messagebox 〖提示〗你没有龙卫技能凭证，或者英雄等级没达到200，不能兑换！
+BREAK
+
+
+[@强化BB技能]
+学会心法后，英雄可以<升级强化技能/FCOLOR=249>，战士的逐日剑法、烈火剑法、攻杀剑术、\
+刺杀剑术、圆月弯刀技能，法师的流星火雨、火墙、灭天火、雷电术、疾光电影，道士的\
+噬血术、召唤骷髅、召唤火灵、灵魂火符、施毒术技能都可以进行强化，\
+<心法等级越高强化技能等级越高，技能最高可以强化到九重/FCOLOR=249>。\ \
+
+<强化战士英雄技能/@强化战士英雄技能>\
+<强化法师英雄技能/@强化法师英雄技能>\
+<强化道士英雄技能/@强化道士英雄技能>\
+<强化白日门强身术/@强化强身术>             <返回/@MAIN>\
+
+[@强化强身术]
+白日门强身术是英雄特有的强身健体技能，当你把英雄的白日门强\
+身术修炼到99级之后，就可以让你的英雄修炼强化强身术了。\
+战士强身术每强化一重可以增加15000点体力值和50点魔法值，\
+法师强身术每强化一重可以增加5000点体力值和15000点魔法值，\
+道士强身术每强化一重可以增加8000点体力值和12000点魔法值。\ \
+<我要强化英雄强身术/@强化白日门强身术>\ \
+<返回/@强化技能>  \
+
+[@强化白日门强身术]
+#IF
+HEROCHECKSKILL 白日门强身术 = 99
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门强身术 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门强身术 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门强身术成功。
+GOTO @强化强身术
+BREAK
+#ELSESAY
+你没有10本白日门秘籍，或者你的英雄白日门强身术等级没有达到99级\
+或你英雄的白日门强身术已经强化九重了 \
+<返回/@强化技能>
+#ELSEACT
+BREAK
+
+
+
+
+
+[@强化道士英雄技能]
+注：强化英雄技能需要<白日门秘籍/FCOLOR=249>10本。\ \
+
+<白日门噬血术>          <强化白日门噬血术/@强化噬血术>\
+<白日门施毒术>          <强化白日门施毒术/@强化施毒术>\
+<白日门骷髅>            <强化白日门骷髅/@强化召唤骷髅>\
+<白日门火符>            <强化白日门火符/@强化灵魂火符>\
+<召唤火灵>              <强化召唤火灵/@强化召唤火灵>\
+<返回/@强化技能>
+
+[@强化法师英雄技能]
+注：强化英雄技能需要<白日门秘籍/FCOLOR=249>10本。\ \
+
+<白日门雷电术>            <强化白日门雷电术/@强化雷电术>\
+<白日门灭天火>            <强化白日门灭天火/@强化灭天火>\
+<白日门火墙>              <强化白日门火墙/@强化火墙>\
+<白日门疾光>              <强化白日门疾光/@强化疾光电影>\
+<白日门流星火雨>          <强化白日门流星火雨/@强化流星火雨>\
+<返回/@强化技能>
+
+[@强化战士英雄技能]
+注：强化英雄技能需要<白日门秘籍/FCOLOR=249>10本。\ \
+
+<白日门刺杀>      <强化白日门刺杀/@强化刺杀剑术>\
+<白日门攻杀>      <强化白日门攻杀/@强化攻杀剑术>\
+<白日门圆月>      <强化白日门圆月/@强化圆月弯刀>\
+<白日门烈火>      <强化白日门烈火/@强化烈火剑法>\
+<白日门逐日>      <强化白日门逐日/@强化逐日剑法>\
+<返回/@强化技能>
+
+
+
+
+
+
+
+
+
+
+
+
+[@强化圆月弯刀]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门圆月 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门圆月 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门圆月成功。
+GOTO @强化战士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门圆月已经强化九重了 \ \
+<返回/@强化战士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化刺杀剑术]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门刺杀 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门刺杀 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门刺杀成功。
+GOTO @强化战士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门刺杀已经强化九重了\ \
+<返回/@强化战士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化攻杀剑术]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门攻杀 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门攻杀 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门攻杀成功。
+GOTO @强化战士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门攻杀已经强化九重了 \ \
+<返回/@强化战士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化烈火剑法]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门烈火 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门烈火 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门烈火成功。
+GOTO @强化战士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门烈火已经强化九重了\ \
+<返回/@强化战士英雄技能>
+#ELSEACT
+BREAK
+
+
+
+[@强化逐日剑法]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门逐日 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门逐日 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门逐日成功。
+GOTO @强化战士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门逐日已经强化九重了\ \
+<返回/@强化战士英雄技能>
+#ELSEACT
+BREAK
+
+
+
+
+
+
+[@强化疾光电影]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门疾光 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门疾光 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门疾光电成功。
+GOTO @强化法师英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门疾光已经强化九重了\ \
+<返回/@强化法师英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化雷电术]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门雷电术 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门雷电术 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门雷电术成功。
+GOTO @强化法师英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门雷电术已经强化九重了\ \
+<返回/@强化法师英雄技能>
+#ELSEACT
+BREAK
+
+
+
+[@强化灭天火]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门灭天火 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门灭天火 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门灭天火成功。
+GOTO @强化法师英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门灭天火已经强化九重了\ \
+<返回/@强化法师英雄技能>
+#ELSEACT
+BREAK
+
+
+
+[@强化火墙]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门火墙 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门火墙 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门火墙成功。
+GOTO @强化法师英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门火墙已经强化九重了\ \
+<返回/@强化法师英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化流星火雨]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门流星火雨 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门流星火雨 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门流星火雨成功。
+GOTO @强化法师英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门流星火雨已经强化九重了\ \
+<返回/@强化法师英雄技能>
+#ELSEACT
+BREAK
+
+
+
+
+[@强化施毒术]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门施毒术 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门施毒术 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门施毒术成功。
+GOTO @强化道士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门施毒术已经强化九重了\ \
+<返回/@强化道士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化灵魂火符]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门火符 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门火符 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门火符成功。
+GOTO @强化道士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门火符已经强化九重了\ \
+<返回/@强化道士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化召唤火灵]
+#IF
+CHECKSKILLLEVEL 召唤火灵 = 100
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 召唤火灵 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 召唤火灵 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能召唤火灵成功。
+GOTO @强化道士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的召唤火灵已经强化九重了\ \
+或召唤火灵技能还未达到100级。\
+<返回/@强化道士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@强化召唤骷髅]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门骷髅 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门骷髅 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门骷髅成功。
+GOTO @强化道士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门召唤骷髅已经强化九重了\ \
+<返回/@强化道士英雄技能>
+#ELSEACT
+BREAK
+
+
+
+[@强化噬血术]
+#IF
+CHECKKIMNEEDLE 白日门秘籍 10
+CHECKSKILLEX 白日门噬血术 < 9 Hero
+#ACT
+CHANGESKILLLEVELEX 白日门噬血术 + 1 Hero
+TAKEKIMNEEDLE 白日门秘籍 10
+SENDMSG 0 恭喜：<$USERNAME>在龙卫信使处使用10本白日门秘籍强化英雄技能白日门噬血术成功。
+GOTO @强化道士英雄技能
+BREAK
+#ELSESAY
+你没有10本白日门秘籍或你英雄的白日门噬血术已经强化九重了\ \
+<返回/@强化道士英雄技能>
+#ELSEACT
+BREAK
+
+
+[@龙怒技能11]
+你可以在心法达到一定的等级后，使用龙怒技能凭证，在我这里学\
+习龙怒技能。\
+<注：龙怒技能凭证可以挑战游戏BOSS，参加游戏活动获得>\
+龙怒技能一共有三种，分别为：<神圣赐福>，<铁壁铜墙>，<摧岳斩龙>。\
+\	\
+
+<我要学习龙怒技能/@学习龙怒>      <让我在考虑考虑/@EXIT>\
+
+
+[@学习龙怒]
+神圣赐福>：最低学习心法等级65，技能效果：玩家自行体验\
+<铁壁铜墙>：最低学习心法等级162，技能效果：玩家自行体验\
+<摧岳斩龙>：最低学习心法等级205，且需要集齐 <爱 拼 传 奇> \
+四个龙珠才可以学习此技能，这4个龙珠可在各大地图boss身上爆出。\
+\ 
+<我要学习神圣赐福/@神圣赐福>\
+<我要学习铁壁铜墙/@铁壁铜墙>\
+<我要学习摧岳斩龙/@摧岳斩龙>\
+\	\
+<返回/@MAIN>
+
+
+[@神圣赐福]
+神圣赐福的学习条件如下：\
+一重神圣赐福：需要心法等级65，龙怒技能凭证1个。 <我要学习/@XS>\
+二重神圣赐福：需要心法等级85，龙怒技能凭证1个。 <我要升级/@XS1>\
+三重神圣赐福：需要心法等级115，龙怒技能凭证1个。 <我要升级/@XS2>\
+\	\
+<返回/@MAIN>
+
+[@铁壁铜墙]
+神圣赐福的学习条件如下：\
+一重铁壁铜墙：需要心法等级162，龙怒技能凭证10个。 <我要学习/@XT>\
+二重铁壁铜墙：需要心法等级177，龙怒技能凭证10个。 <我要升级/@XT1>\
+三重铁壁铜墙：需要心法等级192，龙怒技能凭证10个。 <我要升级/@XT2>\
+\	\
+<返回/@MAIN>
+
+[@摧岳斩龙]
+神圣赐福的学习条件如下：\
+摧岳斩龙：需要心法等级205，龙怒技能凭证20个。 且需要集齐 \
+<爱 拼 传 奇> 四个龙珠才可以学习此技能，这4个龙珠可在各大\
+地图boss身上爆出\\
+<我要学习/@XC>
+\	\
+<返回/@MAIN>
+
+
+
+
+
+
+[@XS]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 1
+CHECKSKILLLEVEL 龙卫心法 > 64
+#ACT
+goto @XS3
+#elseact
+messagebox 条件不符，学习技能失败！
+
+[@XS3]
+#IF
+CHECK [333] 1
+#act
+messagebox 你已经学习过了该技能，不需重复学习！
+#elseact
+TAKEKIMNEEDLE 龙怒技能凭证 1
+ADDSKILL 一重神圣赐福 3
+SET [333] 1
+sendmsg 7 恭喜你，学习一重神圣赐福成功
+
+[@XS1]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 1
+CHECKSKILLLEVEL 龙卫心法 > 84
+CHECKSKILLLEVEL 一重神圣赐福 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 1
+CHANGESKILL 126 127
+sendmsg 7 恭喜你，学习二重神圣赐福成功
+#elseact
+messagebox 条件不符，升级技能失败！
+
+[@XS2]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 1
+CHECKSKILLLEVEL 龙卫心法 > 114
+CHECKSKILLLEVEL 二重神圣赐福 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 1
+CHANGESKILL 127 128
+sendmsg 7 恭喜你，学习三重神圣赐福成功
+#elseact
+messagebox 条件不符，升级技能失败！
+
+
+
+
+
+[@XT]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 10
+CHECKSKILLLEVEL 龙卫心法 > 161
+#ACT
+goto @XT3
+#elseact
+messagebox 条件不符，学习技能失败！
+
+[@XT3]
+#IF
+CHECK [334] 1
+#act
+messagebox 你已经学习过该技能，不需重复学习！
+#elseact
+TAKEKIMNEEDLE 龙怒技能凭证 10
+ADDSKILL 一重铁壁铜墙 3
+SET [334] 1
+sendmsg 7 恭喜你，学习一重铁壁铜墙成功
+
+
+[@XT1]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 10
+CHECKSKILLLEVEL 龙卫心法 > 176
+CHECKSKILLLEVEL 一重铁壁铜墙 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 10
+CHANGESKILL 129 130
+sendmsg 7 恭喜你，学习二重铁壁铜墙成功
+#elseact
+messagebox 条件不符，升级技能失败！
+
+[@XT2]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 10
+CHECKSKILLLEVEL 龙卫心法 > 191
+CHECKSKILLLEVEL 二重铁壁铜墙 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 10
+CHANGESKILL 130 131
+sendmsg 7 恭喜你，学习三重铁壁铜墙成功
+#elseact
+messagebox 条件不符，升级技能失败！
+
+
+
+
+[@XC]
+#IF
+CHECKITEM 爱 1
+CHECKITEM 拼 1
+CHECKITEM 传 1
+CHECKITEM 奇 1
+CHECKKIMNEEDLE 龙怒技能凭证 20
+CHECKSKILLLEVEL 龙卫心法 > 204
+#elseact
+messagebox 条件不符，学习技能失败！
+#ACT
+TAKE 爱 1
+TAKE 拼 1
+TAKE 传 1
+TAKE 奇 1
+TAKEKIMNEEDLE 龙怒技能凭证 20
+ADDSKILL 摧岳斩龙 = 3
+SET [335] 1
+sendmsg 7 恭喜你，学习摧岳斩龙成功
+SendCenterMsg 151 1 恭喜：玩家<$USERNAME>通过努力成功学习摧岳斩龙 1 5 1
+#elseact
+messagebox 条件不符，学习技能失败！
+
+
+[@XC1]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 20
+CHECKSKILLLEVEL 龙卫心法 > 224
+CHECKSKILLLEVEL 一重摧岳斩龙 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 20
+CHANGESKILL 132 133
+sendmsg 7 恭喜你，学习二重摧岳斩龙成功
+#elseact
+messagebox 条件不符，升级技能失败！
+
+[@XC2]
+#IF
+CHECKKIMNEEDLE 龙怒技能凭证 20
+CHECKSKILLLEVEL 龙卫心法 > 239
+CHECKSKILLLEVEL 二重摧岳斩龙 > 1
+#ACT
+TAKEKIMNEEDLE 龙怒技能凭证 20
+CHANGESKILL 133 134
+sendmsg 7 恭喜你，学习三重摧岳斩龙成功
+#elseact
+messagebox 条件不符，升级技能失败！
+

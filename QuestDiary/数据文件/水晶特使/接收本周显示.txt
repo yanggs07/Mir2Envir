@@ -1,0 +1,1654 @@
+[@接收本周显示]
+{
+#IF
+#ACT
+MOV S31
+MOV S32
+MOV S33
+MOV S34
+MOV S35
+MOV S36
+MOV S37
+MOV S38
+MOV S39
+MOV S40
+GetRandomName ..\QuestDiary\数据文件\空格\空格1.txt S31
+GetRandomName ..\QuestDiary\数据文件\空格\空格2.txt S32
+GetRandomName ..\QuestDiary\数据文件\空格\空格3.txt S33
+GetRandomName ..\QuestDiary\数据文件\空格\空格4.txt S34
+GetRandomName ..\QuestDiary\数据文件\空格\空格5.txt S35
+GetRandomName ..\QuestDiary\数据文件\空格\空格6.txt S36
+GetRandomName ..\QuestDiary\数据文件\空格\空格7.txt S37
+GetRandomName ..\QuestDiary\数据文件\空格\空格8.txt S38
+GetRandomName ..\QuestDiary\数据文件\空格\空格9.txt S39
+GetRandomName ..\QuestDiary\数据文件\空格\空格10.txt S40
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第1点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第1名
+BREAK
+
+[@检测接收第1名]
+#IF
+LARGE N10 0
+#ACT
+GOTO @接收显示1
+BREAK
+
+#ELSEACT
+BREAK
+#ELSESAY
+接收水晶本周排行榜：\
+　　角色名　　　　　 接收点数　　　角色名　　　　　 接收点数\
+无数据\ \ \ \ \ \
+<返回/@排行>
+
+[@接收显示1]
+#IF
+#ACT
+MOV S3
+MOV N9 0
+INC N9 1
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第1名字
+BREAK
+
+[@检测接收第1名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第2名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第2名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第2名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第2名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第3名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第3名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第3名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第3名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第4名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第4名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第4名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第4名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第5名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第5名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第5名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第5名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第6名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第6名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第6名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第6名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第7名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第7名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第7名字
+BREAK
+
+#ELSEACT
+INC S3 \　\　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第7名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第8名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第8名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第8名字
+BREAK
+
+#ELSEACT
+INC S3 \　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第8名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　\
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第9名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第9名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第9名字
+BREAK
+
+#ELSEACT
+INC S3 \　\
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第9名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　
+INC N9 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @检测接收第10名
+BREAK
+
+#ELSEACT
+BREAK
+
+[@检测接收第10名]
+#IF
+LARGE N10 0
+#ACT
+MOV S11
+MOV S12
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N9)>点数.txt S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\序号\序号<$STR(N9)>.txt S13
+GOTO @检测接收第10名字
+BREAK
+
+#ELSEACT
+INC S3 \
+GOTO @显示接收前10
+BREAK
+
+[@检测接收第10名字]
+#IF
+CheckStringlength <$STR(S12)> = 1
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S38
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 2
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S37
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 3
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S36
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 4
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S35
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 5
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S34
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 6
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S33
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 7
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S32
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 8
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S31
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#IF
+CheckStringlength <$STR(S12)> = 9
+#ACT
+INC S3 S13
+INC S3 S11
+INC S3 S12
+INC S3 　\
+GOTO @显示接收前10
+BREAK
+
+#ELSEACT
+BREAK
+
+[@显示接收前10]
+接收水晶本周排行榜：\
+　　角色名　　　　　 接收点数　　　角色名　　　　　 接收点数\
+<$STR(S3)>\ \
+<返回/@排行>
+}

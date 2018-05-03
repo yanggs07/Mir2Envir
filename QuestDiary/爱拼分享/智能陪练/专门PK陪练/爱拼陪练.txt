@@ -1,0 +1,59 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 10
+Gender = 0
+NoDropItem = 1
+Hair = 2
+NG=1
+NGLevel=90
+;等级
+Level = 789
+DropUseItem=1
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill = 破魂斩,烈火剑法,半月弯刀,刺杀剑术,野蛮冲撞,抱月刀法,狮子吼
+ProtectStatus=1
+InitItems = 
+[MonSay]
+0=呦呵！和我动手！不想活了？
+1=来啊！来点激情！
+2=是爷们来盟重药店激情
+3=啥时可以过来？
+4=没事表打搅我
+5=我正在做任务
+6=呵呵
+7=我操！你想死是吧
+8=天哪！你太牛X了
+9=高手总是像我一样的寂寞
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=热血神甲
+;武器
+UseItems1=热血神剑
+;照明物
+UseItems2=热血勋章
+;项链
+UseItems3=热血项链
+;头盔
+UseItems4=热血头盔
+;左手镯
+UseItems5=热血护腕
+;右手镯
+UseItems6=热血护腕
+;左戒指
+UseItems7=热血戒指
+;右戒指
+UseItems8=热血戒指
+;物品
+UseItems9=火龙之心
+;腰带
+UseItems10=热血腰带
+;鞋子
+UseItems11=热血靴子
+;宝石
+UseItems12=魔血石(大)
+;斗笠
+UseItems13=热血斗笠

@@ -1,0 +1,60 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 30
+Gender = 0
+Hair = 2
+;等级
+Level = 111
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=135
+UseSkill =破魂斩,四级英雄剑术,白日门攻杀,四级英雄刺杀,四级英雄半月,白日门烈火,白日门野蛮,英雄开天斩,白日门狮吼功,白日门抱月,白日门龙影剑,白日门护体
+;包裹物品
+InitItems = 
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=王者战甲(男)
+;武器
+UseItems1=传奇神剑
+;照明物
+UseItems2=皓月勋章
+;项链
+UseItems3=皓月项链
+;头盔
+UseItems4=魔龙盔
+;左手镯
+UseItems5=传奇护腕
+;右手镯
+UseItems6=传奇护腕
+;左戒指
+UseItems7=主宰之戒
+;右戒指
+UseItems8=主宰之戒
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+;斗笠
+UseItems13=必杀斗笠(战)
+
+
+
+
+
+
+
+
+
+
+
+
+

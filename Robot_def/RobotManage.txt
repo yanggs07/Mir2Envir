@@ -1,0 +1,1756 @@
+[@开启赌博]
+#if
+#act
+mov G76  1
+
+
+[假人启动]
+#ACT
+Gmexecute 开始提问 @全部启动
+BREAK
+
+
+
+[@假人会]
+#ACT
+Gmexecute 开始提问 @加入行会
+BREAK
+
+
+
+[@假人说话]
+#IF
+#act
+Gmexecute 开始提问 @假人说话
+
+
+[@神秘商人开启]
+#if
+#act
+mov a707 开启
+sendmsg 0 神龙边境神秘商人带来了大量珍贵的商品，大家快去抢购吧！
+
+[@神秘商人关闭]
+#if
+#act
+mov a707 关闭
+
+
+[@叛军BOSS]
+#if
+CHECKMAPMOBCOUNT  pjjt  39 56 邪恶教主  =  0   300
+#act
+MISSION pjjt  39 56
+  PARAM1 39
+  PARAM2 56
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  邪恶教主
+DELAYGOTO 1000 @BOSS1
+
+[@BOSS1]
+#ACT
+SendCenterMsg 58  0 邪恶教主出现在了邪教祭坛附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 邪恶教主出现在了邪教祭坛附近,玛法勇士速去击杀
+SENDMSG 0 邪恶教主出现在了邪教祭坛附近,玛法勇士速去击杀
+
+
+#if
+CHECKMAPMOBCOUNT  pjdz  35 31 叛军统领  =  0   300
+#act
+MISSION pjdz  35 31
+  PARAM1 35
+  PARAM2 31
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  叛军统领
+SendCenterMsg 58  0 叛军统领出现在了叛军大帐附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 叛军统领出现在了叛军大帐附近,玛法勇士速去击杀
+SENDMSG 0 叛军统领出现在了叛军大帐附近,玛法勇士速去击杀
+break
+
+
+[@狐月BOSS]
+#if
+CHECKMAPMOBCOUNT  FOX02 223 305 狐月之石  =  0   300
+#act
+MISSION FOX02 223 305
+  PARAM1 223
+  PARAM2 305
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  狐月之石
+SendCenterMsg 58  0 狐月之石出现在了狐月山附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 狐月之石出现在了狐月山附近,玛法勇士速去击杀
+SENDMSG 0 狐月之石出现在了狐月山附近,玛法勇士速去击杀
+break
+
+
+[@瘟疫BOSS]
+#if
+CHECKMAPMOBCOUNT  WYZZ01 53 42 瘟疫统帅  =  0   80
+#act
+MISSION WYZZ01 53 42
+  PARAM1 53
+  PARAM2 42
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  瘟疫统帅
+SendCenterMsg 58  0 瘟疫统帅出现在了瘟疫沼泽深处,玛法勇士速去击杀 1  10  1
+SENDMSG 0 瘟疫统帅出现在了瘟疫沼泽深处,玛法勇士速去击杀
+break
+
+
+
+
+
+
+[@要塞BOSS]
+#if
+CHECKMAPMOBCOUNT  nanm 271 93 蛮荒之王  =  0   300
+#act
+MISSION nanm 271 93
+  PARAM1 271
+  PARAM2 93
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  蛮荒之王
+SendCenterMsg 58  0 蛮荒之王出现在了龙爪要塞271,93,玛法勇士速去击杀 1  10  1
+SENDMSG 0 蛮荒之王出现在了龙爪要塞271,93,玛法勇士速去击杀
+break
+
+
+
+[@血池BOSS]
+#if
+CHECKMAPMOBCOUNT  xcboss 69 72 血灵教主  =  0   300
+#act
+MISSION xcboss 69 72
+  PARAM1 69
+  PARAM2 72
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  血灵教主
+SendCenterMsg 58  0 血灵教主出现在了决战之地,玛法勇士速去击杀 1  10  1
+SENDMSG 0 血灵教主出现在了决战之地,玛法勇士速去击杀
+break
+
+
+[@连接BOSS]
+#if
+CHECKMAPMOBCOUNT  xcljtd 85 22 血池教主  =  0   300
+#act
+MISSION xcljtd 85 22
+  PARAM1 85
+  PARAM2 22
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  血池教主
+SendCenterMsg 58  0 血池教主出现在了血池连接通道,玛法勇士速去击杀 1  10  1
+SENDMSG 0 血池教主出现在了血池连接通道,玛法勇士速去击杀
+break
+
+
+
+
+
+
+
+
+[@森林BOSS]
+#if
+CHECKMAPMOBCOUNT  sldg 340 541 丛林破坏者  =  0   300
+#act
+MISSION sldg 340 541
+  PARAM1 340
+  PARAM2 541
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  丛林破坏者
+SendCenterMsg 58  0 丛林破坏者出现在了野兽森林,玛法勇士速去击杀 1  10  1
+SENDMSG 0 丛林破坏者出现在了野兽森林,玛法勇士速去击杀
+break
+
+
+
+
+[@营地BOSS]
+#if
+CHECKMAPMOBCOUNT  sldg 509 466 蛮王  =  0   300
+#act
+MISSION sldg 509 466
+  PARAM1 509
+  PARAM2 466
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  蛮王
+SendCenterMsg 58  0 蛮王出现在了蛮族营地,玛法勇士速去击杀 1  10  1
+SENDMSG 0 蛮王出现在了蛮族营地,玛法勇士速去击杀
+break
+
+
+
+
+[@迷失BOSS]
+#if
+CHECKMAPMOBCOUNT  d2 89 84 迷失洞主  =  0   300
+#act
+MISSION d2 89 84
+  PARAM1 89
+  PARAM2 84
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  迷失洞主
+SendCenterMsg 58  0 迷失洞主出现在了迷失洞穴二层,玛法勇士速去击杀 1  10  1
+SENDMSG 0 迷失洞主出现在了迷失洞穴二层,玛法勇士速去击杀
+break
+
+
+
+
+
+
+
+
+;六大暗之
+[@六大暗之BOSS]
+#if
+CHECKMAPMOBCOUNT  T232 22 24 八卦沃玛教主  =  0   300
+#act
+MISSION T232 22 24
+  PARAM1 22
+  PARAM2 24
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦沃玛教主
+break
+
+#if
+CHECKMAPMOBCOUNT  T339 18 26 八卦骷髅精灵  =  0   300
+#act
+MISSION T339 18 26
+  PARAM1 18
+  PARAM2 26
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦骷髅精灵
+break
+
+
+#if
+CHECKMAPMOBCOUNT  T219 26 30 八卦双头金刚  =  0   300
+#act
+MISSION T219 26 30
+  PARAM1 26
+  PARAM2 30
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦双头金刚
+break
+
+
+#if
+CHECKMAPMOBCOUNT  T315 24 24 八卦黄泉教主  =  0   300
+#act
+MISSION T315 24 24
+  PARAM1 24
+  PARAM2 24
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦黄泉教主
+break
+
+
+#if
+CHECKMAPMOBCOUNT  T118 14 15 八卦双头血魔  =  0   300
+#act
+MISSION T118 14 15
+  PARAM1 14
+  PARAM2 15
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦双头血魔
+break
+
+#if
+CHECKMAPMOBCOUNT  T218 14 15 八卦虹魔教主 =  0   300
+#act
+MISSION T218 14 15
+  PARAM1 14
+  PARAM2 15
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  八卦虹魔教主
+break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@zdzqs]
+#if
+#act
+Gmexecute 开始提问 @自动穿戴真气石
+
+
+
+[@mzhx]
+#if
+#act
+Gmexecute 开始提问 @mzhx
+
+
+[@酒馆]
+#if
+#act
+Gmexecute 开始提问 @酒馆激情
+SendCenterMsg 58  0 酒馆激情开始，玛法勇士们，速去酒馆激情吧！！ 1  10  1
+SENDMSG 0 酒馆激情开始，玛法勇士们，速去酒馆激情吧！！
+SENDMSG 0 酒馆激情开始，玛法勇士们，速去酒馆激情吧！！
+
+
+
+[@公孙]
+#if
+CHECKMAPMOBCOUNT  3  387 365 公孙  =  0   300
+#act
+MISSION 3  387 365
+  PARAM1 387
+  PARAM2 365
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  公孙
+SendCenterMsg 58  0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖公孙〗出现在了盟重387:365附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+[@阮二]
+#if
+CHECKMAPMOBCOUNT  5  212 543 阮二  =  0   300
+#act
+MISSION 5  212 543
+  PARAM1 212
+  PARAM2 543
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  阮二
+SendCenterMsg 58  0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮二〗出现在了苍月岛212:543附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+
+[@阮七]
+#if
+CHECKMAPMOBCOUNT  0  186 472 阮七  =  0   300
+#act
+MISSION 0  186 472
+  PARAM1 186
+  PARAM2 472
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  阮七
+SendCenterMsg 58  0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮七〗出现在了比奇186:472附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+
+[@吴二]
+#if
+CHECKMAPMOBCOUNT  2  302 377 吴二  =  0   300
+#act
+MISSION 2  302 377
+  PARAM1 302
+  PARAM2 377
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  吴二
+SendCenterMsg 58  0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖吴二〗出现在了毒蛇山谷302:377附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+
+
+
+
+
+
+
+[@刘四]
+#if
+CHECKMAPMOBCOUNT  4  283 309 刘四  =  0   300
+#act
+MISSION 4  283 309
+  PARAM1 283
+  PARAM2 309
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  刘四
+SendCenterMsg 58  0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖刘四〗出现在了封魔谷283:309附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+
+[@晁大]
+#if
+CHECKMAPMOBCOUNT  6  160 335 晁大  =  0   300
+#act
+MISSION 6  160 335
+  PARAM1 160
+  PARAM2 335
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  晁大
+SendCenterMsg 58  0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖晁大〗出现在了魔龙城160:335附近,玛法勇士速去惩奸除恶
+break
+
+
+
+
+
+[@阮五]
+#if
+CHECKMAPMOBCOUNT  1  366 353 阮五  =  0   300
+#act
+MISSION 1  366 353
+  PARAM1 366
+  PARAM2 353
+  PARAM3 1
+  PARAM4 1
+  MOBPLACE  阮五
+SendCenterMsg 58  0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去惩奸除恶
+#elseact
+SendCenterMsg 58  0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去击杀 1  10  1
+SENDMSG 0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去惩奸除恶
+SENDMSG 0 江洋大盗〖阮五〗出现在了沃玛森林366:353附近,玛法勇士速去惩奸除恶
+break
+
+
+
+[@登陆陪练]
+#IF
+EQUAL A650 开启
+CheckMapHumanCount  3  > 0
+CHECKMAPHUMANCOUNT 3 < 33
+#ACT
+AILOGONEX 3 330 330  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+#IF
+EQUAL A650 开启
+CheckMapHumanCount  apcq  > 0
+CHECKMAPHUMANCOUNT apcq < 10
+#ACT
+AILOGONEX apcq 330 330  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+
+#if
+EQUAL A650 开启
+CheckMapHumanCount  0  > 0
+CHECKMAPHUMANCOUNT 0 < 10
+#act
+AISTART
+AILogOnEx  0 330 270 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx  0 330 270 1 ..\QuestDiary\爱拼分享\智能陪练\PK低级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\PK低级陪练列表英雄.txt
+AILogOnEx 0 330 270  1 ..\QuestDiary\爱拼分享\智能陪练\15级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\15级陪练列表英雄.txt
+AILogOnEx 0 650 629  1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx  0 288 616 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx  0 265 600 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+AILogOnEx  0 388 453 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+AILogOnEx  0 465 533 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+break
+
+
+#IF
+EQUAL A650 开启
+CheckMapHumanCount  sldg  > 0
+CHECKMAPHUMANCOUNT sldg < 10
+#ACT
+AILOGONEX sldg 261 321  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+
+
+#IF
+EQUAL A650 开启
+CheckMapHumanCount MHFY  > 0
+CHECKMAPHUMANCOUNT MHFY < 5
+#ACT
+AILOGONEX MHFY 261 321  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+
+
+[@登陆陪练1]
+#IF
+EQUAL A800 开启
+CheckMapHumanCount  3  > 0
+CHECKMAPHUMANCOUNT 3 < 44
+#ACT
+AILOGONEX 3 330 330  3 ..\QuestDiary\雪花制作\智能陪练\02级陪练.txt ..\QuestDiary\雪花制作\智能陪练\02级英雄陪练.txt
+BREAK
+
+
+
+#IF
+EQUAL A800 开启
+CheckMapHumanCount  apcq  > 0
+CHECKMAPHUMANCOUNT apcq < 36
+#ACT
+AILOGONEX apcq 330 330  1 ..\QuestDiary\雪花制作\智能陪练\02级陪练.txt ..\QuestDiary\雪花制作\智能陪练\02级英雄陪练.txt
+BREAK
+
+
+
+#if
+EQUAL A800 开启
+CheckMapHumanCount  0  > 0
+CHECKMAPHUMANCOUNT 0 < 10
+#act
+AISTART
+AILogOnEx  0 330 270 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx 0 650 629  1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx  0 288 616 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+AILogOnEx  0 265 600 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+AILogOnEx  0 388 453 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+AILogOnEx  0 465 533 1 ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt 
+break
+
+
+#IF
+EQUAL A800 开启
+CheckMapHumanCount  sldg  > 0
+CHECKMAPHUMANCOUNT sldg < 10
+#ACT
+AILOGONEX sldg 261 321  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+
+
+#IF
+EQUAL A800 开启
+CheckMapHumanCount MHFY  > 0
+CHECKMAPHUMANCOUNT MHFY < 5
+#ACT
+AILOGONEX MHFY 261 321  1 ..\QuestDiary\假人陪玩\智能陪练\陪练列表.txt ..\QuestDiary\假人陪玩\智能陪练\英雄陪练列表.txt
+BREAK
+
+
+
+
+
+
+[@假人充钱]
+#IF
+EQUAL A652 开启
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\玩家名字.txt S13
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\冲值数量.txt S14
+SENDMSG 0 ★恭喜玩家[<$STR(S13)>]使用我服推出的在线支付自动冲值系统，购买了<$STR(S14)>元宝★
+SENDMSG 0 ☆玩家消费资金仅提供服务器正常发展,免费玩家可以用时间来弥补,最后祝[<$STR(S13)>]游戏愉快☆
+BREAK
+
+
+[@假人自动攻城]
+#if
+equal  A651  攻城
+#act
+Gmexecute 开始提问 @加入行会
+Gmexecute 开始提问 @攻打沙城
+
+
+
+[@假人打怪]
+#if
+equal A653 开启
+#act
+Gmexecute 开始提问 @假人打怪_1
+
+
+
+
+
+
+
+
+[@攻城]
+#act
+ADDATTACKSABUKALL 0
+SENDMSG 0  20:00.　　　　　　　　　　　　　　　　　　　　　　　　　  255  241
+SENDMSG 0  　　　　　　　　　　　╔┅┅┅┅╗　　　　　　　　　　　  255  241
+SENDMSG 0  ╔┅┅┅┅┅┅┅┅┅┅┇整点活动┇┅┅┅┅┅┅┅┅┅┅╗  255  241
+SENDMSG 0  ┇　　　　　　　　　　╚┅┅┅┅╝　　　　　　　　　　┇  255  241
+SENDMSG 0  ┇　　　　　　　　　　　　　　　　　　　　　　　　　　┇  255  241
+SENDMSG 0  ┇　　　　沙巴克攻城战开始,勇士们为荣誉而战.　　　　　┇  255  241
+SENDMSG 0  ┇　　　玩家通过土城左下角的"活动大使"参与活动　　　　┇  255  241
+SENDMSG 0  ┇　　　　　　　　　　　　　　　　　　　　　　　　　　┇  255  241
+SENDMSG 0  ╚┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╝  255  241
+break
+
+
+
+
+
+[@邪灵1]
+#IF
+CheckMonMap T1 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T1 29 28 邪灵叛军刀斧手|1|148 20 20
+MONGENEX T1 77 23 邪灵叛军策士|1|148 20 20
+MONGENEX T1 28 76 邪灵叛军武士|1|148 20 20
+MONGENEX T1 81 73 邪灵叛军弓箭手|1|20 20 20
+MONGENEX T1 29 28 邪灵叛军魔法师|1|20 20 20
+MONGENEX T1 77 23 邪灵邪恶巫师|1|148 20 20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@邪灵2]
+#IF
+CheckMonMap T2 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T2 77 23 邪灵瘟疫毒牙|1|148 20 20
+MONGENEX T2 29 28 邪灵瘟疫鱼人|1|148 20 20
+MONGENEX T2 81 73 邪灵瘟疫金蟾|1|148 20 20
+MONGENEX T2 28 76 邪灵瘟疫长老|1|148 20 20
+MONGENEX T2 77 23 邪灵瘟疫使者|1|148 20 20
+
+
+
+
+
+
+
+
+[@邪灵3]
+#IF
+CheckMonMap T3 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T3 77 23 邪灵烈焰法师|1|148 20 20
+MONGENEX T3 29 28 邪灵金锤巨魔|1|148 20 20
+MONGENEX T3 81 73 邪灵爆裂赤魔|1|148 20 20
+MONGENEX T3 28 76 邪灵血池兵役|1|148 20 20
+MONGENEX T3 77 23 邪灵血池恶镰|1|148 20 20
+MONGENEX T3 81 73 邪灵血池双刀|1|148 20 20
+MONGENEX T3 28 76 邪灵血池护法|1|148 20 20
+MONGENEX T3 28 76 邪灵血池族长|1|148 20 20
+
+
+
+[@邪灵4]
+#IF
+CheckMonMap T4 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T4 77 23 邪灵边境刀手|1|148 20 20
+MONGENEX T4 29 28 邪灵边境长矛兵|1|148 20 20
+MONGENEX T4 81 73 邪灵边境刀兵|1|148 20 20
+MONGENEX T4 28 76 邪灵边境驯兽师|1|148 20 20
+MONGENEX T4 77 23 邪灵边境勇士|1|148 20 20
+MONGENEX T4 81 73 邪灵边境刀斧手|1|148 20 20
+
+
+[@邪灵5]
+#IF
+CheckMonMap T5 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T5 77 23 邪灵黑熊|1|148 20 20
+MONGENEX T5 29 28 邪灵棕熊|1|148 20 20
+MONGENEX T5 81 73 邪灵狮子|1|148 20 20
+MONGENEX T5 28 76 邪灵豹子|1|148 20 20
+MONGENEX T5 77 23 邪灵丛林破坏者|1|148 100 20
+
+
+
+
+
+[@邪灵6]
+#IF
+CheckMonMap T6 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T6 77 23 邪灵精兵战士|1|148 20 20
+MONGENEX T6 29 28 邪灵蛮兵|1|148 20 20
+MONGENEX T6 81 73 邪灵锤兵|1|148 20 20
+MONGENEX T6 28 76 邪灵斧兵|1|148 20 20
+MONGENEX T6 77 23 邪灵双刀客|1|148 20 20
+
+
+
+
+
+
+[@邪灵7]
+#IF
+CheckMonMap T7 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T7 29 28 邪灵巨刃力士|1|148 20 20
+MONGENEX T7 81 73 邪灵急先锋|1|148 20 20
+MONGENEX T7 28 76 邪灵魅影暗刺|1|148 20 20
+MONGENEX T7 77 23 邪灵强毒法师|1|148 20 20
+
+
+
+[@邪灵8]
+#IF
+CheckMonMap T8 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T8 77 23 邪灵迷失刀客|1|148 20 20
+MONGENEX T8 29 28 邪灵迷失弩手|1|148 20 20
+MONGENEX T8 81 73 邪灵迷失羽林卫|1|148 20 20
+MONGENEX T8 28 76 邪灵迷失勇士|1|148 20 20
+MONGENEX T8 77 23 邪灵镰骨妖|1|148 20 20
+MONGENEX T8 81 73 邪灵炎骨妖|1|148 20 20
+
+
+
+
+[@邪灵9]
+#IF
+CheckMonMap T9 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T9 77 23 邪灵叛军统领|1|148 20 20
+MONGENEX T9 29 28 邪灵邪恶教主|1|148 20 20
+MONGENEX T9 81 73 邪灵瘟疫统帅|1|148 20 20
+MONGENEX T9 28 76 邪灵血池统领|1|148 20 20
+
+
+
+[@邪灵10]
+#IF
+CheckMonMap T10 1
+#ACT
+#ELSEACT
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+SENDMSG 0 邪灵大殿怪物突破封印，勇士们速去天机老人处封印邪灵！
+MONGENEX T10 77 23 邪灵血灵教主|1|148 20 20
+MONGENEX T10 29 28 邪灵边境蛮荒主|1|148 20 20
+MONGENEX T10 81 73 邪灵蛮王|1|148 20 20
+MONGENEX T10 28 76 邪灵迷失洞主|1|148 20 20
+
+
+
+
+
+
+[@龙卫山谷开阔地刷怪]
+#IF
+#ACT
+SENDMSG 0 龙卫山谷开阔地怪物异常活跃，刷怪数量大幅增加！
+SENDMSG 0 龙卫山谷开阔地怪物异常活跃，刷怪数量大幅增加！
+MONGENEX KKD 69 73 龙卫赤月恶魔|1|148 100 20
+MONGENEX KKD 69 73 龙卫虹魔教主|1|148 100 40
+MONGENEX KKD 69 73 龙卫黄泉教主|1|148 100 40
+MONGENEX KKD 69 73 龙卫牛魔王|1|148 100 40
+MONGENEX KKD 69 73 龙卫白野猪|1|148 100 60
+MONGENEX KKD 69 73 龙卫黑野猪|1|148 100 60
+MONGENEX KKD 69 73 龙卫红野猪|1|148 100 60
+BREAK
+
+
+
+[@每天清理]
+#IF
+#ACT
+CLEARNAMELIST ..\QuestDiary\雪花制作\比奇杀鸡.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境内容.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境骑兵.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境驯兽师.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境勇士.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\赤狐统领.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\黑狐统领.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除魔次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除魔轮数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除魔内容.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除魔任务.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除妖次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除妖奖励名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\除妖内容.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\帝国挑战任务.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\帝国挑战书.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\福泽秘境.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\购买16倍名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\购买多倍名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\黑熊.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\狐狸卫士.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\狐月挑战名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\护国次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\护国内容.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\剿匪名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\精修任务.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\精修任务次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\领取好运名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\领取挑战书.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\龙爪次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\每日许愿玄铁.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\每日巡游.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\魔龙刀兵.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\叛军刀斧手.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\叛军武士.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\叛军幽灵.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\普通狐狸.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\千里寻宝名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\杀死沃玛怪物.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\声望任务.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\声望任务次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\狮子.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\石墓杀猪.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\收集任务名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\素狐统领.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\天机次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\挑战内容.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\王者秘境次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\寻宝任务.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\元宝千里寻宝名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\元宝天机次数.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\棕熊.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\龙卫山谷开阔地次数.txt
+CLEARNAMELIST ..\QUESTDIARY\雪花制作\神龙秘境名单.txt
+CLEARNAMELIST ..\QUESTDIARY\雪花制作\开启军鼓.txt
+CLEARNAMELIST ..\QUESTDIARY\雪花制作\开启神龙印.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\领取元宝.txt
+
+
+
+
+
+
+[@每月清理]
+#IF
+#ACT
+CLEARNAMELIST ..\QuestDiary\雪花制作\参加35天佑名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\参加70天佑名单.txt
+
+
+
+
+[@每周清理]
+CLEARNAMELIST ..\QuestDiary\雪花制作\领取70天佑名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\领取35天佑名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\参加好运名单.txt
+CLEARNAMELIST ..\QuestDiary\雪花制作\边境声望.txt
+
+
+
+
+
+[@巨魔开始]
+#ACT
+MOV A82 开启
+SENDMSG 0 巨魔之巢内的瘴气变的稀薄了，各位准备攻打巨魔之巢的勇士，请速速集结！
+break
+
+[@巨魔结束]
+#ACT
+MOV A82 关闭
+SENDMSG 0 巨魔之巢内的瘴气变的稠密了，各位准备攻打巨魔之巢的勇士，请于次日11:00-13:00再来！
+break
+
+
+
+[@神龙秘境活动开启]
+#IF
+#ACT
+MOV A107 开启
+CLEARMAPMON wanbao
+SendCenterMsg 151 0 “神龙秘境”活动已开启 1 4 2
+SENDMSG 0 神龙秘境活动大赛已经开启,玛法勇士们快拿起锄头去寻找财富吧！
+SENDMSG 0 神龙秘境活动大赛已经开启,玛法勇士们快拿起锄头去寻找财富吧！
+SENDMSG 0 神龙秘境活动大赛已经开启,玛法勇士们快拿起锄头去寻找财富吧！
+BREAK
+
+
+
+[@神龙秘境活动关闭]
+#IF
+#ACT
+MOV A107 关闭
+gmexecute 开始提问 @秘境关闭
+SendCenterMsg 151 0 “神龙秘境挖宝”活动已关闭 1 4 2
+SendCenterMsg 151 0 “神龙秘境挖宝”活动已关闭 1 4 2
+SendCenterMsg 151 0 “神龙秘境挖宝”活动已关闭 1 4 2
+BREAK
+
+
+
+
+[@寻宝开门]
+#if
+checklevel > 35
+#act
+MOV G129 3
+Gmexecute 开始提问 @进入欢乐寻宝
+SENDMSG 0 龙域夺宝战场地图已经开放,需要进入的赶快找传送员
+SENDMSG 0 大门开放20分钟以后自动关闭,各位勇士抓紧时间进入!
+
+[@寻宝关门]
+#if
+#ACT
+MOV G129 0
+SENDMSG 0 龙域夺宝战场已经关闭，开放时间关注游戏公告提示
+
+[@怪物攻城1]
+#if
+CheckRangeMonCount 3 627 281 8 > 1
+#ACT
+SendCenterMsg 58  0 告急，沙巴克已被怪物占领！勇士们速去驱赶怪物！ 1  10  1
+
+[@怪物攻城关闭]
+#if
+CheckRangeMonCount 3 627 281 8 > 1
+#ACT
+mov a777 关闭
+mov a778 失败
+CLEARNAMELIST ..\QUESTDIARY\雪花制作\怪物攻城.txt
+SendCenterMsg 58  0  沙巴克已被怪物占领！勇士驱赶怪物失败！ 1  10  1
+#elseact
+mov a777 关闭
+mov a778 成功
+SendCenterMsg 151  0  玛法勇士成功驱赶入侵怪物，成功守护家园！ 1  10  1
+
+
+[@怪物攻城]
+#IF
+#ACT
+mov a777 开启
+SendCenterMsg 58  0 沙巴克告急！大波怪物入侵土城，勇士们速去守护家园！ 1  10  1
+SendCenterMsg 58  0 沙巴克告急！大波怪物入侵土城，勇士们速去守护家园！ 1  10  1
+SendCenterMsg 58  0 沙巴克告急！大波怪物入侵土城，勇士们速去守护家园！ 1  10  1
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 660
+  PARAM2 451
+  PARAM3 50
+  PARAM4 10
+  MOBPLACE 火尾黑狐王
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 660
+  PARAM2 451
+  PARAM3 50
+  PARAM4 10
+  MOBPLACE 金爪赤狐王
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 667
+  PARAM2 451
+  PARAM3 50
+  PARAM4 10
+  MOBPLACE 玉面素狐王
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 492
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 邪恶教主
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 492
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 叛军统领
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 492
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 瘟疫使者
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 392
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 瘟疫统帅
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 412
+  PARAM3 20
+  PARAM4 5
+  MOBPLACE 蛮荒之王
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 645
+  PARAM2 352
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 血池恶镰
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 645
+  PARAM2 352
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 血池族长
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 645
+  PARAM2 352
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 烈焰法师
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 412
+  PARAM3 20
+  PARAM4 2
+  MOBPLACE 丛林破坏者
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 666
+  PARAM2 428
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 急先锋
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 614
+  PARAM2 412
+  PARAM3 5
+  PARAM4 1
+  MOBPLACE 蛮王
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 666
+  PARAM2 428
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 炎骨妖
+
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 664
+  PARAM2 412
+  PARAM3 5
+  PARAM4 1
+  MOBPLACE 迷失洞主
+
+
+#if
+#act
+  MISSION 3 627 281
+  PARAM1 666
+  PARAM2 328
+  PARAM3 20
+  PARAM4 10
+  MOBPLACE 瘟疫长老
+
+
+[@开始摇骰子]
+#IF
+LARGE G71 0
+SMALL G71 7
+equal G77 0
+#ACT
+mov G72 <$STR(G71)>
+Gmexecute 开始提问  @fgfgfg
+mov G77 60
+break
+
+#IF
+equal G77 0
+equal G76 1
+#ACT
+movr G72 6
+inc G72 1
+Gmexecute 开始提问  @fgfgfg
+mov G77 60
+break
+
+#IF
+EQUAL G77 10
+equal G76 1
+#ACT
+SENDMSG 0 提示：拉斯维加斯还有10秒种开始摇动骰子，要下注的玩家赶快去闭关修炼地图下注！
+DEC G77 1
+break
+
+#IF
+LARGE G77 0
+equal G76 1
+#ACT
+DEC G77 1
+break
+
+
+;=============赌场==========
+[@fgfgfg]
+#If
+CheckInMapRange 0171 15 16 20
+check [65] 1
+checknamelist ..\QuestDiary\重要数据\压注名单.txt
+#ACT
+mov D0 <$STR(G72)>
+playdice 1 @cube_cds
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+#ACT
+mov D0 <$STR(G72)>
+playdice 1 @dutouzi_ll
+#SAY
+正在投骰子。。。\ \
+
+[@cube_cds]
+#IF
+check [65] 0
+#ACT
+goto @dutouzi_ll
+break
+
+;-------------------大中小开始--------
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 6
+LARGE N89 0
+LARGE N78 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N78)>
+inc G73 <$STR(N78)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N78)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 5
+LARGE N89 0
+LARGE N78 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N78)>
+inc G73 <$STR(N78)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N78)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 4
+LARGE N90 0
+LARGE N79 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N79)>
+inc G73 <$STR(N79)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N79)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 3
+LARGE N90 0
+LARGE N79 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N79)>
+inc G73 <$STR(N79)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N79)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 2
+LARGE N91 0
+LARGE N80 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N80)>
+inc G73 <$STR(N80)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N80)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 1
+LARGE N91 0
+LARGE N80 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N80)>
+inc G73 <$STR(N80)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N80)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+;-------------------大中小结束--------
+;-------------------单双开始--------
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 6
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 4
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 2
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 5
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 3
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 1
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+;-------------------单双结束--------
+;-------------------点数开始--------
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 1
+LARGE N94 0
+LARGE N83 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N83)>
+inc G73 <$STR(N83)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N83)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 2
+LARGE N95 0
+LARGE N84 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N84)>
+inc G73 <$STR(N84)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N84)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 3
+LARGE N96 0
+LARGE N85 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N85)>
+inc G73 <$STR(N85)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N85)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 4
+LARGE N97 0
+LARGE N86 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N86)>
+inc G73 <$STR(N86)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N86)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 5
+LARGE N98 0
+LARGE N87 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N87)>
+inc G73 <$STR(N87)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N87)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+
+#IF
+CheckInMapRange 0171 15 16 20
+check [65] 1
+equal D0 6
+LARGE N99 0
+LARGE N88 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N88)>
+inc G73 <$STR(N88)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N88)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+;-------------------点数结束--------
+
+#ELSEACT
+CLEARDELAYGOTO
+Set [65] 0
+mov G71 0
+MOV G78 0
+MOV G79 0
+MOV G80 0
+MOV G81 0
+MOV G82 0
+MOV G83 0
+MOV G84 0
+MOV G85 0
+MOV G86 0
+MOV G87 0
+MOV G88 0
+MOV G89 0
+MOV G90 0
+MOV G91 0
+MOV G92 0
+MOV G93 0
+MOV G94 0
+MOV G95 0
+MOV G96 0
+MOV G67 0
+MOV G68 0
+MOV G69 0
+MOV N71 0
+MOV N78 0
+MOV N79 0
+MOV N80 0
+MOV N81 0
+MOV N82 0
+MOV N83 0
+MOV N84 0
+MOV N85 0
+MOV N86 0
+MOV N87 0
+MOV N88 0
+MOV N89 0
+MOV N90 0
+MOV N91 0
+MOV N92 0
+MOV N93 0
+MOV N94 0
+MOV N95 0
+MOV N96 0
+MOV N97 0
+MOV N98 0
+MOV N99 0
+GOTO @dushuol
+
+[@dushuol]
+#SAY
+很可惜...\
+骰子的点数是<$STR(D0)> 和你猜的点数不同.\ \ \
+<离 开/@exit>\
+
+[@dutouzi_cds-lk]
+#IF
+check [65] 1
+LARGE N78 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N78)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N79 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N79)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N80 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N80)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N81 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N81)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N82 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆二层的赌场赢得<$STR(N82)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N83 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N83)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N84 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在在酒馆的赌场赢得<$STR(N84)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N85 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N85)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N86 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N86)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N87 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆二层的赌场赢得<$STR(N87)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N88 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在酒馆的赌场赢得<$STR(N88)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#ELSEACT
+CLEARDELAYGOTO
+goto @dutouzi_ll
+break
+
+[@dutouzi_ll]
+#ACT
+Set [65] 0
+mov G71 0
+MOV G78 0
+MOV G79 0
+MOV G80 0
+MOV G81 0
+MOV G82 0
+MOV G83 0
+MOV G84 0
+MOV G85 0
+MOV G86 0
+MOV G87 0
+MOV G88 0
+MOV G89 0
+MOV G90 0
+MOV G91 0
+MOV G92 0
+MOV G93 0
+MOV G94 0
+MOV G95 0
+MOV G96 0
+MOV G67 0
+MOV G68 0
+MOV G69 0
+MOV N71 0
+MOV N78 0
+MOV N79 0
+MOV N80 0
+MOV N81 0
+MOV N82 0
+MOV N83 0
+MOV N84 0
+MOV N85 0
+MOV N86 0
+MOV N87 0
+MOV N88 0
+MOV N89 0
+MOV N90 0
+MOV N91 0
+MOV N92 0
+MOV N93 0
+MOV N94 0
+MOV N95 0
+MOV N96 0
+MOV N97 0
+MOV N98 0
+MOV N99 0
+break
+
+[@qcyzmd]
+#IF
+#ACT
+CLEARNAMELIST ..\QuestDiary\重要数据\压注名单.txt
+break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,162 @@
+[@狐月天赐]
+{
+#IF
+RANDOM 5
+#ACT
+changeexp + 2000000000
+changengexp + 2000000000
+give 一级军鼓(战) 1
+give 三级军鼓(道) 1
+give 无痕绿宝石 1
+give 4级王者印 1
+givekimneedle 传功令凭证 1
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @1
+
+[@1]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 2000000000
+give 二级军鼓(战) 1
+give 四级军鼓(法) 1
+give 完美绿宝石 1
+give 4级王者印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 2
+#ELSEACT
+GOTO @2
+
+[@2]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 一级军鼓(法) 1
+give 三级军鼓(战) 1
+give 完美绿宝石 1
+give 3级王者印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 2
+#ELSEACT
+GOTO @3
+
+[@3]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 一级军鼓(道) 1
+give 三级军鼓(法) 1
+give 完美绿宝石 1
+give 5级王者印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 2
+#ELSEACT
+GOTO @4
+
+[@4]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 2000000000
+give 四级军鼓(战) 1
+give 二级军鼓(战) 1
+give 完美绿宝石 1
+give 火龙印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @5
+
+
+[@5]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 2000000000
+give 四级军鼓(法) 1
+give 二级军鼓(道) 1
+give 完美绿宝石 1
+give 高级火龙印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @6
+
+[@6]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 四级军鼓(战) 1
+give 二级军鼓(法) 1
+give 完美绿宝石 1
+give 5级王者印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @7
+
+
+[@7]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 五级军鼓(战) 1
+give 完美绿宝石 1
+give 火龙印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @8
+
+[@8]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 五级军鼓(法) 1
+give 极品火龙印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @9
+
+[@9]
+#IF
+RANDOM 5
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 五级军鼓(道) 1
+give 人之极品火龙印 1
+givekimneedle 传功令凭证 2
+givekimneedle 火龙树结晶 1
+#ELSEACT
+GOTO @10
+
+[@10]
+#IF
+#ACT
+changeexp + 4000000000
+changengexp + 4000000000
+give 三级军鼓(道) 1
+give 三级军鼓(法) 1
+give 三级军鼓(战) 1
+give 天之极品火龙印 1
+givekimneedle 传功令凭证 3
+givekimneedle 火龙树结晶 2
+
+
+}

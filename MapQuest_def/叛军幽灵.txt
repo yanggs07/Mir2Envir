@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 寻宝任务 = 2
+CHECKVAR HUMAN 叛军幽灵 < 10
+#ACT
+CALCVAR HUMAN 叛军幽灵 + 1
+savevar human 叛军幽灵 ..\QuestDiary\雪花制作\叛军幽灵.txt
+SENDMSG 7 你已经杀死了<$human(叛军幽灵)>/10个叛军幽灵！
+
+#IF
+CHECKVAR HUMAN 寻宝任务 = 2
+CHECKVAR HUMAN 叛军幽灵 = 10
+#act
+SENDMSG 7 你已经杀死了<$human(叛军幽灵)>/10个叛军幽灵,赶紧去领取奖励吧！

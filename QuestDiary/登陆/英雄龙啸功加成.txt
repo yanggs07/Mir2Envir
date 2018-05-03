@@ -1,0 +1,19 @@
+[@英雄龙啸功加属性]
+{
+
+#IF
+#ACT
+MOV m60 HUMAN 龙啸功等级
+MUL N60 m60 80
+goto @甲属性英雄
+break
+
+[@甲属性英雄]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M60)>
+#act
+CHANGEHUMABILITY 21 + <$STR(N60)> 65535 hero
+break
+
+
+}

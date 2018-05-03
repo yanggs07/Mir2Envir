@@ -1,0 +1,3250 @@
+(@@InPutInteger @@InPutString)
+
+[@MAIN]
+#if
+#act
+bigmain 1
+#say
+
+英勇的将士，欢迎来到神龙帝国！\
+在我这里，你可以查看到你的官职！领取每日俸禄！\
+　\
+<我现在的官职/@官职>      \	\
+<使用官衔凭证/@使用官衔>
+[@使用官衔]
+即日起，只要您拥有官衔凭证即可在我这里\
+直接获得相应的官衔称号\ \
+<使用一阶官衔凭证/@一阶>\
+<使用二阶官衔凭证/@二阶>\
+<使用三阶官衔凭证/@三阶>\
+<使用四阶官衔凭证/@四阶>\
+注：评定后您的官阶直接升级，需小退即可，无法叠加称号\
+注：所评定的官衔都是九品官阶，例：一阶九品元帅\
+
+[@四阶]
+#if
+checkitem 四品官衔凭证 1
+#act
+take 四品官衔凭证 1
+CALCVAR HUMAN 官阶 = 四品九阶总兵
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+RECYCFENGHAO <$USERNAME> 九品九阶伍长
+RECYCFENGHAO <$USERNAME> 九品八阶伍长
+RECYCFENGHAO <$USERNAME> 九品七阶伍长
+RECYCFENGHAO <$USERNAME> 九品六阶伍长
+RECYCFENGHAO <$USERNAME> 九品五阶伍长
+RECYCFENGHAO <$USERNAME> 九品四阶伍长
+RECYCFENGHAO <$USERNAME> 九品三阶伍长
+RECYCFENGHAO <$USERNAME> 九品二阶伍长
+RECYCFENGHAO <$USERNAME> 九品一阶伍长
+RECYCFENGHAO <$USERNAME> 八品九阶什长
+RECYCFENGHAO <$USERNAME> 八品八阶什长
+RECYCFENGHAO <$USERNAME> 八品七阶什长
+RECYCFENGHAO <$USERNAME> 八品六阶什长
+RECYCFENGHAO <$USERNAME> 八品五阶什长
+RECYCFENGHAO <$USERNAME> 八品四阶什长
+RECYCFENGHAO <$USERNAME> 八品三阶什长
+RECYCFENGHAO <$USERNAME> 八品二阶什长
+RECYCFENGHAO <$USERNAME> 八品一阶什长
+RECYCFENGHAO <$USERNAME> 七品九阶都尉
+RECYCFENGHAO <$USERNAME> 七品八阶都尉
+RECYCFENGHAO <$USERNAME> 七品七阶都尉
+RECYCFENGHAO <$USERNAME> 七品六阶都尉
+RECYCFENGHAO <$USERNAME> 七品五阶都尉
+RECYCFENGHAO <$USERNAME> 七品四阶都尉
+RECYCFENGHAO <$USERNAME> 七品三阶都尉
+RECYCFENGHAO <$USERNAME> 七品二阶都尉
+RECYCFENGHAO <$USERNAME> 七品一阶都尉
+RECYCFENGHAO <$USERNAME> 六品九阶校尉
+RECYCFENGHAO <$USERNAME> 六品八阶校尉
+RECYCFENGHAO <$USERNAME> 六品七阶校尉
+RECYCFENGHAO <$USERNAME> 六品六阶校尉
+RECYCFENGHAO <$USERNAME> 六品五阶校尉
+RECYCFENGHAO <$USERNAME> 六品四阶校尉
+RECYCFENGHAO <$USERNAME> 六品三阶校尉
+RECYCFENGHAO <$USERNAME> 六品二阶校尉
+RECYCFENGHAO <$USERNAME> 六品一阶校尉
+RECYCFENGHAO <$USERNAME> 五品九阶参将
+RECYCFENGHAO <$USERNAME> 五品八阶参将
+RECYCFENGHAO <$USERNAME> 五品七阶参将
+RECYCFENGHAO <$USERNAME> 五品六阶参将
+RECYCFENGHAO <$USERNAME> 五品五阶参将
+RECYCFENGHAO <$USERNAME> 五品四阶参将
+RECYCFENGHAO <$USERNAME> 五品三阶参将
+RECYCFENGHAO <$USERNAME> 五品二阶参将
+RECYCFENGHAO <$USERNAME> 五品一阶参将
+RECYCFENGHAO <$USERNAME> 四品九阶总兵
+RECYCFENGHAO <$USERNAME> 四品八阶总兵
+RECYCFENGHAO <$USERNAME> 四品七阶总兵
+RECYCFENGHAO <$USERNAME> 四品六阶总兵
+RECYCFENGHAO <$USERNAME> 四品五阶总兵
+RECYCFENGHAO <$USERNAME> 四品四阶总兵
+RECYCFENGHAO <$USERNAME> 四品三阶总兵
+RECYCFENGHAO <$USERNAME> 四品二阶总兵
+RECYCFENGHAO <$USERNAME> 四品一阶总兵
+RECYCFENGHAO <$USERNAME> 三品九阶都统
+RECYCFENGHAO <$USERNAME> 三品八阶都统
+RECYCFENGHAO <$USERNAME> 三品七阶都统
+RECYCFENGHAO <$USERNAME> 三品六阶都统
+RECYCFENGHAO <$USERNAME> 三品五阶都统
+RECYCFENGHAO <$USERNAME> 三品四阶都统
+RECYCFENGHAO <$USERNAME> 三品三阶都统
+RECYCFENGHAO <$USERNAME> 三品二阶都统
+RECYCFENGHAO <$USERNAME> 三品一阶都统
+RECYCFENGHAO <$USERNAME> 二品九阶将军
+RECYCFENGHAO <$USERNAME> 二品八阶将军
+RECYCFENGHAO <$USERNAME> 二品七阶将军
+RECYCFENGHAO <$USERNAME> 二品六阶将军
+RECYCFENGHAO <$USERNAME> 二品五阶将军
+RECYCFENGHAO <$USERNAME> 二品四阶将军
+RECYCFENGHAO <$USERNAME> 二品三阶将军
+RECYCFENGHAO <$USERNAME> 二品二阶将军
+RECYCFENGHAO <$USERNAME> 二品一阶将军
+RECYCFENGHAO <$USERNAME> 一品九阶元帅
+RECYCFENGHAO <$USERNAME> 一品八阶元帅
+RECYCFENGHAO <$USERNAME> 一品七阶元帅
+RECYCFENGHAO <$USERNAME> 一品六阶元帅
+RECYCFENGHAO <$USERNAME> 一品五阶元帅
+RECYCFENGHAO <$USERNAME> 一品四阶元帅
+RECYCFENGHAO <$USERNAME> 一品三阶元帅
+RECYCFENGHAO <$USERNAME> 一品二阶元帅
+RECYCFENGHAO <$USERNAME> 一品一阶元帅
+GIVEFENGHAO <$USERNAME> 四品九阶总兵
+SendCenterMsg 251 0 恭喜：<$USERNAME>使用四品官衔凭证：获得称号“四品九阶总兵” 1 10 1
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+[失败]：您的没有相应的官衔凭证
+
+[@三阶]
+#if
+checkitem 三品官衔凭证 1
+#act
+take 三品官衔凭证 1
+RECYCFENGHAO <$USERNAME> 九品九阶伍长
+RECYCFENGHAO <$USERNAME> 九品八阶伍长
+RECYCFENGHAO <$USERNAME> 九品七阶伍长
+RECYCFENGHAO <$USERNAME> 九品六阶伍长
+RECYCFENGHAO <$USERNAME> 九品五阶伍长
+RECYCFENGHAO <$USERNAME> 九品四阶伍长
+RECYCFENGHAO <$USERNAME> 九品三阶伍长
+RECYCFENGHAO <$USERNAME> 九品二阶伍长
+RECYCFENGHAO <$USERNAME> 九品一阶伍长
+RECYCFENGHAO <$USERNAME> 八品九阶什长
+RECYCFENGHAO <$USERNAME> 八品八阶什长
+RECYCFENGHAO <$USERNAME> 八品七阶什长
+RECYCFENGHAO <$USERNAME> 八品六阶什长
+RECYCFENGHAO <$USERNAME> 八品五阶什长
+RECYCFENGHAO <$USERNAME> 八品四阶什长
+RECYCFENGHAO <$USERNAME> 八品三阶什长
+RECYCFENGHAO <$USERNAME> 八品二阶什长
+RECYCFENGHAO <$USERNAME> 八品一阶什长
+RECYCFENGHAO <$USERNAME> 七品九阶都尉
+RECYCFENGHAO <$USERNAME> 七品八阶都尉
+RECYCFENGHAO <$USERNAME> 七品七阶都尉
+RECYCFENGHAO <$USERNAME> 七品六阶都尉
+RECYCFENGHAO <$USERNAME> 七品五阶都尉
+RECYCFENGHAO <$USERNAME> 七品四阶都尉
+RECYCFENGHAO <$USERNAME> 七品三阶都尉
+RECYCFENGHAO <$USERNAME> 七品二阶都尉
+RECYCFENGHAO <$USERNAME> 七品一阶都尉
+RECYCFENGHAO <$USERNAME> 六品九阶校尉
+RECYCFENGHAO <$USERNAME> 六品八阶校尉
+RECYCFENGHAO <$USERNAME> 六品七阶校尉
+RECYCFENGHAO <$USERNAME> 六品六阶校尉
+RECYCFENGHAO <$USERNAME> 六品五阶校尉
+RECYCFENGHAO <$USERNAME> 六品四阶校尉
+RECYCFENGHAO <$USERNAME> 六品三阶校尉
+RECYCFENGHAO <$USERNAME> 六品二阶校尉
+RECYCFENGHAO <$USERNAME> 六品一阶校尉
+RECYCFENGHAO <$USERNAME> 五品九阶参将
+RECYCFENGHAO <$USERNAME> 五品八阶参将
+RECYCFENGHAO <$USERNAME> 五品七阶参将
+RECYCFENGHAO <$USERNAME> 五品六阶参将
+RECYCFENGHAO <$USERNAME> 五品五阶参将
+RECYCFENGHAO <$USERNAME> 五品四阶参将
+RECYCFENGHAO <$USERNAME> 五品三阶参将
+RECYCFENGHAO <$USERNAME> 五品二阶参将
+RECYCFENGHAO <$USERNAME> 五品一阶参将
+RECYCFENGHAO <$USERNAME> 四品九阶总兵
+RECYCFENGHAO <$USERNAME> 四品八阶总兵
+RECYCFENGHAO <$USERNAME> 四品七阶总兵
+RECYCFENGHAO <$USERNAME> 四品六阶总兵
+RECYCFENGHAO <$USERNAME> 四品五阶总兵
+RECYCFENGHAO <$USERNAME> 四品四阶总兵
+RECYCFENGHAO <$USERNAME> 四品三阶总兵
+RECYCFENGHAO <$USERNAME> 四品二阶总兵
+RECYCFENGHAO <$USERNAME> 四品一阶总兵
+RECYCFENGHAO <$USERNAME> 三品九阶都统
+RECYCFENGHAO <$USERNAME> 三品八阶都统
+RECYCFENGHAO <$USERNAME> 三品七阶都统
+RECYCFENGHAO <$USERNAME> 三品六阶都统
+RECYCFENGHAO <$USERNAME> 三品五阶都统
+RECYCFENGHAO <$USERNAME> 三品四阶都统
+RECYCFENGHAO <$USERNAME> 三品三阶都统
+RECYCFENGHAO <$USERNAME> 三品二阶都统
+RECYCFENGHAO <$USERNAME> 三品一阶都统
+RECYCFENGHAO <$USERNAME> 二品九阶将军
+RECYCFENGHAO <$USERNAME> 二品八阶将军
+RECYCFENGHAO <$USERNAME> 二品七阶将军
+RECYCFENGHAO <$USERNAME> 二品六阶将军
+RECYCFENGHAO <$USERNAME> 二品五阶将军
+RECYCFENGHAO <$USERNAME> 二品四阶将军
+RECYCFENGHAO <$USERNAME> 二品三阶将军
+RECYCFENGHAO <$USERNAME> 二品二阶将军
+RECYCFENGHAO <$USERNAME> 二品一阶将军
+RECYCFENGHAO <$USERNAME> 一品九阶元帅
+RECYCFENGHAO <$USERNAME> 一品八阶元帅
+RECYCFENGHAO <$USERNAME> 一品七阶元帅
+RECYCFENGHAO <$USERNAME> 一品六阶元帅
+RECYCFENGHAO <$USERNAME> 一品五阶元帅
+RECYCFENGHAO <$USERNAME> 一品四阶元帅
+RECYCFENGHAO <$USERNAME> 一品三阶元帅
+RECYCFENGHAO <$USERNAME> 一品二阶元帅
+RECYCFENGHAO <$USERNAME> 一品一阶元帅
+GIVEFENGHAO <$USERNAME> 三品九阶都统
+CALCVAR HUMAN 官阶 = 三品九阶都统
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+SendCenterMsg 251 0 恭喜：<$USERNAME>使用三品官衔凭证：获得称号“三品九阶都统” 1 10 1
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+[失败]：您的没有相应的官衔凭证
+
+[@二阶]
+#if
+checkitem 二品官衔凭证 1
+#act
+take 二品官衔凭证 1
+RECYCFENGHAO <$USERNAME> 九品九阶伍长
+RECYCFENGHAO <$USERNAME> 九品八阶伍长
+RECYCFENGHAO <$USERNAME> 九品七阶伍长
+RECYCFENGHAO <$USERNAME> 九品六阶伍长
+RECYCFENGHAO <$USERNAME> 九品五阶伍长
+RECYCFENGHAO <$USERNAME> 九品四阶伍长
+RECYCFENGHAO <$USERNAME> 九品三阶伍长
+RECYCFENGHAO <$USERNAME> 九品二阶伍长
+RECYCFENGHAO <$USERNAME> 九品一阶伍长
+RECYCFENGHAO <$USERNAME> 八品九阶什长
+RECYCFENGHAO <$USERNAME> 八品八阶什长
+RECYCFENGHAO <$USERNAME> 八品七阶什长
+RECYCFENGHAO <$USERNAME> 八品六阶什长
+RECYCFENGHAO <$USERNAME> 八品五阶什长
+RECYCFENGHAO <$USERNAME> 八品四阶什长
+RECYCFENGHAO <$USERNAME> 八品三阶什长
+RECYCFENGHAO <$USERNAME> 八品二阶什长
+RECYCFENGHAO <$USERNAME> 八品一阶什长
+RECYCFENGHAO <$USERNAME> 七品九阶都尉
+RECYCFENGHAO <$USERNAME> 七品八阶都尉
+RECYCFENGHAO <$USERNAME> 七品七阶都尉
+RECYCFENGHAO <$USERNAME> 七品六阶都尉
+RECYCFENGHAO <$USERNAME> 七品五阶都尉
+RECYCFENGHAO <$USERNAME> 七品四阶都尉
+RECYCFENGHAO <$USERNAME> 七品三阶都尉
+RECYCFENGHAO <$USERNAME> 七品二阶都尉
+RECYCFENGHAO <$USERNAME> 七品一阶都尉
+RECYCFENGHAO <$USERNAME> 六品九阶校尉
+RECYCFENGHAO <$USERNAME> 六品八阶校尉
+RECYCFENGHAO <$USERNAME> 六品七阶校尉
+RECYCFENGHAO <$USERNAME> 六品六阶校尉
+RECYCFENGHAO <$USERNAME> 六品五阶校尉
+RECYCFENGHAO <$USERNAME> 六品四阶校尉
+RECYCFENGHAO <$USERNAME> 六品三阶校尉
+RECYCFENGHAO <$USERNAME> 六品二阶校尉
+RECYCFENGHAO <$USERNAME> 六品一阶校尉
+RECYCFENGHAO <$USERNAME> 五品九阶参将
+RECYCFENGHAO <$USERNAME> 五品八阶参将
+RECYCFENGHAO <$USERNAME> 五品七阶参将
+RECYCFENGHAO <$USERNAME> 五品六阶参将
+RECYCFENGHAO <$USERNAME> 五品五阶参将
+RECYCFENGHAO <$USERNAME> 五品四阶参将
+RECYCFENGHAO <$USERNAME> 五品三阶参将
+RECYCFENGHAO <$USERNAME> 五品二阶参将
+RECYCFENGHAO <$USERNAME> 五品一阶参将
+RECYCFENGHAO <$USERNAME> 四品九阶总兵
+RECYCFENGHAO <$USERNAME> 四品八阶总兵
+RECYCFENGHAO <$USERNAME> 四品七阶总兵
+RECYCFENGHAO <$USERNAME> 四品六阶总兵
+RECYCFENGHAO <$USERNAME> 四品五阶总兵
+RECYCFENGHAO <$USERNAME> 四品四阶总兵
+RECYCFENGHAO <$USERNAME> 四品三阶总兵
+RECYCFENGHAO <$USERNAME> 四品二阶总兵
+RECYCFENGHAO <$USERNAME> 四品一阶总兵
+RECYCFENGHAO <$USERNAME> 三品九阶都统
+RECYCFENGHAO <$USERNAME> 三品八阶都统
+RECYCFENGHAO <$USERNAME> 三品七阶都统
+RECYCFENGHAO <$USERNAME> 三品六阶都统
+RECYCFENGHAO <$USERNAME> 三品五阶都统
+RECYCFENGHAO <$USERNAME> 三品四阶都统
+RECYCFENGHAO <$USERNAME> 三品三阶都统
+RECYCFENGHAO <$USERNAME> 三品二阶都统
+RECYCFENGHAO <$USERNAME> 三品一阶都统
+RECYCFENGHAO <$USERNAME> 二品九阶将军
+RECYCFENGHAO <$USERNAME> 二品八阶将军
+RECYCFENGHAO <$USERNAME> 二品七阶将军
+RECYCFENGHAO <$USERNAME> 二品六阶将军
+RECYCFENGHAO <$USERNAME> 二品五阶将军
+RECYCFENGHAO <$USERNAME> 二品四阶将军
+RECYCFENGHAO <$USERNAME> 二品三阶将军
+RECYCFENGHAO <$USERNAME> 二品二阶将军
+RECYCFENGHAO <$USERNAME> 二品一阶将军
+RECYCFENGHAO <$USERNAME> 一品九阶元帅
+RECYCFENGHAO <$USERNAME> 一品八阶元帅
+RECYCFENGHAO <$USERNAME> 一品七阶元帅
+RECYCFENGHAO <$USERNAME> 一品六阶元帅
+RECYCFENGHAO <$USERNAME> 一品五阶元帅
+RECYCFENGHAO <$USERNAME> 一品四阶元帅
+RECYCFENGHAO <$USERNAME> 一品三阶元帅
+RECYCFENGHAO <$USERNAME> 一品二阶元帅
+RECYCFENGHAO <$USERNAME> 一品一阶元帅
+GIVEFENGHAO <$USERNAME> 二品九阶将军
+CALCVAR HUMAN 官阶 = 二品九阶将军
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+SendCenterMsg 251 0 恭喜：<$USERNAME>使用二品官衔凭证：获得称号“二品九阶将军” 1 10 1
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+[失败]：您的没有相应的官衔凭证
+
+[@一阶]
+#if
+checkitem 一品官衔凭证 1
+#act
+take 一品官衔凭证 1
+RECYCFENGHAO <$USERNAME> 九品九阶伍长
+RECYCFENGHAO <$USERNAME> 九品八阶伍长
+RECYCFENGHAO <$USERNAME> 九品七阶伍长
+RECYCFENGHAO <$USERNAME> 九品六阶伍长
+RECYCFENGHAO <$USERNAME> 九品五阶伍长
+RECYCFENGHAO <$USERNAME> 九品四阶伍长
+RECYCFENGHAO <$USERNAME> 九品三阶伍长
+RECYCFENGHAO <$USERNAME> 九品二阶伍长
+RECYCFENGHAO <$USERNAME> 九品一阶伍长
+RECYCFENGHAO <$USERNAME> 八品九阶什长
+RECYCFENGHAO <$USERNAME> 八品八阶什长
+RECYCFENGHAO <$USERNAME> 八品七阶什长
+RECYCFENGHAO <$USERNAME> 八品六阶什长
+RECYCFENGHAO <$USERNAME> 八品五阶什长
+RECYCFENGHAO <$USERNAME> 八品四阶什长
+RECYCFENGHAO <$USERNAME> 八品三阶什长
+RECYCFENGHAO <$USERNAME> 八品二阶什长
+RECYCFENGHAO <$USERNAME> 八品一阶什长
+RECYCFENGHAO <$USERNAME> 七品九阶都尉
+RECYCFENGHAO <$USERNAME> 七品八阶都尉
+RECYCFENGHAO <$USERNAME> 七品七阶都尉
+RECYCFENGHAO <$USERNAME> 七品六阶都尉
+RECYCFENGHAO <$USERNAME> 七品五阶都尉
+RECYCFENGHAO <$USERNAME> 七品四阶都尉
+RECYCFENGHAO <$USERNAME> 七品三阶都尉
+RECYCFENGHAO <$USERNAME> 七品二阶都尉
+RECYCFENGHAO <$USERNAME> 七品一阶都尉
+RECYCFENGHAO <$USERNAME> 六品九阶校尉
+RECYCFENGHAO <$USERNAME> 六品八阶校尉
+RECYCFENGHAO <$USERNAME> 六品七阶校尉
+RECYCFENGHAO <$USERNAME> 六品六阶校尉
+RECYCFENGHAO <$USERNAME> 六品五阶校尉
+RECYCFENGHAO <$USERNAME> 六品四阶校尉
+RECYCFENGHAO <$USERNAME> 六品三阶校尉
+RECYCFENGHAO <$USERNAME> 六品二阶校尉
+RECYCFENGHAO <$USERNAME> 六品一阶校尉
+RECYCFENGHAO <$USERNAME> 五品九阶参将
+RECYCFENGHAO <$USERNAME> 五品八阶参将
+RECYCFENGHAO <$USERNAME> 五品七阶参将
+RECYCFENGHAO <$USERNAME> 五品六阶参将
+RECYCFENGHAO <$USERNAME> 五品五阶参将
+RECYCFENGHAO <$USERNAME> 五品四阶参将
+RECYCFENGHAO <$USERNAME> 五品三阶参将
+RECYCFENGHAO <$USERNAME> 五品二阶参将
+RECYCFENGHAO <$USERNAME> 五品一阶参将
+RECYCFENGHAO <$USERNAME> 四品九阶总兵
+RECYCFENGHAO <$USERNAME> 四品八阶总兵
+RECYCFENGHAO <$USERNAME> 四品七阶总兵
+RECYCFENGHAO <$USERNAME> 四品六阶总兵
+RECYCFENGHAO <$USERNAME> 四品五阶总兵
+RECYCFENGHAO <$USERNAME> 四品四阶总兵
+RECYCFENGHAO <$USERNAME> 四品三阶总兵
+RECYCFENGHAO <$USERNAME> 四品二阶总兵
+RECYCFENGHAO <$USERNAME> 四品一阶总兵
+RECYCFENGHAO <$USERNAME> 三品九阶都统
+RECYCFENGHAO <$USERNAME> 三品八阶都统
+RECYCFENGHAO <$USERNAME> 三品七阶都统
+RECYCFENGHAO <$USERNAME> 三品六阶都统
+RECYCFENGHAO <$USERNAME> 三品五阶都统
+RECYCFENGHAO <$USERNAME> 三品四阶都统
+RECYCFENGHAO <$USERNAME> 三品三阶都统
+RECYCFENGHAO <$USERNAME> 三品二阶都统
+RECYCFENGHAO <$USERNAME> 三品一阶都统
+RECYCFENGHAO <$USERNAME> 二品九阶将军
+RECYCFENGHAO <$USERNAME> 二品八阶将军
+RECYCFENGHAO <$USERNAME> 二品七阶将军
+RECYCFENGHAO <$USERNAME> 二品六阶将军
+RECYCFENGHAO <$USERNAME> 二品五阶将军
+RECYCFENGHAO <$USERNAME> 二品四阶将军
+RECYCFENGHAO <$USERNAME> 二品三阶将军
+RECYCFENGHAO <$USERNAME> 二品二阶将军
+RECYCFENGHAO <$USERNAME> 二品一阶将军
+RECYCFENGHAO <$USERNAME> 一品九阶元帅
+RECYCFENGHAO <$USERNAME> 一品八阶元帅
+RECYCFENGHAO <$USERNAME> 一品七阶元帅
+RECYCFENGHAO <$USERNAME> 一品六阶元帅
+RECYCFENGHAO <$USERNAME> 一品五阶元帅
+RECYCFENGHAO <$USERNAME> 一品四阶元帅
+RECYCFENGHAO <$USERNAME> 一品三阶元帅
+RECYCFENGHAO <$USERNAME> 一品二阶元帅
+RECYCFENGHAO <$USERNAME> 一品一阶元帅
+GIVEFENGHAO <$USERNAME> 一品九阶元帅
+CALCVAR HUMAN 官阶 = 一品九阶元帅
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+SendCenterMsg 251 0 恭喜：<$USERNAME>使用一品官衔凭证：获得称号“一品九阶元帅” 1 10 1
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+[失败]：您的没有相应的官衔凭证
+
+
+
+
+
+
+[@官职]
+#if
+CHECKVAR HUMAN 官阶 = 无官阶
+#act
+mov s20 10
+mov s21 九品九阶伍长
+mov s22 无属性
+mov s23 魔血值+100
+mov s24 10
+mov s29 50
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 九品九阶伍长
+#act
+mov s20 30
+mov s21 九品八阶伍长
+mov s22 魔血值+100
+mov s23 魔血值+200
+mov s24 30
+mov s29 150
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 九品八阶伍长
+#act
+mov s20 60
+mov s21 九品七阶伍长
+mov s22 魔血值+200
+mov s23 魔血值+300
+mov s24 60
+mov s29 300
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品七阶伍长
+#act
+mov s20 80
+mov s21 九品六阶伍长
+mov s22 魔血值+300
+mov s23 魔血值+400
+mov s24 80
+mov s29 400
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品六阶伍长
+#act
+mov s20 120
+mov s21 九品五阶伍长
+mov s22 魔血值+400
+mov s23 魔血值+500
+mov s24 120
+mov s29 600
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品五阶伍长
+#act
+mov s20 150
+mov s21 九品四阶伍长
+mov s22 魔血值+500
+mov s23 魔血值+600
+mov s24 150
+mov s29 750
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品四阶伍长
+#act
+mov s20 180
+mov s21 九品三阶伍长
+mov s22 魔血值+600
+mov s23 魔血值+700
+mov s24 180
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品三阶伍长
+#act
+mov s20 200
+mov s21 九品二阶伍长
+mov s22 魔血值+700
+mov s23 魔血值+800
+mov s24 200
+mov s29 1000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品二阶伍长
+#act
+mov s20 220
+mov s21 九品一阶伍长
+mov s22 魔血值+800
+mov s23 魔血值+900
+mov s24 220
+mov s29 1100
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 九品一阶伍长
+#act
+mov s20 250
+mov s21 八品九阶什长
+mov s22 魔血值+900
+mov s23 魔血值+1000,麻痹抗性+20
+mov s24 250
+mov s29 1250
+mov s30 0
+
+
+
+
+
+
+
+
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品九阶什长
+#act
+mov s20 300
+mov s21 八品八阶什长
+mov s22 魔血值+1000,麻痹抗性+20
+mov s23 魔血值+1100,麻痹抗性+22
+mov s24 300
+mov s29 1500
+mov s30 0
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品八阶什长
+#act
+mov s20 320
+mov s21 八品七阶什长
+mov s22 魔血值+1100,麻痹抗性+22
+mov s23 魔血值+1200,麻痹抗性+24
+mov s24 320
+mov s29 1650
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品七阶什长
+#act
+mov s20 350
+mov s21 八品六阶什长
+mov s22 魔血值+1200,麻痹抗性+24
+mov s23 魔血值+1300,麻痹抗性+26
+mov s24 350
+mov s29 1700
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品六阶什长
+#act
+mov s20 380
+mov s21 八品五阶什长
+mov s22 魔血值+1300,麻痹抗性+26
+mov s23 魔血值+1400,麻痹抗性+28
+mov s24 380
+mov s29 1900
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品五阶什长
+#act
+mov s20 400
+mov s21 八品四阶什长
+mov s22 魔血值+1400,麻痹抗性+28
+mov s23 魔血值+1500,麻痹抗性+30
+mov s24 400
+mov s29 2000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品四阶什长
+#act
+mov s20 430
+mov s21 八品三阶什长
+mov s22 魔血值+1500,麻痹抗性+30
+mov s23 魔血值+1600,麻痹抗性+32
+mov s24 430
+mov s29 2100
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品三阶什长
+#act
+mov s20 460
+mov s21 八品二阶什长
+mov s22 魔血值+1600,麻痹抗性+32
+mov s23 魔血值+1700,麻痹抗性+34
+mov s24 460
+mov s29 2300
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品二阶什长
+#act
+mov s20 490
+mov s21 八品一阶什长
+mov s22 魔血值+1700,麻痹抗性+34
+mov s23 魔血值+1800,麻痹抗性+36
+mov s24 490
+mov s29 2500
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 八品一阶什长
+#act
+mov s20 550
+mov s21 七品九阶都尉
+mov s22 魔血值+1800,麻痹抗性+36
+mov s23 魔血值+1900,麻痹抗性+38,火墙伤害抗性+40
+mov s24 550
+mov s29 3000
+mov s30 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 七品九阶都尉
+#act
+mov s20 590
+mov s21 七品八阶都尉
+mov s22 魔血值+1900,麻痹抗性+38,火墙伤害抗性+40
+mov s23 魔血值+2000,麻痹抗性+40,火墙伤害抗性+41
+mov s24 590
+mov s29 3000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品八阶都尉
+#act
+mov s20 630
+mov s21 七品七阶都尉
+mov s22 魔血值+2000,麻痹抗性+40,火墙伤害抗性+41
+mov s23 魔血值+2100,麻痹抗性+42,火墙伤害抗性+42
+mov s24 630
+mov s29 3300
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品七阶都尉
+#act
+mov s20 670
+mov s21 七品六阶都尉
+mov s22 魔血值+2100,麻痹抗性+42,火墙伤害抗性+42
+mov s23 魔血值+2200,麻痹抗性+44,火墙伤害抗性+43
+mov s24 670
+mov s29 3500
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 七品六阶都尉
+#act
+mov s20 800
+mov s21 七品五阶都尉
+mov s22 魔血值+2200,麻痹抗性+44,火墙伤害抗性+43
+mov s23 魔血值+2300,麻痹抗性+46,火墙伤害抗性+44
+mov s24 800
+mov s29 4000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品五阶都尉
+#act
+mov s20 900
+mov s21 七品四阶都尉
+mov s22 魔血值+2300,麻痹抗性+46,火墙伤害抗性+44
+mov s23 魔血值+2400,麻痹抗性+48,火墙伤害抗性+45
+mov s24 900
+mov s29 4500
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品四阶都尉
+#act
+mov s20 1000
+mov s21 七品三阶都尉
+mov s22 魔血值+2400,麻痹抗性+48,火墙伤害抗性+45
+mov s23 魔血值+2500,麻痹抗性+50,火墙伤害抗性+46
+mov s24 1000
+mov s29 5000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品三阶都尉
+#act
+mov s20 1100
+mov s21 七品二阶都尉
+mov s22 魔血值+2500,麻痹抗性+50,火墙伤害抗性+46
+mov s23 魔血值+2600,麻痹抗性+52,火墙伤害抗性+47
+mov s24 1100
+mov s29 6000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品二阶都尉
+#act
+mov s20 1200
+mov s21 七品一阶都尉
+mov s22 魔血值+2600,麻痹抗性+52,火墙伤害抗性+47
+mov s23 魔血值+2700,麻痹抗性+54,火墙伤害抗性+48
+mov s24 1200
+mov s29 6000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 七品一阶都尉
+#act
+mov s20 1300
+mov s21 六品九阶校尉
+mov s22 魔血值+2700,麻痹抗性+54,火墙伤害抗性+48
+mov s23 魔血值+2800,麻痹抗性+56,火墙伤害抗性+57,\合击伤害抗性+57
+mov s24 1300
+mov s29 8000
+mov s30 0
+
+
+
+
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 六品九阶校尉
+#act
+mov s20 2200
+mov s21 六品八阶校尉
+mov s22 魔血值+2800,麻痹抗性+56,火墙伤害抗性+57,\合击伤害抗性+57
+mov s23 魔血值+2900,麻痹抗性+58,火墙伤害抗性+58,\合击伤害抗性+58
+mov s24 2000
+mov s29 11000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品八阶校尉
+#act
+mov s20 2300
+mov s21 六品七阶校尉
+mov s22 魔血值+2900,麻痹抗性+58,火墙伤害抗性+58,\合击伤害抗性+58
+mov s23 魔血值+3000,麻痹抗性+60,火墙伤害抗性+59,\合击伤害抗性+59
+mov s24 2300
+mov s29 11000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品七阶校尉
+#act
+mov s20 2400
+mov s21 六品六阶校尉
+mov s22 魔血值+3000,麻痹抗性+60,火墙伤害抗性+59,\合击伤害抗性+59
+mov s23 魔血值+3100,麻痹抗性+62,火墙伤害抗性+60,\合击伤害抗性+60
+mov s24 2400
+mov s29 12000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品六阶校尉
+#act
+mov s20 2600
+mov s21 六品五阶校尉
+mov s22 魔血值+3100,麻痹抗性+62,火墙伤害抗性+60,\合击伤害抗性+60
+mov s23 魔血值+3200,麻痹抗性+64,火墙伤害抗性+61,\合击伤害抗性+61
+mov s24 2600
+mov s29 13000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品五阶校尉
+#act
+mov s20 3000
+mov s21 六品四阶校尉
+mov s22 魔血值+3200,麻痹抗性+64,火墙伤害抗性+61,\合击伤害抗性+61
+mov s23 魔血值+3300,麻痹抗性+66,火墙伤害抗性+62,\合击伤害抗性+62
+mov s24 3000
+mov s29 15000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品四阶校尉
+#act
+mov s20 3300
+mov s21 六品三阶校尉
+mov s22 魔血值+3300,麻痹抗性+66,火墙伤害抗性+62,\合击伤害抗性+62
+mov s23 魔血值+3400,麻痹抗性+68,火墙伤害抗性+63,\合击伤害抗性+63
+mov s24 3300
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品三阶校尉
+#act
+mov s20 3900
+mov s21 六品二阶校尉
+mov s22 魔血值+3400,麻痹抗性+68,火墙伤害抗性+63,\合击伤害抗性+63
+mov s23 魔血值+3500,麻痹抗性+70,火墙伤害抗性+64,\合击伤害抗性+64
+mov s24 3900
+mov s29 18000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 六品二阶校尉
+#act
+mov s20 4000
+mov s21 六品一阶校尉
+mov s22 魔血值+3500,麻痹抗性+70,火墙伤害抗性+64,\合击伤害抗性+64
+mov s23 魔血值+3600,麻痹抗性+72,火墙伤害抗性+65,\合击伤害抗性+65
+mov s24 4000
+mov s29 20000
+mov s30 0
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 六品一阶校尉
+#act
+mov s20 5000
+mov s21 五品九阶参将
+mov s23 魔血值+3600,麻痹抗性+72,火墙伤害抗性+65,\合击伤害抗性+65
+mov s23 魔血值+3700,麻痹抗性+74,火墙伤害抗性+74,\合击伤害抗性+74,近战伤害抗性+74
+mov s24 5000
+mov s29 25000
+mov s30 0
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品九阶参将
+#act
+mov s20 5500
+mov s21 五品八阶参将
+mov s22 魔血值+3700,麻痹抗性+74,火墙伤害抗性+74,\合击伤害抗性+74,近战伤害抗性+74
+mov s23 魔血值+3800,麻痹抗性+76,火墙伤害抗性+75,\合击伤害抗性+75,近战伤害抗性+75
+mov s24 5500
+mov s29 27000
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 五品八阶参将
+#act
+mov s20 6500
+mov s21 五品七阶参将
+mov s22 魔血值+3800,麻痹抗性+76,火墙伤害抗性+75,\合击伤害抗性+75,近战伤害抗性+75
+mov s23 魔血值+3900,麻痹抗性+78,火墙伤害抗性+76,\合击伤害抗性+76,近战伤害抗性+76
+mov s24 6000
+mov s29 30000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品七阶参将
+#act
+mov s20 7000
+mov s21 五品六阶参将
+mov s22 魔血值+3900,麻痹抗性+78,火墙伤害抗性+76,\合击伤害抗性+76,近战伤害抗性+76
+mov s23 魔血值+4000,麻痹抗性+80,火墙伤害抗性+77,\合击伤害抗性+77,近战伤害抗性+77
+mov s24 7000
+mov s29 35000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品六阶参将
+#act
+mov s20 8000
+mov s21 五品五阶参将
+mov s22 魔血值+4000,麻痹抗性+80,火墙伤害抗性+77,\合击伤害抗性+77,近战伤害抗性+77
+mov s23 魔血值+4100,麻痹抗性+82,火墙伤害抗性+78,\合击伤害抗性+78,近战伤害抗性+78
+mov s24 8000
+mov s29 40000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品五阶参将
+#act
+mov s20 9000
+mov s21 五品四阶参将
+mov s22 魔血值+4100,麻痹抗性+82,火墙伤害抗性+78,\合击伤害抗性+78,近战伤害抗性+78
+mov s23 魔血值+4200,麻痹抗性+84,火墙伤害抗性+79,\合击伤害抗性+79,近战伤害抗性+79
+mov s24 9000
+mov s29 45000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品四阶参将
+#act
+mov s20 10000
+mov s21 五品三阶参将
+mov s22 魔血值+4200,麻痹抗性+84,火墙伤害抗性+79,\合击伤害抗性+79,近战伤害抗性+79
+mov s23 魔血值+4300,麻痹抗性+86,火墙伤害抗性+80,\合击伤害抗性+80,近战伤害抗性+80
+mov s24 10000
+mov s29 50000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品三阶参将
+#act
+mov s20 11000
+mov s21 五品二阶参将
+mov s22 魔血值+4300,麻痹抗性+86,火墙伤害抗性+80,\合击伤害抗性+80,近战伤害抗性+80
+mov s23 魔血值+4400,麻痹抗性+88,火墙伤害抗性+81,\合击伤害抗性+81,近战伤害抗性+81
+mov s24 11000
+mov s29 55000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 五品二阶参将
+#act
+mov s20 12000
+mov s21 五品一阶参将
+mov s22 魔血值+4400,麻痹抗性+88,火墙伤害抗性+81,\合击伤害抗性+81,近战伤害抗性+81
+mov s23 魔血值+4500,麻痹抗性+90,火墙伤害抗性+82,\合击伤害抗性+82,近战伤害抗性+82
+mov s24 12000
+mov s29 60000
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 五品一阶参将
+#act
+mov s20 13000
+mov s21 四品九阶总兵
+mov s22 魔血值+4500,麻痹抗性+90,火墙伤害抗性+82,\合击伤害抗性+82,近战伤害抗性+82
+mov s23 魔血值+4600,麻痹抗性+92,火墙伤害抗性+91,\合击伤害抗性+91,近战伤害抗性+91,连击伤害抗性+91
+mov s24 13000
+mov s29 65000
+mov s30 0
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 四品九阶总兵
+#act
+mov s20 14000
+mov s21 四品八阶总兵
+mov s22 魔血值+4600,麻痹抗性+92,火墙伤害抗性+91,\合击伤害抗性+91,近战伤害抗性+91,连击伤害抗性+91
+mov s23 魔血值+4700,麻痹抗性+94,火墙伤害抗性+92,\合击伤害抗性+92,近战伤害抗性+92,连击伤害抗性+92
+mov s24 14000
+mov s29 70000
+mov s30 0
+
+#if
+CHECKVAR HUMAN 官阶 = 四品八阶总兵
+#act
+mov s20 15000
+mov s21 四品七阶总兵
+mov s22 魔血值+4700,麻痹抗性+94,火墙伤害抗性+92,\合击伤害抗性+92,近战伤害抗性+92,连击伤害抗性+92
+mov s23 魔血值+4800,麻痹抗性+96,火墙伤害抗性+93,\合击伤害抗性+93,近战伤害抗性+93,连击伤害抗性+93
+mov s24 15000
+mov s29 75000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品七阶总兵
+#act
+mov s20 16000
+mov s21 四品六阶总兵
+mov s22 魔血值+4800,麻痹抗性+96,火墙伤害抗性+93,\合击伤害抗性+93,近战伤害抗性+93,连击伤害抗性+93
+mov s23 魔血值+4900,麻痹抗性+98,火墙伤害抗性+94,\合击伤害抗性+94,近战伤害抗性+94,连击伤害抗性+94
+mov s24 16000
+mov s29 80000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品六阶总兵
+#act
+mov s20 17000
+mov s21 四品五阶总兵
+mov s22 魔血值+4900,麻痹抗性+98,火墙伤害抗性+94,\合击伤害抗性+94,近战伤害抗性+94,连击伤害抗性+94
+mov s23 魔血值+5000,麻痹抗性+100,火墙伤害抗性+95,\合击伤害抗性+95,近战伤害抗性+95,连击伤害抗性+95
+mov s24 17000
+mov s29 90000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品五阶总兵
+#act
+mov s20 18000
+mov s21 四品四阶总兵
+mov s22 魔血值+5000,麻痹抗性+100,火墙伤害抗性+95,\合击伤害抗性+95,近战伤害抗性+95,连击伤害抗性+95
+mov s23 魔血值+5100,麻痹抗性+102,火墙伤害抗性+96,\合击伤害抗性+96,近战伤害抗性+96,连击伤害抗性+96
+mov s24 18000
+mov s29 90000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品四阶总兵
+#act
+mov s20 19000
+mov s21 四品三阶总兵
+mov s22 魔血值+5100,麻痹抗性+102,火墙伤害抗性+96,\合击伤害抗性+96,近战伤害抗性+96,连击伤害抗性+96
+mov s23 魔血值+5200,麻痹抗性+104,火墙伤害抗性+97,\合击伤害抗性+97,近战伤害抗性+97,连击伤害抗性+97
+mov s24 19000
+mov s29 100000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品三阶总兵
+#act
+mov s20 20000
+mov s21 四品二阶总兵
+mov s22 魔血值+5200,麻痹抗性+104,火墙伤害抗性+97,\合击伤害抗性+97,近战伤害抗性+97,连击伤害抗性+97
+mov s23 魔血值+5300,麻痹抗性+106,火墙伤害抗性+98,\合击伤害抗性+98,近战伤害抗性+98,连击伤害抗性+98
+mov s24 20000
+mov s29 100000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品二阶总兵
+#act
+mov s20 22000
+mov s21 四品一阶总兵
+mov s22 魔血值+5300,麻痹抗性+106,火墙伤害抗性+98,\合击伤害抗性+98,近战伤害抗性+98,连击伤害抗性+98
+mov s23 魔血值+5400,麻痹抗性+108,火墙伤害抗性+99,\合击伤害抗性+99,近战伤害抗性+99,连击伤害抗性+99
+mov s24 22000
+mov s29 110000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 四品一阶总兵
+#act
+mov s20 24000
+mov s21 三品九阶都统
+mov s22 魔血值+5400,麻痹抗性+108,火墙伤害抗性+99,\合击伤害抗性+99,近战伤害抗性+99,连击伤害抗性+99
+mov s23 魔血值+5500,麻痹抗性+110,火墙伤害抗性+108,\合击伤害抗性+108,近战伤害抗性+108,连击伤害抗性+108\龙神技能抗性+108
+mov s24 24000
+mov s29 120000
+mov s30 0
+
+
+#if
+CHECKVAR HUMAN 官阶 = 三品九阶都统
+#act
+mov s20 26000
+mov s21 三品八阶都统
+mov s22 魔血值+5500,麻痹抗性+110,火墙伤害抗性+108,\合击伤害抗性+108,近战伤害抗性+108,连击伤害抗性+108\龙神技能抗性+108
+mov s23 魔血值+5600,麻痹抗性+112,火墙伤害抗性+109,\合击伤害抗性+109,近战伤害抗性+109,连击伤害抗性+109\龙神技能抗性+109
+mov s24 26000
+mov s29 130000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品八阶都统
+#act
+mov s20 28000
+mov s21 三品七阶都统
+mov s22 魔血值+5600,麻痹抗性+112,火墙伤害抗性+109,\合击伤害抗性+109,近战伤害抗性+109,连击伤害抗性+109\龙神技能抗性+109
+mov s23 魔血值+5700,麻痹抗性+114,火墙伤害抗性+110,\合击伤害抗性+110,近战伤害抗性+110,连击伤害抗性+110\龙神技能抗性+110
+mov s24 28000
+mov s29 140000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品七阶都统
+#act
+mov s20 30000
+mov s21 三品六阶都统
+mov s22 魔血值+5700,麻痹抗性+114,火墙伤害抗性+110,\合击伤害抗性+110,近战伤害抗性+110,连击伤害抗性+110\龙神技能抗性+110
+mov s23 魔血值+5800,麻痹抗性+116,火墙伤害抗性+111,\合击伤害抗性+111,近战伤害抗性+111,连击伤害抗性+111\龙神技能抗性+111
+mov s24 30000
+mov s29 150000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品六阶都统
+#act
+mov s20 50000
+mov s21 三品五阶都统
+mov s22 魔血值+5800,麻痹抗性+116,火墙伤害抗性+111,\合击伤害抗性+111,近战伤害抗性+111,连击伤害抗性+111\龙神技能抗性+111
+mov s23 魔血值+5900,麻痹抗性+118,火墙伤害抗性+112,\合击伤害抗性+112,近战伤害抗性+112,连击伤害抗性+112\龙神技能抗性+112
+mov s24 50000
+mov s29 250000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品五阶都统
+#act
+mov s20 55000
+mov s21 三品四阶都统
+mov s22 魔血值+5900,麻痹抗性+118,火墙伤害抗性+112,\合击伤害抗性+112,近战伤害抗性+112,连击伤害抗性+112\龙神技能抗性+112
+mov s23 魔血值+6000,麻痹抗性+120,火墙伤害抗性+113,\合击伤害抗性+113,近战伤害抗性+113,连击伤害抗性+113\龙神技能抗性+113
+mov s24 55000
+mov s29 250000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品四阶都统
+#act
+mov s20 60000
+mov s21 三品三阶都统
+mov s22 魔血值+6000,麻痹抗性+120,火墙伤害抗性+113,\合击伤害抗性+113,近战伤害抗性+113,连击伤害抗性+113\龙神技能抗性+113
+mov s23 魔血值+6100,麻痹抗性+122,火墙伤害抗性+114,\合击伤害抗性+114,近战伤害抗性+114,连击伤害抗性+113\龙神技能抗性+114
+mov s24 60000
+mov s29 300000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品三阶都统
+#act
+mov s20 65000
+mov s21 三品二阶都统
+mov s22 魔血值+6100,麻痹抗性+122,火墙伤害抗性+114,\合击伤害抗性+114,近战伤害抗性+114,连击伤害抗性+114\龙神技能抗性+114
+mov s23 魔血值+6200,麻痹抗性+124,火墙伤害抗性+115,\合击伤害抗性+115,近战伤害抗性+115,连击伤害抗性+115\龙神技能抗性+115
+mov s24 65000
+mov s29 350000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 三品二阶都统
+#act
+mov s20 70000
+mov s21 三品一阶都统
+mov s22 魔血值+6200,麻痹抗性+124,火墙伤害抗性+115,\合击伤害抗性+115,近战伤害抗性+115,连击伤害抗性+115\龙神技能抗性+115
+mov s23 魔血值+6300,麻痹抗性+126,火墙伤害抗性+116,\合击伤害抗性+116,近战伤害抗性+116,连击伤害抗性+116\龙神技能抗性+116
+mov s24 70000
+mov s29 350000
+mov s30 0
+
+
+#if
+CHECKVAR HUMAN 官阶 = 三品一阶都统
+#act
+mov s20 75000
+mov s21 二品九阶将军
+mov s22 魔血值+6300,麻痹抗性+126,火墙伤害抗性+116,\合击伤害抗性+116,近战伤害抗性+116,连击伤害抗性+116\龙神技能抗性+116
+mov s23 魔血值+6400,麻痹抗性+128,火墙伤害抗性+125,\合击伤害抗性+125,近战伤害抗性+125,连击伤害抗性+125\龙神技能抗性+125,道术伤害抗性+125
+mov s24 75000
+mov s29 380000
+mov s30 0
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 二品九阶将军
+#act
+mov s20 80000
+mov s21 二品八阶将军
+mov s22 魔血值+6400,麻痹抗性+128,火墙伤害抗性+125,\合击伤害抗性+125,近战伤害抗性+125,连击伤害抗性+125\龙神技能抗性+125,道术伤害抗性+125
+mov s23 魔血值+6500,麻痹抗性+130,火墙伤害抗性+126,\合击伤害抗性+126,近战伤害抗性+126,连击伤害抗性+126\龙神技能抗性+126,道术伤害抗性+126
+mov s24 80000
+mov s29 400000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品八阶将军
+#act
+mov s20 85000
+mov s21 二品七阶将军
+mov s22 魔血值+6500,麻痹抗性+130,火墙伤害抗性+126,\合击伤害抗性+126,近战伤害抗性+126,连击伤害抗性+126\龙神技能抗性+126,道术伤害抗性+126
+mov s23 魔血值+6600,麻痹抗性+132,火墙伤害抗性+127,\合击伤害抗性+127,近战伤害抗性+127,连击伤害抗性+127\龙神技能抗性+127,道术伤害抗性+127
+mov s24 85000
+mov s29 420000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品七阶将军
+#act
+mov s20 100000
+mov s21 二品六阶将军
+mov s22 魔血值+6600,麻痹抗性+132,火墙伤害抗性+127,\合击伤害抗性+127,近战伤害抗性+127,连击伤害抗性+127\龙神技能抗性+127,道术伤害抗性+127
+mov s23 魔血值+6700,麻痹抗性+134,火墙伤害抗性+128,\合击伤害抗性+128,近战伤害抗性+128,连击伤害抗性+128\龙神技能抗性+128,道术伤害抗性+128
+mov s24 100000
+mov s29 500000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品六阶将军
+#act
+mov s20 120000
+mov s21 二品五阶将军
+mov s22 魔血值+6700,麻痹抗性+134,火墙伤害抗性+128,\合击伤害抗性+128,近战伤害抗性+128,连击伤害抗性+128\龙神技能抗性+128,道术伤害抗性+128
+mov s23 魔血值+6800,麻痹抗性+136,火墙伤害抗性+129,\合击伤害抗性+129,近战伤害抗性+129,连击伤害抗性+129\龙神技能抗性+129,道术伤害抗性+129
+mov s24 120000
+mov s29 600000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品五阶将军
+#act
+mov s20 140000
+mov s21 二品四阶将军
+mov s22 魔血值+6800,麻痹抗性+136,火墙伤害抗性+129,\合击伤害抗性+129,近战伤害抗性+129,连击伤害抗性+129\龙神技能抗性+129,道术伤害抗性+129
+mov s23 魔血值+6900,麻痹抗性+138,火墙伤害抗性+130,\合击伤害抗性+130,近战伤害抗性+130,连击伤害抗性+130\龙神技能抗性+130,道术伤害抗性+130
+mov s24 140000
+mov s29 700000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品四阶将军
+#act
+mov s20 180000
+mov s21 二品三阶将军
+mov s22 魔血值+6900,麻痹抗性+138,火墙伤害抗性+130,\合击伤害抗性+130,近战伤害抗性+130,连击伤害抗性+130\龙神技能抗性+130,道术伤害抗性+130
+mov s23 魔血值+7000,麻痹抗性+140,火墙伤害抗性+131,\合击伤害抗性+131,近战伤害抗性+131,连击伤害抗性+131\龙神技能抗性+131,道术伤害抗性+131
+mov s24 180000
+mov s29 900000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品三阶将军
+#act
+mov s20 200000
+mov s21 二品二阶将军
+mov s22 魔血值+7000,麻痹抗性+140,火墙伤害抗性+131,\合击伤害抗性+131,近战伤害抗性+131,连击伤害抗性+131\龙神技能抗性+131,道术伤害抗性+131
+mov s23 魔血值+7100,麻痹抗性+142,火墙伤害抗性+132,\合击伤害抗性+132,近战伤害抗性+132,连击伤害抗性+132\龙神技能抗性+132,道术伤害抗性+132
+mov s24 200000
+mov s29 1000000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品二阶将军
+#act
+mov s20 250000
+mov s21 二品一阶将军
+mov s22 魔血值+7100,麻痹抗性+142,火墙伤害抗性+132,\合击伤害抗性+132,近战伤害抗性+132,连击伤害抗性+132\龙神技能抗性+132,道术伤害抗性+132
+mov s23 魔血值+7200,麻痹抗性+144,火墙伤害抗性+133,\合击伤害抗性+133,近战伤害抗性+133,连击伤害抗性+133\龙神技能抗性+133,道术伤害抗性+133
+mov s24 250000
+mov s29 1200000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 二品一阶将军
+#act
+mov s20 300000
+mov s21 一品九阶元帅
+mov s22 魔血值+7200,麻痹抗性+144,火墙伤害抗性+133,\合击伤害抗性+133,近战伤害抗性+133,连击伤害抗性+133\龙神技能抗性+133,道术伤害抗性+133
+mov s23 魔血值+7300,麻痹抗性+146,火墙伤害抗性+142,\合击伤害抗性+142,近战伤害抗性+142,连击伤害抗性+142\龙神技能抗性+142,道术伤害抗性+142,魔法伤害抗性+142
+mov s24 300000
+mov s29 1500000
+mov s30 0
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 一品九阶元帅
+#act
+mov s20 350000
+mov s21 一品八阶元帅
+mov s22 魔血值+7300,麻痹抗性+146,火墙伤害抗性+142,\合击伤害抗性+142,近战伤害抗性+142,连击伤害抗性+142\龙神技能抗性+142,道术伤害抗性+142,魔法伤害抗性+142
+mov s23 魔血值+7400,麻痹抗性+148,火墙伤害抗性+143,\合击伤害抗性+143,近战伤害抗性+143,连击伤害抗性+143\龙神技能抗性+143,道术伤害抗性+143,魔法伤害抗性+143
+mov s24 350000
+mov s29 1900000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品八阶元帅
+#act
+mov s20 400000
+mov s21 一品七阶元帅
+mov s22 魔血值+7400,麻痹抗性+148,火墙伤害抗性+143,\合击伤害抗性+143,近战伤害抗性+143,连击伤害抗性+143\龙神技能抗性+143,道术伤害抗性+143,魔法伤害抗性+143
+mov s23 魔血值+7500,麻痹抗性+150,火墙伤害抗性+144,\合击伤害抗性+144,近战伤害抗性+144,连击伤害抗性+144\龙神技能抗性+144,道术伤害抗性+144,魔法伤害抗性+144
+mov s24 400000
+mov s29 2000000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品七阶元帅
+#act
+mov s20 500000
+mov s21 一品六阶元帅
+mov s22 魔血值+7500,麻痹抗性+150,火墙伤害抗性+144,\合击伤害抗性+144,近战伤害抗性+144,连击伤害抗性+144\龙神技能抗性+144,道术伤害抗性+144,魔法伤害抗性+144
+mov s23 魔血值+7600,麻痹抗性+152,火墙伤害抗性+145,\合击伤害抗性+145,近战伤害抗性+145,连击伤害抗性+145\龙神技能抗性+145,道术伤害抗性+145,魔法伤害抗性+145
+mov s24 500000
+mov s29 2500000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品六阶元帅
+#act
+mov s20 600000
+mov s21 一品五阶元帅
+mov s22 魔血值+7600,麻痹抗性+152,火墙伤害抗性+145,\合击伤害抗性+145,近战伤害抗性+145,连击伤害抗性+145\龙神技能抗性+145,道术伤害抗性+145,魔法伤害抗性+145
+mov s23 魔血值+7700,麻痹抗性+154,火墙伤害抗性+146,\合击伤害抗性+146,近战伤害抗性+146,连击伤害抗性+146\龙神技能抗性+146,道术伤害抗性+146,魔法伤害抗性+146
+mov s24 600000
+mov s29 3000000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品五阶元帅
+#act
+mov s20 700000
+mov s21 一品四阶元帅
+mov s22 魔血值+7700,麻痹抗性+154,火墙伤害抗性+146,\合击伤害抗性+146,近战伤害抗性+146,连击伤害抗性+146\龙神技能抗性+146,道术伤害抗性+146,魔法伤害抗性+146
+mov s23 魔血值+7800,麻痹抗性+156,火墙伤害抗性+147,\合击伤害抗性+147,近战伤害抗性+147,连击伤害抗性+147\龙神技能抗性+147,道术伤害抗性+147,魔法伤害抗性+147
+mov s24 700000
+mov s29 3500000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品四阶元帅
+#act
+mov s20 800000
+mov s21 一品三阶元帅
+mov s22 魔血值+7800,麻痹抗性+156,火墙伤害抗性+147,\合击伤害抗性+147,近战伤害抗性+147,连击伤害抗性+147\龙神技能抗性+147,道术伤害抗性+147,魔法伤害抗性+147
+mov s23 魔血值+7900,麻痹抗性+158,火墙伤害抗性+148,\合击伤害抗性+148,近战伤害抗性+148,连击伤害抗性+148\龙神技能抗性+148,道术伤害抗性+148,魔法伤害抗性+148
+mov s24 800000
+mov s29 4000000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品三阶元帅
+#act
+mov s20 1000000
+mov s21 一品二阶元帅
+mov s22 魔血值+7900,麻痹抗性+158,火墙伤害抗性+148,\合击伤害抗性+148,近战伤害抗性+148,连击伤害抗性+148\龙神技能抗性+148,道术伤害抗性+148,魔法伤害抗性+148
+mov s23 魔血值+8000,麻痹抗性+160,火墙伤害抗性+149,\合击伤害抗性+149,近战伤害抗性+149,连击伤害抗性+149\龙神技能抗性+149,道术伤害抗性+149,魔法伤害抗性+149
+mov s24 1000000
+mov s29 5000000
+mov s30 0
+#if
+CHECKVAR HUMAN 官阶 = 一品二阶元帅
+#act
+mov s20 2000000
+mov s21 一品一阶元帅
+mov s22 魔血值+8000,麻痹抗性+160,火墙伤害抗性+149,\合击伤害抗性+149,近战伤害抗性+149,连击伤害抗性+149\龙神技能抗性+149,道术伤害抗性+149,魔法伤害抗性+149
+mov s23 魔血值+8200,麻痹抗性+162,火墙伤害抗性+150,\合击伤害抗性+150,近战伤害抗性+150,连击伤害抗性+150\龙神技能抗性+150,道术伤害抗性+150,魔法伤害抗性+150
+mov s24 2000000
+mov s29 10000000
+mov s30 0
+
+
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+mov s20 0
+mov s21 你已经是玛法大陆最高统治者！
+mov s24 0
+mov s22 魔血值+10000,麻痹抗性+180,火墙伤害抗性+160,\合击伤害抗性+160,近战伤害抗性+160,连击伤害抗性+160\龙神技能抗性+160,道术伤害抗性+160,魔法伤害抗性+160
+mov s23 魔血值+12000,麻痹抗性+180,火墙伤害抗性+160,\合击伤害抗性+160,近战伤害抗性+160,连击伤害抗性+160\龙神技能抗性+160,道术伤害抗性+160,魔法伤害抗性+160
+mov s30 1
+
+
+
+
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+MUL S25 S24 2
+MUL S26 S20 2
+bigmain 2
+#say
+<我的官职>                         \
+			您的官阶：<$STR(S0)><$HUMAN(官阶)><$STR(S1)>\	\
+		升级官阶需要荣耀点：<$GAMEPOINT>/<$STR(S26)>\
+                    升级官阶需要元宝：<$GAMEGOLD>/<$STR(S25)>\
+		升级官阶需要功勋值：<$HUMAN(官衔功勋值)>/<$STR(S29)>\ \
+                        获得属性: <$STR(S22)>\	\
+
+
+
+			下一官阶：<$STR(S0)><$STR(S21)><$STR(S1)>\	\
+		      可获得属性：<$STR(S23)>\	\
+			<使用荣耀点升级官阶/@升级>     <使用元宝升级官阶/@升级元宝>   <使用功勋值升级官阶/@升级功勋值>
+
+
+
+
+
+[@俸禄]
+#if
+CHECKVAR HUMAN 官阶 = 无官阶
+#act
+mov s26 0
+mov s28 50
+
+#if
+CHECKVAR HUMAN 官阶 = 九品九阶伍长
+#act
+mov s26 50
+mov s28 100
+
+#if
+CHECKVAR HUMAN 官阶 = 九品八阶伍长
+#act
+mov s26 100
+mov s28 150
+
+#if
+CHECKVAR HUMAN 官阶 = 九品七阶伍长
+#act
+mov s26 150
+mov s28 200
+
+#if
+CHECKVAR HUMAN 官阶 = 九品六阶伍长
+#act
+mov s26 200
+mov s28 250
+
+#if
+CHECKVAR HUMAN 官阶 = 九品五阶伍长
+#act
+mov s26 250
+mov s28 300
+
+#if
+CHECKVAR HUMAN 官阶 = 九品四阶伍长
+#act
+mov s26 300
+mov s28 350
+
+#if
+CHECKVAR HUMAN 官阶 = 九品三阶伍长
+#act
+mov s26 350
+mov s28 400
+
+#if
+CHECKVAR HUMAN 官阶 = 九品二阶伍长
+#act
+mov s26 400
+mov s28 450
+
+#if
+CHECKVAR HUMAN 官阶 = 九品一阶伍长
+#act
+mov s26 450
+mov s28 800
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品九阶什长
+#act
+mov s26 800
+mov s28 850
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品八阶什长
+#act
+mov s26 850
+mov s28 900
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品七阶什长
+#act
+mov s26 900
+mov s28 950
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品六阶什长
+#act
+mov s26 950
+mov s28 1000
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品五阶什长
+#act
+mov s26 1000
+mov s28 1050
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品四阶什长
+#act
+mov s26 1050
+mov s28 1100
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品三阶什长
+#act
+mov s26 1100
+mov s28 1150
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品二阶什长
+#act
+mov s26 1150
+mov s28 1200
+
+
+#if
+CHECKVAR HUMAN 官阶 = 八品一阶什长
+#act
+mov s26 1200
+mov s28 1500
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 七品九阶都尉
+#act
+mov s26 1500
+mov s28 1550
+
+#if
+CHECKVAR HUMAN 官阶 = 七品八阶都尉
+#act
+mov s26 1550
+mov s28 1600
+
+#if
+CHECKVAR HUMAN 官阶 = 七品七阶都尉
+#act
+mov s26 1600
+mov s28 1650
+
+#if
+CHECKVAR HUMAN 官阶 = 七品六阶都尉
+#act
+mov s26 1650
+mov s28 1700
+
+#if
+CHECKVAR HUMAN 官阶 = 七品五阶都尉
+#act
+mov s26 1700
+mov s28 1750
+
+#if
+CHECKVAR HUMAN 官阶 = 七品四阶都尉
+#act
+mov s26 1750
+mov s28 1800
+
+#if
+CHECKVAR HUMAN 官阶 = 七品三阶都尉
+#act
+mov s26 1800
+mov s28 1850
+
+#if
+CHECKVAR HUMAN 官阶 = 七品二阶都尉
+#act
+mov s26 1850
+mov s28 1900
+
+#if
+CHECKVAR HUMAN 官阶 = 七品一阶都尉
+#act
+mov s26 1900
+mov s28 2100
+
+
+#if
+CHECKVAR HUMAN 官阶 = 六品九阶校尉
+#act
+mov s26 2100
+mov s28 2150
+
+
+#if
+CHECKVAR HUMAN 官阶 = 六品八阶校尉
+#act
+mov s26 2150
+mov s28 2200
+
+#if
+CHECKVAR HUMAN 官阶 = 六品七阶校尉
+#act
+mov s26 2200
+mov s28 2250
+
+#if
+CHECKVAR HUMAN 官阶 = 六品六阶校尉
+#act
+mov s26 2250
+mov s28 2300
+
+#if
+CHECKVAR HUMAN 官阶 = 六品五阶校尉
+#act
+mov s26 2300
+mov s28 2350
+
+#if
+CHECKVAR HUMAN 官阶 = 六品四阶校尉
+#act
+mov s26 2350
+mov s28 3400
+
+#if
+CHECKVAR HUMAN 官阶 = 六品三阶校尉
+#act
+mov s26 2400
+mov s28 2450
+
+#if
+CHECKVAR HUMAN 官阶 = 六品二阶校尉
+#act
+mov s26 2450
+mov s28 2500
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 六品一阶校尉
+#act
+mov s26 2500
+mov s28 2800
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品九阶参将
+#act
+mov s26 2800
+mov s28 2850
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品八阶参将
+#act
+mov s26 2850
+mov s28 2900
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品七阶参将
+#act
+mov s26 2900
+mov s28 2950
+
+#if
+CHECKVAR HUMAN 官阶 = 五品六阶参将
+#act
+mov s26 2950
+mov s28 3000
+
+#if
+CHECKVAR HUMAN 官阶 = 五品五阶参将
+#act
+mov s26 3000
+mov s28 3050
+
+#if
+CHECKVAR HUMAN 官阶 = 五品四阶参将
+#act
+mov s26 3050
+mov s28 3100
+
+#if
+CHECKVAR HUMAN 官阶 = 五品三阶参将
+#act
+mov s26 3100
+mov s28 3150
+
+#if
+CHECKVAR HUMAN 官阶 = 五品二阶参将
+#act
+mov s26 3150
+mov s28 3200
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品一阶参将
+#act
+mov s26 3200
+mov s28 3500
+
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 四品九阶总兵
+#act
+mov s26 3500
+mov s28 3550
+
+
+#if
+CHECKVAR HUMAN 官阶 = 四品八阶总兵
+#act
+mov s26 3550
+mov s28 3600
+
+#if
+CHECKVAR HUMAN 官阶 = 四品七阶总兵
+#act
+mov s26 3600
+mov s28 3650
+
+#if
+CHECKVAR HUMAN 官阶 = 四品六阶总兵
+#act
+mov s26 3650
+mov s28 3700
+
+#if
+CHECKVAR HUMAN 官阶 = 四品五阶总兵
+#act
+mov s26 3700
+mov s28 3750
+
+#if
+CHECKVAR HUMAN 官阶 = 四品四阶总兵
+#act
+mov s26 3750
+mov s28 3800
+
+#if
+CHECKVAR HUMAN 官阶 = 四品三阶总兵
+#act
+mov s26 3800
+mov s28 3850
+
+#if
+CHECKVAR HUMAN 官阶 = 四品二阶总兵
+#act
+mov s26 3850
+mov s28 3900
+
+#if
+CHECKVAR HUMAN 官阶 = 四品一阶总兵
+#act
+mov s26 3900
+mov s28 4200
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 三品九阶都统
+#act
+mov s26 4200
+mov s28 4250
+
+
+#if
+CHECKVAR HUMAN 官阶 = 三品八阶都统
+#act
+mov s26 4250
+mov s28 4300
+
+#if
+CHECKVAR HUMAN 官阶 = 三品七阶都统
+#act
+mov s26 4300
+mov s28 4350
+
+#if
+CHECKVAR HUMAN 官阶 = 三品六阶都统
+#act
+mov s26 4350
+mov s28 4400
+
+#if
+CHECKVAR HUMAN 官阶 = 三品五阶都统
+#act
+mov s26 4400
+mov s28 4450
+
+#if
+CHECKVAR HUMAN 官阶 = 三品四阶都统
+#act
+mov s26 4450
+mov s28 4500
+
+#if
+CHECKVAR HUMAN 官阶 = 三品三阶都统
+#act
+mov s26 4500
+mov s28 4550
+
+#if
+CHECKVAR HUMAN 官阶 = 三品二阶都统
+#act
+mov s26 4550
+mov s28 4600
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 三品一阶都统
+#act
+mov s26 4600
+mov s28 4650
+
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 二品九阶将军
+#act
+mov s26 4650
+mov s28 4700
+
+
+#if
+CHECKVAR HUMAN 官阶 = 二品八阶将军
+#act
+mov s26 4700
+mov s28 4750
+
+
+#if
+CHECKVAR HUMAN 官阶 = 二品七阶将军
+#act
+mov s26 4750
+mov s28 4800
+
+#if
+CHECKVAR HUMAN 官阶 = 二品六阶将军
+#act
+mov s26 4800
+mov s28 4850
+
+#if
+CHECKVAR HUMAN 官阶 = 二品五阶将军
+#act
+mov s26 4850
+mov s28 4900
+
+#if
+CHECKVAR HUMAN 官阶 = 二品四阶将军
+#act
+mov s26 4900
+mov s28 4950
+
+#if
+CHECKVAR HUMAN 官阶 = 二品三阶将军
+#act
+mov s26 4950
+mov s28 5000
+
+#if
+CHECKVAR HUMAN 官阶 = 二品二阶将军
+#act
+mov s26 5000
+mov s28 5050
+
+#if
+CHECKVAR HUMAN 官阶 = 二品一阶将军
+#act
+mov s26 5050
+mov s28 5500
+
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 一品九阶元帅
+#act
+mov s26 5500
+mov s28 5550
+
+
+#if
+CHECKVAR HUMAN 官阶 = 一品八阶元帅
+#act
+mov s26 5550
+mov s28 5600
+
+#if
+CHECKVAR HUMAN 官阶 = 一品七阶元帅
+#act
+mov s26 5600
+mov s28 5650
+
+#if
+CHECKVAR HUMAN 官阶 = 一品六阶元帅
+#act
+mov s26 5650
+mov s28 5700
+
+#if
+CHECKVAR HUMAN 官阶 = 一品五阶元帅
+#act
+mov s26 5700
+mov s28 5750
+
+#if
+CHECKVAR HUMAN 官阶 = 一品四阶元帅
+#act
+mov s26 5750
+mov s28 5800
+
+#if
+CHECKVAR HUMAN 官阶 = 一品三阶元帅
+#act
+mov s26 5800
+mov s28 5850
+
+#if
+CHECKVAR HUMAN 官阶 = 一品二阶元帅
+#act
+mov s26 5850
+mov s28 5900
+
+
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+mov s26 6000
+mov s28 6000
+
+
+
+
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄>         <俸禄商城/@商城>        \	\
+\	\
+您现在的官阶是：<$STR(S0)><$HUMAN(官阶)><$STR(S1)>\	\
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两\	\
+\	\
+今天可领取俸禄：<$STR(S0)><$STR(S26)><$STR(S1)>两         <领取俸禄/@领>\	\  
+\	\
+升级下一官阶每天可领取俸禄为：<$STR(S0)><$STR(S28)><$STR(S1)>两\	\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@领]
+#IF
+CHECKVAR HUMAN 官阶 = 无官阶
+#ACT
+MESSAGEBOX 你目前没有可领取的俸禄！
+BREAK
+
+#if
+checkvar human 领取俸禄 = 1
+#act
+messagebox 你今天已经领取了俸禄，请明天再来吧！
+#elseact
+calcvar human 俸禄 + <$STR(S26)>
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+calcvar human 领取俸禄 = 1
+savevar human 领取俸禄 ..\QuestDiary\雪花制作\领取俸禄.txt
+goto @俸禄
+sendmsg 7 恭喜你，领取俸禄<$STR(S26)>两！
+sendmsg 0 恭喜<$HUMAN(官阶)>:<$USERNAME>领取了俸禄<$STR(S26)>两
+
+
+
+
+
+
+
+
+
+[@升级]
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+MESSAGEBOX 您的官阶已经达到最高级,不能继续提升了！
+#elseact
+mov s32 s26
+dec s32 1
+goto @官阶提升
+
+[@官阶提升]
+#if
+CHECKGAMEPOINT > <$STR(S32)>
+#ACT
+GAMEPOINT - <$STR(S26)>
+RECYCFENGHAO <$USERNAME> <$HUMAN(官阶)>
+GIVEFENGHAO <$USERNAME> <$STR(S21)>
+CALCVAR HUMAN 官阶 = <$STR(S21)>
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+sendmsg 7 恭喜你,官阶升级为<$STR(S21)>
+GOTO @官职
+#ELSEACT
+messagebox 对不起,你没有足够的荣耀点,不能升级官阶！
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@升级元宝]
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+MESSAGEBOX 您的官阶已经达到最高级,不能继续提升了！
+#elseact
+mov s35 s25
+dec s35 1
+goto @官阶提升1
+
+[@官阶提升1]
+#IF
+checkgamegold > <$STR(S35)>
+#act
+gamegold - <$STR(S25)>
+RECYCFENGHAO <$USERNAME> <$HUMAN(官阶)>
+GIVEFENGHAO <$USERNAME> <$STR(S21)>
+CALCVAR HUMAN 官阶 = <$STR(S21)>
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+sendmsg 7 恭喜你,官阶升级为<$STR(S21)>
+GOTO @官职
+#ELSEACT
+messagebox 对不起,你没有足够的元宝,不能升级官阶！
+
+
+
+
+
+[@升级功勋值]
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+MESSAGEBOX 您的官阶已经达到最高级,不能继续提升了！
+#elseact
+mov s37 s29
+dec s37 1
+goto @官阶提升2
+
+[@官阶提升2]
+#IF
+checkvar human 官衔功勋值 > <$STR(S37)>
+#act
+CALCVAR HUMAN 官衔功勋值 - <$STR(S29)>
+savevar human 官衔功勋值 ..\QuestDiary\雪花制作\官衔功勋值.txt
+RECYCFENGHAO <$USERNAME> <$HUMAN(官阶)>
+GIVEFENGHAO <$USERNAME> <$STR(S21)>
+CALCVAR HUMAN 官阶 = <$STR(S21)>
+savevar human 官阶 ..\QuestDiary\雪花制作\官阶.txt
+sendmsg 7 恭喜你,官阶升级为<$STR(S21)>
+GOTO @官职
+#ELSEACT
+messagebox 对不起,你没有足够的官衔功勋值,不能升级官阶！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@商城]
+#if
+CHECKVAR HUMAN 官阶 = 无官阶
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品九阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品八阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品七阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品六阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品五阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品四阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品三阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品二阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 九品一阶伍长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品九阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品八阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品七阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品六阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品五阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品四阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品三阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品二阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 八品一阶什长
+#act
+goto @九到八阶
+#if
+CHECKVAR HUMAN 官阶 = 七品九阶都尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 七品八阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品七阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品六阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品五阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品四阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品三阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品二阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 七品一阶都尉
+#act
+goto @七到六阶
+
+#if
+CHECKVAR HUMAN 官阶 = 六品九阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品八阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品七阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品六阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品五阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品四阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品三阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品二阶校尉
+#act
+goto @七到六阶
+#if
+CHECKVAR HUMAN 官阶 = 六品一阶校尉
+#act
+goto @七到六阶
+
+
+
+#if
+CHECKVAR HUMAN 官阶 = 五品九阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品八阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品七阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品六阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品五阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品四阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品三阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品二阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 五品一阶参将
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品九阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品八阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品七阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品六阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品五阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品四阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品三阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品二阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 四品一阶总兵
+#act
+goto @五到四阶
+#if
+CHECKVAR HUMAN 官阶 = 三品九阶都统
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 三品八阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品七阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品六阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品五阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品四阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品三阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品二阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 三品一阶都统
+#act
+goto @三到二阶
+
+#if
+CHECKVAR HUMAN 官阶 = 二品九阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品八阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品七阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品六阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品五阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品四阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品三阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品二阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 二品一阶将军
+#act
+goto @三到二阶
+#if
+CHECKVAR HUMAN 官阶 = 一品九阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品八阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品七阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品六阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品五阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品四阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品三阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品二阶元帅
+#act
+goto @元帅阶
+#if
+CHECKVAR HUMAN 官阶 = 一品一阶元帅
+#act
+goto @元帅阶
+break
+
+
+[@九到八阶]
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄/@俸禄>         <俸禄商城>        \ \
+　　　　<『九品伍长≌≌≌八品什长』/FCOLOR=249>  物品目录\ \
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两\
+你可以在俸禄商城用你的俸禄购买物品:\	
+<注意：输入数量不得大于30000/FCOLOR=249>\	\
+钢锭(<绑定/FCOLOR=249>)              每个需要俸禄1两        <输入购买数量/@@InPutInteger1>\
+火山赤铜(<绑定/FCOLOR=249>)          每个需要俸禄3两        <输入购买数量/@@InPutInteger2>\
+玄铁(<绑定/FCOLOR=249>)              每个需要俸禄3两        <输入购买数量/@@InPutInteger5>\
+血玉原矿(<绑定/FCOLOR=249>)          每个需要俸禄20两       <输入购买数量/@@InPutInteger6>\
+邪眼碎片(<绑定/FCOLOR=249>)          每个需要俸禄50两       <输入购买数量/@@InPutInteger7>\
+火龙果(<绑定/FCOLOR=249>)            每个需要俸禄1两        <输入购买数量/@@InPutInteger3>\
+白日门火龙果(<绑定/FCOLOR=249>)      每个需要俸禄1两        <输入购买数量/@@InPutInteger4>\
+寒芒神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄100两       <兑换/@兑换寒芒1>\
+寒芒神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄300两       <兑换/@兑换寒芒2>\
+寒芒神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄300两       <兑换/@兑换寒芒3>\
+
+
+[@七到六阶]
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄/@俸禄>         <俸禄商城>        \	\
+　　　　<『七品都尉≌≌≌六品校尉』/FCOLOR=249>  物品目录\ \
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两\
+你可以在俸禄商城用你的俸禄购买物品:\	
+<注意：输入数量不得大于30000/FCOLOR=249>\	\
+玄冰神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄500两        <兑换/@兑换玄冰1>\
+玄冰神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄1000两       <兑换/@兑换玄冰2>\
+玄冰神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄1000两       <兑换/@兑换玄冰3>\
+落星神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄1500两       <兑换/@兑换落星1>\
+落星神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄3000两       <兑换/@兑换落星2>\
+落星神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄3000两       <兑换/@兑换落星3>\
+[@五到四阶]
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄/@俸禄>         <俸禄商城>        \	\
+　　　　<『五品参将≌≌≌四品总兵』/FCOLOR=249>  物品目录\ \
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两\
+你可以在俸禄商城用你的俸禄购买物品:\	
+<注意：输入数量不得大于30000/FCOLOR=249>\	\
+玛法结晶(<绑定/FCOLOR=249>)          每个需要俸禄10两      <输入购买数量/@@InPutInteger13>\
+玛法碎片堆(<绑定/FCOLOR=249>)        每个需要俸禄5两      <输入购买数量/@@InPutInteger14>\
+玛法源质(<绑定/FCOLOR=249>)          每个需要俸禄10两        <输入购买数量/@@InPutInteger9>\
+一级功勋状(<绑定/FCOLOR=249>)        每个需要俸禄10两        <输入购买数量/@@InPutInteger10>\
+白虎精(<绑定/FCOLOR=249>)            每个需要俸禄100两       <输入购买数量/@@InPutInteger11>\
+青龙胆(<绑定/FCOLOR=249>)            每个需要俸禄100两       <输入购买数量/@@InPutInteger12>\
+正阳神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄3000两       <兑换/@兑换正阳1>\
+正阳神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄6000两       <兑换/@兑换正阳2>\
+正阳神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄6000两       <兑换/@兑换正阳3>\
+
+
+[@三到二阶]
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄/@俸禄>         <俸禄商城>        \	\
+　　　　<『三品都统≌≌≌二品将军』/FCOLOR=249>  物品目录\ \
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两\
+你可以在俸禄商城用你的俸禄购买物品:\	
+<注意：输入数量不得大于30000/FCOLOR=249>\	\
+彩凤翎羽(<绑定/FCOLOR=249>)          每个需要俸禄10两         <输入购买数量/@@InPutInteger8>\
+主属性鉴定卷轴(<绑定/FCOLOR=249>)    每个需要俸禄800两        <兑换/@主属>\
+暴击鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄800两        <兑换/@暴击>\
+合击鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄800两        <兑换/@合击>\
+吸血鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄800两        <兑换/@吸血>\
+内伤鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄800两        <兑换/@内伤>\
+天成神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄5000两        <兑换/@兑换1>\
+天成神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄10000两       <兑换/@兑换2>\
+天成神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄10000两       <兑换/@兑换3>\
+
+
+[@元帅阶]
+#if
+#act
+MOV S0 <
+MOV S1 /fcolor=249>
+bigmain 2
+#say
+<我的官职/@官职>        <我的俸禄/@俸禄>         <俸禄商城>        \	\
+　　　　<『一品元帅≌≌≌』/FCOLOR=249>  物品目录\ \
+您现在有俸禄：<$STR(S0)><$HUMAN(俸禄)><$STR(S1)>两              <使用10W元宝购买魂玉/@狗买魂玉>\
+你可以在俸禄商城用你的俸禄购买物品:\	
+<注意：输入数量不得大于30000/FCOLOR=249>\	\
+<查看九品-八品物品目录/@九到八阶>  <查看七品-六品物品目录/@七到六阶>\ \
+<查看五品-四品物品目录/@五到四阶>  <查看三品-二品物品目录/@三到二阶>\ \
+惊雷神铁(首饰)(<绑定/FCOLOR=249>)    每个需要俸禄10000两       <兑换/@兑换4>\
+惊雷神铁(衣服)(<绑定/FCOLOR=249>)    每个需要俸禄20000两       <兑换/@兑换5>\
+惊雷神铁(武器)(<绑定/FCOLOR=249>)    每个需要俸禄20000两       <兑换/@兑换6>\
+敏捷鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄5000两       <兑换/@敏捷>\
+准确鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄5000两       <兑换/@准确>\
+麻抗鉴定卷轴(<绑定/FCOLOR=249>)      每个需要俸禄5000两       <兑换/@麻抗>\
+
+[@狗买魂玉]
+#IF
+CHECKNAMELIST ..\QuestDiary\新主宰者系统\魂玉购买.txt
+#act
+MESSAGEBOX 您已经成功购买过一次！
+break
+
+#if
+CHECKGAMEGOLD > 99999
+#ACT
+GAMEGOLD - 100000
+GIVESTATEITEM 魂玉lv.1 1 1 0 1 1 0 1
+Addnamelist ..\QuestDiary\新主宰者系统\魂玉购买.txt
+SENDMSG 6 恭喜您成功获得：魂玉lv.1! 
+SendCenterMsg 249 0 一品元帅<$USERNAME>在官阶大使处使用特权，获得：魂玉lv.1!！ 1 3 3
+#ELSEACT
+MESSAGEBOX 你现在还不适合购买！
+break
+CLOSE
+
+
+[@InPutInteger14]
+#act
+MUL N8 N7 5
+mov N9 N8
+DEC N9 1
+GOTO @检测71121242
+             
+[@检测71121242]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玛法碎片堆 1 1 0 1 1 0 1 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玛法碎片堆×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@InPutInteger13]
+#act
+MUL N8 N7 10
+mov N9 N8
+DEC N9 1
+GOTO @检测7112124
+             
+[@检测7112124]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玛法碎片 1 1 0 1 1 0 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玛法碎片×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@InPutInteger12]
+#act
+MUL N8 N7 100
+mov N9 N8
+DEC N9 1
+GOTO @检测711212
+             
+[@检测711212]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 青龙胆 1 1 0 1 1 0 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了青龙胆×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@InPutInteger11]
+#act
+MUL N8 N7 100
+mov N9 N8
+DEC N9 1
+GOTO @检测71112
+             
+[@检测71112]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 白虎精 1 1 0 1 1 0 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了白虎精×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@InPutInteger10]
+#act
+MUL N8 N7 10
+mov N9 N8
+DEC N9 1
+GOTO @检测7111
+             
+[@检测7111]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 一级功勋状 1 1 0 1 1 0 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了一级功勋状×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@InPutInteger9]
+#act
+MUL N8 N7 10
+mov N9 N8
+DEC N9 1
+GOTO @检测711
+             
+[@检测711]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玛法源质 1 1 0 1 1 0 1 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玛法源质×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@InPutInteger8]
+#IF
+EQUAL N8 0
+#SAY
+输入数据等于0，请重新输入。
+break
+#IF
+#ACT
+MUL N7 10 <$STR(N8)>
+GOTO @检测71
+
+             
+[@检测71]
+#if
+checkvar human 俸禄 > <$STR(N7)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N7)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 彩凤翎羽 1 1 0 1 1 0 <$STR(N8)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了彩凤翎羽×<$STR(N8)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@暴击]
+#if
+checkvar human 俸禄 > 799
+#ACT
+CALCVAR HUMAN 俸禄 - 800 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 暴击鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了暴击鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@内伤]
+#if
+checkvar human 俸禄 > 799
+#ACT
+CALCVAR HUMAN 俸禄 - 800 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 内伤鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了内伤鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@吸血]
+#if
+checkvar human 俸禄 > 799
+#ACT
+CALCVAR HUMAN 俸禄 - 800 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 吸血鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了吸血鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@合击]
+#if
+checkvar human 俸禄 > 799
+#ACT
+CALCVAR HUMAN 俸禄 - 800 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 合击鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了合击鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+[@主属]
+#if
+checkvar human 俸禄 > 799
+#ACT
+CALCVAR HUMAN 俸禄 - 800 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 主属性鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了主属性鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@麻抗]
+#if
+checkvar human 俸禄 > 4999
+#ACT
+CALCVAR HUMAN 俸禄 - 5000 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 准确鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了准确鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@麻抗]
+#if
+checkvar human 俸禄 > 4999
+#ACT
+CALCVAR HUMAN 俸禄 - 5000 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 麻抗鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了麻抗鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@敏捷]
+#if
+checkvar human 俸禄 > 4999
+#ACT
+CALCVAR HUMAN 俸禄 - 5000 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 敏捷鉴定卷轴 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了敏捷鉴定卷轴×1！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+[@兑换寒芒1]
+#IF
+checkvar human 俸禄 > 99
+#ACT
+CALCVAR HUMAN 俸禄 - 100
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 寒芒神铁(首饰) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了寒芒神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换寒芒2]
+#IF
+checkvar human 俸禄 > 299
+#ACT
+CALCVAR HUMAN 俸禄 - 300
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 寒芒神铁(衣服) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了寒芒神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换寒芒3]
+#IF
+checkvar human 俸禄 > 299
+#ACT
+CALCVAR HUMAN 俸禄 - 300
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 寒芒神铁(武器) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了寒芒神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换玄冰1]
+#IF
+checkvar human 俸禄 > 499
+#ACT
+CALCVAR HUMAN 俸禄 - 500
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玄冰神铁(首饰) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玄冰神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换玄冰2]
+#IF
+checkvar human 俸禄 > 999
+#ACT
+CALCVAR HUMAN 俸禄 - 1000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玄冰神铁(衣服) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玄冰神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换玄冰3]
+#IF
+checkvar human 俸禄 > 999
+#ACT
+CALCVAR HUMAN 俸禄 - 1000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玄冰神铁(武器) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玄冰神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+
+[@兑换落星1]
+#IF
+checkvar human 俸禄 > 1499
+#ACT
+CALCVAR HUMAN 俸禄 - 1500
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 落星神铁(首饰) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了落星神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换落星2]
+#IF
+checkvar human 俸禄 > 2999
+#ACT
+CALCVAR HUMAN 俸禄 - 3000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 落星神铁(衣服) 1 1 0 1 1 0 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了落星神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换落星3]
+#IF
+checkvar human 俸禄 > 2999
+#ACT
+CALCVAR HUMAN 俸禄 - 3000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 落星神铁(武器) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了落星神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+
+[@兑换正阳1]
+#IF
+checkvar human 俸禄 > 2999
+#ACT
+CALCVAR HUMAN 俸禄 - 3000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 正阳神铁(首饰) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了正阳神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换正阳2]
+#IF
+checkvar human 俸禄 > 5999
+#ACT
+CALCVAR HUMAN 俸禄 - 6000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 正阳神铁(衣服) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了正阳神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换正阳3]
+#IF
+checkvar human 俸禄 > 5999
+#ACT
+CALCVAR HUMAN 俸禄 - 6000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 正阳神铁(武器) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了正阳神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+[@兑换1]
+#IF
+checkvar human 俸禄 > 4999
+#ACT
+CALCVAR HUMAN 俸禄 - 5000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 天成神铁(首饰) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了天成神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换2]
+#IF
+checkvar human 俸禄 > 9999
+#ACT
+CALCVAR HUMAN 俸禄 - 10000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 天成神铁(衣服) 1 1 0 1 1 0 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了天成神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换3]
+#IF
+checkvar human 俸禄 > 9999
+#ACT
+CALCVAR HUMAN 俸禄 - 10000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 天成神铁(武器) 1 1 0 1 1 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了天成神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换4]
+#IF
+checkvar human 俸禄 > 9999
+#ACT
+CALCVAR HUMAN 俸禄 - 10000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 惊雷神铁(首饰) 1 1 0 1 1 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了惊雷神铁(首饰)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换5]
+#IF
+checkvar human 俸禄 > 19999
+#ACT
+CALCVAR HUMAN 俸禄 - 20000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 惊雷神铁(衣服) 1 1 0 1 1 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了惊雷神铁(衣服)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@兑换6]
+#IF
+checkvar human 俸禄 > 19999
+#ACT
+CALCVAR HUMAN 俸禄 - 20000
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 惊雷神铁(武器) 1 1 0 1 1 1 1
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了惊雷神铁(武器)！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+
+
+
+[@InPutInteger7]
+#act
+MUL N8 N7 50
+mov N9 N8
+DEC N9 1
+GOTO @检测7
+             
+[@检测7]
+#if
+checkvar human 俸禄 > <$STR(N9)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N8)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 邪眼碎片 1 1 0 1 1 1 <$STR(N7)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了邪眼碎片×<$STR(N7)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+[@InPutInteger6]
+#act
+MUL N7 N6 20
+mov N8 N7
+DEC N8 1
+GOTO @检测6
+             
+[@检测6]
+#if
+checkvar human 俸禄 > <$STR(N8)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N7)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 血玉原矿 1 1 0 1 1 0 <$STR(N6)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了血玉原矿×<$STR(N6)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+
+[@InPutInteger5]
+#act
+MUL N6 N5 3
+mov N7 N6
+DEC N7 1
+GOTO @检测5
+             
+[@检测5]
+#if
+checkvar human 俸禄 > <$STR(N7)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N6)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 玄铁 1 1 0 1 1 0 <$STR(N5)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了玄铁×<$STR(N5)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@InPutInteger4]
+#act
+MUL N5 N4 1
+mov N6 N5
+DEC N6 1
+GOTO @检测4
+             
+[@检测4]
+#if
+checkvar human 俸禄 > <$STR(N6)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N5)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 白日门火龙果 1 1 0 1 1 0 <$STR(N4)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了白日门火龙果×<$STR(N4)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+
+[@InPutInteger3]
+#act
+MUL N4 N3 1
+mov N5 N4
+DEC N5 1
+GOTO @检测3
+             
+[@检测3]
+#if
+checkvar human 俸禄 > <$STR(N5)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N4)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 火龙果 1 1 0 1 1 0 <$STR(N3)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了火龙果×<$STR(N3)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+[@InPutInteger2]
+#act
+MUL N3 N2 3
+mov N4 N3
+DEC N4 1
+GOTO @检测2
+             
+[@检测2]
+#if
+checkvar human 俸禄 > <$STR(N4)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N3)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 火山赤铜 1 1 0 1 1 0 <$STR(N2)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了火山赤铜×<$STR(N2)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+
+[@InPutInteger1]
+#act
+MUL N2 N1 1
+mov N3 N2
+DEC N3 1
+GOTO @检测1
+             
+[@检测1]
+#if
+checkvar human 俸禄 > <$STR(N3)>
+#ACT
+CALCVAR HUMAN 俸禄 - <$STR(N2)> 
+savevar human 俸禄 ..\QuestDiary\雪花制作\俸禄.txt
+GIVESTATEITEM 钢锭 1 1 0 1 1 0 <$STR(N1)>
+SENDMSG 7 恭喜你，购买成功！
+SENDMSG 0 <$HUMAN(官阶)>:<$USERNAME>使用俸禄购买了钢锭×<$STR(N1)>！
+goto @商城
+#ELSEACT
+messagebox 俸禄不足，购买失败！
+goto @商城
+
+
+
+[@MsgFilter]
+#act
+messagebox 输入的字符非法！
+

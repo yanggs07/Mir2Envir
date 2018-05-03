@@ -1,0 +1,52 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 10
+Gender = 0
+NoDropItem = 1
+DropUseItem=1
+Hair = 2
+
+UseSkill = 火龙气焰,白日门雷电术,白日门魔法盾,白日门圣言术,白日门护体,白日门冰咆哮,白日门灭天火,分身术,
+;包裹物品
+InitItems = 
+;等级
+Level = 410
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=神龙神甲(男)
+;武器
+UseItems1=神龙神杖
+;照明物
+UseItems2=主宰勋章
+;项链
+UseItems3=主宰项链
+;头盔
+UseItems4=主宰之冠
+;左手镯
+UseItems5=主宰护腕
+;右手镯
+UseItems6=主宰护腕
+;左戒指
+UseItems7=主宰之戒
+;右戒指
+UseItems8=主宰之戒
+;物品
+UseItems9=火龙之心
+;腰带
+UseItems10=主宰腰带
+;鞋子
+UseItems11=主宰之靴
+;宝石
+UseItems12=魔血石(大)
+;斗笠
+UseItems13=主宰斗笠
+
+
+
+
+
+
+

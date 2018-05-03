@@ -1,0 +1,378 @@
+(@@sendmsg @@InPutInteger @@InPutString)
+[@main]
+#IF
+CHECKCASTLEWAR 沙巴克 
+#act
+MESSAGEBOX 正在攻城中......
+BREAK
+CLOSE
+
+#elseact
+BREAK
+#elsesay
+这个城堡的现有资金是<$CASTLEGOLD>金币，\
+今天的收入是<$TODAYINCOME>金币。\
+<取回资金/@@withdrawal>　　　　　　　　　　　　<进入沙巴克藏宝阁/@藏宝阁>　\
+<存储资金/@@receipts>\
+<城门的规章制度命令/@treatdoor>　　　　　\
+<简单维护的命令/@简单维护>\
+<门卫的命令/@门卫命令>\
+<返回毒蛇山谷/@返回毒蛇>\
+<前往庄园/@前往庄园>\
+
+[@前往庄园]
+#IF
+#ACT
+MAPMOVE GA0 70 71
+
+[@返回毒蛇]
+#ACT
+mapmove 2 503 482
+
+[@藏宝阁]
+#I
+EQUAL A89 开启
+#ACT
+BREAK
+#SAY
+每天晚上23:00--24:00，藏宝阁将会开启！\
+每天晚上23:00--23:30，藏宝阁内将会有酒泉出现，\
+您是否现在就进入藏宝阁？\
+沙巴克藏宝阁状态：【开启】\
+<进入藏宝阁/@进入藏宝阁>\
+
+#ELSEACT
+BREAK
+#ELSESAY
+每天晚上23:00--24:00，藏宝阁将会开启！\
+每天晚上23:00--23:30，藏宝阁内将会有酒泉出现，\
+您是否现在就进入藏宝阁？\
+沙巴克藏宝阁状态：【关闭】\
+<开启藏宝阁/@开启藏宝阁>\
+
+[@开启藏宝阁]
+#IF
+HOUR 23
+#ACT
+
+#ELSEACT
+BREAK
+#ELSESAY
+每日23：00-24：00时间段内才能开启藏宝阁……
+
+#IF
+ISCASTLEMASTER
+#ACT
+MOV A89 开启
+SENDMSG 0 沙巴克藏宝阁的大门已经被沙巴克城主开启！
+BREAK
+
+#ELSEACT
+MESSAGEBOX 对不起！你不是沙巴克会长，不能开启藏宝阁！
+BREAK
+
+[@进入藏宝阁]
+#IF
+CheckLevelEx > 39
+#ACT
+#ELSEACT
+BREAK
+#ELSESAY
+你现在等级也太低了吧！等你到了40级后再来吧！\
+
+#IF
+HOUR 23
+#ACT
+MapMove H204
+SendMsg 0 沙巴克藏宝阁已打开，沙城员请及时进入。
+Break
+
+#ELSEACT
+BREAK
+#ELSESAY
+每日23：00-24：00时间段内才能进入藏宝阁……
+
+[@门卫命令]
+请对卫士指定你的命令.\ \
+<雇佣弓箭手./@雇佣弓箭手>\
+<改变攻击命令./@攻击命令>\
+<返回/@main>\
+
+[@treatdoor]
+城堡的门现在是 <$CASTLEDOORSTATE> 的。\ \
+<关闭大门./@closemaindoor>\
+<打开大门./@openmaindoor>\
+<返回/@main>\ 
+
+[@openmaindoor]
+城门已打开.\ 
+<返回/@treatdoor>\ 
+
+[@closemaindoor] 
+城门已关闭.\ 
+<返回/@treatdoor>\ 
+
+[@简单维护]
+你想修理哪里 ?\ \
+<修理大门./@修理大门>\
+<修理城墙./@修理城墙>\
+<返回/@main>\ 
+
+[@修理大门]
+修理城门所需费用为:『<$REPAIRDOORGOLD>』金币。\ \
+<马上修复城门/@repairdoornow>\ 
+<返回/@简单维护>\ 
+
+[@修理城墙]
+修理城墙所需费用为:『<$REPAIRWALLGOLD>』金币。\ \
+<修城墙一/@repairwallnow1>\
+<修城墙二/@repairwallnow2>\
+<修城墙三/@repairwallnow3>\
+<返回/@简单维护>\ 
+
+[@雇佣弓箭手]
+雇用弓箭手可保护城堡的安全，并维护城堡的治安。每个弓箭手的\
+雇用费用为『<$ARCHERFEE>』金币。请选择要雇用弓箭手放置位置: \ \
+『<雇佣皇宫弓箭手/@雇佣弓箭手1>』\
+『<雇佣左城门弓箭手/@雇佣弓箭手2>』\
+『<雇佣中城门弓箭手/@雇佣弓箭手3>』\
+『<雇佣右城门弓箭手/@雇佣弓箭手4>』\ \
+<返回/@门卫命令>\ 
+
+[@雇佣弓箭手4]
+雇用弓箭手可保护城堡的安全，并维护城堡的治安。每个弓箭手的\
+雇用费用为『<$ARCHERFEE>』金币。请选择要雇用弓箭手放置位置: \ \
+『<右城门外1号弓箭手/@hirearchernow15>』,『<右城门外2号弓箭手/@hirearchernow16>』\
+『<右城门外3号弓箭手/@hirearchernow17>』,『<右城门外4号弓箭手/@hirearchernow18>』\ \ \ \
+<返回/@雇佣弓箭手>\ 
+
+[@雇佣弓箭手3]
+雇用弓箭手可保护城堡的安全，并维护城堡的治安。每个弓箭手的\
+雇用费用为『<$ARCHERFEE>』金币。请选择要雇用弓箭手放置位置: \ \
+『<中城门外1号弓箭手/@hirearchernow5>』,『<中城门外2号弓箭手/@hirearchernow6>』\
+『<中城门外3号弓箭手/@hirearchernow7>』,『<中城门外4号弓箭手/@hirearchernow8>』\
+『<中城门上1号弓箭手/@hirearchernow9>』,『<中城门上2号弓箭手/@hirearchernow10>』,『<中城门上3号弓箭手/@hirearchernow11>』\
+『<中城门上4号弓箭手/@hirearchernow12>』,『<中城门上5号弓箭手/@hirearchernow13>』,『<中城门上6号弓箭手/@hirearchernow14>』\ \
+<返回/@雇佣弓箭手>\ 
+
+[@雇佣弓箭手2]
+雇用弓箭手可保护城堡的安全，并维护城堡的治安。每个弓箭手的\
+雇用费用为『<$ARCHERFEE>』金币。请选择要雇用弓箭手放置位置: \ \
+『<左城门外1号弓箭手/@hirearchernow1>』,『<左城门外2号弓箭手/@hirearchernow2>』\
+『<左城门外3号弓箭手/@hirearchernow3>』,『<左城门外4号弓箭手/@hirearchernow4>』\ \ \ \
+<返回/@雇佣弓箭手>\ 
+
+[@雇佣弓箭手1]
+雇用弓箭手可保护城堡的安全，并维护城堡的治安。每个弓箭手的\
+雇用费用为『<$ARCHERFEE>』金币。请选择要雇用弓箭手放置位置: \ \
+『<皇宫城楼1号弓箭手/@hirearchernow19>』,『<皇宫城楼2号弓箭手/@hirearchernow20>』\
+『<皇宫楼梯1号弓箭手/@hirearchernow21>』,『<皇宫楼梯2号弓箭手/@hirearchernow22>』\
+『<皇宫城堡1号弓箭手/@hirearchernow23>』,『<皇宫城堡2号弓箭手/@hirearchernow24>』\ \ \
+<返回/@雇佣弓箭手>\ 
+
+[@攻击命令] 
+守卫们正在进行沙巴克的防御工作\
+你需要怎么改变？\ \
+<正常防御命令/@guardrule_normalnow>\
+<正常攻击命令/@guardrule_pkattack>\
+<返回/@main>\ 
+
+[@guardrule_normalnow] 
+防守方式已经更改，守卫们已经目前处于正常防御状态.\ 
+<返回/@攻击命令>\ 
+
+[@guardrule_pkattack] 
+防守方式已经更改，守卫们已经目前处于对来犯者进攻状态.\ 
+<返回/@攻击命令>\ 
+
+[@receipt] 
+您好:<$USERNAME>?\
+请输入储存金币数量.\
+<存储资金/@@receicom>\ 
+<返回/@main>\ 
+
+[@receipt2jia] 
+您好:<$USERNAME>\
+请输入收回金币数量\ 
+<取回资金/@@withdrawal>\ 
+<返回/@main>\ 
+
+[@领取凭证]
+#IF
+ISCASTLEMASTER
+#ACT
+break
+#SAY
+欢迎您，伟大的沙巴克城主，我这里每天可以领取3个凭证。\
+<领取前请预留3个以上空格，现在就要领取吗？/FColor=249>\ \
+<领取凭证/@领取11>          <先不忙/@exit>\
+
+#ELSEACT
+MESSAGEBOX 对不起！你不是沙巴克会长，不能领取凭证！
+BREAK
+
+[@领取11]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来领取！
+
+#IF
+ISCASTLEMASTER
+#ACT
+
+#ELSEACT
+MESSAGEBOX 对不起！你不是沙巴克会长，不能领取凭证！
+BREAK
+
+#IF
+checknamelist ..\QuestDiary\游戏任务\领取凭证名单.txt
+#ACT
+messagebox 今天的火龙凭证已经领取完了，请明天再来！
+BREAK
+
+#ELSEACT
+addnamelist ..\QuestDiary\游戏任务\领取凭证名单.txt
+GIVEKIMNEEDLE 火龙凭证 3
+BREAK
+
+[@cxgcxx] 
+下一次战役记录在 <$CASTLEWARDATE> , 8:00开始。\ \ 
+<详细情况./@listwar>\ 
+<关闭./@exit>\ 
+
+[@listwar] 
+<$LISTOFWAR>\ 
+<知道了./@exit>\ 
+
+[@CXSJXX] 
+当前时间:<$DATETIME>\ 
+<返回/@zhquanxian>\ 
+
+[@行会贡银护送]
+作为沙巴克会长，可以在每日<18：00-23：00/FCOLOR=249/FColor=249>时间段内领取<护送任务/FColor=249>，\
+领取之后将开启镖车押送，将贡银镖车押送给比奇皇宫国王，\
+将得到国王的赏赐。\ \
+　（只有沙巴克行会会长才可以开启护送）\
+　<护送贡银/@护送贡银>\
+　（缴纳1块金砖和一张精致包装纸作为贡银）\
+　<护送生辰纲/@护送生辰纲>\
+　（缴纳5块金砖和一张精致包装纸作为生辰纲）　　　　<返回/@main>\
+
+[@护送贡银]
+#IF
+ISCASTLEMASTER
+#ACT
+#ELSEACT
+BREAK
+#ELSESAY
+你不是沙巴克行会会长，不能开启贡银押送……
+
+#IF
+HOUR 18 22
+#ELSEACT
+BREAK
+#ELSESAY
+每日18：00-23：00时间段内才能开启贡银护送……
+
+#IF
+LARGE G130 0
+#ACT
+BREAK
+#SAY
+生辰纲押送已经开启，当日不能再开启贡银押送。
+
+#IF
+EQUAL G129 1
+#ACT
+BREAK
+#SAY
+贡银押送已经开启，现在只要成功送镖到比奇皇宫，\
+你就能得到国王的奖励。
+
+#IF
+EQUAL G129 2
+#ACT
+BREAK
+#SAY
+看来你已经成功完成了本次的送镖任务！\
+
+#IF
+CHECKITEM 金砖 1
+CHECKITEM 精致包装纸 1
+#ACT
+TAKE 金砖 1
+TAKE 精致包装纸 1
+CLEARMAPMON 2
+MONGENEX 0150 12 15 贡银|0|255 1 1 1
+MOV G129 1
+MOV I50 1
+SENDMSG 0 沙巴克行会开启押送贡银，安全护送贡银到比奇皇宫，沙巴克成员将获得比奇国王的奖励！
+#SAY
+成功开启押送贡银。
+#ELSESAY
+你好像没有1块金砖和一张精致包装纸吧？
+
+[@护送生辰纲]
+#IF
+HOUR 18 22
+#ELSEACT
+BREAK
+#ELSESAY
+每日18：00-23：00时间段才能开启贡银护送……
+
+#IF
+ ISCASTLEMASTER
+#ELSEACT
+BREAK
+#ELSESAY
+你不是沙巴克行会会长，不能开启贡银押送……
+
+#IF 
+ISGROUPMASTER 
+#ELSEACT
+BREAK
+#ELSESAY
+你不是组队队长，不能开启贡银押送……
+
+#IF
+LARGE G129 0
+#ACT
+BREAK
+#SAY
+贡银押送已经开启，当日不能再开启生辰纲押送。
+
+#IF
+EQUAL G130 1
+#ACT
+BREAK
+#SAY
+生辰纲押送已经开启，现在只要成功送镖到比奇皇宫，\
+你和你所在的行会成员就能得到国王的奖励。
+
+#IF
+EQUAL G130 2
+#ACT
+BREAK
+#SAY
+看来你们已经成功完成了本次的送镖任务！\
+
+#IF
+CHECKITEM 金砖 5
+CHECKITEM 精致包装纸 1
+#ACT
+TAKE 金砖 5
+TAKE 精致包装纸 1
+CLEARMAPMON 2
+MONGENEX 0150 12 15 生辰纲|0|255 1 1 1
+MOV G130 1
+MOV I50 1
+SENDMSG 0 沙巴克行会开启押送生辰纲，安全护送贡银到比奇皇宫，沙巴克成员将获得比奇国王的奖励！
+#SAY
+成功开启押送生辰纲。
+#ELSESAY
+你好像没有5块金砖和一张精致包装纸吧？

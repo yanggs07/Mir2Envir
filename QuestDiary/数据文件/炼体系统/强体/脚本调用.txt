@@ -1,0 +1,708 @@
+[@强体正文]
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+MOV <$N(强体等级)>
+MOV <$N(强体按钮1)> 1853
+MOV <$N(强体按钮2)> 1853
+MOV <$N(强体按钮3)> 1853
+MOV <$N(强体按钮4)> 1853
+MOV <$N(强体按钮5)> 1853
+MOV <$N(强体按钮6)> 1853
+MOV <$N(强体按钮7)> 1853
+MOV <$N(强体按钮8)> 1853
+MOV <$N(强体按钮9)> 1853
+MOV <$N(强体按钮10)> 1853
+MOV <$N(强体按钮11)> 1853
+MOV <$N(强体特效1)> 1853
+MOV <$N(强体特效2)> 1853
+MOV <$N(强体特效3)> 1853
+MOV <$N(强体特效4)> 1853
+MOV <$N(强体特效5)> 1853
+MOV <$N(强体特效6)> 1853
+MOV <$N(强体特效7)> 1853
+MOV <$N(强体特效8)> 1853
+MOV <$N(强体特效9)> 1853
+MOV <$N(强体特效10)> 1853
+MOV <$N(强体特效11)> 1853
+MOV S81
+MOV S82
+MOV S83
+MOV S84
+MOV <$S(强体文字提示1)>
+MOV <$S(强体文字提示2)>
+MOV <$S(强体文字提示3)>
+MOV <$S(强体文字提示4)>
+MOV <$S(强体文字提示5)>
+MOV <$S(强体文字提示6)>
+MOV S91
+;以上为默认数据，全部不开通！
+
+#IF
+CHECKVAR HUMAN 强体等级 > 10
+#ACT
+OPENMERCHANTDLG 52|1896|1|442|274|0|0|30|1|419|27
+BREAK
+#SAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=90;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}>
+<{i=91;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}/@体魄>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1893;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣魂丹 0#47***;x=80;y=410}>
+
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=257;y=95}>
+<{s=神圣主属性下限+81500;x=277;y=110}>
+<{s=神圣主属性上限+151600;x=277;y=125}>
+<{s=已升至最高强体;fc=251;ch=251;cd=251;x=257;y=140}>
+<{s=强体升阶;fc=251;ch=251;cd=251;x=257;y=200}>
+<{s=当前阶段为：;fc=251;ch=251;cd=251;x=257;y=220}>
+<{s=天人合一;fc=251;ch=251;cd=251;x=330;y=220}>
+<{s=额外获得：;fc=251;ch=251;cd=251;x=257;y=240}>
+<{s=神圣主属性上限+21000;x=277;y=260}>
+<{s=已升至最高强体阶段;fc=251;ch=251;cd=251;x=257;y=290}>
+
+<{i=1880;li=52;w=14;h=14;x=125;y=113;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=153;y=151;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=103;y=147;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=124;y=171;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=172;y=212;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=74;y=209;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=125;y=221;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=153;y=279;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=97;y=271;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=168;y=332;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=97;y=325;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+
+#IF
+CHECKVAR HUMAN 强体等级 = 10
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体按钮9)> 1880
+MOV <$N(强体按钮10)> 1880
+MOV <$N(强体按钮11)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+MOV <$N(强体特效9)> 1900
+MOV <$N(强体特效10)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 10
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体按钮9)> 1880
+MOV <$N(强体按钮10)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+MOV <$N(强体特效9)> 1900
+MOV <$N(强体特效10)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 9
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体按钮9)> 1880
+MOV <$N(强体按钮10)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+MOV <$N(强体特效9)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 9
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体按钮9)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+MOV <$N(强体特效9)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 8
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体按钮9)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 8
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+MOV <$N(强体特效8)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 7
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体按钮8)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 7
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+MOV <$N(强体特效7)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 6
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体按钮7)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 6
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+MOV <$N(强体特效6)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 5
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 5
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+MOV <$N(强体特效5)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 4
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮5)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 4
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+MOV <$N(强体特效4)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 3
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体按钮4)> 1880
+MOV <$N(强体按钮6)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 3
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+MOV <$N(强体特效3)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 2
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体按钮3)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 2
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体特效1)> 1900
+MOV <$N(强体特效2)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 1
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体按钮2)> 1880
+MOV <$N(强体特效1)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 = 1
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+MOV <$N(强体按钮1)> 1880
+MOV <$N(强体特效1)> 1900
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+CHECKVAR HUMAN 强体阶段 > 0
+#ACT
+MOV <$N(强体等级)> 1
+MOV <$N(强体按钮1)> 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+CHECKVAR HUMAN 强体阶段 < 1
+#ACT
+MOV <$N(强体等级)> 1
+
+#IF
+CHECKLEVELEX > 0
+CHECKVAR HUMAN 强体等级 > 0
+#ACT
+OPENMERCHANTDLG 52|1896|1|442|274|0|0|30|1|419|27
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt <$N(强体等级)> <$S(强体阶段等级)> <$S(强体需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt <$N(强体等级)> <$S(强体等级名称)> <$S(强体等级属性)>
+INC <$N(强体等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt <$N(强体等级)> <$S(强体下级名称)> <$S(强体下级属性)>
+MOV <$S(强体文字提示1)> 当前阶段为：;fc=251;ch=251;cd=251
+MOV <$S(强体文字提示2)> <$S(强体等级名称)>
+MOV <$S(强体文字提示3)> 额外获得：;fc=251;ch=251;cd=251
+MOV <$S(强体文字提示4)> 神圣主属性上限+
+INC <$S(强体文字提示4)> <$S(强体等级属性)>
+MOV <$S(强体文字提示5)> 下一阶：
+INC <$S(强体文字提示5)> <$S(强体下级名称)>
+INC <$S(强体文字提示5)> ;fc=56;ch=56;cd=56
+MOV <$S(强体文字提示6)> 神圣主属性上限+
+INC <$S(强体文字提示6)> <$S(强体下级属性)>
+INC <$S(强体文字提示6)> ;fc=56;ch=56;cd=56
+MOV P11
+MOV P12
+MOV P11 <$HUMAN(强体阶段)>
+MOV P12 <$S(强体阶段等级)>
+MOV <$S(强体阶段属性1)>
+MOV <$S(强体阶段属性2)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt <$HUMAN(强体等级)> <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+MOV P13
+MUL P13 <$HUMAN(强体阶段)> <$S(强体阶段属性1)>
+MOV P14
+MUL P14 <$HUMAN(强体阶段)> <$S(强体阶段属性2)>
+MOV P15
+MOV P15 P13
+INC P15 <$S(强体阶段属性1)>
+MOV P16
+MOV P16 P14
+INC P16 <$S(强体阶段属性2)>
+BREAK
+#SAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=90;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}>
+<{i=91;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}/@体魄>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1893;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣魂丹 0#47<$S(强体需求数量)>;x=80;y=410}>
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=260;y=95}>
+<{s=神圣主属性下限+<$STR(P13)>;x=278;y=110}>
+<{s=神圣主属性上限+<$STR(P14)>;x=278;y=125}>
+<{s=下一级：;fc=56;ch=56;cd=56;x=260;y=140}>
+<{s=神圣主属性下限+<$STR(P15)>;fc=56;ch=56;cd=56;x=278;y=155}>
+<{s=神圣主属性上限+<$STR(P16)>;fc=56;ch=56;cd=56;x=278;y=170}>
+<{s=强体升阶;fc=251;ch=251;cd=251;x=260;y=200}>
+<{s=<$S(强体文字提示1)>;x=260;y=220}>
+<{s=<$S(强体文字提示2)>;x=333;y=220}>
+<{s=<$S(强体文字提示3)>;x=260;y=240}>
+<{s=<$S(强体文字提示4)>;x=278;y=260}>
+<{s=<$S(强体文字提示5)>;x=260;y=290}>
+<{s=<$S(强体文字提示6)>;x=278;y=305}>
+<{s=升阶进度：<$HUMAN(强体阶段)>#47<$S(强体阶段等级)>;fc=251;ch=251;cd=251;x=260;y=345}>
+<{i=1898;li=52;w=170;h=13;x=260;y=360}>
+<{type=1;li=52;i=1899;p=<$STR(P11)>;m=<$STR(P12)>;x=260;y=360}>
+<{i=51;li=53;w=30;h=60;s=一键修炼;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=330;y=400}/@强体修炼>
+
+<{i=1879;li=52;w=14;h=14;x=125;y=113}>
+<{i=<$N(强体按钮10)>;li=52;w=14;h=14;x=153;y=151;ei=<$N(强体特效10)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮9)>;li=52;w=14;h=14;x=103;y=147;ei=<$N(强体特效9)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮8)>;li=52;w=14;h=14;x=124;y=171;ei=<$N(强体特效8)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮7)>;li=52;w=14;h=14;x=172;y=212;ei=<$N(强体特效7)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮6)>;li=52;w=14;h=14;x=74;y=209;ei=<$N(强体特效6)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮5)>;li=52;w=14;h=14;x=125;y=221;ei=<$N(强体特效5)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮4)>;li=52;w=14;h=14;x=153;y=279;ei=<$N(强体特效4)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮3)>;li=52;w=14;h=14;x=97;y=271;ei=<$N(强体特效3)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮2)>;li=52;w=14;h=14;x=168;y=332;ei=<$N(强体特效2)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮1)>;li=52;w=14;h=14;x=97;y=325;ei=<$N(强体特效1)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+
+#ELSEACT
+OPENMERCHANTDLG 52|1896|1|442|274|0|0|30|1|419|27
+MOV <$S(强体阶段等级)>
+MOV <$S(强体需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt 1 <$S(强体阶段等级)> <$S(强体需求数量)>
+MOV P11
+MOV P12
+MOV P11 <$HUMAN(强体阶段)>
+MOV P12 <$S(强体阶段等级)>
+MOV <$S(强体阶段属性1)>
+MOV <$S(强体阶段属性2)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt 1 <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+MOV P13
+MUL P13 <$HUMAN(强体阶段)> <$S(强体阶段属性1)>
+MOV P14
+MUL P14 <$HUMAN(强体阶段)> <$S(强体阶段属性2)>
+MOV P15
+MOV P15 P13
+INC P15 <$S(强体阶段属性1)>
+MOV P16
+MOV P16 P14
+INC P16 <$S(强体阶段属性2)>
+BREAK
+#ELSESAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=90;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}>
+<{i=91;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}/@体魄>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1893;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣魂丹 0#4745;x=80;y=410}>
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=260;y=95}>
+<{s=神圣主属性下限+<$STR(P13)>;x=278;y=110}>
+<{s=神圣主属性上限+<$STR(P14)>;x=278;y=125}>
+<{s=下一级：;fc=56;ch=56;cd=56;x=260;y=140}>
+<{s=神圣主属性下限+<$STR(P15)>;fc=56;ch=56;cd=56;x=278;y=155}>
+<{s=神圣主属性上限+<$STR(P16)>;fc=56;ch=56;cd=56;x=278;y=170}>
+<{s=强体升阶;fc=251;ch=251;cd=251;x=260;y=200}>
+<{s=当前无任何强体阶段;x=260;y=220}>
+<{s=下一阶：初学乍练 ;fc=56;ch=56;cd=56;x=260;y=290}>
+<{s=神圣主属性上限+200;fc=56;ch=56;cd=56;x=280;y=305}>
+<{s=升阶进度：<$HUMAN(强体阶段)>#47<$S(强体阶段等级)>;fc=251;ch=251;cd=251;x=260;y=345}>
+<{i=1898;li=52;w=170;h=13;x=260;y=360}>
+<{type=1;li=52;i=1899;p=<$STR(P11)>;m=<$STR(P12)>;x=260;y=360}>
+<{i=51;li=53;w=30;h=60;s=一键修炼;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=330;y=400}/@强体修炼>
+
+<{i=1879;li=52;w=14;h=14;x=125;y=113}>
+<{i=<$N(强体按钮10)>;li=52;w=14;h=14;x=153;y=151;ei=<$N(强体特效10)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮9)>;li=52;w=14;h=14;x=103;y=147;ei=<$N(强体特效9)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮8)>;li=52;w=14;h=14;x=124;y=171;ei=<$N(强体特效8)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮7)>;li=52;w=14;h=14;x=172;y=212;ei=<$N(强体特效7)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮6)>;li=52;w=14;h=14;x=74;y=209;ei=<$N(强体特效6)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮5)>;li=52;w=14;h=14;x=125;y=221;ei=<$N(强体特效5)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮4)>;li=52;w=14;h=14;x=153;y=279;ei=<$N(强体特效4)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮3)>;li=52;w=14;h=14;x=97;y=271;ei=<$N(强体特效3)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮2)>;li=52;w=14;h=14;x=168;y=332;ei=<$N(强体特效2)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(强体按钮1)>;li=52;w=14;h=14;x=97;y=325;ei=<$N(强体特效1)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+;----------------------------------------------------------------------------------------------------------
+[@强体修炼]
+#IF
+CHECKVAR HUMAN 强体等级 > 10
+#ACT
+SENDMSG 5 已升至最高强体!
+DELAYGOTO 10 @强体正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt 1 <$S(强体阶段)> <$S(强体需求)>
+MOV <$N(强体阶段)> 200
+DEC <$N(强体阶段)> <$HUMAN(强体阶段)>
+MUL <$N(升级数量)> <$N(强体阶段)> <$S(强体需求)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt 1 <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+MUL <$N(强体属性1)> <$N(强体阶段)> <$S(强体阶段属性1)>
+MUL <$N(强体属性2)> <$N(强体阶段)> <$S(强体阶段属性2)>
+
+#IF
+CHECKVAR HUMAN 强体等级 > 0
+CHECKVAR HUMAN 强体等级 < 11
+#ACT
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+INC <$N(强体等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt <$HUMAN(强体等级)> <$S(强体阶段)> <$S(强体需求)>
+MOV <$N(强体阶段)> 0
+INC <$N(强体阶段)> <$S(强体阶段)>
+DEC <$N(强体阶段)> <$HUMAN(强体阶段)>
+MUL <$N(升级数量)> <$N(强体阶段)> <$S(强体需求)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt <$HUMAN(强体等级)> <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+MUL <$N(强体属性1)> <$N(强体阶段)> <$S(强体阶段属性1)>
+MUL <$N(强体属性2)> <$N(强体阶段)> <$S(强体阶段属性2)>
+DELAYGOTO 10 @强体阶段升级
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+CHECKKIMNEEDLE 圣魂丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣魂丹 <$N(升级数量)>
+CALCVAR HUMAN 强体等级 + 1
+SAVEVAR HUMAN 强体等级 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CALCVAR HUMAN 强体阶段 = 0
+SAVEVAR HUMAN 强体阶段 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 - <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 - <$HUMAN(强体属性2)> 86400000
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt 1 <$S(强体下级名称)> <$S(强体下级属性)>
+CALCVAR HUMAN 强体属性1 + <$N(强体属性1)>
+CALCVAR HUMAN 强体属性2 + <$N(强体属性2)>
+CALCVAR HUMAN 强体属性2 + <$S(强体下级属性)>
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 + <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 + <$HUMAN(强体属性2)> 86400000
+SENDMSG 0 恭喜　%S　强体成功突破至初学乍练，从此纵横玛法，傲视群雄!
+DELAYGOTO 10 @强体正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+CHECKVAR HUMAN 强体阶段 < 199
+CHECKKIMNEEDLE 圣魂丹 45
+NOT CHECKKIMNEEDLE 圣魂丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣魂丹 45
+CALCVAR HUMAN 强体阶段 + 1
+SAVEVAR HUMAN 强体阶段 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 - <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 - <$HUMAN(强体属性2)> 86400000
+CALCVAR HUMAN 强体属性1 + 45
+CALCVAR HUMAN 强体属性2 + 50
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 + <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 + <$HUMAN(强体属性2)> 86400000
+DELAYGOTO 10 @强体正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @强体正文
+BREAK
+
+[@强体阶段升级]
+#IF
+CHECKVAR HUMAN 强体等级 > 0
+CHECKVAR HUMAN 强体等级 < 11
+CHECKKIMNEEDLE 圣魂丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣魂丹 <$N(升级数量)>
+CALCVAR HUMAN 强体等级 + 1
+SAVEVAR HUMAN 强体等级 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CALCVAR HUMAN 强体阶段 = 0
+SAVEVAR HUMAN 强体阶段 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt <$HUMAN(强体等级)> <$S(强体下级名称)> <$S(强体下级属性)>
+SENDMSG 0 恭喜　%S　强体成功突破至<$S(强体下级名称)>，从此纵横玛法，傲视群雄!
+CHANGEHUMABILITY 20 - <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 - <$HUMAN(强体属性2)> 86400000
+CALCVAR HUMAN 强体属性1 + <$N(强体属性1)>
+CALCVAR HUMAN 强体属性2 + <$N(强体属性2)>
+CALCVAR HUMAN 强体属性2 + <$S(强体下级属性)>
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 + <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 + <$HUMAN(强体属性2)> 86400000
+DELAYGOTO 10 @强体正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 > 0
+CHECKVAR HUMAN 强体等级 < 11
+CHECKKIMNEEDLE 圣魂丹 <$S(强体需求)>
+NOT CHECKKIMNEEDLE 圣魂丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣魂丹 <$S(强体需求)>
+CALCVAR HUMAN 强体阶段 + 1
+SAVEVAR HUMAN 强体阶段 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt <$HUMAN(强体等级)> <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+CHANGEHUMABILITY 20 - <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 - <$HUMAN(强体属性2)> 86400000
+CALCVAR HUMAN 强体属性1 + <$S(强体阶段属性1)>
+CALCVAR HUMAN 强体属性2 + <$S(强体阶段属性2)>
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+CHANGEHUMABILITY 20 + <$HUMAN(强体属性1)> 86400000
+CHANGEHUMABILITY 23 + <$HUMAN(强体属性2)> 86400000
+DELAYGOTO 10 @强体正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @强体正文
+BREAK
+}

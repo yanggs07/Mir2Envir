@@ -1,0 +1,6 @@
+[@MAIN]
+#IF
+#ACT
+CALCVAR HUMAN 怪物攻城 + 1
+savevar human 怪物攻城 ..\QuestDiary\雪花制作\怪物攻城.txt
+SENDMSG 7 你当前斩杀的怪物个数为<$human(怪物攻城)>个！

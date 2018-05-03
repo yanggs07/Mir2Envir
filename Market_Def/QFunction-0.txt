@@ -1,0 +1,6318 @@
+(@@offlinemsg @@RecallPneuma @@useitemname @@sendmsg @@BuHero @@InPutInteger @@InPutString @@sendmsg )
+;----------------------------------------------------------------------------------------BUFF-主号
+[@MagTagFunc0]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc1]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc3]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc5]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc7]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc9]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc10]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc11]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc12]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc13]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc22]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc23]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc24]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc25]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc26]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc27]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc33]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc36]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc37]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc39]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc40]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc42]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc43]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc44]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc45]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc47]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc58]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc59]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc60]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc61]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc62]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc63]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc64]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc65]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc69]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc70]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc74]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc76]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc77]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc78]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc79]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc80]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc81]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc82]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc83]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc84]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc85]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc86]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc87]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc88]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc89]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc90]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc91]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc92]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc94]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc96]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc97]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc98]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc107]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc108]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc109]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc110]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc111]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc112]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc113]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc114]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc118]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc119]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc120]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc121]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc122]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc123]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc132]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc133]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc134]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc135]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc136]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc137]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc146]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc148]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc149]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc150]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc151]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc152]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc153]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc154]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc155]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc156]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc157]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc158]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc159]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc160]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc161]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+
+[@MagTagFunc162]
+#IF
+#ACT
+DELAYGOTO 100 @主号BUFF触发
+;----------------------------------------------------------------------------------------BUFF-英雄
+[@MagHeroTagFunc0]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc1]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc3]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc5]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc7]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc9]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc10]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc11]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc12]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc13]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc22]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc23]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc24]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc25]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc26]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc27]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc33]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc36]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc37]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc39]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc40]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc42]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc43]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc44]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc45]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc47]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc58]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc59]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc60]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc61]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc62]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc63]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc64]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc65]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc69]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc70]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc74]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc76]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc77]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc78]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc79]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc80]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc81]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc82]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc83]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc84]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc85]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc86]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc87]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc88]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc89]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc90]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc91]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc92]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc94]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc96]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc97]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc98]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc107]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc108]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc109]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc110]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc111]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc112]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc113]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc114]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc118]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc119]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc120]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc121]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc122]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc123]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc132]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc133]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc134]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc135]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc136]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc137]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc146]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc148]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc149]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc150]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc151]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc152]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc153]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc154]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc155]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc156]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc157]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc158]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc159]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc160]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc161]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+
+[@MagHeroTagFunc162]
+#IF
+#ACT
+DELAYGOTO 100 @英雄BUFF触发
+;----------------------------------------------------------------------------------------BUFF
+;----------------------------------------------------------------------------------------BUFF
+[@主号BUFF触发]
+#IF
+CHECK [487] 1
+SMALL <$HP> <$MAXHPRATE(20)>
+#ACT
+#CALL [\数据文件\坐骑系统\生命涌动触发.txt] @生命涌动触发
+
+#IF
+random 10
+<$USERNAME>.CHECK [493] 0
+<$STR(S0)>.CHECK [487] 1
+<$STR(S0)>.CHECKVAR HUMAN 坐骑等级6 > 0
+<$STR(S0)>.CHECKVAR HUMAN 坐骑等级6 < 4
+#ACT
+SET [493] 1
+SetOffTimer 27
+SetOnTimer 27 300 1
+SetOffTimer 29
+SetOnTimer 29 1 5
+<$STR(S0)>.GetRandomName ..\QuestDiary\数据文件\坐骑系统\致死打击.txt <$S(坐骑技能6)> <$HUMAN(坐骑等级6)>
+SENDMSG 7 致死打击生效：生命值每秒损失<$S(坐骑技能6)>%，5分钟内不会触发此效果！
+;----------------------------------------------------------------------------------------BUFF
+[@英雄BUFF触发]
+#IF
+CHECK [487] 1
+SMALL <$HEROHP> <$HEROMAXHPRATE(20)>
+#ACT
+#CALL [\数据文件\坐骑系统\生命涌动触发.txt] @英雄生命涌动触发
+
+#IF
+random 10
+<$USERNAME>.CHECK [494] 0
+<$STR(S0)>.CHECK [487] 1
+<$STR(S0)>.CHECKVAR HUMAN 坐骑等级6 > 0
+<$STR(S0)>.CHECKVAR HUMAN 坐骑等级6 < 4
+#ACT
+SET [494] 1
+SetOffTimer 28
+SetOnTimer 28 300 1
+SetOffTimer 30
+SetOnTimer 30 1 5
+SENDMSG 7 （英雄）致死打击生效：生命值每秒损失<$S(坐骑技能6)>%，5分钟内不会触发此效果！
+;----------------------------------------------------------------------------------------BUFF
+
+
+
+
+
+
+
+
+[@StdModeFunc601]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+GIVE 子鼠 1
+SENDMSG 7 提示：“子鼠”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A1.txt
+SENDMSG 7 提示：你已佩带了“子鼠”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc602]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+GIVE 丑牛 1
+SENDMSG 7 提示：“丑牛”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A2.txt
+SENDMSG 7 提示：你已佩带了“丑牛”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+[@StdModeFunc603]
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+GIVE 寅虎 1
+SENDMSG 7 提示：“寅虎”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A3.txt
+SENDMSG 7 提示：你已佩带了“寅虎”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+
+[@StdModeFunc604]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+GIVE 卯兔 1
+SENDMSG 7 提示：“卯兔”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A4.txt
+SENDMSG 7 提示：你已佩带了“卯兔”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc605]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+GIVE 辰龙 1
+SENDMSG 7 提示：“辰龙”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A5.txt
+SENDMSG 7 提示：你已佩带了“辰龙”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+[@StdModeFunc606]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+GIVE 巳蛇 1
+SENDMSG 7 提示：“巳蛇”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A6.txt
+SENDMSG 7 提示：你已佩带了“巳蛇”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc607]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+GIVE 午马 1
+SENDMSG 7 提示：“午马”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A7.txt
+SENDMSG 7 提示：你已佩带了“午马”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc608]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+GIVE 未羊 1
+SENDMSG 7 提示：“未羊”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A8.txt
+SENDMSG 7 提示：你已佩带了“未羊”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc609]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+GIVE 申猴 1
+SENDMSG 7 提示：“申猴”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A9.txt
+SENDMSG 7 提示：你已佩带了“申猴”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc610]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+GIVE 酉鸡 1
+SENDMSG 7 提示：“酉鸡”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A10.txt
+SENDMSG 7 提示：你已佩带了“酉鸡”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc611]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+GIVE 戌狗 1
+SENDMSG 7 提示：“戌狗”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A11.txt
+SENDMSG 7 提示：你已佩带了“戌狗”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+
+[@StdModeFunc612]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+GIVE 亥猪 1
+SENDMSG 7 提示：“亥猪”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A12.txt
+SENDMSG 7 提示：你已佩带了“亥猪”！
+CHANGEHUMABILITY 21 + 500 72000
+CHANGEHUMABILITY 17 + 500 72000
+CHANGEHUMABILITY 12 + 500 72000
+CHANGEHUMABILITY 13 + 500 72000
+CHANGEHUMABILITY 23 + 500 72000
+CHANGEHUMABILITY 20 + 500 72000
+CALCVAR HUMAN 主号神佑数量 + 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+goto @shenyoukq
+Break
+[@shenyoukq]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+MOV <$S(显示神佑A1)> <{i=0;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|子鼠　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=88}/@取下神佑A1>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A1)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+MOV <$S(显示神佑A2)> <{i=1;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|丑牛　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=88}/@取下神佑A2>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A2)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+MOV <$S(显示神佑A3)> <{i=2;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|寅虎　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=88}/@取下神佑A3> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A3)>
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+MOV <$S(显示神佑A4)> <{i=3;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|卯兔　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=88}/@取下神佑A4> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A4)>
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+MOV <$S(显示神佑A5)> <{i=4;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|辰龙　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=132}/@取下神佑A5> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A5)>
+
+
+
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+MOV <$S(显示神佑A6)> <{i=5;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|巳蛇　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=132}/@取下神佑A6> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A6)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+MOV <$S(显示神佑A7)> <{i=6;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|午马　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=132}/@取下神佑A7> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A7)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+MOV <$S(显示神佑A8)> <{i=7;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|未羊　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=132}/@取下神佑A8> 
+
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A8)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+MOV <$S(显示神佑A9)> <{i=8;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|申猴　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=178}/@取下神佑A9> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A9)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+MOV <$S(显示神佑A10)> <{i=9;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|酉鸡　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=178}/@取下神佑A10> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A10)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+MOV <$S(显示神佑A11)> <{i=10;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|戌狗　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=178}/@取下神佑A11> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A11)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+MOV <$S(显示神佑A12)> <{i=11;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|亥猪　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=178}/@取下神佑A12> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A12)>
+
+#if
+CHECKVAR HUMAN 主号神佑数量 > 11
+#act
+MOV <$S(显示神佑A313)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑A313)> <{s=（未激活）;fc=58;x=150;y=250}>
+
+
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑A1)>\
+<$S(显示神佑A2)>\
+<$S(显示神佑A3)>\
+<$S(显示神佑A4)>\
+<$S(显示神佑A5)>\
+<$S(显示神佑A6)>\
+<$S(显示神佑A7)>\
+<$S(显示神佑A8)>\
+<$S(显示神佑A9)>\
+<$S(显示神佑A10)>\
+<$S(显示神佑A11)>\
+<$S(显示神佑A12)>\
+<{i=2144;li=22;x=80;y=225;s=极品神佑袋}/@主号神佑袋脚本1>
+<{s=神佑袋套装状态：;fc=243;x=50;y=250}><$S(显示神佑A313)>
+
+
+
+
+
+
+[@取下神佑A1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A1.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 子鼠 1
+SENDMSG 7 提示：你已取下了“子鼠”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A2]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A2.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 丑牛 1
+SENDMSG 7 提示：你已取下了“丑牛”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A3]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A3.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 寅虎 1
+SENDMSG 7 提示：你已取下了“寅虎”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A4]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A4.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 卯兔 1
+SENDMSG 7 提示：你已取下了“卯兔”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A5]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A5.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 辰龙 1
+SENDMSG 7 提示：你已取下了“辰龙”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A6]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A6.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 巳蛇 1
+SENDMSG 7 提示：你已取下了“巳蛇”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+[@取下神佑A7]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A7.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 午马 1
+SENDMSG 7 提示：你已取下了“午马”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+
+
+
+[@取下神佑A8]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A8.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 未羊 1
+SENDMSG 7 提示：你已取下了“未羊”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+
+
+[@取下神佑A9]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A9.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 申猴 1
+SENDMSG 7 提示：你已取下了“申猴”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+
+
+[@取下神佑A10]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A10.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 酉鸡 1
+SENDMSG 7 提示：你已取下了“酉鸡”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+[@取下神佑A11]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A11.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 戌狗 1
+SENDMSG 7 提示：你已取下了“戌狗”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+
+
+
+[@取下神佑A12]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A12.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 亥猪 1
+SENDMSG 7 提示：你已取下了“亥猪”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @shenyoukq
+Break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@StdModeFunc701]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+GIVE 极品子鼠 1
+SENDMSG 7 提示：“极品子鼠”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A24.txt
+SENDMSG 7 提示：你已佩带了“极品子鼠”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+[@StdModeFunc702]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+GIVE 极品丑牛 1
+SENDMSG 7 提示：“极品丑牛”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A13.txt
+SENDMSG 7 提示：你已佩带了“极品丑牛”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+[@StdModeFunc703]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+GIVE 极品寅虎 1
+SENDMSG 7 提示：“极品寅虎”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A14.txt
+SENDMSG 7 提示：你已佩带了“极品寅虎”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+[@StdModeFunc704]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+GIVE 极品卯兔 1
+SENDMSG 7 提示：“极品卯兔”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A15.txt
+SENDMSG 7 提示：你已佩带了“极品卯兔”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+[@StdModeFunc705]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+GIVE 极品辰龙 1
+SENDMSG 7 提示：“极品辰龙”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A16.txt
+SENDMSG 7 提示：你已佩带了“极品辰龙”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+[@StdModeFunc706]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+GIVE 极品巳蛇 1
+SENDMSG 7 提示：“极品巳蛇”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A17.txt
+SENDMSG 7 提示：你已佩带了“极品巳蛇”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+[@StdModeFunc707]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+GIVE 极品午马 1
+SENDMSG 7 提示：“极品午马”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A18.txt
+SENDMSG 7 提示：你已佩带了“极品午马”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+[@StdModeFunc708]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+GIVE 极品未羊 1
+SENDMSG 7 提示：“极品未羊”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A19.txt
+SENDMSG 7 提示：你已佩带了“极品未羊”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+
+[@StdModeFunc709]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+GIVE 极品申猴 1
+SENDMSG 7 提示：“极品申猴”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A20.txt
+SENDMSG 7 提示：你已佩带了“极品申猴”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+[@StdModeFunc710]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+GIVE 极品酉鸡 1
+SENDMSG 7 提示：“极品酉鸡”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A21.txt
+SENDMSG 7 提示：你已佩带了“极品酉鸡”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@StdModeFunc711]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+GIVE 极品戌狗 1
+SENDMSG 7 提示：“极品戌狗”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A22.txt
+SENDMSG 7 提示：你已佩带了“极品戌狗”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+[@StdModeFunc712]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+GIVE 极品亥猪 1
+SENDMSG 7 提示：“极品亥猪”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑A23.txt
+SENDMSG 7 提示：你已佩带了“极品亥猪”！
+CHANGEHUMABILITY 21 + 2000 72000
+CHANGEHUMABILITY 17 + 2000 72000
+CHANGEHUMABILITY 12 + 1500 72000
+CHANGEHUMABILITY 13 + 1500 72000
+CHANGEHUMABILITY 23 + 1500 72000
+CHANGEHUMABILITY 20 + 2000 72000
+CHANGEHUMABILITY 22 + 500 72000
+CALCVAR HUMAN 主号神佑数量1 + 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+goto @主号神佑袋脚本1
+Break
+
+
+
+[@主号神佑袋脚本1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+MOV <$S(显示神佑A13)> <{i=1;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品丑牛　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=88}/@取下神佑A13> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A13)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+MOV <$S(显示神佑A14)> <{i=2;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品寅虎　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=88}/@取下神佑A14> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A14)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+MOV <$S(显示神佑A15)> <{i=3;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品卯兔　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=88}/@取下神佑A15> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A15)>
+
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+MOV <$S(显示神佑A16)> <{i=4;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品辰龙　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=132}/@取下神佑A16> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A16)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+MOV <$S(显示神佑A17)> <{i=5;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品巳蛇　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=132}/@取下神佑A17> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A17)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+MOV <$S(显示神佑A18)> <{i=6;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品午马　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=132}/@取下神佑A18> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A18)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+MOV <$S(显示神佑A19)> <{i=7;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品未羊　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=133}/@取下神佑A19> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A19)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+MOV <$S(显示神佑A20)> <{i=8;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品申猴　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=178}/@取下神佑A20> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A20)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+MOV <$S(显示神佑A21)> <{i=9;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品酉鸡　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=178}/@取下神佑A21> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A21)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+MOV <$S(显示神佑A22)> <{i=10;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品戌狗　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=178}/@取下神佑A22> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A22)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+MOV <$S(显示神佑A23)> <{i=11;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品亥猪　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=178}/@取下神佑A23> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A23)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+MOV <$S(显示神佑A24)> <{i=0;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品子鼠　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=88}/@取下神佑A24> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A24)>
+
+
+
+
+#if
+CHECKVAR HUMAN 主号神佑数量1 > 11
+#act
+MOV <$S(显示神佑A25)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑A25)> <{s=（未激活）;fc=58;x=150;y=250}>
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑A24)>\
+<$S(显示神佑A13)>\
+<$S(显示神佑A14)>\
+<$S(显示神佑A15)>\
+<$S(显示神佑A16)>\
+<$S(显示神佑A17)>\
+<$S(显示神佑A18)>\
+<$S(显示神佑A19)>\
+<$S(显示神佑A20)>\
+<$S(显示神佑A21)>\
+<$S(显示神佑A22)>\
+<$S(显示神佑A23)>\
+<{i=2144;li=22;x=80;y=225;s=神佑袋}/@shenyoukq>
+<{s=极品神佑套装状态：;fc=243;x=50;y=250}><$S(显示神佑A25)>
+
+
+
+[@取下神佑A24]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A24.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品子鼠 1
+SENDMSG 7 提示：你已取下了“极品子鼠”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A13]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A13.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品丑牛 1
+SENDMSG 7 提示：你已取下了“极品丑牛”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A14]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A14.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品寅虎 1
+SENDMSG 7 提示：你已取下了“极品寅虎”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A15]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A15.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品卯兔 1
+SENDMSG 7 提示：你已取下了“极品卯兔”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A16]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A16.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品辰龙 1
+SENDMSG 7 提示：你已取下了“极品辰龙”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A17]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A17.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品巳蛇 1
+SENDMSG 7 提示：你已取下了“极品巳蛇”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A18]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A18.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品午马 1
+SENDMSG 7 提示：你已取下了“极品午马”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+[@取下神佑A19]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A19.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品未羊 1
+SENDMSG 7 提示：你已取下了“极品未羊”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+[@取下神佑A20]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A20.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品申猴 1
+SENDMSG 7 提示：你已取下了“极品申猴”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+
+
+[@取下神佑A21]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A21.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品酉鸡 1
+SENDMSG 7 提示：你已取下了“极品酉鸡”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+
+[@取下神佑A22]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A22.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品戌狗 1
+SENDMSG 7 提示：你已取下了“极品戌狗”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+[@取下神佑A23]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A23.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品亥猪 1
+SENDMSG 7 提示：你已取下了“极品亥猪”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+[@StdModeFunc801]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B1.txt
+#ACT
+GIVE 白日门子鼠 1
+SENDMSG 7 提示：英雄的“白日门子鼠”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B1.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门子鼠”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@StdModeFunc802]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B2.txt
+#ACT
+GIVE 白日门丑牛 1
+SENDMSG 7 提示：英雄的“白日门丑牛”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B2.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门丑牛”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+
+
+[@StdModeFunc803]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B3.txt
+#ACT
+GIVE 白日门寅虎 1
+SENDMSG 7 提示：英雄的“白日门寅虎”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B3.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门寅虎”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@StdModeFunc804]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B4.txt
+#ACT
+GIVE 白日门卯兔 1
+SENDMSG 7 提示：英雄的“白日门卯兔”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B4.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门卯兔”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+[@StdModeFunc805]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B5.txt
+#ACT
+GIVE 白日门辰龙 1
+SENDMSG 7 提示：英雄的“白日门辰龙”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B5.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门辰龙”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+
+[@StdModeFunc806]
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B6.txt
+#ACT
+GIVE 白日门巳蛇 1
+SENDMSG 7 提示：英雄的“白日门巳蛇”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B6.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门巳蛇”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@StdModeFunc807]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B7.txt
+#ACT
+GIVE 白日门午马 1
+SENDMSG 7 提示：英雄的“白日门午马”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B7.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门午马”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+[@StdModeFunc808]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B8.txt
+#ACT
+GIVE 白日门未羊 1
+SENDMSG 7 提示：英雄的“白日门未羊”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B8.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门未羊”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+
+[@StdModeFunc809]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B9.txt
+#ACT
+GIVE 白日门申猴 1
+SENDMSG 7 提示：英雄的“白日门申猴”已被替换下来了！
+
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B9.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门申猴”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@StdModeFunc810]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B10.txt
+#ACT
+GIVE 白日门酉鸡 1
+SENDMSG 7 提示：英雄的“白日门酉鸡”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B10.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门酉鸡”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+
+
+[@StdModeFunc811]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B11.txt
+#ACT
+GIVE 白日门戌狗 1
+SENDMSG 7 提示：英雄的“白日门戌狗”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B11.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门戌狗”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@StdModeFunc812]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B12.txt
+#ACT
+GIVE 白日门亥猪 1
+SENDMSG 7 提示：英雄的“白日门亥猪”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B12.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门亥猪”！
+CHANGEHUMABILITY 21 + 500 72000 HERO
+CHANGEHUMABILITY 17 + 500 72000 HERO
+CHANGEHUMABILITY 12 + 500 72000 HERO
+CHANGEHUMABILITY 13 + 500 72000 HERO
+CHANGEHUMABILITY 23 + 500 72000 HERO
+CHANGEHUMABILITY 20 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量 + 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+goto @shenyoukq1
+Break
+
+[@shenyoukq1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B1.txt
+#ACT
+MOV <$S(显示神佑B1)> <{i=0;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门子鼠　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=88}/@取下神佑B1>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B1.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B1)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B2.txt
+#ACT
+MOV <$S(显示神佑B2)> <{i=1;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门丑牛　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=88}/@取下神佑B2>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B2.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B2)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B3.txt
+#ACT
+MOV <$S(显示神佑B3)> <{i=2;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门寅虎　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=88}/@取下神佑B3> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B3.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B3)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B4.txt
+#ACT
+MOV <$S(显示神佑B4)> <{i=3;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门卯兔　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=88}/@取下神佑B4> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B4.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B4)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B5.txt
+#ACT
+MOV <$S(显示神佑B5)> <{i=4;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门辰龙　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=132}/@取下神佑B5> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B5.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B5)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B6.txt
+#ACT
+MOV <$S(显示神佑B6)> <{i=5;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门巳蛇　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=132}/@取下神佑B6> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B6.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B6)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B7.txt
+#ACT
+MOV <$S(显示神佑B7)> <{i=6;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门午马　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=132}/@取下神佑B7> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B7.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B7)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B8.txt
+#ACT
+MOV <$S(显示神佑B8)> <{i=7;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门未羊　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=132}/@取下神佑B8> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B8.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B8)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B9.txt
+#ACT
+MOV <$S(显示神佑B9)> <{i=8;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门申猴　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=178}/@取下神佑B9> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B9.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B9)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B10.txt
+#ACT
+MOV <$S(显示神佑B10)> <{i=9;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门酉鸡　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=178}/@取下神佑B10> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B10.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B10)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B11.txt
+#ACT
+MOV <$S(显示神佑B11)> <{i=10;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门戌狗　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=178}/@取下神佑B11> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B11.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B11)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B12.txt
+#ACT
+MOV <$S(显示神佑B12)> <{i=11;li=77;ht=当前佩带神佑数量：<$HUMAN(英雄神佑数量)>件|　|白日门亥猪　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=178}/@取下神佑B12> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B12.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B12)>
+
+
+#if
+CHECKVAR HUMAN 英雄神佑数量 > 11
+#act
+MOV <$S(显示神佑B13)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑B13)> <{s=（未激活）;fc=58;x=150;y=250}>
+
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑B1)>\
+<$S(显示神佑B2)>\
+<$S(显示神佑B3)>\
+<$S(显示神佑B4)>\
+<$S(显示神佑B5)>\
+<$S(显示神佑B6)>\
+<$S(显示神佑B7)>\
+<$S(显示神佑B8)>\
+<$S(显示神佑B9)>\
+<$S(显示神佑B10)>\
+<$S(显示神佑B11)>\
+<$S(显示神佑B12)>\
+<{i=2144;li=22;x=80;y=225;s=极品神佑袋}/@英雄神佑袋脚本1>
+<{s=神佑袋套装状态：;fc=243;x=50;y=250}><$S(显示神佑B13)>
+
+
+[@取下神佑B1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B1.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B1.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门子鼠 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门子鼠”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+[@取下神佑B2]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B2.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B2.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门丑牛 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门丑牛”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+[@取下神佑B3]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B3.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B3.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门寅虎 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门寅虎”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+[@取下神佑B4]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B4.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B4.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门卯兔 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门卯兔”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+[@取下神佑B5]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B5.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B5.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门辰龙 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门辰龙”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+[@取下神佑B6]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B6.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B6.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门巳蛇 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门巳蛇”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+[@取下神佑B7]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B7.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B7.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门午马 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门午马”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+[@取下神佑B8]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B8.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B8.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门未羊 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门未羊”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+
+[@取下神佑B9]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B9.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B9.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门申猴 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门申猴”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+
+
+[@取下神佑B10]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B10.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B10.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门酉鸡 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门酉鸡”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+
+[@取下神佑B11]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B11.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B11.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门戌狗 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门戌狗”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+[@取下神佑B12]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B12.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B12.txt
+CALCVAR HUMAN 英雄神佑数量 - 1
+SAVEVAR HUMAN 英雄神佑数量 ..\QuestDiary\活动次数\英雄神佑数量.txt
+GIVE 白日门亥猪 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门亥猪”！
+CHANGEHUMABILITY 21 - 500 72000 HERO
+CHANGEHUMABILITY 17 - 500 72000 HERO
+CHANGEHUMABILITY 12 - 500 72000 HERO
+CHANGEHUMABILITY 13 - 500 72000 HERO
+CHANGEHUMABILITY 23 - 500 72000 HERO
+CHANGEHUMABILITY 20 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+
+[@StdModeFunc901]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B14.txt
+#ACT
+GIVE 白日门极品子鼠 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品子鼠”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B14.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品子鼠”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+[@StdModeFunc902]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B15.txt
+#ACT
+GIVE 白日门极品丑牛 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品丑牛”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B15.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品丑牛”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+[@StdModeFunc903]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B16.txt
+#ACT
+GIVE 白日门极品寅虎 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品寅虎”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B16.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品寅虎”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+
+[@StdModeFunc904]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B17.txt
+#ACT
+GIVE 白日门极品卯兔 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品卯兔”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B17.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品卯兔”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+[@StdModeFunc905]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B18.txt
+#ACT
+GIVE 白日门极品辰龙 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品辰龙”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B18.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品辰龙”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+
+[@StdModeFunc906]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B19.txt
+#ACT
+GIVE 白日门极品巳蛇 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品巳蛇”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B19.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品巳蛇”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+
+[@StdModeFunc907]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B20.txt
+#ACT
+GIVE 白日门极品午马 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品午马”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B20.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品午马”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+
+[@StdModeFunc908]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B21.txt
+#ACT
+GIVE 白日门极品未羊 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品未羊”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B21.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品未羊”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+[@StdModeFunc909]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B22.txt
+#ACT
+GIVE 白日门极品申猴 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品申猴”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B22.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品申猴”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+[@StdModeFunc910]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B23.txt
+#ACT
+GIVE 白日门极品酉鸡 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品酉鸡”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B23.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品酉鸡”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+
+[@StdModeFunc911]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B24.txt
+#ACT
+GIVE 白日门极品戌狗 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品戌狗”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B24.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品戌狗”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+[@StdModeFunc912]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B25.txt
+#ACT
+GIVE 白日门极品亥猪 1 HERO
+SENDMSG 7 提示：英雄的“白日门极品亥猪”已被替换下来了！
+#ELSEACT
+Addnamelist ..\QuestDiary\活动次数\神佑B25.txt
+SENDMSG 7 提示：你的英雄已佩带了“白日门极品亥猪”！
+CHANGEHUMABILITY 21 + 2000 72000 HERO
+CHANGEHUMABILITY 17 + 2000 72000 HERO
+CHANGEHUMABILITY 12 + 1500 72000 HERO
+CHANGEHUMABILITY 13 + 1500 72000 HERO
+CHANGEHUMABILITY 23 + 2000 72000 HERO
+CHANGEHUMABILITY 20 + 2000 72000 HERO
+CHANGEHUMABILITY 22 + 500 72000 HERO
+CALCVAR HUMAN 英雄神佑数量1 + 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+goto @英雄神佑袋脚本1
+Break
+[@英雄神佑袋脚本1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B14.txt
+#ACT
+MOV <$S(显示神佑B14)> <{i=0;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品子鼠　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=88}/@取下神佑B14> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B14.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B14)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B15.txt
+#ACT
+MOV <$S(显示神佑B15)> <{i=1;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品丑牛　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=88}/@取下神佑B15> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B15.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B15)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B16.txt
+#ACT
+MOV <$S(显示神佑B16)> <{i=2;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品寅虎　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=88}/@取下神佑B16> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B16.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B16)>
+
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B17.txt
+#ACT
+MOV <$S(显示神佑B17)> <{i=3;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品卯兔　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=88}/@取下神佑B17> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B17.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B17)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B18.txt
+#ACT
+MOV <$S(显示神佑B18)> <{i=4;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品辰龙　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=132}/@取下神佑B18> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B18.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B18)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B19.txt
+#ACT
+MOV <$S(显示神佑B19)> <{i=5;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品巳蛇　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=132}/@取下神佑B19> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B19.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B19)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B20.txt
+#ACT
+MOV <$S(显示神佑B20)> <{i=6;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品午马　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=132}/@取下神佑B20> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B20.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B20)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B21.txt
+#ACT
+MOV <$S(显示神佑B21)> <{i=7;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品未羊　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=133}/@取下神佑B21> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B21.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B21)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B22.txt
+#ACT
+MOV <$S(显示神佑B22)> <{i=8;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品申猴　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=178}/@取下神佑B22> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B22.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B22)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B23.txt
+#ACT
+MOV <$S(显示神佑B23)> <{i=9;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门酉鸡　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=178}/@取下神佑B23> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B23.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B23)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B24.txt
+#ACT
+MOV <$S(显示神佑B24)> <{i=10;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品戌狗　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=178}/@取下神佑B24> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B24.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B24)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B25.txt
+#ACT
+MOV <$S(显示神佑B25)> <{i=11;li=77;ht=当前佩带极品神佑数量：<$HUMAN(英雄神佑数量1)>件|　|白日门极品亥猪　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=178}/@取下神佑B25> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑B25.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑B25)>
+
+#if
+CHECKVAR HUMAN 英雄神佑数量1 > 11
+#act
+MOV <$S(显示神佑B26)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑B26)> <{s=（未激活）;fc=58;x=150;y=250}>
+
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑B14)>\
+<$S(显示神佑B15)>\
+<$S(显示神佑B16)>\
+<$S(显示神佑B17)>\
+<$S(显示神佑B18)>\
+<$S(显示神佑B19)>\
+<$S(显示神佑B20)>\
+<$S(显示神佑B21)>\
+<$S(显示神佑B22)>\
+<$S(显示神佑B23)>\
+<$S(显示神佑B24)>\
+<$S(显示神佑B25)>\
+<{i=2144;li=22;x=80;y=225;s=神佑袋}/@英雄神佑袋脚本>
+<{s=极品神佑袋套装状态：;fc=243;x=50;y=250}><$S(显示神佑B26)>
+
+
+
+
+[@取下神佑B14]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B14.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B14.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品子鼠 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品子鼠”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+[@取下神佑B15]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B15.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B15.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品丑牛 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品丑牛”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本
+Break
+
+
+[@取下神佑B16]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B16.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B16.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品寅虎 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品寅虎”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+[@取下神佑B17]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B17.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B17.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品卯兔 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品卯兔”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+[@取下神佑B18]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B18.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B18.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品辰龙 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品辰龙”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+[@取下神佑B19]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B19.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B19.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品巳蛇 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品巳蛇”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+[@取下神佑B20]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B20.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B20.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品午马 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品午马”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+[@取下神佑B21]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B21.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B21.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品未羊 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品未羊”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+
+
+
+[@取下神佑B22]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B22.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B22.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品申猴 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品申猴”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+[@取下神佑B23]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B23.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B23.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品酉鸡 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品酉鸡”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+
+[@取下神佑B24]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B24.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B24.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品戌狗 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品戌狗”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+[@取下神佑B25]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑B25.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑B25.txt
+CALCVAR HUMAN 英雄神佑数量1 - 1
+SAVEVAR HUMAN 英雄神佑数量1 ..\QuestDiary\活动次数\英雄神佑数量1.txt
+GIVE 白日门极品亥猪 1 HERO
+SENDMSG 7 提示：你的英雄已取下了“白日门极品亥猪”！
+CHANGEHUMABILITY 21 - 2000 72000 HERO
+CHANGEHUMABILITY 17 - 2000 72000 HERO
+CHANGEHUMABILITY 12 - 1500 72000 HERO
+CHANGEHUMABILITY 13 - 1500 72000 HERO
+CHANGEHUMABILITY 23 - 2000 72000 HERO
+CHANGEHUMABILITY 20 - 2000 72000 HERO
+CHANGEHUMABILITY 22 - 500 72000 HERO
+GOTO @英雄神佑袋脚本1
+Break
+
+
+
+
+[@takeon9]
+#if
+CHECKUSEITEM 9 极品一星龙珠
+#act
+ADDSKILL 混元霹雳 1
+ADDSKILL 混元霹雳 1 HERO
+SENDMSG 0 [%s]佩戴上了【极品一星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+#if
+CHECKUSEITEM 9 极品二星龙珠
+#act
+ADDSKILL 混元霹雳 1
+ADDSKILL 混元霹雳 1 HERO
+SENDMSG 0 [%s]佩戴上了【极品二星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+#if
+CHECKUSEITEM 9 极品三星龙珠
+#act
+ADDSKILL 混元霹雳 1
+ADDSKILL 混元霹雳 1 HERO
+SENDMSG 0 [%s]佩戴上了【极品三星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+#if
+CHECKUSEITEM 9 极品四星龙珠
+#act
+ADDSKILL 混元霹雳 2
+ADDSKILL 混元霹雳 2 HERO
+SENDMSG 0 [%s]佩戴上了【极品四星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+#if
+CHECKUSEITEM 9 极品五星龙珠
+#act
+ADDSKILL 混元霹雳 2
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品五星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+#if
+CHECKUSEITEM 9 极品六星龙珠
+#act
+ADDSKILL 混元霹雳 2
+ADDSKILL 混元霹雳 2 HERO
+SENDMSG 0 [%s]佩戴上了【极品六星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+#if
+CHECKUSEITEM 9 极品七星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品七星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+
+#if
+CHECKUSEITEM 9 极品八星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品八星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+#if
+CHECKUSEITEM 9 极品九星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品九星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+#if
+CHECKUSEITEM 9 极品十星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品十星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+
+#if
+CHECKUSEITEM 9 极品十一星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品十一星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+
+#if
+CHECKUSEITEM 9 极品十二星龙珠
+#act
+ADDSKILL 混元霹雳 3
+ADDSKILL 混元霹雳 3 HERO
+SENDMSG 0 [%s]佩戴上了【极品十二星龙珠】学习了超级技能混元霹雳，此技能超牛！
+break
+
+
+[@StdModeFunc991]
+#if
+#act
+GIVEKIMNEEDLE 火龙果 9
+SENDMSG 0 玩家：%s，打开心法大礼包获得,火龙果9个.
+break
+
+[@StdModeFunc992]
+#if
+#act
+GIVEKIMNEEDLE 装备升级石 9
+GIVEKIMNEEDLE 套装升级石 9
+GIVEKIMNEEDLE 龙珠碎石 9
+SENDMSG 0 玩家：%s，打开宝石礼包获得,装备升级石.套装升级石.龙珠碎石各9个.
+break
+
+[@StdModeFunc997]
+#if
+#act
+GIVEKIMNEEDLE 蛇鳞龟甲 99
+SENDMSG 0 玩家：%s，打开龟甲大礼包获得,蛇鳞龟甲99个.
+break
+
+
+
+[@StdModeFunc7495]
+#if
+#act
+GIVEKIMNEEDLE 点星珠 33
+GIVEKIMNEEDLE 血炎玉 33
+GIVEKIMNEEDLE 天府竹 33
+GIVEKIMNEEDLE 太阴莲 33
+GIVEKIMNEEDLE 擎羊草 33
+GIVEKIMNEEDLE 陀罗花 33
+SENDMSG 0 玩家：%s，打开龙啸功超级包获得：获得点星珠99个,血炎玉99个,天府竹33个,太阴莲33个,擎羊草33个,陀罗花33个.！
+break
+
+
+
+[@StdModeFunc1800]
+#if
+#act
+GIVEKIMNEEDLE 血炎玉 5
+SENDMSG 0 玩家：%s，打开血炎玉礼包(小)获得,血炎玉5个
+break
+
+[@StdModeFunc1801]
+#if
+#act
+GIVEKIMNEEDLE 天府竹 5
+SENDMSG 0 玩家：%s，打开天府竹礼包(小)获得,天府竹5个
+break
+
+[@StdModeFunc1802]
+#if
+#act
+GIVEKIMNEEDLE 太阴莲 5
+SENDMSG 0 玩家：%s，打开太阴莲礼包(小)获得,太阴莲5个
+break
+
+[@StdModeFunc1803]
+#if
+#act
+GIVEKIMNEEDLE 擎羊草 5
+SENDMSG 0 玩家：%s，打开擎羊草礼包(小)获得,擎羊草5个
+break
+
+
+[@StdModeFunc1804]
+#if
+#act
+GIVEKIMNEEDLE 陀罗花 5
+SENDMSG 0 玩家：%s，打开陀罗花礼包(小)获得,陀罗花5个
+break
+
+[@StdModeFunc1805]
+#if
+#act
+GIVEKIMNEEDLE 点星珠 5
+SENDMSG 0 玩家：%s，打开星珠礼包(小)获得,点星珠5个
+break
+
+[@StdModeFunc1806]
+#if
+#act
+GIVEKIMNEEDLE 虎符 5
+SENDMSG 0 玩家：%s，打开虎符礼包(小)获得,虎符5个
+break
+
+[@StdModeFunc1810]
+#if
+#act
+GIVEKIMNEEDLE 血炎玉 10
+SENDMSG 0 玩家：%s，打开血炎玉礼包(中)获得,血炎玉10个
+break
+
+[@StdModeFunc1811]
+#if
+#act
+GIVEKIMNEEDLE 天府竹 10
+SENDMSG 0 玩家：%s，打开天府竹礼包(中)获得,天府竹10个
+break
+
+[@StdModeFunc1802]
+#if
+#act
+GIVEKIMNEEDLE 太阴莲 10
+SENDMSG 0 玩家：%s，打开太阴莲礼包(中)获得,太阴莲10个
+break
+
+[@StdModeFunc1813]
+#if
+#act
+GIVEKIMNEEDLE 擎羊草 10
+SENDMSG 0 玩家：%s，打开擎羊草礼包(中)获得,擎羊草10个
+break
+
+
+[@StdModeFunc1814]
+#if
+#act
+GIVEKIMNEEDLE 陀罗花 10
+SENDMSG 0 玩家：%s，打开陀罗花礼包(中)获得,陀罗花10个
+break
+
+[@StdModeFunc1815]
+#if
+#act
+GIVEKIMNEEDLE 点星珠 10
+SENDMSG 0 玩家：%s，打开星珠礼包(中)获得,点星珠10个
+break
+
+[@StdModeFunc1816]
+#if
+#act
+GIVEKIMNEEDLE 虎符 10
+SENDMSG 0 玩家：%s，打开虎符礼包(中)获得,虎符10个
+break
+
+[@StdModeFunc1820]
+#if
+#act
+GIVEKIMNEEDLE 血炎玉 20
+SENDMSG 0 玩家：%s，打开血炎玉礼包(大)获得,血炎玉20个
+break
+
+[@StdModeFunc1821]
+#if
+#act
+GIVEKIMNEEDLE 天府竹 20
+SENDMSG 0 玩家：%s，打开天府竹礼包(大)获得,天府竹20个
+break
+
+[@StdModeFunc1802]
+#if
+#act
+GIVEKIMNEEDLE 太阴莲 20
+SENDMSG 0 玩家：%s，打开太阴莲礼包(大)获得,太阴莲20个
+break
+
+[@StdModeFunc1823]
+#if
+#act
+GIVEKIMNEEDLE 擎羊草 20
+SENDMSG 0 玩家：%s，打开擎羊草礼包(大)获得,擎羊草20个
+break
+
+
+[@StdModeFunc1824]
+#if
+#act
+GIVEKIMNEEDLE 陀罗花 20
+SENDMSG 0 玩家：%s，打开陀罗花礼包(大)获得,陀罗花20个
+break
+
+[@StdModeFunc1825]
+#if
+#act
+GIVEKIMNEEDLE 点星珠 20
+SENDMSG 0 玩家：%s，打开星珠礼包(大)获得,点星珠20个
+break
+
+[@StdModeFunc1826]
+#if
+#act
+GIVEKIMNEEDLE 虎符 20
+SENDMSG 0 玩家：%s，打开虎符礼包(大)获得,虎符20个
+break
+
+
+
+
+[@StdModeFunc1827]
+#if
+#act
+GIVEKIMNEEDLE 虎符 33
+SENDMSG 0 玩家：%s，打开虎符超级包获得,虎符33个
+break
+
+[@StdModeFunc1828]
+#if
+#act
+GIVEKIMNEEDLE 圣魂丹 33
+GIVEKIMNEEDLE 圣血丹 33
+GIVEKIMNEEDLE 圣灵丹 33
+SENDMSG 0 玩家：%s，打开炼体包获得,圣魂丹33个,圣血丹33个,圣灵丹33个
+break
+
+
+
+[@StdModeFunc1829]
+#if
+#act
+GIVEKIMNEEDLE 真气石凭证 33
+SENDMSG 0 玩家：%s，打开真气石超级包获得,真气石凭证33个
+break
+
+[@StdModeFunc1830]
+#if
+#act
+GIVEKIMNEEDLE 点星珠 33
+GIVEKIMNEEDLE 血炎玉 33
+GIVEKIMNEEDLE 天府竹 33
+GIVEKIMNEEDLE 太阴莲 33
+GIVEKIMNEEDLE 擎羊草 33
+GIVEKIMNEEDLE 陀罗花 33
+GIVEKIMNEEDLE 虎符 33
+GIVEKIMNEEDLE 圣魂丹 33
+GIVEKIMNEEDLE 圣血丹 33
+GIVEKIMNEEDLE 圣灵丹 33
+SENDMSG 0 玩家：%s，打开主宰者发布礼包获得点星珠+血炎玉+天府竹+太阴莲+擎羊草+陀罗花+虎符+圣魂丹+圣血丹+圣灵丹每样33个。
+break
+
+
+
+[@开始回收装备]
+#IF
+Check [10] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金马.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+gamegold + 500
+SENDMSG 0 玩家%s回收了金马系列装备获得500元宝
+MOV S10 0
+#ACT
+BREAK
+
+
+#IF
+Check [11] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵马.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+gamegold + 600
+SENDMSG 0 玩家%s回收了灵马系列装备获得600元宝
+MOV S11 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [12] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天马.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 700
+SENDMSG 0 玩家:%s回收天马装备获得了700元宝
+MOV S12 0
+#ACT
+BREAK
+
+
+
+#IF
+Check [13] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金羊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 800
+SENDMSG 0 玩家:%s回收金羊装备获得了800元宝
+MOV S13 0
+#ACT
+BREAK
+
+
+#IF
+Check [14] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵羊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 900
+SENDMSG 0 玩家:%s回收灵羊装备获得了900元宝
+MOV S14 0
+#ACT
+BREAK
+
+
+#IF
+Check [15] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神羊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 1000
+SENDMSG 0 玩家:%s回收神羊装备获得了1000元宝
+MOV S15 0
+#ACT
+BREAK
+
+
+
+#IF
+Check [16] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金猴.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 1200
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收金猴装备获得了1点消费积分和1200元宝
+MOV S16 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [17] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵猴.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 1300
+CALCVAR HUMAN 消费积分 + 3
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收灵猴装备获得了3点消费积分和1300元宝
+MOV S17 0
+#ACT
+BREAK
+
+
+
+#IF
+Check [18] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神猴.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 2000
+CALCVAR HUMAN 消费积分 + 5
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收神猴装备获得了5点消费积分和2000元宝
+MOV S18 0
+#ACT
+BREAK
+
+
+
+
+
+#IF
+Check [19] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\斗战.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 3000
+CALCVAR HUMAN 消费积分 + 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收斗战装备获得了10点消费积分和3000元宝
+MOV S19 0
+#ACT
+BREAK
+
+
+#IF
+Check [20] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金凤.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 5000
+CALCVAR HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收金凤装备获得了20点消费积分和5000元宝
+MOV S20 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [21] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵凤.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 6000
+CALCVAR HUMAN 消费积分 + 50
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收灵凤装备获得了50点消费积分和6000元宝
+MOV S21 0
+#ACT
+BREAK
+
+
+#IF
+Check [22] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神凤.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 8000
+CALCVAR HUMAN 消费积分 + 100
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收神凤装备获得了100点消费积分和8000元宝
+MOV S22 0
+#ACT
+BREAK
+
+
+
+
+
+#IF
+Check [23] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天马武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 2000
+CALCVAR HUMAN 消费积分 + 2
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收天马武器衣服装备获得了2点消费积分和2000元宝
+MOV S23 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [24] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金羊武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 3000
+CALCVAR HUMAN 消费积分 + 5
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收金羊武器衣服装备获得了5点消费积分和3000元宝
+MOV S24 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [25] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵羊武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 4000
+CALCVAR HUMAN 消费积分 + 8
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收灵羊武器衣服装备获得了8点消费积分和4000元宝
+MOV S25 0
+#ACT
+BREAK
+
+
+
+
+
+
+
+#IF
+Check [26] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神羊武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 5000
+CALCVAR HUMAN 消费积分 + 15
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收神羊武器衣服装备获得了15点消费积分和5000元宝
+MOV S26 0
+#ACT
+BREAK
+
+
+
+#IF
+Check [27] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金猴武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 50000
+CALCVAR HUMAN 消费积分 + 100
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收金猴武器衣服装备获得了100点消费积分和50000元宝
+MOV S27 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [28] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵猴武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 70000
+CALCVAR HUMAN 消费积分 + 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收灵猴武器衣服装备获得了200点消费积分和70000元宝
+MOV S28 0
+#ACT
+BREAK
+
+
+
+
+
+#IF
+Check [29] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神猴武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 100000
+CALCVAR HUMAN 消费积分 + 500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收神猴武器衣服装备获得了500点消费积分和100000元宝
+MOV S29 0
+#ACT
+BREAK
+
+
+
+
+
+
+
+#IF
+Check [30] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\特殊戒指类.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 10000
+CALCVAR HUMAN 消费积分 + 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收特殊戒指类装备获得了100点消费积分和10000元宝
+MOV S30 0
+#ACT
+BREAK
+
+
+
+
+
+
+
+#IF
+Check [31] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇印.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 10000
+CALCVAR HUMAN 消费积分 + 5
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收传奇印装备获得了5点消费积分和10000元宝
+MOV S31 0
+#ACT
+BREAK
+
+
+
+
+
+
+
+
+
+
+#IF
+Check [32] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\回收4-7级军鼓.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 3000
+CALCVAR HUMAN 消费积分 + 15
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收军鼓类装备获得了15点消费积分和3000元宝
+MOV S32 0
+#ACT
+BREAK
+
+
+
+
+
+
+
+
+#IF
+Check [33] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\巅峰勋章.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 10000
+CALCVAR HUMAN 消费积分 + 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收巅峰勋章装备获得了10点消费积分和10000元宝
+MOV S33 0
+#ACT
+BREAK
+
+
+
+
+#IF
+Check [34] 1
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\斗战武器衣服.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 150000
+CALCVAR HUMAN 消费积分 + 1000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\所有数据变量次数\消费积分.txt
+sendmsg 6 当前积分数量有:<$HUMAN(消费积分)>点。
+SENDMSG 0 玩家:%s回收斗战武器衣服装备获得了1000点消费积分和150000元宝
+MOV S34 0
+#ACT
+BREAK
+
+
+
+[@HeroLevelUp]
+
+#IF
+#ACT
+#CALL [\登陆\英雄等级升级触发.txt] @英雄等级升级触发
+
+#If
+CheckHeroLevel ? 1
+CheckHeroLevel < 20
+#Act
+SetClientUIProp DHeroItemBag.ImageIndex.Up 621
+SetClientUIProp DHeroItemGrid.RowCount 2
+SetClientUIProp DBtnArrangeHeroItemBag.Abandon True
+SetClientUIProp DLHeroItemBagTips.Abandon True
+Break
+
+#If
+CheckHeroLevel ? 20
+CheckHeroLevel < 30
+#Act
+SetClientUIProp DHeroItemBag.ImageIndex.Up 622
+SetClientUIProp DHeroItemGrid.RowCount 4
+SetClientUIProp DBtnArrangeHeroItemBag.Abandon True
+SetClientUIProp DLHeroItemBagTips.Abandon True
+Break
+
+#If
+CheckHeroLevel ? 30
+CheckHeroLevel < 35
+#Act
+SetClientUIProp DHeroItemBag.ImageIndex.Up 623
+SetClientUIProp DHeroItemGrid.RowCount 6
+SetClientUIProp DBtnArrangeHeroItemBag.Abandon True
+SetClientUIProp DLHeroItemBagTips.Abandon True
+Break
+
+#If
+CheckHeroLevel ? 35
+CheckHeroLevel < 40
+#Act
+SetClientUIProp DHeroItemBag.ImageIndex.Up 624
+SetClientUIProp DHeroItemGrid.RowCount 7
+SetClientUIProp DBtnArrangeHeroItemBag.Abandon True
+SetClientUIProp DLHeroItemBagTips.Abandon True
+Break
+
+#If
+CheckHeroLevel ? 40
+#Act
+SetClientUIProp DHeroItemBag.ImageIndex.Up 625
+SetClientUIProp DHeroItemGrid.RowCount 8
+SetClientUIProp DBtnArrangeHeroItemBag.Abandon False
+SetClientUIProp DLHeroItemBagTips.Abandon False
+Break
+
+
+[@PlayLevelUp]
+
+#IF
+#ACT
+#CALL [\登陆\人物等级升级触发.txt] @人物等级升级触发
+
+
+#if
+CHECKLEVELEX > 27
+checkjob warrior
+#act
+SetClientUIProp Usr_xueliangdonghua.Abandon False
+SetClientUIProp Usr_xueliangdonghua.Visible True
+SetClientUIProp Usr_xueliangdonghua.AniStopHide False
+SetClientUIProp Usr_xueliangdonghua.AniLoop True
+SetClientUIProp Usr_xueliangdonghua1.Abandon True
+SetClientUIProp DPBDrunkScale.Abandon True
+
+#IF
+checkjob warrior
+CHECKLEVELEX > 0
+CHECKLEVELEX < 28
+#act
+SetClientUIProp Usr_xueliangdonghua1.Abandon False
+SetClientUIProp Usr_xueliangdonghua1.Visible True
+SetClientUIProp Usr_xueliangdonghua1.AniStopHide False
+SetClientUIProp Usr_xueliangdonghua1.AniLoop True
+SetClientUIProp Usr_xueliangdonghua.Abandon True
+SetClientUIProp DPBDrunkScale.Abandon True
+
+
+
+
+
+[@StdModeFunc301]
+#IF
+CHECK [487] 0
+#ACT
+SET [487] 1
+SENDMSG 7 初级马牌已经装备！
+
+MOV <$N(坐骑技能等级1)> 2
+MOVR <$N(坐骑技能等级2)> 1 4
+MOVR <$N(坐骑技能等级3)> 1 4
+MOVR <$N(坐骑技能等级4)> 1 4
+MOVR <$N(坐骑技能等级5)> 1 4
+MOVR <$N(坐骑技能等级6)> 1 4
+CALCVAR HUMAN 坐骑等级 = 1
+CALCVAR HUMAN 坐骑等级1 = <$N(坐骑技能等级1)>
+CALCVAR HUMAN 坐骑等级2 = <$N(坐骑技能等级2)>
+CALCVAR HUMAN 坐骑等级3 = <$N(坐骑技能等级3)>
+CALCVAR HUMAN 坐骑等级4 = <$N(坐骑技能等级4)>
+CALCVAR HUMAN 坐骑等级5 = 0
+CALCVAR HUMAN 坐骑等级6 = 0
+SAVEVAR HUMAN 坐骑等级 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级1 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级2 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级3 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级4 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级5 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级6 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+CHANGEHUMABILITY 17 + <$S(坐骑技能3)> 864000
+CHANGEHUMABILITY 18 + <$S(坐骑技能4)> 864000
+CHANGEHUMABILITY 22 + <$S(坐骑技能5)> 864000
+SetClientUIProp Usr_DWSWXFBasic_MX.TEXT <$MX>　
+SetClientUIProp Usr_H_DWSWXFBasic_MX.TEXT <$HEROMX>　
+
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 31
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 30
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN1.visible True
+SetClientUIProp Usr_zuoqi_JNAN2.visible True
+SetClientUIProp Usr_zuoqi_JNAN3.visible True
+SetClientUIProp Usr_zuoqi_JNAN4.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible False
+SetClientUIProp Usr_zuoqi_JNAN6.visible False
+SetClientUIProp Usr_zuoqi_JN.visible True
+SetClientUIProp Usr_zuoqi_JN_S3.visible True
+SetClientUIProp Usr_zuoqi_JN_S4.visible True
+SetClientUIProp Usr_zuoqi_JN_S5.visible True
+SetClientUIProp Usr_zuoqi_JN_S6.visible True
+SetClientUIProp Usr_zuoqi_JN_S7.visible True
+BREAK
+
+#ELSEACT
+GIVE 初级马牌 1
+SENDMSG 7 您已经装备了马牌！
+BREAK
+
+[@StdModeFunc302]
+#IF
+CHECK [487] 0
+#ACT
+SET [487] 1
+SENDMSG 7 中级马牌已经装备！
+
+MOV <$N(坐骑技能等级1)> 2
+MOVR <$N(坐骑技能等级2)> 1 4
+MOVR <$N(坐骑技能等级3)> 1 4
+MOVR <$N(坐骑技能等级4)> 1 4
+MOVR <$N(坐骑技能等级5)> 1 4
+MOVR <$N(坐骑技能等级6)> 1 4
+CALCVAR HUMAN 坐骑等级 = 2
+CALCVAR HUMAN 坐骑等级1 = <$N(坐骑技能等级1)>
+CALCVAR HUMAN 坐骑等级2 = <$N(坐骑技能等级2)>
+CALCVAR HUMAN 坐骑等级3 = <$N(坐骑技能等级3)>
+CALCVAR HUMAN 坐骑等级4 = <$N(坐骑技能等级4)>
+CALCVAR HUMAN 坐骑等级5 = <$N(坐骑技能等级5)>
+CALCVAR HUMAN 坐骑等级6 = 0
+SAVEVAR HUMAN 坐骑等级 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级1 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级2 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级3 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级4 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级5 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级6 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+CHANGEHUMABILITY 17 + <$S(坐骑技能3)> 864000
+CHANGEHUMABILITY 18 + <$S(坐骑技能4)> 864000
+CHANGEHUMABILITY 22 + <$S(坐骑技能5)> 864000
+SetClientUIProp Usr_DWSWXFBasic_MX.TEXT <$MX>　
+SetClientUIProp Usr_H_DWSWXFBasic_MX.TEXT <$HEROMX>　
+
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 33
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 32
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN1.visible True
+SetClientUIProp Usr_zuoqi_JNAN2.visible True
+SetClientUIProp Usr_zuoqi_JNAN3.visible True
+SetClientUIProp Usr_zuoqi_JNAN4.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible True
+SetClientUIProp Usr_zuoqi_JNAN6.visible False
+SetClientUIProp Usr_zuoqi_JN.visible True
+SetClientUIProp Usr_zuoqi_JN_S3.visible True
+SetClientUIProp Usr_zuoqi_JN_S4.visible True
+SetClientUIProp Usr_zuoqi_JN_S5.visible True
+SetClientUIProp Usr_zuoqi_JN_S6.visible True
+SetClientUIProp Usr_zuoqi_JN_S7.visible True
+BREAK
+
+#ELSEACT
+GIVE 中级马牌 1
+SENDMSG 7 您已经装备了马牌！
+BREAK
+
+[@StdModeFunc303]
+#IF
+CHECK [487] 0
+#ACT
+SET [487] 1
+SENDMSG 7 高级马牌已经装备！
+
+MOV <$N(坐骑技能等级1)> 2
+MOVR <$N(坐骑技能等级2)> 1 4
+MOVR <$N(坐骑技能等级3)> 1 4
+MOVR <$N(坐骑技能等级4)> 1 4
+MOVR <$N(坐骑技能等级5)> 1 4
+MOVR <$N(坐骑技能等级6)> 1 4
+CALCVAR HUMAN 坐骑等级 = 3
+CALCVAR HUMAN 坐骑等级1 = <$N(坐骑技能等级1)>
+CALCVAR HUMAN 坐骑等级2 = <$N(坐骑技能等级2)>
+CALCVAR HUMAN 坐骑等级3 = <$N(坐骑技能等级3)>
+CALCVAR HUMAN 坐骑等级4 = <$N(坐骑技能等级4)>
+CALCVAR HUMAN 坐骑等级5 = <$N(坐骑技能等级5)>
+CALCVAR HUMAN 坐骑等级6 = <$N(坐骑技能等级6)>
+SAVEVAR HUMAN 坐骑等级 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级1 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级2 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级3 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级4 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级5 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级6 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+CHANGEHUMABILITY 17 + <$S(坐骑技能3)> 864000
+CHANGEHUMABILITY 18 + <$S(坐骑技能4)> 864000
+CHANGEHUMABILITY 22 + <$S(坐骑技能5)> 864000
+SetClientUIProp Usr_DWSWXFBasic_MX.TEXT <$MX>　
+SetClientUIProp Usr_H_DWSWXFBasic_MX.TEXT <$HEROMX>　
+
+SetClientUIProp Usr_zuoqi_T.visible True
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP 35
+SetClientUIProp Usr_zuoqi_MA1.visible True
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP 34
+SetClientUIProp Usr_zuoqi_JNCT.visible True
+SetClientUIProp Usr_zuoqi_JNAN1.visible True
+SetClientUIProp Usr_zuoqi_JNAN2.visible True
+SetClientUIProp Usr_zuoqi_JNAN3.visible True
+SetClientUIProp Usr_zuoqi_JNAN4.visible True
+SetClientUIProp Usr_zuoqi_JNAN5.visible True
+SetClientUIProp Usr_zuoqi_JNAN6.visible True
+SetClientUIProp Usr_zuoqi_JN.visible True
+SetClientUIProp Usr_zuoqi_JN_S3.visible True
+SetClientUIProp Usr_zuoqi_JN_S4.visible True
+SetClientUIProp Usr_zuoqi_JN_S5.visible True
+SetClientUIProp Usr_zuoqi_JN_S6.visible True
+SetClientUIProp Usr_zuoqi_JN_S7.visible True
+BREAK
+
+#ELSEACT
+GIVE 高级马牌 1
+SENDMSG 7 您已经装备了马牌！
+BREAK
+
+
+[@龙卫山谷时间]
+#ACT
+MAPMOVE 3 330 330
+
+
+[@HeartlevelUp]
+#IF
+#ACT
+#CALL [\登陆\人物心法升级触发.txt] @人物心法升级触发
+BREAK
+
+
+[@HeroHeartlevelUp]
+#IF
+#ACT
+#CALL [\登陆\英雄心法升级触发.txt] @英雄心法升级触发
+BREAK
+
+
+[@StdModeFunc288]
+#IF
+checkherolevel > 996
+#act
+CHANGEHEROLEVEL = 999
+CALCVAR HUMAN 洗灵石 = 1
+SAVEVAR HUMAN 洗灵石 ..\QUESTDIARY\雪花制作\洗灵石.txt
+#elseact
+messagebox 你的英雄没有达到997级，不能使用洗灵石提升等级！
+give 洗灵石 1
+
+
+
+[@挑战书]
+#if
+CHECKBAGSIZE 1
+#act
+give 帝国挑战书 1
+calcvar human 领取挑战书 = 1
+savevar human 领取挑战书 ..\QuestDiary\雪花制作\领取挑战书.txt
+#elseact
+messagebox 请把背包整理后再来领取帝国挑战书！
+
+
+[@MapEventWalk]
+#IF
+ISONMAP SLDX
+#ACT
+CLOSE
+MAP D2
+
+#IF
+ISONMAP MHFY
+#ACT
+CLOSE
+MAPMOVE SLDG 103 580
+
+
+
+[@MapEventRUN]
+#IF
+ISONMAP SLDX
+#ACT
+CLOSE
+MAP D2
+
+#IF
+ISONMAP MHFY
+#ACT
+CLOSE
+MAPMOVE SLDG 103 580
+
+
+
+;火龙果
+[@StdModeFunc100]
+#IF
+#ACT
+CHANGEHEARTPOINT + 500000
+BREAK
+
+;白日门火龙果
+[@StdModeFunc101]
+#IF
+#ACT
+CHANGEHEARTPOINT + 500000 HERO
+BREAK
+
+
+
+
+
+
+[@HeroplaySkill]
+#IF
+#ACT
+SENDMSG 0 学习技能成功
+#SAY
+弹出脚本菜单！！！
+<关闭/@exit>
+
+[@playSkill]
+#IF
+#ACT
+SENDMSG 0 学习技能成功
+#SAY
+弹出脚本菜单！！！
+<关闭/@exit>
+
+[@USERCMD1]
+#IF
+#ACT
+#CALL [\游戏服务\后台管理.TXT] @管理
+BREAK
+
+
+
+[@USERCMD3]
+#IF
+#ACT 
+#CALL [\系统功能\假人管理.TXT] @假人管理
+BREAK 
+
+
+
+[@CreateingHero] 
+系统正在接受申请，请稍候……\ 
+\ \ 
+\ \ 
+<关闭/@exit> 
+[@HaveHero] 
+您已经有英雄了\ 
+\ \ 
+\ \ 
+<关闭/@exit> 
+[@SetHeroName] 
+请先给您的英雄取名字。\ 
+\ \ 
+\ \ 
+<关闭/@exit> 
+[@WallWarStopFunc] 
+\ \ 
+
+[@HeroNameFilter]
+英雄名字中包含禁用字符\<关闭/@exit>
+[@CreateHeroOK]
+创建英雄成功\<关闭/@exit>
+#elseact
+break
+[@HeroNameExists]
+英雄名字已经存在\<关闭/@exit>
+[@HeroOverChrCount]
+你的帐号角色过多\<关闭/@exit>
+[@CreateHeroFail]
+创建英雄失败\<关闭/@exit>
+[@CreateHeroFailEx]
+创建英雄失败，请稍候重试\<关闭/@exit>
+
+;------------------------------------------------------
+
+[@GetCastle]
+#IF
+HAVEGUILD
+#Act
+sendmsg 0 沙巴克被<$GUILDNAME>占领!
+
+
+[@TakeOn10]
+#if
+EQUAL N0 1
+#act
+break
+#if
+EQUAL S0 凝冰腰带
+#act
+ADDSKILL 凝冰 3
+break
+
+[@TakeOff10]
+#if
+EQUAL N0 1
+#act
+break
+#if
+EQUAL S0 凝冰腰带
+#act
+DELSKILL 凝冰
+break
+
+
+
+
+[@GetHeroBak]
+#act
+messagebox 取回英雄失败，你已带了一位英雄了
+break
+
+[@GetHeroOk]
+#act
+messagebox 取回英雄成功
+break
+
+[@DeleteHeroOK]
+#act
+messagebox 删除英雄成功
+break
+
+[@DeleteHeroFail]
+#act
+messagebox 删除英雄失败
+break
+
+
+
+
+
+
+
+
+
+
+
+[@行会之星确认]
+#IF
+#ACT
+hcall <$STR(A283)> @授予成功
+break
+CLOSE
+
+[@行会之星取消]
+#IF
+#ACT
+hcall <$STR(A283)> @授予失败4
+break
+CLOSE
+
+[@FengHaoAgree14]
+#IF
+#ACT
+GIVEFENGHAO <$USERNAME> 护花使者 <$SETFENGHAOHUM>
+break
+CLOSE
+
+[@FengHaoAgree1]
+#IF
+#ACT
+GIVEFENGHAO <$USERNAME> 主宰者知己 <$SETFENGHAOHUM>
+break
+CLOSE
+
+
+[@FengHaoFunc27]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 高级巅峰战神
+break
+
+
+
+[@FengHaoFunc19]
+#IF
+#ACT 
+DEC G98 1
+take 主宰令
+RECYCFENGHAO <$USERNAME> 玛法主宰者　
+break
+
+[@FengHaoFunc18]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 高级巅峰勇士
+break
+
+
+[@FengHaoFunc15]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 沙巴克城主
+break
+
+[@FengHaoFunc14]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 护花使者
+break
+
+[@FengHaoFunc13]
+#IF
+#ACT
+RECYCFENGHAO <$USERNAME> 传奇之星
+TakeOffItem 天外飞仙 0
+TAKE 天外飞仙 46
+TakeOffItem 火红的心 1
+TAKE 火红的心 46
+TAKE 护花令牌 46
+break
+
+[@FengHaoFunc12]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 兵贵神速
+break
+
+[@FengHaoFunc11]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 玛法之星
+break
+
+[@FengHaoFunc10]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 巅峰战神
+break
+
+[@FengHaoFunc9]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 巅峰勇士
+break
+
+[@FengHaoFunc8]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 热血使者
+break
+
+[@FengHaoFunc7]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 行会之星
+break
+
+[@FengHaoFunc6]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 道尊
+break
+
+[@FengHaoFunc5]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 法圣
+break
+
+[@FengHaoFunc4]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 战神
+break
+
+[@FengHaoFunc3]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 不动如山
+break
+
+[@FengHaoFunc2]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 水晶之星
+break
+
+[@FengHaoFunc1]
+#IF
+#ACT 
+RECYCFENGHAO <$USERNAME> 主宰者知己
+break
+
+[@FengHaoFunc0]
+#IF
+#ACT 
+DEC G98 1
+take 主宰令
+RECYCFENGHAO <$USERNAME> 玛法主宰者
+break
+
+
+;占领沙城触发
+[@GetCastle]
+#IF
+CheckOnline <$LORD>
+#ACT
+Hcall <$LORD> @城主检测
+break
+
+#ELSEACT
+break
+
+
+
+
+
+[@主宰领域时间触发]
+#IF
+#ACT
+SENDTIMEMSG 您在主宰者领域的剩余时间%s…… 1800 251 @组队进主宰者领域触发 1
+break
+
+[@组队进主宰者领域触发]
+#IF
+#ACT
+SENDMSG 7 进入主宰者领域时间已到
+MAPMOVE GA0
+break
+
+
+;英雄获得经验触发
+[@HeroGetExp]
+#IF
+CheckLevelEX = 999 HERO
+#ACT
+CHANGEHEROEXP = 0
+BREAK
+
+;人物获得经验触发
+[@GetExp]
+#IF
+CheckLevelEX = 999
+#ACT
+CHANGEEXP = 0
+BREAK
+
+
+
+
+
+
+;[@BuyShop]
+;#ACT
+;INC G88 <$BUYSHOP>
+;CALCVAR HUMAN 挑战点 + <$BUYSHOP>
+
+;SAVEVAR HUMAN 挑战点 ..\QuestDiary\数据文件\挑战点.txt
+;BREAK
+
+
+
+
+
+[@UseItmeToMon]
+#if
+random 2
+#act
+ChangeExp + 250000
+CHANGEHEROPULSEXP + 1000
+SENDMSG 7 恭喜：你获得了：经验:250000
+SENDMSG 7 恭喜：你获得了：英雄经络经验:1000
+break
+#Elseact
+CHANGECATTLEGASEXP + 60
+CHANGEHEROPULSEXP + 1000
+SENDMSG 7 恭喜：你获得了：牛气值:60
+SENDMSG 7 恭喜：你获得了：英雄经络经验:1000
+break
+
+[@UseItmeToMon1]
+#if
+random 2
+#act
+ChangeExp + 500000
+CHANGEHEROPULSEXP + 2000
+SENDMSG 7 恭喜：你获得了：经验:500000
+SENDMSG 7 恭喜：你获得了：英雄经络经验:2000
+break
+#Elseact
+CHANGECATTLEGASEXP + 30
+CHANGEHEROPULSEXP + 2000
+SENDMSG 7 恭喜：你获得了：牛气值:30
+SENDMSG 7 恭喜：你获得了：英雄经络经验:2000
+break
+
+
+
+
+;[@GetCrystalData]
+;#ACT
+;MESSAGEBOX 你的天地结晶已经储存了<$CRYSTALEXP>经验和<$CRYSTALNGEXP>;内功经验，您可以支付1元\宝，提取其中的<$GETCRYSTALEXP>经验和<;$GETCRYSTALNGEXP>内功经验。  @提取经验   @暂不提取
+;BREAK
+
+;[@提取经验]
+;#IF
+;CHECKGAMEGOLD > 0
+;#ACT
+;CALCVAR HUMAN 消费元宝 + 1
+;SAVEVAR HUMAN 消费元宝 ..\QuestDiary\数据文件\变量.txt
+;CALCVAR HUMAN 挑战点 + 1
+;SAVEVAR HUMAN 挑战点 ..\QuestDiary\数据文件\挑战点.txt
+;GAMEGOLD - 1
+;GETEXPTOCRYSTAL
+;SENDMSG 7 获取天地结晶成功...
+;BREAK
+;#ELSEACT
+;SENDMSG 5 提取失败，你的元宝不足！
+;BREAK
+
+[@RevMaster]
+<$STR(A90)>想拜你为师，你是否想收此人为徒？ \ \
+<同意/@ResposeMaster>\
+<不同意/@ResposeMasterFail>
+
+[@ResposeMaster]
+#IF
+#ACT
+AddTextList <$STR(A90)> ..\QuestDiary\游戏功能\帐号\王师系统\王师弟子.txt
+master responsemaster1 ok
+close
+
+[@ResposeMasterFail]
+#if
+#act
+master responsemaster1 fail
+
+[@EndMaster]
+#if
+#act
+MOV A90
+break
+close
+
+[@EndMasterFail]
+拜师失败！\ \
+<关闭/@exit>
+
+[@RevUnMaster]
+您的徒弟请求与您解除师徒关系，你是否答应？\ \
+<我愿意/@ResposeUnMaster>
+<退出/@Exit>
+
+[@ResposeUnMaster]
+#if
+#act 
+unmaster REQUESTUNMASTER MASTER
+
+[@PoseUnMasterEnd]
+#act
+messagebox 呵呵，你已经与你的徒弟脱离师徒关系了！
+break
+
+[@RequestUnMasterEnd]
+#act
+messagebox 呵呵，你已经与你的师傅脱离师徒关系了！
+break
+
+[@UnMasterEnd]
+#ACT
+SENDMSG 6 恭喜:你有徒弟出师了！
+break
+
+[@UnMasterEnd1]
+#IF
+havemaster
+#ACT
+SENDMSG 6 恭喜:你已经出师了！
+break
+
+
+
+
+
+
+
+[@BeginMakeWine]
+#Act
+addnamelist ..\QuestDiary\游戏任务\酿酒名单.txt
+MessageBox 好了,我会帮您注意好您的酒的,放心吧。\过一会儿,您就可以来取了。
+
+[@MakeWineFail]
+#Act
+MessageBox 您有酒正在酿造，请一会儿再来取吧。\
+
+[@MakeWineFail1]
+#Act
+MessageBox 酿造失败，请重新收集材料再来吧。\
+
+
+
+[@ButchCloneItem]
+#act
+give 火龙珠 1
+sendmsg 6 恭喜：你获得了：火龙珠
+break
+
+
+[@StdModeFunc11]
+#ACT
+mapmove 0 327 272
+break
+
+[@StdModeFunc12]
+#ACT
+mapmove 3 330 330
+break
+
+[@StdModeFunc132]
+#ACT
+mapmove apcq 326 325
+break
+
+[@StdModeFunc13]
+#ACT
+mapmove 5 141 337
+break
+
+[@StdModeFunc14]
+#ACT
+mapmove 6 124 156
+break
+
+[@StdModeFunc15]
+#ACT
+KILLMONEXPRATE 300 7200
+BREAK
+
+[@StdModeFunc16]
+#ACT
+KILLMONEXPRATE 300 43200
+BREAK
+
+[@StdModeFunc17]
+#ACT
+KILLMONEXPRATE 300 86400
+BREAK
+
+[@StdModeFunc18]
+#IF
+checkitem 强效太阳水 6
+#ACT
+take 强效太阳水 6
+give 强效太阳水包 1
+SENDMSG 7 强效太阳水捆绑完成！
+break
+close
+#ELSEACT
+break
+close
+
+[@StdModeFunc19]
+#IF
+checkitem 万年雪霜 6
+#ACT
+take 万年雪霜 6
+give 万年雪霜包 1
+SENDMSG 7 万年雪霜捆绑完成！
+break
+
+close
+#ELSEACT
+break
+close
+
+[@StdModeFunc20]
+#IF
+checkitem 疗伤药 6
+#ACT
+take 疗伤药 6
+give 疗伤药包 1
+SENDMSG 7 疗伤药捆绑完成！
+break
+close
+#ELSEACT
+break
+close
+
+[@StdModeFunc22]
+#IF
+checkjob wizard
+#ACT
+#Elseact
+SENDMSG 7 当前职业不适合使用此物品！
+BREAK
+
+#IF
+CheckSlaveCount < 5
+#ACT
+RECALLMOB 虎卫 0 30 0
+BREAK
+#Elseact
+SENDMSG 7 操作失败，您的署下数量已经达到上限！
+BREAK
+
+
+
+
+
+[@StdModeFunc25]
+#If
+#Act
+HAIRSTYLE 0
+HAIRSTYLE 0 hero
+SendMsg 6 %s，你的发型已经改变了...
+SendMsg 6 %s，英雄的发型已经改变了...
+BREAK
+
+[@StdModeFunc26]
+#If
+#Act
+HAIRSTYLE 1
+HAIRSTYLE 1 hero
+SendMsg 6 %s，你的发型已经恢复了...
+SendMsg 6 %s，英雄的发型已经恢复了...
+BREAK
+
+
+
+[@StdModeFunc28]
+#if
+CHECKLEVELEX > 39
+checkjob wizard
+CHECKSKILL 魔法盾 = 3
+#act
+changeskill 31 66
+break
+#ELSEACT
+MESSAGEBOX 1:等级不够40\2:您不是法师\3:您的魔法盾不够三级\4:您已经学会了该技能
+GIVE 四级魔法盾 1
+BREAK
+
+[@StdModeFunc29] 
+#if
+checkbagsize 5
+#act
+give 金条 5
+Break
+#elseact
+give 金砖 1
+SENDMSG 6 请将背包空出5个空位，以便解开金砖！ 
+Break
+
+[@StdModeFunc30] 
+#if
+checkgold 4000001
+#act
+give 金条 1
+messagebox 你无法携带更多的金币!
+Break
+#elseact
+give 金币 1000000
+SENDMSG 6 提示：金币增加100W.
+Break
+
+
+[@StdModeFunc32]
+#ACT
+MOVR N80 1000 1000000
+CHANGEEXP + <$STR(N80)>
+SENDMSG 7 恭喜：你获得了：经验:<$STR(N80)>
+BREAK
+
+
+[@StdModeFunc39]
+#if
+#ACT
+HIGHLEVELKILLMONFIXEXP 21600
+BREAK
+#ELSEACT
+MESSAGEBOX 你等级还没达到限制，不需要使用真视卷轴！
+GIVE 真视卷轴 1
+BREAK
+
+[@StdModeFunc40]
+#if
+#ACT
+HIGHLEVELKILLMONFIXEXP 43200
+BREAK
+#ELSEACT
+MESSAGEBOX 你等级还没达到限制，不需要使用真视卷轴！
+GIVE 真视秘籍 1
+BREAK
+
+[@StdModeFunc41]
+#if
+random 3
+#act
+GIVEKIMNEEDLE 紫水晶矿 2
+GIVEKIMNEEDLE 绿宝石矿 2
+sendmsg 6 恭喜：你获得了4块珍贵的矿石。
+break
+#if
+random 2
+#act 
+GIVEKIMNEEDLE 紫水晶矿 1
+GIVEKIMNEEDLE 绿宝石矿 3
+sendmsg 6 恭喜：你获得了4块珍贵的矿石。
+break
+#if
+random 1
+#act 
+GIVEKIMNEEDLE 紫水晶矿 3
+GIVEKIMNEEDLE 绿宝石矿 1
+sendmsg 6 恭喜：你获得了4块珍贵的矿石。
+break
+
+
+[@StdModeFunc45]
+#if
+CHECKHEROLEVEL > 39
+CHECKHEROJOB wizard
+HEROCHECKSKILL 白日门魔法盾 = 3
+#act
+changeskill 31 66 HERO
+break
+#ELSEACT
+SENDMSG 6 1:英雄不是法师。
+SENDMSG 6 2:英雄等级不够40级。
+SENDMSG 6 3:英雄魔法盾不够3级。
+GIVE 白日门四级盾 1 HERO
+BREAK
+
+[@StdModeFunc46]
+#ACT
+CHANGHEARMSGCOLOR 7200 1
+BREAK
+
+[@StdModeFunc47]
+#ACT
+CHANGHEARMSGCOLOR 7200 2
+BREAK
+
+[@StdModeFunc48]
+#ACT
+CHANGHEARMSGCOLOR 7200 3
+BREAK
+
+[@StdModeFunc49]
+#ACT
+GIVE 落雷符 1
+SENDMSG 7 此物品暂停使用中...
+break
+
+[@StdModeFunc50]
+#IF
+checkitem 强效万年雪霜 6
+#ACT
+take 强效万年雪霜 6
+give 强效万年雪霜包 1
+SENDMSG 7 强效万年雪霜捆绑完成！
+break
+close
+#ELSEACT
+break
+close
+
+[@StdModeFunc51]
+#IF
+checkitem 强效疗伤药 6
+#ACT
+take 强效疗伤药 6
+give 强效疗伤药包 1
+SENDMSG 7 强效疗伤药捆绑完成！
+break
+close
+#ELSEACT
+break
+close
+
+[@StdModeFunc52]
+#IF
+#ACT
+Gmexecute showeffect 86
+SENDMSG 0 <$USERNAME>在:%m%x:%y处放烟花咯、大家快去欣赏哦。
+break
+
+[@StdModeFunc85]
+#IF
+CHECKBAGSIZE 10
+#ACT
+GIVEKIMNEEDLE 绿宝石 10
+break
+
+#ELSEACT
+GIVE 无痕绿宝石 1
+break
+
+[@StdModeFunc86]
+#IF
+CHECKBAGSIZE 5
+#ACT
+GIVE 无痕绿宝石 5
+break
+
+#ELSEACT
+GIVE 完美绿宝石 1
+break
+
+[@StdModeFunc87]
+#IF
+CHECKBAGSIZE 4
+#ACT
+
+#ELSEACT
+give 主宰凭证 1
+sendmsg 7 请预留4格以上包裹空间后再来！
+break
+
+#IF
+SMALL G98 20
+#ACT
+#ELSEACT
+MOV A88 关闭
+give 主宰凭证 1
+sendmsg 7 对不起，服务器的主宰者名额已满，无法再申请了！
+break
+
+#IF
+CHECKFENGHAO 玛法主宰者
+#ACT
+give 主宰凭证 1
+sendmsg 7 你已经是玛法主宰者了，不能再次使用主宰凭证。
+break
+
+#IF
+CHECKFENGHAO 玛法主宰者　
+#ACT
+give 主宰凭证 1
+sendmsg 7 你已经是玛法主宰者了，不能再次使用主宰凭证。
+break
+
+#ELSEACT
+GIVEFENGHAO <$USERNAME> 玛法主宰者　
+TAKE 主宰令 46
+give 主宰令 1
+INC G98 1
+SENDMSG 7 恭喜：你获得了：主宰令
+break
+
+[@StdModeFunc88]
+#IF
+CheckHeroLoyal < 10000
+#act
+ChangeHeroLoyal = 10000
+SENDMSG 6 英雄忠诚度瞬时提升为100%！
+break
+#ELSEACT
+GIVE 英雄忠诚石 1
+SENDMSG 6 你的英雄已经不再需要使用此物品了！
+break
+
+
+
+
+[@StdModeFunc95] 
+#ACT 
+GAMEGOLD + 100
+SENDMSG 6 恭喜您成功充值100元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+[@StdModeFunc96] 
+#ACT 
+GAMEGOLD + 200
+SENDMSG 6 恭喜您成功充值200元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+
+[@StdModeFunc97] 
+#ACT 
+GAMEGOLD + 500
+SENDMSG 6 恭喜您成功充值500元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+[@StdModeFunc98] 
+#ACT 
+GAMEGOLD + 1000
+SENDMSG 6 恭喜您成功充值1000元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+[@StdModeFunc99] 
+#ACT 
+GAMEGOLD + 2000
+SENDMSG 6 恭喜您成功充值2000元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+[@StdModeFunc110] 
+#ACT 
+GAMEGOLD + 10000
+SENDMSG 6 恭喜您成功充值10000元宝到帐户中
+SENDMSG 6 当前元宝余额为:<$GAMEGOLD>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@StdModeFunc103]
+#ACT
+CHANGEEXP + 45000000
+SENDMSG 7 恭喜：你获得了：经验:4500万。
+break
+
+
+
+[@StdModeFunc107]
+#ACT
+MOV S70
+GIVE 精致礼品盒 1
+break
+#SAY
+请输入要送出对方的角色名\ \
+<输入要送出对方的角色名/@@InPutString70>          <关闭/@EXIT>\
+
+[@@InPutString70]
+#Act
+DelaYGoto 1 ~InPutString70
+break
+
+[~InPutString70]
+#IF
+EQUAL <$STR(S70)> <$USERNAME>
+#ACT
+MESSAGEBOX 精致礼品盒只可以送其他玩家，不可以送自己！
+BREAK
+CLOSE
+
+#IF
+CheckOnline <$STR(S70)>
+#ACT
+#ELSEACT
+MESSAGEBOX <$STR(S70)>没有在线!
+BREAK
+CLOSE
+
+#IF
+CHECKITEM 精致礼品盒 1
+#ACT
+TAKE 精致礼品盒 1
+MOV A54
+MOV A54 <$USERNAME>
+hcall <$STR(S70)> @年货大礼包
+SENDMSG 0 %s赠送给“<$STR(S70)>”一份礼物，并献上了真挚的祝福，祝其身体健康，万事如意，生意兴隆，大吉大利！
+break
+CLOSE
+
+#ELSEACT
+MESSAGEBOX 你的精致礼品盒呢？
+BREAK
+CLOSE
+
+
+[@StdModeFunc111]
+#IF
+CHECKBAGSIZE 6
+#ACT
+GIVE 疗伤药 6
+BREAK
+
+#ELSEACT
+GIVE 疗伤药包(任务) 1
+break
+
+[@StdModeFunc112]
+#act
+CHANGENGEXP + 1000000
+SENDMSG 7 恭喜：你获得了：内功经验:100万。
+break
+
+[@StdModeFunc113]
+#act
+CHANGENGEXP + 5000000
+SENDMSG 7 恭喜：你获得了：内功经验:500万。
+break
+
+[@StdModeFunc114]
+#IF
+CHECKCASTLEWAR 沙巴克
+#ACT
+#ElSEACT
+SENDMSG 5 攻城战争尚未开始，无法使用该道具！
+break
+
+#IF
+ISCASTLEGUILD
+#ACT
+SENDMSG 5 你不是攻城方，无法使用该道具！
+BREAK
+
+#IF
+ISDEFENSEALLYGUILD
+#ACT
+SENDMSG 5 你不是攻城方，无法使用该道具！
+BREAK
+
+#IF
+CHECKMAPNAME Self NEW0150
+#ACT
+MAPMOVE NEW0150
+break
+#ElSEACT
+SENDMSG 5 沙巴克随机石只允许在沙巴克城堡内使用！
+break
+
+[@StdModeFunc115]
+#IF
+random 120
+#ACT
+CHANGEEXP + 66660000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得66660000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了66660000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 15
+#ACT
+CHANGEEXP + 5000000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得5000000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了5000000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 12
+#ACT
+CHANGEEXP + 3800000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得3800000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了3800000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 10
+#ACT
+CHANGEEXP + 3200000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得3200000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了3200000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 5
+#ACT
+CHANGEEXP + 1200000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得1200000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了1200000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 2
+#ACT
+CHANGEEXP + 700000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得700000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了700000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+#IF
+random 1
+#ACT
+CHANGEEXP + 660000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得660000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了660000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+
+#ELSEACT
+CHANGEEXP + 700000
+Gmexecute TestFire 6 11 5 1 5
+SENDMSG 7 恭喜：你通过燃烧新年焰火获得700000经验
+SENDMSG 0 <$USERNAME>在释放新年焰火的时候获得了700000经验，并祝全服玩家新年快乐，万事如意，一帆风顺，步步高升！
+break
+
+[@StdModeFunc116]
+#ACT
+KILLMONEXPRATE 400 7200
+BREAK
+
+[@StdModeFunc117]
+#ACT
+KILLMONEXPRATE 500 7200
+BREAK
+
+[@StdModeFunc118]
+#act
+ChangeExp + 1000000
+SENDMSG 7 恭喜：你获得了：经验:100万
+break
+
+[@StdModeFunc119]
+#act
+ChangeExp + 4000000
+SENDMSG 7 恭喜：你获得了：经验:400万
+break
+
+[@StdModeFunc120]
+#act
+ChangeExp + 1000000
+SENDMSG 7 恭喜：你获得了：经验:100万。
+break
+
+[@StdModeFunc121]
+#act
+ChangeExp + 4000000
+SENDMSG 7 恭喜：你获得了：经验:400万。
+break
+
+[@StdModeFunc122]
+#act
+ChangeExp + 100000000
+SENDMSG 7 恭喜：你获得了：经验:1亿。
+break
+
+[@StdModeFunc123]
+#act
+ChangeExp + 400000000
+SENDMSG 7 恭喜：你获得了：经验:4亿
+break
+
+
+[@MapEventDropItem]
+#IF
+ISDUPMODE
+#ACT
+BREAK
+#IF
+equal G188 1
+#ACT
+SendMsg 7 抢水成功,开始获得经验和元宝....
+SetOnTimer 5 1
+
+[@霸者魔洞]
+#ACT
+MAPMOVE 5 136 322
+BREAK
+
+[@霸者魔洞组]
+#IF
+ISONMAP BZMD
+#ACT
+GOTO @次数判断
+BREAK
+
+[@次数判断]
+#IF
+CHECKVAR HUMAN 霸者次数 < 20
+#act
+CALCVAR HUMAN 霸者次数 + 1
+SAVEVAR HUMAN 霸者次数 ..\\QuestDiary\霸者魔洞\霸者进入次数.txt
+SENDTIMEMSG 您在霸者魔洞的剩余时间%s…… 1800 251 @霸者魔洞 1
+#ELSEACT
+MAPMOVE 3 330 330
+MESSAGEBOX 您今天已经挑战过20次霸者魔洞了，请明天再来。
+BREAK
+
+[@StdModeFunc64] 
+#IF 
+ISONMAP zhuhuozhen
+#ACT 
+Gmexecute 宝宝 朱火弹(幻) 1 3 0 0 1 
+break 
+
+[@StdModeFunc65] 
+#IF 
+ISONMAP zhuhuozhen
+#ACT 
+Gmexecute 宝宝 朱火弹(幻)1 1 3 0 0 1 
+break
+
+[@朱火阵时间]
+#if
+#act
+mapmove 0 328 217
+break
+
+
+[@朱火阵复活]
+#IF
+ISONMAP ZHUHUOZHEN
+#ACT
+MESSAGEBOX 你获得易老顽童的祝福，使用10元宝，便可在当前地图内原位\置复活？ @复活确认 @复活取消
+BREAK 
+
+[@复活确认]
+#IF
+CHECKGAMEGOLD > 9
+ISONMAP ZHUHUOZHEN
+#ACT
+GAMEGOLD - 10
+GMEXECUTE 复活 SELF
+CLOSEMSGWINDOWS
+BREAK
+#ELSEACT
+MESSAGEBOX 原地复活失败，当前不足10个元宝
+BREAK
+
+[@复活取消]
+#ACT
+BREAK
+
+
+[@MAGselfFUNC111]
+#IF
+#ACT
+POWERRATE 500 1
+
+[@MAGselfFUNC110]
+#IF
+#ACT
+POWERRATE 500 1
+
+
+
+[@IncHeroHeartPoint]
+#if
+CHECKKIMNEEDLE 火龙果 1 hero
+CHECKSKILLLEVEL 龙卫心法 ? 0
+#act
+TAKEKIMNEEDLE 火龙果 1
+INCHEARTPOINT 500000 1 hero
+SendMsg 5 [提示]:你的英雄正在心法吸收!
+
+
+
+[@IncHeartPoint]
+您累积的心法经验已经可以进吸收，但是需要供助火龙果的神奇\
+药性，才可以完美的转化为自身心法能力，用来提升心法等级，突\
+破武学禁锢！您确定使用火龙果吸收心法经验吗？\
+(1枚火龙果可以帮助吸收50万心法经验)\
+ <使用火龙果吸收/@使用火龙果>  <取消/@Exit>\
+
+[@使用火龙果]
+#if
+CHECKKIMNEEDLE 火龙果 1
+CHECKSKILLLEVEL 龙卫心法 ? 0
+#act
+TAKEKIMNEEDLE 火龙果 1
+INCHEARTPOINT 500000 1
+Close
+#elsesay
+你没有火龙果或没有学有龙卫心法。
+
+
+[@CreateDivision]
+#IF
+#ACT
+SENDMSG 0 恭喜<$USERNAME>于师门接引人处自创师门:<$DIVISIONNAME>，广收门徒，昭告天下！
+BREAK
+
+[@DivisionGetFengHao]
+#IF
+CHECKDIVISIONPOINT > 1200
+#ACT
+CHANGEDIVISIONPOINT - 1200
+GIVEFENGHAO <$USERNAME> 诲人不倦
+BREAK
+#ELSEACT
+sendmsg 5 师门人气值不足1200，无法领取称号！
+BREAK
+
+[@ExitDivision]
+#if
+#act
+MOV N1 0
+break
+
+[@Savvy]
+#if
+equal N1 0
+#act
+inc N1 1
+sendmsg 7 你的血脉产生了一丝悸动，让你无法抑制的要想大喊，却喊不出声
+break
+
+#if
+equal N1 1
+#act
+inc N1 1
+sendmsg 7 是的，就是那股血脉力量，你感到他离你只是一线之隔
+break
+
+#if
+equal N1 2
+#act
+inc N1 1
+sendmsg 7 刚才的一招似乎有感而发，不着边际，却又浑圆自然，这是什么感觉？
+break
+
+#if
+equal N1 3
+#act
+inc N1 1
+sendmsg 7 你心中闪过一道突破心法障碍的灵光，未能及时把握
+break
+
+#if
+equal N1 4
+#act
+inc N1 1
+sendmsg 7 一种奇怪的感觉随着血脉流淌全身，却又突然消失了
+break
+
+#if
+equal N1 5
+#act
+inc N1 1
+sendmsg 7 突然，你感到身体里的一些部位犹如针扎，血脉似乎要喷发，但是旋即这种感觉就消失了
+break
+
+#if
+equal N1 6
+#act
+inc N1 1
+sendmsg 7 你似乎找到了一种感觉，是的，你感受到了血脉里传来的力量，你觉得应该再多试几次刚才的感觉
+break
+
+#if
+equal N1 7
+#act
+inc N1 1
+sendmsg 7 你似乎对师门心法有了点新的感受，但是却模糊不清，难以言清
+break
+
+#if
+equal N1 8
+#act
+;学会传承心法
+SAVVYHEART
+BREAK
+
+
+
+
+[@MapEventMine]
+#IF
+CheckBagSize 1
+#ACT
+GOTO @挖矿奖励
+break
+#ELSESAY
+请留一个包裹空位，等下你挖到宝贝有地方放。
+
+[@挖矿奖励]
+#IF
+random 30
+#ACT
+GetRandomName .\QuestDiary\挖矿\高级装备.txt S10
+GIVE <$STR(S10)> 1
+SENDMSG 7 恭喜，你挖到了<$STR(S10)>×1! 
+SendCenterMsg 249 0 [<$USERNAME>]在神龙秘境,挖到宝物<$STR(S10)>×1 1 3 3
+#elseact
+goto @w2
+
+
+
+[@W2]
+#IF
+random 10
+#ACT
+GetRandomName .\QuestDiary\挖矿\消耗1.txt S9
+GetRandomName .\QuestDiary\挖矿\消耗.txt S10
+GIVEkimneedle <$STR(S10)> 2
+SENDMSG 7 恭喜，你挖到了<$STR(S10)>×2! 
+SendCenterMsg 249 0 [<$USERNAME>]在神龙秘境,挖到宝物<$STR(S10)>×2 1 3 3
+#elseact
+goto @w3
+
+[@w3]
+#IF
+random 5
+#act
+GetRandomName .\QuestDiary\挖矿\积分.txt S10
+calcvar human 守护积分 + <$STR(S10)>
+savevar human 守护积分 ..\QUESTDIARY\雪花制作\守护积分.txt
+SENDMSG 7 恭喜，你挖到了守护积分×<$STR(S10)>，你目前的守护积分是：<$HUMAN(守护积分)>! 
+SendCenterMsg 249 0 [<$USERNAME>]在神龙秘境,挖到守护积分×1 1 3 3
+#elseact
+goto @w4
+
+[@w4]
+#IF
+random 5
+#act
+GetRandomName .\QuestDiary\挖矿\积分.txt S10
+calcvar human 边境声望 + <$STR(S10)>
+savevar human 边境声望 ..\QUESTDIARY\雪花制作\边境声望.txt
+SENDMSG 7 恭喜，你挖到了边境声望×<$STR(S10)>，你目前的边境声望是：<$HUMAN(边境声望)>! 
+SendCenterMsg 249 0 [<$USERNAME>]在神龙秘境,挖到边境声望×<$STR(S10)> 1 3 3
+#elseact
+goto @w5
+
+
+[@w5]
+#IF
+random 5
+#ACT
+GetRandomName .\QuestDiary\挖矿\心法经验.txt S10
+CHANGEHEARTPOINT + <$STR(S10)>
+SENDMSG 7 恭喜，你挖到了心法经验×<$STR(S10)>！
+SendCenterMsg 249 0 <$USERNAME>在神龙秘境,挖到宝物心法经验×<$STR(S10)> 1 3 3
+#elseact
+goto @w6
+
+
+[@w6]
+#IF
+random 5
+#ACT
+GetRandomName .\QuestDiary\挖矿\装备.txt S10
+GIVE <$STR(S10)> 1
+SENDMSG 7 恭喜，你挖到了<$STR(S10)>×1! 
+SendCenterMsg 249 0 [<$USERNAME>]在神龙秘境,挖到宝物<$STR(S10)>×1 1 3 3
+#elseact
+GetRandomName .\QuestDiary\挖矿\经验.txt S10
+CHANGEngexp + <$STR(S10)>
+SENDMSG 7 恭喜，你挖到了内功经验×<$STR(S10)>！
+
+
+
+
+
+
+
+
+
+
+[@回土]
+#IF
+#ACT
+MAPMOVE 3 330 330
+BREAK
+
+[@回龙卫山谷传送员]
+#IF
+#ACT
+MAPMOVE 3 372 301
+BREAK
+
+[@回瘟疫]
+#IF
+#ACT
+MAPMOVE WYZZ 225 26
+BREAK
+
+
+[@回冰魂宫殿]
+#IF
+#ACT
+MAPMOVE JZ002 41 34
+BREAK
+
+
+
+
+
+[@MAGselfFUNC124]
+#IF
+
+CheckSlaveCount < 1 
+
+#ACT
+RECALLMOB 主宰者灵兽 1 65535
+SENDMSG 6 您的灵兽召唤成功！
+#ELSEACT
+MESSAGEBOX 你已经召唤了您的灵兽！
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@秘境时间]
+#if
+ISONMAP WZMJ
+#act
+messagebox 你在秘境停留时间已经超过了30分钟！
+mapmove 3 333 333
+
+
+
+[@StdModeFunc105]
+#act
+close
+mapmove sldg 257 321
+
+
+
+
+
+
+
+[@StdModeFunc106]
+#act
+give 盟重传送石 1
+give 比奇传送石 1
+give 魔血石(大) 3
+give 回城卷包 3
+
+
+
+[@StdModeFunc108]
+#act
+give 狐月回城卷 6
+
+
+[@StdModeFunc109]
+#if
+isonmap fox02
+#act
+mapmove fox02 51 84
+#elseact
+sendmsg 6 对不起，你不在狐月山，不能回城！
+give 狐月回城卷 1
+
+
+
+
+
+
+
+
+
+
+
+[@回土城]
+#act
+messagebox 你在王者秘境停留时间超过了30分钟
+mapmove 3 330 330
+close
+
+
+[@StdModeFunc207]
+#IF
+CHECKNGLEVEL > 219
+CHECKSKILLLEVEL 唯我独尊 = 1
+#act
+SKILLLEVEL 唯我独尊 = 2
+sendmsg 5 恭喜：你学会了：“唯我独尊”第二卷！
+break
+#elseact
+give 主号独尊第二卷 1
+sendmsg 5 [失败]:条件不符，不能修炼“唯我独尊”第二卷。
+break
+
+[@StdModeFunc208]
+#IF
+CHECKNGLEVEL > 239
+CHECKSKILLLEVEL 唯我独尊 = 2
+#act
+SKILLLEVEL 唯我独尊 = 3
+sendmsg 5 恭喜：你学会了：“唯我独尊”第三卷！
+break
+#elseact
+give 主号独尊第三卷 1
+sendmsg 5 [失败]:条件不符，不能修炼“唯我独尊”第三卷。
+break
+
+[@StdModeFunc209]
+#IF
+checkheroonline
+CHECKNGLEVEL > 219 HERO
+CHECKSKILLLEVEL 唯我独尊 = 1 HERO
+#act
+HEROSKILLLEVEL 唯我独尊 + 1
+sendmsg 5 (英雄)恭喜：你学会了：“唯我独尊”第二卷！
+break
+#elseact
+give 英雄独尊第二卷 1
+sendmsg 5 (英雄)条件不符，不能修炼“唯我独尊”第二卷。
+break
+
+[@StdModeFunc210]
+#IF
+checkheroonline
+CHECKNGLEVEL > 239 HERO
+CHECKSKILLLEVEL 唯我独尊 = 2 HERO
+#act
+HEROSKILLLEVEL 唯我独尊 + 1
+sendmsg 5 (英雄)恭喜：你学会了：“唯我独尊”第三卷！
+break
+#elseact
+give 英雄独尊第三卷 1
+sendmsg 5 (英雄)条件不符，不能修炼“唯我独尊”第三卷。
+break
+
+
+[@StdModeFunc211]
+#act
+#CALL [\雪花制作\狐月天赐.TXT] @狐月天赐
+
+
+[@StdModeFunc300]
+#IF
+CHECKBAGSIZE 6
+#ACT
+give 万年雪莲 6
+#ELSEact
+messagebox 请预留足够的包裹！
+
+
+
+[@StdModeFunc277]
+#IF
+CHECKUSEITEM 9 神龙之心 hero
+#act
+SKILLLEVEL 神龙附体 + 1
+#elseact
+messagebox 你的英雄还没带上神龙之心的，不能使用龙血提升神龙附体等级！
+give 龙血 1
+
+
+;击破裂石
+

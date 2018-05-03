@@ -1,0 +1,232 @@
+[@MAIN]
+我是比齐国王,掌管着许多特殊事物。希望我能对你有帮助！\
+ <请求创建行会./@@buildguildnow>　　　　　　　\
+ <申请行会战争./@guildwar>　　　　　　　\
+ <如何建立行会./@buildguildexp>\
+ <有关行会战争./@guildwarexp>\
+ <申请攻城战争./@requestcastlewar>\ \
+
+[@成长任务]
+#IF
+check [337] 1
+#ACT
+SET [337] 0
+SET [338] 1
+GIVE 金砖 2
+ChangeExp + 10000000
+CHANGENGEXP + 10000000
+SENDMSG 7 恭喜：你获得了：金砖*2
+SENDMSG 7 恭喜：你获得了：经验1000万
+SENDMSG 7 恭喜：你获得了：内功经验1000万
+BREAK
+CLOSE
+
+[@buildguildexp]
+建立行会你应该证明你有资格。必须支付100万金币作为基础\
+而且要取得位于沃玛寺庙底部深处的沃玛教主所拥有的号角!\ \
+<返回/@main>
+
+[@guildwar]
+填写与你交战的敌对行会的名字，申请行会战争必须支付3万金币\ \
+ <立即申请行会战争/@@guildwar>\
+<返回/@main>\
+
+[@guildwarexp]
+<行会战/@guildwar2>是一种合法的战争，因为目前有许多行会和\
+玩家都同意，这是<合法的/@warrule>的行会间战争。\
+你是否<请求/@propose>行会战争?战争将\
+进行3小时,你必须支付<$GUILDWARFEE>所规定的申请费用.\ \
+<返回/@main>
+
+[@guildwar2]
+当你请求行会战争的时候,相同行会成员的名字将会出现在蓝色的。\
+ 在另一方面,敌人的行会成员名字将会变成橘色的.开战中的行会\
+成员在此期间登录,信息窗口会有[××在与你行会进行行会战]\
+的信息出现，在这个时候，如果你杀敌了人的行会某一个成员,\
+系统对你的行为将不会被视为 PK 。 \ \
+<返回/@guildwarexp>
+
+[@warrule]
+行会战争在城市中不能发生,它在城市某范围外或内部竞赛区\
+域(一些建筑物之内)被启动.否则你 PK 你的身份将会是红色\
+的!甚至在战争期间。\ \
+<返回/@guildwarexp>
+
+[@propose]
+行会战争的提议只能由行会首领提出。\ \
+<返回/@guildwarexp>
+
+[@requestcastlewar]
+#IF
+EQUAL A90 开启
+#ACT
+BREAK
+#SAY
+请求对 沙巴克 作战你应该有祖玛教主的头像,你有它吗?战争将会在\ 
+申请日期的第 二 天内开始。\ \
+<给祖玛头像/@requestcastlewarnow>\
+<返回./@main>
+
+#ELSEACT
+BREAK
+#ELSESAY
+很抱歉，目前未开放攻城战申请。\
+
+[~@request_ok]
+你的请求被许可, <$CASTLEWARDATE> 战争将会发生在这个值得回忆\
+的日子...剩下的时间不多了，祝你好运!\ \
+<关闭./@exit>\
+
+[@护送贡银]
+你是沙巴克护送贡银的吗？快快交上来，查验完毕，论功行赏啊！\ 
+护送成功沙巴克成员均可以领取报酬，每人限额一份，最多400份！\ \
+<上交贡银/@上交贡银>\
+<领取护送报酬/@护送贡银报酬>\ \
+<返回/@main>
+
+[@上交贡银]
+#IF
+ISCASTLEMASTER
+#ELSEACT
+BREAK
+#ELSESAY
+你是沙巴克行会会长吗？
+
+#IF
+EQUAL G81 2
+#ACT
+BREAK
+#SAY
+感谢，沙巴克行会上交的贡银。
+
+#IF
+CHECKMAPMOBCOUNT 0122 29 34 贡银 > 0 100
+#ACT
+CLEARMAPMON 0122
+MOV G81 2
+MOV G80 0
+SENDMSG 0 <$GUILDNAME>行会押送贡银，历经千山万水跋涉，不畏艰险，终于抵达比奇皇宫，他的所在行会成员将受到比奇国王的丰厚奖赏！
+#SAY
+感谢，沙巴克行会上交的贡银。 \ \
+<返回领取奖励/@护送贡银>
+#ELSESAY
+你上交的贡银在那？
+
+[@护送贡银报酬]
+#IF
+EQUAL G81 2
+#ELSEACT
+BREAK
+#ELSESAY
+贵行会好象还没有成功完成押送任务吧！
+
+#IF
+ISCASTLEGUILD
+#ELSEACT
+BREAK
+#ELSESAY
+非沙巴克成员请速速离开！
+
+#IF
+CHECKLEVELEX > 44
+#ELSEACT
+BREAK
+#ELSESAY
+你的等级没有达到45级，我不能给你奖励！
+
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\送镖奖励领取名单.txt
+#ACT
+BREAK
+#SAY
+尊敬的沙巴克勇士，我已经给过你丰厚的奖励了！
+
+#IF
+EQUAL G80 400
+#ACT
+BREAK
+#SAY
+领取奖励数额已满。
+#ELSEACT
+ INC G80 1
+ ADDNAMELIST ..\QuestDiary\数据文件\送镖奖励领取名单.txt
+ CHANGEEXP + 10000000
+ SENDMSG 7 恭喜：你获的了　经验:1000万
+#ELSESAY
+尊敬的沙巴克勇士，这是我给予你这样的勇士最丰厚的奖励！
+
+[@护送生辰纲]
+你是沙巴克护送生辰纲的吗？快快交上来，查验完毕，论功行赏啊！\ 
+护送成功沙巴克成员均可以领取报酬，每人限额一份，最多400份！\ \
+<上交生辰纲/@上交生辰纲>\
+<领取护送报酬/@护送生辰纲报酬>\ \
+<返回/@main>
+
+[@上交生辰纲]
+#IF
+ISCASTLEMASTER
+#ELSEACT
+BREAK
+#ELSESAY
+你是沙巴克行会会长吗？
+
+#IF
+EQUAL G82 2
+#ACT
+BREAK
+#SAY
+感谢，沙巴克行会上交的生辰纲。
+
+#IF
+CHECKMAPMOBCOUNT 0122 29 34 生辰纲 > 0 100
+#ACT
+CLEARMAPMON 0122
+MOV G82 2
+MOV G80 0
+SENDMSG 0 <$GUILDNAME>行会押送生辰纲，历经千山万水跋涉，不畏艰险，终于抵达比奇皇宫，他的所在行会成员将受到比奇国王的丰厚奖赏！
+#SAY
+感谢，沙巴克行会上交的生辰纲。 \ \
+<返回领取奖励/@护送生辰纲>
+#ELSESAY
+你上交的生辰纲在那？
+
+[@护送生辰纲报酬]
+#IF
+EQUAL G82 2
+#ELSEACT
+BREAK
+#ELSESAY
+贵行会好象还没有成功完成押送任务吧！
+
+#IF
+ISCASTLEGUILD
+#ELSEACT
+BREAK
+#ELSESAY
+非沙巴克成员请速速离开！
+
+#IF
+CHECKLEVELEX > 44
+#ELSEACT
+BREAK
+#ELSESAY
+你的等级没有达到45级，我不能给你奖励！
+
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\送镖奖励领取名单.txt
+#ACT
+BREAK
+#SAY
+尊敬的沙巴克勇士，我已经给过你丰厚的奖励了！
+
+#IF
+EQUAL G80 400
+#SAY
+领取奖励数额已满。
+#ELSEACT
+ INC G80 1
+ ADDNAMELIST ..\QuestDiary\数据文件\送镖奖励领取名单.txt
+ CHANGEEXP + 50000000
+ SENDMSG 7 恭喜：你获的了　经验:5000万
+#ELSESAY
+尊敬的沙巴克勇士，这是我给予你这样的勇士最丰厚的奖励！

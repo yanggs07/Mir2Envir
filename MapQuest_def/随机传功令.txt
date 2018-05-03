@@ -1,0 +1,14 @@
+[@MAIN]
+#IF
+#ACT
+GetRandomName .\QuestDiary\雪花制作\随机传功令.txt S10
+GIVEKIMNEEDLE 传功令 <$STR(S10)> 
+SENDMSG 7 恭喜，你获得传功令×<$STR(S10)>! 
+
+
+#IF
+#ACT
+GetRandomName .\QuestDiary\雪花制作\随机绿宝石.txt S11
+GIVEKIMNEEDLE 绿宝石 <$STR(S11)> 
+SENDMSG 7 恭喜，你获得绿宝石×<$STR(S11)>! 
+

@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 除魔内容 = 3
+CHECKVAR HUMAN 石墓杀猪 < 5
+#ACT
+CALCVAR HUMAN 石墓杀猪 + 1
+savevar human 石墓杀猪 ..\QuestDiary\雪花制作\石墓杀猪.txt
+SENDMSG 7 你已经杀死了<$human(石墓杀猪)>/5个红野猪！
+
+#IF
+CHECKVAR HUMAN 除魔内容 = 3
+CHECKVAR HUMAN 石墓杀猪 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(石墓杀猪)>/5个红野猪,赶紧去领取奖励吧！

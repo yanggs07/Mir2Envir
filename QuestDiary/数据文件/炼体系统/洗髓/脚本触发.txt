@@ -1,0 +1,521 @@
+[@洗髓触发]
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_huti.ImageIndex.UP 1920
+SetClientUIProp Usr_huti_name.ImageIndex.UP 91
+SetClientUIProp Usr_qiangti_name.ImageIndex.UP 91
+SetClientUIProp Usr_tipo_name.ImageIndex.UP 91
+SetClientUIProp Usr_xisui_name.ImageIndex.UP 90
+SetClientUIProp Usr_huti_dh1.visible True
+
+SetClientUIProp Usr_huti_wp.visible True
+SetClientUIProp Usr_huti_wp.ImageIndex.Imagelibtype UI_N
+SetClientUIProp Usr_huti_wp.ImageIndex.UP 1924
+SetClientUIProp Usr_huti_wp.TEXT 洗髓丹　0/1
+SetClientUIProp Usr_huti_sj1.visible False
+SetClientUIProp Usr_huti_sj2.visible False
+SetClientUIProp Usr_huti_sj3.visible False
+SetClientUIProp Usr_huti_sj4.visible True
+SetClientUIProp Usr_huti_sj5.visible True
+
+SetClientUIProp Usr_huti_1.gleft 97
+SetClientUIProp Usr_huti_1.gtop 325
+SetClientUIProp Usr_huti_2.gleft 167
+SetClientUIProp Usr_huti_2.gtop 332
+SetClientUIProp Usr_huti_3.gleft 97
+SetClientUIProp Usr_huti_3.gtop 271
+SetClientUIProp Usr_huti_4.gleft 153
+SetClientUIProp Usr_huti_4.gtop 278
+SetClientUIProp Usr_huti_5.gleft 124
+SetClientUIProp Usr_huti_5.gtop 220
+SetClientUIProp Usr_huti_6.gleft 74
+SetClientUIProp Usr_huti_6.gtop 209
+SetClientUIProp Usr_huti_7.gleft 172
+SetClientUIProp Usr_huti_7.gtop 212
+SetClientUIProp Usr_huti_8.gleft 124
+SetClientUIProp Usr_huti_8.gtop 171
+SetClientUIProp Usr_huti_9.gleft 103
+SetClientUIProp Usr_huti_9.gtop 147
+SetClientUIProp Usr_huti_10.gleft 153
+SetClientUIProp Usr_huti_10.gtop 150
+
+SetClientUIProp Usr_huti_1.visible False
+SetClientUIProp Usr_huti_2.visible False
+SetClientUIProp Usr_huti_3.visible False
+SetClientUIProp Usr_huti_4.visible False
+SetClientUIProp Usr_huti_5.visible False
+SetClientUIProp Usr_huti_6.visible False
+SetClientUIProp Usr_huti_7.visible False
+SetClientUIProp Usr_huti_8.visible False
+SetClientUIProp Usr_huti_9.visible False
+SetClientUIProp Usr_huti_10.visible False
+SetClientUIProp Usr_huti_11.visible False
+
+SetClientUIProp Usr_huti_s1.gleft 250
+SetClientUIProp Usr_huti_s1.gtop 110
+SetClientUIProp Usr_huti_s2.gleft 250
+SetClientUIProp Usr_huti_s2.gtop 125
+SetClientUIProp Usr_huti_s3.gleft 250
+SetClientUIProp Usr_huti_s3.gtop 140
+SetClientUIProp Usr_huti_s4.gleft 250
+SetClientUIProp Usr_huti_s4.gtop 155
+
+SetClientUIProp Usr_huti_s5.gleft 280
+SetClientUIProp Usr_huti_s5.gtop 155
+SetClientUIProp Usr_huti_s6.gleft 280
+SetClientUIProp Usr_huti_s6.gtop 170
+SetClientUIProp Usr_huti_s7.gleft 260
+SetClientUIProp Usr_huti_s7.gtop 200
+SetClientUIProp Usr_huti_s8.gleft 260
+SetClientUIProp Usr_huti_s8.gtop 220
+SetClientUIProp Usr_huti_s9.gleft 330
+SetClientUIProp Usr_huti_s9.gtop 220
+SetClientUIProp Usr_huti_s10.gleft 260
+SetClientUIProp Usr_huti_s10.gtop 240
+SetClientUIProp Usr_huti_s11.gleft 280
+SetClientUIProp Usr_huti_s11.gtop 260
+SetClientUIProp Usr_huti_s12.gleft 260
+SetClientUIProp Usr_huti_s12.gtop 290
+SetClientUIProp Usr_huti_s13.gleft 280
+SetClientUIProp Usr_huti_s13.gtop 305
+SetClientUIProp Usr_huti_s14.gleft 260
+SetClientUIProp Usr_huti_s14.gtop 345
+
+SetClientUIProp Usr_huti_s1.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s1.TEXT 将鼠标移到左边人物的灰色按钮
+SetClientUIProp Usr_huti_s2.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s2.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s2.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s2.TEXT 上查看开启该阶洗髓所需的条件
+SetClientUIProp Usr_huti_s3.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s3.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s3.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s3.TEXT 移到蓝色按钮上可点击该按钮对
+SetClientUIProp Usr_huti_s4.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s4.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s4.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s4.TEXT 该阶段进行洗髓
+SetClientUIProp Usr_huti_s5.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s5.TEXT 　
+SetClientUIProp Usr_huti_s6.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s6.TEXT 　
+SetClientUIProp Usr_huti_s7.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s7.TEXT 　
+SetClientUIProp Usr_huti_s8.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s8.TEXT 　
+SetClientUIProp Usr_huti_s9.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s9.TEXT 　
+SetClientUIProp Usr_huti_s10.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s10.TEXT 　
+SetClientUIProp Usr_huti_s11.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s11.TEXT 　
+SetClientUIProp Usr_huti_s12.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s12.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s12.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s12.TEXT 　
+SetClientUIProp Usr_huti_s13.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s13.TEXT 　
+SetClientUIProp Usr_huti_s14.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s14.TEXT 　
+
+SetClientUIProp Usr_huti_s1.visible True
+SetClientUIProp Usr_huti_s2.visible True
+SetClientUIProp Usr_huti_s3.visible True
+SetClientUIProp Usr_huti_s4.visible True
+SetClientUIProp Usr_huti_s5.visible True
+SetClientUIProp Usr_huti_s6.visible False
+SetClientUIProp Usr_huti_s7.visible False
+SetClientUIProp Usr_huti_s8.visible False
+SetClientUIProp Usr_huti_s9.visible False
+SetClientUIProp Usr_huti_s10.visible False
+SetClientUIProp Usr_huti_s11.visible False
+SetClientUIProp Usr_huti_s12.visible False
+SetClientUIProp Usr_huti_s13.visible False
+SetClientUIProp Usr_huti_s14.visible False
+;以上为默认！
+
+#IF
+CHECKVAR HUMAN 护体等级 > 98
+CHECKVAR HUMAN 强体等级 > 10
+CHECKVAR HUMAN 体魄等级 > 10
+#ACT
+CALCVAR HUMAN 洗髓等级 = 11
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_10.visible True
+SetClientUIProp Usr_huti_11.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_10.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_11.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_7.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_8.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_9.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_10.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_11.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_8.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_9.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_10.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_11.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 89
+CHECKVAR HUMAN 强体等级 > 9
+CHECKVAR HUMAN 体魄等级 > 9
+#ACT
+CALCVAR HUMAN 洗髓等级 = 10
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_10.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_10.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_7.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_8.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_9.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_10.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_8.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_9.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_10.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 80
+CHECKVAR HUMAN 强体等级 > 8
+CHECKVAR HUMAN 体魄等级 > 8
+#ACT
+CALCVAR HUMAN 洗髓等级 = 9
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_7.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_8.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_9.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_8.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_9.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 71
+CHECKVAR HUMAN 强体等级 > 7
+CHECKVAR HUMAN 体魄等级 > 7
+#ACT
+CALCVAR HUMAN 洗髓等级 = 8
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_7.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_8.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_8.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 62
+CHECKVAR HUMAN 强体等级 > 6
+CHECKVAR HUMAN 体魄等级 > 6
+#ACT
+CALCVAR HUMAN 洗髓等级 = 7
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_7.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 53
+CHECKVAR HUMAN 强体等级 > 5
+CHECKVAR HUMAN 体魄等级 > 5
+#ACT
+CALCVAR HUMAN 洗髓等级 = 6
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_6.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 44
+CHECKVAR HUMAN 强体等级 > 4
+CHECKVAR HUMAN 体魄等级 > 4
+#ACT
+CALCVAR HUMAN 洗髓等级 = 5
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_5.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 35
+CHECKVAR HUMAN 强体等级 > 3
+CHECKVAR HUMAN 体魄等级 > 3
+#ACT
+CALCVAR HUMAN 洗髓等级 = 4
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_4.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 26
+CHECKVAR HUMAN 强体等级 > 2
+CHECKVAR HUMAN 体魄等级 > 2
+#ACT
+CALCVAR HUMAN 洗髓等级 = 3
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_3.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 17
+CHECKVAR HUMAN 强体等级 > 1
+CHECKVAR HUMAN 体魄等级 > 1
+#ACT
+CALCVAR HUMAN 洗髓等级 = 2
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_2.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN 1922
+BREAK
+
+#IF
+CHECKVAR HUMAN 护体等级 > 8
+CHECKVAR HUMAN 强体等级 > 0
+CHECKVAR HUMAN 体魄等级 > 0
+#ACT
+CALCVAR HUMAN 洗髓等级 = 1
+SAVEVAR HUMAN 洗髓等级 ..\QuestDiary\数据文件\炼体系统\洗髓\当前等级.txt
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1921
+SetClientUIProp Usr_huti_1.ImageIndex.HOT 1923
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN 1922
+BREAK
+}

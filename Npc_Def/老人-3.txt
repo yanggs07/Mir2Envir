@@ -1,0 +1,59 @@
+[@main]
+#IF
+CHECKCASTLEWAR 沙巴克
+#ACT
+BREAK
+#SAY
+攻城战期间，申请攻沙的行会等级小于100级的玩家可以来我这里\
+领取沙巴克随机石，总共可以领取3个，每人只能领取一个，只有\
+<沙巴克随机石可以在城堡内飞随机。/FColor=249>\
+<沙巴克随机石只有在领取当天的攻城战期间有效，/FColor=249>\
+<沙巴克城堡内不允许原地复活，主号在沙巴克城堡内使用了/FColor=249>\
+<复活戒指将回到盟重复活。/FColor=249>\
+<领取沙巴克随机石/@领取>
+
+#ELSEACT
+BREAK
+#ELSESAY
+攻城战期间，申请攻沙的行会等级小于100级的玩家可以来我这里\
+领取沙巴克随机石，总共可以领取3个，每人只能领取一个，只有\
+<沙巴克随机石可以在城堡内飞随机。/FColor=249>\
+<沙巴克随机石只有在领取当天的攻城战期间有效，/FColor=249>\
+<沙巴克城堡内不允许原地复活，主号在沙巴克城堡内使用了/FColor=249>\
+<复活戒指将回到盟重复活。/FColor=249>\
+<我想询问攻城的时间/@aboutwar>
+
+[@领取]
+#IF
+CheckLevelEx < 100
+#ACT
+
+#ELSEACT
+SENDMSG 7 你当前的等级无法领取改道具！
+BREAK
+CLOSE
+
+#IF
+SMALL G99 3
+#ACT
+INC G99 1
+GIVE 沙巴克随机石 1
+SENDMSG 7 恭喜：你获得了：沙巴克随机石*1
+BREAK
+CLOSE
+
+#ELSEACT
+SENDMSG 7 沙巴克随机石已被领取完毕！
+BREAK
+CLOSE
+
+[@aboutwar]
+最近一次的攻城战役将在<$CASTLEWARDATE>，\
+你也可以看看攻城战役的时间表，这样你就非常清楚了。\ \
+<看一些攻城战役的时间表/@listwar>\
+<返回/@MAIN>
+
+[@listwar]
+<$LISTOFWAR>\
+\ \
+<返回/@aboutwar>

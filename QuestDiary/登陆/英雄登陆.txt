@@ -1,0 +1,20 @@
+[@Ó¢ÐÛµÇÂ½]
+{
+#IF
+CHECKVAR HUMAN Ó¢ÐÛµÇÂ½ = 1
+#act
+#elseact
+GOTO @111
+
+[@111]
+#if
+#ACT
+CALCVAR HUMAN Ó¢ÐÛµÇÂ½ = 1
+savevar human Ó¢ÐÛµÇÂ½ ..\QUESTDIARY\Ñ©»¨ÖÆ×÷\Ó¢ÐÛµÇÂ½.txt
+changelevel = 1 hero
+GIVE »ðÁúÖ®ÐÄ 1 HERO
+
+
+
+
+}

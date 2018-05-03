@@ -1,0 +1,1008 @@
+[@白金帐号功能]
+{
+╔═══════════════════════════╗\
+┆新增服务：<一键特修全部身上装备功能/@SuperRepair>。限VIP会员无偿使用┆\
+╚═══════════════════════════╝\
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<改变性别/@BVIPP1>‖　　　‖<超级传送/@BVIPP3>‖　　　‖<每日奖励/@BVIPP8>‖\
+　　╚════╝　　　╚════╝　　　╚════╝      \
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<购买特药/@BVIPP5>‖　　　‖<清洗红名/@BVIPP6>‖　　　‖<等级奖励/@BVIPP9>‖\
+　　╚════╝　　　╚════╝　　　╚════╝\
+
+
+
+[@SuperRepair]
+#If
+CheckLevelEx > 0 
+#Act
+RepairAll
+MESSAGEBOX [提示]:您身上的装备破损之处.已经全部完好如初.
+GOTO @白金帐号功能
+BREAK
+
+
+[@BVIPP1]
+哎，真不明白你们这些年轻人都是怎么想的？\
+没事怎么老是喜欢弄个变性。\
+你是想改变性别吗，如果改变了我们可不会负责的。\\
+改变性别注意事项：你不能在结婚后改变性别，除非你\
+有病，同时你的等级必须在50级以上才可以使用本功能\ \
+<我同意更改性别/@BB1>     <我还是做个正常人吧/@exit>
+
+[@BB1]
+#IF
+checkmarry
+#SAY
+你是在和我开玩笑吧，你都结婚了还改变性别？\
+如果真想改变性别，请选去离婚吧。\
+如果下次还这样，我会惩罚你的。\
+#ACT
+break
+#IF
+gender man
+#SAY
+做男人没意思了？那就来做个女人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB3>  <害怕了，还是不改变了/@exit>\
+#ELSESAY
+做女人没意思了？那就来做个男人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB4>  <害怕了，还是不改变了/@exit>\
+[@BB3]
+#IF
+#ACT
+CHANGEGENDER 1
+#SAY
+恭喜，你已经变成一位女人了。\ \ \
+<离开/@exit>
+
+[@BB4]
+#IF
+#ACT
+CHANGEGENDER 0
+#SAY
+恭喜，你已经变成一位男人了。\ \ \
+<离开/@exit>
+
+;=====================================================
+[@BVIPP5]
+#CALL [\\会员系统\购买白金药品.txt] @白金药品购买开始
+
+[@BVIPP6]
+您当前的PK点数为：<$PKPOINT>\ \
+会员清洗红名无需付费\ \
+我要<清洗红名/@Bqxhm>\ 
+<返回/@白金帐号功能>
+[@Bqxhm]
+#IF
+#act
+CHANGEPKPOINT - 100
+#SAY
+我已经帮你清洗好了，希望以后不要在“红名”哦！\ \
+<返回首页/@白金帐号功能>
+
+
+[@BVIPP8]
+#if
+dayofweek sun
+#act
+set [504] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bsun
+break
+
+#if
+dayofweek mon
+#act
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bmon
+break
+
+#if
+dayofweek tue
+#act
+set [504] 0
+set [510] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Btue
+break
+
+#if
+dayofweek wed
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bwed
+break
+
+#if
+dayofweek thu
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [508] 0
+set [509] 0
+goto @Bthu
+break
+
+#if
+dayofweek fri
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [509] 0
+goto @Bfri
+break
+
+#if
+dayofweek sat
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+goto @Bsat
+
+[@Bsun]
+#if
+check [510] 0
+dayofweek sun
+#act
+goto @BLBXXVIP_1
+set [510] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bmon]
+#if
+dayofweek mon
+check [504] 0
+#act
+goto @BLBXXVIP_1
+set [504] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Btue]
+#if
+dayofweek tue
+check [505] 0
+#act
+goto @BLBXXVIP_1
+set [505] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bwed]
+#if
+dayofweek wed
+check [506] 0
+#act
+goto @BLBXXVIP_1
+set [506] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bthu]
+#if
+dayofweek thu
+check [507] 0
+#act
+goto @BLBXXVIP_1
+set [507] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bfri]
+#if
+dayofweek fri
+check [508] 0
+#act
+goto @BLBXXVIP_1
+set [508] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bsat]
+#if
+dayofweek sat
+check [509] 0
+#act
+goto @BLBXXVIP_1
+set [501] 1
+set [509] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@BLBXXVIP_1]
+你好尊贵的会员:<$USERNAME>，我这里每天可以\
+为你提供一次领取游戏补给功能，如果你此时拒绝了今天给予的\
+补给，那么等于你决定放弃了今天的补给物资。\
+每天可以获得游戏补给：50个元宝、50万经验值\
+『<领取今天物资补给/@BLBXXVIP_OK>』
+[@BLBXXVIP_OK]
+#if
+check [501] 0
+#act
+map B311
+break
+#IF
+#say
+200个元宝、50万经验值\
+以上是您今天的游戏物资补给，祝您游戏愉快......\
+#ACT
+set [500] 1
+set [501] 0
+GAMEGOLD + 50
+
+CHANGEEXP + 500000
+#ELSESAY
+您已经领取了今日补给，请不要重复领取。\
+『<返回/@白金帐号功能>』\
+[@BLBXXVIP_NO]
+您已经领取了今日补给，请不要重复领取。\
+请您明天再来吧!\
+『<返 回/@白金帐号功能>』\ \
+
+
+[@BVIPP3]
+╔═══════════════════════════╗\
+║                  <会员专用超级传送系统/FCOLOR=252>                ║\
+╚═══════════════════════════╝\
+    <温馨提示：/FCOLOR=222><您是尊贵的会员、以下超级传送服务无需付费/FCOLOR=3>\
+╔═══════════════════════════╗\
+║ <石墓七层/@pk663vipa1>   <尸 王 殿/@pk663vipa12>  <魔 龙 殿/@pk663vipa7>   <赤月魔穴/@pk663vipa10>   <骨魔三层/@pk663vipa13>  ║\
+║ <魔龙血域/@pk663vipa2>   <祖玛七层/@pk663vipa5>  <幻境十层/@pk663vipa8>   <尸魔三层/@pk663vipa11>   <恶魔祭坛/@pk663vipa14>  ║\
+   <天下仙境/@pk663vipa4>   <牛魔七层/@pk663vipa15>  ║\
+╚═══════════════════════════╝\
+
+
+[@pk663vipa15]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2079 13 13
+break
+
+[@pk663vipa14]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10061 20 25
+break
+
+[@pk663vipa13]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2063
+break
+
+[@pk663vipa12]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove Q004
+break
+
+[@pk663vipa11]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2053
+break
+
+[@pk663vipa10]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10062
+break
+
+[@pk663vipa9]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H301
+break
+
+[@pk663vipa8]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H010
+break
+
+[@pk663vipa7]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove EM300
+break
+
+[@pk663vipa6]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 3 88 48
+break
+
+[@pk663vipa5]
+#IF
+#ACT
+give 回城卷 1
+close
+map D515
+break
+
+[@pk663vipa4]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove txx1
+break
+
+[@pk663vipa3]
+#IF
+#ACT
+give 回城卷 1
+close
+MapMove MIRHH100
+break
+
+[@pk663vipa2]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 66 256 212
+break
+
+[@pk663vipa1]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D717 26 74
+break
+
+
+[@BVIPP9]
+╔═══════════════════════════╗\
+║<温馨提示:尊贵的会员等级60之后每升2级都可以领取奖励一次/FCOLOR=222>║\\
+║<领取/@GV60><60/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列头盔  <领取/@GV72><72/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列腰带║\
+║<领取/@GV62><62/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列项链  <领取/@GV74><74/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列靴子║\
+║<领取/@GV64><64/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV76><76/FCOLOR=222>级奖励<→/FCOLOR=222>王者勋章系列║\
+║<领取/@GV66><66/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV78><78/FCOLOR=222>级奖励<→/FCOLOR=222>王者战甲系列║\
+║<领取/@GV68><68/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指  <领取/@GV80><80/FCOLOR=222>级奖励<→/FCOLOR=222>王者武器系列║\
+║<领取/@GV70><70/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指                <返回上一页面/@白金帐号功能>║\
+╚═══════════════════════════╝\
+
+
+[@GV60]
+#IF
+CHECKLEVELEX = 60
+#ACT
+GOTO @60
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@60]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV60YES
+
+[@GV60YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：逆火魔盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：逆火魔盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：通云道盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：通云道盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：狂雷战盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：狂雷战盔
+GOTO @BVIPP9
+BREAK
+
+[@GV62]
+#IF
+CHECKLEVELEX = 62
+#ACT
+GOTO @62
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@62]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV62YES
+
+[@GV62YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：逆火项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：逆火项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：通云项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：通云项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：狂雷项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：狂雷项链
+GOTO @BVIPP9
+BREAK
+
+[@GV64]
+#IF
+CHECKLEVELEX = 64
+#ACT
+GOTO @64
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@64]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV64YES
+
+[@GV64YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV66]
+#IF
+CHECKLEVELEX = 66
+#ACT
+GOTO @66
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@66]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV66YES
+
+[@GV66YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV68]
+#IF
+CHECKLEVELEX = 68
+#ACT
+GOTO @68
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@68]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV68YES
+
+[@GV68YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV70]
+#IF
+CHECKLEVELEX = 70
+#ACT
+GOTO @70
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@70]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV70YES
+
+[@GV70YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV72]
+#IF
+CHECKLEVELEX = 72
+#ACT
+GOTO @72
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@72]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV72YES
+
+[@GV72YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：逆火腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：逆火腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：通云腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：通云腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：狂雷腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：狂雷腰带
+GOTO @BVIPP9
+BREAK
+
+[@GV74]
+#IF
+CHECKLEVELEX = 74
+#ACT
+GOTO @74
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@74]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV74YES
+
+[@GV74YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：逆火魔靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：逆火魔靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：通云道靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：通云道靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：狂雷战靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：狂雷战靴
+GOTO @BVIPP9
+BREAK
+
+[@GV76]
+#IF
+CHECKLEVELEX = 76
+#ACT
+GOTO @76
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@76]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV76YES
+
+[@GV76YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者勋章(法) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(法)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(法)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者勋章(道) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(道)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(道)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者勋章(战) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(战)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(战)
+GOTO @BVIPP9
+BREAK
+
+[@GV78]
+#IF
+CHECKLEVELEX = 78
+#ACT
+GOTO @78
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@78]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV78YES
+
+[@GV78YES]
+#IF
+checkjob wizard
+gender man
+#ACT
+GIVE 王者魔衣(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob wizard
+gender woman
+#ACT
+GIVE 王者魔衣(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender man
+#ACT
+GIVE 王者道袍(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender woman
+#ACT
+GIVE 王者道袍(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender man
+#ACT
+GIVE 王者战甲(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender woman
+#ACT
+GIVE 王者战甲(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(女)
+GOTO @BVIPP9
+BREAK
+
+[@GV80]
+#IF
+CHECKLEVELEX = 80
+#ACT
+GOTO @80
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@80]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV80YES
+
+[@GV80YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者之杖 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之杖
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之杖
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者之剑 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之剑
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之剑
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者之刃 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之刃
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之刃
+GOTO @BVIPP9
+BREAK
+}

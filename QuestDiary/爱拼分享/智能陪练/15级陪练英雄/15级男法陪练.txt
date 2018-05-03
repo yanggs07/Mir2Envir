@@ -1,0 +1,52 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 10
+Gender = 0
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=0
+NGLevel=15
+UseSkill = 白日门雷电术,白日门圣言术,
+;包裹物品
+InitItems = 
+;等级
+Level = 15
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 = 中型盔甲(男)
+;武器
+UseItems1 = 海魂
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 白金项链
+;头盔
+UseItems4 = 青铜头盔
+;左手镯
+UseItems5 = 皮制手套
+;右手镯
+UseItems6 = 黑檀手镯
+;左戒指
+UseItems7 = 生铁戒指
+;右戒指
+UseItems8 = 生铁戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 = 魔血石(大) 
+
+
+
+
+
+
+

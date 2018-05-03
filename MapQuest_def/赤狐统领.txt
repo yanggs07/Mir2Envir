@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 挑战内容 = 2
+CHECKVAR HUMAN 赤狐统领 < 3
+#ACT
+CALCVAR HUMAN 赤狐统领 + 1
+savevar human 赤狐统领 ..\QuestDiary\雪花制作\赤狐统领.txt
+SENDMSG 7 你已经杀死了<$human(赤狐统领)>/3个赤狐统领！
+
+#IF
+CHECKVAR HUMAN 挑战内容 = 2
+CHECKVAR HUMAN 赤狐统领 = 3
+#act
+SENDMSG 7 你已经杀死了<$human(赤狐统领)>/3个赤狐统领,赶紧去领取奖励吧！

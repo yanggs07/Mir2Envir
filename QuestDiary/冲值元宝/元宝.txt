@@ -1,0 +1,656 @@
+[@领取元宝]
+{
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.1.txt
+#ACT
+GAMEGOLD + 500
+CALCVAR HUMAN 元宝消费 + 0
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 0
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.1.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得500元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay1.txt
+#ACT
+GAMEGOLD + 5000
+CALCVAR HUMAN 元宝消费 + 5
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 5
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay1.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得5000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay10.txt
+#ACT
+GAMEGOLD + 50000
+CALCVAR HUMAN 元宝消费 + 50
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 50
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay10.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得50000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay100.txt
+#ACT
+GAMEGOLD + 500000
+CALCVAR HUMAN 元宝消费 + 500
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay100.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得500000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay1000.txt
+#ACT
+GAMEGOLD + 5000000
+CALCVAR HUMAN 元宝消费 + 5000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 5000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay1000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得5000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay10000.txt
+#ACT
+GAMEGOLD + 50000000
+CALCVAR HUMAN 元宝消费 + 50000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 50000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay10000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得50000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.2.txt
+#ACT
+GAMEGOLD + 1000
+CALCVAR HUMAN 元宝消费 + 1
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.2.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得1000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay2.txt
+#ACT
+GAMEGOLD + 10000
+CALCVAR HUMAN 元宝消费 + 10
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 10
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay2.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得10000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay20.txt
+#ACT
+GAMEGOLD + 100000
+CALCVAR HUMAN 元宝消费 + 100
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 100
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay20.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得100000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay200.txt
+#ACT
+GAMEGOLD + 1000000
+CALCVAR HUMAN 元宝消费 + 1000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 1000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay200.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得1000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay2000.txt
+#ACT
+GAMEGOLD + 10000000
+CALCVAR HUMAN 元宝消费 + 10000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 10000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay2000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得10000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay20000.txt
+#ACT
+GAMEGOLD + 100000000
+CALCVAR HUMAN 元宝消费 + 100000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 100000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay20000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得100000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.3.txt
+#ACT
+GAMEGOLD + 1500
+CALCVAR HUMAN 元宝消费 + 1
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 1
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.3.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得1500元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay3.txt
+#ACT
+GAMEGOLD + 15000
+CALCVAR HUMAN 元宝消费 + 15
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 15
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay3.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得15000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay30.txt
+#ACT
+GAMEGOLD + 150000
+CALCVAR HUMAN 元宝消费 + 150
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 150
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay30.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得150000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay300.txt
+#ACT
+GAMEGOLD + 1500000
+CALCVAR HUMAN 元宝消费 + 1500
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 1500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay300.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得1500000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay3000.txt
+#ACT
+GAMEGOLD + 15000000
+CALCVAR HUMAN 元宝消费 + 15000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 15000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay3000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得15000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay30000.txt
+#ACT
+GAMEGOLD + 150000000
+CALCVAR HUMAN 元宝消费 + 150000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 150000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay30000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得150000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.4.txt
+#ACT
+GAMEGOLD + 2000
+CALCVAR HUMAN 元宝消费 + 2
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 2
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.4.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得2000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay4.txt
+#ACT
+GAMEGOLD + 20000
+CALCVAR HUMAN 元宝消费 + 20
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 20
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay4.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得20000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay40.txt
+#ACT
+GAMEGOLD + 200000
+CALCVAR HUMAN 元宝消费 + 200
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 200
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay40.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得200000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay400.txt
+#ACT
+GAMEGOLD + 2000000
+CALCVAR HUMAN 元宝消费 + 2000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 2000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay400.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得2000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay4000.txt
+#ACT
+GAMEGOLD + 20000000
+CALCVAR HUMAN 元宝消费 + 20000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 20000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay4000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得20000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay40000.txt
+#ACT
+GAMEGOLD + 200000000
+CALCVAR HUMAN 元宝消费 + 200000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 200000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay40000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得200000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.5.txt
+#ACT
+GAMEGOLD + 2500
+CALCVAR HUMAN 元宝消费 + 2
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 2
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.5.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得2500元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay5.txt
+#ACT
+GAMEGOLD + 25000
+CALCVAR HUMAN 元宝消费 + 25
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 25
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay5.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得25000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay50.txt
+#ACT
+GAMEGOLD + 250000
+CALCVAR HUMAN 元宝消费 + 250
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 250
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay50.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得250000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay500.txt
+#ACT
+GAMEGOLD + 2500000
+CALCVAR HUMAN 元宝消费 + 2500
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 2500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay500.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得2500000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay5000.txt
+#ACT
+GAMEGOLD + 25000000
+CALCVAR HUMAN 元宝消费 + 25000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 25000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay5000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得25000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay50000.txt
+#ACT
+GAMEGOLD + 250000000
+CALCVAR HUMAN 元宝消费 + 250000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 250000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay50000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得250000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.6.txt
+#ACT
+GAMEGOLD + 3000
+CALCVAR HUMAN 元宝消费 + 3
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 3
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.6.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得3000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay6.txt
+#ACT
+GAMEGOLD + 30000
+CALCVAR HUMAN 元宝消费 + 30
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 30
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay6.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得30000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay60.txt
+#ACT
+GAMEGOLD + 300000
+CALCVAR HUMAN 元宝消费 + 300
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 300
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay60.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得300000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay600.txt
+#ACT
+GAMEGOLD + 3000000
+CALCVAR HUMAN 元宝消费 + 3000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 3000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay600.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得3000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay6000.txt
+#ACT
+GAMEGOLD + 30000000
+CALCVAR HUMAN 元宝消费 + 30000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 30000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay6000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得30000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay60000.txt
+#ACT
+GAMEGOLD + 300000000
+CALCVAR HUMAN 元宝消费 + 300000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 300000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay60000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得300000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.7.txt
+#ACT
+GAMEGOLD + 3499
+CALCVAR HUMAN 元宝消费 + 3
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 3
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.7.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得3499元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay7.txt
+#ACT
+GAMEGOLD + 35000
+CALCVAR HUMAN 元宝消费 + 35
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 35
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay7.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得35000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay70.txt
+#ACT
+GAMEGOLD + 350000
+CALCVAR HUMAN 元宝消费 + 350
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 350
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay70.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得350000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay700.txt
+#ACT
+GAMEGOLD + 3500000
+CALCVAR HUMAN 元宝消费 + 3500
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 3500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay700.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得3500000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay7000.txt
+#ACT
+GAMEGOLD + 35000000
+CALCVAR HUMAN 元宝消费 + 35000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 35000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay7000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得35000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay70000.txt
+#ACT
+GAMEGOLD + 350000000
+CALCVAR HUMAN 元宝消费 + 350000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 350000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay70000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得350000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.8.txt
+#ACT
+GAMEGOLD + 4000
+CALCVAR HUMAN 元宝消费 + 4
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 4
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.8.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得4000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay8.txt
+#ACT
+GAMEGOLD + 40000
+CALCVAR HUMAN 元宝消费 + 40
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 40
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay8.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得40000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay80.txt
+#ACT
+GAMEGOLD + 400000
+CALCVAR HUMAN 元宝消费 + 400
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 400
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay80.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得400000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay800.txt
+#ACT
+GAMEGOLD + 4000000
+CALCVAR HUMAN 元宝消费 + 4000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 4000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay800.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得4000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay8000.txt
+#ACT
+GAMEGOLD + 40000000
+CALCVAR HUMAN 元宝消费 + 40000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 40000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay8000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得40000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay80000.txt
+#ACT
+GAMEGOLD + 400000000
+CALCVAR HUMAN 元宝消费 + 400000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 400000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay80000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得400000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay0.9.txt
+#ACT
+GAMEGOLD + 4499
+CALCVAR HUMAN 元宝消费 + 4
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 4
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay0.9.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得4499元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay9.txt
+#ACT
+GAMEGOLD + 45000
+CALCVAR HUMAN 元宝消费 + 45
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 45
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay9.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得45000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay90.txt
+#ACT
+GAMEGOLD + 450000
+CALCVAR HUMAN 元宝消费 + 450
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 450
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay90.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得450000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay900.txt
+#ACT
+GAMEGOLD + 4500000
+CALCVAR HUMAN 元宝消费 + 4500
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 4500
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay900.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得4500000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay9000.txt
+#ACT
+GAMEGOLD + 45000000
+CALCVAR HUMAN 元宝消费 + 45000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 45000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay9000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得45000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#IF
+CheckAccountList ..\QuestDiary\冲值元宝\pay90000.txt
+#ACT
+GAMEGOLD + 450000000
+CALCVAR HUMAN 元宝消费 + 450000
+SAVEVAR HUMAN 元宝消费 ..\QuestDiary\充值积分\元宝消费Save.txt
+CALCVAR HUMAN 消费积分 + 450000
+SAVEVAR HUMAN 消费积分 ..\QuestDiary\充值积分\消费积分Save.txt
+DelAccountList ..\QuestDiary\冲值元宝\pay90000.txt
+sendmsg 7 领取成功.您当前为:<$GAMEGOLD>元宝
+SENDMSG 1 ★:玩家<$USERNAME>使用我服推出的在线充值购买功能，获得450000000元宝,如果您也需要充值,请赶紧找元宝充值使者，充值获取吧！！
+goto @领取元宝
+#ELSESAY
+请查看自己的元宝数量!\
+没有充值请按提示进行充值!\
+注意：请确认手机发送的代码和您的游戏帐号是否正确!\
+<返回/@main>
+}

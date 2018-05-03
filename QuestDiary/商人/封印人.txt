@@ -1,0 +1,99 @@
+[@封印人]
+{
+#IF
+equal s90 2
+#SAY
+你正在接受考验！\
+#ACT
+break
+
+#IF
+equal s90 1
+#SAY
+你是来接受考验的吧，那好，现在就开始吧！\
+一共有3批地蛙，每批限时2分钟，一共只有6分钟时间，\
+在限定时间内消灭完全部3批地蛙，考验就过关了。\
+我就可以送您去盟重封印人那解封你的封印头盔了！\
+<开始考验/@任务1>\
+<我在考虑一下/@exit>\
+#ACT
+break
+
+#ELSEACT
+MAPMOVE 3 333 333
+break
+
+[@任务1]
+#IF
+CHECKMAPNAME Self  <$MAP>
+#ACT
+CLEARMAPMON <$MAP>
+Param1 <$MAP>
+Param2 25
+Param3 25
+MonGen 地蛙99 20 50
+SENDMSG 6 第一批地蛙出现，请赶快消灭它们！
+MOV S90 2
+Delaygoto 120000 @任务2
+break
+#ELSEACT
+break
+
+[@任务2]
+#IF
+CHECKMAPNAME Self  <$MAP>
+#ACT
+#ELSEACT
+break
+
+#IF
+CheckRangeMonCount <$MAP> 25 25 100 < 1
+#ACT
+Param1 <$MAP>
+Param2 25
+Param3 25
+MonGen 地蛙99 20 50
+SENDMSG 6 第二批地蛙出现，请赶快消灭它们！
+MOV S90 2
+Delaygoto 120000 @任务3
+break
+#ELSEACT
+SENDMSG 6 任务失败！
+MAPMOVE 3 333 333
+
+[@任务3]
+#IF
+CHECKMAPNAME Self  <$MAP>
+#ACT
+#ELSEACT
+break
+
+#IF
+CheckRangeMonCount <$MAP> 25 25 100 < 1
+#ACT
+Param1 <$MAP>
+Param2 25
+Param3 25
+MonGen 地蛙99 20 50
+SENDMSG 6 第三批地蛙出现，请赶快消灭它们！
+MOV S90 2
+Delaygoto 120000 @任务4
+break
+#ELSEACT
+SENDMSG 6 任务失败！
+MAPMOVE 3 333 333
+
+[@任务4]
+#IF
+CHECKMAPNAME Self  <$MAP>
+#ACT
+#ELSEACT
+break
+
+#IF
+CheckRangeMonCount <$MAP> 25 25 100 < 1
+#ACT
+MOV S90 3
+SENDMSG 6 解封任务成功，快去找封印人解封头盔吧！
+MAPMOVE 3 333 333
+}

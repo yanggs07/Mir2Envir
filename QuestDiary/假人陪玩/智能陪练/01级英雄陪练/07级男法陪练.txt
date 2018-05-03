@@ -1,0 +1,52 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 5
+Gender = 0
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=5
+NG=0
+NGLevel=7
+UseSkill = 
+;包裹物品
+InitItems = 
+;等级
+Level = 7
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 = 布衣(男)
+;武器
+UseItems1 = 乌木剑
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 金项链
+;头盔
+UseItems4 = 
+;左手镯
+UseItems5 = 铁手镯
+;右手镯
+UseItems6 = 铁手镯
+;左戒指
+UseItems7 = 玻璃戒指
+;右戒指
+UseItems8 = 玻璃戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 = 魔血石(大) 
+
+
+
+
+
+
+

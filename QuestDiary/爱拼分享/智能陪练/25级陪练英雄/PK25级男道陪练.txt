@@ -1,0 +1,42 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+Job = 2
+Gender = 0
+Hair = 2
+UseSkill = 白日门治愈术,白日门剑术,白日门战法,白日门施毒术,白日门火符,白日门幽灵盾,白日门隐身,白日门气功波,白日门骷髅术
+INITITEMS=超级灰色药粉,超级黄色药粉,火龙之心,火龙之心,火龙之心,火龙之心,火龙之心,护身符,护身符,护身符,护身符,护身符
+Level = 25
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NoDropItemRate = 15
+NG=1
+NGLevel=25
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 = 灵魂战衣(男)
+;武器
+UseItems1 = 降魔
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 凤凰明珠
+;头盔
+UseItems4 = 道士头盔
+;左手镯
+UseItems5 = 道士手镯
+;右手镯
+UseItems6 = 道士手镯
+;左戒指
+UseItems7 = 道德戒指
+;右戒指
+UseItems8 = 降妖除魔戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 

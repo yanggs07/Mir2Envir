@@ -1,0 +1,59 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 2
+Gender = 0
+Hair = 2
+UseSkill =
+INITITEMS=超级灰色药粉,超级黄色药粉,护身符,护身符,护身符,护身符,护身符,
+Level = 15
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NoDropItemRate = 10
+NG=1
+NGLevel=15
+ProtectStatus=1
+[MonSay]
+0=爱拼传奇单机qq是多少怎么吗？答：782864782
+1=我可是爱拼的粉丝哦！
+2=打你又怎样？告我撒！
+3=哎！一不小心就想K你下
+4=人生了！总是寂寞如水
+5=风雨飘摇中我不小心把你干掉了
+6=抢劫！把身上值钱的东西都叫出来！
+7=呦呵！还敢还手！看本大爷不揍扁你
+8=一刀见红！真是不好意思
+9=不要崇拜哥！哥身上的装备很垃圾
+
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 =银蛇
+;武器
+UseItems1 = 半月
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 凤凰明珠
+;头盔
+UseItems4 = 青铜头盔
+;左手镯
+UseItems5 = 魔法手镯
+;右手镯
+UseItems6 = 坚固手套
+;左戒指
+UseItems7 = 蓝色水晶戒指
+;右戒指
+UseItems8 = 道德戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 = 魔血石(大) 
+
+
+

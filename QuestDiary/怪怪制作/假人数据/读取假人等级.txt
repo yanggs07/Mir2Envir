@@ -1,0 +1,9 @@
+[@读取等级]
+{
+#IF
+ISAI
+#ACT
+LOADVAR HUMAN JRDJ ..\QUESTDIARY\怪怪脚本\假人数据\假人等级.txt
+MOV D9 HUMAN JRDJ
+CHANGELEVEL = D9
+}

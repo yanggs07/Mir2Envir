@@ -1,0 +1,62 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 35
+Gender = 0
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=472
+UseSkill = 末日审判,白日门四级盾,白日门圣言术,白日门冰咆哮,白日门灭天火,分身术,白日门火墙,白日门护体,白日门血魄(法),白日门寒冰掌,白日门四级火雨,白日门火雨,白日门四级雷电术,冰霜群雨
+;包裹物品
+InitItems = 
+;等级
+Level =100
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=热血神甲
+;武器
+UseItems1=热血神剑
+;照明物
+UseItems2=主宰勋章
+;项链
+UseItems3=主宰项链
+;头盔
+UseItems4=主宰之冠
+;左手镯
+UseItems5=主宰护腕
+;右手镯
+UseItems6=神龙神镯
+;左戒指
+UseItems7=主宰之戒
+;右戒指
+UseItems8=神龙神戒
+;物品
+UseItems9=火龙之心
+;腰带
+UseItems10=主宰腰带
+;鞋子
+UseItems11=主宰之靴
+;宝石
+UseItems12=魔血石(大)
+;斗笠
+UseItems13=必杀斗笠(法)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+[@main]
+#IF
+CHECKVAR HUMAN 边境内容 = 2
+CHECKVAR HUMAN 边境驯兽师 < 10
+#ACT
+CALCVAR HUMAN 边境驯兽师 + 1
+savevar human 边境驯兽师 ..\QuestDiary\雪花制作\边境驯兽师.txt
+SENDMSG 7 你已经杀死了<$human(边境驯兽师)>/10个边境驯兽师！
+
+#IF
+CHECKVAR HUMAN 边境内容 = 2
+CHECKVAR HUMAN 边境驯兽师 = 10
+#act
+SENDMSG 7 你已经杀死了<$human(边境驯兽师)>/10个边境驯兽师,赶紧去领取奖励吧！
+
+#if
+#act
+CALCVAR HUMAN 边境声望 + 2
+savevar human 边境声望 ..\QuestDiary\雪花制作\边境声望.txt
+SENDMSG 7 恭喜你获得2点边境声望，你目前的边境声望是<$human(边境声望)>点！

@@ -1,0 +1,64 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 10
+Gender = 1
+NoDropItem = 1
+Hair = 3
+DropUseItem=0
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill = 雷电术,冰咆哮,魔法盾,火龙焰,灭天火,抗拒火环,疾光电影
+ProtectStatus=1
+InitItems = 
+;等级
+Level = 586
+[MonSay]
+0=你想找死？
+1=打我哟！
+2=妈的，你不想活了？
+3=我在自言自语
+4=小子你真是不知天高地厚啊
+5=我玩这么久传奇了，还没有人敢来格我撒野呢
+6=呵呵
+7=晕，你小子能把我杀了？
+8=看看我带的什么装备
+9=皓月你知道吗？现在最牛的！！！想杀我？
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=热血装备神袍
+;武器
+UseItems1=热血装备魔杖
+;照明物
+UseItems2=热血装备勋章
+;项链
+UseItems3=热血装备项链
+;头盔
+UseItems4=热血装备头盔
+;左手镯
+UseItems5=热血装备护腕
+;右手镯
+UseItems6=热血装备护腕
+;左戒指
+UseItems7=终极复活戒指
+;右戒指
+UseItems8=精品护身戒指
+;物品
+UseItems9=超级护身符
+;腰带
+UseItems10=
+;鞋子
+UseItems11=
+;宝石
+UseItems12=
+;斗笠
+UseItems13=
+
+
+
+
+
+
+

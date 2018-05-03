@@ -1,0 +1,3476 @@
+[@淬体1]
+{
+#if
+#act
+OPENMERCHANTDLG 52|1280|1|142|474|0|0|0|1|380|25
+#SAY
+玛法大陆，风云再起。蛮族士兵肆意入侵神龙帝国，民不聊生。三龙 \
+卫为了抵御蛮族的进攻，历经各种修行，终于掌握了一种全心的神秘 \
+力量：淬体。在我这里无论主号还是英雄均可以习得淬体神技，并借 \
+助淬体结晶升技能等级上限。技能总共85级，最高可以获得100000神 \
+圣防御。淬体结晶只能通过击杀野外怪物以及<淬体试练/@进入淬体>中才能得到。 \ \
+<查看淬体神技属性/@查看淬体属性>　　　<查看淬体结晶掉落范围/@查看范围> \
+<学习淬体神技/@学习技能>　　　　　<进入淬体试练/@进入淬体> \
+<兑换淬体结晶/@兑换结晶>　　　　　<使用淬体结晶升级淬体神技/@升级技能> \
+ 
+[@进入淬体]
+#act
+#say
+你的心法已经满级啦，请自行前往各大地图！！！！！！\ \
+<返回/@淬体1>
+
+[@升级技能]
+<升级主号淬体神技/@主>\ \
+<升级英雄淬体神技/@宝>\ \
+<返回/@淬体1>
+
+[@兑换结晶]
+在这里可以使用淬体碎片和淬体精髓兑换成淬体结晶(绑定)\
+<使用3个淬体碎片兑换1个淬体结晶(绑定)/@3碎片>\
+<使用30个淬体碎片兑换10个淬体结晶(绑定)/@30碎片>\
+<使用300个淬体碎片兑换100个淬体结晶(绑定)/@300碎片>\
+<使用1个淬体精髓兑换100个淬体结晶(绑定)/@1精髓>\
+<使用10个淬体精髓兑换1000个淬体结晶(绑定)/@10精髓>\ \ \
+<返回/@淬体1>
+
+[@10精髓]
+#if
+CHECKKIMNEEDLE 淬体精髓 10
+#act
+TAKEKIMNEEDLE 淬体精髓 10
+GIVESTATEITEM 淬体结晶 1 1 0 1 1 0 1000|
+#ELSEACT
+MESSAGEBOX 数量不足！！！
+BREAK
+[@1精髓]
+#if
+CHECKKIMNEEDLE 淬体精髓 1
+#act
+TAKEKIMNEEDLE 淬体精髓 1
+GIVESTATEITEM 淬体结晶 1 1 0 1 1 0 100|
+#ELSEACT
+MESSAGEBOX 数量不足！！！
+BREAK
+[@300碎片]
+#if
+CHECKKIMNEEDLE 淬体碎片 300
+#act
+TAKEKIMNEEDLE 淬体碎片 300
+GIVESTATEITEM 淬体结晶 1 1 0 1 1 0 100|
+#ELSEACT
+MESSAGEBOX 数量不足！！！
+BREAK
+[@30碎片]
+#if
+CHECKKIMNEEDLE 淬体碎片 30
+#act
+TAKEKIMNEEDLE 淬体碎片 30
+GIVESTATEITEM 淬体结晶 1 1 0 1 1 0 10|
+#ELSEACT
+MESSAGEBOX 数量不足！！！
+BREAK
+[@3碎片]
+#if
+CHECKKIMNEEDLE 淬体碎片 3
+#act
+TAKEKIMNEEDLE 淬体碎片 3
+GIVESTATEITEM 淬体结晶 1 1 0 1 1 0 1|
+#ELSEACT
+MESSAGEBOX 数量不足！！！
+BREAK
+
+[@查看范围]
+越强力的怪物身上所凝结的淬体结晶越多，勇士可去<邪恶魔穴、夺命/FCOLOR=249>\
+<深渊、修罗禁地、迷之祭坛、幽冥领地、冰封龙宫、死亡海域/FCOLOR=249>这些地方击\
+杀怪物获得淬体结晶，而强力的BOSS级怪物更会凋落大量淬体精髓，\
+例如<深渊教主、修罗教主、迷之统领、卧龙火龙神、冰封神魔、海域/FCOLOR=249>\
+<BOSS、类逍遥BOSS类、玛法BOSS类、逍遥BOSS类、部落BOSS类、龙神/FCOLOR=249>\
+<类以及本服所有BOSS和活动类都能爆出/FCOLOR=249>\每个淬体精髓可兑换100淬体结晶！\
+<返回/@淬体1>
+
+
+
+
+[@学习技能]
+心法大于1级(包含1级)的勇士或英雄可以在我这里习得淬体神技 \ \
+<学习主号淬体神技/@主学> \
+<学习英雄淬体神技/@宝学> \ \ \ \ \ 
+<返回/@淬体1>
+
+
+[@主学]
+#IF 
+CHECKSKILL 淬体神技 ? 0
+#ACT
+BREAK
+#SAY
+您已经学习了淬体神技。\ \
+<返回/@学习技能> 
+
+#IF
+CHECKSKILL 龙卫心法 ? 0
+#ACT
+ADDSKILL 淬体神技 0 
+Sendmsg 0  恭喜　%S　学会了淬体神技，从此纵横玛法，傲视群雄！
+BREAK
+#ELSESAY
+心法大于1级(包含1级)的勇士或英雄可以在我这里习得淬体神技 \ \ \  
+<返回/@学习技能> 
+
+[@宝学]
+#IF
+CHECKHEROONLINE
+#ELSEACT
+BREAK
+#ELSESAY
+请先召唤出英雄。\ \
+<返回/@学习技能> 
+
+#IF
+HEROCHECKSKILL 淬体神技 ? 0
+#ACT
+BREAK
+#say
+你的英雄已经学会淬体神技。\ \
+<返回/@学习技能> 
+
+#IF
+HEROCHECKSKILL 龙卫心法 ？ 0
+#ACT
+ADDSKILL 淬体神技 0 hero
+Sendmsg 0  恭喜　%S的英雄学会了淬体神技，从此纵横玛法，傲视群雄！
+break
+#elsesay
+心法大于1级(包含1级)的勇士或英雄可以在我这里习得淬体神技 \ \ \ 
+<返回/@学习技能> 
+
+[@查看淬体属性]
+10级淬体神技总共增加1000神圣防御 \
+20级淬体神技总共增加3000神圣防御 \
+30级淬体神技总共增加6000神圣防御 \
+40级淬体神技总共增加10000神圣防御 \
+50级淬体神技总共增加15000神圣防御 \
+60级淬体神技总共增加25000神圣防御 \
+70级淬体神技总共增加45000神圣防御 \
+80级淬体神技总共增加75000神圣防御 \
+85级淬体神技总共增加100000神圣防御 　　　　<返回/@淬体1>\
+
+[@主]
+#IF
+CHECKSKILL 淬体神技 ? 0
+#elseact
+break
+#elsesay
+请先去学习淬体神技。
+#if
+CHECKSKILL 淬体神技 = 86
+#act
+break
+#say
+你的主号淬体神技已经满级。
+#if
+CHECKSKILL 淬体神技 = 0
+#act
+break
+#say
+\ 您当前的淬体神技等级为<0/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 1
+#act
+break
+#say
+\ 您当前的淬体神技等级为<1/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 2
+#act
+break
+#say
+\ 您当前的淬体神技等级为<2/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 3
+#act
+break
+#say
+\ 您当前的淬体神技等级为<3/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 4
+#act
+break
+#say
+\ 您当前的淬体神技等级为<4/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 5
+#act
+break
+#say
+\ 您当前的淬体神技等级为<5/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 6
+#act
+break
+#say
+\ 您当前的淬体神技等级为<6/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 7
+#act
+break
+#say
+\ 您当前的淬体神技等级为<7/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 8
+#act
+break
+#say
+\ 您当前的淬体神技等级为<8/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 9
+#act
+break
+#say
+\ 您当前的淬体神技等级为<9/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 10
+#act
+break
+#say
+\ 您当前的淬体神技等级为<10/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 11
+#act
+break
+#say
+\ 您当前的淬体神技等级为<11/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 12
+#act
+break
+#say
+\ 您当前的淬体神技等级为<12/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 13
+#act
+break
+#say
+\ 您当前的淬体神技等级为<13/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 14
+#act
+break
+#say
+\ 您当前的淬体神技等级为<14/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 15
+#act
+break
+#say
+\ 您当前的淬体神技等级为<15/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 16
+#act
+break
+#say
+\ 您当前的淬体神技等级为<16/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 17
+#act
+break
+#say
+\ 您当前的淬体神技等级为<17/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 18
+#act
+break
+#say
+\ 您当前的淬体神技等级为<18/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 19
+#act
+break
+#say
+\ 您当前的淬体神技等级为<19/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 20
+#act
+break
+#say
+\ 您当前的淬体神技等级为<21/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 21
+#act
+break
+#say
+\ 您当前的淬体神技等级为<21/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 22
+#act
+break
+#say
+\ 您当前的淬体神技等级为<22/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 23
+#act
+break
+#say
+\ 您当前的淬体神技等级为<23/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 24
+#act
+break
+#say
+\ 您当前的淬体神技等级为<24/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 25
+#act
+break
+#say
+\ 您当前的淬体神技等级为<25/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 26
+#act
+break
+#say
+\ 您当前的淬体神技等级为<26/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 27
+#act
+break
+#say
+\ 您当前的淬体神技等级为<27/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 28
+#act
+break
+#say
+\ 您当前的淬体神技等级为<28/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 29
+#act
+break
+#say
+\ 您当前的淬体神技等级为<29/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 30
+#act
+break
+#say
+\ 您当前的淬体神技等级为<30/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 31
+#act
+break
+#say
+\ 您当前的淬体神技等级为<31/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 32
+#act
+break
+#say
+\ 您当前的淬体神技等级为<32/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 33
+#act
+break
+#say
+\ 您当前的淬体神技等级为<33/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 34
+#act
+break
+#say
+\ 您当前的淬体神技等级为<34/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 35
+#act
+break
+#say
+\ 您当前的淬体神技等级为<35/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 36
+#act
+break
+#say
+\ 您当前的淬体神技等级为<36/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 37
+#act
+break
+#say
+\ 您当前的淬体神技等级为<37/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 38
+#act
+break
+#say
+\ 您当前的淬体神技等级为<38/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 39
+#act
+break
+#say
+\ 您当前的淬体神技等级为<39/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 40
+#act
+break
+#say
+\ 您当前的淬体神技等级为<40/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 41
+#act
+break
+#say
+\ 您当前的淬体神技等级为<41/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 42
+#act
+break
+#say
+\ 您当前的淬体神技等级为<42/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 43
+#act
+break
+#say
+\ 您当前的淬体神技等级为<43/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 44
+#act
+break
+#say
+\ 您当前的淬体神技等级为<44/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 45
+#act
+break
+#say
+\ 您当前的淬体神技等级为<45/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 46
+#act
+break
+#say
+\ 您当前的淬体神技等级为<46/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 47
+#act
+break
+#say
+\ 您当前的淬体神技等级为<47/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 48
+#act
+break
+#say
+\ 您当前的淬体神技等级为<48/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 49
+#act
+break
+#say
+\ 您当前的淬体神技等级为<49/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 50
+#act
+break
+#say
+\ 您当前的淬体神技等级为<50/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 51
+#act
+break
+#say
+\ 您当前的淬体神技等级为<51/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 52
+#act
+break
+#say
+\ 您当前的淬体神技等级为<52/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 53
+#act
+break
+#say
+\ 您当前的淬体神技等级为<53/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+<{li=59;i=3;id=5;x=390;y=15}/@EXIT>
+#if
+CHECKSKILL 淬体神技 = 54
+#act
+break
+#say
+\ 您当前的淬体神技等级为<54/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 55
+#act
+break
+#say
+\ 您当前的淬体神技等级为<55/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 56
+#act
+break
+#say
+\ 您当前的淬体神技等级为<56/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 57
+#act
+break
+#say
+\ 您当前的淬体神技等级为<57/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 58
+#act
+break
+#say
+\ 您当前的淬体神技等级为<58/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 59
+#act
+break
+#say
+\ 您当前的淬体神技等级为<59/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 60
+#act
+break
+#say
+\ 您当前的淬体神技等级为<60/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 61
+#act
+break
+#say
+\ 您当前的淬体神技等级为<61/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 62
+#act
+break
+#say
+\ 您当前的淬体神技等级为<62/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 63
+#act
+break
+#say
+\ 您当前的淬体神技等级为<63/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 64
+#act
+break
+#say
+\ 您当前的淬体神技等级为<64/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 65
+#act
+break
+#say
+\ 您当前的淬体神技等级为<65/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 66
+#act
+break
+#say
+\ 您当前的淬体神技等级为<66/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+<{li=59;i=3;id=5;x=390;y=15}/@EXIT>
+#if
+CHECKSKILL 淬体神技 = 67
+#act
+break
+#say
+\ 您当前的淬体神技等级为<67/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 68
+#act
+break
+#say
+\ 您当前的淬体神技等级为<68/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 69
+#act
+break
+#say
+\ 您当前的淬体神技等级为<69/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 70
+#act
+break
+#say
+\ 您当前的淬体神技等级为<70/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 71
+#act
+break
+#say
+\ 您当前的淬体神技等级为<71/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 72
+#act
+break
+#say
+\ 您当前的淬体神技等级为<72/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 73
+#act
+break
+#say
+\ 您当前的淬体神技等级为<73/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 74
+#act
+break
+#say
+\ 您当前的淬体神技等级为<74/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 75
+#act
+break
+#say
+\ 您当前的淬体神技等级为<75/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 76
+#act
+break
+#say
+\ 您当前的淬体神技等级为<76/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 77
+#act
+break
+#say
+\ 您当前的淬体神技等级为<77/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 78
+#act
+break
+#say
+\ 您当前的淬体神技等级为<78/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 79
+#act
+break
+#say
+\ 您当前的淬体神技等级为<79/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 80
+#act
+break
+#say
+\ 您当前的淬体神技等级为<80/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 81
+#act
+break
+#say
+\ 您当前的淬体神技等级为<81/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 82
+#act
+break
+#say
+\ 您当前的淬体神技等级为<82/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 83
+#act
+break
+#say
+\ 您当前的淬体神技等级为<83/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 84
+#act
+break
+#say
+\ 您当前的淬体神技等级为<84/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级主号淬体神技>\ \
+\ <返回/@学习技能>
+#if
+CHECKSKILL 淬体神技 = 85
+#act
+break
+#say
+\ 您当前的淬体神技等级为<85/fcolor=58>级，已经功德圆满。\ \ \
+\ <离开/@EXIT>
+
+
+[@升级主号淬体神技]
+#if
+CHECKSKILL 淬体神技 = 0
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 1 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至1级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 1
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 2
+Sendmsg 0  恭喜　%S　将淬体神技修炼至2级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 2
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 3 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至3级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 3
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 4 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至4级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 4
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 5 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至5级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 5
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 6 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至6级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 6
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 7 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至7级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 7
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 8 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至8级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 8
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 9 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至9级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 9
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+SKILLLEVEL 淬体神技 = 10
+Sendmsg 0  恭喜　%S　将淬体神技修炼至10级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 10
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 11 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至11级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 11
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 12 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至12级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 12
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 13 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至13级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 13
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 14 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至14级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 14
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 15 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至15级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 15
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 16 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至16级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 16
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 17 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至17级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 17
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 18 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至18级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 18
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 19 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至19级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 19
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+SKILLLEVEL 淬体神技 = 20 
+Sendmsg 0  恭喜　%S　将淬体神技修炼至20级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 20
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 21
+Sendmsg 0  恭喜　%S　将淬体神技修炼至21级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 21
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 22
+Sendmsg 0  恭喜　%S　将淬体神技修炼至22级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 22
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 23
+Sendmsg 0  恭喜　%S　将淬体神技修炼至23级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 23
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 24
+Sendmsg 0  恭喜　%S　将淬体神技修炼至24级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 24
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 25
+Sendmsg 0  恭喜　%S　将淬体神技修炼至25级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 25
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 26
+Sendmsg 0  恭喜　%S　将淬体神技修炼至26级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 26
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 27
+Sendmsg 0  恭喜　%S　将淬体神技修炼至27级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 27
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 28
+Sendmsg 0  恭喜　%S　将淬体神技修炼至28级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 28
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 29
+Sendmsg 0  恭喜　%S　将淬体神技修炼至29级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 29
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+SKILLLEVEL 淬体神技 = 30
+Sendmsg 0  恭喜　%S　将淬体神技修炼至30级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 30
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 31
+Sendmsg 0  恭喜　%S　将淬体神技修炼至31级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 31
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 32
+Sendmsg 0  恭喜　%S　将淬体神技修炼至32级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 32
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 33
+Sendmsg 0  恭喜　%S　将淬体神技修炼至33级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 33
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 34
+Sendmsg 0  恭喜　%S　将淬体神技修炼至34级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 34
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 35
+Sendmsg 0  恭喜　%S　将淬体神技修炼至35级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 35
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 36
+Sendmsg 0  恭喜　%S　将淬体神技修炼至36级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 36
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 37
+Sendmsg 0  恭喜　%S　将淬体神技修炼至37级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 37
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 38
+Sendmsg 0  恭喜　%S　将淬体神技修炼至38级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 38
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 39
+Sendmsg 0  恭喜　%S　将淬体神技修炼至39级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 39
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+SKILLLEVEL 淬体神技 = 40
+Sendmsg 0  恭喜　%S　将淬体神技修炼至40级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 40
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 41
+Sendmsg 0  恭喜　%S　将淬体神技修炼至41级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 41
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 42
+Sendmsg 0  恭喜　%S　将淬体神技修炼至42级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 42
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 43
+Sendmsg 0  恭喜　%S　将淬体神技修炼至43级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 43
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 44
+Sendmsg 0  恭喜　%S　将淬体神技修炼至44级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 44
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 45
+Sendmsg 0  恭喜　%S　将淬体神技修炼至45级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 45
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 46
+Sendmsg 0  恭喜　%S　将淬体神技修炼至46级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 46
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 47
+Sendmsg 0  恭喜　%S　将淬体神技修炼至47级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 47
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 48
+Sendmsg 0  恭喜　%S　将淬体神技修炼至48级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 48
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 49
+Sendmsg 0  恭喜　%S　将淬体神技修炼至49级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 49
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+SKILLLEVEL 淬体神技 = 50
+Sendmsg 0  恭喜　%S　将淬体神技修炼至50级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 50
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 51
+Sendmsg 0  恭喜　%S　将淬体神技修炼至51级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 51
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 52
+Sendmsg 0  恭喜　%S　将淬体神技修炼至52级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 52
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 53
+Sendmsg 0  恭喜　%S　将淬体神技修炼至53级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+
+#if
+CHECKSKILL 淬体神技 = 53
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 54
+Sendmsg 0  恭喜　%S　将淬体神技修炼至54级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+
+break
+#if
+CHECKSKILL 淬体神技 = 54
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 55
+Sendmsg 0  恭喜　%S　将淬体神技修炼至55级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 55
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 56
+Sendmsg 0  恭喜　%S　将淬体神技修炼至56级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 56
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 57
+Sendmsg 0  恭喜　%S　将淬体神技修炼至57级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 57
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 58
+Sendmsg 0  恭喜　%S　将淬体神技修炼至58级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 58
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 59
+Sendmsg 0  恭喜　%S　将淬体神技修炼至59级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 59
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+SKILLLEVEL 淬体神技 = 60
+Sendmsg 0  恭喜　%S　将淬体神技修炼至60级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 60
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 61
+Sendmsg 0  恭喜　%S　将淬体神技修炼至61级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 61
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 62
+Sendmsg 0  恭喜　%S　将淬体神技修炼至62级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 62
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 63
+Sendmsg 0  恭喜　%S　将淬体神技修炼至63级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 63
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 64
+Sendmsg 0  恭喜　%S　将淬体神技修炼至64级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 64
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 65
+Sendmsg 0  恭喜　%S　将淬体神技修炼至65级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 65
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 66
+Sendmsg 0  恭喜　%S　将淬体神技修炼至66级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 66
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 67
+Sendmsg 0  恭喜　%S　将淬体神技修炼至67级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 67
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 68
+Sendmsg 0  恭喜　%S　将淬体神技修炼至68级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 68
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 69
+Sendmsg 0  恭喜　%S　将淬体神技修炼至69级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 69
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+SKILLLEVEL 淬体神技 = 70
+Sendmsg 0  恭喜　%S　将淬体神技修炼至70级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 70
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 71
+Sendmsg 0  恭喜　%S　将淬体神技修炼至71级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 71
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 72
+Sendmsg 0  恭喜　%S　将淬体神技修炼至72级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 72
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 73
+Sendmsg 0  恭喜　%S　将淬体神技修炼至73级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 73
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 74
+Sendmsg 0  恭喜　%S　将淬体神技修炼至74级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 74
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 75
+Sendmsg 0  恭喜　%S　将淬体神技修炼至75级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 75
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 76
+Sendmsg 0  恭喜　%S　将淬体神技修炼至76级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 76
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 77
+Sendmsg 0  恭喜　%S　将淬体神技修炼至77级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 77
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 78
+Sendmsg 0  恭喜　%S　将淬体神技修炼至78级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 78
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 79
+Sendmsg 0  恭喜　%S　将淬体神技修炼至79级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 79
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+SKILLLEVEL 淬体神技 = 80
+Sendmsg 0  恭喜　%S　将淬体神技修炼至80级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 80
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+SKILLLEVEL 淬体神技 = 81
+Sendmsg 0  恭喜　%S　将淬体神技修炼至81级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 81
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+SKILLLEVEL 淬体神技 = 82
+Sendmsg 0  恭喜　%S　将淬体神技修炼至82级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 82
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+SKILLLEVEL 淬体神技 = 83
+Sendmsg 0  恭喜　%S　将淬体神技修炼至83级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 83
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+SKILLLEVEL 淬体神技 = 84
+Sendmsg 0  恭喜　%S　将淬体神技修炼至84级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 84
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+SKILLLEVEL 淬体神技 = 85
+Sendmsg 0  恭喜　%S　将淬体神技修炼至85级！
+Sendmsg 6 您的技能"淬体神技"提升到<$SKILLLEVEL(155)>级，威力大幅提升
+GOTO  @主
+break
+#if
+CHECKSKILL 淬体神技 = 85
+#ACT
+Sendmsg 6 您的技能"淬体神技"已经升为满级。
+GOTO  @主
+break
+
+#elsesay
+你包裹内没有足够的淬体结晶！\ \
+<返回/@主>
+
+
+[@宝]
+#IF
+HEROCHECKSKILL 淬体神技 ? 0
+#elseact
+BREAK
+#elsesay
+\ 请英雄先学习淬体神技再进行升级\ \
+
+#if
+HEROCHECKSKILL 淬体神技 = 0
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<0/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 1
+#act
+break
+#say
+\ 您当前的淬体神技等级为<1/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 2
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<2/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 3
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<3/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 4
+#act
+break
+#say
+
+\ 您当前的英雄淬体神技等级为<4/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 5
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<5/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 6
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<6/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 7
+#act
+break
+#say
+
+\ 您当前的英雄淬体神技等级为<7/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 8
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<8/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 9
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<9/fcolor=58>级\
+\ 升级至下一级需要消耗<100/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 10
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<10/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 11
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<11/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 12
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<12/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 13
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<13/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 14
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<14/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 15
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<15/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 16
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<16/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 17
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<17/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 18
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<18/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 19
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<19/fcolor=58>级\
+\ 升级至下一级需要消耗<200/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 20
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<21/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 21
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<21/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 22
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<22/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 23
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<23/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 24
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<24/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 25
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<25/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 26
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<26/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 27
+#act
+break
+#say
+\ 您当前的淬体神技等级为<27/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 28
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<28/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 29
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<29/fcolor=58>级\
+\ 升级至下一级需要消耗<300/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 30
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<30/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 31
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<31/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 32
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<32/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 33
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<33/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 34
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<34/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 35
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<35/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 36
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<36/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 37
+#act
+break
+#say
+
+\ 您当前的英雄淬体神技等级为<37/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 38
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<38/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 39
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<39/fcolor=58>级\
+\ 升级至下一级需要消耗<400/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 40
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<40/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 41
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<41/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 42
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<42/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 43
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<43/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 44
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<44/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 45
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<45/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 46
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<46/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 47
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<47/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 48
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<48/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 49
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<49/fcolor=58>级\
+\ 升级至下一级需要消耗<500/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 50
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<50/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 51
+#act
+break
+#say
+\ 您当前的英雄体神技等级为<51/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 52
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<52/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 53
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<53/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 54
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<54/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 55
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<55/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 56
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<56/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 57
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<57/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 58
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<58/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 59
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<59/fcolor=58>级\
+\ 升级至下一级需要消耗<1000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 60
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<60/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 61
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<61/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 62
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<62/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 63
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<63/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 64
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<64/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 65
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<65/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 66
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<66/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 67
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<67/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 68
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<68/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 69
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<69/fcolor=58>级\
+\ 升级至下一级需要消耗<2000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 70
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<70/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 71
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<71/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 72
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<72/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 73
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<73/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 74
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<74/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 75
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<75/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 76
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<76/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 77
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<77/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 78
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<78/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 79
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<79/fcolor=58>级\
+\ 升级至下一级需要消耗<3000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 80
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<80/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 81
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<81/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 82
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<82/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 83
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<83/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+#if
+HEROCHECKSKILL 淬体神技 = 84
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<84/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/@升级英雄淬体神技>\ \
+\ <返回/@学习技能>
+
+#if
+HEROCHECKSKILL 淬体神技 = 85
+#act
+break
+#say
+\ 您当前的英雄淬体神技等级为<85/fcolor=58>级，已功能圆满。\ \ \
+\ <离开/@EXIT>
+
+
+
+
+[@升级英雄淬体神技]
+#IF
+CHECKHEROONLINE
+#act
+#ELSEACT
+BREAK
+#elsesay
+\ 请英雄先学习淬体神技再进行升级
+<返回/@学习技能> 
+#if
+HEROCHECKSKILL 淬体神技 = 85
+#act
+break
+#say
+\ 您当前的淬体神技等级为<85/fcolor=58>级\
+\ 升级至下一级需要消耗<5000/fcolor=58>个淬体结晶，你确定要升级吗\ \
+\ <升级/fcolor=249>\ \
+\ <返回/@学习技能>
+
+
+#if
+HEROCHECKSKILL 淬体神技 = 0
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 1 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至1级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 1
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 2
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至2级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 2
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 3 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至3级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 3
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 4 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至4级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 4
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 5 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至5级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 5
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 6 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至6级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 6
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 7 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至7级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 7
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 8 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至8级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 8
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 9 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至9级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 9
+CHECKKIMNEEDLE 淬体结晶 100
+#ACT
+TAKEKIMNEEDLE 淬体结晶 100
+HEROSKILLLEVEL 淬体神技 = 10
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至10级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 10
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 11 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至11级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 11
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 12 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至12级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 12
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 13 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至13级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 13
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 14 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至14级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 14
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 15 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至15级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 15
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 16 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至16级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 16
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 17 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至17级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 17
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 18 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至18级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 18
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 19 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至19级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 19
+CHECKKIMNEEDLE 淬体结晶 200
+#ACT
+TAKEKIMNEEDLE 淬体结晶 200
+HEROSKILLLEVEL 淬体神技 = 20 
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至20级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 20
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 21
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至21级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 21
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 22
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至22级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 22
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 23
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至23级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 23
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 24
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至24级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 24
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 25
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至25级！
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 25
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 26
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至26级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 26
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 27
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至27级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 27
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 28
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至28级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 28
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 29
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至29级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 29
+CHECKKIMNEEDLE 淬体结晶 300
+#ACT
+TAKEKIMNEEDLE 淬体结晶 300
+HEROSKILLLEVEL 淬体神技 = 30
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至30级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 30
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 31
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至31级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 31
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 32
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至32级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 32
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 33
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至33级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 33
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 34
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至34级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 34
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 35
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至35级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 35
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 36
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至36级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 36
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 37
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至37级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 37
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 38
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至38级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 38
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 39
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至39级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 39
+CHECKKIMNEEDLE 淬体结晶 400
+#ACT
+TAKEKIMNEEDLE 淬体结晶 400
+HEROSKILLLEVEL 淬体神技 = 40
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至40级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 40
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 41
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至41级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 41
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 42
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至42级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 42
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 43
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至43级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 43
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 44
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至44级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 44
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 45
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至45级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 45
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 46
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至46级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 46
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 47
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至47级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 47
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 48
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至48级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 48
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 49
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至49级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 49
+CHECKKIMNEEDLE 淬体结晶 500
+#ACT
+TAKEKIMNEEDLE 淬体结晶 500
+HEROSKILLLEVEL 淬体神技 = 50
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至50级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 50
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 51
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至51级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 51
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 52
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至52级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 52
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 53
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至53级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 53
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 54
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至54级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 54
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 55
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至55级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 55
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 56
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至56级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 56
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 57
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至57级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 57
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 58
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至58级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 58
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 59
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至59级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 59
+CHECKKIMNEEDLE 淬体结晶 1000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 1000
+HEROSKILLLEVEL 淬体神技 = 60
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至60级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 60
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 61
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至61级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 61
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 62
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至62级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 62
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 63
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至63级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 63
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 64
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至64级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 64
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 65
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至65级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 65
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 66
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至66级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 66
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 67
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至67级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 67
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 68
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至68级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 68
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 69
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至69级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 69
+CHECKKIMNEEDLE 淬体结晶 2000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 2000
+HEROSKILLLEVEL 淬体神技 = 70
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至70级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 70
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 71
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至71级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 71
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 72
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至72级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 72
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 73
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至73级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 73
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 74
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至74级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 74
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 75
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至75级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 75
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 76
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至76级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 76
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 77
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至77级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 77
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 78
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至78级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 78
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 79
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至79级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 79
+CHECKKIMNEEDLE 淬体结晶 3000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 3000
+HEROSKILLLEVEL 淬体神技 = 80
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至80级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 80
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+HEROSKILLLEVEL 淬体神技 = 81
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至81级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 81
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+HEROSKILLLEVEL 淬体神技 = 82
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至82级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 82
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+HEROSKILLLEVEL 淬体神技 = 83
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至83级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 83
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+HEROSKILLLEVEL 淬体神技 = 84
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至84级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#if
+HEROCHECKSKILL 淬体神技 = 84
+CHECKKIMNEEDLE 淬体结晶 5000
+#ACT
+TAKEKIMNEEDLE 淬体结晶 5000
+HEROSKILLLEVEL 淬体神技 = 85
+Sendmsg 0  恭喜　%S　将英雄淬体神技修炼至85级！
+Sendmsg 6 (英雄)您的技能"淬体神技"提升到<$HEROSKILLLEVEL(155)>级，威力大幅提升
+GOTO  @宝
+break
+#elsesay
+你包裹内没有足够的淬体结晶！\ \
+<返回/@宝>
+
+
+}
+

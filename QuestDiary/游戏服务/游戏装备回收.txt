@@ -1,0 +1,226 @@
+[@回收元宝]
+{
+#IF
+#ACT
+MOV S5 <
+MOV S6 /FCOLOR=250>
+MOV S7 <
+MOV S8 /FCOLOR=249>
+MOV N1 0
+MOV N2 0
+MOV N3 0
+MOV N4 0
+MOV N5 0
+MOV N6 0
+MOV N7 0
+MOV N8 0
+MOV N21 0
+MOV N22 0
+MOV N10 0
+MOV N11 0
+MOV N12 0
+MOV N13 0
+MOV N14 0
+MOV N15 0
+MOV N16 0
+MOV N17 0
+MOV N31 0
+MOV N32 0
+BREAK
+#SAY
+您好：<$str(S5)><$USERNAME><$str(S6)> 欢迎来到《<$str(S5)><$SERVERNAME><$str(S6)>》！\
+在此您可以将不需要的装备兑换成丰厚的元宝奖励！\
+<注：此处为一键回收所有可回收装备，不需回收的装备请将其放入英雄包裹。/FCOLOR=249>\
+请选择您所需要的服务：\ \
+
+<查看装备回收元宝比例/@查比例>          <回收包裹内所有装备/@传奇回收>\ \
+
+<离开/@EXIT>
+
+[@传奇回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 1000
+INC N21 1
+INC N21 1000
+INC N8 1000
+GOTO @传奇回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @皓尊回收
+BREAK
+
+[@皓尊回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 2000
+INC N22 1
+INC N32 12000
+INC N8 12000
+GOTO @皓尊回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @皓月回收
+BREAK
+
+[@皓月回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 2000
+INC N1 1
+INC N11 2000
+INC N8 2000
+GOTO @皓月回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @皓天回收
+BREAK
+
+[@皓天回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 4000
+INC N2 1
+INC N12 4000
+INC N8 4000
+GOTO @皓天回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @皓宇回收
+BREAK
+
+[@皓宇回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 8000
+INC N3 1
+INC N13 8000
+INC N8 8000
+GOTO @皓宇回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @神龙回收
+BREAK
+
+[@神龙回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 15000
+INC N4 1
+INC N14 15000
+INC N8 15000
+GOTO @神龙回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @热血回收
+BREAK
+
+[@热血回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 25000
+INC N5 1
+INC N15 25000
+INC N8 25000
+GOTO @热血回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @真龙回收
+BREAK
+
+[@真龙回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 50000
+INC N6 1
+INC N16 50000
+INC N8 50000
+GOTO @真龙回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @金蛇回收
+BREAK
+
+
+[@金蛇回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+GAMEGOLD + 100000
+INC N7 1
+INC N17 100000
+INC N8 100000
+GOTO @金蛇回收
+BREAK
+#ELSEACT
+MOV S1 
+GOTO @总结
+BREAK
+
+[@总结]
+#IF
+LARGE N8 0
+#SAY
+恭喜：包裹内所有装备回收完毕！您一共获得了<$STR(S5)><$STR(N8)><$STR(S6)>元宝，其中     <离开/@EXIT>\
+回收<传奇/FCOLOR=253>装备共<$STR(S7)><$STR(N21)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N31)><$STR(S8)>颗\
+回收<皓月/FCOLOR=253>装备共<$STR(S7)><$STR(N1)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N11)><$STR(S8)>颗\
+回收<皓天/FCOLOR=253>装备共<$STR(S7)><$STR(N2)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N12)><$STR(S8)>颗\
+回收<皓宇/FCOLOR=253>装备共<$STR(S7)><$STR(N3)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N13)><$STR(S8)>颗\
+回收<皓尊/FCOLOR=253>装备共<$STR(S7)><$STR(N22)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N32)><$STR(S8)>颗\
+回收<神龙/FCOLOR=253>装备共<$STR(S7)><$STR(N4)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N14)><$STR(S8)>颗\
+回收<热血/FCOLOR=253>装备共<$STR(S7)><$STR(N5)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N15)><$STR(S8)>颗\
+回收<真龙/FCOLOR=253>装备共<$STR(S7)><$STR(N6)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N16)><$STR(S8)>颗\
+回收<金蛇/FCOLOR=253>装备共<$STR(S7)><$STR(N7)><$STR(S8)>件，获得元宝：<$STR(S7)><$STR(N17)><$STR(S8)>颗\                
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+BREAK
+
+[@查比例]
+装备回收元宝比例如下：\
+<传奇装备/FCOLOR=249>每件装备可以兑换：<1000/FCOLOR=224> 元宝\
+<皓月装备/FCOLOR=249>每件装备可以兑换：<2000/FCOLOR=224> 元宝\
+<皓天装备/FCOLOR=249>每件装备可以兑换：<4000/FCOLOR=224> 元宝\
+<皓宇装备/FCOLOR=249>每件装备可以兑换：<8000/FCOLOR=224> 元宝\
+<皓尊装备/FCOLOR=249>每件装备可以兑换：<12000/FCOLOR=224> 元宝\
+<神龙装备/FCOLOR=249>每件装备可以兑换：<15000/FCOLOR=224> 元宝\
+<热血装备/FCOLOR=249>每件装备可以兑换：<25000/FCOLOR=224>元宝\
+<真龙装备/FCOLOR=249>每件装备可以兑换：<50000/FCOLOR=224>元宝 \
+<金蛇装备/FCOLOR=249>每件装备可以兑换：<100000/FCOLOR=224>元宝          <返回/@回收元宝>\
+
+
+
+
+
+
+
+
+
+
+
+
+}

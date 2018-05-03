@@ -1,0 +1,57 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 10
+Gender = 0
+NoDropItem = 1
+Hair = 2
+DropUseItem=1
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill = 四级雷电术,四级流星火雨,冰咆哮,四级魔法盾,火龙焰,护体神盾,抗拒火环,神龙神杖辟地,四级灭天火,疾光电影,血魄一击(法),双龙破,分身术(主)，
+ProtectStatus=1
+InitItems = 
+;等级
+Level = 306
+[MonSay]
+0=天大地大，唯我独尊
+1=小子！好久不见
+2=又想和我动手了？
+3=我擦！你耍阴的
+4=乌拉拉！乌拉拉！
+5=没事别找我
+6=有钱没？
+7=打发点咯
+8=你身上的装备卖不
+9=不好意思！我现在有事
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=神龙神甲(男)
+;武器
+UseItems1=神龙神杖
+;照明物
+UseItems2=传奇勋章
+;项链
+UseItems3=传奇项链
+;头盔
+UseItems4=传奇之冠
+;左手镯
+UseItems5=传奇护腕
+;右手镯
+UseItems6=传奇护腕
+;左戒指
+UseItems7=传奇之戒
+;右戒指
+UseItems8=传奇之戒
+;物品
+UseItems9=火龙之心
+;腰带
+UseItems10=
+;鞋子
+UseItems11=
+;宝石
+UseItems12=魔血石(大)
+;斗笠
+UseItems13=

@@ -1,0 +1,17 @@
+[@陪练登陆]
+{
+
+#IF
+ISAI
+#ACT
+AISTART 
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻击模式.txt S12
+CHANGEATTATCKMODE <$STR(S12)>
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人行会.txt S11
+AddGuildMember <$STR(S11)> <$USERNAME>
+RECALLHERO
+
+
+
+
+}

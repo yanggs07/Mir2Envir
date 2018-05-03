@@ -1,0 +1,2827 @@
+[@main]
+<神凰称号/@神凰>\
+<贤者祝福称号/@贤者>\
+<白日门贤者称号/@白贤者>\
+<使用贤者祝福证兑换贤者祝福称号/@证换>\
+<使用玛法碎片兑换功勋值/@兑换功勋>\
+<使用玛法碎片堆兑换功勋值/@兑换堆>\
+
+[@神凰]
+<神凰称号属性/@属性>         <神凰称号所需彩凤翎羽数量/@数量>\
+<兑换神凰称号/@兑换称号>\
+<兑换白日门神凰称号/@白日门神皇>\
+<神凰称号升级/@升级神皇>\ \ \
+
+<返回/@main>
+<清理/@请>
+[@请]
+#if
+#act
+SKILLLEVEL 神龙附体 = 5
+
+break
+
+
+[@兑换堆]
+1个玛法碎片堆可以兑换<10点/FCOLOR=249>功勋值，你确定要兑换吗？\ \
+
+<使用1个玛法碎片堆兑换功勋值/@兑换功勋11>\
+<使用10个玛法碎片堆兑换功勋值/@兑换功勋101>\
+<使用100个玛法碎片堆兑换功勋值/@兑换功勋1001>\
+<使用1000个玛法碎片堆兑换功勋值/@兑换功勋10001>\
+<使用10000个玛法碎片堆兑换功勋值/@兑换功勋100001>\ \
+<返回/@main>
+
+
+[@兑换功勋100001]
+#IF
+CHECKKIMNEEDLE 玛法碎片堆 10000
+#ACT
+TAKEKIMNEEDLE 玛法碎片堆 10000
+CALCVAR HUMAN 功勋值 + 100000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加100000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片堆。
+
+
+
+
+[@兑换功勋10001]
+#IF
+CHECKKIMNEEDLE 玛法碎片堆 1000
+#ACT
+TAKEKIMNEEDLE 玛法碎片堆 1000
+CALCVAR HUMAN 功勋值 + 10000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加10000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片堆。
+
+
+
+[@兑换功勋1001]
+#IF
+CHECKKIMNEEDLE 玛法碎片堆 100
+#ACT
+TAKEKIMNEEDLE 玛法碎片堆 100
+CALCVAR HUMAN 功勋值 + 1000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加1000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片堆。
+
+
+[@兑换功勋101]
+#IF
+CHECKKIMNEEDLE 玛法碎片堆 10
+#ACT
+TAKEKIMNEEDLE 玛法碎片堆 10
+CALCVAR HUMAN 功勋值 + 100
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加100点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片堆。
+
+
+
+[@兑换功勋11]
+#IF
+CHECKKIMNEEDLE 玛法碎片堆 1
+#ACT
+TAKEKIMNEEDLE 玛法碎片堆 1
+CALCVAR HUMAN 功勋值 + 10
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加10点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片堆。
+
+
+
+[@兑换功勋]
+1个玛法碎片可以兑换<20点/FCOLOR=249>功勋值，你确定要兑换吗？\ \
+
+<使用1个玛法碎片兑换功勋值/@兑换功勋1>\
+<使用10个玛法碎片兑换功勋值/@兑换功勋10>\
+<使用100个玛法碎片兑换功勋值/@兑换功勋100>\
+<使用1000个玛法碎片兑换功勋值/@兑换功勋1000>\
+<使用10000个玛法碎片兑换功勋值/@兑换功勋10000>\ \
+<返回/@main>
+
+
+[@兑换功勋10000]
+#IF
+CHECKKIMNEEDLE 玛法碎片 10000
+#ACT
+TAKEKIMNEEDLE 玛法碎片 10000
+CALCVAR HUMAN 功勋值 + 200000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加200000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法结晶。
+
+
+
+
+[@兑换功勋1000]
+#IF
+CHECKKIMNEEDLE 玛法碎片 1000
+#ACT
+TAKEKIMNEEDLE 玛法碎片 1000
+CALCVAR HUMAN 功勋值 + 20000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加20000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片。
+
+
+
+[@兑换功勋100]
+#IF
+CHECKKIMNEEDLE 玛法碎片 100
+#ACT
+TAKEKIMNEEDLE 玛法碎片 100
+CALCVAR HUMAN 功勋值 + 2000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加2000点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片。
+
+
+[@兑换功勋10]
+#IF
+CHECKKIMNEEDLE 玛法碎片 10
+#ACT
+TAKEKIMNEEDLE 玛法碎片 10
+CALCVAR HUMAN 功勋值 + 200
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加200点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片。
+
+
+
+[@兑换功勋1]
+#IF
+CHECKKIMNEEDLE 玛法碎片 1
+#ACT
+TAKEKIMNEEDLE 玛法碎片 1
+CALCVAR HUMAN 功勋值 + 20
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+SENDMSG 7 恭喜：增加20点功勋值
+GOTO @兑换功勋
+#ELSESAY
+你没有足够的玛法碎片。
+
+
+
+
+
+[@证换]
+<使用5重贤者祝福证/@5重祝福证>\
+<使用10重贤者祝福证/@10重祝福证>\
+
+
+[@5重祝福证]
+拥有5重贤者祝福证即可将1重、2重、3重、4重或无贤者祝福称号的\
+主号或英雄直升至5重贤者祝福或5重白日门贤者祝福。\
+注：使用"5重贤者祝福证"升级至5重贤者祝福或5重白日门贤者祝\
+福后不影响您当前拥有的功勋值，但已经兑换成贤者祝福称号或白日门\
+贤者祝福称号的功勋值则不再返还。\ \
+<使用5重贤者祝福证提升主号称号/@提升主体5>\
+<使用5重贤者祝福证提升英雄称号/@提升英雄5>\
+<返回/@正文1>
+
+
+[@提升英雄5]
+#IF
+CHECKFENGHAO 5重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 6重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 7重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 8重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 9重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 10重白日门贤者
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKITEM 5重贤者祝福证 1
+#ACT
+TAKE 5重贤者祝福证 1
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+SENDMSG 0 <$USERNAME>使用“5重贤者祝福证”，将白日门贤者称号提升到5重
+GIVEFENGHAO <$USERNAME> 5重白日门贤者
+GOTO @main
+BREAK
+#ELSESAY
+如果你已经带来了“5重贤者祝福证”，就赶快交给我吧！\ \
+
+
+
+
+
+
+[@提升主体5]
+#IF
+CHECKFENGHAO 5重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 6重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 7重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 8重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 9重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKFENGHAO 10重贤者祝福
+#SAY
+你已经不需要使用“5重贤者祝福证”来提升贤者祝福称号了。
+BREAK
+#IF
+CHECKITEM 5重贤者祝福证 1
+#ACT
+TAKE 5重贤者祝福证 1
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+GIVEFENGHAO <$USERNAME> 5重贤者祝福
+SENDMSG 0 <$USERNAME>使用“5重贤者祝福证”，将贤者祝福称号提升到5重
+GOTO @main
+BREAK
+#ELSESAY
+如果你已经带来了“5重贤者祝福证”，就赶快交给我吧！\ \
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@10重祝福证]
+拥有10重贤者祝福证即可将10重以下或无贤者祝福称号的主号或影响\
+直升至10重贤者祝福或10重白日门贤者祝福。\
+注：升级至10重贤者祝福或10重白日门贤者祝福后，未兑换的功勋值则\
+不再返还。\ \
+<使用10重贤者祝福证提升主号称号/@提升主体10>\
+<使用10重贤者祝福证提升英雄称号/@提升英雄10>\
+<返回/@main>
+
+[@提升英雄10]
+#IF
+CHECKFENGHAO 10重白日门贤者
+#SAY
+你已经不需要使用“10重贤者祝福证”来提升贤者祝福称号了。
+#ACT
+BREAK
+#IF
+CHECKITEM 10重贤者祝福证 1
+#ACT
+TAKE 10重贤者祝福证 1
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+SENDMSG 0 <$USERNAME>使用“10重贤者祝福证”，将白日门贤者称号提升到10重
+GIVEFENGHAO <$USERNAME> 10重白日门贤者
+GOTO @正文1
+BREAK
+#ELSESAY
+如果你已经带来了“10重贤者祝福证”，就赶快交给我吧！\ \
+
+
+
+[@提升主体10]
+#IF
+CHECKFENGHAO 10重贤者祝福
+#SAY
+你已经不需要使用“10重贤者祝福证”来提升贤者祝福称号了。
+#ACT
+BREAK
+#IF
+CHECKITEM 10重贤者祝福证 1
+#ACT
+TAKE 10重贤者祝福证 1
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+GIVEFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>使用“10重贤者祝福证”，将贤者祝福称号提升到10重
+GOTO @正文1
+BREAK
+#ELSESAY
+如果你已经带来了“10重贤者祝福证”，就赶快交给我吧！\ \
+
+
+
+
+
+[@贤者]
+上古魔窟邪灵在消损弥留之时，幽怨残念化为最后一颗腐种，将玛法\
+一处冥王地界腐染成臭名昭著的“瘟疫沼泽”。国王重金悬赏，凡\
+勇士能瑫锋饮血，全线出征讨伐瘟疫沼泽众幽冥邪灵，凡表现杰出的\
+勇士可封<贤者祝福/@贤者祝福条件>称号作为勇士奖赏。\
+玩家获得一定的<功勋值/@任务说明>，累计并消耗一定数量的功勋值\
+可以兑换贤者祝福称号，使用功勋值还可以为贤者祝福称号升级。\
+友情提示:打怪可以随机获得<玛法结晶/FCOLOR=58>或<玛法碎片堆换取功勋值/FCOLOR=58>\ \
+<贤者祝福称号/@兑换>      <查看贤者称号说明/@贤者祝福说明>\\
+
+
+[@贤者祝福条件]
+<1重贤者祝福：/FColor=249>5点功勋值。\
+<2重贤者祝福：/FColor=249>25点功勋值+1重贤者称号。\
+<3重贤者祝福：/FColor=249>1500点功勋值+2重贤者称号。\
+<4重贤者祝福：/FColor=249>4500点功勋值+3重贤者称号。\
+<5重贤者祝福：/FColor=249>8000点功勋值+4重贤者称号。\
+<6重贤者祝福：/FColor=249>14000点功勋值+5重贤者称号。\
+<7重贤者祝福：/FColor=249>22000点功勋值+6重贤者称号。\
+<8重贤者祝福：/FColor=249>36000点功勋值+7重贤者称号。\
+<下一页/@贤者祝福条件1>       <返回/@正文>\
+
+[@贤者祝福条件1]
+<9重贤者祝福：/FColor=249>52000点功勋值+8重贤者称号。\
+<10重贤者祝福：/FColor=249>70000点功勋值+9重贤者称号。\ \ \ \ \ \
+<上一页/@贤者祝福条件>\
+
+[@贤者祝福说明]
+获得贤者祝福称号，三职业可获得<魔血值/FColor=249>加成。\
+<1重贤者祝福属性为：/FColor=249>\
+战士：体力值+20000\
+法师：体力值+2000，魔法值+18000\
+道士：体力值+10000，魔法值+10000\
+<2重贤者祝福属性为：/FColor=249>\
+战士：体力值+30000\
+法师：体力值+3000，魔法值+27000\
+<下一页/@贤者祝福说明1>\
+
+
+[@贤者祝福说明1]
+道士：体力值+15000，魔法值+15000\
+<3重贤者祝福属性为：/FColor=249>\
+战士：体力值+40000\
+法师：体力值+4000，魔法值+36000\
+道士：体力值+20000，魔法值+20000\
+<4重贤者祝福属性为：/FColor=249>\
+战士：体力值+55000\
+法师：体力值+5500，魔法值+49500\
+<下一页/@贤者祝福说明2>        <上一页/@贤者祝福说明>\
+
+[@贤者祝福说明2]
+道士：体力值+27500，魔法值+27500\
+<5重贤者祝福属性为：/FColor=249>\
+战士：体力值+75000\
+法师：体力值+7500，魔法值+67500\
+道士：体力值+37500，魔法值+37500\
+<6重贤者祝福属性为：/FColor=249>\
+战士：体力值+105000\
+法师：体力值+10500，魔法值+94500\
+<下一页/@贤者祝福说明3>        <上一页/@贤者祝福说明1>\
+
+[@贤者祝福说明3]
+道士：体力值+52500，魔法值+52500\
+<7重贤者祝福属性为：/FColor=249>\
+战士：体力值+140000\
+法师：体力值+14000，魔法值+126000\
+道士：体力值+70000，魔法值+70000\
+<8重贤者祝福属性为：/FColor=249>\
+战士：体力值+180000\
+法师：体力值+18000，魔法值+162000\
+<下一页/@贤者祝福说明4>        <上一页/@贤者祝福说明2>\
+
+[@贤者祝福说明4]
+道士：体力值+90000，魔法值+90000\
+<9重贤者祝福属性为：/FColor=249>\
+战士：体力值+230000\
+法师：体力值+23000，魔法值+207000\
+道士：体力值+115000，魔法值+115000\
+<10重贤者祝福属性为：/FColor=249>\
+战士：体力值+300000\
+法师：体力值+30000，魔法值+270000\
+<下一页/@贤者祝福说明5>        <上一页/@贤者祝福说明3>\
+
+[@贤者祝福说明5]
+道士：体力值+150000，魔法值+150000\ \ \ \ \ \ \
+<上一页/@贤者祝福说明4>\
+
+
+
+
+
+
+[@升级神皇]
+<升级神凰称号/@升级神凰称号>\
+<升级白日门神凰称号/@升级白日门神凰称号>\
+<返回/@main>
+
+
+[@升级白日门神凰称号]
+<使用100 个彩凤翎羽升级二重白日门神凰称号/@兑换彩凤21>\
+<使用300 个彩凤翎羽升级三重白日门神凰称号/@兑换彩凤31>\
+<使用600 个彩凤翎羽升级四重白日门神凰称号/@兑换彩凤41>\
+<使用1000个彩凤翎羽升级五重白日门神凰称号/@兑换彩凤51>\
+<使用3000个彩凤翎羽升级六重白日门神凰称号/@兑换彩凤61>\
+<使用5000个彩凤翎羽升级七重白日门神凰称号/@兑换彩凤71>\
+
+[@兑换彩凤71]
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 5000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 5000
+GIVEFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 四重白日门神凰
+RECYCFENGHAO <$USERNAME> 五重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的七重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定七重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+
+[@兑换彩凤61]
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 3000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 3000
+GIVEFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 四重白日门神凰
+RECYCFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 五重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的六重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定六重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+[@兑换彩凤51]
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 1000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 1000
+GIVEFENGHAO <$USERNAME> 五重白日门神凰
+RECYCFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 四重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的五重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定五重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@兑换彩凤41]
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有四重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 三重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 600
+#act
+TAKEKIMNEEDLE 彩凤翎羽 600
+GIVEFENGHAO <$USERNAME> 四重白日门神凰
+RECYCFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 五重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的四重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定四重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@兑换彩凤31]
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有四重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 300
+#act
+TAKEKIMNEEDLE 彩凤翎羽 300
+GIVEFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 四重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 五重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的三重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定三重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+[@兑换彩凤21]
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有四重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重白日门神凰
+CHECKKIMNEEDLE 彩凤翎羽 100
+#act
+TAKEKIMNEEDLE 彩凤翎羽 100
+GIVEFENGHAO <$USERNAME> 二重白日门神凰
+RECYCFENGHAO <$USERNAME> 三重白日门神凰
+RECYCFENGHAO <$USERNAME> 一重白日门神凰
+RECYCFENGHAO <$USERNAME> 四重白日门神凰
+RECYCFENGHAO <$USERNAME> 六重白日门神凰
+RECYCFENGHAO <$USERNAME> 七重白日门神凰
+RECYCFENGHAO <$USERNAME> 五重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的二重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定二重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@升级神凰称号]
+<使用100 个彩凤翎羽升级二重神凰称号/@兑换彩凤2>\
+<使用300 个彩凤翎羽升级三重神凰称号/@兑换彩凤3>\
+<使用600 个彩凤翎羽升级四重神凰称号/@兑换彩凤4>\
+<使用1000个彩凤翎羽升级五重神凰称号/@兑换彩凤5>\
+<使用3000个彩凤翎羽升级六重神凰称号/@兑换彩凤6>\
+<使用5000个彩凤翎羽升级七重神凰称号/@兑换彩凤7>\
+
+[@兑换彩凤7]
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+CHECKKIMNEEDLE 彩凤翎羽 5000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 5000
+GIVEFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 四重神凰
+RECYCFENGHAO <$USERNAME> 五重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的七重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定七重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+
+[@兑换彩凤6]
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+CHECKKIMNEEDLE 彩凤翎羽 3000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 3000
+GIVEFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 四重神凰
+RECYCFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 五重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的六重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定六重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+[@兑换彩凤5]
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重神凰
+CHECKKIMNEEDLE 彩凤翎羽 1000
+#act
+TAKEKIMNEEDLE 彩凤翎羽 1000
+GIVEFENGHAO <$USERNAME> 五重神凰
+RECYCFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 四重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的五重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定五重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@兑换彩凤4]
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有四重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 三重神凰
+CHECKKIMNEEDLE 彩凤翎羽 600
+#act
+TAKEKIMNEEDLE 彩凤翎羽 600
+GIVEFENGHAO <$USERNAME> 四重神凰
+RECYCFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 五重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的四重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定四重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@兑换彩凤3]
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有四重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 二重神凰
+CHECKKIMNEEDLE 彩凤翎羽 300
+#act
+TAKEKIMNEEDLE 彩凤翎羽 300
+GIVEFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 四重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 五重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的三重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定三重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+[@兑换彩凤2]
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有四重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，无法再次升级！
+break
+#if
+CHECKFENGHAO 一重神凰
+CHECKKIMNEEDLE 彩凤翎羽 100
+#act
+TAKEKIMNEEDLE 彩凤翎羽 100
+GIVEFENGHAO <$USERNAME> 二重神凰
+RECYCFENGHAO <$USERNAME> 三重神凰
+RECYCFENGHAO <$USERNAME> 一重神凰
+RECYCFENGHAO <$USERNAME> 四重神凰
+RECYCFENGHAO <$USERNAME> 六重神凰
+RECYCFENGHAO <$USERNAME> 七重神凰
+RECYCFENGHAO <$USERNAME> 五重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的二重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定二重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+[@兑换称号]
+#if
+CHECKFENGHAO 一重神凰
+#act
+SENDMSG 7 您已经拥有一重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 二重神凰
+#act
+SENDMSG 7 您已经拥有二重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 三重神凰
+#act
+SENDMSG 7 您已经拥有三重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 四重神凰
+#act
+SENDMSG 7 您已经拥有四重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 五重神凰
+#act
+SENDMSG 7 您已经拥有五重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 六重神凰
+#act
+SENDMSG 7 您已经拥有六重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 七重神凰
+#act
+SENDMSG 7 您已经拥有七重神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKKIMNEEDLE 彩凤翎羽 50
+#act
+TAKEKIMNEEDLE 彩凤翎羽 50
+GIVEFENGHAO <$USERNAME> 一重神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的一重神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定一重神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+
+[@白日门神皇]
+#if
+CHECKFENGHAO 一重白日门神凰
+#act
+SENDMSG 7 您已经拥有一重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 二重白日门神凰
+#act
+SENDMSG 7 您已经拥有二重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 三重白日门神凰
+#act
+SENDMSG 7 您已经拥有三重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 四重白日门神凰
+#act
+SENDMSG 7 您已经拥有四重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 五重白日门神凰
+#act
+SENDMSG 7 您已经拥有五重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 六重白日门神凰
+#act
+SENDMSG 7 您已经拥有六重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKFENGHAO 七重白日门神凰
+#act
+SENDMSG 7 您已经拥有七重白日门神凰称号，请在神凰称号升级处升级
+break
+#if
+CHECKKIMNEEDLE 彩凤翎羽 50
+#act
+TAKEKIMNEEDLE 彩凤翎羽 50
+GIVEFENGHAO <$USERNAME> 一重白日门神凰
+SENDMSG 6 恭喜：你成功评定为拥有高级属性的一重白日门神凰称号！
+SENDMSG 0 恭喜：勇士%s使用彩凤翎羽成功评定一重白日门神凰称号！
+#ELSESAY
+您没有<足够的彩凤翎羽/FColor=249>，无法评定！
+#ELSEACT
+break
+
+
+
+
+
+
+
+
+[@数量]
+神皇与白日门神凰所需彩凤翎羽数量相同。以下数量均为累计数量\
+一重神凰总共所需<50/FCOLOR=249>个彩凤翎羽\
+二重神凰总共所需<100/FCOLOR=249>个彩凤翎羽\
+三重神凰总共所需<300/FCOLOR=249>个彩凤翎羽\
+四重神凰总共所需<600/FCOLOR=249>个彩凤翎羽\
+五重神凰总共所需<1000/FCOLOR=249>个彩凤翎羽\
+六重神凰总共所需<30000/FCOLOR=249>个彩凤翎羽\
+六重神凰总共所需<5000/FCOLOR=249>个彩凤翎羽\
+<返回/@main>
+[@属性]
+一重神凰：<麻痹抗性+10 魔血值+600 100%几率抵挡500点伤害/FCOLOR=249>\
+<药品魔血值回复+10%/FCOLOR=249>\
+二重神凰：<麻痹抗性+15 魔血值+900 100%几率抵挡1000点伤害/FCOLOR=249>\
+<药品魔血值回复+15%/FCOLOR=249>\
+三重神凰：<麻痹抗性+20 魔血值+1200 100%几率抵挡1800点伤害/FCOLOR=249>\
+<药品魔血值回复+20%/FCOLOR=249>\
+四重神凰：<麻痹抗性+40 魔血值+1800 100%几率抵挡3600点伤害/FCOLOR=249>\
+<药品魔血值回复+50%/FCOLOR=249>\
+<下一页/@下一页>                  <返回/@main>
+[@下一页]
+五重神凰：<麻痹抗性+70 魔血值+3000 100%几率抵挡6000点伤害/FCOLOR=249>\
+<药品魔血值回复+80%/FCOLOR=249>\
+六重神凰：<麻痹抗性+100 魔血值+4800 100%几率抵挡8400点伤害/FCOLOR=249>\
+<药品魔血值回复+110%/FCOLOR=249>\
+七重神凰：<麻痹抗性+135 魔血值+7200 100%几率抵挡12000点伤害/FCOLOR=249>\
+<药品魔血值回复+150%/FCOLOR=249>\
+<上一页/@属性>                  <返回/@main>
+
+
+
+
+
+
+
+
+[@兑换]
+<5 0 点功勋值/FCOLOR=58>                   <兑换一重贤者祝福/@兑换1重>\
+<100 点功勋值及一重贤者祝福/FCOLOR=58>     <兑换二重贤者祝福/@兑换2重>\
+<200 点功勋值及二重贤者祝福/FCOLOR=58>     <兑换三重贤者祝福/@兑换3重>\
+<500 点功勋值及三重贤者祝福/FCOLOR=58>     <兑换四重贤者祝福/@兑换4重>\
+<1000点功勋值及四重贤者祝福/FCOLOR=58>     <兑换五重贤者祝福/@兑换5重>\
+<2000点功勋值及五重贤者祝福/FCOLOR=58>     <兑换六重贤者祝福/@兑换6重>\
+<5000点功勋值及六重贤者祝福/FCOLOR=58>     <兑换七重贤者祝福/@兑换7重>\
+<8000点功勋值及七重贤者祝福/FCOLOR=58>     <兑换八重贤者祝福/@兑换8重>\
+
+<下一页/@下下>
+[@下下]
+<16000点功勋值及八重贤者祝福/FCOLOR=58>    <兑换九重贤者祝福/@兑换9重>\
+<32000点功勋值及九重贤者祝福/FCOLOR=58>    <兑换十重贤者祝福/@兑换10重>\
+
+
+
+
+[@兑换10重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 9重贤者祝福
+CHECKVAR HUMAN 功勋值 > 31999
+#ACT
+CALCVAR HUMAN 功勋值 - 32000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 10重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了10重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足32000点，无法领取\ \
+
+
+
+
+
+[@兑换9重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 8重贤者祝福
+CHECKVAR HUMAN 功勋值 > 15999
+#ACT
+CALCVAR HUMAN 功勋值 - 16000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了9重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足16000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+
+
+[@兑换8重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 7重贤者祝福
+CHECKVAR HUMAN 功勋值 > 7999
+#ACT
+CALCVAR HUMAN 功勋值 - 8000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了8重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足8000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+
+
+[@兑换7重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 6重贤者祝福
+CHECKVAR HUMAN 功勋值 > 4999
+#ACT
+CALCVAR HUMAN 功勋值 - 5000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了7重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足5000点，无法领取\ \
+
+
+[@兑换6重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 5重贤者祝福
+CHECKVAR HUMAN 功勋值 > 1999
+#ACT
+CALCVAR HUMAN 功勋值 - 2000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了6重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足2000点，无法领取\ \
+
+
+
+
+
+[@兑换5重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 4重贤者祝福
+CHECKVAR HUMAN 功勋值 > 999
+#ACT
+CALCVAR HUMAN 功勋值 - 1000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了5重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足1000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+[@兑换4重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 3重贤者祝福
+CHECKVAR HUMAN 功勋值 > 499
+#ACT
+CALCVAR HUMAN 功勋值 - 500
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了4重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足500点，无法领取\ \
+
+
+
+[@兑换3重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 2重贤者祝福
+CHECKVAR HUMAN 功勋值 > 199
+#ACT
+CALCVAR HUMAN 功勋值 - 200
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了3重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足200点，无法领取\ \
+
+
+
+
+
+[@兑换2重]
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKFENGHAO 1重贤者祝福
+CHECKVAR HUMAN 功勋值 > 99
+#ACT
+CALCVAR HUMAN 功勋值 - 100
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了2重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足100点，无法领取\ \
+
+
+
+
+[@兑换1重]
+#IF
+CHECKFENGHAO 1重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 2重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 3重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 4重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 5重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 6重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 7重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 8重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 9重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+#IF
+CHECKFENGHAO 10重贤者祝福
+#ACT
+SENDMSG 6 您已经获得了高级贤者祝福
+break
+
+#IF
+CHECKVAR HUMAN 功勋值 > 49
+#ACT
+CALCVAR HUMAN 功勋值 - 50
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 1重贤者祝福
+RECYCFENGHAO <$USERNAME> 2重贤者祝福
+RECYCFENGHAO <$USERNAME> 3重贤者祝福
+RECYCFENGHAO <$USERNAME> 4重贤者祝福
+RECYCFENGHAO <$USERNAME> 5重贤者祝福
+RECYCFENGHAO <$USERNAME> 6重贤者祝福
+RECYCFENGHAO <$USERNAME> 7重贤者祝福
+RECYCFENGHAO <$USERNAME> 8重贤者祝福
+RECYCFENGHAO <$USERNAME> 9重贤者祝福
+RECYCFENGHAO <$USERNAME> 10重贤者祝福
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了1重贤者祝福！
+BREAK
+#ELSESAY
+你的功勋值不足50点，无法领取\ \
+
+
+[@白贤者]
+<5 0 点功勋值/FCOLOR=58>                     <兑换一重白日门贤者/@兑换1重8>\
+<100 点功勋值及一重白日门贤者/FCOLOR=58>     <兑换二重白日门贤者/@兑换2重8>\
+<200 点功勋值及二重白日门贤者/FCOLOR=58>     <兑换三重白日门贤者/@兑换3重8>\
+<500 点功勋值及三重白日门贤者/FCOLOR=58>     <兑换四重白日门贤者/@兑换4重8>\
+<1000点功勋值及四重白日门贤者/FCOLOR=58>     <兑换五重白日门贤者/@兑换5重8>\
+<2000点功勋值及五重白日门贤者/FCOLOR=58>     <兑换六重白日门贤者/@兑换6重8>\
+<5000点功勋值及六重白日门贤者/FCOLOR=58>     <兑换七重白日门贤者/@兑换7重8>\
+<8000点功勋值及七重白日门贤者/FCOLOR=58>     <兑换八重白日门贤者/@兑换8重8>\
+
+<下一页/@下下4>
+[@下下4]
+<16000点功勋值及八重白日门贤者/FCOLOR=58>    <兑换九重白日门贤者/@兑换9重8>\
+<32000点功勋值及九重白日门贤者/FCOLOR=58>    <兑换十重白日门贤者/@兑换10重8>\
+
+
+
+
+[@兑换10重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 9重白日门贤者
+CHECKVAR HUMAN 功勋值 > 31999
+#ACT
+CALCVAR HUMAN 功勋值 - 32000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 10重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了10重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足32000点，无法领取\ \
+
+
+
+
+
+[@兑换9重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 8重白日门贤者
+CHECKVAR HUMAN 功勋值 > 15999
+#ACT
+CALCVAR HUMAN 功勋值 - 16000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了9重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足16000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+
+
+[@兑换8重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 7重白日门贤者
+CHECKVAR HUMAN 功勋值 > 7999
+#ACT
+CALCVAR HUMAN 功勋值 - 8000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了8重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足8000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+
+
+[@兑换7重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 6重白日门贤者
+CHECKVAR HUMAN 功勋值 > 4999
+#ACT
+CALCVAR HUMAN 功勋值 - 5000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了7重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足5000点，无法领取\ \
+
+
+[@兑换6重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 5重白日门贤者
+CHECKVAR HUMAN 功勋值 > 1999
+#ACT
+CALCVAR HUMAN 功勋值 - 2000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了6重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足2000点，无法领取\ \
+
+
+
+
+
+[@兑换5重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 4重白日门贤者
+CHECKVAR HUMAN 功勋值 > 999
+#ACT
+CALCVAR HUMAN 功勋值 - 1000
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了5重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足1000点，无法领取\ \
+
+
+
+
+
+
+
+
+
+[@兑换4重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 3重白日门贤者
+CHECKVAR HUMAN 功勋值 > 499
+#ACT
+CALCVAR HUMAN 功勋值 - 500
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了4重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足500点，无法领取\ \
+
+
+
+[@兑换3重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 2重白日门贤者
+CHECKVAR HUMAN 功勋值 > 199
+#ACT
+CALCVAR HUMAN 功勋值 - 200
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了3重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足200点，无法领取\ \
+
+
+
+
+
+[@兑换2重8]
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKFENGHAO 1重白日门贤者
+CHECKVAR HUMAN 功勋值 > 99
+#ACT
+CALCVAR HUMAN 功勋值 - 100
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了2重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足100点，无法领取\ \
+
+
+
+
+[@兑换1重8]
+#IF
+CHECKFENGHAO 1重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 2重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 3重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 4重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 5重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 6重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 7重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 8重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 9重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+#IF
+CHECKFENGHAO 10重白日门贤者
+#ACT
+SENDMSG 6 您已经获得了高级白日门贤者
+break
+
+#IF
+CHECKVAR HUMAN 功勋值 > 49
+#ACT
+CALCVAR HUMAN 功勋值 - 50
+SAVEVAR HUMAN 功勋值 ..\QuestDiary\数据文件\功勋值.txt
+GIVEFENGHAO <$USERNAME> 1重白日门贤者
+RECYCFENGHAO <$USERNAME> 2重白日门贤者
+RECYCFENGHAO <$USERNAME> 3重白日门贤者
+RECYCFENGHAO <$USERNAME> 4重白日门贤者
+RECYCFENGHAO <$USERNAME> 5重白日门贤者
+RECYCFENGHAO <$USERNAME> 6重白日门贤者
+RECYCFENGHAO <$USERNAME> 7重白日门贤者
+RECYCFENGHAO <$USERNAME> 8重白日门贤者
+RECYCFENGHAO <$USERNAME> 9重白日门贤者
+RECYCFENGHAO <$USERNAME> 10重白日门贤者
+SENDMSG 0 <$USERNAME>经历一切考验，克服重重困难，获得了1重白日门贤者！
+BREAK
+#ELSESAY
+你的功勋值不足50点，无法领取\ \
+
+
+
+
+
+
+
+
+
+
+
+[@贤者祝福说明]
+获得贤者祝福称号，三职业可获得<魔血值/FColor=249>加成。\
+<1重贤者祝福属性为：/FColor=249>\
+战士：体力值+20000\
+法师：体力值+2000，魔法值+18000\
+道士：体力值+10000，魔法值+10000\
+<2重贤者祝福属性为：/FColor=249>\
+战士：体力值+30000\
+法师：体力值+3000，魔法值+27000\
+<下一页/@贤者祝福说明1>\
+
+
+[@贤者祝福说明1]
+道士：体力值+15000，魔法值+15000\
+<3重贤者祝福属性为：/FColor=249>\
+战士：体力值+40000\
+法师：体力值+4000，魔法值+36000\
+道士：体力值+20000，魔法值+20000\
+<4重贤者祝福属性为：/FColor=249>\
+战士：体力值+55000\
+法师：体力值+5500，魔法值+49500\
+<下一页/@贤者祝福说明2>        <上一页/@贤者祝福说明>\
+
+[@贤者祝福说明2]
+道士：体力值+27500，魔法值+27500\
+<5重贤者祝福属性为：/FColor=249>\
+战士：体力值+75000\
+法师：体力值+7500，魔法值+67500\
+道士：体力值+37500，魔法值+37500\
+<6重贤者祝福属性为：/FColor=249>\
+战士：体力值+105000\
+法师：体力值+10500，魔法值+94500\
+<下一页/@贤者祝福说明3>        <上一页/@贤者祝福说明1>\
+
+[@贤者祝福说明3]
+道士：体力值+52500，魔法值+52500\
+<7重贤者祝福属性为：/FColor=249>\
+战士：体力值+140000\
+法师：体力值+14000，魔法值+126000\
+道士：体力值+70000，魔法值+70000\
+<8重贤者祝福属性为：/FColor=249>\
+战士：体力值+180000\
+法师：体力值+18000，魔法值+162000\
+<下一页/@贤者祝福说明4>        <上一页/@贤者祝福说明2>\
+
+[@贤者祝福说明4]
+道士：体力值+90000，魔法值+90000\
+<9重贤者祝福属性为：/FColor=249>\
+战士：体力值+230000\
+法师：体力值+23000，魔法值+207000\
+道士：体力值+115000，魔法值+115000\
+<10重贤者祝福属性为：/FColor=249>\
+战士：体力值+300000\
+法师：体力值+30000，魔法值+270000\
+<下一页/@贤者祝福说明5>        <上一页/@贤者祝福说明3>\
+
+[@贤者祝福说明5]
+道士：体力值+150000，魔法值+150000\ \ \ \ \ \ \
+<上一页/@贤者祝福说明4>\
+

@@ -1,0 +1,536 @@
+[@圣殿奖励]
+{
+#IF
+equal D0 1
+#ACT
+GOTO @1张
+break
+#IF
+equal D0 2
+#ACT
+GOTO @10张
+break
+#IF
+equal D0 3
+#ACT
+GOTO @100张
+break
+[@1张]
+#IF
+random 1000
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\7级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 800
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\6级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 600
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\5级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 400
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\4级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 200
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\3级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 100
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\2级奖励.txt S0
+mov S1 1
+GOTO @给予
+break
+#IF
+random 30
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\1级奖励.txt S0
+mov S1 1
+GOTO @给予
+break
+#ELSEACT
+goto @1低级
+GOTO @给予
+[@1低级]
+#IF
+random 3
+#ACT
+mov S0 经验
+mov S1 40000
+break
+#IF
+random 10
+#ACT
+mov S0 经验
+mov S1 50000
+break
+#IF
+random 20
+#ACT
+mov S0 经验
+mov S1 60000
+break
+#IF
+random 5
+#ACT
+mov S0 声望
+mov S1 1
+break
+#IF
+random 5
+#ACT
+mov S0 金刚石
+mov S1 1
+break
+#IF
+random 5
+#ACT
+mov S0 祝福油
+mov S1 1
+break
+#IF
+random 5
+#ACT
+mov S0 魔族指令书
+mov S1 1
+break
+#IF
+random 1
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 1
+break
+[@10张]
+#IF
+random 100
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\7级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 80
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\6级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 60
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\5级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 40
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\4级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 20
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\3级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 10
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\2级奖励.txt S0
+mov S1 1
+GOTO @给予
+break
+#IF
+random 5
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\1级奖励.txt S0
+mov S1 1
+GOTO @给予
+break
+#ELSEACT
+goto @10低级
+GOTO @给予
+[@10低级]
+#IF
+random 3
+#ACT
+mov S0 经验
+mov S1 400000
+break
+#IF
+random 10
+#ACT
+mov S0 经验
+mov S1 500000
+break
+#IF
+random 20
+#ACT
+mov S0 经验
+mov S1 600000
+break
+#IF
+random 5
+#ACT
+mov S0 声望
+mov S1 1
+break
+#IF
+random 10
+#ACT
+mov S0 声望
+mov S1 2
+break
+#IF
+random 20
+#ACT
+mov S0 声望
+mov S1 3
+break
+#IF
+random 5
+#ACT
+mov S0 金刚石
+mov S1 1
+break
+#IF
+random 10
+#ACT
+mov S0 金刚石
+mov S1 2
+break
+#IF
+random 20
+#ACT
+mov S0 金刚石
+mov S1 3
+break
+#IF
+random 5
+#ACT
+mov S0 祝福油
+mov S1 1
+break
+#IF
+random 10
+#ACT
+mov S0 祝福油
+mov S1 2
+break
+#IF
+random 20
+#ACT
+mov S0 祝福油
+mov S1 3
+break
+#IF
+random 5
+#ACT
+mov S0 魔族指令书
+mov S1 1
+break
+#IF
+random 10
+#ACT
+mov S0 魔族指令书
+mov S1 2
+break
+#IF
+random 20
+#ACT
+mov S0 魔族指令书
+mov S1 3
+break
+#IF
+random 5
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 1
+break
+#IF
+random 10
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 2
+break
+#IF
+random 20
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 3
+break
+[@100张]
+#IF
+random 10
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\7级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 8
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\6级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 6
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\5级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 4
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\4级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+break
+#IF
+random 2
+#act
+GetRandomName ..\QuestDiary\游戏功能\圣殿天关\3级奖励.txt S0
+mov S1 1
+GOTO @通告
+GOTO @给予
+#ELSEACT
+goto @100低级
+GOTO @给予
+[@100低级]
+#IF
+random 3
+#ACT
+mov S0 经验
+mov S1 4000000
+break
+#IF
+random 10
+#ACT
+mov S0 经验
+mov S1 5000000
+break
+#IF
+random 20
+#ACT
+mov S0 经验
+mov S1 6000000
+break
+#IF
+random 5
+#ACT
+mov S0 声望
+mov S1 10
+break
+#IF
+random 10
+#ACT
+mov S0 声望
+mov S1 20
+break
+#IF
+random 20
+#ACT
+mov S0 声望
+mov S1 30
+break
+#IF
+random 5
+#ACT
+mov S0 金刚石
+mov S1 10
+break
+#IF
+random 10
+#ACT
+mov S0 金刚石
+mov S1 20
+break
+#IF
+random 20
+#ACT
+mov S0 金刚石
+mov S1 30
+break
+#IF
+random 5
+#ACT
+mov S0 祝福油
+mov S1 2
+break
+#IF
+random 10
+#ACT
+mov S0 祝福油
+mov S1 4
+break
+#IF
+random 20
+#ACT
+mov S0 祝福油
+mov S1 6
+break
+#IF
+random 5
+#ACT
+mov S0 魔族指令书
+mov S1 2
+break
+#IF
+random 10
+#ACT
+mov S0 魔族指令书
+mov S1 4
+break
+#IF
+random 20
+#ACT
+mov S0 魔族指令书
+mov S1 6
+break
+#IF
+random 5
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 2
+break
+#IF
+random 10
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 4
+break
+#IF
+random 20
+#ACT
+mov S0 黑铁头盔(封印)
+mov S1 6
+break
+[@给予]
+#if
+equal S0 经验
+equal S1 40000
+#ACT
+Changeexp + 40000
+#if
+equal S0 经验
+equal S1 50000
+#ACT
+Changeexp + 50000
+#if
+equal S0 经验
+equal S1 60000
+#ACT
+Changeexp + 60000
+#if
+equal S0 经验
+equal S1 400000
+#ACT
+Changeexp + 400000
+#if
+equal S0 经验
+equal S1 500000
+#ACT
+Changeexp + 500000
+#if
+equal S0 经验
+equal S1 600000
+#ACT
+Changeexp + 600000
+#if
+equal S0 经验
+equal S1 4000000
+#ACT
+Changeexp + 4000000
+#if
+equal S0 经验
+equal S1 5000000
+#ACT
+Changeexp + 5000000
+#if
+equal S0 经验
+equal S1 6000000
+#ACT
+Changeexp + 6000000
+#if
+equal S0 金刚石
+#ACT
+GAMEDIAMOND + <$STR(S1)>
+SENDMSG 7 恭喜你获得了：<$STR(S0)>:<$STR(S1)>
+break
+#if
+equal S0 声望
+equal S1 1
+#ACT
+CreditPoint + 1
+#if
+equal S0 声望
+equal S1 2
+#ACT
+CreditPoint + 2
+#if
+equal S0 声望
+equal S1 3
+#ACT
+CreditPoint + 3
+#if
+equal S0 声望
+equal S1 10
+#ACT
+CreditPoint + 10
+#if
+equal S0 声望
+equal S1 20
+#ACT
+CreditPoint + 20
+#if
+equal S0 声望
+equal S1 30
+#ACT
+CreditPoint + 30
+#if
+CheckLevelEx > 0
+#act
+give <$STR(S0)> <$STR(S1)>
+SENDMSG 7 恭喜你获得了：<$STR(S0)>:<$STR(S1)>
+[@通告]
+#IF
+CheckLevelEx > 0
+#ACT
+SENDMSG 0 恭喜：%s在圣殿中获得了：<$STR(S0)>　如果您也想参加，可以与天庭守卫对话，点击[进入圣殿]即可！
+}

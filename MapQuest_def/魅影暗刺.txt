@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 精修任务 = 3
+CHECKVAR HUMAN 魅影暗刺 < 3
+#ACT
+CALCVAR HUMAN 魅影暗刺 + 1
+savevar human 魅影暗刺 ..\QuestDiary\雪花制作\魅影暗刺.txt
+SENDMSG 7 你已经杀死了<$human(魅影暗刺)>/5个魅影暗刺！
+
+#IF
+CHECKVAR HUMAN 精修任务 = 3
+CHECKVAR HUMAN 魅影暗刺 = 3
+#act
+SENDMSG 7 你已经杀死了<$human(魅影暗刺)>/3个魅影暗刺，可以去找护国将军了

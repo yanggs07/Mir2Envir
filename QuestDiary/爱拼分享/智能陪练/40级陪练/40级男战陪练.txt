@@ -1,0 +1,64 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 25
+Gender = 0
+Hair = 2
+ProtectStatus=1
+Level = 40
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=55
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill =破魂斩,基本剑术,攻杀剑术,半月弯刀,刺杀剑术,野蛮冲撞,逐日剑法,狮子吼,神龙神杖辟地,开天斩,三绝杀,追心刺,护体神盾,血魄一击(战),四级烈火
+;包裹物品
+InitItems = 万年雪霜包,万年雪霜包,万年雪霜包
+[MonSay]
+0=你想找死？
+1=打我哟！
+2=妈的，你不想活了？
+3=我在自言自语
+4=小子你真是不知天高地厚啊
+5=我玩这么久传奇了，还没有人敢来格我撒野呢
+6=呵呵
+7=晕，你小子能把我杀了？
+8=看看我带的什么装备
+9=皓月你知道吗？现在最牛的！！！想杀我？
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=天魔神甲
+;武器
+UseItems1=绝世神刃1
+;照明物
+UseItems2=
+;项链
+UseItems3=圣战项链
+;头盔
+UseItems4=圣战头盔
+;左手镯
+UseItems5=圣战手镯
+;右手镯
+UseItems6=圣战手镯
+;左戒指
+UseItems7=圣战戒指
+;右戒指
+UseItems8=圣战戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+
+
+
+
+
+

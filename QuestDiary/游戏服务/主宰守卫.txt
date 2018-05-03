@@ -1,0 +1,98 @@
+[@主宰守卫]
+{
+#IF
+checkitem 主宰令牌 1
+#ACT
+BREAK
+#SAY
+尊敬的“玛法主宰者”大人，您拥有组织刷怪活动的权利：\ \
+每天只可以刷出以下任意一个BOSS特权。\ \
+<主宰者领域未清理的怪物，将在每天0:00点系统自动清理/FCOLOR=58>\ \
+<召唤冰眼巨魔/@刷冰眼巨魔>                            <召唤火龙/@刷火龙>\ \
+<召唤灵龟/@刷灵龟>\
+
+#ELSEACT
+BREAK
+#ELSESAY
+非常抱歉，我只听从主宰大人的命令！
+
+[@去庄园]
+#IF
+random 3
+#ACT
+MAPMOVE GA0 62 72
+break
+
+#IF
+random 2
+#ACT
+MAPMOVE GA0 72 62
+break
+
+#IF
+random 1
+#ACT
+MAPMOVE GA0 62 62
+break
+
+#ELSEACT
+MAPMOVE GA0 62 62
+break
+
+[@刷火龙]
+#IF
+checknamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+#ACT
+BREAK
+#SAY
+主宰大人，今天你已经使用过组织刷怪活动的权利了。\
+
+#ELSEACT
+Param1 <$MAP>
+Param2 46
+Param3 39
+MonGen 火龙2 1 0
+SENDMSG 7 火龙在主宰者领域被您唤醒……
+addnamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+SENDMSG 0 [主宰者]%s在“主宰者领域”获得组织刷怪活动的权利。 0 250
+BREAK
+CLOSE
+
+[@刷灵龟]
+#IF
+checknamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+#ACT
+BREAK
+#SAY
+主宰大人，今天你已经使用过组织刷怪活动的权利了。\
+
+#ELSEACT
+Param1 <$MAP>
+Param2 46
+Param3 39
+MonGen 灵龟 1 0
+SENDMSG 7 灵龟在主宰者领域被您唤醒……
+addnamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+SENDMSG 0 [主宰者]%s在“主宰者领域”获得组织刷怪活动的权利。 0 250
+BREAK
+CLOSE
+
+[@刷冰眼巨魔]
+#IF
+checknamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+#ACT
+BREAK
+#SAY
+主宰大人，今天你已经使用过组织刷怪活动的权利了。\
+
+#ELSEACT
+Param1 <$MAP>
+Param2 46
+Param3 39
+MonGen 冰眼巨魔3 1 0
+SENDMSG 7 冰眼巨魔在主宰者领域被您唤醒……
+addnamelist ..\QuestDiary\数据文件\玛法主宰者\每日刷怪名单.txt
+SENDMSG 0 [主宰者]%s在“主宰者领域”获得组织刷怪活动的权利。 0 250
+BREAK
+CLOSE
+}

@@ -1,0 +1,9 @@
+[@每周数据清空]
+{
+#IF
+#ACT
+CALCVAR HUMAN 瘟疫沼泽一层次数 = 0
+SAVEVAR HUMAN 瘟疫沼泽一层次数 ..\QuestDiary\数据文件\瘟疫沼泽一层次数.txt
+LOADVAR HUMAN 瘟疫沼泽一层次数 ..\QuestDiary\数据文件\瘟疫沼泽一层次数.txt
+BREAK
+}

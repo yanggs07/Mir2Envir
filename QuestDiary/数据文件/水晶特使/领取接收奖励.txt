@@ -1,0 +1,77 @@
+[@领取接收奖励]
+{
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\接收奖励\第1名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收奖励\第1点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 1
+DELAYGOTO 1 @接收奖励
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\接收奖励\第2名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收奖励\第2点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 2
+DELAYGOTO 1 @接收奖励
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\接收奖励\第3名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收奖励\第3点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 3
+DELAYGOTO 1 @接收奖励
+BREAK
+
+#ELSESAY
+你没有中奖，不能领取奖励！
+#ELSEACT
+BREAK
+
+[@接收奖励]
+#IF
+CHECKBAGSIZE 4
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留4格以上包裹空间后再来领取奖励！
+
+#IF
+LARGE N10 99
+#ACT
+RECYCFENGHAO <$USERNAME> 玛法之星
+RECYCFENGHAO <$USERNAME> 传奇之星
+GIVEFENGHAO <$USERNAME> 传奇之星
+TakeOffItem 0 天外飞仙
+TakeOffItem 1 火红的心
+TAKE 天外飞仙 46
+TAKE 火红的心 46
+TAKE 护花令牌 46
+GIVE 天外飞仙 1 主体 0|0|0|0 0 3|96|134|55|45 0
+GIVE 火红的心 1 主体 0|0|0|0 0 3|96|134|55|45 0
+GIVE 护花令牌 1
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收奖励\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收奖励\第<$STR(N11)>点数.txt
+SENDMSG 0 恭喜：%S，在传奇之星活动中，获得了称号：传奇之星。有效期28天!
+BREAK
+#SAY
+恭喜：你成功获得传奇之星称号。
+
+#ELSEACT
+break
+#ELSESAY
+很遗憾，您上周的接收数量未达到100，无法领取任何奖励！\
+本轮大奖已经轮空！
+}

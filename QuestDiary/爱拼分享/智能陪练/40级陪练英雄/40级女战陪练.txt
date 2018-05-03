@@ -1,0 +1,63 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 25
+Gender = 1
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=40
+Hair = 2
+;等级
+Level = 87
+UseSkill =劈星斩,白日门剑术,白日门攻杀,白日门护体,白日门刺杀,白日门护体,白日门半月,白日门烈火,白日门野蛮,开天斩,白日门狮吼功,白日门抱月,白日门龙影剑,白日门血魄(战)
+;包裹物品
+InitItems = 万年雪霜包,万年雪霜包,万年雪霜包
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=圣战宝甲
+;武器
+UseItems1=怒斩
+;照明物
+UseItems2=
+;项链
+UseItems3=圣战项链
+;头盔
+UseItems4=圣战头盔
+;左手镯
+UseItems5=圣战手镯
+;右手镯
+UseItems6=圣战手镯
+;左戒指
+UseItems7=圣战戒指
+;右戒指
+UseItems8=圣战戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+
+;斗笠
+UseItems13=火龙斗笠(战)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

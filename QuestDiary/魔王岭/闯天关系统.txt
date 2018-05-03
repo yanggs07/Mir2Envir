@@ -1,0 +1,4456 @@
+[@挑战天关]
+{
+能来到这里，你果然智勇双全。\
+先看看我这里的宝物，只要打败所有怪物，宝物就归你了。\
+如果想到下一关，你可以使用1张灵符再过一次天关通道；\
+如果不想使用灵符，那就靠实力打过去吧。\
+天关有无数重，能过多少关就看你的勇气和毅力了。\ 
+<看看这里的宝物/@lookmon>        <挑战成功，领取宝物/@GatGift>\ \
+
+<返回天庭/@hueitu>
+
+[@lookmon]
+#if
+  equal I0 0
+  equal I1 0
+  equal I3 0
+#act
+  goto @baowu
+  goto @guai
+  goto @kanbao
+#ELSEACT
+  goto @kanbao
+
+[@baowu]
+#IF
+  random 300000
+#act
+  mov I0 1
+  break
+#IF
+  random 300000
+#act
+  mov I0 2
+  break
+#IF
+  random 300000
+#act
+  mov I0 3
+  break
+#IF
+  random 300000
+#act
+  mov I0 4
+  break
+#IF
+  random 300000
+#act
+  mov I0 5
+  break
+#IF
+  random 300000
+#act
+  mov I0 6
+  break
+#IF
+  random 300000
+#act
+  mov I0 7
+  break
+#IF
+  random 300000
+#act
+  mov I0 8
+  break
+#IF
+  random 300000
+#act
+  mov I0 9
+  break
+#IF
+  random 30000
+#act
+  mov I0 10
+  break
+#IF
+  random 30000
+#act
+  mov I0 11
+  break
+#IF
+  random 30000
+#act
+  mov I0 12
+  break
+#IF
+  random 30000
+#act
+  mov I0 13
+  break
+#IF
+  random 30000
+#act
+  mov I0 14
+  break
+#IF
+  random 30000
+#act
+  mov I0 15
+  break
+#IF
+  random 30000
+#act
+  mov I0 16
+  break
+#IF
+  random 30000
+#act
+  mov I0 17
+  break
+#IF
+  random 30000
+#act
+  mov I0 18
+  break
+#IF
+  random 30000
+#act
+  mov I0 19
+  break
+#IF
+  random 30000
+#act
+  mov I0 20
+  break
+#IF
+  random 30000
+#act
+  mov I0 21
+  break
+#IF
+  random 30000
+#act
+  mov I0 22
+  break
+#IF
+  random 30000
+#act
+  mov I0 23
+  break
+#IF
+  random 30000
+#act
+  mov I0 24
+  break
+#IF
+  random 30000
+#act
+  mov I0 25
+  break
+#IF
+  random 30000
+#act
+  mov I0 26
+  break
+#IF
+  random 30000
+#act
+  mov I0 27
+  break
+#IF
+  random 30000
+#act
+  mov I0 28
+  break
+#IF
+  random 30000
+#act
+  mov I0 29
+  break
+#IF
+  random 30000
+#act
+  mov I0 30
+  break
+#IF
+  random 30000
+#act
+  mov I0 31
+  break
+#IF
+  random 30000
+#act
+  mov I0 32
+  break
+#IF
+  random 30000
+#act
+  mov I0 33
+  break
+#IF
+  random 30000
+#act
+  mov I0 34
+  break
+#IF
+  random 30000
+#act
+  mov I0 35
+  break
+#IF
+  random 30000
+#act
+  mov I0 36
+  break
+#IF
+  random 30000
+#act
+  mov I0 37
+  break
+#IF
+  random 30000
+#act
+  mov I0 38
+  break
+#IF
+  random 30000
+#act
+  mov I0 39
+  break
+#IF
+  random 30000
+#act
+  mov I0 40
+  break
+#IF
+  random 30000
+#act
+  mov I0 41
+  break
+#IF
+  random 30000
+#act
+  mov I0 42
+  break
+#IF
+  random 30000
+#act
+  mov I0 43
+  break
+#IF
+  random 30000
+#act
+  mov I0 44
+  break
+#IF
+  random 30000
+#act
+  mov I0 45
+  break
+#IF
+  random 5000
+#act
+  mov I0 46
+  break
+#IF
+  random 5000
+#act
+  mov I0 47
+  break
+#IF
+  random 5000
+#act
+  mov I0 48
+  break
+#IF
+  random 5000
+#act
+  mov I0 49
+  break
+#IF
+  random 5000
+#act
+  mov I0 50
+  break
+#IF
+  random 5000
+#act
+  mov I0 51
+  break
+#IF
+  random 5000
+#act
+  mov I0 52
+  break
+#IF
+  random 5000
+#act
+  mov I0 53
+  break
+#IF
+  random 5000
+#act
+  mov I0 54
+  break
+#IF
+  random 5000
+#act
+  mov I0 55
+  break
+#IF
+  random 5000
+#act
+  mov I0 56
+  break
+#IF
+  random 5000
+#act
+  mov I0 57
+  break
+#IF
+  random 5000
+#act
+  mov I0 58
+  break
+#IF
+  random 5000
+#act
+  mov I0 59
+  break
+#IF
+  random 5000
+#act
+  mov I0 60
+  break
+#IF
+  random 5000
+#act
+  mov I0 61
+  break
+#IF
+  random 5000
+#act
+  mov I0 62
+  break
+#IF
+  random 3000
+#act
+  mov I0 63
+  break
+#IF
+  random 3000
+#act
+  mov I0 64
+  break
+#IF
+  random 3000
+#act
+  mov I0 65
+  break
+#IF
+  random 2999
+#act
+  mov I0 66
+  break
+#IF
+  random 2998
+#act
+  mov I0 67
+  break
+#IF
+  random 2997
+#act
+  mov I0 68
+  break
+#IF
+  random 1996
+#act
+  mov I0 69
+  break
+#IF
+  random 1995
+#act
+  mov I0 70
+  break
+#IF
+  random 1994
+#act
+  mov I0 71
+  break
+#IF
+  random 1993
+#act
+  mov I0 72
+  break
+#IF
+  random 1992
+#act
+  mov I0 73
+  break
+#IF
+  random 1991
+#act
+  mov I0 74
+  break
+#IF
+  random 1990
+#act
+  mov I0 75
+  break
+#IF
+  random 1989
+#act
+  mov I0 76
+  break
+#IF
+  random 1988
+#act
+  mov I0 77
+  break
+#IF
+  random 1987
+#act
+  mov I0 78
+  break
+#IF
+  random 1986
+#act
+  mov I0 79
+  break
+#IF
+  random 1985
+#act
+  mov I0 80
+  break
+#IF
+  random 1984
+#act
+  mov I0 81
+  break
+#IF
+  random 1983
+#act
+  mov I0 82
+  break
+#IF
+  random 1982
+#act
+  mov I0 83
+  break
+#IF
+  random 1981
+#act
+  mov I0 84
+  break
+#IF
+  random 1980
+#act
+  mov I0 85
+  break
+#If
+  random 1979
+#act
+  mov I0 86
+  break
+#IF
+  random 1978
+#act
+  mov I0 87
+  break
+#IF
+  random 1977
+#act
+  mov I0 88
+  break
+#IF
+  random 1976
+#act
+  mov I0 89
+  break
+#IF
+  random 1975
+#act
+  mov I0 90
+  break
+#IF
+  random 1974
+#act
+  mov I0 91
+  break
+#IF
+  random 1973
+#act
+  mov I0 92
+  break
+#IF
+  random 1972
+#act
+  mov I0 93
+  break
+#IF
+  random 1971
+#act
+  mov I0 94
+  break
+#IF
+  random 1970
+#act
+  mov I0 95
+  break
+#IF
+  random 1969
+#act
+  mov I0 96
+  break
+#IF
+  random 1968
+#act
+  mov I0 97
+  break
+#IF
+  random 1967
+#act
+  mov I0 98
+  break
+#IF
+  random 1966
+#act
+  mov I0 99
+  break
+#IF
+  random 2000
+#act
+  mov I0 100
+  break
+#IF
+  random 1999
+#act
+  mov I0 101
+  break
+#IF
+  random 1998
+#act
+  mov I0 102
+  break
+#IF
+  random 1997
+#act
+  mov I0 103
+  break
+#IF
+  random 1996
+#act
+  mov I0 104
+  break
+#IF
+  random 1995
+#act
+  mov I0 105
+  break
+#IF
+  random 300
+#act
+  mov I0 106
+  break
+#if
+  random 299
+#act
+  mov I0 107
+  break
+#IF
+  random 298
+#act
+  mov I0 108
+  break
+#If
+  random 297
+#act
+  mov I0 109
+  break
+#IF
+  random 296
+#act
+  mov I0 110
+  break
+#IF
+  random 295
+#act
+  mov I0 111
+  break
+#IF
+  random 294
+#act
+  mov I0 112
+  break
+#IF
+  random 293
+#act
+  mov I0 113
+  break
+#IF
+  random 292
+#act
+  mov I0 114
+  break
+#IF
+  random 291
+#act
+  mov I0 115
+  break
+#IF
+  random 290
+#act
+  mov I0 116
+  break
+#IF
+  random 289
+#act
+  mov I0 117
+  break
+#IF
+  random 288
+#act
+  mov I0 118
+  break
+#IF
+  random 154
+#act
+  mov I0 119
+  break
+#IF
+  random 153
+#act
+  mov I0 120
+  break
+#IF
+  random 152
+#act
+  mov I0 121
+  break
+#IF
+  random 151
+#act
+  mov I0 122
+  break
+#IF
+  random 150
+#act
+  mov I0 123
+  break
+#IF
+  random 149
+#act
+  mov I0 124
+  break
+#IF
+  random 148
+#act
+  mov I0 125
+  break
+#IF
+  random 147
+#act
+  mov I0 126
+  break
+#IF
+  random 146
+#act
+  mov I0 127
+  break
+#IF
+  random 145
+#act
+  mov I0 128
+  break
+#IF
+  random 144
+#act
+  mov I0 129
+  break
+#IF
+  random 143
+#act
+  mov I0 130
+  break
+#IF
+  random 142
+#act
+  mov I0 131
+  break
+#IF
+  random 141
+#ACT
+  mov I0 132
+  break
+#IF
+  random 140
+#act
+  mov I0 133
+  break
+#IF
+  random 139
+#act
+  mov I0 134
+  break
+#IF
+  random 138
+#act
+  mov I0 135
+  break
+#IF
+  random 137
+#act
+  mov I0 136
+  break
+#IF
+  random 136
+#act
+  mov I0 137
+  break
+#IF
+  random 135
+#act
+  mov I0 138
+  break
+#IF
+  random 134
+#act
+  mov I0 139
+  break
+#IF
+  random 133
+#act
+  mov I0 140
+  break
+#IF
+  random 132
+#act
+  mov I0 141
+  break
+#IF
+  random 131
+#act
+  mov I0 142
+  break
+#IF
+  random 130
+#act
+  mov I0 143
+  break
+#IF
+  random 129
+#act
+  mov I0 144
+  break
+#IF
+  random 128
+#act
+  mov I0 145
+  break
+#IF
+  random 127
+#act
+  mov I0 146
+  break
+#IF
+  random 126
+#act
+  mov I0 147
+  break
+#IF
+  random 125
+#act
+  mov I0 148
+  break
+#IF
+  random 124
+#act
+  mov I0 149
+  break
+#IF
+  random 123
+#act
+  mov I0 150
+  break
+#IF
+  random 122
+#act
+  mov I0 151
+  break
+#IF
+  random 21
+#act
+  mov I0 152
+  break
+#IF
+  random 20
+#act
+  mov I0 153
+  break
+#IF
+  random 19
+#act
+  mov I0 154
+  break
+#IF
+  random 18
+#act
+  mov I0 155
+  break
+#IF
+  random 17
+#act
+  mov I0 156
+  break
+#IF
+  random 16
+#act
+  mov I0 157
+  break
+#IF
+  random 15
+#act
+  mov I0 158
+  break
+#IF
+  random 14
+#act
+  mov I0 159
+  break
+#IF
+  random 13
+#act
+  mov I0 160
+  break
+#IF
+  random 12
+#act
+  mov I0 161
+  break
+#IF
+  random 11
+#act
+  mov I0 162
+  break
+#IF
+  random 10
+#act
+  mov I0 163
+  break
+#IF
+  random 9
+#act
+  mov I0 164
+  break
+#IF
+  random 8
+#act
+  mov I0 165
+  break
+#IF
+  random 7
+#act
+  mov I0 166
+  break
+#IF
+  random 6
+#act
+  mov I0 167
+  break
+#IF
+  random 5
+#act
+  mov I0 168
+  break
+#IF
+  random 4
+#act
+  mov I0 169
+  break
+#IF
+  random 3
+#act
+  mov I0 170
+  break
+#IF
+  random 2
+#act
+  mov I0 171
+  break
+#IF
+  random 1
+#act
+  mov I0 172
+  break
+#IF
+#act
+  mov I0 173
+  break
+
+[@guai]
+#IF
+  random 15
+#act
+  mov I1 15
+  break
+#IF
+  random 14
+#act
+  mov I1 14
+  break
+#IF
+  random 13
+#act
+  mov I1 13
+  break
+#IF
+  random 12
+#act
+  mov I1 12
+  break
+#IF
+  random 11
+#act
+  mov I1 11
+  break
+#IF
+  random 10
+#act
+  mov I1 10
+  break
+#IF
+  random 9
+#act
+  mov I1 9
+  break
+#IF
+  random 8
+#act
+  mov I1 8
+  break
+#IF
+  random 7
+#act
+  mov I1 7
+  break
+#IF
+  random 6
+#act
+  mov I1 6
+  break
+#IF
+  random 5
+#act
+  mov I1 5
+  break
+#IF
+  random 4
+#act
+  mov I1 4
+  break
+#IF
+  random 3
+#act
+  mov I1 3
+  break
+#IF
+  random 2
+#act
+  mov I1 2
+  break
+#IF
+#act
+  mov I1 1
+  break
+
+[@kanbao]
+#if
+  equal I0 1
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：战神项链\
+#if
+  equal I0 2
+#act
+#say
+这次你能获得怪物给你带来的：经验:500000\
+并且你还将获得你的隐藏宝物：战神戒指\
+#if
+  equal I0 3
+#act
+#say
+这次你能获得怪物给你带来的：声望:5\
+并且你还将获得你的隐藏宝物：战神手镯\
+#if
+  equal I0 4
+#act
+#say
+这次你能获得怪物给你带来的：声望:6\
+并且你还将获得你的隐藏宝物：圣魔项链\
+#if
+  equal I0 5
+#act
+#say
+这次你能获得怪物给你带来的：经验:500000\
+并且你还将获得你的隐藏宝物：圣魔戒指\
+#if
+  equal I0 6
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：圣魔手镯\
+#if
+  equal I0 7
+#act
+#say
+这次你能获得怪物给你带来的：经验:500000\
+并且你还将获得你的隐藏宝物：真魂项链\
+#if
+  equal I0 8
+#act
+#say
+这次你能获得怪物给你带来的：声望:6\
+并且你还将获得你的隐藏宝物：真魂戒指\
+#if
+  equal I0 9
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：真魂手镯\
+#if
+  equal I0 10
+#act
+#say
+这次你能获得怪物给你带来的：绿色项链:1\
+并且你还将获得你的隐藏宝物：藏宝图001\
+#if
+  equal I0 11
+#act
+#say
+这次你能获得怪物给你带来的：灵魂项链:1\
+并且你还将获得你的隐藏宝物：藏宝图002\
+#if
+  equal I0 12
+#act
+#say
+这次你能获得怪物给你带来的：恶魔铃铛:1\
+并且你还将获得你的隐藏宝物：藏宝图003\
+#if
+  equal I0 13
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+并且你还将获得你的隐藏宝物：藏宝图004\
+#if
+  equal I0 14
+#act
+#say
+这次你能获得怪物给你带来的：声望:6\
+并且你还将获得你的隐藏宝物：藏宝图005\
+#if
+  equal I0 15
+#act
+#say
+这次你能获得怪物给你带来的：经验:300000\
+并且你还将获得你的隐藏宝物：藏宝图006\
+#if
+  equal I0 16
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图007\
+#if
+  equal I0 17
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图008\
+#if
+  equal I0 18
+#act
+#say
+这次你能获得怪物给你带来的：经验:300000\
+并且你还将获得你的隐藏宝物：藏宝图009\
+#if
+  equal I0 19
+#act
+#say
+这次你能获得怪物给你带来的：声望:6\
+并且你还将获得你的隐藏宝物：藏宝图010\
+#if
+  equal I0 20
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+并且你还将获得你的隐藏宝物：藏宝图011\
+#if
+  equal I0 21
+#act
+#say
+这次你能获得怪物给你带来的：经验:380000\
+并且你还将获得你的隐藏宝物：藏宝图012\
+#if
+  equal I0 22
+#act
+#say
+这次你能获得怪物给你带来的：经验:280000\
+并且你还将获得你的隐藏宝物：藏宝图013\
+#if
+  equal I0 23
+#act
+#say
+这次你能获得怪物给你带来的：经验:250000\
+并且你还将获得你的隐藏宝物：藏宝图014\
+#if
+  equal I0 24
+#act
+#say
+这次你能获得怪物给你带来的：声望:3\
+并且你还将获得你的隐藏宝物：藏宝图015\
+#if
+  equal I0 25
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:6\
+并且你还将获得你的隐藏宝物：藏宝图016\
+#if
+  equal I0 26
+#act
+#say
+这次你能获得怪物给你带来的：声望:4\
+并且你还将获得你的隐藏宝物：藏宝图017\
+#if
+  equal I0 27
+#act
+#say
+这次你能获得怪物给你带来的：声望:5\
+并且你还将获得你的隐藏宝物：藏宝图018\
+#if
+  equal I0 28
+#act
+#say
+这次你能获得怪物给你带来的：经验:650000\
+并且你还将获得你的隐藏宝物：藏宝图019\
+#if
+  equal I0 29
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+并且你还将获得你的隐藏宝物：藏宝图020\
+#if
+  equal I0 30
+#act
+#say
+这次你能获得怪物给你带来的：经验:450000\
+并且你还将获得你的隐藏宝物：藏宝图101\
+#if
+  equal I0 31
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图102\
+#if
+  equal I0 32
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+并且你还将获得你的隐藏宝物：藏宝图103\
+#if
+  equal I0 33
+#act
+#say
+这次你能获得怪物给你带来的：经验:150000\
+并且你还将获得你的隐藏宝物：藏宝图104\
+#if
+  equal I0 34
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:1\
+并且你还将获得你的隐藏宝物：藏宝图105\
+#if
+  equal I0 35
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:2\
+并且你还将获得你的隐藏宝物：藏宝图106\
+#if
+  equal I0 36
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:6\
+并且你还将获得你的隐藏宝物：藏宝图107\
+#if
+  equal I0 37
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图108\
+#if
+  equal I0 38
+#act
+#say
+这次你能获得怪物给你带来的：裁决之杖:1\
+并且你还将获得你的隐藏宝物：藏宝图109\
+#if
+  equal I0 39
+#act
+#say
+这次你能获得怪物给你带来的：骨于权杖:1\
+并且你还将获得你的隐藏宝物：藏宝图110\
+#if
+  equal I0 40
+#act
+#say
+这次你能获得怪物给你带来的：龙纹剑:1\
+并且你还将获得你的隐藏宝物：藏宝图111\
+#if
+  equal I0 41
+#act
+#say
+这次你能获得怪物给你带来的：天之裁决:1\
+并且你还将获得你的隐藏宝物：藏宝图112\
+#if
+  equal I0 42
+#act
+#say
+这次你能获得怪物给你带来的：天之骨于权杖:1\
+并且你还将获得你的隐藏宝物：藏宝图113\
+#if
+  equal I0 43
+#act
+#say
+这次你能获得怪物给你带来的：天之龙纹:1\
+并且你还将获得你的隐藏宝物：藏宝图114\
+#if
+  equal I0 44
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图115\
+#if
+  equal I0 45
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图116\
+#if
+  equal I0 46
+#act
+#say
+这次你能获得怪物给你带来的：力量戒指:1\
+并且你还将获得你的隐藏宝物：藏宝图117\
+#if
+  equal I0 47
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图118\
+#if
+  equal I0 48
+#act
+#say
+这次你能获得怪物给你带来的：经验:550000\
+并且你还将获得你的隐藏宝物：藏宝图119\
+#if
+  equal I0 49
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+并且你还将获得你的隐藏宝物：藏宝图120\
+#if
+  equal I0 50
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图201\
+#if
+  equal I0 51
+#act
+#say
+这次你能获得怪物给你带来的：经验:250000\
+并且你还将获得你的隐藏宝物：藏宝图202\
+#if
+  equal I0 52
+#act
+#say
+这次你能获得怪物给你带来的：经验:150000\
+并且你还将获得你的隐藏宝物：藏宝图203\
+#if
+  equal I0 53
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+并且你还将获得你的隐藏宝物：藏宝图204\
+#if
+  equal I0 54
+#act
+#say
+这次你能获得怪物给你带来的：黑铁头盔:1\
+并且你还将获得你的隐藏宝物：藏宝图205\
+#if
+  equal I0 55
+#act
+#say
+这次你能获得怪物给你带来的：灵魂项链:1\
+并且你还将获得你的隐藏宝物：藏宝图206\
+#if
+  equal I0 56
+#act
+#say
+这次你能获得怪物给你带来的：力量戒指:1\
+并且你还将获得你的隐藏宝物：藏宝图207\
+#if
+  equal I0 57
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：藏宝图208\
+#if
+  equal I0 58
+#act
+#say
+这次你能获得怪物给你带来的：经验:550000\
+并且你还将获得你的隐藏宝物：藏宝图209\
+#if
+  equal I0 59
+#act
+#say
+这次你能获得怪物给你带来的：绿色项链:1\
+并且你还将获得你的隐藏宝物：藏宝图210\
+#if
+  equal I0 60
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图211\
+#if
+  equal I0 61
+#act
+#say
+这次你能获得怪物给你带来的：紫碧螺:1\
+并且你还将获得你的隐藏宝物：藏宝图212\
+#if
+  equal I0 62
+#act
+#say
+这次你能获得怪物给你带来的：泰坦戒指:1\
+并且你还将获得你的隐藏宝物：藏宝图213\
+#if
+  equal I0 63
+#act
+#say
+这次你能获得怪物给你带来的：三眼手镯:1\
+并且你还将获得你的隐藏宝物：藏宝图214\
+#if
+  equal I0 64
+#act
+#say
+这次你能获得怪物给你带来的：骑士手镯:1\
+并且你还将获得你的隐藏宝物：藏宝图215\
+#if
+  equal I0 65
+#act
+#say
+这次你能获得怪物给你带来的：龙之手镯:1\
+并且你还将获得你的隐藏宝物：藏宝图216\
+#if
+  equal I0 66
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：藏宝图217\
+#if
+  equal I0 67
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:9\
+并且你还将获得你的隐藏宝物：藏宝图218\
+#if
+  equal I0 68
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+并且你还将获得你的隐藏宝物：藏宝图219\
+#if
+  equal I0 69
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:7\
+并且你还将获得你的隐藏宝物：藏宝图220\
+#if
+  equal I0 70
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:6\
+并且你还将获得你的隐藏宝物：藏宝图301\
+#if
+  equal I0 71
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+并且你还将获得你的隐藏宝物：藏宝图302\
+#if
+  equal I0 72
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:4\
+并且你还将获得你的隐藏宝物：藏宝图303\
+#if
+  equal I0 73
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图304\
+#if
+  equal I0 74
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图305\
+#if
+  equal I0 75
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图306\
+#if
+  equal I0 76
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:2\
+并且你还将获得你的隐藏宝物：藏宝图307\
+#if
+  equal I0 77
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:1\
+并且你还将获得你的隐藏宝物：藏宝图308\
+#if
+  equal I0 78
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图309\
+#if
+  equal I0 79
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图310\
+#if
+  equal I0 80
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图311\
+#if
+  equal I0 81
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图312\
+#if
+  equal I0 82
+#act
+#say
+这次你能获得怪物给你带来的：经验:150000\
+并且你还将获得你的隐藏宝物：藏宝图313\
+#if
+  equal I0 83
+#act
+#say
+这次你能获得怪物给你带来的：经验:250000\
+并且你还将获得你的隐藏宝物：藏宝图314\
+#if
+  equal I0 84
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图315\
+#if
+  equal I0 85
+#act
+#say
+这次你能获得怪物给你带来的：经验:450000\
+并且你还将获得你的隐藏宝物：藏宝图316\
+#if
+  equal I0 86
+#act
+#say
+这次你能获得怪物给你带来的：经验:550000\
+并且你还将获得你的隐藏宝物：藏宝图317\
+#if
+  equal I0 87
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:10\
+并且你还将获得你的隐藏宝物：藏宝图318\
+#if
+  equal I0 88
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:9\
+并且你还将获得你的隐藏宝物：藏宝图319\
+#if
+  equal I0 89
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+并且你还将获得你的隐藏宝物：藏宝图320\
+#if
+  equal I0 90
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:7\
+并且你还将获得你的隐藏宝物：藏宝图321\
+#if
+  equal I0 91
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:6\
+并且你还将获得你的隐藏宝物：藏宝图322\
+#if
+  equal I0 92
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+并且你还将获得你的隐藏宝物：藏宝图323\
+#if
+  equal I0 93
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:4\
+并且你还将获得你的隐藏宝物：藏宝图324\
+#if
+  equal I0 94
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+并且你还将获得你的隐藏宝物：藏宝图325\
+#if
+  equal I0 95
+#act
+#say
+这次你能获得怪物给你带来的：声望:6\
+并且你还将获得你的隐藏宝物：藏宝图326\
+#if
+  equal I0 96
+#act
+#say
+这次你能获得怪物给你带来的：声望:5\
+并且你还将获得你的隐藏宝物：藏宝图301\
+#if
+  equal I0 97
+#act
+#say
+这次你能获得怪物给你带来的：声望:4\
+并且你还将获得你的隐藏宝物：藏宝图302\
+#if
+  equal I0 98
+#act
+#say
+这次你能获得怪物给你带来的：声望:3\
+并且你还将获得你的隐藏宝物：藏宝图303\
+#if
+  equal I0 99
+#act
+#say
+这次你能获得怪物给你带来的：声望:2\
+并且你还将获得你的隐藏宝物：藏宝图304\
+#if
+  equal I0 100
+#act
+#say
+这次你能获得怪物给你带来的：声望:1\
+并且你还将获得你的隐藏宝物：藏宝图305\
+#if
+  equal I0 101
+#act
+#say
+这次你能获得怪物给你带来的：幽灵项链:1\
+并且你还将获得你的隐藏宝物：藏宝图306\
+#if
+  equal I0 102
+#act
+#say
+这次你能获得怪物给你带来的：天珠项链:1\
+并且你还将获得你的隐藏宝物：藏宝图307\
+#if
+  equal I0 103
+#act
+#say
+这次你能获得怪物给你带来的：心灵手镯:1\
+并且你还将获得你的隐藏宝物：藏宝图308\
+#if
+  equal I0 104
+#act
+#say
+这次你能获得怪物给你带来的：龙之手镯:1\
+并且你还将获得你的隐藏宝物：藏宝图309\
+#if
+  equal I0 105
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图310\
+#if
+  equal I0 106
+#act
+#say
+这次你能获得怪物给你带来的：黑铁头盔:1\
+并且你还将获得你的隐藏宝物：藏宝图311\
+#if
+  equal I0 107
+#act
+#say
+这次你能获得怪物给你带来的：记忆头盔:1\
+并且你还将获得你的隐藏宝物：藏宝图312\
+#if
+  equal I0 108
+#act
+#say
+这次你能获得怪物给你带来的：生命项链:1\
+并且你还将获得你的隐藏宝物：藏宝图313\
+#if
+  equal I0 109
+#act
+#say
+这次你能获得怪物给你带来的：祝福油:3\
+并且你还将获得你的隐藏宝物：藏宝图314\
+#if
+  equal I0 110
+#act
+#say
+这次你能获得怪物给你带来的：恶魔铃铛:1\
+并且你还将获得你的隐藏宝物：藏宝图315\
+#if
+  equal I0 111
+#act
+#say
+这次你能获得怪物给你带来的：经验:350000\
+并且你还将获得你的隐藏宝物：藏宝图316\
+#if
+  equal I0 112
+#act
+#say
+这次你能获得怪物给你带来的：力量戒指:1\
+并且你还将获得你的隐藏宝物：天魔神甲\
+#if
+  equal I0 113
+#act
+#say
+这次你能获得怪物给你带来的：泰坦戒指:1\
+并且你还将获得你的隐藏宝物：圣战宝甲\
+#if
+  equal I0 114
+#act
+#say
+这次你能获得怪物给你带来的：泰坦戒指:1\
+并且你还将获得你的隐藏宝物：法神披风\
+#if
+  equal I0 115
+#act
+#say
+这次你能获得怪物给你带来的：三眼手镯:1\
+并且你还将获得你的隐藏宝物：法神披风\
+#if
+  equal I0 116
+#act
+#say
+这次你能获得怪物给你带来的：骑士手镯:1\
+并且你还将获得你的隐藏宝物：霓裳羽衣\
+#if
+  equal I0 117
+#act
+#say
+这次你能获得怪物给你带来的：紫碧螺:1\
+并且你还将获得你的隐藏宝物：天尊道袍\
+#if
+  equal I0 118
+#act
+#say
+这次你能获得怪物给你带来的：龙之手镯:1\
+并且你还将获得你的隐藏宝物：天师长袍\
+#if
+  equal I0 119
+#act
+#say
+这次你能获得怪物给你带来的：红宝石戒指:1\
+并且你还将获得你的隐藏宝物：圣战头盔\
+#if
+  equal I0 120
+#act
+#say
+这次你能获得怪物给你带来的：思贝儿手镯:1\
+并且你还将获得你的隐藏宝物：圣战项链\
+#if
+  equal I0 121
+#act
+#say
+这次你能获得怪物给你带来的：龙之戒指:1\
+并且你还将获得你的隐藏宝物：圣战手镯\
+#if
+  equal I0 122
+#act
+#say
+这次你能获得怪物给你带来的：铂金戒指:1\
+并且你还将获得你的隐藏宝物：圣战戒指\
+#if
+  equal I0 123
+#act
+#say
+这次你能获得怪物给你带来的：思贝儿手镯:1\
+并且你还将获得你的隐藏宝物：法神头盔\
+#if
+  equal I0 124
+#act
+#say
+这次你能获得怪物给你带来的：三眼手镯:1\
+并且你还将获得你的隐藏宝物：法神项链\
+#if
+  equal I0 125
+#act
+#say
+这次你能获得怪物给你带来的：泰坦戒指:1\
+并且你还将获得你的隐藏宝物：法神手镯\
+#if
+  equal I0 126
+#act
+#say
+这次你能获得怪物给你带来的：紫碧螺:1\
+并且你还将获得你的隐藏宝物：法神戒指\
+#if
+  equal I0 127
+#act
+#say
+这次你能获得怪物给你带来的：幽灵手套:1\
+并且你还将获得你的隐藏宝物：天尊头盔\
+#if
+  equal I0 128
+#act
+#say
+这次你能获得怪物给你带来的：阎罗手套:1\
+并且你还将获得你的隐藏宝物：天尊项链\
+#if
+  equal I0 129
+#act
+#say
+这次你能获得怪物给你带来的：幽灵项链:1\
+并且你还将获得你的隐藏宝物：天尊手镯\
+#if
+  equal I0 130
+#act
+#say
+这次你能获得怪物给你带来的：天珠项链:1\
+并且你还将获得你的隐藏宝物：天尊戒指\
+#if
+  equal I0 131
+#act
+#say
+这次你能获得怪物给你带来的：黑铁头盔:1\
+#if
+  equal I0 132
+#act
+#say
+这次你能获得怪物给你带来的：绿色项链:1\
+并且你还将获得你的隐藏宝物：天之裁决\
+#if
+  equal I0 133
+#act
+#say
+这次你能获得怪物给你带来的：骑士手镯:1\
+#if
+  equal I0 134
+#act
+#say
+这次你能获得怪物给你带来的：力量戒指:1\
+#if
+  equal I0 135
+#act
+#say
+这次你能获得怪物给你带来的：记忆项链:1\
+#if
+  equal I0 136
+#act
+#say
+这次你能获得怪物给你带来的：阎罗手套:1\
+#if
+  equal I0 137
+#act
+#say
+这次你能获得怪物给你带来的：灵魂项链:1\
+并且你还将获得你的隐藏宝物：天之龙纹\
+#if
+  equal I0 138
+#act
+#say
+这次你能获得怪物给你带来的：三眼手镯:1\
+#if
+  equal I0 139
+#act
+#say
+这次你能获得怪物给你带来的：泰坦戒指:1\
+#if
+  equal I0 140
+#act
+#say
+这次你能获得怪物给你带来的：恶魔铃铛:1\
+并且你还将获得你的隐藏宝物：天之骨玉权杖\
+#if
+  equal I0 141
+#act
+#say
+这次你能获得怪物给你带来的：龙之手镯:1\
+#if
+  equal I0 142
+#act
+#say
+这次你能获得怪物给你带来的：紫碧螺:1\
+#if
+  equal I0 143
+#act
+#say
+这次你能获得怪物给你带来的：幽灵项链:1\
+#if
+  equal I0 144
+#act
+#say
+这次你能获得怪物给你带来的：天珠项链:1\
+#if
+  equal I0 145
+#act
+#say
+这次你能获得怪物给你带来的：生命项链:1\
+#if
+  equal I0 146
+#act
+#say
+这次你能获得怪物给你带来的：幽灵手套:1\
+#if
+  equal I0 147
+#act
+#say
+这次你能获得怪物给你带来的：心灵手镯:1\
+#if
+  equal I0 148
+#act
+#say
+这次你能获得怪物给你带来的：思贝儿手镯:1\
+#if
+  equal I0 149
+#act
+#say
+这次你能获得怪物给你带来的：龙之戒指:1\
+#if
+  equal I0 150
+#act
+#say
+这次你能获得怪物给你带来的：铂金戒指:1\
+#if
+  equal I0 151
+#act
+#say
+这次你能获得怪物给你带来的：红宝石戒指:1\
+#if
+  equal I0 152
+#act
+#say
+这次你能获得怪物给你带来的：声望:8\
+#if
+  equal I0 153
+#act
+#say
+这次你能获得怪物给你带来的：声望:5\
+#if
+  equal I0 154
+#act
+#say
+这次你能获得怪物给你带来的：声望:3\
+#if
+  equal I0 155
+#act
+#say
+这次你能获得怪物给你带来的：雷泽项链(封印):2\
+并且你还将获得你的隐藏宝物：启源戒指(封印):1\
+#if
+  equal I0 156
+#act
+#say
+这次你能获得怪物给你带来的：雷泽手镯(封印):1\
+并且你还将获得你的隐藏宝物：启源项链(封印):2\
+#if
+  equal I0 157
+#act
+#say
+这次你能获得怪物给你带来的：雷泽戒指(封印):2\
+并且你还将获得你的隐藏宝物：唤魔项链(封印):2\
+#if
+  equal I0 158
+#act
+#say
+这次你能获得怪物给你带来的：启源手镯(封印):2\
+并且你还将获得你的隐藏宝物：唤魔戒指(封印):1\
+#if
+  equal I0 159
+#act
+#say
+这次你能获得怪物给你带来的：唤魔手镯(封印):2\
+并且你还将获得你的隐藏宝物：黑铁头盔(封印):1\
+#if
+  equal I0 160
+#act
+#say
+这次你能获得怪物给你带来的：书页:5\
+并且你还将获得你的隐藏宝物：黑铁头盔(封印):1\
+#if
+  equal I0 161
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:8\
+#if
+  equal I0 162
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:5\
+#if
+  equal I0 163
+#act
+#say
+这次你能获得怪物给你带来的：金刚石:3\
+#if
+  equal I0 164
+#act
+#say
+这次你能获得怪物给你带来的：经验:580000\
+#if
+  equal I0 165
+#act
+#say
+这次你能获得怪物给你带来的：经验:650000\
+#if
+  equal I0 166
+#act
+#say
+这次你能获得怪物给你带来的：经验:640000\
+#if
+  equal I0 167
+#act
+#say
+这次你能获得怪物给你带来的：经验:720000\
+#if
+  equal I0 168
+#act
+#say
+这次你能获得怪物给你带来的：经验:700000\
+#if
+  equal I0 169
+#act
+#say
+这次你能获得怪物给你带来的：经验:880000\
+#if
+  equal I0 170
+#act
+#say
+这次你能获得怪物给你带来的：经验:860000\
+#if
+  equal I0 171
+#act
+#say
+这次你能获得怪物给你带来的：经验:940000\
+#if
+  equal I0 172
+#act
+#say
+这次你能获得怪物给你带来的：经验:920000\
+#if
+  equal I0 173
+#act
+#say
+这次你能获得怪物给你带来的：经验:1000000\
+
+#if
+  equal I1 1
+#act
+#say
+当然你必须消灭里面所有的：蜈蚣:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 2
+#act
+#say
+当然你必须消灭里面所有的：跳跳蜂:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 3
+#act
+#say
+当然你必须消灭里面所有的：巨型蠕虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 4
+#act
+#say
+当然你必须消灭里面所有的：蜈蚣:1/黑色恶蛆:1\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 5
+#act
+#say
+当然你必须消灭里面所有的：跳跳蜂:1/蜈蚣:1\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 6
+#act
+#say
+当然你必须消灭里面所有的：牛魔法师:2/火焰沃玛:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 7
+#act
+#say
+当然你必须消灭里面所有的：骷髅精灵:2/火焰沃玛:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 8
+#act
+#say
+当然你必须消灭里面所有的：黑色恶蛆:2/巨型蠕虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 9
+#act
+#say
+当然你必须消灭里面所有的：沃玛战士:2/黑色恶蛆:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 10
+#act
+#say
+当然你必须消灭里面所有的：骷髅精灵:2/巨型蠕虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 11
+#act
+#say
+当然你必须消灭里面所有的：沃玛勇士:2/楔蛾:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 12
+#act
+#say
+当然你必须消灭里面所有的：火焰沃玛:2/巨型蠕虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 13
+#act
+#say
+当然你必须消灭里面所有的：骷髅长枪兵:2/骷髅锤兵:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 14
+#act
+#say
+当然你必须消灭里面所有的：大老鼠:2/蝎蛇:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 15
+#act
+#say
+当然你必须消灭里面所有的：骷髅长枪兵:2/蝎蛇:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 16
+#act
+#say
+当然你必须消灭里面所有的:楔蛾:2/火焰沃玛:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 17
+#act
+#say
+当然你必须消灭里面所有的：尸王:2/蝎蛇:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 18
+#act
+#say
+当然你必须消灭里面所有的：跳跳蜂:2/巨型蠕虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 19
+#act
+#say
+当然你必须消灭里面所有的：红野猪:2/黑野猪:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+#if
+  equal I1 20
+#act
+#say
+当然你必须消灭里面所有的：黑色恶蛆:2/钳虫:2\
+如果您觉得本关难道太高，或对宝藏不满意，\
+给我一张灵符，我就直接送您去下一关\ \
+
+<使用灵符进入下一关/@jinrutong>         <接受挑战/@tiaozhan>
+
+[@hueitu]
+#ACT
+map TT
+
+[@tiaozhan]
+#if
+check [088] 1
+#act
+break
+close
+#SAY
+你已经接受挑战过了，所以你不能再进行挑战了。
+
+#if
+check [088] 0
+#act
+set [088] 1
+
+#if
+  equal I1 1
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 蜈蚣 2 3
+  break
+close
+#if
+  equal I1 2
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 跳跳蜂 2 3
+  break
+close
+#if
+  equal I1 3
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 巨型蠕虫 2 3
+  break
+close
+#if
+  equal I1 4
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 蜈蚣 1 3
+  MonGen 黑色恶蛆 1 3
+  break
+close
+#if
+  equal I1 5
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 跳跳蜂 1 3
+  MonGen 蜈蚣 1 3
+  break
+close
+#if
+  equal I1 6
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 牛魔法师 2 3
+  MonGen 火焰沃玛 2 3
+  break
+close
+#if
+  equal I1 7
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 骷髅精灵 2 3
+  MonGen 火焰沃玛 2 3
+  break
+close
+#if
+  equal I1 8
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 黑色恶蛆 2 3
+  MonGen 巨型蠕虫 2 3
+  break
+close
+#if
+  equal I1 9
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 沃玛战士 2 3
+  MonGen 黑色恶蛆 2 3
+  break
+close
+#if
+  equal I1 10
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 骷髅精灵 2 3
+  MonGen 巨型蠕虫 2 3
+  break
+close
+#if
+  equal I1 11
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 沃玛勇士 2 3
+  MonGen 楔蛾 2 5
+  break
+close
+#if
+  equal I1 12
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 火焰沃玛 2 3
+  MonGen 巨型蠕虫 2 3
+  break
+close
+#if
+  equal I1 13
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 骷髅长枪兵 2 3
+  MonGen 骷髅锤兵 2 3
+  break
+close
+#if
+  equal I1 14
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 大老鼠 2 3
+  MonGen 蝎蛇 2 3
+  break
+close
+#if
+  equal I1 15
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 骷髅长枪兵 2 3
+  MonGen 蝎蛇 2 5
+  break
+close
+#if
+  equal I1 16
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 楔蛾 2 3
+  MonGen 火焰沃玛 2 4
+  break
+close
+#iF
+  equal I1 17
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 尸王 2 3
+  MonGen 蝎蛇 2 3
+  break
+close
+#if
+  equal I1 18
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 跳跳蜂 2 5
+  MonGen 巨型蠕虫 2 2
+  break
+close
+#if
+  equal I1 19
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 红野猪 2 5
+  MonGen 黑野猪 2 5
+  break
+close
+#if
+  equal I1 20
+#act
+  Param1 <$MAP>
+  Param2 20
+  Param3 30
+  MonGen 黑色恶蛆 2 3
+  MonGen 钳虫 2 3
+  break
+close
+
+[@GatGift]
+只有消灭完房间里的所有怪物，才算是挑战成功。\
+在领取宝物前，请您确认您包裹里有足够的空间放置宝藏。\ \
+<准备好了，领取宝物/@getprize>\
+
+[@getprize]
+#if
+check [087] 1
+#act
+  SENDMSG 6 你已经领取过宝藏了。
+  break
+close
+
+#if
+check [088] 0
+#act
+  SENDMSG 6 你还没有挑战此关怪物，请将此关怪物清理后再来领取
+  break
+close
+
+#if
+CheckRangeMonCount <$MAP> 22 26 10 > 0
+#act
+  break
+#SAY
+这里的怪物还没有清理完，清理完后再来领取宝藏吧！
+
+#if
+  equal I0 1
+#act
+  give 战神项链 1
+  GAMEDIAMOND + 10
+  SENDMSG 0 恭喜：%s 在闯天关活动中获得了：战神项链　如您也想参加，请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]
+
+#if
+  equal I0 2
+#act
+  ChangeExp + 500000
+  give 战神戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：战神戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:500000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:500000]\
+
+#if
+  equal I0 3
+#act
+  CreditPoint + 5
+  give 战神手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：战神手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:5]\
+
+#if
+  equal I0 4
+#act
+  CreditPoint + 6
+  give 圣魔项链 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣魔项链　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:6]\
+
+#if
+  equal I0 5
+#act
+  ChangeExp + 500000
+  give 圣魔戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣魔戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:500000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:500000]\
+
+#if
+  equal I0 6
+#act
+  GAMEDIAMOND + 10
+  give 圣魔手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣魔手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+  equal I0 7
+#act
+  ChangeExp + 500000
+  give 真魂项链 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：真魂项链　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:500000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:500000]\
+
+#if
+  equal I0 8
+#act
+  CreditPoint + 6
+  give 真魂戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：真魂戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:6]\
+
+#if
+  equal I0 9
+#act
+  GAMEDIAMOND + 10
+  give 真魂手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：真魂手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+  equal I0 10
+#act
+  give 绿色项链 1
+  give 藏宝图001 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图001　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[绿色项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[绿色项链:1]\
+
+#if
+  equal I0 11
+#act
+  give 灵魂项链 1
+  give 藏宝图002 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图002　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[灵魂项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[灵魂项链:1]\
+
+#if
+  equal I0 12
+#act
+  give 恶魔铃铛 1
+  give 藏宝图003 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图003　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[恶魔铃铛:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[恶魔铃铛:1]\
+
+#if
+  equal I0 13
+#act
+  GAMEDIAMOND + 8
+  give 藏宝图004 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图004　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 14
+#act
+  CreditPoint + 6
+  give 藏宝图005 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图005　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:6]\
+
+#if
+  equal I0 15
+#act
+  ChangeExp + 300000
+  give 藏宝图006 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图006　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:300000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:300000]\
+
+#if
+  equal I0 16
+#act
+  give 祝福油 3
+  give 藏宝图007 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图007　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 17
+#act
+  give 祝福油 3
+  give 藏宝图008 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图008　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 18
+#act
+  ChangeExp + 300000
+  give 藏宝图009 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图009　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:300000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:300000]\
+
+#if
+  equal I0 19
+#act
+  CreditPoint + 6
+  give 藏宝图010 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图010　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:6]\
+
+#if
+  equal I0 20
+#act
+  GAMEDIAMOND + 5
+  give 藏宝图011 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图011　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 21
+#act
+  ChangeExp + 380000
+  give 藏宝图012 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图012　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:380000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:380000]\
+
+#if
+  equal I0 22
+#act
+  ChangeExp + 280000
+  give 藏宝图013 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图013　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:280000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:280000]\
+
+#if
+  equal I0 23
+#act
+  ChangeExp + 250000
+  give 藏宝图014 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图014　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:500000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:500000]\
+
+#if
+  equal I0 24
+#act
+  CreditPoint + 3
+  give 藏宝图015 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图015　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:3]\
+
+#if
+  equal I0 25
+#act
+  GAMEDIAMOND + 6
+  give 藏宝图016 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图016　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:6]\
+
+#if
+  equal I0 26
+#act
+  CreditPoint + 4
+  give 藏宝图017 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图017　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:4]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:4]\
+
+#if
+  equal I0 27
+#act
+  CreditPoint + 5
+  give 藏宝图018 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图018　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:5]\
+
+#if
+  equal I0 28
+#act
+  ChangeExp + 650000
+  give 藏宝图019 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图019　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:650000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:650000]\
+
+#if
+  equal I0 29
+#act
+  GAMEDIAMOND + 5
+  give 藏宝图020 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图020　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 30
+#act
+  ChangeExp + 450000
+  give 藏宝图101 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图101　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:450000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:450000]\
+
+#if
+  equal I0 31
+#act
+  ChangeExp + 350000
+  give 藏宝图102 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图102　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 32
+#act
+  GAMEDIAMOND + 8
+  give 藏宝图103 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图103　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 33
+#act
+  ChangeExp + 150000
+  give 藏宝图104 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图104　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:150000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:150000]\
+
+#if
+  equal I0 34
+#act
+  give 祝福油 1
+  give 藏宝图105 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图105　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:1]\
+
+#if
+  equal I0 35
+#act
+  give 祝福油 2
+  give 藏宝图106 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图106　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:2]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:2]\
+
+#if
+  equal I0 36
+#act
+  GAMEDIAMOND + 6
+  give 藏宝图107 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图107　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:6]\
+
+#if
+  equal I0 37
+#act
+  give 祝福油 3
+  give 藏宝图108 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图108　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 38
+#act
+  give 裁决之杖 1
+  give 藏宝图109 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图109　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[裁决之杖:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[裁决之杖:1]\
+
+#if
+  equal I0 39
+#act
+  give 骨于权杖 1
+  give 藏宝图110 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图110　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[骨于权杖:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[骨于权杖:1]\
+
+#if
+  equal I0 40
+#act
+  give 龙纹剑 1
+  give 藏宝图111 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图111　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[龙纹剑:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙纹剑:1]\
+
+#if
+  equal I0 41
+#act
+  give 天之裁决 1
+  give 藏宝图112 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图112　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[天之裁决:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天之裁决:1\
+
+#if
+  equal I0 42
+#act
+  give 天之骨于权杖 1
+  give 藏宝图113 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图113　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[天之骨于权杖:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天之骨于权杖:1]\
+
+#if
+  equal I0 43
+#act
+  give 天之龙纹 1
+  give 藏宝图114 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图114　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[天之龙纹:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天之龙纹:1]\
+
+#if
+  equal I0 44
+#act
+  give 祝福油 3
+  give 藏宝图115 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图115　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 45
+#act
+  give 祝福油 3
+  give 藏宝图116 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图116　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 46
+#act
+  give 力量戒指 1
+  give 藏宝图117 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图117　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[力量戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+  equal I0 47
+#act
+  give 祝福油 3
+  give 藏宝图118 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图118　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 48
+#act
+  ChangeExp + 550000
+  give 藏宝图119 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图119　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:550000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:550000]\
+
+#if
+  equal I0 49
+#act
+  GAMEDIAMOND + 5
+  give 藏宝图120 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图120　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 50
+#act
+  ChangeExp + 350000
+  give 藏宝图201 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图201　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 51
+#act
+  ChangeExp + 250000
+  give 藏宝图202 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图202　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:250000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:250000]\
+
+#if
+  equal I0 52
+#act
+  ChangeExp + 150000
+  give 藏宝图203 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图203　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:150000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:150000]\
+
+#if
+  equal I0 53
+#act
+  GAMEDIAMOND + 8
+  give 藏宝图204 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图204　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 54
+#act
+  give 黑铁头盔 1
+  give 藏宝图205 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图205　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[黑铁头盔:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[黑铁头盔:1]\
+
+#if
+  equal I0 55
+#act
+  give 灵魂项链 1
+  give 藏宝图206 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图206　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[灵魂项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[灵魂项链:1]\
+
+#if
+  equal I0 56
+#act
+  give 力量戒指 1
+  give 藏宝图207 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图207　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[力量戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+  equal I0 57
+#act
+  GAMEDIAMOND + 10
+  give 藏宝图208 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图208　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+  equal I0 58
+#act
+  ChangeExp + 550000
+  give 藏宝图209 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图209　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:550000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:550000]\
+
+#if
+  equal I0 59
+#act
+  give 绿色项链 1
+  give 藏宝图210 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图210　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[绿色项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[绿色项链:1]\
+
+#if
+  equal I0 60
+#act
+  ChangeExp + 350000
+  give 藏宝图211 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图211　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 61
+#act
+  give 紫碧螺 1
+  give 藏宝图212 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图212　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[紫碧螺:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[紫碧螺:1]\
+
+#if
+  equal I0 62
+#act
+  give 泰坦戒指 1
+  give 藏宝图213 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图213　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[泰坦戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+  equal I0 63
+#act
+  give 三眼手镯 1
+  give 藏宝图214 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图214　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[三眼手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[三眼手镯:1]\
+
+#if
+  equal I0 64
+#act
+  give 骑士手镯 1
+  give 藏宝图215 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图215　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[骑士手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[骑士手镯:1]\
+
+#if
+  equal I0 65
+#act
+  give 龙之手镯 1
+  give 藏宝图216 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图216　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[龙之手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之手镯:1]\
+
+#if
+  equal I0 66
+#act
+  GAMEDIAMOND + 10
+  give 藏宝图217 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图217　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+  equal I0 67
+#act
+  GAMEDIAMOND + 9
+  give 藏宝图218 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图218　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:9]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:9]\
+
+#if
+  equal I0 68
+#act
+  GAMEDIAMOND + 8
+  give 藏宝图219 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图219　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 69
+#act
+  GAMEDIAMOND + 7
+  give 藏宝图220 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图220　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:7]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:7]\
+
+#if
+  equal I0 70
+#act
+  GAMEDIAMOND + 6
+  give 藏宝图301 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图301　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:6]\
+
+#if
+  equal I0 71
+#act
+  GAMEDIAMOND + 5
+  give 藏宝图302 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图302　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 72
+#act
+  GAMEDIAMOND + 4
+  give 藏宝图303 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图303　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:4]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:4]\
+
+#if
+  equal I0 73
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图304 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图304　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 74
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图305 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图305　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 75
+#act
+  give 祝福油 3
+  give 藏宝图306 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图306　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 76
+#act
+  give 祝福油 2
+  give 藏宝图307 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图307　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:2]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:2]\
+
+#if
+  equal I0 77
+#act
+  give 祝福油 1
+  give 藏宝图308 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图308　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:1]\
+
+#if
+  equal I0 78
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图309 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图309　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 79
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图310 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图310　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 80
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图311 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图311　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 81
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图312 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图312　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 82
+#act
+  ChangeExp + 150000
+  give 藏宝图313 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图313　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:150000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:150000]\
+
+#if
+  equal I0 83
+#act
+  ChangeExp + 250000
+  give 藏宝图314 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图314　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:250000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:250000]\
+
+#if
+  equal I0 84
+#act
+  ChangeExp + 350000
+  give 藏宝图315 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图315　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 85
+#act
+  ChangeExp + 450000
+  give 藏宝图316 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图316　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:450000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:450000]\
+
+#if
+  equal I0 86
+#act
+  ChangeExp + 550000
+  give 藏宝图317 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图317　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:550000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:550000]\
+
+#if
+  equal I0 87
+#act
+  GAMEDIAMOND + 10
+  give 藏宝图318 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图318　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:10]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:10]\
+
+#if
+  equal I0 88
+#act
+  GAMEDIAMOND + 9
+  give 藏宝图319 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图319　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:9]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:9]\
+
+#if
+  equal I0 89
+#act
+  GAMEDIAMOND + 8
+  give 藏宝图320 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图320　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 90
+#act
+  GAMEDIAMOND + 7
+  give 藏宝图321 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图321　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:7]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:7]\
+
+#if
+  equal I0 91
+#act
+  GAMEDIAMOND + 6
+  give 藏宝图322 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图322　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:6]\
+
+#if
+  equal I0 92
+#act
+  GAMEDIAMOND + 5
+  give 藏宝图323 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图323　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 93
+#act
+  GAMEDIAMOND + 4
+  give 藏宝图324 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图324　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:4]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:4]\
+
+#if
+  equal I0 94
+#act
+  GAMEDIAMOND + 3
+  give 藏宝图325 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图325　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 95
+#act
+  CreditPoint + 6
+  give 藏宝图326 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图326　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:6]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:6]\
+
+#if
+  equal I0 96
+#act
+  CreditPoint + 5
+  give 藏宝图301 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图301　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:5]\
+
+#if
+  equal I0 97
+#act
+  CreditPoint + 4
+  give 藏宝图302 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图302　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:4]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:4]\
+
+#if
+  equal I0 98
+#act
+  CreditPoint + 3
+  give 藏宝图303 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图303　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:3]\
+
+#if
+  equal I0 99
+#act
+  CreditPoint + 2
+  give 藏宝图304 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图304　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:2]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:2]\
+
+#if
+  equal I0 100
+#act
+  CreditPoint + 1
+  give 藏宝图305 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图305　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[声望:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:1]\
+
+#if
+  equal I0 101
+#act
+  give 幽灵项链 1
+  give 藏宝图306 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图306　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[幽灵项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[幽灵项链:1]\
+
+#if
+  equal I0 102
+#act
+  give 天珠项链 1
+  give 藏宝图307 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图307　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[天珠项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天珠项链:1]\
+
+#if
+  equal I0 103
+#act
+  give 心灵手镯 1
+  give 藏宝图308 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图308　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[心灵手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[心灵手镯:1]\
+
+#if
+  equal I0 104
+#act
+  give 龙之手镯 1
+  give 藏宝图309 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图309　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[龙之手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之手镯:1]\
+
+#if
+  equal I0 105
+#act
+  ChangeExp + 350000
+  give 藏宝图310 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图310　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 106
+#act
+  give 黑铁头盔 1
+  give 藏宝图311 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图311　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[黑铁头盔:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[黑铁头盔:1]\
+
+#if
+  equal I0 107
+#act
+  give 记忆头盔 1
+  give 藏宝图312 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图312　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[记忆头盔:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[记忆头盔:1]\
+
+#if
+  equal I0 108
+#act
+  give 生命项链 1
+  give 藏宝图313 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图313　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[生命项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[生命项链:1]\
+
+#if
+  equal I0 109
+#act
+  give 祝福油 3
+  give 藏宝图314 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图314　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[祝福油:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[祝福油:3]\
+
+#if
+  equal I0 110
+#act
+  give 恶魔铃铛 1
+  give 藏宝图315 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图315　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[恶魔铃铛:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[恶魔铃铛:1]\
+
+#if
+  equal I0 111
+#act
+  ChangeExp + 350000
+  give 藏宝图316 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：藏宝图316　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[经验:350000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:350000]\
+
+#if
+  equal I0 112
+#act
+  give 力量戒指 1
+  give 天魔神甲 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天魔神甲　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[力量戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+  equal I0 113
+#act
+  give 泰坦戒指 1
+  give 圣战宝甲 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣战宝甲　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[泰坦戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+  equal I0 114
+#act
+  give 泰坦戒指 1
+  give 法神披风 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神披风　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[泰坦戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+  equal I0 115
+#act
+  give 三眼手镯 1
+  give 法神披风 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神披风　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[三眼手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[三眼手镯:1]\
+
+#if
+  equal I0 116
+#act
+  give 骑士手镯 1
+  give 霓裳羽衣 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：霓裳羽衣　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[骑士手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[骑士手镯:1]\
+
+#if
+  equal I0 117
+#act
+  give 紫碧螺 1
+  give 天尊道袍 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天尊道袍　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[紫碧螺:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[紫碧螺:1]\
+
+#if
+  equal I0 118
+#act
+  give 龙之手镯 1
+  give 天师长袍 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天师长袍　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[龙之手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之手镯:1]\
+
+#if
+  equal I0 119
+#act
+  give 红宝石戒指 1
+  give 圣战头盔 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣战头盔　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[红宝石戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[红宝石戒指:1]\
+
+#if
+  equal I0 120
+#act
+  give 思贝儿手镯 1
+  give 圣战项链 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣战项链　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[思贝儿手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[思贝儿手镯:1]\
+
+#if
+  equal I0 121
+#act
+  give 龙之戒指 1
+  give 圣战手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣战手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[龙之戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之戒指:1]\
+
+#if
+  equal I0 122
+#act
+  give 铂金戒指 1
+  give 圣战戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：圣战戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[铂金戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[铂金戒指:1]\
+
+#if
+  equal I0 123
+#act
+  give 思贝儿手镯 1
+  give 法神头盔 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神头盔　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[思贝儿手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[思贝儿手镯:1]\
+
+#if
+  equal I0 124
+#act
+  give 三眼手镯 1
+  give 法神项链 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神项链　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[三眼手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[三眼手镯:1]\
+
+#if
+  equal I0 125
+#act
+  give 泰坦戒指 1
+  give 法神手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[泰坦戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+  equal I0 126
+#act
+  give 紫碧螺 1
+  give 法神戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：法神戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[紫碧螺:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[紫碧螺:1]\
+
+#if
+  equal I0 127
+#act
+  give 幽灵手套 1
+  give 天尊头盔 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天尊头盔　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[幽灵手套:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[幽灵手套:1]\
+
+#if
+  equal I0 128
+#act
+  give 阎罗手套 1
+  give 天尊项链 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天尊项链　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[阎罗手套:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[阎罗手套:1]\
+
+#if
+  equal I0 129
+#act
+  give 幽灵项链 1
+  give 天尊手镯 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天尊手镯　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[幽灵项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[幽灵项链:1]\
+
+#if
+  equal I0 130
+#act
+  give 天珠项链 1
+  give 天尊戒指 1
+  SENDMSG 0 恭喜：%s　在闯天关活动中获得了：天尊戒指　如您也想参加,请和各地老兵对话，点击[闯天关]进入天庭即可！
+  SENDMSG 7 经过奋斗，你终于获得[天珠项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天珠项链:1]\
+
+#if
+  equal I0 131
+#act
+  give 黑铁头盔 1
+  SENDMSG 7 经过奋斗，你终于获得[黑铁头盔:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[黑铁头盔:1]\
+
+#if
+  equal I0 132
+#act
+  give 绿色项链 1
+  give 天之裁决 1
+  SENDMSG 7 经过奋斗，你终于获得[绿色项链:1]
+  SENDMSG 7 经过奋斗，你终于获得[天之裁决:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[绿色项链:1]\
+
+#if
+  equal I0 133
+#act
+  give 骑士手镯 1
+  SENDMSG 7 经过奋斗，你终于获得[骑士手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[骑士手镯:1]\
+
+#if
+  equal I0 134
+#act
+  give 力量戒指 1
+  SENDMSG 7 经过奋斗，你终于获得[力量戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[力量戒指:1]\
+
+#if
+  equal I0 135
+#act
+  give 记忆项链 1
+  SENDMSG 7 经过奋斗，你终于获得[记忆项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[记忆项链:1]\
+
+#if
+  equal I0 136
+#act
+  give 阎罗手套 1
+  SENDMSG 7 经过奋斗，你终于获得[阎罗手套:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[阎罗手套:1]\
+
+#if
+  equal I0 137
+#act
+  give 灵魂项链 1
+  give 天之龙纹 1
+  SENDMSG 7 经过奋斗，你终于获得[灵魂项链:1]
+  SENDMSG 7 经过奋斗，你终于获得[天之龙纹:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[灵魂项链:1]\
+
+#if
+  equal I0 138
+#act
+  give 三眼手镯 1
+  SENDMSG 7 经过奋斗，你终于获得[三眼手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[三眼手镯:1]\
+
+#if
+  equal I0 139
+#act
+  give 泰坦戒指 1
+  SENDMSG 7 经过奋斗，你终于获得[泰坦戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[泰坦戒指:1]\
+
+#if
+  equal I0 140
+#act
+  give 恶魔铃铛 1
+  give 天之骨玉权杖 1
+  SENDMSG 7 经过奋斗，你终于获得[恶魔铃铛:1]
+  SENDMSG 7 经过奋斗，你终于获得[天之骨玉权杖:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[恶魔铃铛:1]\
+
+#if
+  equal I0 141
+#act
+  give 龙之手镯 1
+  SENDMSG 7 经过奋斗，你终于获得[龙之手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之手镯:1]\
+
+#if
+  equal I0 142
+#act
+  give 紫碧螺 1
+  SENDMSG 7 经过奋斗，你终于获得[紫碧螺:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[紫碧螺:1]\
+
+#if
+  equal I0 143
+#act
+  give 幽灵项链 1
+  SENDMSG 7 经过奋斗，你终于获得[幽灵项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[幽灵项链:1]\
+
+#if
+  equal I0 144
+#act
+  give 天珠项链 1
+  SENDMSG 7 经过奋斗，你终于获得[天珠项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[天珠项链:1]\
+
+#if
+  equal I0 145
+#act
+  give 生命项链 1
+  SENDMSG 7 经过奋斗，你终于获得[生命项链:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[生命项链:1]\
+
+#if
+  equal I0 146
+#act
+  give 幽灵手套 1
+  SENDMSG 7 经过奋斗，你终于获得[幽灵手套:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[幽灵手套:1]\
+
+#if
+  equal I0 147
+#act
+  give 心灵手镯 1
+  SENDMSG 7 经过奋斗，你终于获得[心灵手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[心灵手镯:1]\
+
+#if
+  equal I0 148
+#act
+  give 思贝儿手镯 1
+  SENDMSG 7 经过奋斗，你终于获得[思贝儿手镯:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[思贝儿手镯:1]\
+
+#if
+  equal I0 149
+#act
+  give 龙之戒指 1
+  SENDMSG 7 经过奋斗，你终于获得[龙之戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[龙之戒指:1]\
+
+#if
+  equal I0 150
+#act
+  give 铂金戒指 1
+  SENDMSG 7 经过奋斗，你终于获得[铂金戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[铂金戒指:1]\
+
+#if
+  equal I0 151
+#act
+  give 红宝石戒指 1
+  SENDMSG 7 经过奋斗，你终于获得[红宝石戒指:1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[红宝石戒指:1]\
+
+#if
+  equal I0 152
+#act
+  CreditPoint + 8
+  SENDMSG 7 经过奋斗，你终于获得[声望:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:8]\
+
+#if
+  equal I0 153
+#act
+  CreditPoint + 5
+  SENDMSG 7 经过奋斗，你终于获得[声望:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:5]\
+
+#if
+  equal I0 154
+#act
+  CreditPoint + 3
+  SENDMSG 7 经过奋斗，你终于获得[声望:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[声望:3]\
+
+#if
+  equal I0 155
+#act
+  GIVE 雷泽项链(封印) 2
+  GIVE 启源戒指(封印) 1
+  SENDMSG 7 经过奋斗，你终于获得[雷泽项链(封印):2]
+  SENDMSG 7 经过奋斗，你终于获得[启源戒指(封印):1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[雷泽项链(封印):2]\
+
+#if
+  equal I0 156
+#act
+  GIVE 雷泽手镯(封印) 1
+  GIVE 启源项链(封印) 2
+  SENDMSG 7 经过奋斗，你终于获得[雷泽手镯(封印):1]
+  SENDMSG 7 经过奋斗，你终于获得[启源项链(封印):2]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[雷泽手镯(封印):1]\
+
+#if
+  equal I0 157
+#act
+  GIVE 雷泽戒指(封印) 2
+  GIVE 唤魔项链(封印) 2
+  SENDMSG 7 经过奋斗，你终于获得[雷泽戒指(封印):2]
+  SENDMSG 7 经过奋斗，你终于获得[唤魔项链(封印):2]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[雷泽戒指(封印):2]\
+
+#if
+  equal I0 158
+#act
+  GIVE 启源手镯(封印) 2
+  GIVE 唤魔戒指(封印) 1
+  SENDMSG 7 经过奋斗，你终于获得[启源手镯(封印):2]
+  SENDMSG 7 经过奋斗，你终于获得[唤魔戒指(封印):1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[启源手镯(封印):2]\
+
+#if
+  equal I0 159
+#act
+  GIVE 唤魔手镯(封印) 2
+  GIVE 黑铁头盔(封印) 1
+  SENDMSG 7 经过奋斗，你终于获得[唤魔手镯(封印):2]
+  SENDMSG 7 经过奋斗，你终于获得[黑铁头盔(封印):1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[唤魔手镯(封印):1]\
+
+#if
+  equal I0 160
+#act
+  GIVE 书页 5
+  GIVE 黑铁头盔(封印) 1
+  SENDMSG 7 经过奋斗，你终于获得[书页:5]
+  SENDMSG 7 经过奋斗，你终于获得[黑铁头盔(封印):1]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[书页:5]\
+
+#if
+  equal I0 161
+#act
+  GAMEDIAMOND + 8
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:8]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:8]\
+
+#if
+  equal I0 162
+#act
+  GAMEDIAMOND + 5
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:5]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:5]\
+
+#if
+  equal I0 163
+#act
+  GAMEDIAMOND + 3
+  SENDMSG 7 经过奋斗，你终于获得[金刚石:3]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[金刚石:3]\
+
+#if
+  equal I0 164
+#act
+  ChangeExp + 580000
+  SENDMSG 7 经过奋斗，你终于获得[经验:580000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:580000]\
+
+#if
+  equal I0 165
+#act
+  ChangeExp + 650000
+  SENDMSG 7 经过奋斗，你终于获得[经验:650000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:650000]\
+
+#if
+  equal I0 166
+#act
+  ChangeExp + 640000
+  SENDMSG 7 经过奋斗，你终于获得[经验:640000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:640000]\
+
+#if
+  equal I0 167
+#act
+  ChangeExp + 720000
+  SENDMSG 7 经过奋斗，你终于获得[经验:720000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:720000]\
+
+#if
+  equal I0 168
+#act
+  ChangeExp + 700000
+  SENDMSG 7 经过奋斗，你终于获得[经验:700000]
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:700000]\
+
+#if
+  equal I0 169
+#act
+  ChangeExp + 880000
+  SENDMSG 7 经过奋斗，你终于获得[经验:880000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:880000]\
+
+#if
+  equal I0 170
+#act
+  ChangeExp + 860000
+  SENDMSG 7 经过奋斗，你终于获得[经验:860000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:860000]\
+
+#if
+  equal I0 171
+#act
+  ChangeExp + 940000
+  SENDMSG 7 经过奋斗，你终于获得[经验:940000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:940000]\
+
+#if
+  equal I0 172
+#act
+  ChangeExp + 920000
+  SENDMSG 7 经过奋斗，你终于获得[经验:920000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:920000]\
+
+#if
+  equal I0 173
+#act
+  ChangeExp + 1000000
+  SENDMSG 7 经过奋斗，你终于获得[经验:1000000]\
+  SENDMSG 7 可能有更好的宝藏在下一关等着您哦!
+  goto @SJJIANGLI
+#say
+经过您的奋斗，您终于获得了[经验:1000000]\
+
+#if
+check [087] 0
+#act
+set [087] 1
+#say
+可能有更好的宝藏在下一关等着您哦！\
+您给我一张灵符，我可以直接带您进入下一关，您是否愿意？\ \
+<不，我要回天庭/@hueitu>          <是的，进入下一关/@jinrutong>
+
+[@SJJIANGLI]
+#IF
+  random 60
+#ACT
+  give 赤金天赐 1
+  GIVE 金币 200000
+  break
+#IF
+  random 50
+#ACT
+  give 白银天赐 1
+  GIVE 金币 100000
+  break
+#IF
+  random 30
+#ACT
+  give 紫铜天赐 1
+  GIVE 金币 50000
+  break
+
+[@jinrutong]
+#IF
+  CHECKGAMEGIRD > 0
+#ACT
+  set [087] 0
+  set [088] 0
+  mov I0 0
+  mov I1 0
+  mov I3 0
+  GAMEGIRD - 1
+  movr N50 1 10
+  goto @宝图
+  mapmove D5071A 11 13
+  break
+#ELSESAY
+你给我的灵符在哪呢？要不你先去兑换一些？\
+
+[@宝图]
+#IF
+equal N50 5
+#ACT
+sendmsg 0 恭喜%s获得了在天关换取藏宝图的机会.
+break
+}

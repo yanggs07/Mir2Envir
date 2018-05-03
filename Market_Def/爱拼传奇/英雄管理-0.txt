@@ -1,0 +1,506 @@
+(@@BuHero)
+[@main]
+
+带领一名英雄:<[创建英雄]/@@buHero>       <[删除英雄]/@删除英雄>\
+<[战士英雄技能书]/@mirhhyxjn01>  <[法师英雄技能书]/@mirhhyxjn02>  <[道士英雄技能书]/@mirhhyxjn03>\
+　　　\
+战士+战士合击：<[破 魂 斩]/@hj1>       道士+道士合击：<[噬魂沼泽]/@hj2>\
+法师+法师合击：<[火龙气焰]/@hj3>       战士+法师合击：<[雷霆一击]/@hj4>\
+道士+法师合击：<[末日审判]/@hj5>       战士+道士合击：<[劈星斩]/@hj6>\
+刺客+战士合击：<[灭日龙轰]/@CZ>       刺客+法师合击：<[赤炎星爆]/@CF>\
+刺客+道士合击：<[冲虚闪]/@CD>             <泡点升级/@开安全区泡点>       \   
+                       \
+
+
+
+[@开安全区泡点]
+#if
+CHECKLEVELEX < 500
+#act
+SetOnTimer  28 1
+BREAK
+#ELSEACT
+Messagebox  等级大于500级，不能开！
+
+
+
+[@CZ]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+ADDSKILL 灭日龙轰 3 HERO 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点　　\
+刺客+战士合击技能<灭日龙轰/FCOLOR=249>，已经学会了　\
+就可以修炼此技能，此技能打怪或打人都会增加技能　　\
+的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板可以　　\
+拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　\
+　\
+<好的,我这去找他/@exit>
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+
+[@CF]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+ADDSKILL 赤炎星爆 3 HERO 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点　　\
+刺客+法师合击技能<赤炎星爆/FCOLOR=249>，已经学会了　\
+就可以修炼此技能，此技能打怪或打人都会增加技能　　\
+的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板可以　　\
+拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　\
+　\
+<好的,我这去找他/@exit>
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+
+[@CD]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+ADDSKILL 冲虚闪 3 HERO 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点　　\
+刺客+道士合击技能<冲虚闪/FCOLOR=249>，已经学会了　\
+就可以修炼此技能，此技能打怪或打人都会增加技能　　\
+的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板可以　　\
+拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　\
+　\
+<好的,我这去找他/@exit>
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+[@DelMyHero]
+#ACT
+DELETEHERO
+//返回消息
+[@NotHaveHero]
+你没有英雄。\ \
+<关闭/@exit>
+[@LogOutHeroFirst]
+请将英雄设置下线！\ \
+<关闭/@exit>
+[@删除英雄]
+是否确认删除英雄
+<是，我确认删除英雄/@DelMyHero>    <我考虑下/@exit>
+[@DelMyHero]
+#IF
+HAVEHERO
+#ACT
+GOTO @shanchuyx
+#ELSEACT
+MessAgeBox 提示：你还未申请英雄!!
+[@shanchuyx]
+#IF
+CHECKHEROONLINE
+#ACT
+MessAgeBox 提示：必须将英雄设置为下线状态!!
+BREAK
+#If
+#Act
+CLEARHEROSKILL
+DELETEHERO
+MessAgeBox 提示：删除成功！！
+close
+
+[@@buHero]
+#IF
+#ACT
+DELAYGOTO 1000 ~$CREATEHERO
+
+[~$CREATEHERO]
+恭喜您可以带领您的英雄去闯荡玛法大陆了，\
+您想带领哪位英雄呢？\
+<英雄(男战士)/@CREATEHERO_WARR_MAN>     <英雄(男法师)/@CREATEHERO_WIZA_MAN>     <英雄(男道士)/@CREATEHERO_TAOS_MAN>\ \
+<英雄(女战士)/@CREATEHERO_WARR_WOM>     <英雄(女法师)/@CREATEHERO_WIZA_WOM>     <英雄(女道士)/@CREATEHERO_TAOS_WOM>\ \
+
+
+[@CREATEHERO_ASSASSIN_MAN]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄男刺客名单.txt
+CREATEHERO 3 0
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_ASSASSIN_WOM]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄女刺客名单.txt
+CREATEHERO 3 1
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_WARR_MAN]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄男战士名单.txt
+CREATEHERO 0 0
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_WARR_WOM]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄女战士名单.txt
+CREATEHERO 0 1
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_WIZA_MAN]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄男法师名单.txt
+CREATEHERO 1 0
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+[@CREATEHERO_WIZA_WOM]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄女法师名单.txt
+CREATEHERO 1 1
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_TAOS_MAN]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄男道士名单.txt
+CREATEHERO 2 0
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+[@CREATEHERO_TAOS_WOM]
+#IF
+#ACT
+addnamelist ..\QuestDiary\英雄\英雄女道士名单.txt
+CREATEHERO 2 1
+TAKEONITEM 魔血石(大) 12 HERO
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+SENDMSG 1 玛法勇士：%s，开启崭新的玛法之旅！  250 0
+#ELSEACT
+BREAK
+
+//返回消息
+[@CreateingHero]
+系统正在接受申请，请稍候……\
+<关闭/@exit>
+
+[@HaveHero]
+您已经有英雄了。\
+<关闭/@exit>
+
+[@SetHeroName]
+请先给您的英雄取名字。\
+<关闭/@exit>
+
+//返回消息
+[@CreateingHero]
+系统正在接受申请，请稍候……\ \
+<关闭/@exit>
+
+[@HaveHero]
+您已经有英雄了。\ \
+<关闭/@exit>
+
+[@SetHeroName]
+请先给您的英雄取名字。\ \
+<关闭/@exit>
+
+[@HaveHero]
+您已经有英雄了。\ \
+<关闭/@exit>
+
+
+
+[@hj6]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 劈星斩 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　\
+战战合击技能<劈星斩/FCOLOR=249>，双击包裹中的合击技能<劈星斩/FCOLOR=249>　　\
+就可以修炼此技能，此技能打怪或打人都会增加技能　　\
+的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板可以　　\
+拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　\
+　\
+<好的,我这去找他/@exit>
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+[@hj5]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 末日审判 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　　\
+战战合击技能<末日审判/FCOLOR=249>，双击包裹中的合击技能<末日/FCOLOR=249>　\
+<审判/FCOLOR=249>就可以修炼此技能，此技能打怪或打人都会增加　\
+技能的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板　\
+可以拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　　\
+　　\
+<好的,我这去找他/@exit>　
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+[@hj4]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 雷霆一击 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　　\
+战战合击技能<雷霆一击/FCOLOR=249>，双击包裹中的合击技能<雷霆/FCOLOR=249>　\
+<一击/FCOLOR=249>就可以修炼此技能，此技能打怪或打人都会增加　\
+技能的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板　\
+可以拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　　\
+　　\
+<好的,我这去找他/@exit>　
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+[@hj3]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 火龙气焰 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　　\
+战战合击技能<火龙气焰/FCOLOR=249>，双击包裹中的合击技能<火龙/FCOLOR=249>　\
+<气焰/FCOLOR=249>就可以修炼此技能，此技能打怪或打人都会增加　\
+技能的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板　\
+可以拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　　\
+　　\
+<好的,我这去找他/@exit>　
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+[@hj2]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 噬魂沼泽 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　　\
+战战合击技能<噬魂沼泽/FCOLOR=249>，双击包裹中的合击技能<噬魂/FCOLOR=249>　\
+<沼泽/FCOLOR=249>就可以修炼此技能，此技能打怪或打人都会增加　\
+技能的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板　\
+可以拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　　\
+　　\
+<好的,我这去找他/@exit>　
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+
+
+[@hj1]
+#IF
+check [78] 0
+#ACT
+set [78] 1
+give 破魂斩 1
+give 火龙之心 1
+#SAY
+你已领悟了英雄合击的要点，赶快去英雄包裹中查看　　\
+战战合击技能<破魂斩/FCOLOR=249>，双击包裹中的合击技能<破魂斩/FCOLOR=249>　　\
+就可以修炼此技能，此技能打怪或打人都会增加技能　　\
+的<熟练度/FCOLOR=249>。听说在盟重土城的书店内找书店老板可以　　\
+拿灵符来快速提升合击的<熟练度/FCOLOR=249>！　\
+　\
+<好的,我这去找他/@exit>
+#ELSESAY
+你已经领取过合击技能，如需为卧龙英雄准备多一份合击技　\
+能则需要去挑战烟花地图BOSS获得<书页残片/FCOLOR=249>去白日门寻找<龙/FCOLOR=249>　\
+<人/FCOLOR=249>合成技能。　　\
+　\
+<好的,我这去找他/@exit>
+
+
+
+
+[@mirhhyxjn01]
+#if
+HAVEHERO
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您没有英雄！
+BREAK
+#if
+CHECKHEROONLINE
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您的英雄不在线！
+BREAK
+#if
+CHECKHEROJOB WARRIOR
+#act
+ADDSKILL 白日门基本剑术 4 HERO 1
+ADDSKILL 白日门攻杀剑术 3 HERO 1
+ADDSKILL 白日门刺杀剑术 4 HERO 1
+ADDSKILL 白日门圆月弯刀 4 HERO 1
+ADDSKILL 白日门野蛮冲撞 3 HERO 1
+ADDSKILL 白日门烈火剑法 4 HERO 1
+ADDSKILL 白日门狮子吼 3 HERO 1
+ADDSKILL 白日门护体神盾 3 HERO 1
+ADDSKILL 白日门先天元力 3 HERO 1
+ADDSKILL 白日门逐日剑法 3 HERO 1
+ADDSKILL 白日门酒气 3 HERO 1
+ADDSKILL 白日门开天斩 3 HERO 1
+break
+#Elsesay
+你英雄职业不为战士
+
+[@mirhhyxjn02]
+#if
+HAVEHERO
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您没有英雄！
+BREAK
+#if
+CHECKHEROONLINE
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您的英雄不在线！
+BREAK
+#if
+CHECKHEROJOB WIZARD
+#act
+ADDSKILL 白日门火球术 3 HERO 1
+ADDSKILL 白日门抗拒火环 3 HERO 1
+ADDSKILL 白日门流星火雨 4 HERO 1
+ADDSKILL 白日门诱惑之光 3 HERO 1
+ADDSKILL 白日门地狱火 3 HERO 1
+ADDSKILL 白日门雷电术 4 HERO 1
+ADDSKILL 白日门分身术 3 HERO 1
+ADDSKILL 白日门大火球 3 HERO 1
+ADDSKILL 白日门瞬息移动 3 HERO 1
+ADDSKILL 白日门爆裂火焰 3 HERO 1
+ADDSKILL 白日门火墙 3 HERO 1
+ADDSKILL 白日门疾光电影 3 HERO 1
+ADDSKILL 白日门地狱雷光 3 HERO 1
+ADDSKILL 白日门魔法盾 4 HERO 1
+ADDSKILL 白日门冰咆哮 3 HERO 1
+ADDSKILL 白日门灭天火 3 HERO 1
+ADDSKILL 白日门寒冰掌 3 HERO 1
+ADDSKILL 白日门护体神盾 3 HERO 1
+ADDSKILL 白日门先天元力 3 HERO 1
+ADDSKILL 白日门酒气 3 HERO 1
+break
+#Elsesay
+你英雄职业不为法师
+[@mirhhyxjn03]
+#if
+HAVEHERO
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您没有英雄！
+BREAK
+#if
+CHECKHEROONLINE
+#act
+#ELSEACT
+MESSAGEBOX 对不起，您的英雄不在线！
+BREAK
+#if
+CHECKHEROJOB taoist
+#act
+ADDSKILL 白日门治愈术 3 HERO 1
+ADDSKILL 白日门精神战法 3 HERO 1
+ADDSKILL 白日门施毒术 4 HERO 1
+ADDSKILL 白日门灵魂火符 4 HERO 1
+ADDSKILL 白日门召唤骷髅 3 HERO 1
+ADDSKILL 白日门隐身术 3 HERO 1
+ADDSKILL 白日门群体隐身 3 HERO 1
+ADDSKILL 白日门幽灵盾 3 HERO 1
+ADDSKILL 白日门战甲术 3 HERO 1
+ADDSKILL 白日门心灵启示 3 HERO 1
+ADDSKILL 白日门困魔咒 3 HERO 1
+ADDSKILL 白日门群体治疗 3 HERO 1
+ADDSKILL 白日门召唤神兽 3 HERO 1
+ADDSKILL 白日门无极真气 3 HERO 1
+ADDSKILL 白日门气功波 3 HERO 1
+ADDSKILL 白日门噬血术 4 HERO 1
+ADDSKILL 白日门护体神盾 3 HERO 1
+ADDSKILL 白日门先天元力 3 HERO 1
+ADDSKILL 白日门酒气 3 HERO 1
+ADDSKILL 白日门召唤月灵 3 HERO 1
+ADDSKILL 召唤火灵 3 HERO 1
+break
+#Elsesay
+你英雄职业不为道士

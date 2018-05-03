@@ -1,0 +1,102 @@
+[@木元素升级]
+{
+
+#if
+CHECK  [275] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制木元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=木元素Lv3;fc=251;x=120;y=120}>
+<{s=已满级;i=311;li=52;ih=312;id=313;x=90;y=250}/@exit>
+#ACT
+break
+
+#if
+CHECK  [274] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制木元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=木元素Lv2;fc=251;x=120;y=120}>
+<{s=当前获得：5点攻击速度;fc=255;x=50;y=140}>
+<{s=升级可提升：5点攻击速度;fc=255;x=50;y=160}>
+<{s=炼制到Lv3，需要300元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级木>
+#ACT
+break
+
+#if
+CHECK  [273] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制木元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=木元素Lv1;fc=251;x=120;y=120}>
+<{s=当前获得：2点攻击速度;fc=255;x=50;y=140}>
+<{s=升级可提升：3点攻击速度;fc=255;x=50;y=160}>
+<{s=炼制到Lv2，需要200元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级木>
+#ACT
+break
+
+
+
+#if
+CHECK  [273] 0
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制木元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=木元素Lv0;fc=251;x=120;y=120}>
+<{s=当前获得：0点攻击速度;fc=255;x=50;y=140}>
+<{s=升级可提升：2点攻击速度;fc=255;x=50;y=160}>
+<{s=炼制到Lv1，需要100元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级木>
+#ACT
+break
+
+
+
+
+
+[@升级木]
+#if
+CHECK [274] 1
+CHECKKIMNEEDLE 元素石 300
+#ACT
+SET [275] 1
+TAKEKIMNEEDLE 元素石 300
+ChangeHumAbility 3 + 5 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将木元素修炼到Lv3.获得5点攻击速度... 1 10 3
+break
+CLOSE
+
+
+
+#if
+CHECK [273] 1
+CHECKKIMNEEDLE 元素石 200
+#ACT
+SET [274] 1
+TAKEKIMNEEDLE 元素石 200
+ChangeHumAbility 3 + 3 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将木元素修炼到Lv2.获得3点攻击速度... 1 10 3
+break
+CLOSE
+
+
+#if
+CHECKKIMNEEDLE 元素石 100
+CHECK  [273] 0
+#ACT
+SET [273] 1
+TAKEKIMNEEDLE 元素石 100
+ChangeHumAbility 3 + 2 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将木元素修炼到Lv1.获得2点攻击速度... 1 10 3
+CLOSE
+#ELSEACT
+messagebox 你没有足够的元素石！
+break
+CLOSE
+}

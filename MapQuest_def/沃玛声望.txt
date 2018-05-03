@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 声望任务 = 2
+CHECKVAR HUMAN 杀死沃玛怪物 < 10
+#ACT
+CALCVAR HUMAN 杀死沃玛怪物 + 1
+savevar human 杀死沃玛怪物 ..\QuestDiary\雪花制作\杀死沃玛怪物.txt
+SENDMSG 7 你已经杀死沃玛怪物<$human(杀死沃玛怪物)>/10个！
+
+#IF
+CHECKVAR HUMAN 声望任务 = 2
+CHECKVAR HUMAN 杀死沃玛怪物 = 10
+#act
+SENDMSG 7 你已经杀死沃玛怪物<$human(杀死沃玛怪物)>/10个,赶紧去领取奖励吧！

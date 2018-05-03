@@ -1,0 +1,139 @@
+[@返回]
+{
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJA.txt
+#ACT
+DELAYGOTO 3 @判断a
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJB.txt
+#ACT
+DELAYGOTO 3 @判断b
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJC.txt
+#ACT
+DELAYGOTO 3 @判断c
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJD.txt
+#ACT
+DELAYGOTO 3 @判断d
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJE.txt
+#ACT
+DELAYGOTO 3 @判断e
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJF.txt
+#ACT
+DELAYGOTO 3 @判断f
+break
+
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJG.txt
+#ACT
+DELAYGOTO 3 @判断g
+break
+
+#elseACT
+break
+#elsesay
+你还没有加入行会，或者你的行会还没有开启秘境！
+
+[@判断a]
+#if
+LARGE G91 0
+#act
+map MJA
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G91)> 251 @行会秘境A 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJA.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJA
+BREAK
+
+[@判断b]
+#if
+LARGE G92 0
+#act
+map MJB
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G92)> 251 @行会秘境B 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJB.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJB
+BREAK
+
+[@判断c]
+#if
+LARGE G93 0
+#act
+map MJC
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G93)> 251 @行会秘境C 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJC.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJC
+BREAK
+
+[@判断d]
+#if
+LARGE G94 0
+#act
+map MJD
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G94)> 251 @行会秘境D 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJD.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJD
+BREAK
+
+[@判断e]
+#if
+LARGE G95 0
+#act
+map MJE
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G95)> 251 @行会秘境E 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJE.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJE
+BREAK
+
+[@判断f]
+#if
+LARGE G96 0
+#act
+map MJF
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G96)> 251 @行会秘境F 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJF.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJF
+BREAK
+[@判断g]
+#if
+LARGE G97 0
+#act
+map MJG
+SENDTIMEMSG 行会秘境还剩%s结束... <$STR(G97)> 251 @行会秘境G 1
+#ELSEACT
+DELGUILDLIST ..\QuestDiary\游戏任务\行会密境任务\MJG.txt
+SendCenterMsg 251 0 *******行会秘境已经关闭******* 2 10 2
+CLEARMAPMON MJG
+BREAK
+}

@@ -1,0 +1,913 @@
+[@开始解封]
+{
+#IF
+EQUAL I20 1
+#ACT
+BREAK
+#SAY
+我奉"比奇国王"的命令镇守这个黑暗力量的入口，1\
+随着时间流逝，我全身已被黑暗力量麻痹，\
+无法走动，希望英雄您能帮我铲除里面的怪物，\
+降低黑暗力量的魔力，使我恢复原来的体力。\
+要是帮助我铲除里面的怪物我会给你报酬的\ \
+<开始挑战/@单独挑战>\
+<现在就送我回盟重/@回土>\
+<挑战成功/@挑战成功>\
+#ELSEACT
+BREAK
+#ELSESAY
+我奉"比奇国王"的命令镇守这个黑暗力量的入口，2\
+随着时间流逝，我全身已被黑暗力量麻痹，\
+无法走动，希望英雄您能帮我铲除里面的怪物，\
+降低黑暗力量的魔力，使我恢复原来的体力。\
+要是帮助我铲除里面的怪物我会给你报酬的\ \
+<开始挑战/@组队挑战>\
+<现在就送我回盟重/@回土>\
+<挑战成功/@挑战成功>\
+
+[@组队挑战]
+#IF
+equal I21 1
+#SAY
+正在挑战中!\
+#ACT
+BREAK
+
+#ELSEACT
+DELAYGOTO 3 @组队挑战1
+BREAK
+
+[@组队挑战1]
+#IF
+ISGROUPMASTER
+#ACT
+#ELSEACT
+BREAK
+#ELSESAY
+你不是队长.无法开始挑战!
+
+#IF
+CheckRangeMonCount <$MAP> 15 15 100 = 0
+#ACT
+MOV I21 1
+  Param1 <$MAP>
+  Param2 15
+  Param3 15
+  MonGen 电僵王 3 10
+  MonGen 月魔蜘蛛 3 10
+  MonGen 虹魔猪卫 5 10
+  MonGen 白野猪 5 10
+  MonGen 红野猪 10 10
+  MonGen 黑野猪 10 10
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+怪物还没完全清除!\
+
+[@回土]
+#ACT
+mapmove 3 333 333
+break 
+
+[@挑战成功]
+#IF
+equal I21 1
+#ACT
+#ELSEACT
+BREAK
+#ELSESAY
+你还没有接受挑战!\
+
+#IF
+CheckRangeMonCount <$MAP> 10 15 50 = 0
+#SAY
+那么让我看看你要解封什么吧！只要你有足够的封印首饰，\
+我可以保证帮你成功解除一件首饰的封印后再送你回盟重！\ \
+<雷泽项链(封印)/@LZXL>　　　<唤魔项链(封印)/@HMXL>　　　<启源项链(封印)/@QYXL>\
+<雷泽手镯(封印)/@LZSZ>　　　<唤魔手镯(封印)/@HMSZ>　　　<启源手镯(封印)/@QYSZ>\
+<雷泽戒指(封印)/@LZJZ>　　　<唤魔戒指(封印)/@HMJZ>　　　<启源戒指(封印)/@QYJZ>\
+#ACT
+MOVR d1 10
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+怪物还没完全清除!\
+
+[@LZXL]
+#IF
+checkitem 雷泽项链(封印) 1
+#ACT
+TAKE 雷泽项链(封印) 1
+DELAYGOTO 3 @LZXL1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@LZXL1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 雷泽项链(坚硬) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 雷泽项链(精纯) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 雷泽项链(霸气) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 雷泽项链(神力) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 雷泽项链(神威) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@LZSZ]
+#IF
+checkitem 雷泽手镯(封印) 1
+#ACT
+TAKE 雷泽手镯(封印) 1
+DELAYGOTO 3 @LZSZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@LZSZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 雷泽手镯(坚硬) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 雷泽手镯(精纯) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 雷泽手镯(霸气) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 雷泽手镯(神力) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 雷泽手镯(神威) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@LZJZ]
+#IF
+checkitem 雷泽戒指(封印) 1
+#ACT
+TAKE 雷泽戒指(封印) 1
+DELAYGOTO 3 @LZJZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@LZJZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 雷泽戒指(坚硬) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 雷泽戒指(精纯) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 雷泽戒指(霸气) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 雷泽戒指(神力) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 雷泽戒指(神威) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@HMXL]
+#IF
+checkitem 唤魔项链(封印) 1
+#ACT
+TAKE 唤魔项链(封印) 1
+DELAYGOTO 3 @HMXL1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@HMXL1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 唤魔项链(灰暗) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 唤魔项链(流光) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 唤魔项链(敏锐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 唤魔项链(天作) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 唤魔项链(神雀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@HMSZ]
+#IF
+checkitem 唤魔手镯(封印) 1
+#ACT
+TAKE 唤魔手镯(封印) 1
+DELAYGOTO 3 @HMSZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@HMSZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 唤魔手镯(灰暗) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 唤魔手镯(流光) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 唤魔手镯(敏锐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 唤魔手镯(天作) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 唤魔手镯(神雀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@HMJZ]
+#IF
+checkitem 唤魔戒指(封印) 1
+#ACT
+TAKE 唤魔戒指(封印) 1
+DELAYGOTO 3 @HMJZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@HMJZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 唤魔戒指(灰暗) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 唤魔戒指(流光) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 唤魔戒指(敏锐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 唤魔戒指(天作) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 唤魔戒指(神雀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+
+[@QYXL]
+#IF
+checkitem 启源项链(封印) 1
+#ACT
+TAKE 启源项链(封印) 1
+DELAYGOTO 3 @QYXL1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@QYXL1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 启源项链(暗淡) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 启源项链(精良) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 启源项链(凌厉) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 启源项链(闪耀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 启源项链(天赐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@QYSZ]
+#IF
+checkitem 启源手镯(封印) 1
+#ACT
+TAKE 启源手镯(封印) 1
+DELAYGOTO 3 @QYSZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@QYSZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 启源手镯(暗淡) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 启源手镯(精良) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 启源手镯(凌厉) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 启源手镯(闪耀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 启源手镯(天赐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@QYJZ]
+#IF
+checkitem 启源戒指(封印) 1
+#ACT
+TAKE 启源戒指(封印) 1
+DELAYGOTO 3 @QYJZ1
+#ELSEACT
+BREAK
+#ELSESAY
+身上未发现需解封物品！
+
+[@QYJZ1]
+#IF
+equal d1 1
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 2
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 3
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 4
+#ACT
+GIVE 启源戒指(暗淡) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 5
+#ACT
+GIVE 启源戒指(精良) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 6
+#ACT
+GIVE 启源戒指(凌厉) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 7
+#ACT
+GIVE 启源戒指(闪耀) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 8
+#ACT
+GIVE 启源戒指(天赐) 1
+MAPMOVE 3 333 333
+SENDMSG 6 解封成功
+break
+
+#IF
+equal d1 9
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+#IF
+equal d1 10
+#ACT
+SENDMSG 6 解封失败
+break
+CLOSE
+
+[@单独挑战]
+#IF
+equal I21 1
+#SAY
+正在挑战中!\
+#ACT
+BREAK
+
+#ELSEACT
+DELAYGOTO 3 @单独挑战1
+BREAK
+
+[@单独挑战1]
+#IF
+CheckRangeMonCount <$MAP> 15 15 100 = 0
+#ACT
+MOV I21 1
+  Param1 <$MAP>
+  Param2 15
+  Param3 15
+  MonGen 电僵王 3 10
+  MonGen 月魔蜘蛛 3 10
+  MonGen 虹魔猪卫 5 10
+  MonGen 白野猪 5 10
+  MonGen 红野猪 10 10
+  MonGen 黑野猪 10 10
+BREAK
+#ELSEACT
+BREAK
+#ELSESAY
+怪物还没完全清除!\
+}

@@ -1,0 +1,63 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 30
+Gender = 0
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=135
+UseSkill =雷霆一击,白日门四级法盾,白日门圣言术,白日门冰咆哮,白日门灭天火,分身术,白日门火墙,白日门雷光,白日门四级火雨,白日门四级雷电术,白日门血魄(法)
+;包裹物品
+;包裹物品
+InitItems = 
+;等级
+Level = 250
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=王者魔衣(男)
+;武器
+UseItems1=魔杖
+;照明物
+UseItems2=皓月勋章
+;项链
+UseItems3=恶魔铃铛
+;头盔
+UseItems4=王者魔盔
+;左手镯
+UseItems5=星王护腕(法)
+;右手镯
+UseItems6=传奇护腕
+;左戒指
+UseItems7=皓月戒指
+;右戒指
+UseItems8=皓月戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+;斗笠
+UseItems13=王者斗笠(法)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

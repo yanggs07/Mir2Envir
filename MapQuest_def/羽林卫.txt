@@ -1,0 +1,14 @@
+[@main]
+#IF
+checkvar HUMAN 帝国挑战任务 = 1
+CHECKVAR HUMAN 羽林卫 < 5
+#ACT
+CALCVAR HUMAN 羽林卫 + 1
+savevar human 羽林卫 ..\QuestDiary\雪花制作\羽林卫.txt
+SENDMSG 7 你已经杀死了<$human(羽林卫)>/5个羽林卫！
+
+#IF
+checkvar HUMAN 帝国挑战任务 = 1
+CHECKVAR HUMAN 羽林卫 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(羽林卫)>/5个羽林卫，可以去找护国将军了！

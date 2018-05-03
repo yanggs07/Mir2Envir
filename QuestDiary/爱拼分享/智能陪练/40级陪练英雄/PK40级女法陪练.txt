@@ -1,0 +1,54 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 25
+Gender = 1
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=40
+UseSkill =火龙气焰,白日门魔法盾,白日门圣言术,白日门护体,白日门冰咆哮,白日门灭天火,分身术,白日门火墙,白日门雷光,白日门火雨,白日门寒冰掌
+;包裹物品
+InitItems = 万年雪霜包,万年雪霜包,万年雪霜包
+;等级
+Level = 40
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=霓裳羽衣
+;武器
+UseItems1=血饮
+;照明物
+UseItems2=
+;项链
+UseItems3=法神项链
+;头盔
+UseItems4=法神头盔
+;左手镯
+UseItems5=法神手镯
+;右手镯
+UseItems6=法神手镯
+;左戒指
+UseItems7=法神戒指
+;右戒指
+UseItems8=法神戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+
+;斗笠
+UseItems13=
+
+
+
+
+
+

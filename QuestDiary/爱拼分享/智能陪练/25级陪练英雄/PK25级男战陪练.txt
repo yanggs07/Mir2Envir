@@ -1,0 +1,48 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 10
+Gender = 0
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NoDropItemRate = 15
+NG=1
+NGLevel=25
+Hair = 2
+UseSkill = 白日门剑术,白日门攻杀,白日门刺杀,白日门半月,
+;包裹物品
+InitItems = 
+;等级
+Level = 25
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 = 重盔甲(男)
+;武器
+UseItems1 = 炼狱
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 幽灵项链
+;头盔
+UseItems4 = 骷髅头盔
+;左手镯
+UseItems5 = 死神手套
+;右手镯
+UseItems6 = 死神手套
+;左戒指
+UseItems7 = 龙之戒指
+;右戒指
+UseItems8 = 珊瑚戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 
+
+

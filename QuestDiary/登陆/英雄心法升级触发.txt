@@ -1,0 +1,71 @@
+[@英雄心法升级触发]
+{
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 100 hero
+#ACT
+give 神龙之心 1
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到100系统发放奖励神龙之心！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 120 hero
+#ACT
+GIVESTATEITEM 白日门火龙果 1 1 1 1 1 1 500
+SENDMSG 0 玛法勇士:%s,主号心法冲级到80系统发放奖励白日门火龙果*500！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 140 hero
+#ACT
+give 白日门乾坤腰带 1
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到140系统发放奖励白日门乾坤腰带！
+BREAK
+
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 160 hero
+#ACT
+GIVESTATEITEM 龙怒技能凭证 1 1 1 1 1 1 5
+GIVESTATEITEM 龙神技能凭证 1 1 1 1 1 1 5
+GIVESTATEITEM 龙卫技能凭证 1 1 1 1 1 1 5
+SENDMSG 0 玛法勇士:%s,主号心法冲级到220系统自动发放龙怒，龙卫，龙神凭证*5！
+BREAK
+
+
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 180 hero
+#ACT
+GIVESTATEITEM 真气石凭证 1 1 1 1 1 1 188
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到180系统发放奖励真气石凭证*188！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 200 hero
+#ACT
+GIVESTATEITEM 十级功勋状 1 1 1 1 1 1 10
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到180系统发放奖励十级功勋状*10！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 220 hero
+#ACT
+GIVESTATEITEM 玛法源质精华 1 1 1 1 1 1 555
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到200系统发放奖励玛法源质精华*555！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 240 hero
+#ACT
+give 灵玉lv.10 1
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到240系统发放奖励灵玉lv.10*1！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 255 hero
+#ACT
+GIVESTATEITEM 金色属性凭证 1 1 1 1 1 1 2
+SENDMSG 0 玛法勇士:%s,英雄心法冲级到255系统发放奖励金色属性凭证*2！
+BREAK
+
+}

@@ -1,0 +1,5716 @@
+[@管理]
+{
+<———————＜>< 爱拼传奇游戏后台管理系统 ><＞———————>\ 
+<总注册>∶<$STR(G16)> 人 <武士有>∶<$STR(G19)> 人 <法师有>∶<$STR(G20)> 人 <道士有>∶<$STR(G21)> 人\  
+<总在线>∶<$USERCOUNT> 人 <总运行>∶<$STR(G0)> 天 <攻城在>∶<$STR(G1)> 天后开始\
+<—————————————————————————————>\
+ <[装备调整]/@装备调整>   <开启赌城/@开启赌城>   <关闭赌城/@guanducn>              \  \
+ <[游戏功能]/@功能游戏>                               \
+                     
+
+<—————————————————————————————>\
+
+
+
+[@功能游戏]
+#act
+bigMAIN 2
+#say
+<—————————————————————————————>\
+<等级和内功都满级/@提升等级>              <内功技能满级/@内功技能>\\
+<人物英雄心法满级/@心法测试>　            <英雄龙卫技能/@龙卫技能>\
+<—————————————————————————————>\
+<强化英雄所有技能/@强化英雄>              <9999个玄铁/@玄铁>           \\
+<强化主号所有技能/@强化主号技能>              <开启首饰盒/@SSH>      \
+<—————————————————————————————>\
+<连击/@LJ>            <静之冰冻/@冰冻>         <唯我独尊/@唯我独尊>          \  
+<满血/@回血>            <制作装备/@刷装备>         <合击书类/@合击书类>\  
+<时装/@时装>            <英雄秘籍/@白日门秘籍>         <开启测试/@KAI> \
+<—————————————————————————————>\
+<精修值增加/@11111>       <心法经验/@22>        <神龙附体/@587>\
+<制造传功令/@MJ>       <人物称号/@258>     \
+<地图全传送/@54>       <擒龙手/@789>             \
+
+<—————————————————————————————>\  \
+
+<[装备调整]/@装备调整>       <开启赌城/@开启赌城>     \  \  \ 
+\         
+
+<返回/@管理> \
+
+
+
+
+[@587]
+#ACT
+ADDSKILL 神龙附体 3
+ADDSKILL 神龙附体 3 hero
+GOTO @功能游戏
+
+[@789]
+#ACT
+ADDSKILL 擒龙手 3
+GOTO @功能游戏
+[@54]
+<狐月山/@123>\
+<神龙边境/@456>
+
+[@123]
+#ACT
+MAPMOVE FOX02 52 82
+CLOSE
+
+[@456]
+#ACT
+MAPMOVE MHFY 644 721
+CLOSE
+
+
+[@KAI]
+#ACT
+MOV A707 开启
+GOTO @功能游戏
+
+
+[@258]
+#ACT
+GIVEFENGHAO <$USERNAME> 八星主宰者
+
+GOTO @功能游戏
+[@白日门秘籍]
+#IF
+#ACT
+GIVEKIMNEEDLE 白日门秘籍 10
+GOTO @功能游戏
+
+
+
+[@四级技能]
+因为引擎不支持脚本升级四级技能，所以只好用技能书学习了\
+<四级技能战/@四级技能战>\
+<四级技能法/@四级技能法>\
+<四级技能道/@四级技能道>\
+<白日门四级技能战/@BSJZ>\
+<白日门四级技能法/@BSIF>\
+<白日门四级技能道/@BSID>\
+
+
+[@四级技能战]
+#IF
+#ACT
+GIVE 四级基本剑术 1
+GIVE 圆月弯刀 1
+GIVE 四级刺杀剑术 1
+GIVE 四级烈火剑法 1
+GOTO @四级技能
+[@四级技能法]
+#IF
+#ACT
+GIVE 四级雷电术 1
+GIVE 四级灭天火 1
+GIVE 四级魔法盾 1
+GIVE 四级流星火雨 1
+GOTO @四级技能
+[@四级技能道]
+#IF
+#ACT
+GIVE 四级施毒术 1
+GIVE 四级灵魂火符 1
+GIVE 四级噬血术 1
+GOTO @四级技能
+[@BSJZ]
+#IF
+#ACT
+GIVE 白日门四级剑术 1
+GIVE 白日门四级刺杀 1
+GIVE 白日门圆月弯刀 1
+GOTO @四级技能
+[@BSIF]
+#IF
+#ACT
+GIVE 白日门四级雷电 1
+GIVE 白日门四级盾 1
+GIVE 白日门四级火雨 1
+GOTO @四级技能
+[@BSID]
+#IF
+#ACT
+GIVE 白日门四级施毒 1
+GIVE 白日门四级噬血 1
+GOTO @四级技能
+
+
+[@唯我独尊]
+#IF
+#ACT
+ADDSKILL 唯我独尊 3
+ADDSKILL 白日门唯我独尊 3 hero
+GOTO @四级技能
+
+
+[@刷装备]
+#say
+<神蛇战套/@神战>  <神蛇法套/@神法>  <神蛇道套/@神道>  <灵蛇战套/@灵战>  <灵蛇法套/@灵法>  <灵蛇道套/@灵道>\
+<金蛇战套/@金战>  <金蛇法套/@金法>  <金蛇道套/@金道>  <天成战套/@天战>  <天成法套/@天法>  <天成道套/@天道>\
+<真龙战套/@真战>  <真龙法套/@真法>  <真龙道套/@真道>  <热血战套/@热战>  <热血法套/@热法>  <热血道套/@热道>\
+<神龙战套/@神龙战>  <神龙法套/@神龙法>  <神龙道套/@神龙道>  <皓尊战套/@皓尊战>  <皓尊法套/@皓尊法>  <皓尊道套/@皓尊道>\
+<皓宇战套/@皓宇战>  <皓宇法套/@皓宇法>  <皓宇道套/@皓宇道>  <皓天战套/@皓天战>  <皓天法套/@皓天法>  <皓天道套/@皓天道>\
+<龙神类/@龙神类>      <乾坤类/@乾坤类>      <特戒类/@特戒类>   <龙卫套装/@龙卫>终极套
+\
+\
+<返回/@功能游戏> 
+
+
+
+
+[@龙卫]
+<龙卫战套/@龙卫战>\
+<紫鹰法套/@紫鹰法>\
+<御龙道套/@御龙道>\
+\
+\
+<返回/@刷装备>
+
+
+[@龙卫战]
+#if
+#act
+give 龙卫神剑 1
+give 龙卫勋章 1
+give 龙卫项链 1
+give 龙卫护腕 2
+give 龙卫之戒 2
+give 龙卫之靴 1
+give 龙卫腰带 1
+give 龙卫之冠 1
+GOTO @刷装备
+
+[@紫鹰法]
+#if
+#act
+give 龙卫神剑 1
+give 龙卫勋章 1
+give 紫鹰血链 1
+give 紫鹰血手 2
+give 紫鹰血戒 2
+give 紫鹰血带 1
+give 紫鹰血靴 1
+give 紫鹰血盔 1
+
+GOTO @刷装备
+
+[@御龙道]
+#if
+#act
+give 龙卫神剑 1
+give 龙卫勋章 1
+give 御龙银链 1
+give 御龙银手 2
+give 御龙银戒 2
+give 御龙银带 1
+give 御龙银靴 1
+give 御龙银盔 1
+GOTO @刷装备
+
+
+
+
+
+
+
+
+[@神战]
+#act
+give 神蛇战刃 1
+give 神蛇项链(战) 1
+give 神蛇战甲(男) 1
+give 神蛇战甲(女) 1
+give 神蛇战戒 2
+give 神蛇护腕(战) 2
+give 神蛇面巾(战) 1
+give 神蛇腰带(战) 1
+give 神蛇战靴 1
+give 神蛇战盔 1
+give 神蛇斗笠(战) 1 
+give 神蛇战勋 1
+GOTO @刷装备
+[@神法]
+#act
+give 神蛇权杖 1
+give 神蛇项链(法) 1
+give 神蛇魔衣(男) 1
+give 神蛇魔衣(女) 1
+give 神蛇魔戒 2
+give 神蛇护腕(法) 2
+give 神蛇面巾(法) 1
+give 神蛇腰带(法) 1
+give 神蛇魔靴 1
+give 神蛇法冠 1
+give 神蛇斗笠(法) 1 
+give 神蛇法勋 1
+GOTO @刷装备
+
+
+[@神道]
+#act
+give 神蛇宝扇 1
+give 神蛇项链(道) 1
+give 神蛇道袍(男) 1
+give 神蛇道袍(女) 1
+give 神蛇道戒 2
+give 神蛇护腕(道) 2
+give 神蛇面巾(道) 1
+give 神蛇腰带(道) 1
+give 神蛇道靴 1
+give 神蛇道盔 1
+give 神蛇斗笠(道) 1 
+give 神蛇道勋 1
+GOTO @刷装备
+
+
+
+
+[@灵战]
+#act
+give 灵蛇战刃 1
+give 灵蛇项链(战) 1
+give 灵蛇战甲(男) 1
+give 灵蛇战甲(女) 1
+give 灵蛇战戒 2
+give 灵蛇护腕(战) 2
+give 灵蛇面巾(战) 1
+give 灵蛇腰带(战) 1
+give 灵蛇战靴 1
+give 灵蛇战盔 1
+give 灵蛇斗笠(战) 1 
+give 灵蛇战勋 1
+GOTO @刷装备
+[@灵法]
+#act
+give 灵蛇权杖 1
+give 灵蛇项链(法) 1
+give 灵蛇魔衣(男) 1
+give 灵蛇魔衣(女) 1
+give 灵蛇魔戒 2
+give 灵蛇护腕(法) 2
+give 灵蛇面巾(法) 1
+give 灵蛇腰带(法) 1
+give 灵蛇魔靴 1
+give 灵蛇法冠 1
+give 灵蛇斗笠(法) 1 
+give 灵蛇法勋 1
+GOTO @刷装备
+
+
+[@灵道]
+#act
+give 灵蛇宝扇 1
+give 灵蛇项链(道) 1
+give 灵蛇道袍(男) 1
+give 灵蛇道袍(女) 1
+give 灵蛇道戒 2
+give 灵蛇护腕(道) 2
+give 灵蛇面巾(道) 1
+give 灵蛇腰带(道) 1
+give 灵蛇道靴 1
+give 灵蛇道盔 1
+give 灵蛇斗笠(道) 1 
+give 灵蛇道勋 1
+GOTO @刷装备
+
+
+[@金战]
+#act
+give 金蛇战刃 1
+give 金蛇战甲(男) 1
+give 金蛇战甲(女) 1
+give 金蛇之戒 2
+give 金蛇护腕 2
+give 金蛇面巾 1
+give 金蛇腰带 1
+give 金蛇之靴 1
+give 金蛇之冠 1
+give 金蛇斗笠 1 
+give 金蛇勋章 1
+give 金蛇项链 1
+GOTO @刷装备
+
+[@金法]
+#act
+give 金蛇权杖 1
+give 金蛇魔衣(男) 1
+give 金蛇魔衣(女) 1
+give 金蛇之戒 2
+give 金蛇护腕 2
+give 金蛇面巾 1
+give 金蛇腰带 1
+give 金蛇之靴 1
+give 金蛇之冠 1
+give 金蛇斗笠 1 
+give 金蛇勋章 1
+give 金蛇项链 1
+GOTO @刷装备
+
+
+[@金道]
+#act
+give 金蛇宝扇 1
+give 金蛇道袍(男) 1
+give 金蛇道袍(女) 1
+give 金蛇之戒 2
+give 金蛇护腕 2
+give 金蛇面巾 1
+give 金蛇腰带 1
+give 金蛇之靴 1
+give 金蛇之冠 1
+give 金蛇斗笠 1 
+give 金蛇勋章 1
+give 金蛇项链 1
+GOTO @刷装备
+
+
+
+[@天战]
+#act
+give 天成战刃 1
+give 天成项链(战) 1
+give 天成战甲(男) 1
+give 天成战甲(女) 1
+give 天成战戒 2
+give 天成护腕(战) 2
+give 天成面巾(战) 1
+give 天成腰带(战) 1
+give 天成战靴 1
+give 天成战盔 1
+give 天成斗笠(战) 1 
+give 天成战勋 1
+GOTO @刷装备
+[@天法]
+#act
+give 天成权杖 1
+give 天成项链(法) 1
+give 天成魔衣(男) 1
+give 天成魔衣(女) 1
+give 天成魔戒 2
+give 天成护腕(法) 2
+give 天成面巾(法) 1
+give 天成腰带(法) 1
+give 天成魔靴 1
+give 天成法冠 1
+give 天成斗笠(法) 1 
+give 天成法勋 1
+GOTO @刷装备
+
+
+[@天道]
+#act
+give 天成宝扇 1
+give 天成项链(道) 1
+give 天成道袍(男) 1
+give 天成道袍(女) 1
+give 天成道戒 2
+give 天成护腕(道) 2
+give 天成面巾(道) 1
+give 天成腰带(道) 1
+give 天成道靴 1
+give 天成道盔 1
+give 天成斗笠(道) 1 
+give 天成道勋 1
+GOTO @刷装备
+
+[@真战]
+#act
+give 真龙战刃 1
+give 真龙项链(战) 1
+give 真龙战甲(男) 1
+give 真龙战甲(女) 1
+give 真龙战戒 2
+give 真龙护腕(战) 2
+give 真龙面巾(战) 1
+give 真龙腰带(战) 1
+give 真龙战靴 1
+give 真龙战盔 1
+give 真龙斗笠(战) 1 
+give 真龙战勋 1
+GOTO @刷装备
+[@真法]
+#act
+give 真龙项链(法) 1
+give 真龙权杖 1
+give 真龙魔衣(男) 1
+give 真龙魔衣(女) 1
+give 真龙魔戒 2
+give 真龙护腕(法) 2
+give 真龙面巾(法) 1
+give 真龙腰带(法) 1
+give 真龙魔靴 1
+give 真龙法冠 1
+give 真龙斗笠(法) 1 
+give 真龙法勋 1
+GOTO @刷装备
+
+
+[@真道]
+#act
+give 真龙项链(道) 1
+give 真龙宝扇 1
+give 真龙道袍(男) 1
+give 真龙道袍(女) 1
+give 真龙道戒 2
+give 真龙护腕(道) 2
+give 真龙面巾(道) 1
+give 真龙腰带(道) 1
+give 真龙道靴 1
+give 真龙道盔 1
+give 真龙斗笠(道) 1 
+give 真龙道勋 1
+GOTO @刷装备
+
+
+
+[@热战]
+#act
+give 热血战刃 1
+give 热血项链(战) 1
+give 热血战甲(男) 1
+give 热血战甲(女) 1
+give 热血战戒 2
+give 热血护腕(战) 2
+give 热血面巾(战) 1
+give 热血腰带(战) 1
+give 热血战靴 1
+give 热血战盔 1
+give 热血斗笠(战) 1 
+give 热血战勋 1
+GOTO @刷装备
+[@热法]
+#act
+give 热血项链(法) 1
+give 热血权杖 1
+give 热血魔衣(男) 1
+give 热血魔衣(女) 1
+give 热血魔戒 2
+give 热血护腕(法) 2
+give 热血面巾(法) 1
+give 热血腰带(法) 1
+give 热血魔靴 1
+give 热血法冠 1
+give 热血斗笠(法) 1 
+give 热血法勋 1
+GOTO @刷装备
+
+
+[@热道]
+#act
+give 热血项链(道) 1
+give 热血宝扇 1
+give 热血道袍(男) 1
+give 热血道袍(女) 1
+give 热血道戒 2
+give 热血护腕(道) 2
+give 热血面巾(道) 1
+give 热血腰带(道) 1
+give 热血道靴 1
+give 热血道盔 1
+give 热血斗笠(道) 1 
+give 热血道勋 1
+GOTO @刷装备
+
+
+
+[@神龙战]
+#act
+give 神龙项链(战) 1
+give 神龙战刃 1
+give 神龙战甲(男) 1
+give 神龙战甲(女) 1
+give 神龙战戒 2
+give 神龙护腕(战) 2
+give 神龙面巾(战) 1
+give 神龙腰带(战) 1
+give 神龙战靴 1
+give 神龙战盔 1
+give 神龙斗笠(战) 1 
+give 神龙战勋 1
+GOTO @刷装备
+[@神龙法]
+#act
+give 神龙项链(法) 1
+give 神龙权杖 1
+give 神龙魔衣(男) 1
+give 神龙魔衣(女) 1
+give 神龙魔戒 2
+give 神龙护腕(法) 2
+give 神龙面巾(法) 1
+give 神龙腰带(法) 1
+give 神龙魔靴 1
+give 神龙法冠 1
+give 神龙斗笠(法) 1 
+give 神龙法勋 1
+GOTO @刷装备
+
+
+[@神龙道]
+#act
+give 神龙项链(道) 1
+give 神龙宝扇 1
+give 神龙道袍(男) 1
+give 神龙道袍(女) 1
+give 神龙道戒 2
+give 神龙护腕(道) 2
+give 神龙面巾(道) 1
+give 神龙腰带(道) 1
+give 神龙道靴 1
+give 神龙道盔 1
+give 神龙斗笠(道) 1 
+give 神龙道勋 1
+GOTO @刷装备
+
+
+[@皓尊战]
+#act
+give 皓尊项链(战) 1
+give 皓尊战刃 1
+give 皓尊战甲(男) 1
+give 皓尊战甲(女) 1
+give 皓尊战戒 2
+give 皓尊护腕(战) 2
+give 皓尊面巾(战) 1
+give 皓尊腰带(战) 1
+give 皓尊战靴 1
+give 皓尊战盔 1
+give 皓尊斗笠(战) 1 
+give 皓尊战勋 1
+GOTO @刷装备
+[@皓尊法]
+#act
+give 皓尊项链(法) 1
+give 皓尊权杖 1
+give 皓尊魔衣(男) 1
+give 皓尊魔衣(女) 1
+give 皓尊魔戒 2
+give 皓尊护腕(法) 2
+give 皓尊面巾(法) 1
+give 皓尊腰带(法) 1
+give 皓尊魔靴 1
+give 皓尊法冠 1
+give 皓尊斗笠(法) 1 
+give 皓尊法勋 1
+GOTO @刷装备
+
+
+[@皓尊道]
+#act
+give 皓尊项链(道) 1
+give 皓尊宝扇 1
+give 皓尊道袍(男) 1
+give 皓尊道袍(女) 1
+give 皓尊道戒 2
+give 皓尊护腕(道) 2
+give 皓尊面巾(道) 1
+give 皓尊腰带(道) 1
+give 皓尊道靴 1
+give 皓尊道盔 1
+give 皓尊斗笠(道) 1 
+give 皓尊道勋 1
+GOTO @刷装备
+
+
+
+[@皓宇战]
+#act
+give 皓宇项链(战) 1
+give 皓宇战刃 1
+give 皓宇战甲(男) 1
+give 皓宇战甲(女) 1
+give 皓宇战戒 2
+give 皓宇护腕(战) 2
+give 皓宇面巾(战) 1
+give 皓宇腰带(战) 1
+give 皓宇战靴 1
+give 皓宇战盔 1
+give 皓宇斗笠(战) 1 
+give 皓宇战勋 1
+GOTO @刷装备
+[@皓宇法]
+#act
+give 皓宇项链(法) 1
+give 皓宇权杖 1
+give 皓宇魔衣(男) 1
+give 皓宇魔衣(女) 1
+give 皓宇魔戒 2
+give 皓宇护腕(法) 2
+give 皓宇面巾(法) 1
+give 皓宇腰带(法) 1
+give 皓宇魔靴 1
+give 皓宇法冠 1
+give 皓宇斗笠(法) 1 
+give 皓宇法勋 1
+GOTO @刷装备
+
+
+[@皓宇道]
+#act
+give 皓宇项链(道) 1
+give 皓宇宝扇 1
+give 皓宇道袍(男) 1
+give 皓宇道袍(女) 1
+give 皓宇道戒 2
+give 皓宇护腕(道) 2
+give 皓宇面巾(道) 1
+give 皓宇腰带(道) 1
+give 皓宇道靴 1
+give 皓宇道盔 1
+give 皓宇斗笠(道) 1 
+give 皓宇道勋 1
+GOTO @刷装备
+
+
+[@皓天战]
+#act
+give 皓天项链(战) 1
+give 皓天战刃 1
+give 皓天战甲(男) 1
+give 皓天战甲(女) 1
+give 皓天战戒 2
+give 皓天护腕(战) 2
+give 皓天面巾(战) 1
+give 皓天腰带(战) 1
+give 皓天战靴 1
+give 皓天战盔 1
+give 皓天斗笠(战) 1 
+give 皓天战勋 1
+GOTO @刷装备
+[@皓天法]
+#act
+give 皓天项链(法) 1
+give 皓天权杖 1
+give 皓天魔衣(男) 1
+give 皓天魔衣(女) 1
+give 皓天魔戒 2
+give 皓天护腕(法) 2
+give 皓天面巾(法) 1
+give 皓天腰带(法) 1
+give 皓天魔靴 1
+give 皓天法冠 1
+give 皓天斗笠(法) 1 
+give 皓天法勋 1
+GOTO @刷装备
+
+
+[@皓天道]
+#act
+give 皓天项链(道) 1
+give 皓天宝扇 1
+give 皓天道袍(男) 1
+give 皓天道袍(女) 1
+give 皓天道戒 2
+give 皓天护腕(道) 2
+give 皓天面巾(道) 1
+give 皓天腰带(道) 1
+give 皓天道靴 1
+give 皓天道盔 1
+give 皓天斗笠(道) 1 
+give 皓天道勋 1
+GOTO @刷装备
+
+
+
+[@龙神类]
+#SAY
+<龙神戒指/@龙神>\
+<龙渊之戒/@龙渊>\
+<龙怒之戒/@龙怒>\
+<龙威之戒/@龙威>\
+<龙陨之戒/@龙陨>\
+<降龙神戒/@降龙>\
+\
+\
+<返回/@刷装备>
+
+
+[@龙神]
+#if
+#act
+give 龙神戒指 1
+GOTO @龙神类
+[@龙渊]
+#if
+#act
+give 龙渊之戒 1
+GOTO @龙神类
+[@龙威]
+#if
+#act
+give 龙威之戒 1
+GOTO @龙神类
+[@龙怒]
+#if
+#act
+give 龙怒之戒 1
+GOTO @龙神类
+[@龙陨]
+#if
+#act
+give 龙陨之戒 1
+GOTO @龙神类
+[@降龙]
+#if
+#act
+give 降龙神戒 1
+GOTO @龙神类
+
+
+
+
+
+
+
+
+[@乾坤类]
+#SAY
+<乾坤腰带/@乾坤腰带>\
+<乾坤戒指/@乾坤>\
+<极品乾坤戒指/@极品乾坤>\
+<人之乾坤戒指/@人之乾坤>\
+<地之乾坤戒指/@地之乾坤>\
+<天之乾坤戒指/@天之乾坤>\
+\
+\
+<返回/@刷装备>
+
+[@乾坤腰带]
+#IF
+#ACT
+GIVE 乾坤腰带 1
+GOTO @乾坤类
+
+
+[@乾坤]
+#if
+#act
+give 乾坤戒指 1
+GOTO @乾坤类
+[@极品乾坤]
+#if
+#act
+give 极品乾坤戒指 1
+GOTO @乾坤类
+[@人之乾坤]
+#if
+#act
+give 人之乾坤戒指 1
+GOTO @乾坤类
+[@地之乾坤]
+#if
+#act
+give 地之乾坤戒指 1
+GOTO @乾坤类
+[@天之乾坤]
+#if
+#act
+give 天之乾坤戒指 1
+GOTO @乾坤类
+
+
+[@特戒类]
+#SAY
+<麻痹戒指/@麻痹戒指>\
+<魔道麻痹戒指/@魔道麻痹戒指>\
+<护身戒指/@护身戒指>\
+<八卦护身戒指/@八卦护身戒指>\
+<聚魔护身戒指/@聚魔护身戒指>\
+<重生戒指/@重生戒指>  <复活戒指/@复活戒指>\
+<人之复生戒指/@人之复生戒指>\
+<地之复生戒指/@地之复生戒指>\
+<天之复生戒指/@天之复生戒指>\
+\
+\
+<返回/@刷装备>
+
+
+
+[@麻痹戒指]
+#if
+#act
+give 麻痹戒指 1
+GOTO @特戒类
+[@魔道麻痹戒指]
+#if
+#act
+give 魔道麻痹戒指 1
+GOTO @特戒类
+[@护身戒指]
+#if
+#act
+give 护身戒指 1
+GOTO @特戒类
+[@八卦护身戒指]
+#if
+#act
+give 八卦护身戒指 1
+GOTO @特戒类
+[@聚魔护身戒指]
+#if
+#act
+give 聚魔护身戒指 1
+GOTO @特戒类
+
+[@重生戒指]
+#if
+#act
+give 重生戒指 1
+GOTO @特戒类
+[@复活戒指]
+#if
+#act
+give 复活戒指 1
+GOTO @特戒类
+[@人之复生戒指]
+#if
+#act
+give 人之复生戒指 1
+GOTO @特戒类
+[@地之复生戒指]
+#if
+#act
+give 地之复生戒指 1
+GOTO @特戒类
+[@天之复生戒指]
+#if
+#act
+give 天之复生戒指 1
+GOTO @特戒类
+
+
+
+
+
+
+
+
+
+
+
+
+[@合击书类]
+#SAY
+<四级合击书/@四级合击书>\
+
+<合击等级提升书/@合击等级提升书>
+\
+\
+<返回/@刷装备>
+
+
+[@四级合击书]
+<四级破魂斩/@破魂斩>\
+<四级雷霆一击/@雷霆一击>\
+<四级劈星斩/@劈星斩>\
+<四级末日审判/@末日审判>\
+<四级火龙气焰/@火龙气焰>\
+<四级噬魂沼泽/@噬魂沼泽>\
+<返回/@刷装备> 
+
+[@破魂斩]
+#if
+#act
+give 四级破魂斩 1
+
+
+
+[@雷霆一击]
+#if
+#act
+give 四级雷霆一击 1
+
+
+
+[@劈星斩]
+#if
+#act
+give 四级劈星斩 1
+
+
+[@末日审判]
+#if
+#act
+give 四级末日审判 1
+
+
+[@火龙气焰]
+#if
+#act
+give 四级火龙气焰 1
+
+
+[@噬魂沼泽]
+#if
+#act
+give 四级噬魂沼泽 1
+
+
+[@合击等级提升书]
+#if
+#act
+give 合击提升书 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@冰冻]
+#say
+你可以在这里学习静之冰冻\
+
+<学习静之冰冻/@学习静之冰冻>\
+
+<返回/@功能游戏> 
+[@学习静之冰冻]
+#if
+#act
+addskill 静之冰冻 3
+addskill 静之冰冻 3 hero
+
+
+
+
+
+
+[@强化主号技能]
+#if
+#act
+CHANGESKILLLEVELEX 圆月弯刀 + 1
+CHANGESKILLLEVELEX 攻杀剑术 + 1
+CHANGESKILLLEVELEX 刺杀剑术 + 1
+CHANGESKILLLEVELEX 逐日剑法 + 1
+CHANGESKILLLEVELEX 烈火剑法 + 1
+CHANGESKILLLEVELEX 半月弯刀 + 1
+CHANGESKILLLEVELEX 雷电术 + 1
+CHANGESKILLLEVELEX 疾光电影 + 1 
+CHANGESKILLLEVELEX 爆裂火焰 + 1
+CHANGESKILLLEVELEX 火墙 + 1
+CHANGESKILLLEVELEX 冰咆哮 + 1
+CHANGESKILLLEVELEX 灭天火 + 1
+CHANGESKILLLEVELEX 流星火雨 + 1
+CHANGESKILLLEVELEX 施毒术 + 1
+CHANGESKILLLEVELEX 灵魂火符 + 1
+CHANGESKILLLEVELEX 神圣战甲术 + 1
+CHANGESKILLLEVELEX 幽灵盾 + 1
+CHANGESKILLLEVELEX 噬血术 + 1
+CHANGESKILLLEVELEX 召唤圣兽 + 1
+
+
+
+
+
+
+
+
+[@内功技能]
+#IF
+#ACT
+SKILLLEVEL 静之火球 = 30
+SKILLLEVEL 静之大火球 = 30
+SKILLLEVEL 静之地狱火 = 30
+SKILLLEVEL 静之开天斩 = 30
+SKILLLEVEL 怒之地狱雷光 = 30
+SKILLLEVEL 怒之爆裂火焰 = 30
+SKILLLEVEL 怒之寒冰掌 = 30
+SKILLLEVEL 怒之雷电 = 30
+SKILLLEVEL 怒之冰咆哮 = 30
+SKILLLEVEL 怒之火墙 = 30
+SKILLLEVEL 怒之疾光电影 = 30
+SKILLLEVEL 怒之流星火雨 = 30
+SKILLLEVEL 怒之灭天火 = 30
+SKILLLEVEL 怒之内功剑法 = 30
+SKILLLEVEL 怒之攻杀 = 30
+SKILLLEVEL 怒之半月 = 30
+SKILLLEVEL 怒之逐日 = 30
+SKILLLEVEL 怒之烈火 = 30
+SKILLLEVEL 怒之火符 = 30
+SKILLLEVEL 怒之施毒 = 30
+SKILLLEVEL 怒之噬血 = 30
+SKILLLEVEL 怒之月灵 = 30
+SKILLLEVEL 静之地狱雷光 = 30
+SKILLLEVEL 静之爆裂火焰 = 30
+SKILLLEVEL 静之寒冰掌 = 30
+SKILLLEVEL 静之雷电 = 30
+SKILLLEVEL 静之冰咆哮 = 30
+SKILLLEVEL 静之火墙 = 30
+SKILLLEVEL 静之疾光电影 = 30
+SKILLLEVEL 静之流星火雨 = 30
+SKILLLEVEL 静之灭天火 = 30
+SKILLLEVEL 静之内功剑法 = 30
+SKILLLEVEL 静之攻杀 = 30
+SKILLLEVEL 静之半月 = 30
+SKILLLEVEL 静之逐日 = 30
+SKILLLEVEL 静之烈火 = 30
+SKILLLEVEL 静之火符 = 30
+SKILLLEVEL 静之施毒 = 30
+SKILLLEVEL 静之噬血 = 30
+SKILLLEVEL 静之月灵 = 30
+HEROSKILLLEVEL 怒之内功剑法 = 30 
+HEROSKILLLEVEL 怒之雷电 = 30 
+HEROSKILLLEVEL 怒之攻杀 = 30 
+HEROSKILLLEVEL 怒之半月 = 30
+HEROSKILLLEVEL 怒之逐日 = 30 
+HEROSKILLLEVEL 怒之烈火 = 30 
+HEROSKILLLEVEL 怒之火符 = 30 
+HEROSKILLLEVEL 怒之施毒 = 30 
+HEROSKILLLEVEL 怒之噬血 = 30 
+HEROSKILLLEVEL 怒之疾光电影 = 30 
+HEROSKILLLEVEL 怒之流星火雨 = 30 
+HEROSKILLLEVEL 怒之灭天火 = 30 
+HEROSKILLLEVEL 怒之月灵 = 30 
+HEROSKILLLEVEL 怒之冰咆哮 = 30
+HEROSKILLLEVEL 怒之火墙 = 30
+HEROSKILLLEVEL 怒之地狱雷光 = 30
+HEROSKILLLEVEL 怒之爆裂火焰 = 30
+HEROSKILLLEVEL 怒之寒冰掌 = 30
+HEROSKILLLEVEL 静之内功剑法 = 30 
+HEROSKILLLEVEL 静之雷电 = 30 
+HEROSKILLLEVEL 静之攻杀 = 30 
+HEROSKILLLEVEL 静之半月 = 30
+HEROSKILLLEVEL 静之逐日 = 30 
+HEROSKILLLEVEL 静之烈火 = 30 
+HEROSKILLLEVEL 静之火符 = 30 
+HEROSKILLLEVEL 静之施毒 = 30 
+HEROSKILLLEVEL 静之噬血 = 30 
+HEROSKILLLEVEL 静之疾光电影 = 30 
+HEROSKILLLEVEL 静之流星火雨 = 30 
+HEROSKILLLEVEL 静之灭天火 = 30 
+HEROSKILLLEVEL 静之月灵 = 30 
+HEROSKILLLEVEL 静之冰咆哮 = 30
+HEROSKILLLEVEL 静之火墙 = 30
+HEROSKILLLEVEL 静之地狱雷光 = 30
+HEROSKILLLEVEL 静之爆裂火焰 = 30
+HEROSKILLLEVEL 静之寒冰掌 = 30
+HEROSKILLLEVEL 静之火球 = 30
+HEROSKILLLEVEL 静之大火球 = 30
+HEROSKILLLEVEL 静之地狱火 = 30
+HEROSKILLLEVEL 静之开天斩 = 30
+GOTO @功能游戏
+[@提升等级]
+<主号和英雄1000级/@等级999>\　
+<主号内功和英雄内功999级/@内功999>\
+<副将相关/@副将英雄>\
+<返回/@功能游戏> 
+[@等级999]
+#IF
+#act
+CHANGELEVEL = 1000
+CHANGEHEROLEVEL = 999
+GOTO @功能游戏
+
+[@内功999]
+#IF
+#act
+CHANGENGLEVEL = 999
+CHANGENGLEVEL = 999 HERO
+GOTO @功能游戏
+
+[@副将英雄]
+#SAY
+主副将宝宝等级不一样才能参加主副将评定\
+<开通副将内功/@副将内功>\
+<副将学习技能/@副将技能>\
+<副将合击/@副将合击>\
+<提升副将英雄至998级/@副将998>
+<返回/@功能游戏> 
+[@副将技能]
+#IF
+CHECKHEROJOB WARRIOR
+#ACT 
+ADDSKILL 白日门先天元力 0 HERO 1
+ADDSKILL 白日门酒气 0 HERO 1
+ADDSKILL 白日门剑术 4 HERO 1
+ADDSKILL 白日门攻杀 3 HERO 1
+ADDSKILL 白日门刺杀 4 HERO 1
+ADDSKILL 白日门半月 3 HERO 1
+ADDSKILL 白日门野蛮 3 HERO 1
+ADDSKILL 白日门烈火 4 HERO 1
+ADDSKILL 白日门狮子吼 3 HERO 1
+ADDSKILL 白日门开天斩 3 HERO 1
+ADDSKILL 白日门逐日 3 HERO 1
+ADDSKILL 白日门圆月 4 HERO 1
+ADDSKILL 白日门血魄(战) 3 HERO 1
+ADDSKILL 怒之内功剑法 0 Hero 1
+ADDSKILL 怒之攻杀 0 Hero 1
+ADDSKILL 怒之半月 0 Hero 1
+ADDSKILL 怒之烈火 0 Hero 1
+ADDSKILL 怒之逐日 0 Hero 1
+ADDSKILL 静之施毒 0 hero 1
+ADDSKILL 静之火球 0 Hero 1
+ADDSKILL 静之攻杀 0 Hero 1
+ADDSKILL 静之地狱火 0 Hero 1
+ADDSKILL 静之半月 0 Hero 1
+ADDSKILL 静之大火球 0 Hero 1
+ADDSKILL 静之爆裂火焰 0 Hero 1
+ADDSKILL 静之雷电 0 Hero 1
+ADDSKILL 静之火符 0 Hero 1
+ADDSKILL 静之火墙 0 Hero 1
+ADDSKILL 静之内功剑法 0 Hero 1
+ADDSKILL 静之疾光电影 0 Hero 1
+ADDSKILL 静之地狱雷光 0 Hero 1
+ADDSKILL 静之寒冰掌 0 Hero 1
+ADDSKILL 静之烈火 0 Hero 1
+ADDSKILL 静之冰咆哮 0 Hero 1
+ADDSKILL 静之灭天火 0 Hero 1
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+
+#ELSEACT
+GOTO @FJFS
+
+[@FJFS]
+#IF
+CHECKHEROJOB  wizard
+#ACT
+ADDSKILL 白日门先天元力 0 HERO 1
+ADDSKILL 白日门酒气 0 HERO 1
+ADDSKILL 白日门抗拒火环 3 HERO 1
+ADDSKILL 白日门诱惑之光 3 HERO 1
+ADDSKILL 白日门雷电术 4 HERO 1
+ADDSKILL 白日门火墙 3 HERO 1
+ADDSKILL 白日门爆裂火焰 3 HERO 1
+ADDSKILL 白日门疾光电影 3 HERO 1
+ADDSKILL 白日门地狱雷光 3 HERO 1
+ADDSKILL 白日门魔法盾 4 HERO 1
+ADDSKILL 白日门冰咆哮 3 HERO 1
+ADDSKILL 白日门灭天火 4 HERO 1
+ADDSKILL 白日门寒冰掌 3 HERO 1
+ADDSKILL 白日门分身术 3 HERO 1
+ADDSKILL 白日门流星火雨 4 HERO 1
+ADDSKILL 白日门血魄(法) 3 HERO 1
+ADDSKILL 怒之火球 0 Hero 1
+ADDSKILL 怒之地狱火 0 Hero 1
+ADDSKILL 怒之爆裂火焰 0 Hero 1
+ADDSKILL 怒之雷电 0 Hero 1
+ADDSKILL 怒之大火球 0 Hero 1
+ADDSKILL 怒之火墙 0 Hero 1
+ADDSKILL 怒之疾光电影 0 Hero 1
+ADDSKILL 怒之地狱雷光 0 Hero 1
+ADDSKILL 怒之寒冰掌 0 Hero 1
+ADDSKILL 怒之冰咆哮 0 Hero 1
+ADDSKILL 怒之灭天火 0 Hero 1
+ADDSKILL 怒之流星火雨 0 Hero 1
+ADDSKILL 静之施毒 0 hero 1
+ADDSKILL 静之火球 0 Hero 1
+ADDSKILL 静之攻杀 0 Hero 1
+ADDSKILL 静之地狱火 0 Hero 1
+ADDSKILL 静之半月 0 Hero 1
+ADDSKILL 静之大火球 0 Hero 1
+ADDSKILL 静之爆裂火焰 0 Hero 1
+ADDSKILL 静之雷电 0 Hero 1
+ADDSKILL 静之火符 0 Hero 1
+ADDSKILL 静之火墙 0 Hero 1
+ADDSKILL 静之内功剑法 0 Hero 1
+ADDSKILL 静之疾光电影 0 Hero 1
+ADDSKILL 静之地狱雷光 0 Hero 1
+ADDSKILL 静之寒冰掌 0 Hero 1
+ADDSKILL 静之烈火 0 Hero 1
+ADDSKILL 静之冰咆哮 0 Hero 1
+ADDSKILL 静之灭天火 0 Hero 1
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+#ELSEACT
+GOTO @FJDS
+
+[@FJDS]
+#IF
+CHECKHEROJOB  taoist
+#ACT
+ADDSKILL 白日门先天元力 0 HERO 1
+ADDSKILL 白日门酒气 0 HERO 1
+ADDSKILL 白日门治愈术 3 HERO 1
+ADDSKILL 白日门精神战法 3 HERO 1
+ADDSKILL 白日门施毒术 4 HERO 1
+ADDSKILL 白日门火符 4 HERO 1
+ADDSKILL 白日门隐身 3 HERO 1
+ADDSKILL 白日门群隐 3 HERO 1
+ADDSKILL 白日门幽灵盾 3 HERO 1
+ADDSKILL 白日门战甲术 3 HERO 1
+ADDSKILL 白日门启示 3 HERO 1
+ADDSKILL 白日门群体治疗 3 HERO 1
+ADDSKILL 白日门真气 3 HERO 1
+ADDSKILL 白日门气功波 3 HERO 1
+ADDSKILL 白日门骷髅 3 HERO 1
+ADDSKILL 白日门神兽术 3 HERO 1
+ADDSKILL 召唤月灵 3 HERO 1
+ADDSKILL 白日门噬血术 4 HERO 1
+ADDSKILL 召唤火灵 3 HERO 1
+ADDSKILL 白日门血魄(道) 3 HERO 1
+ADDSKILL 怒之施毒 0 Hero 1
+ADDSKILL 怒之火符 0 Hero 1
+ADDSKILL 怒之噬血 0 Hero 1
+ADDSKILL 静之施毒 0 hero 1
+ADDSKILL 静之火球 0 Hero 1
+ADDSKILL 静之攻杀 0 Hero 1
+ADDSKILL 静之地狱火 0 Hero 1
+ADDSKILL 静之半月 0 Hero 1
+ADDSKILL 静之大火球 0 Hero 1
+ADDSKILL 静之爆裂火焰 0 Hero 1
+ADDSKILL 静之雷电 0 Hero 1
+ADDSKILL 静之火符 0 Hero 1
+ADDSKILL 静之火墙 0 Hero 1
+ADDSKILL 静之内功剑法 0 Hero 1
+ADDSKILL 静之疾光电影 0 Hero 1
+ADDSKILL 静之地狱雷光 0 Hero 1
+ADDSKILL 静之寒冰掌 0 Hero 1
+ADDSKILL 静之烈火 0 Hero 1
+ADDSKILL 静之冰咆哮 0 Hero 1
+ADDSKILL 静之灭天火 0 Hero 1
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+break
+
+
+
+
+
+[@副将合击]
+#IF
+CHECKHEROJOB taoist
+CHECKJOB warrior
+#ACT
+GOTO @道战1
+BREAK
+#IF
+CHECKHEROJOB taoist
+CHECKJOB wizard
+#ACT
+GOTO @道法1
+BREAK
+#IF
+CHECKHEROJOB taoist
+CHECKJOB taoist
+#ACT
+GOTO @道道1
+BREAK
+#IF
+CHECKHEROJOB wizard
+CHECKJOB warrior
+#ACT
+GOTO @法战1
+BREAK
+#IF
+CHECKHEROJOB wizard
+CHECKJOB wizard
+#ACT
+GOTO @法法1
+BREAK
+#IF
+CHECKHEROJOB wizard
+CHECKJOB taoist
+#ACT
+GOTO @道法1
+BREAK
+#IF
+CHECKHEROJOB warrior
+CHECKJOB warrior
+#ACT
+GOTO @战战1
+BREAK
+#IF
+CHECKHEROJOB warrior
+CHECKJOB wizard
+#ACT
+GOTO @法战1
+BREAK
+#IF
+CHECKHEROJOB warrior
+CHECKJOB taoist
+#ACT
+GOTO @道战1
+BREAK
+
+
+
+[@战战1]
+#IF
+#ACT
+ADDSKILL 破魂斩 4 HERO
+give 神龙之心 1
+BREAK
+
+[@道战1]
+#IF
+#ACT
+ADDSKILL 劈星斩 4 HERO
+give 神龙之心 1
+BREAK
+
+[@道道1]
+#IF
+#ACT
+ADDSKILL 噬魂沼泽 4 HERO
+give 神龙之心 1
+BREAK
+
+[@法战1]
+#IF
+#ACT
+ADDSKILL 雷霆一击 4 HERO
+give 神龙之心 1
+BREAK
+
+[@法法1]
+#IF
+#ACT
+ADDSKILL 火龙气焰 4 HERO
+give 神龙之心 1
+BREAK
+
+[@道法1]
+#IF
+#ACT
+ADDSKILL 末日审判 4 HERO
+give 神龙之心 1
+BREAK
+
+
+
+
+
+
+
+
+
+[@副将内功]
+#IF
+#ACT
+READSKILLNG HERO
+GOTO @副将内功999
+
+[@副将998]
+#IF
+#ACT
+CHANGEHEROLEVEL = 998
+break
+[@副将内功999]
+#if
+#act
+CHANGENGLEVEL = 999 HERO
+break
+
+
+[@SSH]
+#if
+#act
+CHANGEBOXLEVEL = 2
+CHANGEBOXLEVEL = 2 hero
+break
+
+
+
+[@XIN]
+#IF
+#ACT
+CHANGEHEARTPOINT + 9999999
+CHANGEHEARTPOINT + 9999999 hero
+break
+
+
+[@强化英雄]
+#if
+#act
+CHANGESKILLLEVELEX 白日门攻杀 + 1 Hero
+CHANGESKILLLEVELEX 白日门圆月 + 1 Hero
+CHANGESKILLLEVELEX 白日门刺杀 + 1 Hero
+CHANGESKILLLEVELEX 白日门烈火 + 1 Hero
+CHANGESKILLLEVELEX 白日门逐日 + 1 Hero
+CHANGESKILLLEVELEX 白日门施毒术 + 1 Hero
+CHANGESKILLLEVELEX 白日门火符 + 1 Hero
+CHANGESKILLLEVELEX 白日门噬血术 + 1 Hero
+CHANGESKILLLEVELEX 召唤火灵 + 1 Hero
+CHANGESKILLLEVELEX 白日门幽灵盾 + 1 Hero
+CHANGESKILLLEVELEX 白日门战甲术 + 1 Hero
+CHANGESKILLLEVELEX 白日门雷电术 + 1 Hero
+CHANGESKILLLEVELEX 白日门爆裂 + 1 Hero
+CHANGESKILLLEVELEX 白日门冰咆哮 + 1 Hero
+CHANGESKILLLEVELEX 白日门火墙 + 1 Hero
+CHANGESKILLLEVELEX 白日门疾光 + 1 Hero
+CHANGESKILLLEVELEX 白日门灭天火 + 1 Hero
+CHANGESKILLLEVELEX 白日门火雨 + 1 Hero
+CHANGESKILLLEVELEX 白日门噬血术 + 1 Hero
+CHANGESKILLLEVELEX 白日门施毒术 + 1 Hero
+CHANGESKILLLEVELEX 白日门刺杀 + 1 Hero
+CHANGESKILLLEVELEX 白日门雷电术 + 1 Hero
+CHANGESKILLLEVELEX 白日门流星火雨 + 1 Hero
+CHANGESKILLLEVELEX 白日门强身术 + 1 hero
+break
+
+
+
+
+
+
+
+
+
+
+
+[@LJ]
+你可以在这里打通主号和英雄所有经络，\
+甚至可以让所有经络升级至5重，还可以学习连击哦~\
+当然前提是你已经学会了内功\
+怎么样？想试试吗？\
+
+<我要开通/@开通> \
+<学习主号连击/@战士连击1>  \
+<学习英雄连击/@连击1>\  
+<提升连击等级/@连击等级>\ 
+
+<返回/@功能游戏> 
+
+[@连击等级]
+#if
+#act
+SKILLLEVEL 三绝杀 = 5
+SKILLLEVEL 追心刺 = 5
+SKILLLEVEL 断岳斩  = 5 
+SKILLLEVEL 横扫千军 = 5 
+SKILLLEVEL 双龙破 = 5 
+SKILLLEVEL 凤舞祭 = 5 
+SKILLLEVEL 惊雷爆 = 5 
+SKILLLEVEL 冰天雪地 = 5 
+SKILLLEVEL 虎啸诀 = 5
+SKILLLEVEL 八卦掌 = 5 
+SKILLLEVEL 三焰咒 = 5 
+SKILLLEVEL 万剑归宗 = 5 
+HEROSKILLLEVEL 三绝杀 = 5
+HEROSKILLLEVEL 追心刺 = 5
+HEROSKILLLEVEL 断岳斩  = 5 
+HEROSKILLLEVEL 横扫千军 = 5 
+HEROSKILLLEVEL 双龙破 = 5 
+HEROSKILLLEVEL 凤舞祭 = 5 
+HEROSKILLLEVEL 惊雷爆 = 5 
+HEROSKILLLEVEL 冰天雪地 = 5 
+HEROSKILLLEVEL 虎啸诀 = 5
+HEROSKILLLEVEL 八卦掌 = 5 
+HEROSKILLLEVEL 三焰咒 = 5 
+HEROSKILLLEVEL 万剑归宗 = 5 
+break
+
+
+
+[@开通]
+#if
+#act
+OPENHEROPULS
+OPENPULSE 0 5 hero
+OPENPULSE 1 5 hero
+OPENPULSE 2 5 hero
+OPENPULSE 3 5 hero
+OPENPULSE 4 1 hero
+CHANGEPULSELEVEL 0 + 5 hero 
+CHANGEPULSELEVEL 1 + 5 hero 
+CHANGEPULSELEVEL 2 + 5 hero 
+CHANGEPULSELEVEL 3 + 5 hero 
+OPENPULSE 0 5
+OPENPULSE 1 5 
+OPENPULSE 2 5 
+OPENPULSE 3 5
+OPENPULSE 4 1 
+CHANGEPULSELEVEL 0 + 5 
+CHANGEPULSELEVEL 1 + 5 
+CHANGEPULSELEVEL 2 + 5 
+CHANGEPULSELEVEL 3 + 5 
+ADDSKILL 斗转星移 64
+ADDSKILL 斗转星移 64 hero
+break
+[@连击1]
+#IF
+CHECKHEROJOB WARRIOR
+#ACT
+ADDSKILL 三绝杀 3 HERO
+ADDSKILL 追心刺 3 HERO
+ADDSKILL 断岳斩 3 HERO
+ADDSKILL 横扫千军 3 HERO
+OPEN4BATTERSKILL HERO
+SENDMSG 5 恭喜：您的英雄已经完成了连击全部技能 
+#ELSEACT
+goto @法师连击
+
+[@法师连击]
+#IF
+CHECKHEROJOB Wizard
+#ACT
+ADDSKILL 双龙破 3 HERO
+ADDSKILL 凤舞祭 3 HERO
+ADDSKILL 惊雷爆 3 HERO
+ADDSKILL 冰天雪地 3 HERO
+OPEN4BATTERSKILL HERO
+SENDMSG 5 恭喜：您的英雄已经完成了连击全部技能 
+BREAK
+#ELSEACT
+goto @道士连击
+
+[@道士连击]
+#IF
+CHECKHEROJOB Taoist
+#ACT
+ADDSKILL 虎啸诀 3 HERO
+ADDSKILL 八卦掌 3 HERO
+ADDSKILL 三焰咒 3 HERO
+ADDSKILL 万剑归宗 3 HERO
+OPEN4BATTERSKILL HERO
+SENDMSG 5 恭喜：您已经完成了连击全部技能
+BREAK
+
+[@战士连击1]
+#IF
+CHECKJOB WARRIOR
+#ACT
+ADDSKILL 三绝杀 3
+ADDSKILL 追心刺 3 
+ADDSKILL 断岳斩 3 
+ADDSKILL 横扫千军 3 
+OPEN4BATTERSKILL 
+SENDMSG 5 恭喜：您已经完成了连击全部技能 
+#ELSEACT
+goto @法师连击1
+[@法师连击1]
+#IF
+CHECKJOB Wizard
+#ACT
+ADDSKILL 双龙破 3 
+ADDSKILL 凤舞祭 3 
+ADDSKILL 惊雷爆 3 
+ADDSKILL 冰天雪地 3 
+OPEN4BATTERSKILL 
+SENDMSG 5 恭喜：您已经完成了连击全部技能 
+BREAK
+#ELSEACT
+goto @道士连击1
+
+[@道士连击1]
+#IF
+CHECKJOB Taoist
+#ACT
+ADDSKILL 虎啸诀 3 
+ADDSKILL 八卦掌 3 
+ADDSKILL 三焰咒 3 
+ADDSKILL 万剑归宗 3 
+OPEN4BATTERSKILL 
+SENDMSG 5 恭喜：您已经完成了连击全部技能
+
+
+
+
+[@回血]
+#IF
+#ACT
+#SAY
+<我要恢复满状态/@满状态G>\ \
+<我要英雄恢复满状态/@满状态H>\
+<返回/@功能游戏> 
+
+[@满状态H]
+#if 
+#ACT
+HumanHP + 8000000  hero 0
+HumanMP + 8000000  hero 0
+SENDMSG 7 我已经使用我强大的医疗之术为您恢复到满状态！
+SENDMSG 0 玩家[%s]的英雄通过药王神医的医治，HP/MP瞬间得到了提升！ 251 249
+#elsesay
+「失败」：元宝数量不足，我无法给你的英雄医治！
+
+
+[@满状态G]
+#if 
+#ACT
+HumanHP + 8000000
+HumanMP + 8000000
+SENDMSG 7 我已经使用我强大的医疗之术为您恢复到满状态！
+SENDMSG 0 玩家[%s]通过药王神医的医治，HP/MP瞬间得到了提升！ 251 249
+#elsesay
+「失败」：元宝数量不足，我无法给你医治！
+
+
+
+
+
+[@龙卫技能]
+#IF
+CHECKHEROJOB WARRIOR
+#ACT
+ADDSKILL 白日门纵横剑术 1  hero
+SENDMSG 5 恭喜：您的英雄已经学会龙卫神技白日门纵横剑术，从此纵横玛法，傲视群雄！ 
+#ELSEACT
+goto @冰霜
+
+[@冰霜]
+#IF
+CHECKHEROJOB Wizard
+#ACT
+ADDSKILL 白日门冰霜雪雨 1  hero
+SENDMSG 5 恭喜：您的英雄已经学会龙卫神技白日门冰霜雪雨，从此纵横玛法，傲视群雄！ 
+BREAK
+#ELSEACT
+goto @裂神符
+
+[@裂神符]
+#IF
+CHECKHEROJOB Taoist
+#ACT
+ADDSKILL 白日门裂神符 1  hero
+SENDMSG 5 恭喜：您的英雄已经学会龙卫神技白日门裂神符，从此纵横玛法，傲视群雄！ 
+
+
+
+[@玄铁]
+#IF
+#ACT
+GIVEKIMNEEDLE 玄铁 9999
+break
+
+
+
+[@心法测试]
+<主体心法999/@主体心法999>　\
+<英雄心法999/@英雄心法999>　\
+<返回/@功能游戏> 　
+
+[@主体心法999]
+#IF
+#ACT
+SKILLLEVEL 龙卫心法 = 999
+GOTO @功能游戏
+
+[@英雄心法999]
+#IF
+#ACT
+HEROSKILLLEVEL 龙卫心法 = 999
+GOTO @功能游戏
+
+
+
+
+
+
+
+[@时装]
+#say
+在我这里可以免费获得自己心怡的时装，\
+，每件时装在技能满4级的前提下穿戴后合击等级会提升一级（12级封顶）\
+\
+
+<获得时装/@sz><关闭/@exit>
+
+
+[@sz]
+<时装名：/fcolor=249>返璞归真(人)\ \
+<穿戴条件：/fcolor=249>仅供男性穿着\ \
+<价格：/fcolor=249>500000积分\ \
+<属性：/fcolor=249>内力恢复速度+100 主属性+50 体力值或魔力值+5000\ \
+
+<获得/@01><获得下一款时装/@sz1>
+[@01]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 返璞归真(人) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：返璞归真(人)！ 251 253
+
+
+
+
+[@sz1]
+<时装名：/fcolor=249>返璞归真(地)\ \
+<穿戴条件：/fcolor=249>仅供男性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+200 主属性+100 体力值或魔力值+10000 合击\
+等级+1 附带传送神技\
+
+<获得/@02><获得下一款时装/@sz2>
+
+
+[@02]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 返璞归真(地) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城(343:340)时装裁缝处获得了：返璞归真(地)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+[@sz2]
+<时装名：/fcolor=249>丽质天成(人)\ \
+<穿戴条件：/fcolor=249>仅供女性穿着\ \
+<价格：/fcolor=249>500000积分\ \
+<属性：/fcolor=249>内力恢复速度+100 主属性+50 体力值或魔力值+5000\ \
+
+<获得/@03><获得下一款时装/@sz3>
+
+
+[@03]
+#if
+#act
+GIVE 丽质天成(人) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：丽质天成(人)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+[@sz3]
+<时装名：/fcolor=249>丽质天成(地)\ \
+<穿戴条件：/fcolor=249>仅供女性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+200 主属性+100 体力值或魔力值+10000 合击\
+等级+1 附带传送神技\
+
+<获得/@04><获得下一款时装/@sz4>
+
+
+[@04]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 丽质天成(地) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：丽质天成(地)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+
+
+
+[@sz4]
+<时装名：/fcolor=249>龙腾天下(男)\ \
+<穿戴条件：/fcolor=249>仅供男性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+500 主属性+200 体力值或魔力值+25000 合击\
+等级+1 \
+
+<获得/@05><获得下一款时装/@sz5>
+
+
+[@05]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 龙腾天下(男) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：龙腾天下(男)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+
+[@sz5]
+<时装名：/fcolor=249>龙腾天下(女)\ \
+<穿戴条件：/fcolor=249>仅供女性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+500 主属性+200 体力值或魔力值+25000 合击\
+等级+1 \
+
+<获得/@06><获得下一款时装/@sz6>
+
+
+[@06]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 龙腾天下(女) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：龙腾天下(女)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+
+
+[@sz6]
+<时装名：/fcolor=249>九天彩凤(男)\ \
+<穿戴条件：/fcolor=249>仅供男性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+500 主属性+200 体力值或魔力值+25000 合击\
+等级+1 \
+
+<获得/@07><获得下一款时装/@sz7>
+
+
+[@07]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 九天彩凤(男) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：九天彩凤(男)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+
+[@sz7]
+<时装名：/fcolor=249>九天彩凤(女)\ \
+<穿戴条件：/fcolor=249>仅供女性穿着\ \
+<价格：/fcolor=249>1000000积分\ \
+<属性：/fcolor=249>内力恢复速度+500 主属性+200 体力值或魔力值+25000 合击\
+等级+1 \
+
+<获得/@08><获得下一款时装/@sz8>
+
+
+[@08]
+#IF
+CHECKBAGSIZE 1
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留1格以上包裹空间后再来兑换！
+
+#if
+#act
+GIVE 九天彩凤(女) 1
+SENDMSG 0 贺喜:<$USERNAME>在盟重土城获得了：九天彩凤(女)！ 251 253
+#elsesay
+提示：您的积分不足，无法兑换此奖励，请充值获得更多积分！\ \
+
+
+
+[@22]
+#ACT
+CHANGEHEARTPOINT + 100000000
+CHANGEHEARTPOINT + 100000000 hero
+
+
+
+
+
+[@11111]
+#ACT
+CALCVAR HUMAN 精修值 + 5000
+savevar human 精修值 ..\QUESTDIARY\雪花制作\精修值.txt
+
+
+
+
+[@MJ]
+#if
+#act
+giveKIMNEEDLE 传功令 5000
+
+
+
+[@RM]
+#IF
+RANDOM 2
+#ACT
+GIVE 绿宝石 1
+
+#IF
+RANDOM 2
+#ACT
+GIVE 传功令 1
+
+#IF
+RANDOM 2
+#ACT
+GIVE 无痕绿宝石 1
+
+#IF
+RANDOM 2
+#ACT
+GIVE 完美绿宝石 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;========================假人测试=================================
+[@控制假人1]
+请在下面选择需要刷假人的地图：\ 
+
+<盟重安全区/@盟重>    <1-120免费闭关/@免费闭关1>    <1-140免费闭关/@免费闭关2> \ 
+
+<风云宝阁/@风云宝阁>   <金牛密室/@金牛密室>    <开心乐园/@开心乐园> \
+
+<热血城堡/@热血城堡>    <永恒迷宫/@永恒迷宫>    <主宰山庄/@主宰山庄> \
+
+<沙巴克一/@沙1>    <沙巴克二/@沙2>    <沙巴克三/@沙3> <沙巴克城堡/@皇宫>\ 
+
+<集合回土/@停止1>    <集合皇宫/@停止2>    <皇宫门口/@停止3>\ 
+
+<自由散开/@启动>    <清除假人/@清假>    \  
+
+[@开启赌城]
+#if
+#ACT
+mov G76 1
+#ACT
+SENDMSG 0 赌城已开启！
+
+[@guanducn]
+#if
+#ACT
+mov G76 0
+#ACT
+SENDMSG 0 赌城已关闭，请各位玩家等待下次活动时间！
+SENDMSG 0 赌城已关闭，请各位玩家等待下次活动时间！
+SENDMSG 0 赌城已关闭，请各位玩家等待下次活动时间！
+
+
+[@皇宫]
+你需要在<沙巴克皇宫>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个12>    <刷三个/@刷三个12>    <刷五个/@刷五个12>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个12]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx new0150 29 44 1 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @皇宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个12]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx new0150 29 44 3 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @皇宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个12]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx new0150 29 44 5 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @皇宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+
+
+
+
+[@沙3]
+你需要在<沙巴克二号南侧据点>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个11>    <刷三个/@刷三个11>    <刷五个/@刷五个11>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个11]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx 3 683 340 1 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @沙3
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个11]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 683 340 3 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @沙3
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个11]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 683 340 5 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @沙3
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@沙2]
+你需要在<沙巴克二号南侧据点>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个10>    <刷三个/@刷三个10>    <刷五个/@刷五个10>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个10]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx 3 609 294 1 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @沙2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个10]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 609 294 3 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @沙2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个10]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 609 294 5 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @沙2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@沙1]
+你需要在<沙巴克一号东侧据点>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个9>    <刷三个/@刷三个9>    <刷五个/@刷五个9>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个9]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx 3 652 250 1 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @沙1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个9]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 652 250 3 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @沙1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个9]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 652 250 5 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @沙1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@免费闭关1]
+你需要在<1-120免费闭关>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个8>    <刷三个/@刷三个8>    <刷五个/@刷五个8>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个8]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx MFPDA 30 26 1 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @免费闭关1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个8]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx MFPDA 30 26 3 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @免费闭关1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个8]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx MFPDA 30 26 5 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @免费闭关1
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@免费闭关2]
+你需要在<1-140免费闭关>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个7>    <刷三个/@刷三个7>    <刷五个/@刷五个7>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+[@刷一个7]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx MFPDA2 30 26 1 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @免费闭关2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个7]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx MFPDA2 30 26 3 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @免费闭关2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个7]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx MFPDA2 30 26 5 \QuestDiary\爱拼分享\智能陪练\07级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\07级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @免费闭关2
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@永恒迷宫]
+你需要在<永恒迷宫>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个6>    <刷三个/@刷三个6>    <刷五个/@刷五个6>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个6]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx T1061 21 24 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @永恒迷宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个6]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx T1061 21 24 3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @永恒迷宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个6]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx T1061 21 24 5 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @永恒迷宫
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@开心乐园]
+你需要在<开心乐园>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个5>    <刷三个/@刷三个5>    <刷五个/@刷五个5>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个5]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx kaixin1 70 70 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @开心乐园
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个5]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx kaixin1 70 70  3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @开心乐园
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个5]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx kaixin1 70 70  5 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @开心乐园
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@风云宝阁]
+你需要在<风云宝阁>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个4>    <刷三个/@刷三个4>    <刷五个/@刷五个4>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个4]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx h204va 74 72 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @风云宝阁
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个4]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx h204va 74 72 3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @风云宝阁
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个4]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx h204va 74 72 5 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @风云宝阁
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@金牛密室]
+你需要在<金牛密室>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个3>    <刷三个/@刷三个3>    <刷五个/@刷五个3>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个3]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx jinniu 140 110 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @金牛密室
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个3]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx jinniu 140 110  3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @金牛密室
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个3]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx jinniu 140 110  5 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @金牛密室
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@盟重]
+你需要在<盟重>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个高级/@刷一个>    <刷三个中级/@刷三个>    <刷五个/@刷五个>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx 3 330 330 1 \QuestDiary\爱拼分享\智能陪练\专门PK陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\专门PK陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @盟重
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 330 330 3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @盟重
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx 3 330 330 5 \QuestDiary\爱拼分享\智能陪练\陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @盟重
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@主宰山庄]
+你需要在<主宰山庄>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个1>    <刷三个/@刷三个1>    <刷五个/@刷五个1>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个1]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx HERO1 220 205 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @主宰山庄
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个1]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx HERO1 220 205 2 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @主宰山庄
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个1]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx HERO1 220 205 2 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @主宰山庄
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@热血城堡]
+你需要在<热血城堡>刷新多少个假人？\
+请在下面选择需要刷新的假人个数：\
+
+<刷一个/@刷一个2>    <刷三个/@刷三个2>    <刷五个/@刷五个2>\ \
+
+(请注意:若要刷六个，点两次<刷三个>就行了，以此类推)
+
+[@刷一个2]
+#IF
+CHECKAIPLAY < 1000
+#ACT
+AILogOnEx T5356 245 192 1 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 1个假人启动成功！
+GOTO @热血城堡
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷三个2]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx T5356 245 192 3 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 3个假人启动成功！
+GOTO @热血城堡
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@刷五个2]
+#if
+CHECKAIPLAY < 1000
+#act
+AILogOnEx T5356 245 192 5 \QuestDiary\爱拼分享\智能陪练\50级陪练列表.txt ..\QuestDiary\爱拼分享\智能陪练\50级陪练列表英雄.txt
+SENDMSG 7 5个假人启动成功！
+GOTO @热血城堡
+#ELSEACT
+SENDMSG 7 对不起，服务器目前假人个数已经达到50个了。
+break
+
+[@停止3]
+#IF
+#act
+Gmexecute 全服触发 @假人停止2
+GOTO @控制假人
+break
+
+[@停止2]
+#IF
+#act
+Gmexecute 全服触发 @假人停止1
+GOTO @控制假人
+break
+
+[@停止1]
+#IF
+#act
+Gmexecute 全服触发 @假人停止
+GOTO @控制假人
+break
+
+[@启动]
+#IF
+#act
+Gmexecute 全服触发 @重新启动
+GOTO @控制假人
+break
+
+[@清假]
+#IF
+#act
+Gmexecute 全服触发 @清除假人
+GOTO @控制假人
+break
+;;========================假人测试=================================
+
+[@行会管理]
+—————————<欢迎使用行会招人管理！/FCOLOR=250>—————————\ 
+注意第一次使用一定要执行 <初始化行会招人/@清除招人> 一次,否则M2报错无法用\
+<设置行会自主招人收费标准/@@InPutInteger67>      当前元宝：<$STR(G24)>\
+<设置行会自主招人最低限制等级/@@InPutInteger68>　当前等级：<$STR(G22)>\
+<设置行会自主招人最高限制等级/@@InPutInteger69>　当前等级：<$STR(G23)>\ \
+<清除行会自主招人/@清除招人>\ \
+<返回/@GAMEUSER>
+
+[@InPutInteger67]
+#IF
+ISADMIN
+#elseact
+goto @notadmin
+break
+#IF
+small N67 0
+#ACT
+MESSAGEBOX [警告]：非法输入！
+BREAK
+#ELSEACT
+MOV G24 <$STR(N67)>
+SENDMSG 5 调整成功！
+GOTO @行会管理
+break
+[@InPutInteger68]
+#IF
+ISADMIN
+#elseact
+goto @notadmin
+break
+#IF
+small N68 0
+#ACT
+MESSAGEBOX [警告]：非法输入！
+BREAK
+#ELSEACT
+MOV G22 <$STR(N68)>
+SENDMSG 5 调整成功！
+GOTO @行会管理
+break
+[@InPutInteger69]
+#IF
+ISADMIN
+#elseact
+goto @notadmin
+break
+#IF
+small N69 0
+#ACT
+MESSAGEBOX [警告]：非法输入！
+BREAK
+#ELSEACT
+MOV G23 <$STR(N69)>
+SENDMSG 5 调整成功！
+GOTO @行会管理
+break
+
+[@清除招人]
+#IF
+ISADMIN
+#ACT
+;G21 一共有多少行会在线招人
+MOV G21 0
+MOV G01 0
+MOV G02 0
+MOV G03 0
+MOV G04 0
+MOV G05 0
+MOV G06 0
+MOV G07 0
+MOV G08 0
+MOV G09 0
+MOV G10 0
+MOV G11 0
+MOV G12 0
+MOV G13 0
+MOV G14 0
+MOV G15 0
+MOV G16 0
+MOV G17 0
+MOV G18 0
+MOV G19 0
+MOV G20 0
+MOV G22 1
+MOV G23 100
+MOV G24 5
+MOV A31 暂无
+MOV A32 暂无
+MOV A33 暂无
+MOV A34 暂无
+MOV A35 暂无
+MOV A36 暂无
+MOV A37 暂无
+MOV A38 暂无
+MOV A39 暂无
+MOV A40 暂无
+MOV A41 暂无
+MOV A42 暂无
+MOV A43 暂无
+MOV A44 暂无
+MOV A45 暂无
+MOV A46 暂无
+MOV A47 暂无
+MOV A48 暂无
+MOV A49 暂无
+MOV A50 暂无
+CLEARNAMELIST ..\QuestDiary\数据文件\行会数据\行会招人ING.txt
+SENDMSG 5 所有行会招人的数据全部清除！
+goto @行会管理
+break
+#elseact
+goto @notadmin
+[@notadmin]
+#say
+对不起！你不是GM！
+
+[@黑铁矿]
+#if
+#act
+GIVEMINE 黑铁矿石 1
+goto @GAMEUSER
+
+
+[@首饰改名]
+<————————＜><首饰改名管理菜单/@><＞————————>\
+请选择要改名的装备：(将要改名的装备戴身上)\ \ 
+<[盔　甲]/@@useitemname0>     <[武　器]/@@useitemname1>     <[勋  章]/@@useitemname2>     <[项　链]/@@useitemname3>\
+<[头　盔]/@@useitemname4>     <[右手镯]/@@useitemname5>     <[左手镯]/@@useitemname6>     <[右戒指]/@@useitemname7> \
+<[左戒指]/@@useitemname8>     <[护身符]/@@useitemname9>     <[腰  带]/@@useitemname10>     <[靴  子]/@@useitemname11>\
+<[宝  石]/@@useitemname12>     <[返  回]/@GAMEUSER>\
+<——————————————————————————>\
+
+[@@useitemname0]
+#ACT
+ goto @ChangeName
+[@@useitemname1]
+#ACT
+ goto @ChangeName
+[@@useitemname2]
+#ACT
+ goto @ChangeName
+[@@useitemname3]
+#ACT
+ goto @ChangeName
+[@@useitemname4]
+#ACT
+ goto @ChangeName
+[@@useitemname5]
+#ACT
+ goto @ChangeName
+[@@useitemname6]
+#ACT
+ goto @ChangeName
+[@@useitemname7]
+#ACT
+ goto @ChangeName
+[@@useitemname8]
+#ACT
+ goto @ChangeName
+[@@useitemname9]
+#ACT
+ goto @ChangeName
+[@@useitemname10]
+#ACT
+ goto @ChangeName
+[@@useitemname11]
+#ACT
+ goto @ChangeName
+[@@useitemname12]
+#ACT
+ goto @ChangeName
+
+[@ChangeName]
+#Act
+  SetScriptFlag 1 1
+  Sendmsg 7 首饰改名成功.
+  goto @首饰改名
+  BREAK
+;--------------------------------------------------------------------------
+[@制造装备]
+<————————＜><制造装备管理菜单/@><＞————————>\
+请选择您需要的套装备，确认自己包裹是否有足够的空间！ \
+<—————————————————————————————>\
+<[特戒全套]/@特戒套>　  <[热血套装]/@虎威战>　  <[主宰套装]/@主宰套>　  <[皓天战套]/@荣誉战>\　  
+<[皓天法套]/@荣誉法>　  <[皓天道套]/@荣誉道>    <[必杀首饰]/@必杀套>　  <[传奇套装]/@传奇套>\　  
+<[杀戮勋章]/@杀戮勋>　  <[狂暴套装]/@狂暴斗>    <[天龙套装]/@天龙套>　  <[金牛道套]/@金牛道>\    
+<[永恒套装]/@永恒套>　  <[皓月套装]/@皓月套>    <[金牛战套]/@金牛战>　  <[金牛法套]/@金牛法>\   
+<[神龙套装]/@倚天套>\\
+
+<下一页/@下一页>\
+[@下一页]
+<————————＜><制造装备管理菜单/@><＞————————>\
+请选择您需要的套装备，确认自己包裹是否有足够的空间！ \
+<—————————————————————————————>\
+<[圣战套装]/@圣战>　  <[法神套装]/@法神>　  <[天尊套装]/@天尊>　  <[雷霆套装]/@雷霆>\
+<[烈焰套装]/@烈焰>　  <[光芒套装]/@光芒>　  <[战神套装]/@战神>　  <[圣魔套装]/@圣魔>\
+<[真魂套装]/@真魂>　  <[星王战套]/@星王战>　  <[星王法套]/@星王法>　  <[星王道套]/@星王道>\ 
+<[狂雷战套]/@狂雷战>　  <[逆火法套]/@逆火法>　  <[通云道套]/@通云道>　  <[王者战套]/@王者战>\<[王者法套]/@王者法>　  <[王者道套]/@王者道>　  \  
+<返回/@GAMEUSER>
+
+
+
+[@荣誉战]
+#IF
+ISADMIN
+#ACT
+give 皓天战刃 1
+give 皓天战甲(男) 1
+give 皓天战甲(女) 1
+give 皓天战盔 1 
+give 皓天项链(战) 1
+give 皓天战勋 1
+give 皓天护腕(战) 2
+give 皓天战戒 2
+give 皓天腰带(战) 1
+give 皓天战靴 1
+
+[@荣誉道]
+give 皓天宝扇 1
+give 皓天道袍(男) 1
+give 皓天道袍(女) 1
+give 皓天道盔 1 
+give 皓天项链(道) 1
+give 皓天道勋 1
+give 皓天护腕(道) 2
+give 皓天道戒2
+give 皓天腰带(道) 1
+give 皓天道靴 1
+
+[@荣誉法]
+give 皓天权杖 1
+give 皓天魔衣(男) 1
+give 皓天魔衣(女) 1
+give 皓天法冠 1 
+give 皓天项链(法) 1
+give 皓天法勋 1
+give 皓天护腕(法) 2
+give 皓天魔戒 2
+give 皓天腰带(法) 1
+give 皓天魔靴 1
+goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@倚天套]
+#IF
+ISADMIN
+#ACT
+give 神龙神斩 1 
+give 神龙神杖 1 
+give 神龙神扇 1 
+give 神龙神袍(女) 1
+give 神龙神甲(男) 1
+give 神龙神链 1
+give 神龙神戒 2
+give 神龙神镯 2
+give 神龙神靴 1
+give 神龙神带 1
+give 神龙神盔 1
+give 神龙斗笠 1
+give 爱拼传奇甲 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@怒血套]
+#IF
+ISADMIN
+#ACT
+give 怒血皓月神剑 1 
+give 怒血皓月神袍 1
+give 怒血皓月神甲 1
+give 怒血皓月项链 1
+give 怒血皓月戒指 2
+give 怒血皓月手镯 2
+give 怒血皓月靴子 1
+give 怒血皓月腰带 1
+give 怒血皓月头盔 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@必杀首饰]
+#IF
+ISADMIN
+#ACT
+give 必杀斗笠(法) 1 
+give 必杀斗笠(战) 1
+give 必杀斗笠(道) 1
+give 必杀面巾(战) 1
+give 必杀面巾(法) 1
+give 必杀面巾(道) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@倚天套55]
+#IF
+ISADMIN
+#ACT
+give 倚天剑 1 
+give 倚天战甲(男) 1 
+give 倚天战甲(女) 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@特戒套]
+#IF
+ISADMIN
+#ACT
+give 麻痹戒指 1 
+give 护身戒指 1 
+give 复活戒指 1 
+give 传送戒指 1
+give 隐身戒指 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@杀戮勋]
+#IF
+ISADMIN
+#ACT
+give 杀戮勋章 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@狂暴斗]
+#IF
+ISADMIN
+#ACT
+give 狂暴斗笠 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@狂暴石]
+#IF
+ISADMIN
+#ACT
+give 狂暴神石 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@永恒套]
+#IF
+ISADMIN
+#ACT
+give 永恒神剑[魅影] 1 
+give 永恒战袍[龙魄] 1
+give 永恒战袍[凤舞] 1
+give 永恒功勋 1 
+give 永恒头盔 1  
+give 永恒项链 2
+give 永恒护腕 2 
+give 永恒戒指 1
+give 永恒腰带 1 
+give 永恒皮靴 1 
+give 永恒面巾 1
+give 永恒斗笠 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@皓月套]
+#IF
+ISADMIN
+#ACT
+give 皓月神剑 1 
+give 皓月玉扇 1
+give 皓月魔杖 1  
+give 皓月神甲(男) 1
+give 皓月宝甲(女) 1
+give 皓月头盔 1 
+give 皓月项链 1  
+give 皓月戒指 2
+give 皓月手镯 2 
+give 皓月勋章 1
+give 皓月腰带 1 
+give 皓月神靴 1 
+give 皓月面巾 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@传奇套]
+#IF
+ISADMIN
+#ACT
+give 传奇神剑 1 
+give 传奇神甲(男) 1
+give 传奇神甲(女) 1
+give 传奇神盔 1 
+give 传奇项链 1  
+give 传奇神戒 2
+give 传奇护腕 2 
+give 传奇神章 1
+give 传奇腰带 1 
+give 传奇神靴 1 
+give 传奇斗笠 1
+give 传奇面巾 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@天龙套]
+#IF
+ISADMIN
+#ACT
+give 天龙神剑 1
+give 天龙圣衣(男) 1 
+give 天龙圣衣(女) 1
+give 天龙头盔 1 
+give 天龙项链 1  
+give 天龙神戒 2 
+give 天龙护腕 2 
+give 天龙勋章 1
+give 天龙腰带 1 
+give 天龙神靴 1 
+give 天龙斗笠 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@主宰套]
+#IF
+ISADMIN
+#ACT
+give 主宰神剑 1 
+give 主宰神甲(男) 1
+give 主宰神甲(女) 1
+give 主宰神盔 1 
+give 主宰项链 1  
+give 主宰神戒 2 
+give 主宰护腕 2 
+give 主宰勋章 1
+give 主宰腰带 1 
+give 主宰神靴 1 
+give 主宰斗笠 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@王者道]
+#IF
+ISADMIN
+#ACT
+give 王者之剑 1 
+give 王者道袍(男) 1
+give 王者道袍(女) 1
+give 王者道盔 1 
+give 王者项链(道) 1 
+give 王者道戒 2 
+give 王者护腕(道) 2 
+give 王者腰带(道) 1 
+give 王者勋章(道) 1
+give 王者道靴 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@王者法]
+#IF
+ISADMIN
+#ACT
+give 王者之杖 1 
+give 王者魔衣(男) 1
+give 王者魔衣(女) 1
+give 王者魔盔 1 
+give 王者项链(法) 1 
+give 王者魔戒 2 
+give 王者护腕(法) 2 
+give 王者腰带(法) 1 
+give 王者勋章(法) 1
+give 王者魔靴 1 
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@王者战]
+#IF
+ISADMIN
+#ACT
+give 王者之刃 1 
+give 王者战甲(男) 1
+give 王者战甲(女) 1
+give 王者战盔 1 
+give 王者项链(战) 1 
+give 王者战戒 2 
+give 王者护腕(战) 2 
+give 王者腰带(战) 1 
+give 王者勋章(战) 1
+give 王者战靴 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@虎威法]
+#IF
+ISADMIN
+#ACT
+give 热血神剑 1 
+give 热血神甲 1 
+give 虎威神甲(法) 1
+give 虎威魔盔 1 
+give 虎威项链(法) 1 
+give 虎威魔戒 2 
+give 虎威护腕(法) 2 
+give 虎威腰带(法) 1 
+give 虎威勋章(法) 1
+give 虎威魔靴 1 
+give 热血斗笠 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@虎威道]
+#IF
+ISADMIN
+#ACT
+give 热血神剑 1 
+give 热血神甲 1
+give 热血神袍 1 
+give 虎威道盔 1 
+give 虎威项链(道) 1 
+give 虎威道戒 2 
+give 虎威护腕(道) 2 
+give 虎威腰带(道) 1 
+give 虎威勋章(道) 1
+give 虎威道靴 1 
+give 热血斗笠 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@虎威战]
+#IF
+ISADMIN
+#ACT
+give 热血神剑 1 
+give 热血魔杖 1 
+give 热血羽扇 1 
+give 热血神甲 1 
+give 热血神袍 1
+give 热血头盔 1 
+give 热血项链 1 
+give 热血戒指 2 
+give 热血护腕 2 
+give 热血腰带 1 
+give 热血勋章 1
+give 热血靴子 1 
+give 热血斗笠 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@金牛战]
+#IF
+ISADMIN
+#ACT
+give 黄金裁决 1 
+give 金牛战甲(男) 1
+give 金牛战甲(女) 1
+give 金牛战盔 1 
+give 金牛项链(战) 1 
+give 金牛战戒 2 
+give 金牛护腕(战) 2 
+give 金牛腰带(战) 1 
+give 金牛勋章(战) 1
+give 金牛战靴 1 
+give 蒙面黑巾(战) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@金牛法]
+#IF
+ISADMIN
+#ACT
+give 传奇魔刃 1 
+give 金牛魔衣(男) 1
+give 金牛魔衣(女) 1
+give 金牛魔盔 1 
+give 金牛项链(法) 1 
+give 金牛魔戒 2 
+give 金牛护腕(法) 2 
+give 金牛腰带(法) 1 
+give 金牛勋章(法) 1
+give 金牛魔靴 1 
+give 蒙面黑巾(法) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@金牛道]
+#IF
+ISADMIN
+#ACT
+give 赤金逍遥扇 1 
+give 金牛道袍(男) 1
+give 金牛道袍(女) 1
+give 金牛道盔 1 
+give 金牛项链(道) 1 
+give 金牛道戒 2 
+give 金牛护腕(道) 2 
+give 金牛腰带(道) 1 
+give 金牛勋章(道) 1
+give 金牛道靴 1 
+give 蒙面黑巾(道) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@通云道]
+#IF
+ISADMIN
+#ACT
+give 王者之剑 1 
+give 王者道甲(男) 1 
+give 王者道甲(女) 1 
+give 通云道盔 1 
+give 通云项链 1 
+give 通云护腕 2 
+give 通云道戒 2 
+give 通云腰带 1 
+give 通云道靴 1 
+give 王者勋章(道) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+
+[@逆火法]
+#IF
+ISADMIN
+#ACT
+give 王者之杖 1 
+give 王者魔甲(男) 1 
+give 王者魔甲(女) 1 
+give 逆火魔盔 1 
+give 逆火项链 1 
+give 逆火护腕 2 
+give 逆火魔戒 2 
+give 逆火腰带 1 
+give 逆火魔靴 1 
+give 王者勋章(法) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@狂雷战]
+#IF
+ISADMIN
+#ACT
+give 王者之刃 1 
+give 王者战甲(男) 1 
+give 王者战甲(女) 1 
+give 狂雷战盔 1 
+give 狂雷项链 1 
+give 狂雷护腕 2 
+give 狂雷战戒 2 
+give 狂雷腰带 1 
+give 狂雷战靴 1 
+give 王者勋章(战) 1
+ goto @制造装备
+  BREAK
+#ELSESAY
+对不起！你不是GM！
+
+[@星王战]
+#IF
+ISADMIN
+#ACT
+give 开天 1 
+give 凤天魔甲 1 
+give 凰天魔衣 1 
+give 星王冠(战) 1 
+give 星王项链(战) 1 
+give 星王护腕(战) 2 
+give 星王战戒 2 
+give 星王腰带(战) 1 
+give 星王战靴 1 
+ goto @制造装备
+  BREAK
+[@星王法]
+#IF
+ISADMIN
+#ACT
+give 镇天 1 
+give 凤天魔甲 1 
+give 凰天魔衣 1 
+give 星王冠(法) 1 
+give 星王项链(法) 1 
+give 星王护腕(法) 2 
+give 星王魔戒 2 
+give 星王腰带(法) 1 
+give 星王法靴 1 
+ goto @制造装备
+  BREAK
+[@星王道]
+#IF
+ISADMIN
+#ACT
+give 玄天 1 
+give 凤天魔甲 1 
+give 凰天魔衣 1 
+give 星王冠(道)  1 
+give 星王项链(道) 1 
+give 星王护腕(道) 2 
+give 星王道戒 2 
+give 星王腰带(道) 1 
+give 星王道靴 1 
+ goto @制造装备
+  BREAK
+
+[@真魂]
+#IF
+ISADMIN
+#ACT
+  GIVE 真魂项链 1
+  GIVE 真魂手镯 2
+  GIVE 真魂戒指 2
+  goto @制造装备
+  BREAK
+
+[@圣魔]
+#IF
+ISADMIN
+#ACT
+  GIVE 圣魔项链 1
+  GIVE 圣魔手镯 2
+  GIVE 圣魔戒指 2
+  goto @制造装备
+  BREAK
+
+[@战神]
+#IF
+ISADMIN
+#ACT
+  GIVE 战神项链 1
+  GIVE 战神手镯 2
+  GIVE 战神戒指 2
+  goto @制造装备
+  BREAK
+
+[@光芒]
+#IF
+ISADMIN
+#ACT
+  GIVE 光芒项链 1
+  GIVE 光芒护腕 2
+  GIVE 光芒道戒 2
+  GIVE 光芒道靴 1
+  GIVE 光芒腰带 1
+  goto @制造装备
+  BREAK
+
+[@烈焰]
+#IF
+ISADMIN
+#ACT
+  GIVE 烈焰项链 1
+  GIVE 烈焰护腕 2
+  GIVE 烈焰魔戒 2
+  GIVE 烈焰魔靴 1
+  GIVE 烈焰腰带 1
+  goto @制造装备
+  BREAK
+
+[@雷霆]
+#IF
+ISADMIN
+#ACT
+  GIVE 雷霆项链 1
+  GIVE 雷霆护腕 2
+  GIVE 雷霆战戒 2
+  GIVE 雷霆战靴 1
+  GIVE 雷霆腰带 1
+  goto @制造装备
+  BREAK
+
+[@天尊]
+#IF
+ISADMIN
+#ACT
+  GIVE 天尊头盔 1
+  GIVE 天尊项链 1
+  GIVE 天尊手镯 2
+  GIVE 天尊戒指 2
+  goto @制造装备
+  BREAK
+
+[@法神]
+#IF
+ISADMIN
+#ACT
+  GIVE 法神头盔 1
+  GIVE 法神项链 1
+  GIVE 法神手镯 2
+  GIVE 法神戒指 2
+  goto @制造装备
+  BREAK
+
+[@圣战]
+#IF
+ISADMIN
+#ACT
+  GIVE 圣战头盔 1
+  GIVE 圣战项链 1
+  GIVE 圣战手镯 2
+  GIVE 圣战戒指 2
+  goto @制造装备
+  BREAK
+
+
+[@初级传送]
+  爱拼传奇qq782864782\
+╔┄┳┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┳┄╗ ☆\
+┆　┆ <比奇大城/@bwmove>   <新手小村/@bdmove> <白日天门/@wwmove> <苍月海岛/@cymove>          ┆  ┆\
+┆<英/SCOLOR=254>┆ <盟重土城/@jhmove>   <封魔神谷/@fmmove>  <毒蛇山谷/@sbkmove333>  <沙巴克城外/@sbkmove>      ┆<英/SCOLOR=254>┆\ 
+┆<雄/SCOLOR=254>╠┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╠<雄/SCOLOR=254>╣ \
+┆<网/SCOLOR=254>┆ <矿区洞口/@bqkqmove>  <蜈蚣洞口/@dldxmove>  <圣域/@wmsmmove>  <石墓五层/@zdsmmoveee>             ┆<网/SCOLOR=254>┆\ 
+┆<络/SCOLOR=254>┆ <祖玛洞口/@zmsmmove>  <牛魔洞口/@nmsmmove>  <尸魔洞口/@smdxmove>  <骨魔洞口/@gmdxmove>         ┆<络/SCOLOR=254>┆ \
+┆     <封魔洞口/@Fmommove>  <抉择之地/@xyxgmove>                 ┆  ┆  \ 
+┆　┆ <沙影之道/@SYdkmove>    <沃玛洞口/@SYommove>                 ┆  ┆  \ 
+╚┄┷┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┷┄╝ \
+
+[@mosmove]
+#IF
+#say
+入口：苍月老兵（苍月岛119，365）\
+奖励：杀怪有非常丰厚的极品装备爆出和高经验的收获\
+时间：明天晚上19点-22点开放3小时.\
+[@cdmj]
+<[主要怪物]>:，赤月怪，各大教主\
+<[刷新时间]>:30分钟\
+<[进入条件]>:10元宝\
+<[爆率提示]>:所有装备.\
+<[危险指数]>:☆☆☆☆☆☆☆\ \
+<[确定进入]/@cdmj1>                    <返回上页/@功能游戏>\
+[@cdmj1]
+#IF 
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+give 回城卷 1
+mapmove l006A 53 52
+SENDMSG 0 [%s].进入了地下神殿..
+break 
+#ELSEACT
+MESSAGEBOX 需要花费10元宝才能享受该服务!
+goto @功能游戏
+break
+[@zdsmmove]
+<[主要怪物]>:六个暗之怪.电僵王.蛇王.猫王等\
+<[刷新时间]>:120分钟\
+<[进入条件]>:免費\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆☆☆\ \
+<[确定进入]/@jinru4>                    <返回上页/@功能游戏>\
+[@jinru4]
+#IF
+#ACT
+give 回城卷 1
+mapmove H106 100 100
+break
+#ELSEACT
+MESSAGEBOX 免费
+goto @功能游戏
+break
+[@xyxgmove]
+<[主要怪物]>:赤月恶魔+双头血魔.金刚\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:赤月系列.魔血套装\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru10>                    <返回上页/@功能游戏>\
+[@jinru10]
+#IF
+#ACT
+give 回城卷 1
+map D1004
+break
+#ELSEACT
+goto @功能游戏
+break
+[@sbkmove]
+<[主要怪物]>:沙巴克弓箭手.城墙.城门\
+<[刷新时间]>:无\
+<[可爆物品]>:无\
+<[进入条件]>:2000金币\
+<[任务提示]>:可以在沙城铁匠铺升级武器攻.魔.道\
+<[危险指数]>:无\ \
+<[确定进入]/@jinru19>                    <返回上页/@功能游戏>\
+[@jinru19]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 3 706 407
+break 
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @功能游戏
+break
+[@Wzdxmove]
+#IF
+#say
+入口：传送到幻境后，身后有一道小门进入幻境二层北\
+幻境二层北：坐标 31,193 进入幻境四层北\
+幻境四层北：坐标 42,19  进入幻境五层北\
+幻境五层北：坐标 163,23 进入王者禁地\
+怪物：六大暗之教主,重装使者\
+
+
+[@WZADmove]
+#IF
+CHECKGAMEGOLD > 19
+#ACT
+GAMEGOLD - 20
+give 回城卷 1
+mapmove M001
+#ELSEACT
+MESSAGEBOX 需要20元宝用来支付我们的服务费用!
+break
+
+[@Sydkmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove h201 13 103
+#ELSEACT
+MESSAGEBOX 需要10万金币用来支付我们的服务费用!
+break
+
+[@SYommove]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+TimeRecall 60
+mapmove D021
+give 回城卷 1
+break 
+#ELSEACT
+MESSAGEBOX 需要10万金币用来支付我们的服务费用!
+
+[@bqkqmove]
+#IF
+#ACT
+give 回城卷 1
+mapmove 0 659 218
+SENDMSG 7 提示：发现不能挖矿，请小退上线即可！
+SENDMSG 7 提示：发现不能挖矿，请小退上线即可！
+break
+[@cYdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 12  89 13
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+ 
+
+[@wmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove B101 
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@Fmommove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 4  56 66
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@zmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove D5071
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@zdsmmoveee]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove d715 84 80
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@cYSDmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 12 90 14
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+goto @ddwy
+break
+
+
+[@hydkmove]
+#IF
+checkgold 500000
+#ACT
+take 金币 500000
+give 回城卷 1
+mapmove H001 73 67
+break
+#ELSEACT
+MESSAGEBOX 需要50W千金币用来支付我们的服务费用!
+
+
+
+
+[@gmdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 5 544 131
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@smdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 5 522 615
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@nmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove D2078 255 256
+give 回城卷 1
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@dldxmove]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 3 142 92
+break 
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+;======普通传送======
+[@jhmove]
+#IF 
+#ACT
+mapmove 3 333 333
+break 
+
+[@bwmove]
+#IF 
+#ACT
+mapmove 0 333 268 
+break 
+
+
+[@cymove]
+#IF 
+#ACT
+mapmove 5 140 338
+break 
+  
+
+[@fmmove]
+#IF 
+#ACT
+mapmove 4 241 202
+break 
+
+[@wwmove]
+#IF 
+#ACT
+mapmove 11 177 324
+break 
+
+[@bdmove]
+#IF 
+#ACT
+mapmove 0 288 615
+break 
+
+[@gnmove]
+#IF 
+#ACT
+mapmove 6    124  156
+break 
+
+[@sbkmove333]
+#IF 
+#ACT
+mapmove 2 503 483
+break
+ 
+
+
+
+[@cdzq]
+此地图爆40级新衣服\
+进入此地图，免费\
+.\
+<我要进入./@cdzq01>     <关闭对话./@exit>\ 
+
+[@cdzq01]
+#IF
+#ACT
+Mapmove h204001
+give  回城卷  1
+SENDMSG 0 [%s].进入了六大重装圣地..
+#ELSESAY
+
+
+
+
+
+
+
+
+
+;--------------------------------------------------------------------------
+[@清除怪物]
+<————————＜><清除怪物管理菜单/@><＞————————>\ \
+
+使用说明∶点击下面清除城里怪物，所有城市里的怪物将消失。\ \
+
+<清除城里怪物/@QINGCHUSLGW>              <清除整个服务器里的怪物/@QCZGEFWQGW>\ \
+
+<返回/@GAMEUSER>
+
+[@QINGCHUSLGW]
+#IF
+#ACT
+  CLEARMAPMON 0
+  CLEARMAPMON 1
+  CLEARMAPMON 2
+  CLEARMAPMON 3
+  CLEARMAPMON 4
+  CLEARMAPMON 5
+  CLEARMAPMON 6
+  SENDMSG 6 城里所有怪物清理完闭！
+  goto @清除怪物
+
+[@QCZGEFWQGW]
+#IF
+#ACT
+  GMEXECUTE  清除怪物 * * 0
+  SENDMSG 6 已经成功清除服务器所有怪物！
+
+;--------------------------------------------------------------------------
+[@游戏重启]
+<————————＜><游戏重启管理菜单/@><＞————————>\ \
+
+<使用说明∶服务器将要开始重启了，先发通知再将所有玩家踢出。>\ \
+
+<发送重启服务器通知/@TONGZHI>                  <将所有人物踢出游戏/@TICHU>\ \
+
+<返回/@GAMEUSER>
+
+[@TONGZHI]
+#IF
+#ACT
+  SENDMSG 0 所有玩家请注意！服务器将要重启。请大家安全下线！谢谢合作！
+  SENDMSG 0 所有玩家请注意！服务器将要重启。请大家安全下线！谢谢合作！
+  SENDMSG 0 所有玩家请注意！服务器将要重启。请大家安全下线！谢谢合作！
+  goto @游戏重启
+[@TICHU]
+#IF
+#act
+  Gmexecute StartQuest @全体下线
+  SENDMSG 6 已经成功踢出所有玩家！
+  goto @游戏重启
+;--------------------------------------------------------------------------
+[@传唤人物]
+<————————＜><传唤人物管理菜单/@><＞————————>\ \
+<使用说明∶在输入框内输入需要传唤人物的名字即可！>\ \
+
+<输入您要传唤的人物名字/@@InPutString53> ←输入字符不超过30字节！\ \
+
+<返回/@GAMEUSER>
+
+[@@InPutString53]
+#ACT
+  DELAYGOTO 1000 ~InPutInteger53
+
+[~InPutInteger53]
+#ACT
+  GMEXECUTE Recall <$STR(S53)>
+  goto @传唤人物
+;--------------------------------------------------------------------------
+[@清理包裹]
+<————————＜><清理包裹管理菜单/@><＞————————>\ \
+<使用说明∶在输入框内输入需要清理人物的名字即可！>\ \
+
+<输入您要清理包裹的人物名字/@@InPutString54> ←输入字符不超过30字节！\ \
+
+<返回/@GAMEUSER>
+
+[@@InPutString54]
+#ACT
+  DELAYGOTO 1000 ~InPutInteger54
+
+[~InPutInteger54]
+#ACT
+  GMEXECUTE ClearBag <$STR(S54)>
+  goto @清理包裹
+;--------------------------------------------------------------------------
+[@清除数据]
+<————————＜><数据清理管理菜单/@><＞————————>\ \
+注意∶清除数据后将无法还原，一般情况下不要使用此功能！\ \
+ <开始清空所有游戏数据/@CLERANERERONE>\ \
+ <返回/@GAMEUSER>
+
+[@CLERANERERONE]
+#ACT
+  Clearnamelist ..\QuestDiary\数据文件\锻造名单.txt
+  Clearnamelist ..\QuestDiary\数据文件\固定经验.txt
+  Clearnamelist ..\QuestDiary\数据文件\获得经验.txt
+  Clearnamelist ..\QuestDiary\数据文件\金牌帐号.txt
+  Clearnamelist ..\QuestDiary\数据文件\白金帐号.txt
+  Clearnamelist ..\QuestDiary\数据文件\可领经验.txt
+  Clearnamelist ..\QuestDiary\数据文件\可领取数.txt
+  Clearnamelist ..\QuestDiary\数据文件\申请总数.txt
+  Clearnamelist ..\QuestDiary\数据文件\未完成数.txt
+  Clearnamelist ..\QuestDiary\数据文件\已领取数.txt
+  Clearnamelist ..\QuestDiary\数据文件\已完成数.txt
+  Clearnamelist ..\QuestDiary\数据文件\灵符点.txt
+  Clearnamelist ..\QuestDiary\数据文件\白金值.txt
+  Clearnamelist ..\QuestDiary\数据文件\金刚石.txt
+  SENDMSG 5 数据清除完毕！系统数据已经全部归０...
+  Gmexecute StartQuest @数据清除
+  GOTO @清除数据
+;--------------------------------------------------------------------------
+[@加载配置]
+<————————＜><游戏配置后台管理/@><＞————————>\
+目前服务器在线人数为∶<$USERCOUNT> \ \
+ <重新加载登陆脚本/@登陆脚本>      <重新加载机器人脚本/@机器脚本>\
+ <重新加载怪物爆率配置/@怪物爆率>  <重新加载物品数据库/@物品数据>\
+ <重新加载怪物数据库/@怪物数据>    <重新加载游戏公告信息/@公告信息>\ \
+ <返回/@GAMEUSER>
+
+[@登陆脚本]
+#ACT
+  Gmexecute ReloadManage
+  goto @加载配置
+
+[@机器脚本]
+#ACT
+  Gmexecute 加载机器人脚本
+  Gmexecute 加载机器人配置
+  goto @加载配置
+
+[@怪物爆率]
+#ACT
+  Gmexecute ReloadMonItems
+  goto @加载配置
+
+[@物品数据]
+#ACT
+  Gmexecute ReloadItemDB
+  goto @加载配置
+
+[@怪物数据]
+#ACT
+  Gmexecute ReloadMonsterDB
+  goto @加载配置
+
+[@公告信息]
+#ACT
+  Gmexecute ReloadLineNotice
+  goto @加载配置
+;--------------------------------------------------------------------------
+[@攻城设置]
+<————————＜><攻城设置后台管理/@><＞————————>\
+服务器当前已经运行了∶　<$STR(G0)>　天\
+第∶　<$STR(G1)>　天后开始允许提交头像\
+从开服第一天起。每晚12点记时一次.\
+ <增加一天/@ADDDAY>∶每按一次延迟允许提交头像一天\
+ <减少一天/@DELDAY>∶每按一次减少允许提交头像一天\
+ <恢复默认/@MOREN>∶按下则恢复系统默认的5天后允许提交头像\
+ <复位服务器运行天数/@SETMO>∶按下即将服务器运行天数清0\
+ <返回/@GAMEUSER>
+
+[@SETMO]
+#ACT
+  MOV G0 0
+  SENDMSG 5 服务器运行天数已经清<$STR(G0)>
+  GOTO @攻城设置
+
+[@ADDDAY]
+#ACT
+  INC G1 1
+  SENDMSG 5 已经设置为从开服起的第<$STR(G1)>天允许提交头像!
+  GOTO @攻城设置
+
+[@DELDAY]
+#ACT
+  DEC G1 1
+  SENDMSG 5 已经设置为从开服起的第<$STR(G1)>天允许提交头像!
+  GOTO @攻城设置
+
+[@MOREN]
+#ACT
+  mov G1 5
+  SENDMSG 5 已经设置为从开服起的第<$STR(G1)>天允许提交头像!
+  GOTO @攻城设置
+;--------------------------------------------------------------------------
+[@装备调整]
+<————————＜><装备调整菜单><＞————————>\
+附加∶<手镯/@item5> <戒子/@item7> <属性> 注意调整范围∶<0-255>...\
+附加∶<勋章/@item9> <腰带/@item8> <属性> 注意调整范围∶<0-255>...\
+附加∶<武器/@item1> <靴子/@item6> <属性> 注意调整范围∶<0-255>...\
+附加∶<头盔/@item4> <盔甲/@item0> <属性> 注意调整范围∶<0-255>...\
+附加∶<项链/@item3> <个性调整/@个性调整>\ \
+ <返回/@管理>
+
+[@item6]
+#IF
+  CHECKITEMTYPE 11 52
+#ACT
+  BREAK
+#SAY
+<————————＜><靴子调整菜单><＞————————>\
+ 「调整<$RING_L><防御>」　<＋/@XZDC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔御>」　<＋/@XZMC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><攻击>」　<＋/@XZDS1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔法>」　<＋/@XZXY1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><道术>」　<＋/@XZZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><持久>」　<＋/@XZCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的靴子戴在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@XZDC1]
+#ACT
+  UPGRADEITEMEX 11 0 1 1 0
+  goto @item6
+
+[@XZMC1]
+#ACT
+  UPGRADEITEMEX 11 1 1 1 0
+  goto @item6
+
+[@XZDS1]
+#ACT
+  UPGRADEITEMEX 11 2 1 1 0
+  goto @item6
+
+[@XZZQ1]
+#ACT
+  UPGRADEITEMEX 11 4 1 1 0
+  goto @item6
+
+[@XZXY1]
+#ACT
+  UPGRADEITEMEX 11 3 1 1 0
+  goto @item6
+
+[@XZCJ1]
+#ACT
+  UPGRADEITEMEX 11 14 1 1 0
+  goto @item6
+;-----------------------------------------------------------------------
+[@item8]
+#IF
+  CHECKITEMTYPE 10 54
+#ACT
+  BREAK
+#SAY
+<————————＜><腰带调整菜单><＞————————>\
+ 「调整<$RING_L><防御>」　<＋/@YDDC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔御>」　<＋/@YDMC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><攻击>」　<＋/@YDDS1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔法>」　<＋/@YDXY1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><道术>」　<＋/@YDZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><持久>」　<＋/@YDCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的腰带戴在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@YDDC1]
+#ACT
+  UPGRADEITEMEX 10 0 1 1 0
+  goto @item8
+
+[@YDMC1]
+#ACT
+  UPGRADEITEMEX 10 1 1 1 0
+  goto @item8
+
+[@YDDS1]
+#ACT
+  UPGRADEITEMEX 10 2 1 1 0
+  goto @item8
+
+[@YDZQ1]
+#ACT
+  UPGRADEITEMEX 10 4 1 1 0
+  goto @item8
+
+[@YDXY1]
+#ACT
+  UPGRADEITEMEX 10 3 1 1 0
+  goto @item8
+
+[@YDCJ1]
+#ACT
+  UPGRADEITEMEX 10 14 1 1 0
+  goto @item8
+[@item9]
+#IF
+  CHECKITEMTYPE 2 30
+#ACT
+  BREAK
+#SAY
+<————————＜><勋章调整菜单><＞————————>\
+ 「调整<$RING_L><防御>」　<＋/@XUDC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔御>」　<＋/@XUMC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><攻击>」　<＋/@XUDS1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔法>」　<＋/@XUXY1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><道术>」　<＋/@XUZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><持久>」　<＋/@XUCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的勋章戴在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@XUDC1]
+#ACT
+  UPGRADEITEMEX 2 0 1 1 0
+  goto @item9
+
+[@XUMC1]
+#ACT
+  UPGRADEITEMEX 2 1 1 1 0
+  goto @item9
+
+[@XUDS1]
+#ACT
+  UPGRADEITEMEX 2 2 1 1 0
+  goto @item9
+
+[@XUZQ1]
+#ACT
+  UPGRADEITEMEX 2 4 1 1 0
+  goto @item9
+
+[@XUXY1]
+#ACT
+  UPGRADEITEMEX 2 3 1 1 0
+  goto @item9
+
+[@XUCJ1]
+#ACT
+  UPGRADEITEMEX 2 14 1 1 0
+  goto @item9
+[@item7]
+#IF
+  checkitemTYPE 7 22
+#ACT
+  BREAK
+#SAY
+<————————＜><戒指调整菜单><＞————————>\
+ 「调整<$RING_L><防御>」　<＋/@JZDC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔御>」　<＋/@JZMC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><攻击>」　<＋/@JZDS1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔法>」　<＋/@JZXY1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><道术>」　<＋/@JZZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><持久>」　<＋/@JZCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+  checkitemTYPE 7 23
+#ACT
+  BREAK
+#SAY
+<————————＜><戒指调整菜单><＞————————>\
+ 「调整<$RING_L><躲避>」　<＋/@JZDC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><恢复>」　<＋/@JZMC1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><攻击>」　<＋/@JZDS1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><魔法>」　<＋/@JZXY1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><道术>」　<＋/@JZZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$RING_L><持久>」　<＋/@JZCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的戒指戴在右边...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@JZDC1]
+#ACT
+  UPGRADEITEMEX 7 0 1 1 0
+  goto @item7
+
+[@JZMC1]
+#ACT
+  UPGRADEITEMEX 7 1 1 1 0
+  goto @item7
+
+[@JZDS1]
+#ACT
+  UPGRADEITEMEX 7 2 1 1 0
+  goto @item7
+
+[@JZZQ1]
+#ACT
+  UPGRADEITEMEX 7 4 1 1 0
+  goto @item7
+
+[@JZXY1]
+#ACT
+  UPGRADEITEMEX 7 3 1 1 0
+  goto @item7
+
+[@JZCJ1]
+#ACT
+  UPGRADEITEMEX 7 14 1 1 0
+  goto @item7
+[@item5]
+#IF
+  checkitemTYPE 5 24
+#ACT
+  BREAK
+#SAY
+<————————＜><手镯调整菜单><＞————————>\
+ 「调整<$ARMRING_L><准确>」　<＋/@SZDC1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><敏捷>」　<＋/@SZMC1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><攻击>」　<＋/@SZDS1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><魔法>」　<＋/@SZXY1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><道术>」　<＋/@SZZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><持久>」　<＋/@SZCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+  checkitemTYPE 5 26
+#ACT
+  BREAK
+#SAY
+<————————＜><手镯调整菜单><＞————————>\
+ 「调整<$ARMRING_L><防御>」　<＋/@SZDC1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><魔御>」　<＋/@SZMC1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><攻击>」　<＋/@SZDS1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><魔法>」　<＋/@SZXY1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><道术>」　<＋/@SZZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$ARMRING_L><持久>」　<＋/@SZCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的手镯戴在右边...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@SZDC1]
+#ACT
+  UPGRADEITEMEX 5 0 1 1 0
+  goto @item5
+
+[@SZMC1]
+#ACT
+  UPGRADEITEMEX 5 1 1 1 0
+  goto @item5
+
+[@SZDS1]
+#ACT
+  UPGRADEITEMEX 5 2 1 1 0
+  goto @item5
+
+[@SZZQ1]
+#ACT
+  UPGRADEITEMEX 5 4 1 1 0
+  goto @item5
+
+[@SZXY1]
+#ACT
+  UPGRADEITEMEX 5 3 1 1 0
+  goto @item5
+
+[@SZCJ1]
+#ACT
+  UPGRADEITEMEX 5 14 1 1 0
+  goto @item5
+
+[@item4]
+#IF
+  checkitemTYPE 4 15
+#ACT
+  BREAK
+#SAY
+<————————＜><头盔调整菜单><＞————————>\
+ 「调整<$NECKLACE><防御>」　<＋/@TKDC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><魔御>」　<＋/@TKMC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><攻击>」　<＋/@TKDS1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><魔法>」　<＋/@TKXY1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><道术>」　<＋/@TKZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><持久>」　<＋/@TKCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的头盔戴在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@TKDC1]
+#ACT
+  UPGRADEITEMEX 4 0 1 1 0
+  goto @item4
+
+[@TKMC1]
+#ACT
+  UPGRADEITEMEX 4 1 1 1 0
+  goto @item4
+
+[@TKDS1]
+#ACT
+  UPGRADEITEMEX 4 2 1 1 0
+  goto @item4
+
+[@TKZQ1]
+#ACT
+  UPGRADEITEMEX 4 4 1 1 0
+  goto @item4
+
+[@TKXY1]
+#ACT
+  UPGRADEITEMEX 4 3 1 1 0
+  goto @item4
+
+[@TKCJ1]
+#ACT
+  UPGRADEITEMEX 4 14 1 1 0
+  goto @item4
+[@item3]
+#IF
+  checkitemTYPE 3 19
+#ACT
+  BREAK
+#SAY
+<————————＜><项链调整菜单><＞————————>\
+ 「调整<$NECKLACE><躲避>」　<＋/@XPDC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><幸运>」　<＋/@XPMC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><攻击>」　<＋/@XPDS1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><魔法>」　<＋/@XPXY1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><道术>」　<＋/@XPZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><持久>」　<＋/@XPCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+  checkitemTYPE 3 20
+#ACT
+  BREAK
+#SAY
+<————————＜><项链调整菜单><＞————————>\
+ 「调整<$NECKLACE><准确>」　<＋/@XPDC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><敏捷>」　<＋/@XPMC1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><攻击>」　<＋/@XPDS1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><魔法>」　<＋/@XPXY1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><道术>」　<＋/@XPZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$NECKLACE><持久>」　<＋/@XPCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的项链戴在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@XPDC1]
+#ACT
+  UPGRADEITEMEX 3 0 1 1 0
+  goto @item3
+
+[@XPMC1]
+#ACT
+  UPGRADEITEMEX 3 1 1 1 0
+  goto @item3
+
+[@XPDS1]
+#ACT
+  UPGRADEITEMEX 3 2 1 1 0
+  goto @item3
+
+[@XPZQ1]
+#ACT
+  UPGRADEITEMEX 3 4 1 1 0
+  goto @item3
+
+[@XPXY1]
+#ACT
+  UPGRADEITEMEX 3 3 1 1 0
+  goto @item3
+
+[@XPCJ1]
+#ACT
+  UPGRADEITEMEX 3 14 1 1 0
+  goto @item3
+[@item0]
+#IF
+  checkitemTYPE 0 10
+#ACT
+  BREAK
+#SAY
+<————————＜><盔甲调整菜单><＞————————>\
+ 「调整<$DRESS><防御>」　<＋/@KKDC1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><魔御>」　<＋/@KKMC1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><攻击>」　<＋/@KKDS1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><魔法>」　<＋/@KKXY1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><道术>」　<＋/@KKZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><持久>」　<＋/@KKCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+  checkitemTYPE 0 11
+#ACT
+  BREAK
+#SAY
+<————————＜><盔甲调整菜单><＞————————>\
+ 「调整<$DRESS><防御>」　<＋/@KKDC1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><魔御>」　<＋/@KKMC1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><攻击>」　<＋/@KKDS1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><魔法>」　<＋/@KKXY1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><道术>」　<＋/@KKZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$DRESS><持久>」　<＋/@KKCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的盔甲穿在身上...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@KKDC1]
+#ACT
+  UPGRADEITEMEX 0 0 1 1 0
+  goto @item0
+
+[@KKMC1]
+#ACT
+  UPGRADEITEMEX 0 1 1 1 0
+  goto @item0
+
+[@KKDS1]
+#ACT
+  UPGRADEITEMEX 0 2 1 1 0
+  goto @item0
+
+[@KKZQ1]
+#ACT
+  UPGRADEITEMEX 0 4 1 1 0
+  goto @item0
+
+[@KKXY1]
+#ACT
+  UPGRADEITEMEX 0 3 1 1 0
+  goto @item0
+
+[@KKCJ1]
+#ACT
+  UPGRADEITEMEX 0 14 1 1 0
+  goto @item0
+;-----------------------------------------------------------------------
+[@item1]
+#IF
+  checkitemTYPE 1 5
+#ACT
+  BREAK
+#SAY
+<————————＜><武器调整菜单><＞————————>\
+ 「调整<$WEAPON><攻击>」　<＋/@WQDC1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><魔法>」　<＋/@WQMC1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><道术>」　<＋/@WQDS1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><幸运>」　<＋/@WQXY1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><准确>」　<＋/@WQZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><速度>」　<＋/@WQSD1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><持久>」　<＋/@WQCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+  checkitemTYPE 1 6
+#ACT
+  BREAK
+#SAY
+<————————＜><武器调整菜单><＞————————>\
+ 「调整<$WEAPON><攻击>」　<＋/@WQDC1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><魔法>」　<＋/@WQMC1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><道术>」　<＋/@WQDS1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><幸运>」　<＋/@WQXY1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><准确>」　<＋/@WQZQ1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><速度>」  <＋/@WQSD1>　注意调整范围∶<0-255>...\
+ 「调整<$WEAPON><持久>」　<＋/@WQCJ1>　注意调整范围∶<0-255>...　　　　<返回/@装备调整>\
+#IF
+#ACT
+  BREAK
+#SAY
+请将要调整的武器拿在手中...\ \
+
+<返回/@装备调整>\
+;-----------------------------------------------------------------------
+[@WQDC1]
+#ACT
+  UPGRADEITEMEX 1 0 1 1 0
+  goto @item1
+
+[@WQMC1]
+#ACT
+  UPGRADEITEMEX 1 1 1 1 0
+  goto @item1
+
+[@WQDS1]
+#ACT
+  UPGRADEITEMEX 1 2 1 1 0
+  goto @item1
+
+[@WQZQ1]
+#ACT
+  UPGRADEITEMEX 1 5 1 1 0
+  goto @item1
+
+[@WQXY1]
+#ACT
+  UPGRADEITEMEX 1 3 1 1 0
+  goto @item1
+
+[@WQSD1]
+#ACT
+  UPGRADEITEMEX 1 6 1 1 0
+  goto @item1
+
+[@WQCJ1]
+#ACT
+  UPGRADEITEMEX 1 14 1 1 0
+  goto @item1
+;--------------------------------------------------------------------------
+
+[@个性调整]
+<———————＜><游戏伴随我后台管理处/@><＞———————>\
+注释：调整格式 <→> (装备A.属性B.点数C.)　输入格式 <A B C>\
+　　　A.装备范围(0-12) B.属性范围(0-6) C.点数范围(0-255)\
+A.<0.衣服1.武器3.项链4.头盔5.右手6.左手7.右戒8.左戒10.腰带11.靴子12.宝石>\
+B.<1.魔法 2.道术 3. 幸运 4. 诅咒 5. 准确 6.速度>\
+注意事项：当A=3 B值0为准确 A=4.5.6.7.9.10.11.12 B值0为防御\
+当A=0 B值0为防御 1为魔防 2为攻击 3为魔法 4为道述 其它建议不要调整\
+　　　　<请按照上面说明输入格式→:/@@InPutString58>(A B C)\
+ <返回/@GAMEUSER>
+
+[@@InPutString58]
+#ACT
+  DELAYGOTO 1000 @InPutString58
+[@InPutString58]
+#ACT
+  GMEXECUTE supermake <$STR(S58)>
+  goto @个性调整
+;--------------------------------------------------------------------------
+;--------------------------------------------------------------------------
+[@怪物攻城]
+<————————＜><怪物攻城管理菜单/@><＞————————>\ \
+请选择怪物要进攻的城市: \
+<—————————————————————————————>\
+<[怪物攻城盟重]/@怪物攻城盟重>　 <[怪物攻城比奇]/@怪物攻城比奇> \
+<[怪物攻城苍月]/@怪物攻城苍月>   <[怪物攻城封魔]/@怪物攻城封魔>\
+
+<—————————————————————————————>\
+
+[@怪物攻城盟重]
+#IF
+#act
+  MISSION 3 360 334
+  PARAM1 360
+  PARAM2 340
+  PARAM3 5
+  PARAM4 5
+  MOBPLACE 沃玛教主
+  MOBPLACE 龙邪将军
+  MOBPLACE 双头血魔
+  MOBPLACE 双头金刚
+  MOBPLACE 祖玛教主
+  MOBPLACE 牛魔王
+  MOBPLACE 巨镰蜘蛛
+  MOBPLACE 圣殿卫士
+  MOBPLACE 魔龙战将
+  MOBPLACE 雪域天将
+  MOBPLACE 雷炎蛛王
+  MOBPLACE 电僵王
+  MOBPLACE 魔龙邪眼
+  MOBPLACE 魔龙破甲兵
+  MOBPLACE 火龙教主
+  MOBPLACE 黄泉教主
+  MOBPLACE 暗之虹魔教主
+  MOBPLACE 雪域力士
+  MOBPLACE 雪域卫士
+  MOBPLACE 沃玛教主
+  MOBPLACE 雪域魔王
+  MOBPLACE 暗之虹魔教主
+  MOBPLACE 暗之黄泉教主
+  MOBPLACE 暗之双头金刚
+  MOBPLACE 暗之双头血魔
+SENDMSG 1 魔龙教主:"我靠!都不要吵!!!怪物们听我号令，所有人立即进攻盟重!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了盟重!!!
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了盟重!!!
+SENDMSG 1 比奇国王:"警报响起!玛法英雄们请十万火急回盟重来参与保卫家园战斗!!!"
+  BREAK
+
+
+
+[@怪物攻城比奇]
+#IF
+#act
+  MISSION 0 324 274
+  PARAM1 296
+  PARAM2 295
+  PARAM3 5
+  PARAM4 5
+  MOBPLACE 沃玛教主
+  MOBPLACE 万年树妖
+  MOBPLACE 龙邪将军
+  MOBPLACE 半兽勇士
+  MOBPLACE 双头血魔
+  MOBPLACE 双头金刚
+  MOBPLACE 钉耙猫王
+  MOBPLACE 牛魔王
+  MOBPLACE 巨镰蜘蛛
+  MOBPLACE 圣殿卫士
+  MOBPLACE 魔龙战将
+  MOBPLACE 魔龙邪眼
+  MOBPLACE 白野猪
+  MOBPLACE 魔龙破甲兵
+  MOBPLACE 龙邪蜘蛛
+  MOBPLACE 魔龙教主
+  MOBPLACE 黄泉教主
+  MOBPLACE 暗之虹魔教主
+SENDMSG 1 魔龙教主:"怪物们听我号令，所有人立即进攻比奇城!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了比奇城!!!
+SENDMSG 1 比奇国王:"玛法英雄们请十万火急回比奇来参与保卫家园战斗!!!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了盟重城!!!
+SENDMSG 1 比奇国王:"玛法英雄们请十万火急回比奇来参与保卫家园战斗!!!"
+
+[@怪物攻城封魔]
+#IF
+#act
+  MISSION 4 236 204
+  PARAM1 203
+  PARAM2 228
+  PARAM3 5
+  PARAM4 5
+  MOBPLACE 沃玛教主
+  MOBPLACE 万年树妖
+  MOBPLACE 龙邪将军
+  MOBPLACE 半兽勇士
+  MOBPLACE 双头血魔
+  MOBPLACE 双头金刚
+  MOBPLACE 钉耙猫王
+  MOBPLACE 牛魔王
+  MOBPLACE 巨镰蜘蛛
+  MOBPLACE 圣殿卫士
+  MOBPLACE 魔龙战将
+  MOBPLACE 魔龙邪眼
+  MOBPLACE 白野猪
+  MOBPLACE 魔龙破甲兵
+  MOBPLACE 龙邪蜘蛛
+  MOBPLACE 魔龙教主
+  MOBPLACE 黄泉教主
+  MOBPLACE 暗之虹魔教主
+SENDMSG 1 魔龙教主:"怪物们听我号令，所有人立即进攻封魔谷!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了封魔谷!!!
+SENDMSG 1 比奇国王:"警报响起!玛法英雄们请十万火急回封魔谷来参与保卫家园战斗!!!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了封魔谷!!!
+SENDMSG 1 比奇国王:"警报响起!玛法英雄们请十万火急回封魔谷来参与保卫家园战斗!!!"
+  BREAK
+
+
+[@怪物攻城苍月]
+#IF
+#act
+  MISSION 5 146 338
+  PARAM1 164
+  PARAM2 350
+  PARAM3 5
+  PARAM4 5
+  MOBPLACE 沃玛教主
+  MOBPLACE 万年树妖
+  MOBPLACE 龙邪将军
+  MOBPLACE 半兽勇士
+  MOBPLACE 双头血魔
+  MOBPLACE 双头金刚
+  MOBPLACE 钉耙猫王
+  MOBPLACE 牛魔王
+  MOBPLACE 巨镰蜘蛛
+  MOBPLACE 圣殿卫士
+  MOBPLACE 魔龙战将
+  MOBPLACE 魔龙邪眼
+  MOBPLACE 白野猪
+  MOBPLACE 魔龙破甲兵
+  MOBPLACE 龙邪蜘蛛
+  MOBPLACE 魔龙教主
+  MOBPLACE 黄泉教主
+  MOBPLACE 暗之虹魔教主
+SENDMSG 1 魔龙教主:"怪物们听我号令，所有人立即进攻苍月岛!"
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了苍月岛!!!
+SENDMSG 1 警报响起!玛法英雄们请十万火急回苍月岛来参与保卫家园战斗!!!
+SENDMSG 1 怪物攻城战开始，大批的怪物袭击了苍月岛!!!
+SENDMSG 1 警报响起!玛法英雄们请十万火急回苍月岛来参与保卫家园战斗!!!
+  BREAK
+[@白金帐号功能]
+{
+╔═══════════════════════════╗\
+┆新增服务：<一键特修全部身上装备功能/@SuperRepair>。限VIP会员无偿使用┆\
+╚═══════════════════════════╝\
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<改变性别/@BVIPP1>‖　　　‖<超级传送/@BVIPP3>‖　　　‖<每日奖励/@BVIPP8>‖\
+　　╚════╝　　　╚════╝　　　╚════╝      \
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<购买特药/@BVIPP5>‖　　　‖<清洗红名/@BVIPP6>‖　　　‖<等级奖励/@BVIPP9>‖\
+　　╚════╝　　　╚════╝　　　╚════╝\
+
+
+
+[@SuperRepair]
+#If
+CheckLevelEx > 0 
+#Act
+RepairAll
+MESSAGEBOX [提示]:您身上的装备破损之处.已经全部完好如初.
+GOTO @白金帐号功能
+BREAK
+
+
+[@BVIPP1]
+哎，真不明白你们这些年轻人都是怎么想的？\
+没事怎么老是喜欢弄个变性。\
+你是想改变性别吗，如果改变了我们可不会负责的。\\
+改变性别注意事项：你不能在结婚后改变性别，除非你\
+有病，同时你的等级必须在50级以上才可以使用本功能\ \
+<我同意更改性别/@BB1>     <我还是做个正常人吧/@exit>
+
+[@BB1]
+#IF
+checkmarry
+#SAY
+你是在和我开玩笑吧，你都结婚了还改变性别？\
+如果真想改变性别，请选去离婚吧。\
+如果下次还这样，我会惩罚你的。\
+#ACT
+break
+#IF
+gender man
+#SAY
+做男人没意思了？那就来做个女人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB3>  <害怕了，还是不改变了/@exit>\
+#ELSESAY
+做女人没意思了？那就来做个男人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB4>  <害怕了，还是不改变了/@exit>\
+[@BB3]
+#IF
+#ACT
+CHANGEGENDER 1
+#SAY
+恭喜，你已经变成一位女人了。\ \ \
+<离开/@exit>
+
+[@BB4]
+#IF
+#ACT
+CHANGEGENDER 0
+#SAY
+恭喜，你已经变成一位男人了。\ \ \
+<离开/@exit>
+
+;=====================================================
+[@BVIPP5]
+
+[@BVIPP6]
+您当前的PK点数为：<$PKPOINT>\ \
+会员清洗红名无需付费\ \
+我要<清洗红名/@Bqxhm>\ 
+<返回/@白金帐号功能>
+[@Bqxhm]
+#IF
+#act
+CHANGEPKPOINT - 100
+#SAY
+我已经帮你清洗好了，希望以后不要在“红名”哦！\ \
+<返回首页/@白金帐号功能>
+
+
+[@BVIPP8]
+#if
+dayofweek sun
+#act
+set [504] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bsun
+break
+
+#if
+dayofweek mon
+#act
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bmon
+break
+
+#if
+dayofweek tue
+#act
+set [504] 0
+set [510] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Btue
+break
+
+#if
+dayofweek wed
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bwed
+break
+
+#if
+dayofweek thu
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [508] 0
+set [509] 0
+goto @Bthu
+break
+
+#if
+dayofweek fri
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [509] 0
+goto @Bfri
+break
+
+#if
+dayofweek sat
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+goto @Bsat
+
+[@Bsun]
+#if
+check [510] 0
+dayofweek sun
+#act
+goto @BLBXXVIP_1
+set [510] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bmon]
+#if
+dayofweek mon
+check [504] 0
+#act
+goto @BLBXXVIP_1
+set [504] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Btue]
+#if
+dayofweek tue
+check [505] 0
+#act
+goto @BLBXXVIP_1
+set [505] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bwed]
+#if
+dayofweek wed
+check [506] 0
+#act
+goto @BLBXXVIP_1
+set [506] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bthu]
+#if
+dayofweek thu
+check [507] 0
+#act
+goto @BLBXXVIP_1
+set [507] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bfri]
+#if
+dayofweek fri
+check [508] 0
+#act
+goto @BLBXXVIP_1
+set [508] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bsat]
+#if
+dayofweek sat
+check [509] 0
+#act
+goto @BLBXXVIP_1
+set [501] 1
+set [509] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@BLBXXVIP_1]
+你好尊贵的会员:<$USERNAME>，我这里每天可以\
+为你提供一次领取游戏补给功能，如果你此时拒绝了今天给予的\
+补给，那么等于你决定放弃了今天的补给物资。\
+每天可以获得游戏补给：50个元宝、50万经验值\
+『<领取今天物资补给/@BLBXXVIP_OK>』
+[@BLBXXVIP_OK]
+#if
+check [501] 0
+#act
+map B311
+break
+#IF
+#say
+200个元宝、50万经验值\
+以上是您今天的游戏物资补给，祝您游戏愉快......\
+#ACT
+set [500] 1
+set [501] 0
+GAMEGOLD + 50
+
+CHANGEEXP + 500000
+#ELSESAY
+您已经领取了今日补给，请不要重复领取。\
+『<返回/@白金帐号功能>』\
+[@BLBXXVIP_NO]
+您已经领取了今日补给，请不要重复领取。\
+请您明天再来吧!\
+『<返 回/@白金帐号功能>』\ \
+
+
+[@BVIPP3]
+╔═══════════════════════════╗\
+║                  <会员专用超级传送系统/FCOLOR=252>                ║\
+╚═══════════════════════════╝\
+    <温馨提示：/FCOLOR=222><您是尊贵的会员、以下超级传送服务无需付费/FCOLOR=3>\
+╔═══════════════════════════╗\
+║ <石墓七层/@pk663vipa1>   <尸 王 殿/@pk663vipa12>  <魔 龙 殿/@pk663vipa7>   <赤月魔穴/@pk663vipa10>   <骨魔三层/@pk663vipa13>  ║\
+║ <魔龙血域/@pk663vipa2>   <祖玛七层/@pk663vipa5>  <幻境十层/@pk663vipa8>   <尸魔三层/@pk663vipa11>   <恶魔祭坛/@pk663vipa14>  ║\
+   <天下仙境/@pk663vipa4>   <牛魔七层/@pk663vipa15>  ║\
+╚═══════════════════════════╝\
+
+
+[@pk663vipa15]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2079 13 13
+break
+
+[@pk663vipa14]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10061 20 25
+break
+
+[@pk663vipa13]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2063
+break
+
+[@pk663vipa12]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove Q004
+break
+
+[@pk663vipa11]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2053
+break
+
+[@pk663vipa10]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10062
+break
+
+[@pk663vipa9]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H301
+break
+
+[@pk663vipa8]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H010
+break
+
+[@pk663vipa7]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove EM300
+break
+
+[@pk663vipa6]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 3 88 48
+break
+
+[@pk663vipa5]
+#IF
+#ACT
+give 回城卷 1
+close
+map D515
+break
+
+[@pk663vipa4]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove txx1
+break
+
+[@pk663vipa3]
+#IF
+#ACT
+give 回城卷 1
+close
+MapMove MIRHH100
+break
+
+[@pk663vipa2]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 66 256 212
+break
+
+[@pk663vipa1]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D717 26 74
+break
+
+
+[@BVIPP9]
+╔═══════════════════════════╗\
+║<温馨提示:尊贵的会员等级60之后每升2级都可以领取奖励一次/FCOLOR=222>║\\
+║<领取/@GV60><60/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列头盔  <领取/@GV72><72/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列腰带║\
+║<领取/@GV62><62/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列项链  <领取/@GV74><74/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列靴子║\
+║<领取/@GV64><64/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV76><76/FCOLOR=222>级奖励<→/FCOLOR=222>王者勋章系列║\
+║<领取/@GV66><66/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV78><78/FCOLOR=222>级奖励<→/FCOLOR=222>王者战甲系列║\
+║<领取/@GV68><68/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指  <领取/@GV80><80/FCOLOR=222>级奖励<→/FCOLOR=222>王者武器系列║\
+║<领取/@GV70><70/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指                <返回上一页面/@白金帐号功能>║\
+╚═══════════════════════════╝\
+
+
+[@GV60]
+#IF
+CHECKLEVELEX = 60
+#ACT
+GOTO @60
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@60]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV60YES
+
+[@GV60YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：逆火魔盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：逆火魔盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：通云道盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：通云道盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：狂雷战盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：狂雷战盔
+GOTO @BVIPP9
+BREAK
+
+[@GV62]
+#IF
+CHECKLEVELEX = 62
+#ACT
+GOTO @62
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@62]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV62YES
+
+[@GV62YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：逆火项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：逆火项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：通云项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：通云项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：狂雷项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：狂雷项链
+GOTO @BVIPP9
+BREAK
+
+[@GV64]
+#IF
+CHECKLEVELEX = 64
+#ACT
+GOTO @64
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@64]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV64YES
+
+[@GV64YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV66]
+#IF
+CHECKLEVELEX = 66
+#ACT
+GOTO @66
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@66]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV66YES
+
+[@GV66YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV68]
+#IF
+CHECKLEVELEX = 68
+#ACT
+GOTO @68
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@68]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV68YES
+
+[@GV68YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV70]
+#IF
+CHECKLEVELEX = 70
+#ACT
+GOTO @70
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@70]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV70YES
+
+[@GV70YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV72]
+#IF
+CHECKLEVELEX = 72
+#ACT
+GOTO @72
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@72]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV72YES
+
+[@GV72YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：逆火腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：逆火腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：通云腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：通云腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：狂雷腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：狂雷腰带
+GOTO @BVIPP9
+BREAK
+
+[@GV74]
+#IF
+CHECKLEVELEX = 74
+#ACT
+GOTO @74
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@74]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV74YES
+
+[@GV74YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：逆火魔靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：逆火魔靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：通云道靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：通云道靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：狂雷战靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：狂雷战靴
+GOTO @BVIPP9
+BREAK
+
+[@GV76]
+#IF
+CHECKLEVELEX = 76
+#ACT
+GOTO @76
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@76]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV76YES
+
+[@GV76YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者勋章(法) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(法)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(法)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者勋章(道) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(道)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(道)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者勋章(战) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(战)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(战)
+GOTO @BVIPP9
+BREAK
+
+[@GV78]
+#IF
+CHECKLEVELEX = 78
+#ACT
+GOTO @78
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@78]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV78YES
+
+[@GV78YES]
+#IF
+checkjob wizard
+gender man
+#ACT
+GIVE 王者魔衣(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob wizard
+gender woman
+#ACT
+GIVE 王者魔衣(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender man
+#ACT
+GIVE 王者道袍(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender woman
+#ACT
+GIVE 王者道袍(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender man
+#ACT
+GIVE 王者战甲(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender woman
+#ACT
+GIVE 王者战甲(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(女)
+GOTO @BVIPP9
+BREAK
+
+[@GV80]
+#IF
+CHECKLEVELEX = 80
+#ACT
+GOTO @80
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@80]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV80YES
+
+[@GV80YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者之杖 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之杖
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之杖
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者之剑 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之剑
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之剑
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者之刃 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之刃
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之刃
+GOTO @BVIPP9
+BREAK
+}

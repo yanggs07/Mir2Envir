@@ -1,0 +1,64 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 10
+Gender = 1
+NoDropItem = 1
+Hair = 3
+;等级
+Level = 266
+DropUseItem=1
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill = 破魂斩,烈火剑法,半月弯刀,刺杀剑术,野蛮冲撞,抱月刀法,狮子吼
+ProtectStatus=1
+InitItems = 
+[MonSay]
+0=天大地大，唯我独尊
+1=小子！好久不见
+2=又想和我动手了？
+3=我擦！你耍阴的
+4=乌拉拉！乌拉拉！
+5=没事别找我
+6=有钱没？
+7=打发点咯
+8=你身上的装备卖不
+9=不好意思！我现在有事
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=热血装备神袍
+;武器
+UseItems1=热血装备神剑
+;照明物
+UseItems2=热血装备勋章
+;项链
+UseItems3=热血装备项链
+;头盔
+UseItems4=热血装备头盔
+;左手镯
+UseItems5=热血装备护腕
+;右手镯
+UseItems6=热血装备护腕
+;左戒指
+UseItems7=终极复活戒指
+;右戒指
+UseItems8=精品护身戒指
+;物品
+UseItems9=超级护身符
+;腰带
+UseItems10=
+;鞋子
+UseItems11=
+;宝石
+UseItems12=
+;斗笠
+UseItems13=
+
+
+
+
+
+
+

@@ -1,0 +1,277 @@
+[@商人]
+{
+#IF
+CHECKLEVELEX > 7
+#SAY
+欢迎来到<$SERVERNAME>,当前时间<$DATETIME>\
+你知道我是谁吗？ 告诉你我是何等人物... \ 
+你要试一下吗..? 说说看需要我帮你做什么 \ \
+<兑换金币/@Mbind>\
+<关 闭/@exit>
+
+[@Mbind]
+#SAY
+你知道我是什么人吗？ \ 
+我做的是这样的事情... \ 
+你要试一下吗？有什么要拜托的就说吧 \ 
+用金币<交换/@changeGold>金条       用金条<交换/@changeMoney>金币 \
+ 用金条<交换/@changeGold1>金砖       用金砖<交换/@changeMoney1>金条 \
+ 用金砖<交换/@changeGold2>金盒       用金盒<交换/@changeMoney2>金砖\
+ 用金砖<交换/@jinzhuan>金币       用金盒<交换/@zhubaoxiang>金币\
+ <离开这里.../@exit>\
+
+[@changeGold]
+#IF
+   checkgold 1000000
+#SAY
+你说你要用金币换成金条? 好的，我帮你换 但是要支付手续费。\
+费用是2000金币，你还换吗？\\ 
+<交换/@changeGold_1> \
+<取消/@exit>
+
+#ELSESAY
+你连这点钱都没有，还换什么？ 等你有足够的钱，再来找我吧 \\
+ <返回/@main>
+
+[@changeGold_1]
+#IF 
+   CHECKBAGSIZE 1
+   checkgold 1002000
+#ACT
+take 金币 1002000
+give 金条 1
+goto @商人
+#SAY
+金币已经换好金条了. \ 
+还换吗？ \\
+<交换/@changeGold> \
+<取消/@exit>
+
+#ELSESAY
+你的包里东西已经满了，或者你没有足够的钱支付手续费你再确认一下吧 \\
+ <取消/@exit>
+
+[@changeMoney]
+#IF
+   checkitem 金条 1
+#SAY 
+你要把金条换成金币? 好的，我给你换.\
+不过需要支付手续费费用是2000金币，你还换吗？ \\
+<交换/@changeMoney_1>\
+<取消/@exit>
+
+#ELSESAY
+你都没有金条还换什么? 想骗我?快滚! \\
+ <取消/@exit>
+
+[@changeMoney_1]
+#IF 
+checkitem 金条 1
+#ACT
+take 金条 1
+give 金币 998000
+goto @商人
+#SAY
+已经换好啦. \ 
+还要换么? \ \
+<返回/@main>\
+<再见/@exit>
+
+[@changeGold1]
+#IF
+   checkitem 金条 5
+#SAY
+你说你要用金条换成金砖? 好的，我帮你换.\
+但是要支付手续费,费用是10000金币，你还换吗？ \\ 
+<交换/@changeGold1_1>\
+ <取消/@exit>
+
+#ELSESAY
+你连这点东西都没有，还换什么？ 等你有足够的金条，再来找我吧 \\
+ <返回/@main>
+
+[@changeGold1_1]
+#IF
+   checkgold 10000
+   checkitem 金条 5
+#ACT
+take 金条 5
+take 金币 10000
+give 金砖 1
+goto @商人
+#SAY
+金条已经换好金砖了. \ 
+还换吗？ \\
+ <交换/@changeGold1>\
+ <取消/@exit>
+
+#ELSESAY
+你没有足够的钱支付手续费你再确认一下吧 \\
+<取消/@exit>
+
+[@changeMoney1]
+#IF
+   checkitem 金砖 1
+#SAY 
+你要把金砖换成金条? 好的，我给你换.\
+但是要支付手续费,费用是10000金币，你还换吗？ \\
+<交换/@changeMoney1_1> \
+<取消/@exit>
+
+#ELSESAY
+你都没有金砖还换什么? 想骗我?快滚! \\
+<取消/@exit>
+
+[@changeMoney1_1]
+#IF
+   checkgold 10000
+#ACT  
+   goto @changeMoney1_2
+
+#ELSESAY
+你没有足够的钱支付手续费你再确认一下吧 \\
+<取消/@exit>
+
+[@changeMoney1_2]
+#IF 
+   checkitem 金砖 1  
+#ACT
+take 金砖 1
+take 金币 10000
+give 金条 5
+goto @商人
+#SAY
+金砖已经换好金条了. \ 
+还换吗？ \\
+<交换/@changeMoney1> \
+<取消/@exit>
+
+[@changeGold2]
+#IF
+   checkitem 金砖 2
+#SAY
+你说你要用金砖换成<金盒>? 好的.\
+我帮你换 但是要支付手续费,费用是50000金币，你还换吗？ \\
+ <交换/@changeGold2_1>\
+ <取消/@exit>
+
+#ELSESAY
+你连这点东西都没有，还换什么？ 等你有足够的金砖，再来找我吧 \\
+ <返回/@main>
+
+[@changeGold2_1]
+#IF
+   checkgold 50000
+   checkitem 金砖 2
+#ACT
+take 金砖 2
+take 金币 50000
+give 金盒 1
+goto @商人
+#SAY
+金砖已经换好<金盒>了. \ 
+还换吗？ \\ 
+<交换/@changeGold2>\ 
+<取消/@exit>
+
+#ELSESAY
+你没有足够的钱支付手续费你再确认一下吧 \\
+<取消/@exit>
+
+[@changeMoney2]
+#IF
+   checkitem 金盒 1
+#SAY 
+你要把<金盒>换成金砖? 好的，我给你换,但是要支付手续费\
+费用是50000金币，你还换吗？ \\
+ <交换/@changeMoney2_1>\
+ <取消/@exit>
+
+#ELSESAY
+你都没有<金盒>还换什么? 想骗我?快滚! \\ 
+<取消/@exit>
+
+
+[@changeMoney2_1]
+#IF 
+   checkgold 50000
+#ACT  
+   goto @changeMoney2_2
+
+#ELSESAY
+你没有足够的钱支付手续费你再确认一下吧.\\ 
+<取消/@exit>
+
+[@changeMoney2_2]
+#IF 
+   checkitem 金盒 1
+#ACT
+take 金盒 1
+take 金币 50000
+give 金砖 2
+goto @商人
+#SAY
+<金盒>已经换好金砖了. \ 
+还换吗？ \\ 
+<交换/@changeMoney2>\ 
+<取消/@exit>\
+#ELSESAY
+你没有足够的钱支付手续费你再确认一下吧.\\ 
+<取消/@exit>\
+
+[@jinzhuan]
+#IF
+checkitem 金砖 1
+#SAY
+你说你要用金砖换成金币? 好的，我来帮你换，由于事态紧急。\
+所以免收你的手续费，你要换了吗？\\ 
+<交换/@jinzhuan1> \
+<取消/@exit>\
+#ELSESAY
+你的包里东西已经满了，或者你没有足够的钱让我来帮你换，\
+请你再确认一下吧 \\ 
+<取消/@exit> \
+[@jinzhuan1]
+#IF
+checkitem 金砖 1 
+#ACT
+take 金砖 1
+give 金币 5000000
+goto @商人
+#SAY
+已经换好了. 还有什么吗\ 
+还换吗？ \\
+<交换/@Mbind> \
+<返回/@main>
+#ELSESAY
+你的包里东西已经满了，或者你没有足够的钱让我来帮你换，\
+请你再确认一下吧 \\ <取消/@exit>
+
+
+[@zhubaoxiang]
+#IF
+checkitem 金盒 1
+#SAY
+你说你要用<金盒>换成金币? 不行啊 你身上装不下这么多金币的。\
+所以还是换成金砖吧？\\ 
+<取消/@exit> \
+#ELSESAY
+你说你要用<金盒>换成金币? 不行啊 你身上装不下这么多金币的。\
+所以还是换成金砖吧？\\  
+<取消/@exit> \
+[@zhubaoxiang1]
+#IF 
+checkitem 金盒 1
+#ACT
+take 金盒 1
+give 金币 10000000
+goto @商人
+#SAY
+已经换好金盒了.还有什么需要帮助的吗 \ 
+还换吗？ \\
+<交换/@Mbind> \
+<返回/@main> \
+#ELSESAY
+你的包里东西已经满了，或者你没有足够的钱让我来帮你换，\
+请你再确认一下吧 \\ <取消/@exit>
+}

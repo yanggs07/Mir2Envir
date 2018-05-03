@@ -1,0 +1,2382 @@
+[@鸡]
+{
+
+
+<金猴装备升级为金凤装备/@金猴装备升级为金凤装备>\ \
+<灵猴装备升级为灵凤装备/@灵猴装备升级为灵凤装备>\ \
+<神猴装备升级为神凤装备/@神猴装备升级为神凤装备>\ \
+<返回/@main>
+
+[@金猴装备升级为金凤装备]
+<我要升级金凤战士装备/@金凤战士装备>\ \
+<我要升级金凤法师装备/@金凤法师装备>\ \
+<我要升级金凤道士装备/@金凤道士装备>\ \
+<我要升级金凤刺客装备/@金凤刺客装备>\ \
+<返回/@鸡>
+
+[@金凤战士装备]
+<金凤战盔/@金凤战盔>    <金凤项链(战)/@金凤项链(战)>    <金凤战靴/@金凤战靴>\
+<金凤战戒/@金凤战戒>    <金凤腰带(战)/@金凤腰带(战)>    <金凤战勋/@金凤战勋>\
+<金凤护腕(战)/@金凤护腕(战)>    <金凤面巾(战)/@金凤面巾(战)    <金凤斗笠(战)/@金凤斗笠(战)>\
+
+<金凤战刃/@金凤战刃>    <金凤战甲(男)/@金凤战甲(男)   <金凤战甲(女)/@金凤战甲(女)>\ \
+
+首饰升级条件:金猴首饰 + 50个凤灵石 = 金凤首饰\
+武器衣服条件:金猴武器或者衣服 + 60个凤灵石 = 金凤武器或者衣服\
+<返回/@金猴装备升级为金凤装备>
+
+
+
+[@金凤战勋]
+#IF
+checkitem 金猴战勋 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴战勋 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤战勋 1
+SENDMSG 6 恭喜：金凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤战靴]
+#IF
+checkitem 金猴战靴 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴战靴 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤战靴 1
+SENDMSG 6 恭喜：金凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤战盔]
+#IF
+checkitem 金猴战盔 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴战盔 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤战盔 1
+SENDMSG 6 恭喜：金凤战盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤腰带(战)]
+#IF
+checkitem 金猴腰带(战) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴腰带(战) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤腰带(战) 1
+SENDMSG 6 恭喜：金凤腰带(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤腰带(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤项链(战)]
+#IF
+checkitem 金猴项链(战) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴项链(战) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤项链(战) 1
+SENDMSG 6 恭喜：金凤项链(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤项链(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤护腕(战)]
+#IF
+checkitem 金猴护腕(战) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴护腕(战) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤护腕(战) 1
+SENDMSG 6 恭喜：金凤护腕(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤护腕(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤面巾(战)]
+#IF
+checkitem 金猴面巾(战) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴面巾(战) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤面巾(战) 1
+SENDMSG 6 恭喜：金凤面巾(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤面巾(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤斗笠(战)]
+#IF
+checkitem 金猴斗笠(战) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴斗笠(战) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤斗笠(战) 1
+SENDMSG 6 恭喜：金凤斗笠(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤斗笠(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤战刃]
+#IF
+checkitem 金猴战刃 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴战刃 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤战刃 1
+SENDMSG 6 恭喜：金凤战刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤战甲(男)]
+#IF
+checkitem 金猴战甲(男) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴战甲(男) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤战甲(男) 1
+SENDMSG 6 恭喜：金凤战甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤战甲(女)]
+#IF
+checkitem 金猴战甲(女) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴战甲(女) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤战甲(女) 1
+SENDMSG 6 恭喜：金凤战甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤战甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@金凤刺客装备]
+<金凤刺盔/@金凤刺盔>    <金凤项链(刺)/@金凤项链(刺)>    <金凤刺靴/@金凤刺靴>\
+<金凤刺戒/@金凤刺戒>    <金凤腰带(刺)/@金凤腰带(刺)>    <金凤刺勋/@金凤刺勋>\
+<金凤护腕(刺)/@金凤护腕(刺)>    <金凤面巾(刺)/@金凤面巾(刺)    <金凤斗笠(刺)/@金凤斗笠(刺)>\
+
+<金凤刺刃/@金凤刺刃>    <金凤刺甲(男)/@金凤刺甲(男)   <金凤刺甲(女)/@金凤刺甲(女)>\ \
+
+首饰升级条件:金猴首饰 + 50个凤灵石 = 金凤首饰\
+武器衣服条件:金猴武器或者衣服 + 60个凤灵石 = 金凤武器或者衣服\
+<返回/@金猴装备升级为金凤装备>
+
+
+
+[@金凤刺勋]
+#IF
+checkitem 金猴刺勋 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴刺勋 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤刺勋 1
+SENDMSG 6 恭喜：金凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤刺靴]
+#IF
+checkitem 金猴刺靴 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴刺靴 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤刺靴 1
+SENDMSG 6 恭喜：金凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤刺盔]
+#IF
+checkitem 金猴刺盔 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴刺盔 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤刺盔 1
+SENDMSG 6 恭喜：金凤刺盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤腰带(刺)]
+#IF
+checkitem 金猴腰带(刺) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴腰带(刺) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤腰带(刺) 1
+SENDMSG 6 恭喜：金凤腰带(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤腰带(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤项链(刺)]
+#IF
+checkitem 金猴项链(刺) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴项链(刺) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤项链(刺) 1
+SENDMSG 6 恭喜：金凤项链(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤项链(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤护腕(刺)]
+#IF
+checkitem 金猴护腕(刺) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴护腕(刺) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤护腕(刺) 1
+SENDMSG 6 恭喜：金凤护腕(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤护腕(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤面巾(刺)]
+#IF
+checkitem 金猴面巾(刺) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴面巾(刺) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤面巾(刺) 1
+SENDMSG 6 恭喜：金凤面巾(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤面巾(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤斗笠(刺)]
+#IF
+checkitem 金猴斗笠(刺) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴斗笠(刺) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤斗笠(刺) 1
+SENDMSG 6 恭喜：金凤斗笠(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤斗笠(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤刺刃]
+#IF
+checkitem 金猴刺刃 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴刺刃 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤刺刃 1
+SENDMSG 6 恭喜：金凤刺刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤刺甲(男)]
+#IF
+checkitem 金猴刺甲(男) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴刺甲(男) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤刺甲(男) 1
+SENDMSG 6 恭喜：金凤刺甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤刺甲(女)]
+#IF
+checkitem 金猴刺甲(女) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴刺甲(女) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤刺甲(女) 1
+SENDMSG 6 恭喜：金凤刺甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤刺甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@金凤道士装备]
+<金凤道盔/@金凤道盔>    <金凤项链(道)/@金凤项链(道)>    <金凤道靴/@金凤道靴>\
+<金凤道戒/@金凤道戒>    <金凤腰带(道)/@金凤腰带(道)>    <金凤道勋/@金凤道勋>\
+<金凤护腕(道)/@金凤护腕(道)>    <金凤面巾(道)/@金凤面巾(道)    <金凤斗笠(道)/@金凤斗笠(道)>\
+
+<金凤道剑/@金凤道剑>    <金凤道袍(男)/@金凤道袍(男)   <金凤道袍(女)/@金凤道袍(女)>\ \
+
+首饰升级条件:金猴首饰 + 50个凤灵石 = 金凤首饰\
+武器衣服条件:金猴武器或者衣服 + 60个凤灵石 = 金凤武器或者衣服\
+<返回/@金猴装备升级为金凤装备>
+
+
+
+[@金凤道勋]
+#IF
+checkitem 金猴道勋 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴道勋 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤道勋 1
+SENDMSG 6 恭喜：金凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤道靴]
+#IF
+checkitem 金猴道靴 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴道靴 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤道靴 1
+SENDMSG 6 恭喜：金凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤道盔]
+#IF
+checkitem 金猴道盔 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴道盔 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤道盔 1
+SENDMSG 6 恭喜：金凤道盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤腰带(道)]
+#IF
+checkitem 金猴腰带(道) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴腰带(道) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤腰带(道) 1
+SENDMSG 6 恭喜：金凤腰带(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤腰带(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤项链(道)]
+#IF
+checkitem 金猴项链(道) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴项链(道) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤项链(道) 1
+SENDMSG 6 恭喜：金凤项链(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤项链(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤护腕(道)]
+#IF
+checkitem 金猴护腕(道) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴护腕(道) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤护腕(道) 1
+SENDMSG 6 恭喜：金凤护腕(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤护腕(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤面巾(道)]
+#IF
+checkitem 金猴面巾(道) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴面巾(道) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤面巾(道) 1
+SENDMSG 6 恭喜：金凤面巾(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤面巾(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤斗笠(道)]
+#IF
+checkitem 金猴斗笠(道) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴斗笠(道) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤斗笠(道) 1
+SENDMSG 6 恭喜：金凤斗笠(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤斗笠(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤道剑]
+#IF
+checkitem 金猴道剑 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴道剑 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤道剑 1
+SENDMSG 6 恭喜：金凤道剑升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道剑。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤道袍(男)]
+#IF
+checkitem 金猴道袍(男) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴道袍(男) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤道袍(男) 1
+SENDMSG 6 恭喜：金凤道袍(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道袍(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤道袍(女)]
+#IF
+checkitem 金猴道袍(女) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴道袍(女) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤道袍(女) 1
+SENDMSG 6 恭喜：金凤道袍(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤道袍(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+
+[@金凤法师装备]
+<金凤魔盔/@金凤魔盔>    <金凤项链(法)/@金凤项链(法)>    <金凤魔靴/@金凤魔靴>\
+<金凤魔戒/@金凤魔戒>    <金凤腰带(法)/@金凤腰带(法)>    <金凤法勋/@金凤法勋>\
+<金凤护腕(法)/@金凤护腕(法)>    <金凤面巾(法)/@金凤面巾(法)    <金凤斗笠(法)/@金凤斗笠(法)>\
+
+<金凤法杖/@金凤法杖>    <金凤魔衣(男)/@金凤魔衣(男)   <金凤魔衣(女)/@金凤魔衣(女)>\ \
+
+首饰升级条件:金猴首饰 + 50个凤灵石 = 金凤首饰\
+武器衣服条件:金猴武器或者衣服 + 60个凤灵石 = 金凤武器或者衣服\
+<返回/@金猴装备升级为金凤装备>
+
+
+
+[@金凤法勋]
+#IF
+checkitem 金猴法勋 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴法勋 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤法勋 1
+SENDMSG 6 恭喜：金凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤法勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤魔靴]
+#IF
+checkitem 金猴魔靴 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴魔靴 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤魔靴 1
+SENDMSG 6 恭喜：金凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤魔靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤魔盔]
+#IF
+checkitem 金猴魔盔 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴魔盔 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤魔盔 1
+SENDMSG 6 恭喜：金凤魔盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤魔盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤腰带(法)]
+#IF
+checkitem 金猴腰带(法) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴腰带(法) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤腰带(法) 1
+SENDMSG 6 恭喜：金凤腰带(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤腰带(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤项链(法)]
+#IF
+checkitem 金猴项链(法) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴项链(法) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤项链(法) 1
+SENDMSG 6 恭喜：金凤项链(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤项链(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤护腕(法)]
+#IF
+checkitem 金猴护腕(法) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴护腕(法) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤护腕(法) 1
+SENDMSG 6 恭喜：金凤护腕(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤护腕(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤面巾(法)]
+#IF
+checkitem 金猴面巾(法) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴面巾(法) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤面巾(法) 1
+SENDMSG 6 恭喜：金凤面巾(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤面巾(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤斗笠(法)]
+#IF
+checkitem 金猴斗笠(法) 1
+CHECKKIMNEEDLE 凤灵石 50
+#ACT
+TAKE 金猴斗笠(法) 1
+TAKEKIMNEEDLE 凤灵石 50
+GIVE 金凤斗笠(法) 1
+SENDMSG 6 恭喜：金凤斗笠(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤斗笠(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@金凤法杖]
+#IF
+checkitem 金猴法杖 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴法杖 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤法杖 1
+SENDMSG 6 恭喜：金凤法杖升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤法杖。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤魔衣(男)]
+#IF
+checkitem 金猴魔衣(男) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴魔衣(男) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤魔衣(男) 1
+SENDMSG 6 恭喜：金凤魔衣(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤魔衣(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@金凤魔衣(女)]
+#IF
+checkitem 金猴魔衣(女) 1
+CHECKKIMNEEDLE 凤灵石 60
+#ACT
+TAKE 金猴魔衣(女) 1
+TAKEKIMNEEDLE 凤灵石 60
+GIVE 金凤魔衣(女) 1
+SENDMSG 6 恭喜：金凤魔衣(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：金凤魔衣(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@灵猴装备升级为灵凤装备]
+<我要升级灵凤战士装备/@灵凤战士装备>\ \
+<我要升级灵凤法师装备/@灵凤法师装备>\ \
+<我要升级灵凤道士装备/@灵凤道士装备>\ \
+<我要升级灵凤刺客装备/@灵凤刺客装备>\ \
+<返回/@鸡>
+
+[@灵凤战士装备]
+<灵凤战盔/@灵凤战盔>    <灵凤项链(战)/@灵凤项链(战)>    <灵凤战靴/@灵凤战靴>\
+<灵凤战戒/@灵凤战戒>    <灵凤腰带(战)/@灵凤腰带(战)>    <灵凤战勋/@灵凤战勋>\
+<灵凤护腕(战)/@灵凤护腕(战)>    <灵凤面巾(战)/@灵凤面巾(战)    <灵凤斗笠(战)/@灵凤斗笠(战)>\
+
+<灵凤战刃/@灵凤战刃>    <灵凤战甲(男)/@灵凤战甲(男)   <灵凤战甲(女)/@灵凤战甲(女)>\ \
+
+首饰升级条件:灵猴首饰 + 80个凤灵石 = 灵凤首饰\
+武器衣服条件:灵猴武器或者衣服 + 100个凤灵石 = 灵凤武器或者衣服\
+<返回/@灵猴装备升级为灵凤装备>
+
+
+
+[@灵凤战勋]
+#IF
+checkitem 灵猴战勋 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴战勋 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤战勋 1
+SENDMSG 6 恭喜：灵凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤战靴]
+#IF
+checkitem 灵猴战靴 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴战靴 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤战靴 1
+SENDMSG 6 恭喜：灵凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤战盔]
+#IF
+checkitem 灵猴战盔 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴战盔 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤战盔 1
+SENDMSG 6 恭喜：灵凤战盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤腰带(战)]
+#IF
+checkitem 灵猴腰带(战) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴腰带(战) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤腰带(战) 1
+SENDMSG 6 恭喜：灵凤腰带(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤腰带(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤项链(战)]
+#IF
+checkitem 灵猴项链(战) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴项链(战) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤项链(战) 1
+SENDMSG 6 恭喜：灵凤项链(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤项链(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤护腕(战)]
+#IF
+checkitem 灵猴护腕(战) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴护腕(战) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤护腕(战) 1
+SENDMSG 6 恭喜：灵凤护腕(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤护腕(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤面巾(战)]
+#IF
+checkitem 灵猴面巾(战) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴面巾(战) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤面巾(战) 1
+SENDMSG 6 恭喜：灵凤面巾(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤面巾(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤斗笠(战)]
+#IF
+checkitem 灵猴斗笠(战) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴斗笠(战) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤斗笠(战) 1
+SENDMSG 6 恭喜：灵凤斗笠(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤斗笠(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤战刃]
+#IF
+checkitem 灵猴战刃 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴战刃 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤战刃 1
+SENDMSG 6 恭喜：灵凤战刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤战甲(男)]
+#IF
+checkitem 灵猴战甲(男) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴战甲(男) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤战甲(男) 1
+SENDMSG 6 恭喜：灵凤战甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤战甲(女)]
+#IF
+checkitem 灵猴战甲(女) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴战甲(女) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤战甲(女) 1
+SENDMSG 6 恭喜：灵凤战甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤战甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@灵凤刺客装备]
+<灵凤刺盔/@灵凤刺盔>    <灵凤项链(刺)/@灵凤项链(刺)>    <灵凤刺靴/@灵凤刺靴>\
+<灵凤刺戒/@灵凤刺戒>    <灵凤腰带(刺)/@灵凤腰带(刺)>    <灵凤刺勋/@灵凤刺勋>\
+<灵凤护腕(刺)/@灵凤护腕(刺)>    <灵凤面巾(刺)/@灵凤面巾(刺)    <灵凤斗笠(刺)/@灵凤斗笠(刺)>\
+
+<灵凤刺刃/@灵凤刺刃>    <灵凤刺甲(男)/@灵凤刺甲(男)   <灵凤刺甲(女)/@灵凤刺甲(女)>\ \
+
+首饰升级条件:灵猴首饰 + 80个凤灵石 = 灵凤首饰\
+武器衣服条件:灵猴武器或者衣服 + 100个凤灵石 = 灵凤武器或者衣服\
+<返回/@灵猴装备升级为灵凤装备>
+
+
+
+[@灵凤刺勋]
+#IF
+checkitem 灵猴刺勋 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴刺勋 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤刺勋 1
+SENDMSG 6 恭喜：灵凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤刺靴]
+#IF
+checkitem 灵猴刺靴 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴刺靴 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤刺靴 1
+SENDMSG 6 恭喜：灵凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤刺盔]
+#IF
+checkitem 灵猴刺盔 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴刺盔 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤刺盔 1
+SENDMSG 6 恭喜：灵凤刺盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤腰带(刺)]
+#IF
+checkitem 灵猴腰带(刺) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴腰带(刺) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤腰带(刺) 1
+SENDMSG 6 恭喜：灵凤腰带(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤腰带(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤项链(刺)]
+#IF
+checkitem 灵猴项链(刺) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴项链(刺) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤项链(刺) 1
+SENDMSG 6 恭喜：灵凤项链(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤项链(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤护腕(刺)]
+#IF
+checkitem 灵猴护腕(刺) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴护腕(刺) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤护腕(刺) 1
+SENDMSG 6 恭喜：灵凤护腕(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤护腕(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤面巾(刺)]
+#IF
+checkitem 灵猴面巾(刺) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴面巾(刺) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤面巾(刺) 1
+SENDMSG 6 恭喜：灵凤面巾(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤面巾(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤斗笠(刺)]
+#IF
+checkitem 灵猴斗笠(刺) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴斗笠(刺) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤斗笠(刺) 1
+SENDMSG 6 恭喜：灵凤斗笠(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤斗笠(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤刺刃]
+#IF
+checkitem 灵猴刺刃 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴刺刃 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤刺刃 1
+SENDMSG 6 恭喜：灵凤刺刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤刺甲(男)]
+#IF
+checkitem 灵猴刺甲(男) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴刺甲(男) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤刺甲(男) 1
+SENDMSG 6 恭喜：灵凤刺甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤刺甲(女)]
+#IF
+checkitem 灵猴刺甲(女) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴刺甲(女) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤刺甲(女) 1
+SENDMSG 6 恭喜：灵凤刺甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤刺甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@灵凤道士装备]
+<灵凤道盔/@灵凤道盔>    <灵凤项链(道)/@灵凤项链(道)>    <灵凤道靴/@灵凤道靴>\
+<灵凤道戒/@灵凤道戒>    <灵凤腰带(道)/@灵凤腰带(道)>    <灵凤道勋/@灵凤道勋>\
+<灵凤护腕(道)/@灵凤护腕(道)>    <灵凤面巾(道)/@灵凤面巾(道)    <灵凤斗笠(道)/@灵凤斗笠(道)>\
+
+<灵凤道剑/@灵凤道剑>    <灵凤道袍(男)/@灵凤道袍(男)   <灵凤道袍(女)/@灵凤道袍(女)>\ \
+
+首饰升级条件:灵猴首饰 + 80个凤灵石 = 灵凤首饰\
+武器衣服条件:灵猴武器或者衣服 + 100个凤灵石 = 灵凤武器或者衣服\
+<返回/@灵猴装备升级为灵凤装备>
+
+
+
+[@灵凤道勋]
+#IF
+checkitem 灵猴道勋 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴道勋 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤道勋 1
+SENDMSG 6 恭喜：灵凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤道靴]
+#IF
+checkitem 灵猴道靴 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴道靴 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤道靴 1
+SENDMSG 6 恭喜：灵凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤道盔]
+#IF
+checkitem 灵猴道盔 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴道盔 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤道盔 1
+SENDMSG 6 恭喜：灵凤道盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤腰带(道)]
+#IF
+checkitem 灵猴腰带(道) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴腰带(道) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤腰带(道) 1
+SENDMSG 6 恭喜：灵凤腰带(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤腰带(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤项链(道)]
+#IF
+checkitem 灵猴项链(道) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴项链(道) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤项链(道) 1
+SENDMSG 6 恭喜：灵凤项链(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤项链(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤护腕(道)]
+#IF
+checkitem 灵猴护腕(道) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴护腕(道) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤护腕(道) 1
+SENDMSG 6 恭喜：灵凤护腕(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤护腕(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤面巾(道)]
+#IF
+checkitem 灵猴面巾(道) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴面巾(道) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤面巾(道) 1
+SENDMSG 6 恭喜：灵凤面巾(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤面巾(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤斗笠(道)]
+#IF
+checkitem 灵猴斗笠(道) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴斗笠(道) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤斗笠(道) 1
+SENDMSG 6 恭喜：灵凤斗笠(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤斗笠(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤道剑]
+#IF
+checkitem 灵猴道剑 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴道剑 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤道剑 1
+SENDMSG 6 恭喜：灵凤道剑升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道剑。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤道袍(男)]
+#IF
+checkitem 灵猴道袍(男) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴道袍(男) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤道袍(男) 1
+SENDMSG 6 恭喜：灵凤道袍(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道袍(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤道袍(女)]
+#IF
+checkitem 灵猴道袍(女) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴道袍(女) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤道袍(女) 1
+SENDMSG 6 恭喜：灵凤道袍(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤道袍(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+
+[@灵凤法师装备]
+<灵凤魔盔/@灵凤魔盔>    <灵凤项链(法)/@灵凤项链(法)>    <灵凤魔靴/@灵凤魔靴>\
+<灵凤魔戒/@灵凤魔戒>    <灵凤腰带(法)/@灵凤腰带(法)>    <灵凤法勋/@灵凤法勋>\
+<灵凤护腕(法)/@灵凤护腕(法)>    <灵凤面巾(法)/@灵凤面巾(法)    <灵凤斗笠(法)/@灵凤斗笠(法)>\
+
+<灵凤法杖/@灵凤法杖>    <灵凤魔衣(男)/@灵凤魔衣(男)   <灵凤魔衣(女)/@灵凤魔衣(女)>\ \
+
+首饰升级条件:灵猴首饰 + 80个凤灵石 = 灵凤首饰\
+武器衣服条件:灵猴武器或者衣服 + 100个凤灵石 = 灵凤武器或者衣服\
+<返回/@灵猴装备升级为灵凤装备>
+
+
+
+[@灵凤法勋]
+#IF
+checkitem 灵猴法勋 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴法勋 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤法勋 1
+SENDMSG 6 恭喜：灵凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤法勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤魔靴]
+#IF
+checkitem 灵猴魔靴 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴魔靴 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤魔靴 1
+SENDMSG 6 恭喜：灵凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤魔靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤魔盔]
+#IF
+checkitem 灵猴魔盔 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴魔盔 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤魔盔 1
+SENDMSG 6 恭喜：灵凤魔盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤魔盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤腰带(法)]
+#IF
+checkitem 灵猴腰带(法) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴腰带(法) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤腰带(法) 1
+SENDMSG 6 恭喜：灵凤腰带(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤腰带(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤项链(法)]
+#IF
+checkitem 灵猴项链(法) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴项链(法) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤项链(法) 1
+SENDMSG 6 恭喜：灵凤项链(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤项链(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤护腕(法)]
+#IF
+checkitem 灵猴护腕(法) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴护腕(法) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤护腕(法) 1
+SENDMSG 6 恭喜：灵凤护腕(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤护腕(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤面巾(法)]
+#IF
+checkitem 灵猴面巾(法) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴面巾(法) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤面巾(法) 1
+SENDMSG 6 恭喜：灵凤面巾(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤面巾(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤斗笠(法)]
+#IF
+checkitem 灵猴斗笠(法) 1
+CHECKKIMNEEDLE 凤灵石 80
+#ACT
+TAKE 灵猴斗笠(法) 1
+TAKEKIMNEEDLE 凤灵石 80
+GIVE 灵凤斗笠(法) 1
+SENDMSG 6 恭喜：灵凤斗笠(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤斗笠(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@灵凤法杖]
+#IF
+checkitem 灵猴法杖 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴法杖 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤法杖 1
+SENDMSG 6 恭喜：灵凤法杖升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤法杖。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤魔衣(男)]
+#IF
+checkitem 灵猴魔衣(男) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴魔衣(男) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤魔衣(男) 1
+SENDMSG 6 恭喜：灵凤魔衣(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤魔衣(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@灵凤魔衣(女)]
+#IF
+checkitem 灵猴魔衣(女) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 灵猴魔衣(女) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 灵凤魔衣(女) 1
+SENDMSG 6 恭喜：灵凤魔衣(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：灵凤魔衣(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+[@神猴装备升级为神凤装备]
+<我要升级神凤战士装备/@神凤战士装备>\ \
+<我要升级神凤法师装备/@神凤法师装备>\ \
+<我要升级神凤道士装备/@神凤道士装备>\ \
+<我要升级神凤刺客装备/@神凤刺客装备>\ \
+<返回/@鸡>
+
+[@神凤战士装备]
+<神凤战盔/@神凤战盔>    <神凤项链(战)/@神凤项链(战)>    <神凤战靴/@神凤战靴>\
+<神凤战戒/@神凤战戒>    <神凤腰带(战)/@神凤腰带(战)>    <神凤战勋/@神凤战勋>\
+<神凤护腕(战)/@神凤护腕(战)>    <神凤面巾(战)/@神凤面巾(战)    <神凤斗笠(战)/@神凤斗笠(战)>\
+
+<神凤战刃/@神凤战刃>    <神凤战甲(男)/@神凤战甲(男)   <神凤战甲(女)/@神凤战甲(女)>\ \
+
+首饰升级条件:神猴首饰 + 100个凤灵石 = 神凤首饰\
+武器衣服条件:神猴武器或者衣服 + 200个凤灵石 = 神凤武器或者衣服\
+<返回/@神猴装备升级为神凤装备>
+
+
+
+[@神凤战勋]
+#IF
+checkitem 神猴战勋 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴战勋 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤战勋 1
+SENDMSG 6 恭喜：神凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤战靴]
+#IF
+checkitem 神猴战靴 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴战靴 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤战靴 1
+SENDMSG 6 恭喜：神凤战靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤战盔]
+#IF
+checkitem 神猴战盔 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴战盔 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤战盔 1
+SENDMSG 6 恭喜：神凤战盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤腰带(战)]
+#IF
+checkitem 神猴腰带(战) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴腰带(战) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤腰带(战) 1
+SENDMSG 6 恭喜：神凤腰带(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤腰带(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤项链(战)]
+#IF
+checkitem 神猴项链(战) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴项链(战) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤项链(战) 1
+SENDMSG 6 恭喜：神凤项链(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤项链(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤护腕(战)]
+#IF
+checkitem 神猴护腕(战) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴护腕(战) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤护腕(战) 1
+SENDMSG 6 恭喜：神凤护腕(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤护腕(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤面巾(战)]
+#IF
+checkitem 神猴面巾(战) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴面巾(战) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤面巾(战) 1
+SENDMSG 6 恭喜：神凤面巾(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤面巾(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤斗笠(战)]
+#IF
+checkitem 神猴斗笠(战) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴斗笠(战) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤斗笠(战) 1
+SENDMSG 6 恭喜：神凤斗笠(战)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤斗笠(战)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤战刃]
+#IF
+checkitem 神猴战刃 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴战刃 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤战刃 1
+SENDMSG 6 恭喜：神凤战刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤战甲(男)]
+#IF
+checkitem 神猴战甲(男) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴战甲(男) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤战甲(男) 1
+SENDMSG 6 恭喜：神凤战甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤战甲(女)]
+#IF
+checkitem 神猴战甲(女) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴战甲(女) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤战甲(女) 1
+SENDMSG 6 恭喜：神凤战甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤战甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@神凤刺客装备]
+<神凤刺盔/@神凤刺盔>    <神凤项链(刺)/@神凤项链(刺)>    <神凤刺靴/@神凤刺靴>\
+<神凤刺戒/@神凤刺戒>    <神凤腰带(刺)/@神凤腰带(刺)>    <神凤刺勋/@神凤刺勋>\
+<神凤护腕(刺)/@神凤护腕(刺)>    <神凤面巾(刺)/@神凤面巾(刺)    <神凤斗笠(刺)/@神凤斗笠(刺)>\
+
+<神凤刺刃/@神凤刺刃>    <神凤刺甲(男)/@神凤刺甲(男)   <神凤刺甲(女)/@神凤刺甲(女)>\ \
+
+首饰升级条件:神猴首饰 + 100个凤灵石 = 神凤首饰\
+武器衣服条件:神猴武器或者衣服 + 200个凤灵石 = 神凤武器或者衣服\
+<返回/@神猴装备升级为神凤装备>
+
+
+
+[@神凤刺勋]
+#IF
+checkitem 神猴刺勋 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴刺勋 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤刺勋 1
+SENDMSG 6 恭喜：神凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤刺靴]
+#IF
+checkitem 神猴刺靴 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴刺靴 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤刺靴 1
+SENDMSG 6 恭喜：神凤刺靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤刺盔]
+#IF
+checkitem 神猴刺盔 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴刺盔 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤刺盔 1
+SENDMSG 6 恭喜：神凤刺盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤腰带(刺)]
+#IF
+checkitem 神猴腰带(刺) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴腰带(刺) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤腰带(刺) 1
+SENDMSG 6 恭喜：神凤腰带(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤腰带(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤项链(刺)]
+#IF
+checkitem 神猴项链(刺) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴项链(刺) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤项链(刺) 1
+SENDMSG 6 恭喜：神凤项链(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤项链(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤护腕(刺)]
+#IF
+checkitem 神猴护腕(刺) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴护腕(刺) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤护腕(刺) 1
+SENDMSG 6 恭喜：神凤护腕(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤护腕(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤面巾(刺)]
+#IF
+checkitem 神猴面巾(刺) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴面巾(刺) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤面巾(刺) 1
+SENDMSG 6 恭喜：神凤面巾(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤面巾(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤斗笠(刺)]
+#IF
+checkitem 神猴斗笠(刺) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴斗笠(刺) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤斗笠(刺) 1
+SENDMSG 6 恭喜：神凤斗笠(刺)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤斗笠(刺)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤刺刃]
+#IF
+checkitem 神猴刺刃 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴刺刃 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤刺刃 1
+SENDMSG 6 恭喜：神凤刺刃升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺刃。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤刺甲(男)]
+#IF
+checkitem 神猴刺甲(男) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴刺甲(男) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤刺甲(男) 1
+SENDMSG 6 恭喜：神凤刺甲(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺甲(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤刺甲(女)]
+#IF
+checkitem 神猴刺甲(女) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴刺甲(女) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤刺甲(女) 1
+SENDMSG 6 恭喜：神凤刺甲(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤刺甲(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+[@神凤道士装备]
+<神凤道盔/@神凤道盔>    <神凤项链(道)/@神凤项链(道)>    <神凤道靴/@神凤道靴>\
+<神凤道戒/@神凤道戒>    <神凤腰带(道)/@神凤腰带(道)>    <神凤道勋/@神凤道勋>\
+<神凤护腕(道)/@神凤护腕(道)>    <神凤面巾(道)/@神凤面巾(道)    <神凤斗笠(道)/@神凤斗笠(道)>\
+
+<神凤道剑/@神凤道剑>    <神凤道袍(男)/@神凤道袍(男)   <神凤道袍(女)/@神凤道袍(女)>\ \
+
+首饰升级条件:神猴首饰 + 100个凤灵石 = 神凤首饰\
+武器衣服条件:神猴武器或者衣服 + 200个凤灵石 = 神凤武器或者衣服\
+<返回/@神猴装备升级为神凤装备>
+
+
+
+[@神凤道勋]
+#IF
+checkitem 神猴道勋 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴道勋 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤道勋 1
+SENDMSG 6 恭喜：神凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤道靴]
+#IF
+checkitem 神猴道靴 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴道靴 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤道靴 1
+SENDMSG 6 恭喜：神凤道靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤道盔]
+#IF
+checkitem 神猴道盔 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴道盔 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤道盔 1
+SENDMSG 6 恭喜：神凤道盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤腰带(道)]
+#IF
+checkitem 神猴腰带(道) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴腰带(道) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤腰带(道) 1
+SENDMSG 6 恭喜：神凤腰带(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤腰带(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤项链(道)]
+#IF
+checkitem 神猴项链(道) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴项链(道) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤项链(道) 1
+SENDMSG 6 恭喜：神凤项链(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤项链(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤护腕(道)]
+#IF
+checkitem 神猴护腕(道) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴护腕(道) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤护腕(道) 1
+SENDMSG 6 恭喜：神凤护腕(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤护腕(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤面巾(道)]
+#IF
+checkitem 神猴面巾(道) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴面巾(道) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤面巾(道) 1
+SENDMSG 6 恭喜：神凤面巾(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤面巾(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤斗笠(道)]
+#IF
+checkitem 神猴斗笠(道) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴斗笠(道) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤斗笠(道) 1
+SENDMSG 6 恭喜：神凤斗笠(道)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤斗笠(道)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤道剑]
+#IF
+checkitem 神猴道剑 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴道剑 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤道剑 1
+SENDMSG 6 恭喜：神凤道剑升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道剑。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤道袍(男)]
+#IF
+checkitem 神猴道袍(男) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴道袍(男) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤道袍(男) 1
+SENDMSG 6 恭喜：神凤道袍(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道袍(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤道袍(女)]
+#IF
+checkitem 神猴道袍(女) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴道袍(女) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤道袍(女) 1
+SENDMSG 6 恭喜：神凤道袍(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤道袍(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+
+
+
+[@神凤法师装备]
+<神凤魔盔/@神凤魔盔>    <神凤项链(法)/@神凤项链(法)>    <神凤魔靴/@神凤魔靴>\
+<神凤魔戒/@神凤魔戒>    <神凤腰带(法)/@神凤腰带(法)>    <神凤法勋/@神凤法勋>\
+<神凤护腕(法)/@神凤护腕(法)>    <神凤面巾(法)/@神凤面巾(法)    <神凤斗笠(法)/@神凤斗笠(法)>\
+
+<神凤法杖/@神凤法杖>    <神凤魔衣(男)/@神凤魔衣(男)   <神凤魔衣(女)/@神凤魔衣(女)>\ \
+
+首饰升级条件:神猴首饰 + 100个凤灵石 = 神凤首饰\
+武器衣服条件:神猴武器或者衣服 + 200个凤灵石 = 神凤武器或者衣服\
+<返回/@神猴装备升级为神凤装备>
+
+
+
+[@神凤法勋]
+#IF
+checkitem 神猴法勋 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴法勋 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤法勋 1
+SENDMSG 6 恭喜：神凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤法勋。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤魔靴]
+#IF
+checkitem 神猴魔靴 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴魔靴 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤魔靴 1
+SENDMSG 6 恭喜：神凤魔靴升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤魔靴。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤魔盔]
+#IF
+checkitem 神猴魔盔 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴魔盔 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤魔盔 1
+SENDMSG 6 恭喜：神凤魔盔升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤魔盔。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤腰带(法)]
+#IF
+checkitem 神猴腰带(法) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴腰带(法) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤腰带(法) 1
+SENDMSG 6 恭喜：神凤腰带(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤腰带(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤项链(法)]
+#IF
+checkitem 神猴项链(法) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴项链(法) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤项链(法) 1
+SENDMSG 6 恭喜：神凤项链(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤项链(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤护腕(法)]
+#IF
+checkitem 神猴护腕(法) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴护腕(法) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤护腕(法) 1
+SENDMSG 6 恭喜：神凤护腕(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤护腕(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤面巾(法)]
+#IF
+checkitem 神猴面巾(法) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴面巾(法) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤面巾(法) 1
+SENDMSG 6 恭喜：神凤面巾(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤面巾(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤斗笠(法)]
+#IF
+checkitem 神猴斗笠(法) 1
+CHECKKIMNEEDLE 凤灵石 100
+#ACT
+TAKE 神猴斗笠(法) 1
+TAKEKIMNEEDLE 凤灵石 100
+GIVE 神凤斗笠(法) 1
+SENDMSG 6 恭喜：神凤斗笠(法)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤斗笠(法)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+[@神凤法杖]
+#IF
+checkitem 神猴法杖 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴法杖 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤法杖 1
+SENDMSG 6 恭喜：神凤法杖升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤法杖。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤魔衣(男)]
+#IF
+checkitem 神猴魔衣(男) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴魔衣(男) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤魔衣(男) 1
+SENDMSG 6 恭喜：神凤魔衣(男)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤魔衣(男)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+[@神凤魔衣(女)]
+#IF
+checkitem 神猴魔衣(女) 1
+CHECKKIMNEEDLE 凤灵石 200
+#ACT
+TAKE 神猴魔衣(女) 1
+TAKEKIMNEEDLE 凤灵石 200
+GIVE 神凤魔衣(女) 1
+SENDMSG 6 恭喜：神凤魔衣(女)升级成功！
+SENDMSG 0 恭喜：%s在炼气台合成了：神凤魔衣(女)。
+BREAK
+#ELSESAY
+你没有足够的材料，我没办法帮你升级......
+#ELSEACT
+BREAK
+
+
+
+}

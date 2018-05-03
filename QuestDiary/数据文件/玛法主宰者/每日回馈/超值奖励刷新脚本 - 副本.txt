@@ -1,0 +1,22 @@
+[@超值购买商品随机]
+{
+#IF
+#ACT
+MOV G665
+MOV G666
+MOV G667
+MOV G668
+MOV G669
+MOVR G665 14
+MOVR G666 14
+MOVR G667 14
+MOVR G668 14
+MOVR G669 14
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A660 <$STR(G665)>
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A661 <$STR(G666)>
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A662 <$STR(G667)>
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A663 <$STR(G660)>
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A664 <$STR(G669)>
+BREAK
+}
+

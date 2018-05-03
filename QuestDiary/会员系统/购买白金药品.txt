@@ -1,0 +1,244 @@
+[@白金药品购买开始]
+{
+╔═══════╗╔═════════════════╗\
+┆ 购买打捆药品 ┆┆         白金打捆药购买服务       ┆\
+╞═══════╡╞═════════════════╡\
+┆  <疗伤药打捆/@LSY>  ┆┆你好尊贵的会员，我这里提供给你打捆┆\
+╞═══════╡┆药品，只有白金帐号成员才可以享受到┆\
+┆  <雪霜  打捆/@XS>  ┆┆本服务，请在左侧选择你要购买的药品┆\
+╞═══════╡┆                                  ┆\
+┆  <强效太阳水/@TYS>  ┆┆                        <返回上一页/@白金帐号功能]>┆\
+╚═══════╝╚═════════════════╝\
+[@XS]
+╔═══════╗╔═════════════════╗\
+┆ <打捆药品购买/@捆药服务> ┆┆        打捆雪霜购买说明          ┆\
+╞═══════╡╞═════════════════╡\
+┆  <疗伤药打捆/@LSY>  ┆┆您可以在这里购买打捆好的雪霜，每捆┆\
+╞═══════╡┆需要元宝2个，请选择你要购买的数量 ┆\
+┆  雪霜  打捆  ┆┆                                  ┆\
+╞═══════╡┆                                  ┆\
+┆  <强效太阳水/@TYS>  ┆┆[<一捆/@HL1>] [<两捆/@HL2>] [<三捆/@HL3>] [<四捆/@HL4>] [<五捆/@HL5>]┆\
+╚═══════╝╚═════════════════╝\
+[@LSY]
+╔═══════╗╔═════════════════╗\
+┆ <打捆药品购买/@捆药服务> ┆┆        打捆疗伤药购买说明        ┆\
+╞═══════╡╞═════════════════╡\
+┆  疗伤药打捆  ┆┆您可以在这里购买打捆好的疗伤药，每┆\
+╞═══════╡┆捆需要元宝3个,请选择你要购买的数量┆\
+┆  <雪霜  打捆/@XS>  ┆┆         <白金帐号专用购买>         ┆\
+╞═══════╡┆                                  ┆\
+┆  <强效太阳水/@TYS>  ┆┆[<一捆/@L1>] [<两捆/@L2>] [<三捆/@L3>] [<四捆/@L4>] [<五捆/@L5>]┆\
+╚═══════╝╚═════════════════╝\
+[@TYS]
+╔═══════╗╔═════════════════╗\
+┆ <打捆药品购买/@捆药服务> ┆┆      打捆强效太阳水购买说明      ┆\
+╞═══════╡╞═════════════════╡\
+┆  <疗伤药打捆/@LSY>  ┆┆您可以在这里购买打捆好的强效太阳水┆\
+╞═══════╡┆每捆需要元宝1个,请选择你要购买的数┆\
+┆  <雪霜  打捆/@XS>  ┆┆量：                              ┆\
+╞═══════╡┆          <白金帐号专用购买>        ┆\
+┆  强效太阳水  ┆┆[<一捆/@HH1>] [<两捆/@HH2>] [<三捆/@HH3>] [<四捆/@HH4>] [<五捆/@HH5>]┆\
+╚═══════╝╚═════════════════╝\
+[@HH1]
+#IF
+CHECKGAMEGOLD > 1
+#ACT
+GAMEGOLD - 1
+give 强效太阳水包 1
+#SAY
+你已经成功的购买了1个强效太阳水包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@TYS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连1元宝都没有啊。\
+[@HH2]
+#IF
+CHECKGAMEGOLD > 2
+#ACT
+GAMEGOLD - 2
+give 强效太阳水包 2
+#SAY
+你已经成功的购买了2个强效太阳包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@TYS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连2元宝都没有啊。\
+[@HH3]
+#IF
+CHECKGAMEGOLD > 2
+#ACT
+GAMEGOLD - 3
+give 强效太阳水包 3
+#SAY
+你已经成功的购买了3个强效太阳包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@TYS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连3元宝都没有啊。\
+[@HH4]
+#IF
+CHECKGAMEGOLD > 3
+#ACT
+GAMEGOLD - 4
+give 强效太阳水包 4
+#SAY
+你已经成功的购买了4个强效太阳包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@TYS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连4元宝都没有啊。\
+[@HH5]
+#IF
+CHECKGAMEGOLD > 4
+#ACT
+GAMEGOLD - 5
+give 强效太阳水包 5
+#SAY
+你已经成功的购买了5个强效太阳包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@TYS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连5元宝都没有啊。\
+[@HL1]
+#IF
+CHECKGAMEGOLD > 1
+#ACT
+GAMEGOLD - 2
+give 万年雪霜包 1
+#SAY
+你已经成功的购买了1个雪霜包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@XS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连2元宝都没有啊。\
+
+[@HL2]
+#IF
+CHECKGAMEGOLD > 3
+#ACT
+GAMEGOLD - 4
+give 万年雪霜包 2
+#SAY
+你已经成功的购买了2个雪霜包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@XS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连4元宝都没有啊。\
+[@HL3]
+#IF
+CHECKGAMEGOLD > 5
+#ACT
+GAMEGOLD - 6
+give 万年雪霜包 3
+#SAY
+你已经成功的购买了3个雪霜包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@XS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连6元宝都没有啊。\
+[@HL4]
+#IF
+CHECKGAMEGOLD > 7
+#ACT
+GAMEGOLD - 8
+give 万年雪霜包 4
+#SAY
+你已经成功的购买了4个雪霜包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@XS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连8元宝都没有啊。\
+[@HL5]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+give 万年雪霜包 5
+#SAY
+你已经成功的购买了5个雪霜包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@XS>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连10元宝都没有啊。\
+[@L1]
+#IF
+CHECKGAMEGOLD > 2
+#ACT
+GAMEGOLD - 3
+give 疗伤药包 1
+#SAY
+你已经成功的购买了1个疗伤药包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@LSY>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连3元宝都没有啊。\
+
+
+[@L2]
+#IF
+CHECKGAMEGOLD > 5
+#ACT
+GAMEGOLD - 6
+give 疗伤药包 2
+#SAY
+你已经成功的购买了2个疗伤药包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@LSY>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连6元宝都没有啊。\
+
+[@L3]
+#IF
+CHECKGAMEGOLD > 8
+#ACT
+GAMEGOLD - 9
+give 疗伤药包 3
+#SAY
+你已经成功的购买了3个疗伤药包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@LSY>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连9元宝都没有啊。\
+
+[@L4]
+#IF
+CHECKGAMEGOLD > 11
+#ACT
+GAMEGOLD - 12
+give 疗伤药包 4
+#SAY
+你已经成功的购买了4个疗伤药包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@LSY>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连12元宝都没有啊。\
+[@L5]
+#IF
+CHECKGAMEGOLD > 14
+#ACT
+GAMEGOLD - 15
+give 疗伤药包 5
+#SAY
+你已经成功的购买了5个疗伤药包。\
+你是否还要继续购买？\ \
+<是的，我要继续购买/@LSY>\ \
+<不了，谢谢!/@exit>\
+#ELSESAY
+你个穷鬼，连15元宝都没有啊。\
+\
+\
+}

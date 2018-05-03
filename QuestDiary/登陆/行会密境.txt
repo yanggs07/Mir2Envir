@@ -1,0 +1,45 @@
+[@密境检测]
+{
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJA.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJB.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJC.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJD.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJE.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJF.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+#if
+HAVEGUILD
+CHECKGUILDLIST  ..\QuestDiary\游戏任务\行会密境任务\MJG.txt
+#ACT
+SENDMSG 6 *******行会密境已经开启*******
+BREAK
+}

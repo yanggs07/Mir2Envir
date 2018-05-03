@@ -1,0 +1,57 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 15
+Gender = 1
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=25
+ProtectStatus=1
+UseSkill = 基本剑术,攻杀剑术,刺杀剑术,半月弯刀,
+;包裹物品
+InitItems = 金创药(大)包,魔法药(大)包
+;等级
+Level = 25
+[MonSay]
+0=爱拼传奇单机qq是多少怎么吗？答：782864782
+1=我可是媛媛的亲亲粉丝哦！
+2=打你又怎样？有种把我干翻！！
+3=哎！你长的太欠扁了!
+4=高手总是寂寞如水
+5=今天天气不错！是你下葬的好日子！
+6=抢劫！不想死的！快把身上值钱的东西都交出来！
+7=呦呵！还敢还手！看本大爷不揍的呢半身不遂！
+8=这一刀下去就得见红！
+9=不要崇拜哥！哥对你来说只是个梦！
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0 = 重盔甲(女)
+;武器
+UseItems1 = 炼狱
+;照明物
+UseItems2=  蜡烛
+;项链
+UseItems3 = 幽灵项链
+;头盔
+UseItems4 = 骷髅头盔
+;左手镯
+UseItems5 = 死神手套
+;右手镯
+UseItems6 = 死神手套
+;左戒指
+UseItems7 = 龙之戒指
+;右戒指
+UseItems8 = 珊瑚戒指
+;物品
+UseItems9 = 火龙之心
+;腰带
+UseItems10 = 
+;鞋子
+UseItems11 = 
+;宝石
+UseItems12 =魔血石(大) 

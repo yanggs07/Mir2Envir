@@ -1,0 +1,5571 @@
+;此脚本为UI专用功能脚本，用于实现UI各种与脚本有关的功能
+
+[@神佑]
+#ACT
+#CALL [\商人\主号神佑袋.txt] @主号神佑袋脚本
+BREAK
+
+[@英雄神佑]
+#ACT
+#CALL [\商人\英雄神佑袋.txt] @英雄神佑袋脚本
+BREAK
+
+[@淬体神技a]
+#if
+#ACT
+#CALL [\数据文件\淬体.txt] @淬体1
+break
+
+[@神佑]
+#ACT
+#CALL [\商人\主号神佑袋.txt] @主号神佑袋脚本
+BREAK
+
+[@英雄神佑]
+#ACT
+#CALL [\商人\英雄神佑袋.txt] @英雄神佑袋脚本
+BREAK
+
+[@金元素]
+#if
+#act
+#call  [\元素\金元素.txt] @金元素升级
+BREAK
+[@木元素]
+#if
+#act
+#call  [\元素\木元素.txt] @木元素升级
+BREAK
+[@水元素]
+#if
+#act
+#call  [\元素\水元素.txt] @水元素升级
+BREAK
+[@火元素]
+#if
+#act
+#call  [\元素\火元素.txt] @火元素升级
+BREAK
+[@土元素]
+#if
+#act
+#call  [\元素\土元素.txt] @土元素升级
+BREAK
+
+[@坐骑]
+#if
+#act
+#call  [\坐骑\坐骑.txt] @坐骑界面
+BREAK
+
+[@装备回收_主]
+#if
+#act
+bigmain 2
+#call [\雪花制作\装备回收.TXT] @装备回收
+BREAK
+
+;===========炼体炼体炼体炼体炼体炼体炼体炼体炼体炼体炼体=================================================================================================
+[@人物炼体]
+#IF
+CHECKVAR HUMAN 护体 < 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 0
+MOV M1 100
+MOV M2 50
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 0
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 100
+MOV M1 200
+MOV M2 100
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 200
+MOV M1 400
+MOV M2 200
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 2
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 400
+MOV M1 600
+MOV M2 300
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 3
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 600
+MOV M1 800
+MOV M2 400
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 4
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 800
+MOV M1 1000
+MOV M2 500
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 5
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1000
+MOV M1 1200
+MOV M2 600
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 6
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1200
+MOV M1 1400
+MOV M2 700
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 7
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1400
+MOV M1 1600
+MOV M2 800
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 8
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1600
+MOV M1 1800
+MOV M2 900
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 9
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1800
+MOV M1 2000
+MOV M2 1000
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 10
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2000
+MOV M1 2200
+MOV M2 1100
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 11
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2200
+MOV M1 2400
+MOV M2 1200
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 12
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2400
+MOV M1 2600
+MOV M2 1300
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 13
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2600
+MOV M1 2800
+MOV M2 1400
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 14
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2800
+MOV M1 3000
+MOV M2 1500
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 15
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3000
+MOV M1 3200
+MOV M2 1600
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 16
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3200
+MOV M1 3400
+MOV M2 1700
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 17
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3400
+MOV M1 3600
+MOV M2 1800
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 18
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3600
+MOV M1 3800
+MOV M2 1900
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 19
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3800
+MOV M1 4000
+MOV M2 2000
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 20
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4000
+MOV M1 4200
+MOV M2 2100
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 21
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4200
+MOV M1 4400
+MOV M2 2200
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 22
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4400
+MOV M1 4700
+MOV M2 2300
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 23
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4700
+MOV M1 5000
+MOV M2 2400
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 24
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5000
+MOV M1 5300
+MOV M2 2500
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 25
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5300
+MOV M1 5600
+MOV M2 2600
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 26
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5600
+MOV M1 5900
+MOV M2 2700
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 27
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5900
+MOV M1 6200
+MOV M2 2800
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 28
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 6200
+MOV M1 6500
+MOV M2 2900
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 29
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 6500
+MOV M1 6800
+MOV M2 3000
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 30
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 6800
+MOV M1 7100
+MOV M2 3100
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 31
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 7100
+MOV M1 7400
+MOV M2 3200
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 32
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 7400
+MOV M1 7700
+MOV M2 3300
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 33
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 7700
+MOV M1 8000
+MOV M2 3400
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 34
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 8000
+MOV M1 8300
+MOV M2 3500
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 35
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 8300
+MOV M1 8600
+MOV M2 3600
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 36
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 8600
+MOV M1 8900
+MOV M2 3700
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 37
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 8900
+MOV M1 9200
+MOV M2 3800
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 38
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 9200
+MOV M1 9500
+MOV M2 3900
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 39
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 9500
+MOV M1 9800
+MOV M2 4000
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 40
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 9800
+MOV M1 10200
+MOV M2 4100
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 41
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 10200
+MOV M1 10400
+MOV M2 4200
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 42
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 10400
+MOV M1 10800
+MOV M2 4300
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 43
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 10800
+MOV M1 11200
+MOV M2 4400
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 44
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 11200
+MOV M1 11600
+MOV M2 4500
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 45
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 11600
+MOV M1 12000
+MOV M2 4600
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 46
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 12000
+MOV M1 12400
+MOV M2 4700
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 47
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 12400
+MOV M1 12800
+MOV M2 4800
+DelayGoto 3 @zhixing
+#IF
+CHECKVAR HUMAN 护体 > 48
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 12800
+MOV M1 13300
+MOV M2 4900
+DelayGoto 3 @zhixing
+
+
+
+#IF
+CHECKVAR HUMAN 护体 > 49
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 13300
+MOV M1 0
+MOV M2 0
+GIVEFENGHAO <$USERNAME> 311 NOT 1 1
+DelayGoto 3 @护体满级
+BREAK
+
+
+[@护体满级]
+#if
+#act
+OPENMERCHANTDLG 52|1895|1|0|0|0|0|0|1|430|20
+Mov <$S(左脚踝5)> <{i=1890;li=52;x=5;y=29;}>
+Mov <$S(左脚踝5)> <{i=1880;li=52;x=97;y=325;ht=左脚踝：9重;htfc=#D9D919;htch=#D9D919;}>
+Mov <$S(右脚踝5)> <{i=1882;li=52;x=5;y=29;}>
+Mov <$S(右脚踝5)> <{i=1880;li=52;x=167;y=332;ht=右脚踝：9重;htfc=#D9D919;htch=#D9D919;}>
+Mov <$S(左大腿5)> <{i=1888;li=52;x=5;y=29;}>
+Mov <$S(左大腿5)> <{i=1880;li=52;x=97;y=272;ht=左膝：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(右大腿5)> <{i=1889;li=52;x=5;y=29;}>
+Mov <$S(右大腿5)> <{i=1880;li=52;x=153;y=278;ht=右膝：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(腰5)> <{i=1887;li=52;x=5;y=29;}>
+Mov <$S(腰5)> <{i=1880;li=52;x=125;y=222;ht=腰部：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(右手腕5)> <{i=1886;li=52;x=5;y=29;}>
+Mov <$S(右手腕5)> <{i=1880;li=52;x=172;y=213;ht=右手腕：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(左手腕5)> <{i=1885;li=52;x=5;y=29;}>
+Mov <$S(左手腕5)> <{i=1880;li=52;x=75;y=210;ht=左手腕：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(胸部5)> <{i=1883;li=52;x=5;y=29;}>
+Mov <$S(胸部5)> <{i=1880;li=52;x=125;y=172;ht=胸部：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(右肩部5)> <{i=1884;li=52;x=5;y=29;}>
+Mov <$S(右肩部5)> <{i=1880;li=52;x=153;y=150;ht=右肩部：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(左肩部5)> <{i=1881;li=52;x=5;y=29;}>
+Mov <$S(左肩部5)> <{i=1880;li=52;x=105;y=147;ht=左肩部：9重;htfc=#D9D919;htch=#D9D919;}>}>
+Mov <$S(头部5)> <{i=1880;li=52;x=125;y=113;ht=头部：8重;htfc=#D9D919;htch=#D9D919;}>}>
+#say
+<{i=91;li=53;x=40;y=54}><{s=护体;fc=150;x=58;y=61}>   <{i=91;li=53;x=100;y=52}><{s=强体;fc=103;x=112;y=63}/@qt>   <{i=91;li=53;x=160;y=52}><{s=体魄;fc=103;x=172;y=63}/@tip>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs> 
+<{s=当前阶段：<$HUMAN(护体)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=140}> <{s=已升至最高练体：;fc=249;x=265;y=275}> <{s=神圣防御 + <$STR(M0)>;fc=255;x=270;y=165}>        
+<{i=1892;li=52;x=50;y=400}> <{s=圣灵丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=已经满阶;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_1>
+<$S(左脚踝5)>
+<$S(左脚踝5)>
+<$S(右脚踝5)>
+<$S(右脚踝5)>
+<$S(左大腿5)>
+<$S(左大腿5)>
+<$S(右大腿5)>
+<$S(右大腿5)>
+<$S(腰5)>
+<$S(腰5)>
+<$S(右手腕5)>
+<$S(右手腕5)>
+<$S(左手腕5)>
+<$S(左手腕5)>
+<$S(胸部5)>
+<$S(胸部5)>
+<$S(右肩部5)>
+<$S(右肩部5)>
+<$S(左肩部5)>
+<$S(左肩部5)>
+<$S(头部5)>
+
+
+
+
+[@zhixing]
+#if
+#act
+OPENMERCHANTDLG 52|1895|1|0|0|0|0|0|1|430|20
+#say
+<{i=91;li=53;x=40;y=54}><{s=护体;fc=150;x=58;y=61}>   <{i=91;li=53;x=100;y=52}><{s=强体;fc=103;x=112;y=63}/@qt>   <{i=91;li=53;x=160;y=52}><{s=体魄;fc=103;x=172;y=63}/@tip>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs> 
+<{s=当前阶段：<$HUMAN(护体)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=140}> <{s=下一级获得属性：（同步英雄）;fc=249;x=265;y=275}>  <{s=神圣防御 + <$STR(M0)>;fc=255;x=270;y=165}>    <{s=神圣防御 + <$STR(M1)>;fc=249;x=270;y=318}>
+<{i=1892;li=52;x=50;y=400}> <{s=圣灵丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=升级;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_1>
+
+
+
+
+
+
+
+
+[@qt]
+#IF
+CHECKVAR HUMAN 强体 < 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 0
+MOV M1 100
+MOV M2 50
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 0
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 100
+MOV M1 200
+MOV M2 100
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 200
+MOV M1 400
+MOV M2 200
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 2
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 400
+MOV M1 600
+MOV M2 300
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 3
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 600
+MOV M1 800
+MOV M2 400
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 4
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 800
+MOV M1 1000
+MOV M2 500
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 5
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1000
+MOV M1 1200
+MOV M2 600
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 6
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1200
+MOV M1 1400
+MOV M2 700
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 7
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1400
+MOV M1 1600
+MOV M2 800
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 8
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1600
+MOV M1 1800
+MOV M2 900
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 9
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1800
+MOV M1 2000
+MOV M2 1000
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 10
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2000
+MOV M1 2200
+MOV M2 1100
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 11
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2200
+MOV M1 2400
+MOV M2 1200
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 12
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2400
+MOV M1 2600
+MOV M2 1300
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 13
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2600
+MOV M1 2800
+MOV M2 1400
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 14
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2800
+MOV M1 3000
+MOV M2 1500
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 15
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3000
+MOV M1 3200
+MOV M2 1600
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 16
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3200
+MOV M1 3400
+MOV M2 1700
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 17
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3400
+MOV M1 3600
+MOV M2 1800
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 18
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3600
+MOV M1 3800
+MOV M2 1900
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 19
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3800
+MOV M1 4000
+MOV M2 2000
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 20
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4000
+MOV M1 4200
+MOV M2 2100
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 21
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4200
+MOV M1 4400
+MOV M2 2200
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 22
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4400
+MOV M1 4700
+MOV M2 2300
+DelayGoto 3 @zhixing1
+#IF
+CHECKVAR HUMAN 强体 > 23
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4700
+MOV M1 5000
+MOV M2 2400
+DelayGoto 3 @zhixing1
+
+
+
+
+
+#IF
+CHECKVAR HUMAN 强体 > 24
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5000
+MOV M1 无
+MOV M2 0
+GIVEFENGHAO <$USERNAME> 312 NOT 1 1
+DelayGoto 3 @强体满级
+BREAK
+
+[@zhixing1]
+#if
+#act
+OPENMERCHANTDLG 52|1896|1|0|0|0|0|0|1|430|20
+#say
+<{i=91;li=53;x=40;y=52}><{s=护体;fc=103;x=58;y=63}/@人物炼体>   <{i=91;li=53;x=100;y=54}><{s=强体;fc=150;x=112;y=61}>   <{i=91;li=53;x=160;y=52}><{s=体魄;fc=103;x=172;y=63}/@tip>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs> 
+<{s=当前阶段：<$HUMAN(强体)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=205}> <{s=下一级获得属性：（同步英雄）;fc=249;x=265;y=290}>  <{s=神圣主属性上限 + <$STR(M0)>;fc=255;x=270;y=230}>  <{s=神圣主属性下限 + <$STR(M0)>;fc=255;x=270;y=248}>   <{s=神圣主属性上限 + <$STR(M1)>;fc=249;x=270;y=315}>  <{s=神圣主属性下限 + <$STR(M1)>;fc=249;x=270;y=333}>
+<{i=1893;li=52;x=50;y=400}> <{s=圣魂丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=升级;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_2>
+
+
+
+
+[@强体满级]
+#if
+#act
+OPENMERCHANTDLG 52|1896|1|0|0|0|0|0|1|430|20
+MOV <$S(左脚踝5)> <{i=1880;li=52;x=97;y=325;}>
+MOV <$S(右脚踝5)> <{i=1880;li=52;x=166;y=332;}>
+MOV <$S(右大腿5)> <{i=1880;li=52;x=152;y=279;}>
+MOV <$S(左大腿5)> <{i=1880;li=52;x=97;y=272;}>
+MOV <$S(腰5)> <{i=1880;li=52;x=123;y=220;}>
+MOV <$S(左手腕5)> <{i=1880;li=52;x=75;y=210;}>
+MOV <$S(右手腕5)> <{i=1880;li=52;x=172;y=213;}>
+MOV <$S(胸部5)> <{i=1880;li=52;x=125;y=172;}>
+MOV <$S(左肩部5)> <{i=1880;li=52;x=102;y=148;}>
+MOV <$S(右肩部5)> <{i=1880;li=52;x=153;y=150;}>
+MOV <$S(头部5)> <{i=1880;li=52;x=125;y=113;}>
+#say
+<{i=91;li=53;x=40;y=52}><{s=护体;fc=103;x=58;y=63}/@人物炼体>   <{i=91;li=53;x=100;y=54}><{s=强体;fc=150;x=112;y=61}>   <{i=91;li=53;x=160;y=52}><{s=体魄;fc=103;x=172;y=63}/@tip>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs> 
+<{s=当前阶段：<$HUMAN(强体)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=205}> <{s=已升至最高强体;fc=249;x=265;y=290}>  <{s=神圣主属性上限 + <$STR(M0)>;fc=255;x=270;y=230}>  <{s=神圣主属性下限 + <$STR(M0)>;fc=255;x=270;y=248}>   
+<{i=1893;li=52;x=50;y=400}> <{s=圣魂丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=已经满阶;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_2>
+<$S(左脚踝5)>
+<$S(右脚踝5)>
+<$S(左大腿5)>
+<$S(右大腿5)>
+<$S(腰5)>
+<$S(左手腕5)>
+<$S(右手腕5)>
+<$S(胸部5)>
+<$S(左肩部5)>
+<$S(右肩部5)>
+<$S(头部5)>
+
+
+
+
+
+
+[@tip]
+#IF
+CHECKVAR HUMAN 体魄 < 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 0
+MOV M1 100
+MOV M2 50
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 0
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 100
+MOV M1 200
+MOV M2 100
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 1
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 200
+MOV M1 400
+MOV M2 200
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 2
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 400
+MOV M1 600
+MOV M2 300
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 3
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 600
+MOV M1 800
+MOV M2 400
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 4
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 800
+MOV M1 1000
+MOV M2 500
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 5
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1000
+MOV M1 1200
+MOV M2 600
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 6
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1200
+MOV M1 1400
+MOV M2 700
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 7
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1400
+MOV M1 1600
+MOV M2 800
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 8
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1600
+MOV M1 1800
+MOV M2 900
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 9
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 1800
+MOV M1 2000
+MOV M2 1000
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 10
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2000
+MOV M1 2200
+MOV M2 1100
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 11
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2200
+MOV M1 2400
+MOV M2 1200
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 12
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2400
+MOV M1 2600
+MOV M2 1300
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 13
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2600
+MOV M1 2800
+MOV M2 1400
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 14
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 2800
+MOV M1 3000
+MOV M2 1500
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 15
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3000
+MOV M1 3200
+MOV M2 1600
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 16
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3200
+MOV M1 3400
+MOV M2 1700
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 17
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3400
+MOV M1 3600
+MOV M2 1800
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 18
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3600
+MOV M1 3800
+MOV M2 1900
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 19
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 3800
+MOV M1 4000
+MOV M2 2000
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 20
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4000
+MOV M1 4200
+MOV M2 2100
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 21
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4200
+MOV M1 4400
+MOV M2 2200
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 22
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4400
+MOV M1 4700
+MOV M2 2300
+DelayGoto 3 @zhixing2
+#IF
+CHECKVAR HUMAN 体魄 > 23
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 4700
+MOV M1 5000
+MOV M2 2400
+DelayGoto 3 @zhixing2
+
+
+
+
+
+
+#IF
+CHECKVAR HUMAN 体魄 > 24
+#ACT
+MOV M0
+MOV M1
+MOV M2
+MOV M0 5000
+MOV M1 无
+GIVEFENGHAO <$USERNAME> 313 NOT 1 1
+DelayGoto 3 @体魄满级
+BREAK
+
+
+[@zhixing2]
+#if
+#act
+OPENMERCHANTDLG 52|1897|1|0|0|0|0|0|1|430|20
+#say
+<{i=91;li=53;x=40;y=52}><{s=护体;fc=103;x=58;y=63}/@人物炼体>   <{i=91;li=53;x=100;y=52}><{s=强体;fc=103;x=112;y=63}/@qt>   <{i=91;li=53;x=160;y=54}><{s=体魄;fc=150;x=172;y=61}>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs>
+<{s=当前阶段：<$HUMAN(体魄)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=205}> <{s=下一级获得属性：（同步英雄）;fc=249;x=265;y=290}>  <{s=魔血值 + <$STR(M0)>;fc=255;x=270;y=230}>     <{s=魔血值 + <$STR(M1)>;fc=249;x=270;y=315}>
+<{i=1894;li=52;x=50;y=400}> <{s=圣血丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=升级;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_3>
+
+
+
+
+[@体魄满级]
+#if
+#act
+OPENMERCHANTDLG 52|1897|1|0|0|0|0|0|1|430|20
+MOV <$S(左脚踝5)> <{i=1880;li=52;x=97;y=325;}>
+MOV <$S(右脚踝5)> <{i=1880;li=52;x=166;y=332;}>
+MOV <$S(右大腿5)> <{i=1880;li=52;x=152;y=279;}>
+MOV <$S(左大腿5)> <{i=1880;li=52;x=97;y=272;}>
+MOV <$S(腰5)> <{i=1880;li=52;x=123;y=220;}>
+MOV <$S(左手腕5)> <{i=1880;li=52;x=75;y=210;}>
+MOV <$S(右手腕5)> <{i=1880;li=52;x=172;y=213;}>
+MOV <$S(胸部5)> <{i=1880;li=52;x=125;y=172;}>
+MOV <$S(左肩部5)> <{i=1880;li=52;x=102;y=148;}>
+MOV <$S(右肩部5)> <{i=1880;li=52;x=153;y=150;}>
+MOV <$S(头部5)> <{i=1880;li=52;x=125;y=113;}>
+#say
+<{i=91;li=53;x=40;y=52}><{s=护体;fc=103;x=58;y=63}/@人物炼体>   <{i=91;li=53;x=100;y=52}><{s=强体;fc=103;x=112;y=63}/@qt>   <{i=91;li=53;x=160;y=54}><{s=体魄;fc=150;x=172;y=61}>   <{i=91;li=53;x=220;y=52}><{s=洗髓;fc=103;x=232;y=63}/@xs>
+<{s=当前阶段：<$HUMAN(体魄)>级;f.se=15;fc=250;x=265;y=100}> <{s=当前修炼获得：（同步英雄）;fc=251;x=265;y=205}> <{s=已升至最高体魄;fc=249;x=265;y=290}>  <{s=魔血值 + <$STR(M0)>;fc=255;x=270;y=230}>
+<{i=1894;li=52;x=50;y=400}> <{s=圣血丹×<$STR(M2)>;fc=255;x=87;y=410}>  <{s=已经满阶;i=19;li=53;ih=52;id=53;x=335;y=398;fc=150;x=362;y=409}/@sjzb_3>
+<$S(左脚踝5)>
+<$S(右脚踝5)>
+<$S(右大腿5)>
+<$S(左大腿5)>
+<$S(腰5)>
+<$S(左手腕5)>
+<$S(右手腕5)>
+<$S(胸部5)>
+<$S(左肩部5)>
+<$S(右肩部5)>
+<$S(头部5)>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@sjzb_1]
+#IF
+CHECKVAR HUMAN 护体 < 50
+#ACT
+#ELSEACT
+SENDMSG 7 护体等级已满，恭喜阁下。
+break
+
+
+
+
+
+#IF
+CHECKKIMNEEDLE 圣灵丹 <$STR(M2)>
+#ACT
+TAKEKIMNEEDLE 圣灵丹 <$STR(M2)>
+CHANGEHUMABILITY 22 = <$STR(M1)> 65535
+CHANGEHUMABILITY 22 = <$STR(M1)> 65535 HERO
+CALCVAR HUMAN 护体 + 1
+SAVEVAR HUMAN 护体 ..\QuestDiary\活动次数\护体.txt
+SENDMSG 7 提示：你的护体升级成功！
+GOTO @人物炼体
+#ELSEACT
+SENDMSG 7 升级材料不够，不能升级。
+break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@sjzb_2]
+#IF
+CHECKVAR HUMAN 强体 < 25
+#ACT
+#ELSEACT
+SENDMSG 7 你的强体升级已满，无法在升级！
+break
+#IF
+CHECKKIMNEEDLE 圣魂丹 <$STR(M2)>
+#ACT
+TAKEKIMNEEDLE 圣魂丹 <$STR(M2)>
+CHANGEHUMABILITY 20 = <$STR(M1)> 65535
+CHANGEHUMABILITY 23 = <$STR(M1)> 65535
+CHANGEHUMABILITY 20 = <$STR(M1)> 65535  HERO
+CHANGEHUMABILITY 23 = <$STR(M1)> 65535  HERO
+CALCVAR HUMAN 强体 + 1
+SAVEVAR HUMAN 强体 ..\QuestDiary\活动次数\强体.txt
+SENDMSG 7 提示：你的强体升级成功！
+GOTO @qt
+#ELSEACT
+SENDMSG 7 升级材料不够，不能升级。
+break
+
+
+
+
+
+
+
+
+[@sjzb_3]
+#IF
+CHECKVAR HUMAN 体魄 < 25
+#ACT
+#ELSEACT
+SENDMSG 7 你的强体升级已满，无法在升级！
+break
+
+#IF
+CHECKKIMNEEDLE 圣血丹 <$STR(M2)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$STR(M2)>
+CHANGEHUMABILITY 17 = <$STR(M1)> 65535
+CHANGEHUMABILITY 17 = <$STR(M1)> 65535  HERO
+CALCVAR HUMAN 体魄 + 1
+SAVEVAR HUMAN 体魄 ..\QuestDiary\活动次数\体魄.txt
+SENDMSG 7 提示：你的强体升级成功！
+GOTO @tip
+#ELSEACT
+SENDMSG 7 升级材料不够，不能升级。
+break
+
+
+
+
+
+
+[@xs]
+#if
+CHECKVAR HUMAN 护体 > 0
+CHECKVAR HUMAN 强体 > 0
+CHECKVAR HUMAN 体魄 > 0
+#act
+#CALL [\练体\洗髓变量\体位脚本\第0部位.txt] @第0部位
+
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 4
+CHECKVAR HUMAN 强体 > 2
+CHECKVAR HUMAN 体魄 > 2
+#act
+#CALL [\练体\洗髓变量\体位脚本\第1部位.txt] @第1部位
+
+
+#if
+CHECKVAR HUMAN 护体 > 9
+CHECKVAR HUMAN 强体 > 5
+CHECKVAR HUMAN 体魄 > 5
+#act
+#CALL [\练体\洗髓变量\体位脚本\第2部位.txt] @第2部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 14
+CHECKVAR HUMAN 强体 > 7
+CHECKVAR HUMAN 体魄 > 7
+#act
+#CALL [\练体\洗髓变量\体位脚本\第3部位.txt] @第3部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 19
+CHECKVAR HUMAN 强体 > 9
+CHECKVAR HUMAN 体魄 > 9
+#act
+#CALL [\练体\洗髓变量\体位脚本\第4部位.txt] @第4部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 24
+CHECKVAR HUMAN 强体 > 11
+CHECKVAR HUMAN 体魄 > 11
+
+#act
+#CALL [\练体\洗髓变量\体位脚本\第5部位.txt] @第5部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 29
+CHECKVAR HUMAN 强体 > 14
+CHECKVAR HUMAN 体魄 > 14
+
+#act
+#CALL [\练体\洗髓变量\体位脚本\第6部位.txt] @第6部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 34
+CHECKVAR HUMAN 强体 > 17
+CHECKVAR HUMAN 体魄 > 17
+
+#act
+#CALL [\练体\洗髓变量\体位脚本\第7部位.txt] @第7部位
+
+
+#if
+CHECKVAR HUMAN 护体 > 39
+CHECKVAR HUMAN 强体 > 19
+CHECKVAR HUMAN 体魄 > 19
+
+#act
+#CALL [\练体\洗髓变量\体位脚本\第8部位.txt] @第8部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 44
+CHECKVAR HUMAN 强体 > 21
+CHECKVAR HUMAN 体魄 > 21
+
+#act
+#CALL [\练体\洗髓变量\体位脚本\第9部位.txt] @第9部位
+
+
+
+#if
+CHECKVAR HUMAN 护体 > 47
+CHECKVAR HUMAN 强体 > 23
+CHECKVAR HUMAN 体魄 > 23
+#act
+#CALL [\练体\洗髓变量\体位脚本\第10部位.txt] @第10部位
+
+#if
+CHECKVAR HUMAN 护体 = 50
+CHECKVAR HUMAN 强体 = 25
+CHECKVAR HUMAN 体魄 = 25
+#act
+#CALL [\练体\洗髓变量\体位脚本\第11部位.txt] @第11部位
+
+[@回收装备]
+本服在任何地图内都可以使用再线回收功能，只需要点击此功能\ \
+<在线回收首饰/@回收>\
+<在线回收特殊/@剑甲>\
+<在线回收神铁/@材料>\
+<在线凤凰纹/@一键凤凰纹>\
+<在线锻造台/@^OpenUpSmeltDlg>\
+
+
+
+
+[@一键凤凰纹]
+#if
+CHECKHEROONLINE
+#act
+#ELSEACT
+MessAgeBox  请把你的英雄召唤出来！
+BREAK
+
+#if
+#ACT
+ChangeItemSteel 0 70 HERO
+ChangeItemSteel 1 70 HERO
+ChangeItemSteel 2 70 HERO
+ChangeItemSteel 3 70 HERO
+ChangeItemSteel 4 70 HERO
+ChangeItemSteel 5 70 HERO
+ChangeItemSteel 6 70 HERO
+ChangeItemSteel 7 70 HERO
+ChangeItemSteel 8 70 HERO
+ChangeItemSteel 9 70 HERO
+ChangeItemSteel 10 70 HERO
+ChangeItemSteel 11 70 HERO
+ChangeItemSteel 12 70 HERO
+ChangeItemSteel 13 70 HERO
+ChangeItemSteel 14 70 HERO
+ChangeItemSteel 15 70 HERO
+ChangeItemSteel 16 70 HERO
+ChangeItemSteel 17 70 HERO
+ChangeItemSteel 0 70
+ChangeItemSteel 1 70
+ChangeItemSteel 2 70
+ChangeItemSteel 3 70
+ChangeItemSteel 4 70
+ChangeItemSteel 5 70
+ChangeItemSteel 6 70
+ChangeItemSteel 7 70
+ChangeItemSteel 8 70
+ChangeItemSteel 9 70
+ChangeItemSteel 10 70
+ChangeItemSteel 11 70
+ChangeItemSteel 12 70
+ChangeItemSteel 13 70
+ChangeItemSteel 14 70
+ChangeItemSteel 15 70
+ChangeItemSteel 16 70
+ChangeItemSteel 17 70
+SENDMSG 0 恭喜【<$USERNAME>】在装备回收将英雄全身装备免费提升到凤凰纹顶级！
+break
+;-------------------------------------------------------------------------------------------------------------20171223添加坐骑，军衔，龙啸！
+[@时间隐藏]
+#IF
+CHECK [489] 1
+#ACT
+SET [489] 0
+SetClientUIProp Usr_shijianan.text 显示复活提示
+SetClientUIProp Usr_shijianan.ImageIndex.UP 28
+SetClientUIProp Usr_shijian_CT.visible False
+BREAK
+
+#IF
+CHECKLEVELEX > 0
+#ACT
+SET [489] 1
+SetClientUIProp Usr_shijianan.text 隐藏复活提示
+SetClientUIProp Usr_shijianan.ImageIndex.UP 30
+SetClientUIProp Usr_shijian_CT.visible True
+BREAK
+
+[@主体坐骑技能6]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\致死打击.txt <$S(坐骑技能6)> <$HUMAN(坐骑等级6)>
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 14
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 15
+SetClientUIProp Usr_zuoqi_JN_S1.text 致死打击
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级6)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 攻击时有20%几率给敌方
+SetClientUIProp Usr_zuoqi_JN_S5.text 造成致死的效果，持续
+SetClientUIProp Usr_zuoqi_JN_S6.text 5秒。致死效果期间，每
+SetClientUIProp Usr_zuoqi_JN_S7.text 秒损失当前血量的<$S(坐骑技能6)>%。
+BREAK
+
+[@主体坐骑技能5]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 16
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 17
+SetClientUIProp Usr_zuoqi_JN_S1.text 金身不坏
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级5)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 神圣防御+<$S(坐骑技能5)>
+SetClientUIProp Usr_zuoqi_JN_S5.text 　
+SetClientUIProp Usr_zuoqi_JN_S6.text 　
+SetClientUIProp Usr_zuoqi_JN_S7.text 　
+BREAK
+
+[@主体坐骑技能4]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 10
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 11
+SetClientUIProp Usr_zuoqi_JN_S1.text 抵挡精通
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级4)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 麻痹抗性+<$S(坐骑技能4)>
+SetClientUIProp Usr_zuoqi_JN_S5.text 　
+SetClientUIProp Usr_zuoqi_JN_S6.text 　
+SetClientUIProp Usr_zuoqi_JN_S7.text 　
+BREAK
+
+[@主体坐骑技能3]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 18
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 19
+SetClientUIProp Usr_zuoqi_JN_S1.text 魔血精通
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级3)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 魔血值+<$S(坐骑技能3)>
+SetClientUIProp Usr_zuoqi_JN_S5.text 　
+SetClientUIProp Usr_zuoqi_JN_S6.text 　
+SetClientUIProp Usr_zuoqi_JN_S7.text 　
+BREAK
+
+[@主体坐骑技能2]
+#IF
+CHECKLEVELEX > 0
+#ACT
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\生命涌动.txt <$S(坐骑技能2)> <$HUMAN(坐骑等级2)>
+DIV <$N(坐骑技能2)> <$S(坐骑技能2)> 10000
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 12
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 13
+SetClientUIProp Usr_zuoqi_JN_S1.text 生命涌动
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级2)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 生命值低于20%时，恢复
+SetClientUIProp Usr_zuoqi_JN_S5.text 自身血量<$N(坐骑技能2)>万点；触发
+SetClientUIProp Usr_zuoqi_JN_S6.text 效果后5分钟内不会触发
+SetClientUIProp Usr_zuoqi_JN_S7.text 此效果；
+BREAK
+
+[@主体坐骑技能1]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.UP 2
+SetClientUIProp Usr_zuoqi_JN_T.ImageIndex.DOWN 3
+SetClientUIProp Usr_zuoqi_JN_S1.text 健步如飞
+
+SetClientUIProp Usr_zuoqi_JN_S2.text Lv.<$HUMAN(坐骑等级1)>
+SetClientUIProp Usr_zuoqi_JN_S3.text 被动技能
+SetClientUIProp Usr_zuoqi_JN_S4.text 坐骑移动距离2格
+SetClientUIProp Usr_zuoqi_JN_S5.text 　
+SetClientUIProp Usr_zuoqi_JN_S6.text 　
+SetClientUIProp Usr_zuoqi_JN_S7.text 　
+BREAK
+
+[@主体坐骑放生确定]
+#IF
+CHECK [487] 1
+#ACT
+SET [487] 0
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\魔血精通.txt <$S(坐骑技能3)> <$HUMAN(坐骑等级3)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\抵挡精通.txt <$S(坐骑技能4)> <$HUMAN(坐骑等级4)>
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\金身不坏.txt <$S(坐骑技能5)> <$HUMAN(坐骑等级5)>
+CHANGEHUMABILITY 17 - <$S(坐骑技能3)> 864000
+CHANGEHUMABILITY 18 - <$S(坐骑技能4)> 864000
+CHANGEHUMABILITY 22 - <$S(坐骑技能5)> 864000
+CHANGEHUMABILITY 17 - <$S(坐骑技能3)> 864000 HERO
+CHANGEHUMABILITY 18 - <$S(坐骑技能4)> 864000 HERO
+CHANGEHUMABILITY 22 - <$S(坐骑技能5)> 864000 HERO
+SetClientUIProp Usr_DWSWXFBasic_MX.TEXT <$MX>　
+SetClientUIProp Usr_H_DWSWXFBasic_MX.TEXT <$HEROMX>　
+
+CALCVAR HUMAN 坐骑等级1 = 0
+CALCVAR HUMAN 坐骑等级2 = 0
+CALCVAR HUMAN 坐骑等级3 = 0
+CALCVAR HUMAN 坐骑等级4 = 0
+CALCVAR HUMAN 坐骑等级5 = 0
+CALCVAR HUMAN 坐骑等级6 = 0
+SAVEVAR HUMAN 坐骑等级1 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级2 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级3 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级4 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级5 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SAVEVAR HUMAN 坐骑等级6 ..\QuestDiary\数据文件\坐骑系统\坐骑等级.txt
+SetClientUIProp Usr_zuoqi_TSCT.visible False
+SetClientUIProp Usr_zuoqi_T.visible False
+SetClientUIProp Usr_zuoqi_T.ImageIndex.UP -1
+SetClientUIProp Usr_zuoqi_MA1.visible False
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.UP -1
+SetClientUIProp Usr_zuoqi_MA1_T1.ImageIndex.DOWN -1
+SetClientUIProp Usr_zuoqi_JNCT.visible False
+SetClientUIProp Usr_zuoqi_JN.visible False
+SetClientUIProp Usr_zuoqi_JN_S3.visible False
+SetClientUIProp Usr_zuoqi_JN_S4.visible False
+SetClientUIProp Usr_zuoqi_JN_S5.visible False
+SetClientUIProp Usr_zuoqi_JN_S6.visible False
+SetClientUIProp Usr_zuoqi_JN_S7.visible False
+BREAK
+
+[@英雄军衔升级]
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 < 1
+#ACT
+CALCVAR HUMAN 英雄军衔等级 = 1
+SAVEVAR HUMAN 英雄军衔等级 ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔数据.txt
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(英雄军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_H_junxian_S21.TEXT <$S(称号1)>
+SetClientUIProp Usr_H_junxian_S22.TEXT <$S(称号2)>
+SetClientUIProp Usr_H_junxian_S5.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_H_junxian_S6.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_H_junxian_S7.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_H_junxian_S8.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_H_junxian_S9.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_H_junxian_S10.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_H_junxian_S11.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+DIV <$N(英雄魔血上限)> <$HEROMX> 100
+MUL <$N(英雄魔血上限)> <$N(英雄魔血上限)> <$S(军衔属性4)>
+DIV <$N(英雄神圣下限)> <$HEROHEARTPOWER> 100
+MUL <$N(英雄神圣下限)> <$N(英雄神圣下限)> <$S(军衔属性5)>
+DIV <$N(英雄神圣上限)> <$HEROHEARTMAXPOWER> 100
+MUL <$N(英雄神圣上限)> <$N(英雄神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 + <$S(军衔属性1)> 864000 HERO
+CHANGEHUMABILITY 20 + <$S(军衔属性2)> 864000 HERO
+CHANGEHUMABILITY 23 + <$S(军衔属性6)> 864000 HERO
+CHANGEHUMABILITY 17 + <$N(英雄魔血上限)> 864000 HERO
+CHANGEHUMABILITY 20 + <$N(英雄神圣下限)> 864000 HERO
+CHANGEHUMABILITY 23 + <$N(英雄神圣上限)> 864000 HERO
+
+MOV <$N(下级等级)> <$HUMAN(英雄军衔等级)>
+INC <$N(下级等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$N(下级等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$N(下级等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$N(下级等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$N(下级等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$N(下级等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_H_junxian_S23.TEXT 白日门<$S(称号1)>
+SetClientUIProp Usr_H_junxian_S24.TEXT <$S(称号2)>
+SetClientUIProp Usr_H_junxian_S12.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_H_junxian_S13.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_H_junxian_S14.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_H_junxian_S15.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_H_junxian_S16.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_H_junxian_S17.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_H_junxian_S18.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(英雄军衔等级)>
+SetClientUIProp Usr_H_junxian_S19.TEXT <$S(军衔需求数量)>　
+
+SetClientUIProp Usr_H_junxianAN.Visible True
+SetClientUIProp Usr_H_junxian_CT1.Visible False
+SetClientUIProp Usr_H_junxian_CT2.Visible True
+SetClientUIProp Usr_H_junxian_CT3.Visible False
+SENDMSG 0 <$HERONAME>的军衔等级达到　白日门<$S(称号1)>　<$S(称号2)>，驰骋沙场，纵横天下
+DELAYGOTO 10 @英雄军衔面板更新
+BREAK
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 > 0
+CHECKVAR HUMAN 英雄军衔等级 < 50
+#ACT
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(英雄军衔等级)>
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 > 0
+CHECKVAR HUMAN 英雄军衔等级 < 50
+CHECKKIMNEEDLE 虎符 <$S(军衔需求数量)>
+#ACT
+TAKEKIMNEEDLE 虎符 <$S(军衔需求数量)>
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(英雄军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+DIV <$N(英雄魔血上限)> <$HEROMX> 100
+MUL <$N(英雄魔血上限)> <$N(英雄魔血上限)> <$S(军衔属性4)>
+DIV <$N(英雄神圣下限)> <$HEROHEARTPOWER> 100
+MUL <$N(英雄神圣下限)> <$N(英雄神圣下限)> <$S(军衔属性5)>
+DIV <$N(英雄神圣上限)> <$HEROHEARTMAXPOWER> 100
+MUL <$N(英雄神圣上限)> <$N(英雄神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 - <$S(军衔属性1)> 864000 HERO
+CHANGEHUMABILITY 20 - <$S(军衔属性2)> 864000 HERO
+CHANGEHUMABILITY 23 - <$S(军衔属性6)> 864000 HERO
+CHANGEHUMABILITY 17 - <$N(英雄魔血上限)> 864000 HERO
+CHANGEHUMABILITY 20 - <$N(英雄神圣下限)> 864000 HERO
+CHANGEHUMABILITY 23 - <$N(英雄神圣上限)> 864000 HERO
+
+CALCVAR HUMAN 英雄军衔等级 + 1
+SAVEVAR HUMAN 英雄军衔等级 ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔数据.txt
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(英雄军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(英雄军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_H_junxian_S21.TEXT 白日门<$S(称号1)>
+SetClientUIProp Usr_H_junxian_S22.TEXT <$S(称号2)>
+SetClientUIProp Usr_H_junxian_S5.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_H_junxian_S6.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_H_junxian_S7.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_H_junxian_S8.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_H_junxian_S9.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_H_junxian_S10.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_H_junxian_S11.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+SENDMSG 0 <$HERONAME>的军衔等级达到　白日门<$S(称号1)>　<$S(称号2)>，驰骋沙场，纵横天下
+
+DIV <$N(英雄魔血上限)> <$HEROMX> 100
+MUL <$N(英雄魔血上限)> <$N(英雄魔血上限)> <$S(军衔属性4)>
+DIV <$N(英雄神圣下限)> <$HEROHEARTPOWER> 100
+MUL <$N(英雄神圣下限)> <$N(英雄神圣下限)> <$S(军衔属性5)>
+DIV <$N(英雄神圣上限)> <$HEROHEARTMAXPOWER> 100
+MUL <$N(英雄神圣上限)> <$N(英雄神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 + <$S(军衔属性1)> 864000 HERO
+CHANGEHUMABILITY 20 + <$S(军衔属性2)> 864000 HERO
+CHANGEHUMABILITY 23 + <$S(军衔属性6)> 864000 HERO
+CHANGEHUMABILITY 17 + <$N(英雄英雄魔血上限)> 864000 HERO
+CHANGEHUMABILITY 20 + <$N(神圣下限)> 864000 HERO
+CHANGEHUMABILITY 23 + <$N(英雄神圣上限)> 864000 HERO
+
+MOV <$N(下级等级)> <$HUMAN(英雄军衔等级)>
+INC <$N(下级等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$N(下级等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$N(下级等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$N(下级等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$N(下级等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$N(下级等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_H_junxian_S23.TEXT 白日门<$S(称号1)>
+SetClientUIProp Usr_H_junxian_S24.TEXT <$S(称号2)>
+SetClientUIProp Usr_H_junxian_S12.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_H_junxian_S13.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_H_junxian_S14.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_H_junxian_S15.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_H_junxian_S16.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_H_junxian_S17.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_H_junxian_S18.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(英雄军衔等级)>
+SetClientUIProp Usr_H_junxian_S19.TEXT <$S(军衔需求数量)>　
+DELAYGOTO 10 @英雄军衔面板更新
+break
+
+#ELSEACT
+MESSAGEBOX 您没有足够数量的虎符或者不适合提升等级！
+break
+
+[@英雄军衔面板更新]
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 > 49
+#ACT
+SetClientUIProp Usr_H_junxian_CT1.Visible True
+SetClientUIProp Usr_H_junxian_CT2.Visible False
+SetClientUIProp Usr_H_junxian_CT3.Visible False
+SetClientUIProp Usr_H_junxian_xq.Visible False
+SetClientUIProp Usr_H_junxian_S19.Visible False
+SetClientUIProp Usr_H_junxian_SJ1.Visible False
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 > 0
+CHECKVAR HUMAN 英雄军衔等级 < 50
+#ACT
+SetClientUIProp Usr_H_junxian_xq.Visible True
+SetClientUIProp Usr_H_junxian_S19.Visible True
+SetClientUIProp Usr_H_junxian_SJ1.Visible True
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 = 9
+#ACT
+SetClientUIProp Usr_H_junxian_CT1.Visible False
+SetClientUIProp Usr_H_junxian_CT2.Visible True
+SetClientUIProp Usr_H_junxian_CT3.Visible True
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 < 9
+#ACT
+SetClientUIProp Usr_H_junxian_CT1.Visible False
+SetClientUIProp Usr_H_junxian_CT2.Visible True
+SetClientUIProp Usr_H_junxian_CT3.Visible False
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 > 9
+CHECKVAR HUMAN 英雄军衔等级 < 50
+#ACT
+SetClientUIProp Usr_H_junxian_CT1.Visible True
+SetClientUIProp Usr_H_junxian_CT2.Visible True
+SetClientUIProp Usr_H_junxian_CT3.Visible True
+
+#IF
+CHECKHEROONLINE
+CHECKHEROLEVEL > 998
+CHECKVAR HUMAN 英雄军衔等级 < 1
+#ACT
+SetClientUIProp Usr_H_junxianAN.Visible False
+
+[@主号军衔升级]
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 < 1
+#ACT
+CALCVAR HUMAN 军衔等级 = 1
+SAVEVAR HUMAN 军衔等级 ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔数据.txt
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S21.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S22.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S5.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S6.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S7.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S8.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S9.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S10.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S11.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+DIV <$N(魔血上限)> <$MX> 100
+MUL <$N(魔血上限)> <$N(魔血上限)> <$S(军衔属性4)>
+DIV <$N(神圣下限)> <$HEARTPOWER> 100
+MUL <$N(神圣下限)> <$N(神圣下限)> <$S(军衔属性5)>
+DIV <$N(神圣上限)> <$HEARTMAXPOWER> 100
+MUL <$N(神圣上限)> <$N(神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 + <$S(军衔属性1)> 864000
+CHANGEHUMABILITY 20 + <$S(军衔属性2)> 864000
+CHANGEHUMABILITY 23 + <$S(军衔属性6)> 864000
+CHANGEHUMABILITY 17 + <$N(魔血上限)> 864000
+CHANGEHUMABILITY 20 + <$N(神圣下限)> 864000
+CHANGEHUMABILITY 23 + <$N(神圣上限)> 864000
+
+MOV <$N(下级等级)> <$HUMAN(军衔等级)>
+INC <$N(下级等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$N(下级等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$N(下级等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$N(下级等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$N(下级等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$N(下级等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S23.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S24.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S12.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S13.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S14.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S15.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S16.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S17.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S18.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(军衔等级)>
+SetClientUIProp Usr_junxian_S19.TEXT <$S(军衔需求数量)>　
+
+SetClientUIProp Usr_junxianAN.Visible True
+SetClientUIProp Usr_junxian_CT1.Visible False
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible False
+SENDMSG 0 <$USERNAME>的军衔等级达到　<$S(称号1)>　<$S(称号2)>，驰骋沙场，纵横天下
+DELAYGOTO 10 @主号军衔面板更新
+BREAK
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 > 0
+CHECKVAR HUMAN 军衔等级 < 50
+#ACT
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(军衔等级)>
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 > 0
+CHECKVAR HUMAN 军衔等级 < 50
+CHECKKIMNEEDLE 虎符 <$S(军衔需求数量)>
+#ACT
+TAKEKIMNEEDLE 虎符 <$S(军衔需求数量)>
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+DIV <$N(魔血上限)> <$MX> 100
+MUL <$N(魔血上限)> <$N(魔血上限)> <$S(军衔属性4)>
+DIV <$N(神圣下限)> <$HEARTPOWER> 100
+MUL <$N(神圣下限)> <$N(神圣下限)> <$S(军衔属性5)>
+DIV <$N(神圣上限)> <$HEARTMAXPOWER> 100
+MUL <$N(神圣上限)> <$N(神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 - <$S(军衔属性1)> 864000
+CHANGEHUMABILITY 20 - <$S(军衔属性2)> 864000
+CHANGEHUMABILITY 23 - <$S(军衔属性6)> 864000
+CHANGEHUMABILITY 17 - <$N(魔血上限)> 864000
+CHANGEHUMABILITY 20 - <$N(神圣下限)> 864000
+CHANGEHUMABILITY 23 - <$N(神圣上限)> 864000
+
+CALCVAR HUMAN 军衔等级 + 1
+SAVEVAR HUMAN 军衔等级 ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔数据.txt
+
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$HUMAN(军衔等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$HUMAN(军衔等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$HUMAN(军衔等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$HUMAN(军衔等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$HUMAN(军衔等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S21.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S22.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S5.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S6.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S7.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S8.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S9.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S10.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S11.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+SENDMSG 0 <$USERNAME>的军衔等级达到　<$S(称号1)>　<$S(称号2)>，驰骋沙场，纵横天下
+
+DIV <$N(魔血上限)> <$MX> 100
+MUL <$N(魔血上限)> <$N(魔血上限)> <$S(军衔属性4)>
+DIV <$N(神圣下限)> <$HEARTPOWER> 100
+MUL <$N(神圣下限)> <$N(神圣下限)> <$S(军衔属性5)>
+DIV <$N(神圣上限)> <$HEARTMAXPOWER> 100
+MUL <$N(神圣上限)> <$N(神圣上限)> <$S(军衔属性7)>
+CHANGEHUMABILITY 17 + <$S(军衔属性1)> 864000
+CHANGEHUMABILITY 20 + <$S(军衔属性2)> 864000
+CHANGEHUMABILITY 23 + <$S(军衔属性6)> 864000
+CHANGEHUMABILITY 17 + <$N(魔血上限)> 864000
+CHANGEHUMABILITY 20 + <$N(神圣下限)> 864000
+CHANGEHUMABILITY 23 + <$N(神圣上限)> 864000
+
+MOV <$N(下级等级)> <$HUMAN(军衔等级)>
+INC <$N(下级等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\军衔称号.txt <$N(下级等级)> <$S(称号1)> <$S(称号2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性1.txt <$N(下级等级)> <$S(军衔属性1)> <$S(军衔属性2)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性2.txt <$N(下级等级)> <$S(军衔属性3)> <$S(军衔属性4)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性3.txt <$N(下级等级)> <$S(军衔属性5)> <$S(军衔属性6)>
+GetFileToVar ..\QuestDiary\数据文件\募兵统领\军衔系统\属性4.txt <$N(下级等级)> <$S(军衔属性7)> <$S(军衔属性8)>
+
+SetClientUIProp Usr_junxian_S23.TEXT <$S(称号1)>
+SetClientUIProp Usr_junxian_S24.TEXT <$S(称号2)>
+SetClientUIProp Usr_junxian_S12.TEXT 魔血值+<$S(军衔属性1)>
+SetClientUIProp Usr_junxian_S13.TEXT 神圣主属性下限+<$S(军衔属性2)>
+SetClientUIProp Usr_junxian_S14.TEXT 药品魔血值回复+<$S(军衔属性3)>
+SetClientUIProp Usr_junxian_S15.TEXT 魔血值总上限+<$S(军衔属性4)>%
+SetClientUIProp Usr_junxian_S16.TEXT 神圣主属性下限+<$S(军衔属性5)>%
+SetClientUIProp Usr_junxian_S17.TEXT 神圣主属性上限+<$S(军衔属性6)>
+SetClientUIProp Usr_junxian_S18.TEXT 神圣主属性下限+<$S(军衔属性7)>%
+
+GetRandomName ..\QuestDiary\数据文件\募兵统领\军衔系统\升级需求.txt <$S(军衔需求数量)> <$HUMAN(军衔等级)>
+SetClientUIProp Usr_junxian_S19.TEXT <$S(军衔需求数量)>　
+DELAYGOTO 10 @主号军衔面板更新
+break
+
+#ELSEACT
+MESSAGEBOX 您没有足够数量的虎符或者不适合提升等级！
+break
+
+[@主号军衔面板更新]
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 > 49
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible True
+SetClientUIProp Usr_junxian_CT2.Visible False
+SetClientUIProp Usr_junxian_CT3.Visible False
+SetClientUIProp Usr_junxian_xq.Visible False
+SetClientUIProp Usr_junxian_S19.Visible False
+SetClientUIProp Usr_junxian_SJ1.Visible False
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 > 0
+CHECKVAR HUMAN 军衔等级 < 50
+#ACT
+SetClientUIProp Usr_junxian_xq.Visible True
+SetClientUIProp Usr_junxian_S19.Visible True
+SetClientUIProp Usr_junxian_SJ1.Visible True
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 = 9
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible False
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible True
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 < 9
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible False
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible False
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 > 9
+CHECKVAR HUMAN 军衔等级 < 50
+#ACT
+SetClientUIProp Usr_junxian_CT1.Visible True
+SetClientUIProp Usr_junxian_CT2.Visible True
+SetClientUIProp Usr_junxian_CT3.Visible True
+
+#IF
+CHECKLEVELEX > 998
+CHECKVAR HUMAN 军衔等级 < 1
+#ACT
+SetClientUIProp Usr_junxianAN.Visible False
+
+
+[@英雄龙啸等级面板关闭]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible False
+BREAK
+
+[@英雄龙啸属性更新]
+#IF
+CHECK [483] 1
+#ACT
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN1.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_JN1.ImageIndex.UP 944
+SetClientUIProp Usr_H_gongti_longxiao_JN2.ImageIndex.UP 950
+SetClientUIProp Usr_H_gongti_longxiao_JN3.ImageIndex.UP 954
+SetClientUIProp Usr_H_gongti_longxiao_JN4.ImageIndex.UP 956
+SetClientUIProp Usr_H_gongti_longxiao_JN5.ImageIndex.UP 952
+
+#IF
+CHECK [483] 0
+#ACT
+SetClientUIProp Usr_H_gongti_S3.TEXT 无
+SetClientUIProp Usr_H_gongti_S5.TEXT 0)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_JN6.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN5.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN4.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN3.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN2.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN1.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_JN1.ImageIndex.UP 90
+SetClientUIProp Usr_H_gongti_longxiao_JN2.ImageIndex.UP 91
+SetClientUIProp Usr_H_gongti_longxiao_JN3.ImageIndex.UP 92
+SetClientUIProp Usr_H_gongti_longxiao_JN4.ImageIndex.UP 93
+SetClientUIProp Usr_H_gongti_longxiao_JN5.ImageIndex.UP 94
+
+#IF
+CHECK [483] 1
+equal <$HEROJOB> 0
+#ACT
+SetClientUIProp Usr_H_gongti_S2.TEXT 力量+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S3.TEXT 当前属性：　力量+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.TEXT 下一级属性：力量+
+
+#IF
+CHECK [483] 1
+equal <$HEROJOB> 1
+#ACT
+SetClientUIProp Usr_H_gongti_S2.TEXT 灵气+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S3.TEXT 当前属性：　灵气+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.TEXT 下一级属性：灵气+
+
+#IF
+CHECK [483] 1
+equal <$HEROJOB> 2
+#ACT
+SetClientUIProp Usr_H_gongti_S2.TEXT 玄术+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S3.TEXT 当前属性：　玄术+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.TEXT 下一级属性：玄术+
+
+#IF
+CHECK [483] 1
+equal <$HEROJOB> 3
+#ACT
+SetClientUIProp Usr_H_gongti_S2.TEXT 影杀+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S3.TEXT 当前属性：　影杀+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.TEXT 下一级属性：影杀+
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1999
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent True
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent True
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 < 2000
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 5
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 1800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 4
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 3
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 2
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 100
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [483] 1
+CHECKVAR HUMAN 英雄龙啸重数 = 1
+#ACT
+MOV <$N(总属性显示)> <$HUMAN(英雄龙啸等级)>
+MUL <$N(总属性数量)> <$HUMAN(英雄龙啸等级)> 41
+SetClientUIProp Usr_H_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_H_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_H_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_H_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+[@英雄龙啸等级一键升级4]
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1989
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 = 6
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 2000
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 2000
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 5
+CHECKVAR HUMAN 英雄龙啸等级 > 1489
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 4
+CHECKVAR HUMAN 英雄龙啸等级 > 989
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 3
+CHECKVAR HUMAN 英雄龙啸等级 > 489
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 2
+CHECKVAR HUMAN 英雄龙啸等级 > 189
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 英雄龙啸重数 = 1
+CHECKVAR HUMAN 英雄龙啸等级 > 89
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 英雄龙啸等级 + 10
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> <$N(龙啸等级伤害)> 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@英雄龙啸等级一键升级3]
+#IF
+CHECKKIMNEEDLE 点星珠 20
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1998
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 英雄龙啸重数 = 6
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 2000
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 2000
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 20
+CHECKVAR HUMAN 英雄龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 20
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 英雄龙啸等级 + 1
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@英雄龙啸等级一键升级2]
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1998
+CHECKVAR HUMAN 英雄龙啸等级经验 > 999
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 英雄龙啸重数 = 6
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 2000
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 2000
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 英雄龙啸等级经验 > 999
+CHECKVAR HUMAN 英雄龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 0
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 英雄龙啸等级经验 > 999
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 英雄龙啸等级 + 1
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 0
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 英雄龙啸等级经验 + 1000
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@英雄龙啸等级一键升级1]
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1998
+CHECKVAR HUMAN 英雄龙啸等级经验 > 1899
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 英雄龙啸重数 = 6
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 2000
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 2000
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 英雄龙啸等级经验 > 1899
+CHECKVAR HUMAN 英雄龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 英雄龙啸重数 + 1
+SAVEVAR HUMAN 英雄龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级 = 0
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 0
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 英雄龙啸等级经验 > 1899
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 英雄龙啸等级 + 1
+SAVEVAR HUMAN 英雄龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸等级经验 = 0
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 英雄龙啸等级经验 + 100
+SAVEVAR HUMAN 英雄龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @英雄龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@英雄龙啸等级6]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 > 1999
+#ACT
+MOV <$N(龙啸升级需求)> 1998
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级6
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸六重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 5300
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 6
+CHECKVAR HUMAN 英雄龙啸等级 < 2000
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 3300
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 1998
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级6
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸六重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸等级5]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 > 5
+#ACT
+MOV <$N(龙啸升级需求)> 1498
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级5
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸五重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　1500/1500
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 3300
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 5
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 1800
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 1800
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 1498
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级5
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸五重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/1500
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸等级4]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 > 4
+#ACT
+MOV <$N(龙啸升级需求)> 998
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级4
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸四重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　1000/1000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 1800
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 4
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 800
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 800
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 998
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级4
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸四重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/1000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸等级3]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 > 3
+#ACT
+MOV <$N(龙啸升级需求)> 498
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级3
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸三重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　500/500
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 800
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 3
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 300
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 300
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 498
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级3
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸三重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/500
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸等级2]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 > 2
+#ACT
+MOV <$N(龙啸升级需求)> 198
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级2
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸二重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　200/200
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 300
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 2
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸等级属性)> 100
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 100
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 198
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级2
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸二重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/200
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸等级1]
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 > 1
+#ACT
+MOV <$N(龙啸升级需求)> 98
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级1
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸一重（已满级）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　100/100
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT 100
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸重数 = 1
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(英雄龙啸等级)>
+MOV <$N(龙啸下级属性)> <$HUMAN(英雄龙啸等级)>
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 98
+MOV <$S(龙啸跳转页面)> @英雄龙啸等级1
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S1.TEXT 英雄龙啸一重（已经开启）
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(英雄龙啸等级)>/100
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(英雄龙啸等级经验)>/2000
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_JDT.Position <$HUMAN(英雄龙啸等级经验)>
+SetClientUIProp Usr_H_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@英雄龙啸技能面板关闭]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible False
+BREAK
+
+[@英雄龙啸技能升级11]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 33
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验1 > 98
+#ACT
+TAKEKIMNEEDLE 血炎玉 33
+CALCVAR HUMAN 英雄龙啸技能1 + 1
+SAVEVAR HUMAN 英雄龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验1 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 66 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能1
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 33
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 33
+CALCVAR HUMAN 英雄龙啸技能经验1 + 1
+SAVEVAR HUMAN 英雄龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 66 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@英雄龙啸技能升级12]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 330
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验1 > 89
+#ACT
+TAKEKIMNEEDLE 血炎玉 330
+CALCVAR HUMAN 英雄龙啸技能1 + 1
+SAVEVAR HUMAN 英雄龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验1 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 660 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能1
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 330
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 330
+CALCVAR HUMAN 英雄龙啸技能经验1 + 10
+SAVEVAR HUMAN 英雄龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 660 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@英雄龙啸技能升级13]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 3300
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 3300
+CALCVAR HUMAN 英雄龙啸技能1 + 1
+SAVEVAR HUMAN 英雄龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 6600 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@英雄龙啸技能升级21]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 33
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验2 > 98
+#ACT
+TAKEKIMNEEDLE 天府竹 33
+CALCVAR HUMAN 英雄龙啸技能2 + 1
+SAVEVAR HUMAN 英雄龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验2 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 52 8640000 HERO
+CHANGEHUMABILITY 23 + 66 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能2
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 33
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 33
+CALCVAR HUMAN 英雄龙啸技能经验2 + 1
+SAVEVAR HUMAN 英雄龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 52 8640000 HERO
+CHANGEHUMABILITY 23 + 66 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@英雄龙啸技能升级22]
+#IF
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 330
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验2 > 89
+#ACT
+TAKEKIMNEEDLE 天府竹 330
+CALCVAR HUMAN 英雄龙啸技能2 + 1
+SAVEVAR HUMAN 英雄龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验2 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 520 8640000 HERO
+CHANGEHUMABILITY 23 + 660 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能2
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 330
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 330
+CALCVAR HUMAN 英雄龙啸技能经验2 + 10
+SAVEVAR HUMAN 英雄龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 520 8640000 HERO
+CHANGEHUMABILITY 23 + 660 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@英雄龙啸技能升级23]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 3300
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 3300
+CALCVAR HUMAN 英雄龙啸技能2 + 1
+SAVEVAR HUMAN 英雄龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 5200 8640000 HERO
+CHANGEHUMABILITY 23 + 6600 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@英雄龙啸技能升级31]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 33
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验3 > 98
+#ACT
+TAKEKIMNEEDLE 太阴莲 33
+CALCVAR HUMAN 英雄龙啸技能3 + 1
+SAVEVAR HUMAN 英雄龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验3 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 83 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能3
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 33
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 33
+CALCVAR HUMAN 英雄龙啸技能经验3 + 1
+SAVEVAR HUMAN 英雄龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 83 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@英雄龙啸技能升级32]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 330
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验3 > 89
+#ACT
+TAKEKIMNEEDLE 太阴莲 330
+CALCVAR HUMAN 英雄龙啸技能3 + 1
+SAVEVAR HUMAN 英雄龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验3 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 830 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能3
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 330
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 330
+CALCVAR HUMAN 英雄龙啸技能经验3 + 10
+SAVEVAR HUMAN 英雄龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 830 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@英雄龙啸技能升级33]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 3300
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 3300
+CALCVAR HUMAN 英雄龙啸技能3 + 1
+SAVEVAR HUMAN 英雄龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 8300 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@英雄龙啸技能升级41]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 33
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验4 > 98
+#ACT
+TAKEKIMNEEDLE 擎羊草 33
+CALCVAR HUMAN 英雄龙啸技能4 + 1
+SAVEVAR HUMAN 英雄龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验4 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 1 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能4
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 33
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 33
+CALCVAR HUMAN 英雄龙啸技能经验4 + 1
+SAVEVAR HUMAN 英雄龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 1 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@英雄龙啸技能升级42]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 330
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验4 > 89
+#ACT
+TAKEKIMNEEDLE 擎羊草 330
+CALCVAR HUMAN 英雄龙啸技能4 + 1
+SAVEVAR HUMAN 英雄龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验4 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 10 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能4
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 330
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 330
+CALCVAR HUMAN 英雄龙啸技能经验4 + 10
+SAVEVAR HUMAN 英雄龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 10 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@英雄龙啸技能升级43]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 3300
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 3300
+CALCVAR HUMAN 英雄龙啸技能4 + 1
+SAVEVAR HUMAN 英雄龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 100 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@英雄龙啸技能升级51]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 33
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验5 > 98
+#ACT
+TAKEKIMNEEDLE 陀罗花 33
+CALCVAR HUMAN 英雄龙啸技能5 + 1
+SAVEVAR HUMAN 英雄龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验5 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 1 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能5
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 33
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 33
+CALCVAR HUMAN 英雄龙啸技能经验5 + 1
+SAVEVAR HUMAN 英雄龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 1 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@英雄龙啸技能升级52]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 330
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+CHECKVAR HUMAN 英雄龙啸技能经验5 > 89
+#ACT
+TAKEKIMNEEDLE 陀罗花 330
+CALCVAR HUMAN 英雄龙啸技能5 + 1
+SAVEVAR HUMAN 英雄龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 英雄龙啸技能经验5 = 0
+SAVEVAR HUMAN 英雄龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 10 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能5
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 330
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 330
+CALCVAR HUMAN 英雄龙啸技能经验5 + 10
+SAVEVAR HUMAN 英雄龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 10 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@英雄龙啸技能升级53]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 3300
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 3300
+CALCVAR HUMAN 英雄龙啸技能5 + 1
+SAVEVAR HUMAN 英雄龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 100 8640000 HERO
+DELAYGOTO 3 @英雄龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@英雄龙啸技能1]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能1 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能1)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验1)>
+MUL <$N(技能属性1)> P20 66
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 66
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 944
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·神龙血
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 984
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能1)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：魔血值+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：魔血值+<$N(下级技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗血炎玉
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验1)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸技能1 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能1)> 100
+MUL <$N(技能属性1)> P20 66
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 944
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·神龙血
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 984
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能1)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：魔血值+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗血炎玉
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验1)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@英雄龙啸技能2]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能2 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验2)>
+MUL <$N(技能属性1)> P20 52
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验2)>
+MUL <$N(技能属性2)> P20 66
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 52
+MOV <$N(下级技能属性2)> <$N(技能属性2)>
+INC <$N(下级技能属性2)> 66
+
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 950
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·裂石百炼
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 990
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能2)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣属性下限+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.TEXT 神圣属性上限+<$N(技能属性2)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：神圣属性下限+<$N(下级技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.TEXT 神圣属性上限+<$N(下级技能属性2)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗天府竹
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验2)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验2)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸技能2 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能2)> 100
+MUL <$N(技能属性1)> P20 52
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能2)> 100
+MUL <$N(技能属性2)> P20 66
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 950
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·裂石百炼
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 990
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能2)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣属性下限+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.TEXT 神圣属性上限+<$N(技能属性2)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗天府竹
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验2)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验2)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@英雄龙啸技能3]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能3 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能3)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验3)>
+MUL <$N(技能属性1)> P20 83
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 83
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 954
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·金钟护体
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1002
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能3)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣防御+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：神圣防御+<$N(下级技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗太阴莲
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验3)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验3)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸技能3 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能3)> 100
+MUL <$N(技能属性1)> P20 83
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 954
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·金钟护体
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1002
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能3)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣防御+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗太阴莲
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验3)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验3)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@英雄龙啸技能4]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能4 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能4)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验4)>
+MUL <$N(技能属性1)> P20 1
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 1
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 956
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·锁龙诀
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1006
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能4)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：麻痹强化+<$N(下级技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗擎羊草
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验4)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验4)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸技能4 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能4)> 100
+MUL <$N(技能属性1)> P20 1
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 956
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·锁龙诀
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1006
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能4)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗擎羊草
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验4)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验4)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@英雄龙啸技能5]
+#IF
+CHECKVAR HUMAN 英雄龙啸技能5 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能5)> 100
+DEC P20 100
+INC P20 <$HUMAN(英雄龙啸技能经验5)>
+MUL <$N(技能属性1)> P20 1
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 1
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 952
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·金蝉脱壳
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 994
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能5)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹抗性+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：麻痹抗性+<$N(下级技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗陀罗花
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验5)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验5)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible True
+BREAK
+
+#IF
+CHECKVAR HUMAN 英雄龙啸技能5 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(英雄龙啸技能5)> 100
+MUL <$N(技能属性1)> P20 1
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.ImageIndex.UP 952
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU2.TEXT 英雄·金蝉脱壳
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_TU4.ImageIndex.UP 994
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(英雄龙啸技能5)>/30
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗陀罗花
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(英雄龙啸技能经验5)>/100
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_JDT.Position <$HUMAN(英雄龙啸技能经验5)>
+SetClientUIProp Usr_H_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_H_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+
+
+
+
+
+
+
+
+
+[@龙啸等级面板关闭]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible False
+BREAK
+
+[@龙啸属性更新]
+#IF
+CHECK [101] 1
+#ACT
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN1.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_JN1.ImageIndex.UP 944
+SetClientUIProp Usr_gongti_longxiao_JN2.ImageIndex.UP 950
+SetClientUIProp Usr_gongti_longxiao_JN3.ImageIndex.UP 954
+SetClientUIProp Usr_gongti_longxiao_JN4.ImageIndex.UP 956
+SetClientUIProp Usr_gongti_longxiao_JN5.ImageIndex.UP 952
+
+#IF
+CHECK [101] 0
+#ACT
+SetClientUIProp Usr_gongti_S3.TEXT 无
+SetClientUIProp Usr_gongti_S5.TEXT 0)
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_JN6.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN5.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN4.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN3.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN2.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN1.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_JN1.ImageIndex.UP 90
+SetClientUIProp Usr_gongti_longxiao_JN2.ImageIndex.UP 91
+SetClientUIProp Usr_gongti_longxiao_JN3.ImageIndex.UP 92
+SetClientUIProp Usr_gongti_longxiao_JN4.ImageIndex.UP 93
+SetClientUIProp Usr_gongti_longxiao_JN5.ImageIndex.UP 94
+
+#IF
+CHECK [101] 1
+equal <$JOB> 0
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 力量+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　力量+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：力量+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 1
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 灵气+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　灵气+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：灵气+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 2
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 玄术+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　玄术+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：玄术+
+
+#IF
+CHECK [101] 1
+equal <$JOB> 3
+#ACT
+SetClientUIProp Usr_gongti_S2.TEXT 影杀+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S3.TEXT 当前属性：　影杀+
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.TEXT 下一级属性：影杀+
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1999
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent True
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent True
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 < 2000
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 5
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 1800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 4
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 800
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 3
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 300
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 2
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 100
+MOV <$N(总属性显示)> <$N(龙啸等级属性)>
+MUL <$N(总属性数量)> <$N(龙啸等级属性)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP 1984
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+#IF
+CHECK [101] 1
+CHECKVAR HUMAN 龙啸重数 = 1
+#ACT
+MOV <$N(总属性显示)> <$HUMAN(龙啸等级)>
+MUL <$N(总属性数量)> <$HUMAN(龙啸等级)> 41
+SetClientUIProp Usr_gongti_S3.TEXT <$N(总属性显示)>
+SetClientUIProp Usr_gongti_S5.TEXT <$N(总属性数量)>)
+SetClientUIProp Usr_gongti_longxiao_DJ6.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ5.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ4.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ3.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ2.ImageIndex.UP -1
+SetClientUIProp Usr_gongti_longxiao_DJ1.ImageIndex.UP 1984
+
+SetClientUIProp Usr_gongti_longxiao_DJ6.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ5.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ4.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ3.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ2.DisiblemouseEvent False
+SetClientUIProp Usr_gongti_longxiao_DJ1.DisiblemouseEvent False
+
+[@龙啸等级一键升级4]
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1989
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 = 6
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 2000
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 2000
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 5
+CHECKVAR HUMAN 龙啸等级 > 1489
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 4
+CHECKVAR HUMAN 龙啸等级 > 989
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 3
+CHECKVAR HUMAN 龙啸等级 > 489
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 2
+CHECKVAR HUMAN 龙啸等级 > 189
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+CHECKVAR HUMAN 龙啸重数 = 1
+CHECKVAR HUMAN 龙啸等级 > 89
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 200
+#ACT
+TAKEKIMNEEDLE 点星珠 200
+CALCVAR HUMAN 龙啸等级 + 10
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+MUL <$N(龙啸等级伤害10)> 41 10
+CHANGEHUMABILITY 20 + <$N(龙啸等级伤害10)> 8640000
+CHANGEHUMABILITY 23 + <$N(龙啸等级伤害10)> 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@龙啸等级一键升级3]
+#IF
+CHECKKIMNEEDLE 点星珠 20
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1998
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 龙啸重数 = 6
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 2000
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 2000
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 20
+CHECKVAR HUMAN 龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 20
+#ACT
+TAKEKIMNEEDLE 点星珠 20
+CALCVAR HUMAN 龙啸等级 + 1
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@龙啸等级一键升级2]
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1998
+CHECKVAR HUMAN 龙啸等级经验 > 999
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 龙啸重数 = 6
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 2000
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 2000
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 龙啸等级经验 > 999
+CHECKVAR HUMAN 龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 0
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+CHECKVAR HUMAN 龙啸等级经验 > 999
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 龙啸等级 + 1
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 0
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 10
+#ACT
+TAKEKIMNEEDLE 点星珠 10
+CALCVAR HUMAN 龙啸等级经验 + 1000
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@龙啸等级一键升级1]
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1998
+CHECKVAR HUMAN 龙啸等级经验 > 1899
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 龙啸重数 = 6
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 2000
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 2000
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 龙啸等级经验 > 1899
+CHECKVAR HUMAN 龙啸等级 > <$N(龙啸升级需求)>
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 龙啸重数 + 1
+SAVEVAR HUMAN 龙啸重数 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级 = 0
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 0
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+CHECKVAR HUMAN 龙啸等级经验 > 1899
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 龙啸等级 + 1
+SAVEVAR HUMAN 龙啸等级 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸等级经验 = 0
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 41 8640000
+CHANGEHUMABILITY 23 + 41 8640000
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#IF
+CHECKKIMNEEDLE 点星珠 1
+#ACT
+TAKEKIMNEEDLE 点星珠 1
+CALCVAR HUMAN 龙啸等级经验 + 100
+SAVEVAR HUMAN 龙啸等级经验 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+GOTO <$S(龙啸跳转页面)>
+DELAYGOTO 3 @龙啸属性更新
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有点星珠！
+BREAK
+
+[@龙啸等级6]
+#IF
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 > 1999
+#ACT
+MOV <$N(龙啸升级需求)> 1998
+MOV <$S(龙啸跳转页面)> @龙啸等级6
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸六重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 5300
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 6
+CHECKVAR HUMAN 龙啸等级 < 2000
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 3300
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 3300
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 1998
+MOV <$S(龙啸跳转页面)> @龙啸等级6
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸六重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸等级5]
+#IF
+CHECKVAR HUMAN 龙啸重数 > 5
+#ACT
+MOV <$N(龙啸升级需求)> 1498
+MOV <$S(龙啸跳转页面)> @龙啸等级5
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸五重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　1500/1500
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 3300
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 5
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 1800
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 1800
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 1498
+MOV <$S(龙啸跳转页面)> @龙啸等级5
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸五重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/1500
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸等级4]
+#IF
+CHECKVAR HUMAN 龙啸重数 > 4
+#ACT
+MOV <$N(龙啸升级需求)> 998
+MOV <$S(龙啸跳转页面)> @龙啸等级4
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸四重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　1000/1000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 1800
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 4
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 800
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 800
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 998
+MOV <$S(龙啸跳转页面)> @龙啸等级4
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸四重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/1000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸等级3]
+#IF
+CHECKVAR HUMAN 龙啸重数 > 3
+#ACT
+MOV <$N(龙啸升级需求)> 498
+MOV <$S(龙啸跳转页面)> @龙啸等级3
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸三重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　500/500
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 800
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 3
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 300
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 300
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 498
+MOV <$S(龙啸跳转页面)> @龙啸等级3
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸三重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/500
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸等级2]
+#IF
+CHECKVAR HUMAN 龙啸重数 > 2
+#ACT
+MOV <$N(龙啸升级需求)> 198
+MOV <$S(龙啸跳转页面)> @龙啸等级2
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸二重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　200/200
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 300
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 2
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸等级属性)> 100
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 100
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 198
+MOV <$S(龙啸跳转页面)> @龙啸等级2
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸二重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/200
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸等级1]
+#IF
+CHECKVAR HUMAN 龙啸重数 > 1
+#ACT
+MOV <$N(龙啸升级需求)> 98
+MOV <$S(龙啸跳转页面)> @龙啸等级1
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸一重（已满级）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　100/100
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT 2000/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT 100
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position 2000
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸重数 = 1
+#ACT
+MOV <$N(龙啸等级属性)> <$HUMAN(龙啸等级)>
+MOV <$N(龙啸下级属性)> <$HUMAN(龙啸等级)>
+INC <$N(龙啸下级属性)> 1
+MOV <$N(龙啸升级需求)> 98
+MOV <$S(龙啸跳转页面)> @龙啸等级1
+SetClientUIProp Usr_gongti_longxiao_DJMB_S1.TEXT 龙啸一重（已经开启）
+SetClientUIProp Usr_gongti_longxiao_DJMB_S2.TEXT 等级：　　　<$HUMAN(龙啸等级)>/100
+SetClientUIProp Usr_gongti_longxiao_DJMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S8.TEXT <$HUMAN(龙啸等级经验)>/2000
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.TEXT <$N(龙啸等级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.TEXT <$N(龙啸下级属性)>
+SetClientUIProp Usr_gongti_longxiao_DJMB_S9.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_S10.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_JDT.Position <$HUMAN(龙啸等级经验)>
+SetClientUIProp Usr_gongti_longxiao_DJMB.visible True
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT6.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT5.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_DJMB_ANCT1.visible True
+BREAK
+
+[@龙啸技能面板关闭]
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible False
+BREAK
+
+[@龙啸技能升级11]
+#IF
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 33
+CHECKVAR HUMAN 龙啸技能1 < 30
+CHECKVAR HUMAN 龙啸技能经验1 > 98
+#ACT
+TAKEKIMNEEDLE 血炎玉 33
+CALCVAR HUMAN 龙啸技能1 + 1
+SAVEVAR HUMAN 龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验1 = 0
+SAVEVAR HUMAN 龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 66 8640000
+DELAYGOTO 3 @龙啸技能1
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 33
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 33
+CALCVAR HUMAN 龙啸技能经验1 + 1
+SAVEVAR HUMAN 龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 66 8640000
+DELAYGOTO 3 @龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@龙啸技能升级12]
+#IF
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 330
+CHECKVAR HUMAN 龙啸技能1 < 30
+CHECKVAR HUMAN 龙啸技能经验1 > 89
+#ACT
+TAKEKIMNEEDLE 血炎玉 330
+CALCVAR HUMAN 龙啸技能1 + 1
+SAVEVAR HUMAN 龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验1 = 0
+SAVEVAR HUMAN 龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 660 8640000
+DELAYGOTO 3 @龙啸技能1
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 330
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 330
+CALCVAR HUMAN 龙啸技能经验1 + 10
+SAVEVAR HUMAN 龙啸技能经验1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 660 8640000
+DELAYGOTO 3 @龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@龙啸技能升级13]
+#IF
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：神龙血已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 血炎玉 3300
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+TAKEKIMNEEDLE 血炎玉 3300
+CALCVAR HUMAN 龙啸技能1 + 1
+SAVEVAR HUMAN 龙啸技能1 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 17 + 6600 8640000
+DELAYGOTO 3 @龙啸技能1
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的血炎玉！
+BREAK
+
+[@龙啸技能升级21]
+#IF
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 33
+CHECKVAR HUMAN 龙啸技能2 < 30
+CHECKVAR HUMAN 龙啸技能经验2 > 98
+#ACT
+TAKEKIMNEEDLE 天府竹 33
+CALCVAR HUMAN 龙啸技能2 + 1
+SAVEVAR HUMAN 龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验2 = 0
+SAVEVAR HUMAN 龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 52 8640000
+CHANGEHUMABILITY 23 + 66 8640000
+DELAYGOTO 3 @龙啸技能2
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 33
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 33
+CALCVAR HUMAN 龙啸技能经验2 + 1
+SAVEVAR HUMAN 龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 52 8640000
+CHANGEHUMABILITY 23 + 66 8640000
+DELAYGOTO 3 @龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@龙啸技能升级22]
+#IF
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 330
+CHECKVAR HUMAN 龙啸技能2 < 30
+CHECKVAR HUMAN 龙啸技能经验2 > 89
+#ACT
+TAKEKIMNEEDLE 天府竹 330
+CALCVAR HUMAN 龙啸技能2 + 1
+SAVEVAR HUMAN 龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验2 = 0
+SAVEVAR HUMAN 龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 520 8640000
+CHANGEHUMABILITY 23 + 660 8640000
+DELAYGOTO 3 @龙啸技能2
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 330
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 330
+CALCVAR HUMAN 龙啸技能经验2 + 10
+SAVEVAR HUMAN 龙啸技能经验2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 520 8640000
+CHANGEHUMABILITY 23 + 660 8640000
+DELAYGOTO 3 @龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@龙啸技能升级23]
+#IF
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：裂石百炼已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 天府竹 3300
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+TAKEKIMNEEDLE 天府竹 3300
+CALCVAR HUMAN 龙啸技能2 + 1
+SAVEVAR HUMAN 龙啸技能2 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 20 + 5200 8640000
+CHANGEHUMABILITY 23 + 6600 8640000
+DELAYGOTO 3 @龙啸技能2
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的天府竹！
+BREAK
+
+[@龙啸技能升级31]
+#IF
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 33
+CHECKVAR HUMAN 龙啸技能3 < 30
+CHECKVAR HUMAN 龙啸技能经验3 > 98
+#ACT
+TAKEKIMNEEDLE 太阴莲 33
+CALCVAR HUMAN 龙啸技能3 + 1
+SAVEVAR HUMAN 龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验3 = 0
+SAVEVAR HUMAN 龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 83 8640000
+DELAYGOTO 3 @龙啸技能3
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 33
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 33
+CALCVAR HUMAN 龙啸技能经验3 + 1
+SAVEVAR HUMAN 龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 83 8640000
+DELAYGOTO 3 @龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@龙啸技能升级32]
+#IF
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 330
+CHECKVAR HUMAN 龙啸技能3 < 30
+CHECKVAR HUMAN 龙啸技能经验3 > 89
+#ACT
+TAKEKIMNEEDLE 太阴莲 330
+CALCVAR HUMAN 龙啸技能3 + 1
+SAVEVAR HUMAN 龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验3 = 0
+SAVEVAR HUMAN 龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 830 8640000
+DELAYGOTO 3 @龙啸技能3
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 330
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 330
+CALCVAR HUMAN 龙啸技能经验3 + 10
+SAVEVAR HUMAN 龙啸技能经验3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 830 8640000
+DELAYGOTO 3 @龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@龙啸技能升级33]
+#IF
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：金钟护体已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 太阴莲 3300
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+TAKEKIMNEEDLE 太阴莲 3300
+CALCVAR HUMAN 龙啸技能3 + 1
+SAVEVAR HUMAN 龙啸技能3 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 22 + 8300 8640000
+DELAYGOTO 3 @龙啸技能3
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的太阴莲！
+BREAK
+
+[@龙啸技能升级41]
+#IF
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 33
+CHECKVAR HUMAN 龙啸技能4 < 30
+CHECKVAR HUMAN 龙啸技能经验4 > 98
+#ACT
+TAKEKIMNEEDLE 擎羊草 33
+CALCVAR HUMAN 龙啸技能4 + 1
+SAVEVAR HUMAN 龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验4 = 0
+SAVEVAR HUMAN 龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 1 8640000
+DELAYGOTO 3 @龙啸技能4
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 33
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 33
+CALCVAR HUMAN 龙啸技能经验4 + 1
+SAVEVAR HUMAN 龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 1 8640000
+DELAYGOTO 3 @龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@龙啸技能升级42]
+#IF
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 330
+CHECKVAR HUMAN 龙啸技能4 < 30
+CHECKVAR HUMAN 龙啸技能经验4 > 89
+#ACT
+TAKEKIMNEEDLE 擎羊草 330
+CALCVAR HUMAN 龙啸技能4 + 1
+SAVEVAR HUMAN 龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验4 = 0
+SAVEVAR HUMAN 龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 10 8640000
+DELAYGOTO 3 @龙啸技能4
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 330
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 330
+CALCVAR HUMAN 龙啸技能经验4 + 10
+SAVEVAR HUMAN 龙啸技能经验4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 10 8640000
+DELAYGOTO 3 @龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@龙啸技能升级43]
+#IF
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：锁龙决已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 擎羊草 3300
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+TAKEKIMNEEDLE 擎羊草 3300
+CALCVAR HUMAN 龙啸技能4 + 1
+SAVEVAR HUMAN 龙啸技能4 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 19 + 100 8640000
+DELAYGOTO 3 @龙啸技能4
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的擎羊草！
+BREAK
+
+[@龙啸技能升级51]
+#IF
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 33
+CHECKVAR HUMAN 龙啸技能5 < 30
+CHECKVAR HUMAN 龙啸技能经验5 > 98
+#ACT
+TAKEKIMNEEDLE 陀罗花 33
+CALCVAR HUMAN 龙啸技能5 + 1
+SAVEVAR HUMAN 龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验5 = 0
+SAVEVAR HUMAN 龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 1 8640000
+DELAYGOTO 3 @龙啸技能5
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 33
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 33
+CALCVAR HUMAN 龙啸技能经验5 + 1
+SAVEVAR HUMAN 龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 1 8640000
+DELAYGOTO 3 @龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@龙啸技能升级52]
+#IF
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 330
+CHECKVAR HUMAN 龙啸技能5 < 30
+CHECKVAR HUMAN 龙啸技能经验5 > 89
+#ACT
+TAKEKIMNEEDLE 陀罗花 330
+CALCVAR HUMAN 龙啸技能5 + 1
+SAVEVAR HUMAN 龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CALCVAR HUMAN 龙啸技能经验5 = 0
+SAVEVAR HUMAN 龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 10 8640000
+DELAYGOTO 3 @龙啸技能5
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 330
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 330
+CALCVAR HUMAN 龙啸技能经验5 + 10
+SAVEVAR HUMAN 龙啸技能经验5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 10 8640000
+DELAYGOTO 3 @龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@龙啸技能升级53]
+#IF
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+
+#ELSEACT
+MESSAGEBOX [失败]：土蝉脱壳已经升级至最高阶段！
+BREAK
+
+#IF
+CHECKKIMNEEDLE 陀罗花 3300
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+TAKEKIMNEEDLE 陀罗花 3300
+CALCVAR HUMAN 龙啸技能5 + 1
+SAVEVAR HUMAN 龙啸技能5 ..\QuestDiary\数据文件\龙啸神功\龙啸等级.txt
+CHANGEHUMABILITY 18 + 100 8640000
+DELAYGOTO 3 @龙啸技能5
+BREAK
+
+#ELSEACT
+MESSAGEBOX [失败]：您没有足够的陀罗花！
+BREAK
+
+[@龙啸技能1]
+#IF
+CHECKVAR HUMAN 龙啸技能1 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能1)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验1)>
+MUL <$N(技能属性1)> P20 66
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 66
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 944
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 神龙血
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 984
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能1)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：魔血值+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：魔血值+<$N(下级技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗血炎玉
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验1)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸技能1 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能1)> 100
+MUL <$N(技能属性1)> P20 66
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 944
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 神龙血
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 984
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能1)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：魔血值+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗血炎玉
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验1)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@龙啸技能2]
+#IF
+CHECKVAR HUMAN 龙啸技能2 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验2)>
+MUL <$N(技能属性1)> P20 52
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验2)>
+MUL <$N(技能属性2)> P20 66
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 52
+MOV <$N(下级技能属性2)> <$N(技能属性2)>
+INC <$N(下级技能属性2)> 66
+
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 950
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 裂石百炼
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 990
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能2)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣属性下限+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.TEXT 神圣属性上限+<$N(技能属性2)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：神圣属性下限+<$N(下级技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.TEXT 神圣属性上限+<$N(下级技能属性2)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗天府竹
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验2)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验2)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸技能2 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+MUL <$N(技能属性1)> P20 52
+MOV P20
+MUL P20 <$HUMAN(龙啸技能2)> 100
+MUL <$N(技能属性2)> P20 66
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 950
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 裂石百炼
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 990
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能2)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣属性下限+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.TEXT 神圣属性上限+<$N(技能属性2)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗天府竹
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验2)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验2)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@龙啸技能3]
+#IF
+CHECKVAR HUMAN 龙啸技能3 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能3)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验3)>
+MUL <$N(技能属性1)> P20 83
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 83
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 954
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 金钟护体
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1002
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能3)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣防御+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：神圣防御+<$N(下级技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗太阴莲
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验3)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验3)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸技能3 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能3)> 100
+MUL <$N(技能属性1)> P20 83
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 954
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 金钟护体
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1002
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能3)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：神圣防御+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗太阴莲
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验3)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验3)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@龙啸技能4]
+#IF
+CHECKVAR HUMAN 龙啸技能4 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能4)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验4)>
+MUL <$N(技能属性1)> P20 1
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 1
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 956
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 锁龙决
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1006
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能4)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：麻痹强化+<$N(下级技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗擎羊草
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验4)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验4)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸技能4 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能4)> 100
+MUL <$N(技能属性1)> P20 1
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 956
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 锁龙决
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 1006
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能4)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗擎羊草
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验4)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验4)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@龙啸技能5]
+#IF
+CHECKVAR HUMAN 龙啸技能5 < 30
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能5)> 100
+DEC P20 100
+INC P20 <$HUMAN(龙啸技能经验5)>
+MUL <$N(技能属性1)> P20 1
+MOV <$N(下级技能属性1)> <$N(技能属性1)>
+INC <$N(下级技能属性1)> 1
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 952
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 金蝉蜕壳
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 994
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能5)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹抗性+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.TEXT 下一等级效果：麻痹抗性+<$N(下级技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗陀罗花
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验5)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验5)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible True
+BREAK
+
+#IF
+CHECKVAR HUMAN 龙啸技能5 > 29
+#ACT
+MOV P20
+MUL P20 <$HUMAN(龙啸技能5)> 100
+MUL <$N(技能属性1)> P20 1
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.ImageIndex.UP 952
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU2.TEXT 金蝉蜕壳
+SetClientUIProp Usr_gongti_longxiao_JNMB_TU4.ImageIndex.UP 994
+SetClientUIProp Usr_gongti_longxiao_JNMB_S1.TEXT 当前阶段：<$HUMAN(龙啸技能5)>/30
+SetClientUIProp Usr_gongti_longxiao_JNMB_S2.TEXT 当前等级效果：麻痹强化+<$N(技能属性1)>
+SetClientUIProp Usr_gongti_longxiao_JNMB_S3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S5.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_S6.TEXT 升级功体技能需要消耗陀罗花
+SetClientUIProp Usr_gongti_longxiao_JNMB_S8.TEXT <$HUMAN(龙啸技能经验5)>/100
+SetClientUIProp Usr_gongti_longxiao_JNMB_JDT.Position <$HUMAN(龙啸技能经验5)>
+SetClientUIProp Usr_gongti_longxiao_JNMB.visible True
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT1.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT2.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT3.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT4.visible False
+SetClientUIProp Usr_gongti_longxiao_JNMB_ANCT5.visible False
+BREAK
+
+[@查看护体]
+#CALL [\数据文件\炼体系统\护体\脚本调用.txt] @护体正文
+
+[@强体]
+#CALL [\数据文件\炼体系统\强体\脚本调用.txt] @强体正文
+
+[@体魄]
+#CALL [\数据文件\炼体系统\体魄\脚本调用.txt] @体魄正文
+
+[@洗髓]
+#CALL [\数据文件\炼体系统\洗髓\脚本调用.txt] @洗髓正文
+
+[@英雄炼体]
+#CALL [\数据文件\炼体系统\护体\英雄脚本调用.txt] @英雄护体正文
+
+[@英雄强体]
+#CALL [\数据文件\炼体系统\强体\英雄脚本调用.txt] @英雄强体正文
+
+[@英雄体魄]
+#CALL [\数据文件\炼体系统\体魄\英雄脚本调用.txt] @英雄体魄正文
+
+[@英雄洗髓]
+#CALL [\数据文件\炼体系统\洗髓\英雄脚本调用.txt] @英雄洗髓正文

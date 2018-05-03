@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 真气石任务 = 2
+CHECKVAR HUMAN 蛮兵 < 5
+#ACT
+CALCVAR HUMAN 蛮兵 + 1
+savevar human 蛮兵 ..\QuestDiary\雪花制作\蛮兵.txt
+SENDMSG 7 你已经杀死了<$human(蛮兵)>/5个蛮兵！
+
+#IF
+CHECKVAR HUMAN 真气石任务 = 2
+CHECKVAR HUMAN 蛮兵 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(蛮兵)>/5个蛮兵，可以去找关卡守卫了！

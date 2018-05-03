@@ -1,0 +1,71 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 30
+Gender = 1
+Hair = 2
+;等级
+Level = 50
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=175
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill =破魂斩,开天斩(主),攻杀剑术,逐日剑法,血魄一击(战),狮子吼,龙影剑法,护体神盾,三绝杀,追心刺,刺杀剑术,四级烈火,烈火剑法,半月弯刀
+ProtectStatus=1
+InitItems = 
+[MonSay]
+0=天大地大，唯我独尊
+1=小子！好久不见
+2=又想和我动手了？
+3=我擦！你耍阴的
+4=乌拉拉！乌拉拉！
+5=没事别找我
+6=有钱没？
+7=打发点咯
+8=你身上的装备卖不
+9=不好意思！我现在有事
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=凰天魔衣
+;武器
+UseItems1=炎龙刃
+;照明物
+UseItems2=皓月勋章
+;项链
+UseItems3=疾风项链
+;头盔
+UseItems4=皓月头盔
+;左手镯
+UseItems5=寂静之手(战)
+;右手镯
+UseItems6=星王护腕(战)
+;左戒指
+UseItems7=王者战戒
+;右戒指
+UseItems8=主宰之戒
+;物品
+UseItems9=超级护身符
+;腰带
+UseItems10=赤龙腰带
+;鞋子
+UseItems11=狂雷战靴
+;宝石
+UseItems12=
+;斗笠
+UseItems13=皓月面具
+
+
+
+
+
+
+
+
+
+
+

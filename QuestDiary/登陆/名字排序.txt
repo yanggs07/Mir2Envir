@@ -1,0 +1,147 @@
+[@名字排序]
+{
+#ACT
+MOV S31
+MOV S32
+MOV S33
+MOV S34
+MOV S35
+MOV S36
+MOV S37
+MOV S38
+MOV S39
+MOV S40
+MOV S41
+MOV S42
+MOV S43
+GetRandomName ..\QuestDiary\数据文件\空格\空格1.txt S31
+GetRandomName ..\QuestDiary\数据文件\空格\空格2.txt S32
+GetRandomName ..\QuestDiary\数据文件\空格\空格3.txt S33
+GetRandomName ..\QuestDiary\数据文件\空格\空格4.txt S34
+GetRandomName ..\QuestDiary\数据文件\空格\空格5.txt S35
+GetRandomName ..\QuestDiary\数据文件\空格\空格6.txt S36
+GetRandomName ..\QuestDiary\数据文件\空格\空格7.txt S37
+GetRandomName ..\QuestDiary\数据文件\空格\空格8.txt S38
+GetRandomName ..\QuestDiary\数据文件\空格\空格9.txt S39
+GetRandomName ..\QuestDiary\数据文件\空格\空格10.txt S40
+GetRandomName ..\QuestDiary\数据文件\空格\空格11.txt S41
+GetRandomName ..\QuestDiary\数据文件\空格\空格12.txt S42
+GetRandomName ..\QuestDiary\数据文件\空格\空格13.txt S43
+CLEARNAMELIST ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+GOTO @名字排序1
+BREAK
+
+[@名字排序1]
+#IF
+CheckStringlength <$USERNAME> = 3
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S43
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 4
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S42
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 5
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S41
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 6
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S40
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+
+#IF
+CheckStringlength <$USERNAME> = 7
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S39
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 8
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S38
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 9
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S37
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+
+#IF
+CheckStringlength <$USERNAME> = 10
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S36
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 11
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S35
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 12
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S34
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 13
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S33
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#IF
+CheckStringlength <$USERNAME> = 14
+#ACT
+MOV S11
+MOV S11 <$USERNAME>
+INC S11 S32
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt
+BREAK
+
+#ELSEACT
+BREAK
+}

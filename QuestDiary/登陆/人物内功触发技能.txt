@@ -1,0 +1,463 @@
+[@人物内功触发技能]
+{
+#If
+checkjob warrior
+CHECKNGLEVEL = 4
+#ACT
+ADDSKILL 怒之攻杀 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 12
+#ACT
+ADDSKILL 静之火球 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 13
+#ACT
+ADDSKILL 怒之半月 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 14
+#ACT
+ADDSKILL 静之攻杀 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 16
+#ACT
+ADDSKILL 静之地狱火 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 22
+#ACT
+ADDSKILL 静之半月 3 0
+break
+#IF
+checkjob warrior
+CHECKNGLEVEL = 28
+#ACT
+ADDSKILL 静之大火球 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 29
+#ACT
+ADDSKILL 静之爆裂火焰 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 32
+#ACT
+ADDSKILL 静之雷电 3 0
+break
+#If 
+checkjob warrior
+CHECKNGLEVEL = 35
+#ACT
+ADDSKILL 静之火符 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 38
+#ACT
+ADDSKILL 怒之内功剑法 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 39
+#ACT
+ADDSKILL 静之火墙 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 40
+#ACT
+ADDSKILL 静之内功剑法 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 42
+#ACT
+ADDSKILL 静之疾光电影 3 0
+break
+#If
+CHECKNGLEVEL = 50
+#ACT
+OPENPULSE 4 1
+ADDSKILL 斗转星移 1
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 51
+#ACT
+ADDSKILL 静之地狱雷光 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 61
+#ACT
+ADDSKILL 静之寒冰掌 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 69
+#ACT
+ADDSKILL 静之烈火 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 70
+#ACT
+ADDSKILL 怒之烈火 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 71
+#ACT
+ADDSKILL 静之冰咆哮 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 74
+#ACT
+ADDSKILL 怒之逐日 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 75
+#ACT
+ADDSKILL 静之灭天火 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 79
+#ACT
+ADDSKILL 静之噬血 3 0
+ADDSKILL 静之逐日 3 0
+break
+#If
+checkjob warrior
+CHECKNGLEVEL = 80
+#ACT
+ADDSKILL 静之流星火雨 3 0
+ADDSKILL 静之开天斩 3 0
+break
+;---------------------------------------------------------------------
+
+#If
+checkjob Wizard
+CHECKNGLEVEL = 4
+#ACT
+ADDSKILL 怒之火球 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 9
+#ACT
+ADDSKILL 怒之地狱火 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 12
+#ACT
+ADDSKILL 静之火球 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 14
+#ACT
+ADDSKILL 静之攻杀 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 14
+#ACT
+ADDSKILL 怒之爆裂火焰 3 0
+ADDSKILL 静之攻杀 3 0
+break
+#IF
+checkjob Wizard
+CHECKNGLEVEL = 16
+#ACT
+ADDSKILL 静之地狱火 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 22
+#ACT
+ADDSKILL 静之半月 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 26
+#ACT
+ADDSKILL 怒之雷电 3 0
+break
+#If 
+checkjob Wizard
+CHECKNGLEVEL = 28
+#ACT
+ADDSKILL 怒之大火球 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 29
+#ACT
+ADDSKILL 静之爆裂火焰 3 0
+break
+#If 
+checkjob Wizard
+CHECKNGLEVEL = 32
+#ACT
+ADDSKILL 怒之火墙 3 0
+ADDSKILL 静之雷电 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 35
+#ACT
+ADDSKILL 静之火符 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 39
+#ACT
+ADDSKILL 静之火墙 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 40
+#ACT
+ADDSKILL 静之内功剑法 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 42
+#ACT
+ADDSKILL 静之疾光电影 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 49
+#ACT
+ADDSKILL 怒之疾光电影 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 51
+#ACT
+ADDSKILL 静之地狱雷光 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 55
+#ACT
+ADDSKILL 怒之地狱雷光 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 61
+#ACT
+ADDSKILL 静之寒冰掌 3 0
+ADDSKILL 怒之寒冰掌 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 69
+#ACT
+ADDSKILL 静之烈火 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 70
+#ACT
+ADDSKILL 怒之冰咆哮 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 71
+#ACT
+ADDSKILL 静之冰咆哮 3 0
+ADDSKILL 怒之灭天火 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 74
+#ACT
+ADDSKILL 怒之流星火雨 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 75
+#ACT
+ADDSKILL 静之灭天火 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 79
+#ACT
+ADDSKILL 静之噬血 3 0
+ADDSKILL 静之逐日 3 0
+break
+#If
+checkjob Wizard
+CHECKNGLEVEL = 80
+#ACT
+ADDSKILL 静之流星火雨 3 0
+ADDSKILL 静之开天斩 3 0
+break
+;--------------------------------------------------------------------
+;-----------------------------------------------------------------------
+#If
+checkjob Taoist
+CHECKNGLEVEL = 12
+#ACT
+ADDSKILL 静之火球 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 14
+#ACT
+ADDSKILL 静之攻杀 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 16
+#ACT
+ADDSKILL 静之地狱火 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 21
+#ACT
+ADDSKILL 怒之火符 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 22
+#ACT
+ADDSKILL 静之半月 3 0
+break
+#IF
+checkjob Taoist
+CHECKNGLEVEL = 28
+#ACT
+ADDSKILL 静之大火球 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 29
+#ACT
+ADDSKILL 静之爆裂火焰 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 32
+#ACT
+ADDSKILL 静之雷电 3 0
+break
+#If 
+checkjob Taoist
+CHECKNGLEVEL = 35
+#ACT
+ADDSKILL 静之火符 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 39
+#ACT
+ADDSKILL 静之火墙 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 40
+#ACT
+ADDSKILL 静之内功剑法 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 42
+#ACT
+ADDSKILL 静之疾光电影 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 51
+#ACT
+ADDSKILL 静之地狱雷光 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 61
+#ACT
+ADDSKILL 静之寒冰掌 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 69
+#ACT
+ADDSKILL 静之烈火 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 70
+#ACT
+ADDSKILL 怒之噬血 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 71
+#ACT
+ADDSKILL 静之冰咆哮 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 75
+#ACT
+ADDSKILL 静之灭天火 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 79
+#ACT
+ADDSKILL 静之噬血 3 0
+ADDSKILL 静之开天斩 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 80
+#ACT
+ADDSKILL 静之逐日 3 0
+ADDSKILL 静之开天斩 3 0
+break
+#If
+checkjob Taoist
+CHECKNGLEVEL = 80
+#ACT
+ADDSKILL 静之流星火雨 3 0
+ADDSKILL 静之开天斩 3 0
+break
+
+#IF
+CHECKNGLEVEL = 200
+#ACT
+ADDSKILL 唯我独尊 1
+break
+
+#IF
+CHECKNGLEVEL = 220
+#ACT
+SKILLLEVEL 唯我独尊 = 2
+break
+
+#IF
+CHECKNGLEVEL = 240
+#ACT
+SKILLLEVEL 唯我独尊 = 3
+break
+
+}

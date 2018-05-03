@@ -1,0 +1,89 @@
+[@jingjichang]
+{
+如果你有精制材料卷，我就可以送你去一个神秘的地方，\
+我有朋友在那里，他可以通过这个精制材料卷，\
+召唤出一些贪恋的怪物，它们身上可能会有一些你需要的精制材料。\
+你也可以把它们交给我，作为交换，我可以给你一瓶泉水。\ \
+<使用精制材料卷进入/@材料进入>               <兑换成泉水/@泉水兑换>
+
+[@材料进入]
+#IF
+checkitem 精制材料卷 1
+#ACT
+goto @材料卷进入
+break
+
+#ELSEACT
+break
+#ELSESAY
+必须要有精制材料卷，我才能放你进去。\
+精制材料卷你可以从商铺买到。
+
+[@材料卷进入]
+#IF
+CHECKMAPHUMANCOUNT pk01 = 0
+#ACT
+mapmove pk01 10 10
+CLEARMAPMON pk01
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk02 = 0
+#ACT
+mapmove pk02 10 10
+CLEARMAPMON pk02
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk03 = 0
+#ACT
+mapmove pk03 10 10
+CLEARMAPMON pk03
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk03 = 0
+#ACT
+mapmove pk03 10 10
+CLEARMAPMON pk03
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk04 = 0
+#ACT
+mapmove pk04 10 10
+CLEARMAPMON pk04
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk05 = 0
+#ACT
+mapmove pk05 10 10
+CLEARMAPMON pk05
+break
+
+#IF
+CHECKMAPHUMANCOUNT pk06 = 0
+#ACT
+mapmove pk06 10 10
+CLEARMAPMON pk06
+break
+
+#ELSEACT
+break
+#ELSESAY
+竞技场满员，请稍等！
+
+[@泉水兑换]
+#IF
+checkitem 精制材料卷 1
+#ACT
+take 精制材料卷 1
+GIVE 泉水 1
+break
+
+#ELSEACT
+break
+#ELSESAY
+你没有精制材料卷，不能领取泉水！
+}

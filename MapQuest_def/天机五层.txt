@@ -1,0 +1,6 @@
+[@main]
+#if
+#act
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\QuestDiary\雪花制作\守护积分.txt
+SENDMSG 7 恭喜你获得5点守护积分，你目前的积分是<$human(守护积分)>点！

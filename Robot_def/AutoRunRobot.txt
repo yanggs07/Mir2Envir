@@ -1,0 +1,109 @@
+;500 宫殿迷宫教主
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;SEC：按秒运行
+;MIN：按分运行
+;HOUR：按小时运行
+;DAY：按天运行
+;RunOnDay：按每天什么时候运行
+;RUNONWEEK：按星期几及时间运行
+;#AutoRun NPC RUNONWEEK 5:15:55 @SendRedMsg
+;星期五15点55分运行
+;#AutoRun NPC SEC 1 @zdzqs
+#AutoRun NPC MIN 30 @怪物攻城1
+#AutoRun NPC RUNONDAY 21:50 @怪物攻城
+#AutoRun NPC RUNONDAY 22:30 @怪物攻城关闭
+#AutoRun NPC SEC 5 @mzhx
+#AutoRun NPC SEC 15 @假人说话
+#AutoRun NPC SEC 10 @登陆陪练
+#AutoRun NPC SEC 10 @登陆陪练1
+#AutoRun NPC MIN 8 @假人充钱
+#AutoRun NPC MIN 5 @假人启动
+#AutoRun NPC MIN 5  @地图检测 
+#AutoRun NPC MIN 147 @陈天桥
+;#AutoRun NPC RUNONDAY 20:00 @攻城
+#AutoRun NPC MIN 2 @假人自动攻城
+#AutoRun NPC SEC 30 @假人打怪
+#AutoRun NPC MIN 60 @公孙
+#AutoRun NPC MIN 60 @阮二
+#AutoRun NPC MIN 60 @阮五
+#AutoRun NPC MIN 60 @阮七
+#AutoRun NPC MIN 60 @吴二
+#AutoRun NPC MIN 60 @公孙
+#AutoRun NPC MIN 60 @刘四
+#AutoRun NPC MIN 60 @晁大
+#AutoRun NPC MIN 21 @叛军BOSS
+#AutoRun NPC MIN 22 @狐月BOSS
+#AutoRun NPC MIN 23 @瘟疫BOSS
+#AutoRun NPC MIN 31 @要塞BOSS
+#AutoRun NPC MIN 32 @血池BOSS
+#AutoRun NPC MIN 33 @连接BOSS
+#AutoRun NPC MIN 41 @森林BOSS
+#AutoRun NPC MIN 42 @营地BOSS
+#AutoRun NPC MIN 43 @迷失BOSS
+#AutoRun NPC MIN 30 @六大暗之BOSS
+
+
+
+
+
+
+
+#AutoRun NPC MIN 3 @邪灵1
+#AutoRun NPC MIN 3 @邪灵2
+#AutoRun NPC MIN 3 @邪灵3
+#AutoRun NPC MIN 3 @邪灵4
+#AutoRun NPC MIN 3 @邪灵5
+#AutoRun NPC MIN 3 @邪灵6
+#AutoRun NPC MIN 3 @邪灵7
+#AutoRun NPC MIN 3 @邪灵8
+#AutoRun NPC MIN 3 @邪灵9
+#AutoRun NPC MIN 3 @邪灵10
+
+
+#AutoRun NPC MIN 3 @刷新boss
+
+
+#AutoRun NPC MIN 5 @公告
+#AutoRun NPC RUNONWEEK 7:00:00 @神秘商人开启
+#AutoRun NPC RUNONWEEK 7:23:59 @神秘商人关闭
+
+#AutoRun NPC MIN 1 @智能刷怪计时
+#AutoRun NPC SEC 1 @秒时间计算
+#AutoRun NPC MIN 1 @分时间计算
+#AutoRun NPC HOUR 1 @时时间计算
+
+
+#AutoRun NPC RUNONDAY 00:00 @每天清理
+#AutoRun NPC DAY 30 @每月清理
+;#AutoRun NPC DAY 365 @每年清理
+#AutoRun NPC RUNONWEEK 7:23:59 @每周清理
+
+
+
+#AutoRun NPC RUNONWEEK 1:18:30 @神龙秘境活动开启
+#AutoRun NPC RUNONWEEK 3:18:30 @神龙秘境活动开启
+#AutoRun NPC RUNONWEEK 5:18:30 @神龙秘境活动开启
+#AutoRun NPC RUNONWEEK 7:18:30 @神龙秘境活动开启
+
+#AutoRun NPC RUNONWEEK 1:19:00 @神龙秘境活动关闭
+#AutoRun NPC RUNONWEEK 3:19:00 @神龙秘境活动关闭
+#AutoRun NPC RUNONWEEK 5:19:00 @神龙秘境活动关闭
+#AutoRun NPC RUNONWEEK 7:19:00 @神龙秘境活动关闭
+
+
+
+#AutoRun NPC SEC 1 @开始摇骰子
+
+#AutoRun NPC RUNONWEEK 8:00:00  @开启赌博
+
+

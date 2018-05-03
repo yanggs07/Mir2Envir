@@ -1,0 +1,453 @@
+[@英雄内功触发技能]
+{
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 4 Hero
+#ACT
+ADDSKILL 怒之攻杀 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 12 Hero
+#ACT
+ADDSKILL 静之火球 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 13 Hero
+#ACT
+ADDSKILL 怒之半月 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 14 Hero
+#ACT
+ADDSKILL 静之攻杀 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 16 Hero
+#ACT
+ADDSKILL 静之地狱火 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 22 Hero
+#ACT
+ADDSKILL 静之半月 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 28 Hero
+#ACT
+ADDSKILL 静之大火球 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 29 Hero
+#ACT
+ADDSKILL 静之爆裂火焰 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 32 Hero
+#ACT
+ADDSKILL 静之雷电 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 35 Hero
+#ACT
+ADDSKILL 静之火符 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 38 Hero
+#ACT
+ADDSKILL 怒之内功剑法 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 39 Hero
+#ACT
+ADDSKILL 静之火墙 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 40 Hero
+#ACT
+ADDSKILL 静之内功剑法 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 42 Hero
+#ACT
+ADDSKILL 静之疾光电影 0 Hero 1
+break
+#If
+CHECKNGLEVEL = 50 Hero
+#ACT
+OPENPULSE 4 1 hero
+ADDSKILL 斗转星移 1 Hero 1
+sendmsg 0 恭喜：%s的英雄<$HERONAME>，冲破了奇经上的神冲穴，领悟了奇经技能"斗转星移"
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 51 Hero
+#ACT
+ADDSKILL 静之地狱雷光 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 61 Hero
+#ACT
+ADDSKILL 静之寒冰掌 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 69 Hero
+#ACT
+ADDSKILL 静之烈火 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 70 Hero
+#ACT
+ADDSKILL 怒之烈火 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 71 Hero
+#ACT
+ADDSKILL 静之冰咆哮 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 74 Hero
+#ACT
+ADDSKILL 怒之逐日 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 75 Hero
+#ACT
+ADDSKILL 静之灭天火 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 79 Hero
+#ACT
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+break
+#If
+CHECKHEROJOB WARRIOR
+CHECKNGLEVEL = 80 Hero
+#ACT
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+break
+
+;---------------------------------------------------------------------
+
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 4 Hero
+#ACT
+ADDSKILL 怒之火球 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 9 Hero
+#ACT
+ADDSKILL 怒之地狱火 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 12 Hero
+#ACT
+ADDSKILL 静之火球 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 14 Hero
+#ACT
+ADDSKILL 怒之爆裂火焰 0 Hero 1
+ADDSKILL 静之攻杀 0 Hero 1
+break
+#IF
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 16 Hero
+#ACT
+ADDSKILL 静之地狱火 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 22 Hero
+#ACT
+ADDSKILL 静之半月 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 26 Hero
+#ACT
+ADDSKILL 怒之雷电 0 Hero 1
+break
+#If 
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 28 Hero
+#ACT
+ADDSKILL 怒之大火球 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 29 Hero
+#ACT
+ADDSKILL 静之爆裂火焰 0 Hero 1
+break
+#If 
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 32 Hero
+#ACT
+ADDSKILL 怒之火墙 0 Hero 1
+ADDSKILL 静之雷电 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 35 Hero
+#ACT
+ADDSKILL 静之火符 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 39 Hero
+#ACT
+ADDSKILL 静之火墙 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 40 Hero
+#ACT
+ADDSKILL 静之内功剑法 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 42 Hero
+#ACT
+ADDSKILL 静之疾光电影 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 49 Hero
+#ACT
+ADDSKILL 怒之疾光电影 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 51 Hero
+#ACT
+ADDSKILL 静之地狱雷光 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 55 Hero
+#ACT
+ADDSKILL 怒之地狱雷光 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 61 Hero
+#ACT
+ADDSKILL 静之寒冰掌 0 Hero 1
+ADDSKILL 怒之寒冰掌 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 69 Hero
+#ACT
+ADDSKILL 静之烈火 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 70 Hero
+#ACT
+ADDSKILL 怒之冰咆哮 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 71 Hero
+#ACT
+ADDSKILL 静之冰咆哮 0 Hero 1
+ADDSKILL 怒之灭天火 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 74 Hero
+#ACT
+ADDSKILL 怒之流星火雨 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 75 Hero
+#ACT
+ADDSKILL 静之灭天火 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 79 Hero
+#ACT
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+break
+#If
+CHECKHEROJOB Wizard
+CHECKNGLEVEL = 80 Hero
+#ACT
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+break
+;-------------------------------------------------------------------
+;-----------------------------------------------------------------------
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 12 Hero
+#ACT
+ADDSKILL 静之火球 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 14 Hero
+#ACT
+ADDSKILL 静之攻杀 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 16 Hero
+#ACT
+ADDSKILL 静之地狱火 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 21 Hero
+#ACT
+ADDSKILL 怒之火符 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 22 Hero
+#ACT
+ADDSKILL 静之半月 0 Hero 1
+break
+#IF
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 28 Hero
+#ACT
+ADDSKILL 静之大火球 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 29 Hero
+#ACT
+ADDSKILL 静之爆裂火焰 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 32 Hero
+#ACT
+ADDSKILL 静之雷电 0 Hero 1
+break
+#If 
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 35 Hero
+#ACT
+ADDSKILL 静之火符 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 39 Hero
+#ACT
+ADDSKILL 静之火墙 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 40 Hero
+#ACT
+ADDSKILL 静之内功剑法 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 42 Hero
+#ACT
+ADDSKILL 静之疾光电影 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 51 Hero
+#ACT
+ADDSKILL 静之地狱雷光 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 61 Hero
+#ACT
+ADDSKILL 静之寒冰掌 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 69 Hero
+#ACT
+ADDSKILL 静之烈火 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 70 Hero
+#ACT
+ADDSKILL 怒之噬血 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 71 Hero
+#ACT
+ADDSKILL 静之冰咆哮 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 75 Hero
+#ACT
+ADDSKILL 静之灭天火 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 79 Hero
+#ACT
+ADDSKILL 静之噬血 0 Hero 1
+ADDSKILL 静之逐日 0 Hero 1
+break
+#If
+CHECKHEROJOB Taoist
+CHECKNGLEVEL = 80 Hero
+#ACT
+ADDSKILL 静之流星火雨 0 Hero 1
+ADDSKILL 静之开天斩 0 Hero 1
+break
+
+#IF
+CHECKNGLEVEL = 200 Hero
+#ACT
+ADDSKILL 唯我独尊 1 Hero 1
+break
+
+#IF
+CHECKNGLEVEL = 220 Hero
+#ACT
+SKILLLEVEL 唯我独尊 = 2 Hero 1
+break
+
+#IF
+CHECKNGLEVEL = 240 Hero
+#ACT
+SKILLLEVEL 唯我独尊 = 3 Hero 1
+break
+
+
+}

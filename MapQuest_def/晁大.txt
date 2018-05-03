@@ -1,0 +1,6 @@
+[@main]
+#IF
+#ACT
+SendCenterMsg 251  0 勇士<$USERNAME>在魔龙城打败了江洋大盗晁大,行侠仗义,扬名四海！ 1  10  1
+SENDMSG 0 勇士%S在魔龙城打败了江洋大盗晁大,行侠仗义,扬名四海！
+BREAK

@@ -1,0 +1,383 @@
+[@人物心法升级触发]
+{
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 60
+#ACT
+GIVESTATEITEM 中级火龙树结晶 1 1 1 1 1 1 300
+SENDMSG 0 玛法勇士:%s,主号心法冲级到60系统发放奖励中级火龙树结晶*300！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 80
+#ACT
+GIVESTATEITEM 中级火龙树结晶 1 1 1 1 1 1 500
+SENDMSG 0 玛法勇士:%s,主号心法冲级到80系统发放奖励中级火龙树结晶*500！
+BREAK
+
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 100
+#ACT
+GIVESTATEITEM 高级火龙树结晶 1 1 1 1 1 1 500
+SENDMSG 0 玛法勇士:%s,主号心法冲级到100系统发放奖励高级火龙树结晶*500！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 120
+#ACT
+give 人之复生戒指 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到120系统发放奖励人之复生戒指！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 130
+#ACT
+give 乾坤腰带 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到130系统发放奖励乾坤腰带*1！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 140
+#ACT
+give 地之复生戒指 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到140系统发放奖励地之复生戒指！
+BREAK
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 150
+#ACT
+give 巅峰战勋 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到150系统发放奖励巅峰战勋！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 150
+#ACT
+give 巅峰法勋 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到150系统发放奖励巅峰法勋！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 150
+#ACT
+give 巅峰道勋 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到150系统发放奖励巅峰道勋！
+BREAK
+
+#IF
+checkjob ASSASSIN
+CHECKSKILLLEVEL 龙卫心法 = 150
+#ACT
+give 巅峰刺勋 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到150系统发放奖励巅峰道勋！
+BREAK
+
+
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 160
+#ACT
+give 天之复生戒指 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到160系统发放奖励天之复生戒指！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 170
+GENDER MAN
+#ACT
+give 九天彩凤(男) 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到170系统发放奖励九天彩凤(男)！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 170
+GENDER WOMAN
+#ACT
+give 九天彩凤(女) 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到170系统发放奖励九天彩凤(女)！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 180
+#ACT
+give 天之复生戒指 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到160系统发放奖励天之复生戒指！
+BREAK
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 200
+#ACT
+addskill 旋风斩 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到200自动学习心法技能旋风斩！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 200
+#ACT
+addskill 五雷轰 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到200自动学习心法技能五雷轰！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 200
+#ACT
+addskill 幽冥火符 1
+SENDMSG 0 玛法勇士:%s,主号心法冲级到200自动学习心法技能幽冥火符！
+BREAK
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 207
+#ACT
+skilllevel 旋风斩 = 2
+SENDMSG 0 玛法勇士:%s,主号心法冲级到207自动学习心法技能旋风斩LV.2！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 207
+#ACT
+skilllevel 五雷轰 = 2
+SENDMSG 0 玛法勇士:%s,主号心法冲级到207自动学习心法技能五雷轰LV.2！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 207
+#ACT
+addskill 幽冥火符 = 2
+SENDMSG 0 玛法勇士:%s,主号心法冲级到207自动学习心法技能幽冥火符LV.2！
+BREAK
+
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 214
+#ACT
+skilllevel 旋风斩 = 3
+SENDMSG 0 玛法勇士:%s,主号心法冲级到214自动学习心法技能旋风斩LV.3！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 214
+#ACT
+skilllevel 五雷轰 = 3
+SENDMSG 0 玛法勇士:%s,主号心法冲级到214自动学习心法技能五雷轰LV.3！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 214
+#ACT
+skilllevel 幽冥火符 = 3
+SENDMSG 0 玛法勇士:%s,主号心法冲级到214自动学习心法技能幽冥火符LV.3！
+BREAK
+
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 220
+#ACT
+GIVESTATEITEM 龙怒技能凭证 1 1 1 1 1 1 5
+GIVESTATEITEM 龙神技能凭证 1 1 1 1 1 1 5
+GIVESTATEITEM 龙卫技能凭证 1 1 1 1 1 1 5
+SENDMSG 0 玛法勇士:%s,主号心法冲级到220系统自动发放龙怒，龙卫，龙神凭证*5！
+BREAK
+
+
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 221
+#ACT
+skilllevel 旋风斩 = 4
+SENDMSG 0 玛法勇士:%s,主号心法冲级到221自动学习心法技能旋风斩LV.4！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 221
+#ACT
+skilllevel 五雷轰 = 4
+SENDMSG 0 玛法勇士:%s,主号心法冲级到221自动学习心法技能五雷轰LV.4！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 221
+#ACT
+skilllevel 幽冥火符 = 4
+SENDMSG 0 玛法勇士:%s,主号心法冲级到221自动学习心法技能幽冥火符LV.4！
+BREAK
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 228
+#ACT
+skilllevel 旋风斩 = 5
+SENDMSG 0 玛法勇士:%s,主号心法冲级到228自动学习心法技能旋风斩LV.5！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 228
+#ACT
+skilllevel 五雷轰 = 5
+SENDMSG 0 玛法勇士:%s,主号心法冲级到228自动学习心法技能五雷轰LV.5！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 228
+#ACT
+skilllevel 幽冥火符 = 5
+SENDMSG 0 玛法勇士:%s,主号心法冲级到228自动学习心法技能幽冥火符LV.5！
+BREAK
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 235
+#ACT
+skilllevel 旋风斩 = 6
+SENDMSG 0 玛法勇士:%s,主号心法冲级到235自动学习心法技能旋风斩LV.6！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 235
+#ACT
+skilllevel 五雷轰 = 6
+SENDMSG 0 玛法勇士:%s,主号心法冲级到235自动学习心法技能五雷轰LV.6！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 235
+#ACT
+skilllevel 幽冥火符 = 6
+SENDMSG 0 玛法勇士:%s,主号心法冲级到235自动学习心法技能幽冥火符LV.6！
+BREAK
+
+#IF
+CHECKSKILLLEVEL 龙卫心法 = 240
+#ACT
+GIVESTATEITEM 金色属性凭证 1 1 1 1 1 1 2
+SENDMSG 0 玛法勇士:%s,主号心法冲级到240系统自动发放金色属性凭证*2！
+BREAK
+
+
+
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 242
+#ACT
+skilllevel 旋风斩 = 7
+SENDMSG 0 玛法勇士:%s,主号心法冲级到242自动学习心法技能旋风斩LV.7！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 242
+#ACT
+skilllevel 五雷轰 = 7
+SENDMSG 0 玛法勇士:%s,主号心法冲级到242自动学习心法技能五雷轰LV.7！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 242
+#ACT
+skilllevel 幽冥火符 = 7
+SENDMSG 0 玛法勇士:%s,主号心法冲级到242自动学习心法技能幽冥火符LV.7！
+BREAK
+
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 249
+#ACT
+skilllevel 旋风斩 = 8
+SENDMSG 0 玛法勇士:%s,主号心法冲级到249自动学习心法技能旋风斩LV.8！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 249
+#ACT
+skilllevel 五雷轰 = 8
+SENDMSG 0 玛法勇士:%s,主号心法冲级到249自动学习心法技能五雷轰LV.8！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 249
+#ACT
+skilllevel 幽冥火符 = 8
+SENDMSG 0 玛法勇士:%s,主号心法冲级到249自动学习心法技能幽冥火符LV.8！
+BREAK
+
+
+#IF
+checkjob warrior
+CHECKSKILLLEVEL 龙卫心法 = 255
+#ACT
+give 复活戒指 1
+skilllevel 旋风斩 = 9
+SENDMSG 0 玛法勇士:%s,主号心法冲级到255自动学习心法技能旋风斩LV.9！
+BREAK
+
+#IF
+checkjob wizard
+CHECKSKILLLEVEL 龙卫心法 = 255
+#ACT
+give 复活戒指 1
+skilllevel 五雷轰 = 9
+SENDMSG 0 玛法勇士:%s,主号心法冲级到255自动学习心法技能五雷轰LV.9！
+BREAK
+
+
+#IF
+checkjob taoist
+CHECKSKILLLEVEL 龙卫心法 = 255
+#ACT
+give 复活戒指 1
+skilllevel 幽冥火符 = 9
+SENDMSG 0 玛法勇士:%s,主号心法冲级到255自动学习心法技能幽冥火符LV.9！
+BREAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

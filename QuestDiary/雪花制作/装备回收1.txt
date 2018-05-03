@@ -1,0 +1,535 @@
+[@装备回收]
+{
+#IF
+#ACT
+bigmain 2
+#SAY	\
+自动回收主宰状态：<$HUMAN(自动主宰)> <切换状态/@切换>  <手动回收/@回收>\
+自动回收传奇状态：<$HUMAN(自动传奇)> <切换状态/@切换1>  <手动回收/@回收1>\
+自动回收皓月状态：<$HUMAN(自动皓月)> <切换状态/@切换2>  <手动回收/@回收2>\
+自动回收皓天状态：<$HUMAN(自动皓天)> <切换状态/@切换3>  <手动回收/@回收3>\
+自动回收皓宇状态：<$HUMAN(自动皓宇)> <切换状态/@切换4>  <手动回收/@回收4>\
+自动回收皓尊状态：<$HUMAN(自动皓尊)> <切换状态/@切换5>  <手动回收/@回收5>\
+自动回收神龙状态：<$HUMAN(自动神龙)> <切换状态/@切换6>  <手动回收/@回收6>\
+自动回收热血状态：<$HUMAN(自动热血)> <切换状态/@切换7>  <手动回收/@回收7>\
+自动回收真龙状态：<$HUMAN(自动真龙)> <切换状态/@切换8>  <手动回收/@回收8>\
+自动回收天成状态：<$HUMAN(自动天成)> <切换状态/@切换9>  <手动回收/@回收9>\
+自动回收金蛇状态：<$HUMAN(自动金蛇)> <切换状态/@切换10>  <手动回收/@回收10>\
+自动回收灵蛇状态：<$HUMAN(自动灵蛇)> <切换状态/@切换11>  <手动回收/@回收11>\
+自动回收神蛇状态：<$HUMAN(自动神蛇)> <切换状态/@切换12>  <手动回收/@回收12>\
+<一键回收全部/@回收13>
+
+[@切换]
+#if
+checkvar human 自动主宰 = 关闭
+#act
+calcvar human 自动主宰 = 开启
+savevar HUMAN 自动主宰 ..\QuestDiary\雪花制作\自动主宰.txt
+goto @装备回收
+#elseact
+calcvar human 自动主宰 = 关闭
+savevar HUMAN 自动主宰 ..\QuestDiary\雪花制作\自动主宰.txt
+goto @装备回收
+
+[@切换1]
+#if
+checkvar human 自动传奇 = 关闭
+#act
+calcvar human 自动传奇 = 开启
+savevar HUMAN 自动传奇 ..\QuestDiary\雪花制作\自动传奇.txt
+goto @装备回收
+#elseact
+calcvar human 自动传奇 = 关闭
+savevar HUMAN 自动传奇 ..\QuestDiary\雪花制作\自动传奇.txt
+goto @装备回收
+
+
+[@切换2]
+#if
+checkvar human 自动皓月 = 关闭
+#act
+calcvar human 自动皓月 = 开启
+savevar HUMAN 自动皓月 ..\QuestDiary\雪花制作\自动皓月.txt
+goto @装备回收
+#elseact
+calcvar human 自动皓月 = 关闭
+savevar HUMAN 自动皓月 ..\QuestDiary\雪花制作\自动皓月.txt
+goto @装备回收
+
+
+[@切换3]
+#if
+checkvar human 自动皓天 = 关闭
+#act
+calcvar human 自动皓天 = 开启
+savevar HUMAN 自动皓天 ..\QuestDiary\雪花制作\自动皓天.txt
+goto @装备回收
+#elseact
+calcvar human 自动皓天 = 关闭
+savevar HUMAN 自动皓天 ..\QuestDiary\雪花制作\自动皓天.txt
+goto @装备回收
+
+
+[@切换4]
+#if
+checkvar human 自动皓宇 = 关闭
+#act
+calcvar human 自动皓宇 = 开启
+savevar HUMAN 自动皓宇 ..\QuestDiary\雪花制作\自动皓宇.txt
+goto @装备回收
+#elseact
+calcvar human 自动皓宇 = 关闭
+savevar HUMAN 自动皓宇 ..\QuestDiary\雪花制作\自动皓宇.txt
+goto @装备回收
+
+[@切换5]
+#if
+checkvar human 自动皓尊 = 关闭
+#act
+calcvar human 自动皓尊 = 开启
+savevar HUMAN 自动皓尊 ..\QuestDiary\雪花制作\自动皓尊.txt
+goto @装备回收
+#elseact
+calcvar human 自动皓尊 = 关闭
+savevar HUMAN 自动皓尊 ..\QuestDiary\雪花制作\自动皓尊.txt
+goto @装备回收
+
+[@切换6]
+#if
+checkvar human 自动神龙 = 关闭
+#act
+calcvar human 自动神龙 = 开启
+savevar HUMAN 自动神龙 ..\QuestDiary\雪花制作\自动神龙.txt
+goto @装备回收
+#elseact
+calcvar human 自动神龙 = 关闭
+savevar HUMAN 自动神龙 ..\QuestDiary\雪花制作\自动神龙.txt
+goto @装备回收
+
+[@切换7]
+#if
+checkvar human 自动热血 = 关闭
+#act
+calcvar human 自动热血 = 开启
+savevar HUMAN 自动热血 ..\QuestDiary\雪花制作\自动热血.txt
+goto @装备回收
+#elseact
+calcvar human 自动热血 = 关闭
+savevar HUMAN 自动热血 ..\QuestDiary\雪花制作\自动热血.txt
+goto @装备回收
+
+
+[@切换8]
+#if
+checkvar human 自动真龙 = 关闭
+#act
+calcvar human 自动真龙 = 开启
+savevar HUMAN 自动真龙 ..\QuestDiary\雪花制作\自动真龙.txt
+goto @装备回收
+#elseact
+calcvar human 自动真龙 = 关闭
+savevar HUMAN 自动真龙 ..\QuestDiary\雪花制作\自动真龙.txt
+goto @装备回收
+
+
+[@切换9]
+#if
+checkvar human 自动天成 = 关闭
+#act
+calcvar human 自动天成 = 开启
+savevar HUMAN 自动天成 ..\QuestDiary\雪花制作\自动天成.txt
+goto @装备回收
+#elseact
+calcvar human 自动天成 = 关闭
+savevar HUMAN 自动天成 ..\QuestDiary\雪花制作\自动天成.txt
+goto @装备回收
+
+[@切换10]
+#if
+checkvar human 自动金蛇 = 关闭
+#act
+calcvar human 自动金蛇 = 开启
+savevar HUMAN 自动金蛇 ..\QuestDiary\雪花制作\自动金蛇.txt
+goto @装备回收
+#elseact
+calcvar human 自动金蛇 = 关闭
+savevar HUMAN 自动金蛇 ..\QuestDiary\雪花制作\自动金蛇.txt
+goto @装备回收
+
+[@切换11]
+#if
+checkvar human 自动灵蛇 = 关闭
+#act
+calcvar human 自动灵蛇 = 开启
+savevar HUMAN 自动灵蛇 ..\QuestDiary\雪花制作\自动灵蛇.txt
+goto @装备回收
+#elseact
+calcvar human 自动灵蛇 = 关闭
+savevar HUMAN 自动灵蛇 ..\QuestDiary\雪花制作\自动灵蛇.txt
+goto @装备回收
+
+
+[@切换12]
+#if
+checkvar human 自动神蛇 = 关闭
+#act
+calcvar human 自动神蛇 = 开启
+savevar HUMAN 自动神蛇 ..\QuestDiary\雪花制作\自动神蛇.txt
+goto @装备回收
+#elseact
+calcvar human 自动神蛇 = 关闭
+savevar HUMAN 自动神蛇 ..\QuestDiary\雪花制作\自动神蛇.txt
+goto @装备回收
+
+
+
+
+
+
+
+[@回收]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\主宰.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1000000000
+GOTO @回收
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收1]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 10
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1500000000
+GOTO @回收1
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收2]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 15
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+CHANGEEXP + 2000000000
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+GOTO @回收2
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+[@回收3]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 20
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 2500000000
+GOTO @回收3
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收4]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 25
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3000000000
+GOTO @回收4
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收5]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 30
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3500000000
+GOTO @回收5
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收6]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 35
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4000000000
+GOTO @回收6
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收7]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 40
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4500000000
+GOTO @回收7
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收8]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 45
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5000000000
+GOTO @回收8
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收9]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天成.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 50
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5500000000
+GOTO @回收9
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收10]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 55
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6000000000
+GOTO @回收10
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收11]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 60
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6500000000
+GOTO @回收11
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收12]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 70
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 7000000000
+GOTO @回收12
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收13]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 10
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1000000000
+GOTO @回收13
+#ELSEACT
+goto @回2
+
+[@回2]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 15
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1500000000
+GOTO @回2
+#ELSEACT
+goto @回3
+
+[@回3]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 20
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 2000000000
+GOTO @回3
+#ELSEACT
+goto @回4
+
+[@回4]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 25
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 2500000000
+GOTO @回4
+#ELSEACT
+goto @回5
+
+[@回5]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 30
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3000000000
+GOTO @回5
+#ELSEACT
+goto @回6
+
+[@回6]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 35
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3500000000
+GOTO @回6
+#ELSEACT
+goto @回7
+
+[@回7]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 40
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4000000000
+GOTO @回7
+#ELSEACT
+goto @回8
+
+[@回8]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 45
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4500000000
+GOTO @回8
+#ELSEACT
+goto @回9
+
+[@回9]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天成.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 50
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5000000000
+GOTO @回9
+#ELSEACT
+goto @回10
+
+[@回10]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 55
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5500000000
+GOTO @回10
+#ELSEACT
+goto @回11
+
+[@回11]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 60
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6000000000
+GOTO @回11
+#ELSEACT
+goto @回12
+
+[@回12]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 70
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6500000000
+GOTO @回12
+#ELSEACT
+goto @回14
+
+[@回14]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\主宰.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 7000000000
+GOTO @回14
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+}
+
+
+
+
+

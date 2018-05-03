@@ -1,0 +1,666 @@
+[@强体触发]
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+SetClientUIProp Usr_huti.ImageIndex.UP 1896
+SetClientUIProp Usr_huti_name.ImageIndex.UP 91
+SetClientUIProp Usr_qiangti_name.ImageIndex.UP 90
+SetClientUIProp Usr_tipo_name.ImageIndex.UP 91
+SetClientUIProp Usr_xisui_name.ImageIndex.UP 91
+SetClientUIProp Usr_huti_dh1.visible False
+
+SetClientUIProp Usr_huti_1.visible False
+SetClientUIProp Usr_huti_2.visible False
+SetClientUIProp Usr_huti_3.visible False
+SetClientUIProp Usr_huti_4.visible False
+SetClientUIProp Usr_huti_5.visible False
+SetClientUIProp Usr_huti_6.visible False
+SetClientUIProp Usr_huti_7.visible False
+SetClientUIProp Usr_huti_8.visible False
+SetClientUIProp Usr_huti_9.visible False
+SetClientUIProp Usr_huti_10.visible False
+SetClientUIProp Usr_huti_11.visible False
+SetClientUIProp Usr_huti_1.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_2.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_3.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_4.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_5.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_6.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_7.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_8.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_9.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_10.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_11.ImageIndex.HOT -1
+SetClientUIProp Usr_huti_1.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_2.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_3.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_4.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_5.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_6.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_7.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_8.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_9.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_10.ImageIndex.DOWN -1
+SetClientUIProp Usr_huti_11.ImageIndex.DOWN -1
+;以上为默认！
+
+#IF
+CHECKVAR HUMAN 强体等级 > 10
+#ACT
+CALCVAR HUMAN 强体属性1 = 81500
+CALCVAR HUMAN 强体属性2 = 172600
+SAVEVAR HUMAN 强体属性1 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SAVEVAR HUMAN 强体属性2 ..\QuestDiary\数据文件\炼体系统\强体\当前等级.txt
+SetClientUIProp Usr_huti_1.gleft 97
+SetClientUIProp Usr_huti_1.gtop 325
+SetClientUIProp Usr_huti_2.gleft 167
+SetClientUIProp Usr_huti_2.gtop 332
+SetClientUIProp Usr_huti_3.gleft 97
+SetClientUIProp Usr_huti_3.gtop 271
+SetClientUIProp Usr_huti_4.gleft 153
+SetClientUIProp Usr_huti_4.gtop 278
+SetClientUIProp Usr_huti_5.gleft 124
+SetClientUIProp Usr_huti_5.gtop 220
+SetClientUIProp Usr_huti_6.gleft 74
+SetClientUIProp Usr_huti_6.gtop 209
+SetClientUIProp Usr_huti_7.gleft 172
+SetClientUIProp Usr_huti_7.gtop 212
+SetClientUIProp Usr_huti_8.gleft 124
+SetClientUIProp Usr_huti_8.gtop 171
+SetClientUIProp Usr_huti_9.gleft 103
+SetClientUIProp Usr_huti_9.gtop 147
+SetClientUIProp Usr_huti_10.gleft 153
+SetClientUIProp Usr_huti_10.gtop 150
+
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_10.visible True
+SetClientUIProp Usr_huti_11.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_10.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_11.ImageIndex.UP 1880
+
+SetClientUIProp Usr_huti_s1.visible True
+SetClientUIProp Usr_huti_s2.visible True
+SetClientUIProp Usr_huti_s3.visible True
+SetClientUIProp Usr_huti_s4.visible True
+SetClientUIProp Usr_huti_s5.visible False
+SetClientUIProp Usr_huti_s6.visible False
+SetClientUIProp Usr_huti_s7.visible True
+SetClientUIProp Usr_huti_s8.visible True
+SetClientUIProp Usr_huti_s9.visible True
+SetClientUIProp Usr_huti_s10.visible True
+SetClientUIProp Usr_huti_s11.visible True
+SetClientUIProp Usr_huti_s12.visible True
+SetClientUIProp Usr_huti_s13.visible False
+SetClientUIProp Usr_huti_s14.visible False
+
+SetClientUIProp Usr_huti_s1.gleft 260
+SetClientUIProp Usr_huti_s1.gtop 95
+SetClientUIProp Usr_huti_s2.gleft 280
+SetClientUIProp Usr_huti_s2.gtop 110
+SetClientUIProp Usr_huti_s3.gleft 280
+SetClientUIProp Usr_huti_s3.gtop 125
+SetClientUIProp Usr_huti_s4.gleft 260
+SetClientUIProp Usr_huti_s4.gtop 140
+SetClientUIProp Usr_huti_s5.gleft 280
+SetClientUIProp Usr_huti_s5.gtop 155
+SetClientUIProp Usr_huti_s6.gleft 280
+SetClientUIProp Usr_huti_s6.gtop 170
+SetClientUIProp Usr_huti_s7.gleft 260
+SetClientUIProp Usr_huti_s7.gtop 200
+SetClientUIProp Usr_huti_s8.gleft 260
+SetClientUIProp Usr_huti_s8.gtop 220
+SetClientUIProp Usr_huti_s9.gleft 330
+SetClientUIProp Usr_huti_s9.gtop 220
+SetClientUIProp Usr_huti_s10.gleft 260
+SetClientUIProp Usr_huti_s10.gtop 240
+SetClientUIProp Usr_huti_s11.gleft 280
+SetClientUIProp Usr_huti_s11.gtop 260
+SetClientUIProp Usr_huti_s12.gleft 260
+SetClientUIProp Usr_huti_s12.gtop 290
+SetClientUIProp Usr_huti_s13.gleft 280
+SetClientUIProp Usr_huti_s13.gtop 305
+SetClientUIProp Usr_huti_s14.gleft 260
+SetClientUIProp Usr_huti_s14.gtop 345
+
+SetClientUIProp Usr_huti_s1.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s1.TEXT 当前修炼获得：
+SetClientUIProp Usr_huti_s2.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s2.TEXT 神圣主属性下限+81500
+SetClientUIProp Usr_huti_s3.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s3.TEXT 神圣主属性上限+151600
+SetClientUIProp Usr_huti_s4.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s4.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s4.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s4.TEXT 已升至最高强体
+SetClientUIProp Usr_huti_s5.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s5.TEXT 神圣主属性下限+
+SetClientUIProp Usr_huti_s6.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s6.TEXT 神圣主属性上限+
+SetClientUIProp Usr_huti_s7.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s7.TEXT 强体升阶
+SetClientUIProp Usr_huti_s8.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s8.TEXT 当前阶段为：
+SetClientUIProp Usr_huti_s9.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s9.TEXT 天人合一
+SetClientUIProp Usr_huti_s10.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s10.TEXT 额外获得：
+SetClientUIProp Usr_huti_s11.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s11.TEXT 神圣主属性上限+21000
+SetClientUIProp Usr_huti_s12.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s12.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s12.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s12.TEXT 已升至最高强体阶段
+SetClientUIProp Usr_huti_s13.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s13.TEXT 神圣主属性上限+
+SetClientUIProp Usr_huti_s14.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s14.TEXT 升阶进度：
+SetClientUIProp Usr_huti_wp.visible False
+SetClientUIProp Usr_huti_sj1.visible False
+SetClientUIProp Usr_huti_sj2.visible True
+SetClientUIProp Usr_huti_sj3.visible False
+SetClientUIProp Usr_huti_sj4.visible False
+SetClientUIProp Usr_huti_sj5.visible False
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 = 10
+#ACT
+MOV <$S(强体等级属性1)> 77500
+MOV <$S(强体等级属性2)> 124100
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_10.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_10.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 9
+#ACT
+MOV <$S(强体等级属性1)> 73500
+MOV <$S(强体等级属性2)> 102900
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_9.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_9.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 8
+#ACT
+MOV <$S(强体等级属性1)> 69000
+MOV <$S(强体等级属性2)> 87000
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_8.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_8.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 7
+#ACT
+MOV <$S(强体等级属性1)> 63000
+MOV <$S(强体等级属性2)> 71700
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_7.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_7.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 6
+#ACT
+MOV <$S(强体等级属性1)> 54000
+MOV <$S(强体等级属性2)> 56400
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_6.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_6.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 5
+#ACT
+MOV <$S(强体等级属性1)> 46000
+MOV <$S(强体等级属性2)> 46600
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_5.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_5.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 4
+#ACT
+MOV <$S(强体等级属性1)> 37600
+MOV <$S(强体等级属性2)> 36800
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_4.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_4.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 3
+#ACT
+MOV <$S(强体等级属性1)> 28800
+MOV <$S(强体等级属性2)> 27400
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_3.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_3.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 2
+#ACT
+MOV <$S(强体等级属性1)> 19600
+MOV <$S(强体等级属性2)> 18000
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_2.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+SetClientUIProp Usr_huti_2.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 = 1
+#ACT
+MOV <$S(强体等级属性1)> 10000
+MOV <$S(强体等级属性2)> 9000
+SetClientUIProp Usr_huti_1.visible True
+SetClientUIProp Usr_huti_1.ImageIndex.UP 1880
+
+#IF
+CHECKVAR HUMAN 强体等级 > 0
+CHECKVAR HUMAN 强体等级 < 11
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt <$HUMAN(强体等级)> <$S(强体阶段等级)> <$S(强体需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt <$HUMAN(强体等级)> <$S(强体等级名称)> <$S(强体等级属性)>
+MOV <$N(强体等级)> <$HUMAN(强体等级)>
+INC <$N(强体等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt <$N(强体等级)> <$S(强体下级名称)> <$S(强体下级属性)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\阶段属性.txt <$HUMAN(强体等级)> <$S(强体阶段属性1)> <$S(强体阶段属性2)>
+
+MUL <$N(强体阶段属性1)> <$HUMAN(强体阶段)> <$S(强体阶段属性1)>
+MUL <$N(强体阶段属性2)> <$HUMAN(强体阶段)> <$S(强体阶段属性2)>
+INC <$N(强体阶段属性1)> <$S(强体等级属性1)>
+INC <$N(强体阶段属性2)> <$S(强体等级属性2)>
+MOV <$N(强体阶段属性3)> <$N(强体阶段属性1)>
+MOV <$N(强体阶段属性4)> <$N(强体阶段属性2)>
+INC <$N(强体阶段属性3)> <$S(强体阶段属性1)>
+INC <$N(强体阶段属性4)> <$S(强体阶段属性2)>
+
+SetClientUIProp Usr_huti_1.gleft 97
+SetClientUIProp Usr_huti_1.gtop 325
+SetClientUIProp Usr_huti_2.gleft 167
+SetClientUIProp Usr_huti_2.gtop 332
+SetClientUIProp Usr_huti_3.gleft 97
+SetClientUIProp Usr_huti_3.gtop 271
+SetClientUIProp Usr_huti_4.gleft 153
+SetClientUIProp Usr_huti_4.gtop 278
+SetClientUIProp Usr_huti_5.gleft 124
+SetClientUIProp Usr_huti_5.gtop 220
+SetClientUIProp Usr_huti_6.gleft 74
+SetClientUIProp Usr_huti_6.gtop 209
+SetClientUIProp Usr_huti_7.gleft 172
+SetClientUIProp Usr_huti_7.gtop 212
+SetClientUIProp Usr_huti_8.gleft 124
+SetClientUIProp Usr_huti_8.gtop 171
+SetClientUIProp Usr_huti_9.gleft 103
+SetClientUIProp Usr_huti_9.gtop 147
+SetClientUIProp Usr_huti_10.gleft 153
+SetClientUIProp Usr_huti_10.gtop 150
+
+SetClientUIProp Usr_huti_s1.visible True
+SetClientUIProp Usr_huti_s2.visible True
+SetClientUIProp Usr_huti_s3.visible True
+SetClientUIProp Usr_huti_s4.visible True
+SetClientUIProp Usr_huti_s5.visible True
+SetClientUIProp Usr_huti_s6.visible True
+SetClientUIProp Usr_huti_s7.visible True
+SetClientUIProp Usr_huti_s8.visible True
+SetClientUIProp Usr_huti_s9.visible True
+SetClientUIProp Usr_huti_s10.visible True
+SetClientUIProp Usr_huti_s11.visible True
+SetClientUIProp Usr_huti_s12.visible True
+SetClientUIProp Usr_huti_s13.visible True
+SetClientUIProp Usr_huti_s14.visible True
+
+SetClientUIProp Usr_huti_s1.gleft 260
+SetClientUIProp Usr_huti_s1.gtop 95
+SetClientUIProp Usr_huti_s2.gleft 280
+SetClientUIProp Usr_huti_s2.gtop 110
+SetClientUIProp Usr_huti_s3.gleft 280
+SetClientUIProp Usr_huti_s3.gtop 125
+SetClientUIProp Usr_huti_s4.gleft 260
+SetClientUIProp Usr_huti_s4.gtop 140
+SetClientUIProp Usr_huti_s5.gleft 280
+SetClientUIProp Usr_huti_s5.gtop 155
+SetClientUIProp Usr_huti_s6.gleft 280
+SetClientUIProp Usr_huti_s6.gtop 170
+SetClientUIProp Usr_huti_s7.gleft 260
+SetClientUIProp Usr_huti_s7.gtop 200
+SetClientUIProp Usr_huti_s8.gleft 260
+SetClientUIProp Usr_huti_s8.gtop 220
+SetClientUIProp Usr_huti_s9.gleft 330
+SetClientUIProp Usr_huti_s9.gtop 220
+SetClientUIProp Usr_huti_s10.gleft 260
+SetClientUIProp Usr_huti_s10.gtop 240
+SetClientUIProp Usr_huti_s11.gleft 280
+SetClientUIProp Usr_huti_s11.gtop 260
+SetClientUIProp Usr_huti_s12.gleft 260
+SetClientUIProp Usr_huti_s12.gtop 290
+SetClientUIProp Usr_huti_s13.gleft 280
+SetClientUIProp Usr_huti_s13.gtop 305
+SetClientUIProp Usr_huti_s14.gleft 260
+SetClientUIProp Usr_huti_s14.gtop 345
+
+SetClientUIProp Usr_huti_s1.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s1.TEXT 当前修炼获得：
+SetClientUIProp Usr_huti_s2.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s2.TEXT 神圣主属性下限+<$N(强体阶段属性1)>
+SetClientUIProp Usr_huti_s3.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s3.TEXT 神圣主属性上限+<$N(强体阶段属性2)>
+SetClientUIProp Usr_huti_s4.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s4.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s4.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s4.TEXT 下一级：
+SetClientUIProp Usr_huti_s5.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s5.TEXT 神圣主属性下限+<$N(强体阶段属性3)>
+SetClientUIProp Usr_huti_s6.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s6.TEXT 神圣主属性上限+<$N(强体阶段属性4)>
+SetClientUIProp Usr_huti_s7.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s7.TEXT 强体升阶
+SetClientUIProp Usr_huti_s8.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s8.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s8.TEXT 当前阶段为：
+SetClientUIProp Usr_huti_s9.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s9.TEXT <$S(强体等级名称)>
+SetClientUIProp Usr_huti_s10.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s10.TEXT 额外获得：
+SetClientUIProp Usr_huti_s11.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s11.TEXT 神圣主属性上限+<$S(强体等级属性)>
+SetClientUIProp Usr_huti_s12.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s12.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s12.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s12.TEXT 下一阶：<$S(强体下级名称)>
+SetClientUIProp Usr_huti_s13.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s13.TEXT 神圣主属性上限+<$S(强体下级属性)>
+SetClientUIProp Usr_huti_s14.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s14.TEXT 升阶进度：<$HUMAN(强体阶段)>/<$S(强体阶段等级)>
+
+SetClientUIProp Usr_huti_wp.visible True
+SetClientUIProp Usr_huti_wp.ImageIndex.Imagelibtype UI_N
+SetClientUIProp Usr_huti_wp.ImageIndex.UP 1893
+SetClientUIProp Usr_huti_wp.TEXT 圣魂丹　0/<$S(强体需求数量)>
+SetClientUIProp Usr_huti_sj1.visible False
+SetClientUIProp Usr_huti_sj2.visible True
+SetClientUIProp Usr_huti_sj3.visible False
+SetClientUIProp Usr_huti_sj4.visible False
+SetClientUIProp Usr_huti_sj5.visible False
+
+BREAK
+
+#IF
+CHECKVAR HUMAN 强体等级 < 1
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\等级属性.txt 1 <$S(强体下级名称)> <$S(强体下级属性)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\强体\升级需求.txt 1 <$S(强体阶段等级)> <$S(强体需求数量)>
+MUL <$N(强体阶段属性1)> <$HUMAN(强体阶段)> 50
+MUL <$N(强体阶段属性2)> <$HUMAN(强体阶段)> 45
+MOV <$N(强体阶段属性3)> <$N(强体阶段属性1)>
+MOV <$N(强体阶段属性4)> <$N(强体阶段属性2)>
+INC <$N(强体阶段属性3)> 50
+INC <$N(强体阶段属性4)> 45
+
+SetClientUIProp Usr_huti_1.visible False
+SetClientUIProp Usr_huti_2.visible False
+SetClientUIProp Usr_huti_3.visible False
+SetClientUIProp Usr_huti_4.visible False
+SetClientUIProp Usr_huti_5.visible False
+SetClientUIProp Usr_huti_6.visible False
+SetClientUIProp Usr_huti_7.visible False
+SetClientUIProp Usr_huti_8.visible False
+SetClientUIProp Usr_huti_9.visible False
+SetClientUIProp Usr_huti_10.visible False
+SetClientUIProp Usr_huti_11.visible False
+
+SetClientUIProp Usr_huti_s1.visible True
+SetClientUIProp Usr_huti_s2.visible True
+SetClientUIProp Usr_huti_s3.visible True
+SetClientUIProp Usr_huti_s4.visible True
+SetClientUIProp Usr_huti_s5.visible True
+SetClientUIProp Usr_huti_s6.visible True
+SetClientUIProp Usr_huti_s7.visible True
+SetClientUIProp Usr_huti_s8.visible True
+SetClientUIProp Usr_huti_s9.visible False
+SetClientUIProp Usr_huti_s10.visible False
+SetClientUIProp Usr_huti_s11.visible False
+SetClientUIProp Usr_huti_s12.visible True
+SetClientUIProp Usr_huti_s13.visible True
+SetClientUIProp Usr_huti_s14.visible True
+
+SetClientUIProp Usr_huti_s1.gleft 260
+SetClientUIProp Usr_huti_s1.gtop 95
+SetClientUIProp Usr_huti_s2.gleft 280
+SetClientUIProp Usr_huti_s2.gtop 110
+SetClientUIProp Usr_huti_s3.gleft 280
+SetClientUIProp Usr_huti_s3.gtop 125
+SetClientUIProp Usr_huti_s4.gleft 260
+SetClientUIProp Usr_huti_s4.gtop 140
+SetClientUIProp Usr_huti_s5.gleft 280
+SetClientUIProp Usr_huti_s5.gtop 155
+SetClientUIProp Usr_huti_s6.gleft 280
+SetClientUIProp Usr_huti_s6.gtop 170
+SetClientUIProp Usr_huti_s7.gleft 260
+SetClientUIProp Usr_huti_s7.gtop 200
+SetClientUIProp Usr_huti_s8.gleft 260
+SetClientUIProp Usr_huti_s8.gtop 220
+SetClientUIProp Usr_huti_s9.gleft 330
+SetClientUIProp Usr_huti_s9.gtop 220
+SetClientUIProp Usr_huti_s10.gleft 260
+SetClientUIProp Usr_huti_s10.gtop 240
+SetClientUIProp Usr_huti_s11.gleft 280
+SetClientUIProp Usr_huti_s11.gtop 260
+SetClientUIProp Usr_huti_s12.gleft 260
+SetClientUIProp Usr_huti_s12.gtop 290
+SetClientUIProp Usr_huti_s13.gleft 280
+SetClientUIProp Usr_huti_s13.gtop 305
+SetClientUIProp Usr_huti_s14.gleft 260
+SetClientUIProp Usr_huti_s14.gtop 345
+
+SetClientUIProp Usr_huti_s1.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s1.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s1.TEXT 当前修炼获得：
+SetClientUIProp Usr_huti_s2.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s2.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s2.TEXT 神圣主属性下限+<$N(强体阶段属性1)>
+SetClientUIProp Usr_huti_s3.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s3.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s3.TEXT 神圣主属性上限+<$N(强体阶段属性2)>
+SetClientUIProp Usr_huti_s4.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s4.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s4.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s4.TEXT 下一级：
+SetClientUIProp Usr_huti_s5.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s5.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s5.TEXT 神圣主属性下限+<$N(强体阶段属性3)>
+SetClientUIProp Usr_huti_s6.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s6.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s6.TEXT 神圣主属性上限+<$N(强体阶段属性4)>
+SetClientUIProp Usr_huti_s7.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s7.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s7.TEXT 强体升阶
+SetClientUIProp Usr_huti_s8.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s8.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s8.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s8.TEXT 当前无任何强体阶段
+SetClientUIProp Usr_huti_s9.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s9.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s9.TEXT 　
+SetClientUIProp Usr_huti_s10.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s10.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s10.TEXT 额外获得：
+SetClientUIProp Usr_huti_s11.captioncolors.UP #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.HOT #FFFFFF
+SetClientUIProp Usr_huti_s11.captioncolors.DOWN #FFFFFF
+SetClientUIProp Usr_huti_s11.TEXT 神圣主属性上限+0
+SetClientUIProp Usr_huti_s12.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s12.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s12.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s12.TEXT 下一阶：<$S(强体下级名称)>
+SetClientUIProp Usr_huti_s13.captioncolors.UP #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.HOT #FF0000
+SetClientUIProp Usr_huti_s13.captioncolors.DOWN #FF0000
+SetClientUIProp Usr_huti_s13.TEXT 神圣主属性上限+<$S(强体下级属性)>
+SetClientUIProp Usr_huti_s14.captioncolors.UP #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.HOT #FFFF00
+SetClientUIProp Usr_huti_s14.captioncolors.DOWN #FFFF00
+SetClientUIProp Usr_huti_s14.TEXT 升阶进度：<$HUMAN(强体阶段)>/<$S(强体阶段等级)>
+
+SetClientUIProp Usr_huti_wp.visible True
+SetClientUIProp Usr_huti_wp.ImageIndex.Imagelibtype UI_N
+SetClientUIProp Usr_huti_wp.ImageIndex.UP 1893
+SetClientUIProp Usr_huti_wp.TEXT 圣魂丹　0/<$S(强体需求数量)>
+SetClientUIProp Usr_huti_sj1.visible False
+SetClientUIProp Usr_huti_sj2.visible True
+SetClientUIProp Usr_huti_sj3.visible False
+SetClientUIProp Usr_huti_sj4.visible False
+SetClientUIProp Usr_huti_sj5.visible False
+BREAK
+}

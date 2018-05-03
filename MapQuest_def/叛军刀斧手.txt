@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 寻宝任务 = 1
+CHECKVAR HUMAN 叛军刀斧手 < 10
+#ACT
+CALCVAR HUMAN 叛军刀斧手 + 1
+savevar human 叛军刀斧手 ..\QuestDiary\雪花制作\叛军刀斧手.txt
+SENDMSG 7 你已经杀死了<$human(叛军刀斧手)>/10个叛军刀斧手！
+
+#IF
+CHECKVAR HUMAN 寻宝任务 = 1
+CHECKVAR HUMAN 叛军刀斧手 = 10
+#act
+SENDMSG 7 你已经杀死了<$human(叛军刀斧手)>/10个叛军刀斧手,赶紧去领取奖励吧！

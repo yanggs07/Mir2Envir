@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 除魔内容 = 1
+CHECKVAR HUMAN 比奇杀鸡 < 10
+#ACT
+CALCVAR HUMAN 比奇杀鸡 + 1
+savevar human 比奇杀鸡 ..\QuestDiary\雪花制作\比奇杀鸡.txt
+SENDMSG 7 你已经杀死了<$human(比奇杀鸡)>/10个鸡！
+
+#IF
+CHECKVAR HUMAN 除魔内容 = 1
+CHECKVAR HUMAN 比奇杀鸡 = 10
+#act
+SENDMSG 7 你已经杀死了<$human(比奇杀鸡)>/10个鸡,赶紧去领取奖励吧！

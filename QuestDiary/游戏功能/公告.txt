@@ -1,0 +1,161 @@
+[@公告信息]
+{
+#IF
+RANDOM 15
+#ACT
+GOTO @公告1
+BREAK
+#IF
+RANDOM 15
+#ACT
+GOTO @公告2
+BREAK
+#IF
+RANDOM 15
+#ACT
+GOTO @公告3
+BREAK
+#IF
+RANDOM 15
+#ACT
+GOTO @公告4
+BREAK
+#IF
+RANDOM 15
+#ACT
+GOTO @公告5
+BREAK
+#IF
+#ACT
+GOTO @公告信息
+
+[@公告5]
+#ACT
+SENDMSG 0 邪眼升级凭证礼包激情上线！
+DELAYGOTO 5000 @公告51
+BREAK
+
+[@公告51]
+#ACT
+SENDMSG 0 1000元宝即可获得超值火龙果奖励！
+DELAYGOTO 5000 @公告52
+BREAK
+
+[@公告52]
+#ACT
+SENDMSG 0 还有机会获得邪眼升级凭证惊喜大奖！
+DELAYGOTO 5000 @公告53
+BREAK
+
+[@公告53]
+#ACT
+SENDMSG 0 快去盟重活动大使处抢购吧！
+BREAK
+;====================
+
+
+
+
+[@公告4]
+#ACT
+SENDMSG 0 金蛇武器豪华礼包激情上线！
+DELAYGOTO 5000 @公告41
+BREAK
+
+[@公告41]
+#ACT
+SENDMSG 0 2000元宝即可获得超值火山赤铜或白日门火龙果！
+DELAYGOTO 5000 @公告42
+BREAK
+
+[@公告42]
+#ACT
+SENDMSG 0 甚至金蛇武器（可选择金蛇战刃、金蛇权杖或金蛇宝扇）！
+DELAYGOTO 5000 @公告43
+BREAK
+
+[@公告43]
+#ACT
+SENDMSG 0 快去盟重活动大使处抢购吧！
+BREAK
+;====================
+
+
+[@公告3]
+#ACT
+SENDMSG 0 七级军鼓礼包火热上线！
+DELAYGOTO 5000 @公告31
+BREAK
+
+[@公告31]
+#ACT
+SENDMSG 0 2000元宝即可获得高级军鼓及大量烟花！
+DELAYGOTO 5000 @公告32
+BREAK
+
+[@公告32]
+#ACT
+SENDMSG 0 每开启满200个礼包更可获得1个七级军鼓(战)！
+DELAYGOTO 5000 @公告33
+BREAK
+
+[@公告33]
+#ACT
+SENDMSG 0 快去盟重活动大使处抢购吧！
+BREAK
+;====================
+[@公告2]
+#ACT
+SENDMSG 0 英雄强化礼包激情上线！
+DELAYGOTO 5000 @公告21
+BREAK
+
+[@公告21]
+#ACT
+SENDMSG 0 1000元宝即可获得超值白日门火龙果或大量玄铁！
+DELAYGOTO 5000 @公告22
+BREAK
+
+[@公告22]
+#ACT
+SENDMSG 0 更有机会获得白日门龙神凭证、乾坤腰带和奖励凭证87号！
+DELAYGOTO 5000 @公告23
+BREAK
+
+[@公告23]
+#ACT
+SENDMSG 0 超多惊喜等您开启，祝您实力大获提升！
+DELAYGOTO 5000 @公告24
+BREAK
+
+[@公告24]
+#ACT
+SENDMSG 0快去盟重活动大使处抢购吧！
+BREAK
+;====================
+[@公告1]
+#ACT
+SENDMSG 0 精选特惠礼包火热上线，礼包共有三档可供选择！
+DELAYGOTO 5000 @公告11
+BREAK
+
+[@公告11]
+#ACT
+SENDMSG 0 金色属性凭证、10重贤者祝福证、大量白日门火龙果等你来拿！
+DELAYGOTO 5000 @公告12
+BREAK
+
+[@公告12]
+#ACT
+SENDMSG 0 礼包越高档获得奖励越超值，每档礼包每人各限购2个！
+DELAYGOTO 5000 @公告13
+BREAK
+
+[@公告13]
+#ACT
+SENDMSG 0 赶快去盟重活动大使处点击精选特惠礼包抢购吧！
+BREAK
+}
+
+
+

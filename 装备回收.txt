@@ -1,0 +1,414 @@
+[@装备回收]
+{
+#IF
+#ACT
+bigmain 2
+#SAY
+你是不是有多余的装备不知道放哪里好呢？\
+别担心，只要你有多余的装备，都可以在我这里换取一定\
+数量的守护积分<(守护积分可以在天机老人处兑换装备和元宝)>\	\
+<主宰类装备回收/@回收14>   <每件传奇装备回收可获得 守护积分:5,经验:1亿>\
+<传奇类装备回收/@回收1>   <每件传奇装备回收可获得 守护积分:10,经验:1亿>\
+<皓月类装备回收/@回收2>   <每件传奇装备回收可获得 守护积分:15,经验:1亿>\
+<皓天类装备回收/@回收3>   <每件传奇装备回收可获得 守护积分:20,经验:1亿>\
+<皓宇类装备回收/@回收4>   <每件传奇装备回收可获得 守护积分:25,经验:1亿>\
+<皓尊类装备回收/@回收5>   <每件传奇装备回收可获得 守护积分:30,经验:1亿>\
+<神龙类装备回收/@回收6>   <每件传奇装备回收可获得 守护积分:35,经验:1亿>\
+<热血类装备回收/@回收7>   <每件传奇装备回收可获得 守护积分:40,经验:1亿>\
+<真龙类装备回收/@回收8>   <每件传奇装备回收可获得 守护积分:45,经验:2亿>\
+<天成类装备回收/@回收9>   <每件传奇装备回收可获得 守护积分:50,经验:2亿>\
+<金蛇类装备回收/@回收10>   <每件传奇装备回收可获得 守护积分:55,经验:2亿>\
+<灵蛇类装备回收/@回收11>   <每件传奇装备回收可获得 守护积分:60,经验:2亿>\
+<神蛇类装备回收/@回收12>   <每件传奇装备回收可获得 守护积分:70,经验:2亿>\
+<一键回收所有装备/@回收13>\	\
+
+
+
+
+
+
+
+
+<离开/@EXIT>
+
+[@回收14]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\主宰.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收14
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+
+[@回收1]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 10
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收1
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收2]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 15
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+CHANGEEXP + 100000000
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+GOTO @回收2
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+[@回收3]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 20
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收3
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收4]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 25
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收4
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收5]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 30
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收5
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收6]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 35
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收6
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收7]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 40
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收7
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收8]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 45
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回收8
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收9]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天成.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 50
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回收9
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+[@回收10]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 55
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回收10
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+
+[@回收11]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 60
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回收11
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+[@回收12]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 70
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回收12
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@回收13]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 10
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回收13
+#ELSEACT
+goto @回2
+
+[@回2]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 15
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回2
+#ELSEACT
+goto @回3
+
+[@回3]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 20
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回3
+#ELSEACT
+goto @回4
+
+
+[@回4]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 25
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回4
+#ELSEACT
+goto @回5
+
+[@回5]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 30
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回5
+#ELSEACT
+goto @回6
+
+[@回6]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 35
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回6
+#ELSEACT
+goto @回7
+
+[@回7]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 40
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回7
+#ELSEACT
+goto @回8
+
+[@回8]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 45
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回8
+#ELSEACT
+goto @回9
+
+[@回9]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天成.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 50
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回9
+#ELSEACT
+goto @回10
+
+[@回10]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 55
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回10
+#ELSEACT
+goto @回11
+
+
+
+[@回11]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 60
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回11
+#ELSEACT
+goto @回12
+
+
+[@回12]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 70
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 200000000
+GOTO @回12
+#ELSEACT
+goto @回14
+
+
+
+[@回14]
+#IF
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\主宰.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 100000000
+GOTO @回14
+#ELSEACT
+SENDMSG 7 提示：您包裹内没有可回收的装备！
+
+
+}
+
+
+
+
+

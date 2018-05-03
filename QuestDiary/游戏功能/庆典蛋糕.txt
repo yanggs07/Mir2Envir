@@ -1,0 +1,114 @@
+[@«Ïµ‰µ∞∏‚]
+{
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+SENDMSG 0 [<$USERNAME>]‘⁄:%m%x:%y¥¶∑≈—Ãª®°¢¥Ûº“øÏ»•–¿…Õ≈∂°£
+Delaygoto 2000 @«Ïµ‰µ∞∏‚1
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚1]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+Delaygoto 2000 @«Ïµ‰µ∞∏‚2
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚2]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+Delaygoto 2000 @«Ïµ‰µ∞∏‚3
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚3]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+Delaygoto 2000 @«Ïµ‰µ∞∏‚4
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚4]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+Delaygoto 2000 @«Ïµ‰µ∞∏‚5
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚5]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+Delaygoto 2000 @«Ïµ‰µ∞∏‚6
+#ELSEAct
+MOV M3 0
+[@«Ïµ‰µ∞∏‚6]
+#IF
+small M3 60
+#Act
+INC M3 2
+Gmexecute showeffect 79
+Gmexecute showeffect 80
+Gmexecute showeffect 81
+Gmexecute showeffect 82
+Gmexecute showeffect 83
+Gmexecute showeffect 84
+Gmexecute showeffect 85
+Gmexecute showeffect 86
+#ELSEAct
+MOV M3 0
+}

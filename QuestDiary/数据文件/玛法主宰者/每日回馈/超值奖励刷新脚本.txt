@@ -1,0 +1,12 @@
+[@超值购买商品随机]
+{
+#IF
+#ACT
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A660
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A661
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A662
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A663
+GetRandomName ..\QuestDiary\数据文件\玛法主宰者\每日回馈\超值奖励文字.txt A664
+BREAK
+}
+

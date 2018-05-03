@@ -1,0 +1,75 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 0
+NoDropItemRate = 35
+Gender = 0
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=135
+Hair = 2
+;等级
+Level =335
+DropUseItem=1
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill = 破魂斩,烈火剑法,四级烈火,半月弯刀,圆月弯刀,野蛮冲撞,四级刺杀剑术,攻杀剑术,狮子吼,龙影剑法,护体神盾,血魄一击(战),唯我独尊,召唤巨魔,神龙附体,神龙神杖辟地,酒气护体,唯我独尊,龙影剑法,纵横剑术,逐日剑法,
+ProtectStatus=1
+InitItems = 
+[MonSay]
+0=呦呵！和我动手！不想活了？
+1=来啊！来点激情！
+2=是爷们来盟重药店激情
+3=啥时可以过来？
+4=没事表打搅我
+5=我正在做任务
+6=呵呵
+7=我操！你想死是吧
+8=天哪！你太牛X了
+9=高手总是像我一样的寂寞
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=皓月神甲
+;武器
+UseItems1=主宰神剑
+;照明物
+UseItems2=皓月勋章
+;项链
+UseItems3=皓月项链
+;头盔
+UseItems4=皓月头盔
+;左手镯
+UseItems5=皓月护腕
+;右手镯
+UseItems6=皓月护腕
+;左戒指
+UseItems7=皓月戒指
+;右戒指
+UseItems8=皓月戒指
+;物品
+UseItems9=超级护身符
+;腰带
+UseItems10=皓月腰带
+;鞋子
+UseItems11=皓月靴子
+;宝石
+UseItems12=魔血石(大)
+;斗笠
+UseItems13=皓月面具
+
+
+
+
+
+
+
+
+
+
+
+
+
+

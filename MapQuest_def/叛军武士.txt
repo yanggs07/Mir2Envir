@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 寻宝任务 = 3
+CHECKVAR HUMAN 叛军武士 < 3
+#ACT
+CALCVAR HUMAN 叛军武士 + 1
+savevar human 叛军武士 ..\QuestDiary\雪花制作\叛军武士.txt
+SENDMSG 7 你已经杀死了<$human(叛军武士)>/3个叛军武士！
+
+#IF
+CHECKVAR HUMAN 寻宝任务 = 3
+CHECKVAR HUMAN 叛军武士 = 3
+#act
+SENDMSG 7 你已经杀死了<$human(叛军武士)>/3个叛军武士,赶紧去领取奖励吧！

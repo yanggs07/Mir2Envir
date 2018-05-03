@@ -1,0 +1,789 @@
+[@主号神佑袋脚本]
+{
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+MOV <$S(显示神佑A1)> <{i=0;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|子鼠　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=88}/@取下神佑A1>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A1)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+MOV <$S(显示神佑A2)> <{i=1;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|丑牛　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=88}/@取下神佑A2>
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A2)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+MOV <$S(显示神佑A3)> <{i=2;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|寅虎　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=88}/@取下神佑A3> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A3)>
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+MOV <$S(显示神佑A4)> <{i=3;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|卯兔　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=88}/@取下神佑A4> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A4)>
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+MOV <$S(显示神佑A5)> <{i=4;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|辰龙　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=132}/@取下神佑A5> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A5)>
+
+
+
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+MOV <$S(显示神佑A6)> <{i=5;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|巳蛇　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=132}/@取下神佑A6> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A6)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+MOV <$S(显示神佑A7)> <{i=6;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|午马　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=132}/@取下神佑A7> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A7)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+MOV <$S(显示神佑A8)> <{i=7;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|未羊　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=132}/@取下神佑A8> 
+
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A8)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+MOV <$S(显示神佑A9)> <{i=8;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|申猴　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=46;y=178}/@取下神佑A9> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A9)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+MOV <$S(显示神佑A10)> <{i=9;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|酉鸡　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=90;y=178}/@取下神佑A10> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A10)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+MOV <$S(显示神佑A11)> <{i=10;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|戌狗　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=136;y=178}/@取下神佑A11> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A11)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+MOV <$S(显示神佑A12)> <{i=11;li=77;ht=当前佩带神佑数量：<$HUMAN(主号神佑数量)>件|　|亥猪　（单件属性）|主属性+500|魔血值+500|防御上下限+500|魔御上下限+500|神圣主属性上限+500|神圣主属性下限+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐12生肖触发1.1倍属性;htfc=254;x=181;y=178}/@取下神佑A12> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A12)>
+
+#if
+CHECKVAR HUMAN 主号神佑数量 > 11
+#act
+MOV <$S(显示神佑A313)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑A313)> <{s=（未激活）;fc=58;x=150;y=250}>
+
+
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑A1)>\
+<$S(显示神佑A2)>\
+<$S(显示神佑A3)>\
+<$S(显示神佑A4)>\
+<$S(显示神佑A5)>\
+<$S(显示神佑A6)>\
+<$S(显示神佑A7)>\
+<$S(显示神佑A8)>\
+<$S(显示神佑A9)>\
+<$S(显示神佑A10)>\
+<$S(显示神佑A11)>\
+<$S(显示神佑A12)>\
+<{i=2144;li=22;x=80;y=225;s=极品神佑袋}/@主号神佑袋脚本1>
+<{s=神佑袋套装状态：;fc=243;x=50;y=250}><$S(显示神佑A313)>
+
+
+
+
+
+
+[@取下神佑A1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A1.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A1.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 子鼠 1
+SENDMSG 7 提示：你已取下了“子鼠”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A2]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A2.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A2.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 丑牛 1
+SENDMSG 7 提示：你已取下了“丑牛”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A3]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A3.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A3.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 寅虎 1
+SENDMSG 7 提示：你已取下了“寅虎”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A4]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A4.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A4.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 卯兔 1
+SENDMSG 7 提示：你已取下了“卯兔”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A5]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A5.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A5.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 辰龙 1
+SENDMSG 7 提示：你已取下了“辰龙”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A6]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A6.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A6.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 巳蛇 1
+SENDMSG 7 提示：你已取下了“巳蛇”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+[@取下神佑A7]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A7.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A7.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 午马 1
+SENDMSG 7 提示：你已取下了“午马”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+
+
+
+[@取下神佑A8]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A8.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A8.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 未羊 1
+SENDMSG 7 提示：你已取下了“未羊”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+
+
+[@取下神佑A9]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A9.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A9.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 申猴 1
+SENDMSG 7 提示：你已取下了“申猴”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+
+
+[@取下神佑A10]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A10.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A10.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 酉鸡 1
+SENDMSG 7 提示：你已取下了“酉鸡”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+[@取下神佑A11]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A11.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A11.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 戌狗 1
+SENDMSG 7 提示：你已取下了“戌狗”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+
+
+
+[@取下神佑A12]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A12.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A12.txt
+CALCVAR HUMAN 主号神佑数量 - 1
+SAVEVAR HUMAN 主号神佑数量 ..\QuestDiary\活动次数\主号神佑数量.txt
+GIVE 亥猪 1
+SENDMSG 7 提示：你已取下了“亥猪”！
+CHANGEHUMABILITY 21 - 500 72000
+CHANGEHUMABILITY 17 - 500 72000
+CHANGEHUMABILITY 12 - 500 72000
+CHANGEHUMABILITY 13 - 500 72000
+CHANGEHUMABILITY 23 - 500 72000
+CHANGEHUMABILITY 20 - 500 72000
+GOTO @主号神佑袋脚本
+Break
+
+
+
+
+
+[@主号神佑袋脚本1]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+MOV <$S(显示神佑A13)> <{i=1;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品丑牛　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=88}/@取下神佑A13> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A13)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+MOV <$S(显示神佑A14)> <{i=2;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品寅虎　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=88}/@取下神佑A14> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A14)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+MOV <$S(显示神佑A15)> <{i=3;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品卯兔　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=88}/@取下神佑A15> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A15)>
+
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+MOV <$S(显示神佑A16)> <{i=4;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品辰龙　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=132}/@取下神佑A16> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A16)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+MOV <$S(显示神佑A17)> <{i=5;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品巳蛇　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=132}/@取下神佑A17> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A17)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+MOV <$S(显示神佑A18)> <{i=6;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品午马　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=132}/@取下神佑A18> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A18)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+MOV <$S(显示神佑A19)> <{i=7;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品未羊　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=133}/@取下神佑A19> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A19)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+MOV <$S(显示神佑A20)> <{i=8;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品申猴　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=178}/@取下神佑A20> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A20)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+MOV <$S(显示神佑A21)> <{i=9;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品酉鸡　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=90;y=178}/@取下神佑A21> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A21)>
+
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+MOV <$S(显示神佑A22)> <{i=10;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品戌狗　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=136;y=178}/@取下神佑A22> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A22)>
+
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+MOV <$S(显示神佑A23)> <{i=11;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品亥猪　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=181;y=178}/@取下神佑A23> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A23)>
+
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+MOV <$S(显示神佑A24)> <{i=0;li=77;ht=当前佩带极品神佑数量：<$HUMAN(主号神佑数量1)>件|　|极品子鼠　（单件属性）||主属性+2000|魔血值+2000|防御上下限+1500|魔御上下限+1500|神圣主属性上限+2000|神圣主属性下限+2000|神圣防御+500|　|可镶嵌12生肖吉祥|饰物，可增加灵佑|点上限，镶后可戴|可取|　|集齐极品12生肖触发1.3倍属性;htfc=250;x=46;y=88}/@取下神佑A24> 
+#OR
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+#ELSEACT
+MOV <$S(显示神佑A24)>
+
+
+
+
+#if
+CHECKVAR HUMAN 主号神佑数量1 > 11
+#act
+MOV <$S(显示神佑A25)> <{s=（已激活）;fc=250;x=150;y=250}>
+#ELSEACT
+MOV <$S(显示神佑A25)> <{s=（未激活）;fc=58;x=150;y=250}>
+#if
+#act
+OPENMERCHANTDLG 52|372|1|142|474|0|200|100|1|209|25
+#SAY
+<$S(显示神佑A24)>\
+<$S(显示神佑A13)>\
+<$S(显示神佑A14)>\
+<$S(显示神佑A15)>\
+<$S(显示神佑A16)>\
+<$S(显示神佑A17)>\
+<$S(显示神佑A18)>\
+<$S(显示神佑A19)>\
+<$S(显示神佑A20)>\
+<$S(显示神佑A21)>\
+<$S(显示神佑A22)>\
+<$S(显示神佑A23)>\
+<{i=2144;li=22;x=80;y=225;s=神佑袋}/@主号神佑袋脚本>
+<{s=极品神佑套装状态：;fc=243;x=50;y=250}><$S(显示神佑A25)>
+
+
+
+[@取下神佑A24]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A24.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A24.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品子鼠 1
+SENDMSG 7 提示：你已取下了“极品子鼠”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A13]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A13.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A13.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品丑牛 1
+SENDMSG 7 提示：你已取下了“极品丑牛”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A14]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A14.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A14.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品寅虎 1
+SENDMSG 7 提示：你已取下了“极品寅虎”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A15]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A15.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A15.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品卯兔 1
+SENDMSG 7 提示：你已取下了“极品卯兔”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A16]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A16.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A16.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品辰龙 1
+SENDMSG 7 提示：你已取下了“极品辰龙”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A17]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A17.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A17.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品巳蛇 1
+SENDMSG 7 提示：你已取下了“极品巳蛇”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+[@取下神佑A18]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A18.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A18.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品午马 1
+SENDMSG 7 提示：你已取下了“极品午马”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+[@取下神佑A19]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A19.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A19.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品未羊 1
+SENDMSG 7 提示：你已取下了“极品未羊”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+[@取下神佑A20]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A20.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A20.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品申猴 1
+SENDMSG 7 提示：你已取下了“极品申猴”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+
+
+[@取下神佑A21]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A21.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A21.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品酉鸡 1
+SENDMSG 7 提示：你已取下了“极品酉鸡”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+
+[@取下神佑A22]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A22.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A22.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品戌狗 1
+SENDMSG 7 提示：你已取下了“极品戌狗”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+[@取下神佑A23]
+#IF
+Checknamelist ..\QuestDiary\活动次数\神佑A23.txt
+#ACT
+DelNameList ..\QuestDiary\活动次数\神佑A23.txt
+CALCVAR HUMAN 主号神佑数量1 - 1
+SAVEVAR HUMAN 主号神佑数量1 ..\QuestDiary\活动次数\主号神佑数量1.txt
+GIVE 极品亥猪 1
+SENDMSG 7 提示：你已取下了“极品亥猪”！
+CHANGEHUMABILITY 21 - 2000 72000
+CHANGEHUMABILITY 17 - 2000 72000
+CHANGEHUMABILITY 12 - 1500 72000
+CHANGEHUMABILITY 13 - 1500 72000
+CHANGEHUMABILITY 23 - 2000 72000
+CHANGEHUMABILITY 20 - 8000 72000
+CHANGEHUMABILITY 22 - 500 72000
+GOTO @主号神佑袋脚本1
+Break
+
+
+
+
+
+
+}

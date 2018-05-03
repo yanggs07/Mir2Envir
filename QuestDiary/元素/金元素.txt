@@ -1,0 +1,102 @@
+[@金元素升级]
+{
+
+#if
+CHECK  [272] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制金元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=金元素Lv3;fc=251;x=120;y=120}>
+<{s=已满级;i=311;li=52;ih=312;id=313;x=90;y=250}/@exit>
+#ACT
+break
+
+#if
+CHECK  [271] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制金元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=金元素Lv2;fc=251;x=120;y=120}>
+<{s=当前获得：500点主属性;fc=255;x=50;y=140}>
+<{s=升级可提升：500点主属性;fc=255;x=50;y=160}>
+<{s=炼制到Lv3，需要300元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级>
+#ACT
+break
+
+#if
+CHECK  [270] 1
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制金元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=金元素Lv1;fc=251;x=120;y=120}>
+<{s=当前获得：200点主属性;fc=255;x=50;y=140}>
+<{s=升级可提升：300点主属性;fc=255;x=50;y=160}>
+<{s=炼制到Lv2，需要200元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级>
+#ACT
+break
+
+
+
+#if
+CHECK  [270] 0
+#act
+OPENMERCHANTDLG 52|1962|1|0|0|4|-120|-50|1|240|25
+#say
+<{s=炼制金元素;fc=251;bold=1;bold=255;f.bd=3;x=50;y=80}>
+<{s=元素等级：;fc=250;x=50;y=120}><{s=金元素Lv0;fc=251;x=120;y=120}>
+<{s=当前获得：0点主属性;fc=255;x=50;y=140}>
+<{s=升级可提升：200点主属性;fc=255;x=50;y=160}>
+<{s=炼制到Lv1，需要100元素石;fc=250;x=50;y=200}>
+<{s=修  炼;i=311;li=52;ih=312;id=313;x=90;y=250}/@升级>
+#ACT
+break
+
+
+
+
+
+[@升级]
+#if
+CHECK [271] 1
+;CHECKKIMNEEDLE 元素石 300
+#ACT
+SET [272] 1
+TAKEKIMNEEDLE 元素石 300
+ChangeHumAbility 21 + 500 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将金元素修炼到Lv3.获得500点主属性... 1 10 3
+break
+CLOSE
+
+
+
+#if
+CHECK [270] 1
+CHECKKIMNEEDLE 元素石 200
+#ACT
+SET [271] 1
+TAKEKIMNEEDLE 元素石 200
+ChangeHumAbility 21 + 300 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将金元素修炼到Lv2.获得300点主属性... 1 10 3
+break
+CLOSE
+
+
+#if
+CHECKKIMNEEDLE 元素石 100
+CHECK  [270] 0
+#ACT
+SET [270] 1
+TAKEKIMNEEDLE 元素石 100
+ChangeHumAbility 21 + 200 65535
+SendCenterMsg  251 249 恭喜【<$USERNAME>】将金元素修炼到Lv1.获得200点主属性... 1 10 3
+CLOSE
+#ELSEACT
+messagebox 你没有足够的元素石！
+break
+CLOSE
+}

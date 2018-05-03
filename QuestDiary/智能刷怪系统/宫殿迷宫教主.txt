@@ -1,0 +1,61 @@
+[@宫殿迷宫教主]
+{
+#IF
+CHECKMAPMOBCOUNT D5073B  48 47 宫殿迷宫教主 > 0 300
+#ACT
+BREAK
+#IF
+CHECKMAPMOBCOUNT D5073A  48 47 宫殿迷宫教主 > 0 300
+#ACT
+BREAK
+#IF
+CHECKMAPMOBCOUNT D5072B  48 47 宫殿迷宫教主 > 0 300
+#ACT
+BREAK
+#IF
+CHECKMAPMOBCOUNT D5072A  48 47 宫殿迷宫教主 > 0 300
+#ACT
+BREAK
+#IF
+#ACT
+MOV G500 120
+GOTO @开始刷迷宫教主
+BREAK
+
+
+[@开始刷迷宫教主]
+#IF
+RANDOM 4
+#ACT
+MONGENEX D5073B 50 50 宫殿迷宫教主|0|242 200 1
+SENDMSG 0 据悉：“宫殿迷宫教主”出现在地图：宫殿迷宫一层东
+BREAK
+#IF
+RANDOM 4
+#ACT
+MONGENEX D5073A 50 50 宫殿迷宫教主|0|242 200 1
+SENDMSG 0 据悉：“宫殿迷宫教主”出现在地图：宫殿迷宫一层西
+BREAK
+#IF
+RANDOM 4
+#ACT
+MONGENEX D5072B 50 50 宫殿迷宫教主|0|242 200 1
+SENDMSG 0 据悉：“宫殿迷宫教主”出现在地图：宫殿迷宫一层南
+BREAK
+#IF
+RANDOM 4
+#ACT
+MONGENEX D5072A 50 50 宫殿迷宫教主|0|242 200 1
+SENDMSG 0 据悉：“宫殿迷宫教主”出现在地图：宫殿迷宫一层北
+BREAK
+#IF
+#ACT
+GOTO @开始刷迷宫教主
+BREAK
+
+
+
+
+
+
+}

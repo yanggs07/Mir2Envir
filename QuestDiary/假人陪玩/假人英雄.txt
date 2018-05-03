@@ -1,0 +1,10 @@
+[@¼ÙÈËÕÐÓ¢ÐÛ]
+{
+#IF
+ISAI
+CHECKLEVELEX > 40
+#ACT
+RECALLHERO
+AISTART
+BREAK
+}

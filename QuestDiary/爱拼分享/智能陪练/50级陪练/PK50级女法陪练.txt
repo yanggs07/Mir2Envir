@@ -1,0 +1,73 @@
+;=============================人形宝宝配制文件=======================
+[Info]
+AttatckMode=6
+Job = 1
+NoDropItemRate = 30
+Gender = 1
+Hair = 2
+NoDropItem=1
+DropUseItem=1
+DropUseItemRate=10
+NG=1
+NGLevel=144
+;是否守护(主体有效，英雄无效)
+ProtectStatus=1
+UseSkill =雷霆一击,四级雷电术,冰咆哮,四级魔法盾,火龙焰,灭天火,抗拒火环,疾光电影,四级灭天火,火焰冰,雷神之怒,寒冰掌,分身术(主),四级流星火雨,护体神盾,四级火龙气焰
+ProtectStatus=1
+InitItems = 
+;等级
+Level = 50
+[MonSay]
+0=天大地大，唯我独尊
+1=小子！好久不见
+2=又想和我动手了？
+3=我擦！你耍阴的
+4=乌拉拉！乌拉拉！
+5=没事别找我
+6=有钱没？
+7=打发点咯
+8=你身上的装备卖不
+9=不好意思！我现在有事
+;==============================身上装备============================
+[UseItems]
+;衣服
+UseItems0=主宰神甲(男)
+;武器
+UseItems1=热血之刃
+;照明物
+UseItems2=皓月勋章
+;项链
+UseItems3=皓月项链
+;头盔
+UseItems4=预言头盔(法)
+;左手镯
+UseItems5=烈焰护腕
+;右手镯
+UseItems6=怒血手镯
+;左戒指
+UseItems7=紫碧螺
+;右戒指
+UseItems8=烈焰魔戒
+;物品
+UseItems9=超级护身符
+;腰带
+UseItems10=星王腰带(法)
+;鞋子
+UseItems11=强化烈焰魔靴
+;宝石
+UseItems12=
+;斗笠
+UseItems13=震天面巾
+
+
+
+
+
+
+
+
+
+
+
+
+

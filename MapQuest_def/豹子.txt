@@ -1,0 +1,14 @@
+[@main]
+#IF
+checkvar HUMAN 帝国挑战任务 = 2
+CHECKVAR HUMAN 豹子 < 5
+#ACT
+CALCVAR HUMAN 豹子 + 1
+savevar human 豹子 ..\QuestDiary\雪花制作\豹子.txt
+SENDMSG 7 你已经杀死了<$human(豹子)>/5个豹子！
+
+#IF
+checkvar HUMAN 帝国挑战任务 = 2
+CHECKVAR HUMAN 豹子 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(豹子)>/5个豹子，可以去找护国将军了！

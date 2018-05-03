@@ -1,0 +1,20 @@
+[@龙啸功加属性]
+{
+
+#IF
+#ACT
+MOV m60 HUMAN 龙啸功等级
+MUL N60 m60 80
+goto @甲属性
+break
+
+[@甲属性]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M60)>
+#act
+CHANGEHUMABILITY 21 + <$STR(N60)> 65535
+SENDMSG 6 您当前龙啸功等级为:<$HUMAN(龙啸功等级)>，获得主属性加成:<$STR(N60)>点
+break
+
+
+}

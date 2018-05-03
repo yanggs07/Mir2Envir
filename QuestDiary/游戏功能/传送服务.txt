@@ -1,0 +1,2403 @@
+[@传送员]
+{
+╔═══════════════════════════╗\
+║   ≮≮≮≮<爱拼传奇欢迎您，身体健康万事如意>≯≯≯≯   ║\
+╚═══════════════════════════╝\
+　 <温馨提示：请选择您需要的传送方式/FCOLOR=255> 祝您旅途愉快!<沙巴克传送/@沙巴克传送>\
+╔═══════════════════════════╗\
+║                                                      ║\
+║  <城市传送/@safemove>             <险恶传送/@初级传送>           <爱拼传奇/@KK>    ║\
+║          <爱拼传奇qq782864782>                         ║\
+╚═══════════════════════════╝\ \
+
+[@safemove]
+╔═══════════════════════════╗\
+║      ≮≮≮≮<爱拼传奇qq782864782独家/FCOLOR=250>≯≯≯≯     ║\
+╚═══════════════════════════╝\
+　　<温馨提示：请选择您需要的传送方式/FCOLOR=255>      \
+╔═══════════════════════════╗\
+║  <银杏山谷/@gnmove>      <边界村庄/@bdmove>     <比奇大城/@bwmove>       <盟重土城/@mwmove>  ║\
+║  <封魔神谷/@fmgmove>      <魔龙城市/@molongm>     <白日天门/@brmove>       <爱拼传奇/@爱拼传奇>  ║\
+║  <苍月岛屿/@cymove>      <婚姻殿堂/@jhmove>     <红名村庄/@kilmove>       <神秘庄园/@zylmove>  ║\
+╚═══════════════════════════╝\
+
+<欢迎光临/@KK> \
+[@KK]
+#IF 
+#ACT 
+WebBrowser http://782864782.taobao.com/
+
+[@沙巴克传送]
+#ACT
+mapmove 3 625 280
+
+
+
+
+[@初级传送]
+  爱拼传奇qq782864782\
+╔┄┳┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┳┄╗ ☆\
+┆　┆ <比奇大城/@bwmove>   <新手小村/@bdmove> <白日天门/@wwmove> <苍月海岛/@cymove>          ┆  ┆\
+┆<爱/SCOLOR=254>┆ <盟重土城/@jhmove>   <封魔神谷/@fmmove>  <毒蛇山谷/@sbkmove333>  <沙巴克城外/@sbkmove>      ┆<爱/SCOLOR=254>┆\ 
+┆<拼/SCOLOR=254>╠┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╠<拼/SCOLOR=254>╣ \
+┆<传/SCOLOR=254>┆ <矿区洞口/@bqkqmove>  <蜈蚣洞口/@dldxmove>  <圣域/@wmsmmove>  <石墓五层/@zdsmmoveee>             ┆<传/SCOLOR=254>┆\ 
+┆<奇/SCOLOR=254>┆ <祖玛洞口/@zmsmmove>  <牛魔洞口/@nmsmmove>  <尸魔洞口/@smdxmove>  <骨魔洞口/@gmdxmove>         ┆<奇/SCOLOR=254>┆ \
+┆     <封魔洞口/@Fmommove>  <抉择之地/@xyxgmove>                 ┆  ┆  \ 
+┆　┆ <沙影之道/@SYdkmove>    <沃玛洞口/@SYommove>                 ┆  ┆  \ 
+╚┄┷┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┷┄╝ \
+
+[@mosmove]
+#IF
+#say
+入口：苍月老兵（苍月岛119，365）\
+奖励：杀怪有非常丰厚的极品装备爆出和高经验的收获\
+时间：明天晚上19点-22点开放3小时.\
+[@cdmj]
+<[主要怪物]>:，赤月怪，各大教主\
+<[刷新时间]>:30分钟\
+<[进入条件]>:10元宝\
+<[爆率提示]>:所有装备.\
+<[危险指数]>:☆☆☆☆☆☆☆\ \
+<[确定进入]/@cdmj1>                    <返回上页/@main>\
+[@cdmj1]
+#IF 
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+give 回城卷 1
+mapmove l006A 53 52
+SENDMSG 0 [%s].进入了地下神殿..
+break 
+#ELSEACT
+MESSAGEBOX 需要花费10元宝才能享受该服务!
+goto @main
+break
+[@zdsmmove]
+<[主要怪物]>:六个暗之怪.电僵王.蛇王.猫王等\
+<[刷新时间]>:120分钟\
+<[进入条件]>:免費\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆☆☆\ \
+<[确定进入]/@jinru4>                    <返回上页/@main>\
+[@jinru4]
+#IF
+#ACT
+give 回城卷 1
+mapmove H106 100 100
+break
+#ELSEACT
+MESSAGEBOX 免费
+goto @main
+break
+[@xyxgmove]
+<[主要怪物]>:赤月恶魔+双头血魔.金刚\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:赤月系列.魔血套装\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru10>                    <返回上页/@main>\
+[@jinru10]
+#IF
+#ACT
+give 回城卷 1
+map D1004
+break
+#ELSEACT
+goto @main
+break
+[@sbkmove]
+<[主要怪物]>:沙巴克弓箭手.城墙.城门\
+<[刷新时间]>:无\
+<[可爆物品]>:无\
+<[进入条件]>:2000金币\
+<[任务提示]>:可以在沙城铁匠铺升级武器攻.魔.道\
+<[危险指数]>:无\ \
+<[确定进入]/@jinru19>                    <返回上页/@main>\
+[@jinru19]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 3 706 407
+break 
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @main
+break
+[@Wzdxmove]
+#IF
+#say
+入口：传送到幻境后，身后有一道小门进入幻境二层北\
+幻境二层北：坐标 31,193 进入幻境四层北\
+幻境四层北：坐标 42,19  进入幻境五层北\
+幻境五层北：坐标 163,23 进入王者禁地\
+怪物：六大暗之教主,重装使者\
+
+
+[@WZADmove]
+#IF
+CHECKGAMEGOLD > 19
+#ACT
+GAMEGOLD - 20
+give 回城卷 1
+mapmove M001
+#ELSEACT
+MESSAGEBOX 需要20元宝用来支付我们的服务费用!
+break
+
+[@Sydkmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove h201 13 103
+#ELSEACT
+MESSAGEBOX 需要10万金币用来支付我们的服务费用!
+break
+
+[@SYommove]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+TimeRecall 60
+mapmove D021
+give 回城卷 1
+break 
+#ELSEACT
+MESSAGEBOX 需要10万金币用来支付我们的服务费用!
+
+[@bqkqmove]
+#IF
+#ACT
+give 回城卷 1
+mapmove 0 659 218
+SENDMSG 7 提示：发现不能挖矿，请小退上线即可！
+SENDMSG 7 提示：发现不能挖矿，请小退上线即可！
+break
+[@cYdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 12  89 13
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+ 
+
+[@wmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove B101 
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@Fmommove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 4  56 66
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@zmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove D5071
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@zdsmmoveee]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove d715 84 80
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@cYSDmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 12 90 14
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+goto @ddwy
+break
+
+
+[@hydkmove]
+#IF
+checkgold 500000
+#ACT
+take 金币 500000
+give 回城卷 1
+mapmove H001 73 67
+break
+#ELSEACT
+MESSAGEBOX 需要50W千金币用来支付我们的服务费用!
+
+
+
+
+[@gmdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 5 544 131
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+
+[@smdxmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+mapmove 5 522 615
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@nmsmmove]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove D2078 255 256
+give 回城卷 1
+break
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+[@dldxmove]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+mapmove 3 142 92
+break 
+#ELSEACT
+MESSAGEBOX 需要2千金币用来支付我们的服务费用!
+
+
+;======普通传送======
+[@jhmove]
+#IF 
+#ACT
+mapmove 3 333 333
+break 
+
+[@bwmove]
+#IF 
+#ACT
+mapmove 0 333 268 
+break 
+
+
+[@cymove]
+#IF 
+#ACT
+mapmove 5 140 338
+break 
+  
+
+[@fmmove]
+#IF 
+#ACT
+mapmove 4 241 202
+break 
+
+[@wwmove]
+#IF 
+#ACT
+mapmove 11 177 324
+break 
+
+[@bdmove]
+#IF 
+#ACT
+mapmove 0 288 615
+break 
+
+[@gnmove]
+#IF 
+#ACT
+mapmove 0   649  627
+break 
+
+[@sbkmove333]
+#IF 
+#ACT
+mapmove 2 503 483
+break
+ 
+
+
+
+[@cdzq]
+此地图爆40级新衣服\
+进入此地图，免费\
+.\
+<我要进入./@cdzq01>     <关闭对话./@exit>\ 
+
+[@cdzq01]
+#IF
+#ACT
+Mapmove h204001
+give  回城卷  1
+SENDMSG 0 [%s].进入了六大重装圣地..
+#ELSESAY
+
+
+[@bdmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 0 288 615
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@gnmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 0 634 612
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@bwmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 0 333 268 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@mwmove] 
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 3 334 336 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\ 
+
+[@爱拼传奇] 
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove apcq 334 336 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\ 
+
+
+
+
+
+[@sbkmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 3 706 407
+break 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@jhmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove M101 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@kilmove]
+#ACT
+close
+mapmove 3 850 672
+
+[@molongm]
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+close
+mapmove  6 124 158
+#ELSESAY 
+钱不够，需要金币2000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@fmgmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 4 241 202 
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@cymove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 5 140 338
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@brmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove 11 177 324
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@zylmove]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+close
+mapmove GA0 69 71
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+
+[@diemove]
+╔═══════════════════════════╗\
+║      ≮≮≮≮<和盛大同步去掉内功连击1.950/FCOLOR=250>≯≯≯≯     ║\
+╚═══════════════════════════╝\
+　　<温馨提示：请选择您需要的传送方式/FCOLOR=255>      \
+╔═══════════════════════════╗\
+║<沃玛寺庙/@pk6631>   <蜈蚣洞穴/@pk6634>   <疾风大殿/@pk6637>   <石墓洞穴/@pk66310>   <尸魔洞穴/@pk66313>  ║\
+║<比奇矿区/@pk66315>   <牛魔寺庙/@pk6635>   <双倍幻境/@pk6638>   <抉择之地/@pk66311>   <魔龙沼泽/@pk66314>  ║\
+║<沙影之道/@pk6633>   <封魔矿区/@pk66318>   <骨魔洞穴/@pk66316>   <山谷矿区/@pk66312>   <祖玛六层/@pk66317>  ║\
+╚═══════════════════════════╝\
+[@pk66317]
+#if
+checkgold 2000
+#act
+take 金币 2000
+MapMove D5071 12 13
+GIVE 回城卷 1
+#ELSESAY
+对不起，您的金币不足!\
+
+[@pk66318]
+#if
+checkgold 2000
+#act
+take 金币 2000
+MapMove 4 58 68
+GIVE 回城卷 1
+#ELSESAY
+对不起，您的金币不足!\
+
+[@pk66312]
+#if
+checkgold 2000
+#act
+take 金币 2000
+MapMove 2 562 174
+GIVE 回城卷 1
+#ELSESAY
+对不起，您的金币不足!\
+
+[@pk66315]
+#if
+checkgold 2000
+#act
+give 回城卷 1
+take 金币 2000
+close
+mapmove 0 659 218
+#elsesay
+需要2000金币的传送费用;\
+
+[@pk6639]
+<[主要怪物]>:各种真假教主\
+<[刷新时间]>:30分钟\
+<[可爆物品]>:雷炎魔龙装备\
+<[进入条件]>:2000金币\
+<[任务提示]>:魔龙装备\
+<[危险指数]>:☆\ \
+<[确定进入]/@clmg22>                    <返回上页/@safemove>\
+[@clmg22]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove M001
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk6636]
+<[主要怪物]>:月魔蜘蛛.赤月教主\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:祖玛装备\
+<[进入条件]>:2000金币\
+<[任务提示]>:祖玛装备\
+<[危险指数]>:☆\ \
+<[确定进入]/@clmg1>                    <返回上页/@safemove>\
+[@clmg1]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 12
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk6633]
+<[主要怪物]>:地藏魔王.重装使者.暗之怪\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:霸者之刃.雷霆.战神.42级新衣服系列\
+<[进入条件]>:\
+<[隐藏地图]>:影之道一层门口可以传送到沙皇宫\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru211>                    <返回上页/@safemove>\
+[@jinru211]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove h201 13 103
+break 
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+[@pk66317]
+<[主要怪物]>:六个暗之怪.电僵王.蛇王.猫王等\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:40级衣服+各种矿石+荣誉勋章\
+<[进入条件]>:5000金币\
+<[任务提示]>:消灭暗之怪有机率获得40级衣服\
+<[危险指数]>:☆☆☆☆☆\ \
+<[确定进入]/@jinru4500>                    <返回上页/@safemove>\
+
+[@jinru4500]
+#IF
+checkgold 5000
+#ACT
+take 金币 5000
+give 回城卷 1
+close
+mapmove H106
+break 
+#ELSEACT
+MESSAGEBOX 需要花费5000金币才能享受该服务!
+goto @safemove
+break
+
+
+[@jinru45]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove H106 100 100
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+[@pk66314]
+<[主要怪物]>:魔龙教主\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:赤月装备等...\
+<[进入条件]>:2000金币\
+<[危险指数]>:☆☆☆☆☆\ \
+<[确定进入]/@jinru13>                    <返回上页/@safemove>\
+[@jinru13]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 622
+break 
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk66311]
+<[主要怪物]>:赤月恶魔+双头血魔.金刚\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金条.光芒.雷霆.烈焰系列\
+<[进入条件]>:2000金币\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru10>                    <返回上页/@safemove>\
+[@jinru10]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D1004
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+[@pk6638]
+<[主要怪物]>:赤月恶魔.双头血魔.金刚.重装使者...\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金条.光芒.雷霆.烈焰系列装备及衣服\
+<[进入条件]>:金币 2000\
+<[任务提示]>:无\
+<[危险指数]>:☆☆☆☆\ \
+<[确定进入]/@jinru12>                    <返回上页/@safemove>\
+[@jinru12]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove H001  73 67
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk6635]
+<[主要怪物]>:牛魔王.牛魔将军等\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金条.烈焰装备.怒斩.将军爆40级衣服和赤月\
+<[进入条件]>:2000金币\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru16>                    <返回上页/@safemove>\
+[@jinru16]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 5 658 463
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk6632]
+<[主要怪物]>:祖玛教主\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金条.赤月装备.祖玛头像\
+<[进入条件]>:2000金币\
+<[任务提示]>:做打工元宝任务需要消灭它\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru15>                    <返回上页/@safemove>\
+[@jinru15]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 0157 17 17
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk66316]
+<[主要怪物]>:骷髅兵系列.黄泉教主\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金刚石.光芒系列.逍遥扇\
+<[进入条件]>:2000金币\
+<[任务提示]>:煅造装备.升级帐号必备物品\
+<[危险指数]>:☆\ \
+<[确定进入]/@jinru18>                    <返回上页/@safemove>\
+[@jinru18]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 5 544 131
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+[@pk66313]
+<[主要怪物]>:恶灵僵尸+骷髅精灵系列\
+<[刷新时间]>:10分钟\
+<[可爆物品]>:勋章之心.金刚石\
+<[进入条件]>:2000金币\
+<[任务提示]>:煅造装备.升级帐号必备物品\
+<[危险指数]>:☆\ \
+<[确定进入]/@jinru71>                    <返回上页/@main>\
+[@jinru71]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove 5 522 615
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk66310]
+<[主要怪物]>:白野猪.邪恶毒蛇.变异骷髅\
+<[刷新时间]>:10分钟\
+<[可爆物品]>:祖玛装备.\
+<[进入条件]>:2000金币\
+<[隐藏地图]>:桃源之门里面打变异骷髅能爆出荣誉勋章\
+<[危险指数]>:☆☆\ \
+<[确定进入]/@jinru15aaa>                    <返回上页/@main>\
+[@jinru15aaa]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove D714
+break 
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+[@pk6637]
+<[主要怪物]>:野猪系列及虹魔教主\
+<[刷新时间]>:120分钟\
+<[可爆物品]>:金条.祖玛装备.雷霆装备.元宝箱\
+<[进入条件]>:2000金币\
+<[危险指数]>:☆☆☆\ \
+<[确定进入]/@jinru9>                    <返回上页/@main>\
+[@jinru9]
+#IF
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+mapmove D2004 77 77
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @safemove
+break
+
+
+[@pk6631]
+#IF 
+checkgold 1000
+#ACT
+take 金币 1000
+give 回城卷 1
+close
+map D024
+#ELSESAY 
+钱不够，需要金币1000！\ \ 
+<返 回/@safemove>\
+<取消/@exit>\
+
+[@pk6634]
+<[主要怪物]>:触龙神.邪恶钳虫\
+<[刷新时间]>:180分钟\
+<[可爆物品]>:金条.沃玛装备.屠龙\
+<[进入条件]>:2000金币\
+<[隐藏地图]>:无\
+<[危险指数]>:☆☆\ \
+<[确定进入]/@jinru3>                    <返回上页/@diemove>\
+[@jinru3]
+这里是大家十分熟悉的经典地图\ \
+※ <地牢一层南/@sw1> ※ <地牢一层西/@sw2> ※ <地牢一层北/@sw3> ※ <地牢二层西/@sw4>※\ \
+※ <地牢二层北/@sw5> ※ <黑暗  地带/@sw6> ※ <生死  之间/@sw7> ※ <传奇  部落/@sw8>※\ \
+※ <邪恶  势力/@sw9> ※ <幽明  圣域/@sw10> ※ <恐怖  空间/@sw11> ※ <返回  上页/@diemove>※\
+[@sw1] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D601
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw2] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D602
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw3] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D603
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw4] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D604
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw5] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D605
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw6] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D612
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw7] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D613
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw8] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D614
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw9] 
+#IF 
+#ACT 
+give 回城卷 1
+close
+map D615
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw10] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D616
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+[@sw11] 
+#IF 
+checkgold 2000
+#ACT
+take 金币 2000
+give 回城卷 1
+close
+map D617
+break
+#ELSEACT
+MESSAGEBOX 需要花费2000金币才能享受该服务!
+goto @diemove
+break
+
+[@spmove]
+╔═══════════════════════════╗\
+║      ≮≮≮≮<和盛大同步去掉内功连击1.950/FCOLOR=250>≯≯≯≯     ║\
+╚═══════════════════════════╝\
+　　<温馨提示：请选择您需要的传送方式/FCOLOR=255>      \
+╔═══════════════════════════╗\
+║ <石墓七层/@pk663a1>   <桃源之门/@pk663a4>  <魔 龙 殿/@pk663a7>   <赤月魔穴/@pk663a10>   <骨魔三层/@pk663a13>  ║\
+║ <魔龙血域/@pk663a2>   <祖玛七层/@pk663a5>  <幻境十层/@pk663a8>   <尸魔三层/@pk663a11>   <恶魔祭坛/@pk663a14>  ║\
+║ <等待添加/@pk663>   <卧龙山庄/@pk663a6>  <雷炎三层/@pk663a9>   <尸 王 殿/@pk663a12>   <牛魔七层/@pk663a15>  ║\
+╚═══════════════════════════╝\
+
+
+[@pk663a15]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D2079 13 13
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a14]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D10061 20 25
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+
+[@pk663a13]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D2063
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+
+[@pk663a12]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove Q004
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a11]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D2053
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+
+[@pk663a10]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D10062
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a9]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove H301
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a8]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove H010
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+
+[@pk663a7]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove EM300
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+
+[@pk663a6]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove HERO1 88 48
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a5]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+map D515
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a4]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove R001 162 169
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a3]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+MapMove MIRHH100
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a2]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove 66 256 212
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@pk663a1]
+#IF
+checkgamegold > 0
+#ACT
+gamegold - 1
+give 回城卷 1
+close
+mapmove D717 26 74
+break
+#elseact
+MESSAGEBOX 需要花费1元宝才能享受该服务!
+goto @spmove
+
+[@xzdd]
+╔═══════════════════════════╗\
+║   <城市传送/FCOLOR=252>          <险恶地图/@diemove>          <超级传送/@spmove>       ║\
+╚═══════════════════════════╝\
+      <5448数据/FCOLOR=251><奔牛送喜内功连击1.950/FCOLOR=253>\
+╔═════╗╔═════╗  ╔═════╗╔═════╗\
+║ <天下仙境/@xuan> ║║ <幸运楼阁/@jammovea> ║  ║ <祝福大殿/@jammoveb> ║║ <练级广场/@jammovec> ║\
+╚═════╝╚═════╝  ╚═════╝╚═════╝\
+
+[@xuan]
+进入仙境需要收费30元宝,你确定需要进入吗?\
+在天下仙境里面,你会遇见玛珐大陆最凶残的恶魔,如果你能拭杀他 \
+你就能得到至尊无上的王者系列装备哦,里面的那些守卫还可以从他们 \
+身上挖得到好东西的哦!不过它们可能会需要点灵符才能让你挖取的!\ \
+我要<进入仙境/@GOXU>      <返 回/@xzdd>
+[@GOXU]
+#IF
+CHECKGAMEGOLD > 29
+#ACT
+GAMEGOLD - 30
+MAPMOVE TXX1
+GIVE 回城卷 1
+SENDMSG 0 珐玛勇士[%S]怀着探索王者装备的心进入了天下仙境,具体点击盟重的"新增地图"
+BREAK
+#ELSESAY
+\ \ \ \   你帐户的元宝数量不足\ \ \ 
+
+
+
+[@jammovea]
+进入幸运楼阁需要收费10元宝,你确定需要进入吗?\ \
+我要<进入楼阁/@GOlou>    <返 回/@xzdd>
+[@GOlou]
+#IF
+CHECKGAMEGOLD > 9
+#ACT
+GAMEGOLD - 10
+MAPMOVE ENW01
+GIVE 回城卷 1
+SENDMSG 0 珐玛勇士[%S]怀着探索王者装备的心进入了幸运楼阁,具体点击盟重的"新增地图"
+BREAK
+#ELSESAY
+\ \ \ \                 你帐户的元宝数量不足\ \ \ 
+
+[@jammoveb]
+进入祝福大殿需要收费30元宝,你确定需要进入吗?\ \
+我要进入<祝福大殿/@GOzf>     <返 回/@xzdd>
+[@GOzf]
+#IF
+CHECKGAMEGOLD > 29
+#ACT
+GAMEGOLD - 30
+MAPMOVE ENW02
+GIVE 回城卷 1
+SENDMSG 0 珐玛勇士[%S]受到祝福油的召唤,从盟重的"新增地图"进入了祝福大殿,具体点击盟重的"新增地图"
+BREAK
+#ELSESAY
+\ \ \ \                 你帐户的元宝数量不足\ \ \ 
+
+[@jammovec]
+进入练级广场需要收费15元宝,你确定需要进入吗?\ \
+我要进入<练级广场/@GOlj>     <返 回/@xzdd> 
+[@GOlj]
+#IF
+CHECKGAMEGOLD > 14
+#ACT
+GAMEGOLD - 15
+MAPMOVE ENW03
+GIVE 回城卷 1
+SENDMSG 0 珐玛勇士[%S]为了更快的升级,从盟重的"新增地图"进入了练级广场"
+BREAK
+#ELSESAY
+\ \ \ \                 你帐户的元宝数量不足\ \ \
+
+
+
+[@fengbao1]
+#IF
+CHECKGAMEGOLD > 49
+#ACT
+GAMEGOLD - 50
+GIVE 回城卷 1
+MAPMOVE wzmil
+SENDMSG 0 珐玛勇士　%s　从盟重"新增地图"进去风暴山谷寻宝了!
+BREAK
+#ELSESAY
+你帐户的元宝数量不够50个不能进去！~！~！~ \\
+
+[@fengbao2]
+#IF
+CHECKGAMEGOLD > 49
+#ACT
+GIVE 回城卷 1
+GAMEGOLD - 50
+MAPMOVE wzmil01
+SENDMSG 0 珐玛勇士　%s　从盟重"新增地图"进去风暴断崖打BOSS了!
+BREAK
+#ELSESAY
+你帐户的元宝数量不够50个不能进去！~！~！~ \\
+
+[@jammovec]
+#ACT
+GIVE 回城卷 1
+MAPMOVE ENW03
+SENDMSG 0 珐玛勇士　%s　从盟重"新增地图"进入了练级广场!
+BREAK
+
+[@shengdian]
+#IF
+CHECKGAMEGOLD > 49
+#ACT
+GAMEGOLD - 50
+give 回城卷
+MAPMOVE SF003 42 42
+SENDMSG 0 珐玛勇士　%s　从盟重"新增地图"进去王者圣殿寻宝了!
+BREAK
+#ELSESAY
+你帐户的元宝数量不够50个不能进去！~！~！~ \\
+
+[@白金帐号功能]
+{
+╔═══════════════════════════╗\
+┆新增服务：<一键特修全部身上装备功能/@SuperRepair>。限VIP会员无偿使用┆\
+╚═══════════════════════════╝\
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<改变性别/@BVIPP1>‖　　　‖<超级传送/@BVIPP3>‖　　　‖<每日奖励/@BVIPP8>‖\
+　　╚════╝　　　╚════╝　　　╚════╝      \
+　　╔════╗　　　╔════╗　　　╔════╗\
+　　‖<购买特药/@BVIPP5>‖　　　‖<清洗红名/@BVIPP6>‖　　　‖<等级奖励/@BVIPP9>‖\
+　　╚════╝　　　╚════╝　　　╚════╝\
+
+
+
+[@SuperRepair]
+#If
+CheckLevelEx > 0 
+#Act
+RepairAll
+MESSAGEBOX [提示]:您身上的装备破损之处.已经全部完好如初.
+GOTO @白金帐号功能
+BREAK
+
+
+[@BVIPP1]
+哎，真不明白你们这些年轻人都是怎么想的？\
+没事怎么老是喜欢弄个变性。\
+你是想改变性别吗，如果改变了我们可不会负责的。\\
+改变性别注意事项：你不能在结婚后改变性别，除非你\
+有病，同时你的等级必须在50级以上才可以使用本功能\ \
+<我同意更改性别/@BB1>     <我还是做个正常人吧/@exit>
+
+[@BB1]
+#IF
+checkmarry
+#SAY
+你是在和我开玩笑吧，你都结婚了还改变性别？\
+如果真想改变性别，请选去离婚吧。\
+如果下次还这样，我会惩罚你的。\
+#ACT
+break
+#IF
+gender man
+#SAY
+做男人没意思了？那就来做个女人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB3>  <害怕了，还是不改变了/@exit>\
+#ELSESAY
+做女人没意思了？那就来做个男人吧，哈哈，我来\
+帮你实现你长久以来的理想。\ \
+<改变性别/@BB4>  <害怕了，还是不改变了/@exit>\
+[@BB3]
+#IF
+#ACT
+CHANGEGENDER 1
+#SAY
+恭喜，你已经变成一位女人了。\ \ \
+<离开/@exit>
+
+[@BB4]
+#IF
+#ACT
+CHANGEGENDER 0
+#SAY
+恭喜，你已经变成一位男人了。\ \ \
+<离开/@exit>
+
+;=====================================================
+[@BVIPP5]
+#CALL [\\会员系统\购买白金药品.txt] @白金药品购买开始
+
+[@BVIPP6]
+您当前的PK点数为：<$PKPOINT>\ \
+会员清洗红名无需付费\ \
+我要<清洗红名/@Bqxhm>\ 
+<返回/@白金帐号功能>
+[@Bqxhm]
+#IF
+#act
+CHANGEPKPOINT - 100
+#SAY
+我已经帮你清洗好了，希望以后不要在“红名”哦！\ \
+<返回首页/@白金帐号功能>
+
+
+[@BVIPP8]
+#if
+dayofweek sun
+#act
+set [504] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bsun
+break
+
+#if
+dayofweek mon
+#act
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bmon
+break
+
+#if
+dayofweek tue
+#act
+set [504] 0
+set [510] 0
+set [506] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Btue
+break
+
+#if
+dayofweek wed
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [507] 0
+set [508] 0
+set [509] 0
+goto @Bwed
+break
+
+#if
+dayofweek thu
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [508] 0
+set [509] 0
+goto @Bthu
+break
+
+#if
+dayofweek fri
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [509] 0
+goto @Bfri
+break
+
+#if
+dayofweek sat
+#act
+set [504] 0
+set [510] 0
+set [505] 0
+set [506] 0
+set [507] 0
+set [508] 0
+goto @Bsat
+
+[@Bsun]
+#if
+check [510] 0
+dayofweek sun
+#act
+goto @BLBXXVIP_1
+set [510] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bmon]
+#if
+dayofweek mon
+check [504] 0
+#act
+goto @BLBXXVIP_1
+set [504] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Btue]
+#if
+dayofweek tue
+check [505] 0
+#act
+goto @BLBXXVIP_1
+set [505] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bwed]
+#if
+dayofweek wed
+check [506] 0
+#act
+goto @BLBXXVIP_1
+set [506] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bthu]
+#if
+dayofweek thu
+check [507] 0
+#act
+goto @BLBXXVIP_1
+set [507] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bfri]
+#if
+dayofweek fri
+check [508] 0
+#act
+goto @BLBXXVIP_1
+set [508] 1
+set [501] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@Bsat]
+#if
+dayofweek sat
+check [509] 0
+#act
+goto @BLBXXVIP_1
+set [501] 1
+set [509] 1
+#ELSEACT
+goto @BLBXXVIP_NO
+
+[@BLBXXVIP_1]
+你好尊贵的会员:<$USERNAME>，我这里每天可以\
+为你提供一次领取游戏补给功能，如果你此时拒绝了今天给予的\
+补给，那么等于你决定放弃了今天的补给物资。\
+每天可以获得游戏补给：50个元宝、50万经验值\
+『<领取今天物资补给/@BLBXXVIP_OK>』
+[@BLBXXVIP_OK]
+#if
+check [501] 0
+#act
+map B311
+break
+#IF
+#say
+200个元宝、50万经验值\
+以上是您今天的游戏物资补给，祝您游戏愉快......\
+#ACT
+set [500] 1
+set [501] 0
+GAMEGOLD + 50
+
+CHANGEEXP + 500000
+#ELSESAY
+您已经领取了今日补给，请不要重复领取。\
+『<返回/@白金帐号功能>』\
+[@BLBXXVIP_NO]
+您已经领取了今日补给，请不要重复领取。\
+请您明天再来吧!\
+『<返 回/@白金帐号功能>』\ \
+
+
+[@BVIPP3]
+╔═══════════════════════════╗\
+║                  <会员专用超级传送系统/FCOLOR=252>                ║\
+╚═══════════════════════════╝\
+    <温馨提示：/FCOLOR=222><您是尊贵的会员、以下超级传送服务无需付费/FCOLOR=3>\
+╔═══════════════════════════╗\
+║ <石墓七层/@pk663vipa1>   <尸 王 殿/@pk663vipa12>  <魔 龙 殿/@pk663vipa7>   <赤月魔穴/@pk663vipa10>   <骨魔三层/@pk663vipa13>  ║\
+║ <魔龙血域/@pk663vipa2>   <祖玛七层/@pk663vipa5>  <幻境十层/@pk663vipa8>   <尸魔三层/@pk663vipa11>   <恶魔祭坛/@pk663vipa14>  ║\
+   <天下仙境/@pk663vipa4>   <牛魔七层/@pk663vipa15>  ║\
+╚═══════════════════════════╝\
+
+
+[@pk663vipa15]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2079 13 13
+break
+
+[@pk663vipa14]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10061 20 25
+break
+
+[@pk663vipa13]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2063
+break
+
+[@pk663vipa12]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove Q004
+break
+
+[@pk663vipa11]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D2053
+break
+
+[@pk663vipa10]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D10062
+break
+
+[@pk663vipa9]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H301
+break
+
+[@pk663vipa8]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove H010
+break
+
+[@pk663vipa7]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove EM300
+break
+
+[@pk663vipa6]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 3 88 48
+break
+
+[@pk663vipa5]
+#IF
+#ACT
+give 回城卷 1
+close
+map D515
+break
+
+[@pk663vipa4]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove txx1
+break
+
+[@pk663vipa3]
+#IF
+#ACT
+give 回城卷 1
+close
+MapMove MIRHH100
+break
+
+[@pk663vipa2]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove 66 256 212
+break
+
+[@pk663vipa1]
+#IF
+#ACT
+give 回城卷 1
+close
+mapmove D717 26 74
+break
+
+
+[@BVIPP9]
+╔═══════════════════════════╗\
+║<温馨提示:尊贵的会员等级60之后每升2级都可以领取奖励一次/FCOLOR=222>║\\
+║<领取/@GV60><60/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列头盔  <领取/@GV72><72/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列腰带║\
+║<领取/@GV62><62/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列项链  <领取/@GV74><74/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列靴子║\
+║<领取/@GV64><64/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV76><76/FCOLOR=222>级奖励<→/FCOLOR=222>王者勋章系列║\
+║<领取/@GV66><66/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列手镯  <领取/@GV78><78/FCOLOR=222>级奖励<→/FCOLOR=222>王者战甲系列║\
+║<领取/@GV68><68/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指  <领取/@GV80><80/FCOLOR=222>级奖励<→/FCOLOR=222>王者武器系列║\
+║<领取/@GV70><70/FCOLOR=222>级奖励<→/FCOLOR=222>雷炎系列戒指                <返回上一页面/@白金帐号功能>║\
+╚═══════════════════════════╝\
+
+
+[@GV60]
+#IF
+CHECKLEVELEX = 60
+#ACT
+GOTO @60
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@60]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV60YES
+
+[@GV60YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：逆火魔盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：逆火魔盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：通云道盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：通云道盔
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战盔 1
+ADDNAMELIST ..\QuestDiary\数据文件\60级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了60级的升级奖励物品：狂雷战盔
+SENDMSG 6 【恭喜】你领取了60级的升级奖励物品：狂雷战盔
+GOTO @BVIPP9
+BREAK
+
+[@GV62]
+#IF
+CHECKLEVELEX = 62
+#ACT
+GOTO @62
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@62]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV62YES
+
+[@GV62YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：逆火项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：逆火项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：通云项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：通云项链
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷项链 1
+ADDNAMELIST ..\QuestDiary\数据文件\62级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了62级的升级奖励物品：狂雷项链
+SENDMSG 6 【恭喜】你领取了62级的升级奖励物品：狂雷项链
+GOTO @BVIPP9
+BREAK
+
+[@GV64]
+#IF
+CHECKLEVELEX = 64
+#ACT
+GOTO @64
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@64]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV64YES
+
+[@GV64YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\64级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了64级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了64级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV66]
+#IF
+CHECKLEVELEX = 66
+#ACT
+GOTO @66
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@66]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV66YES
+
+[@GV66YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：逆火护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：逆火护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：通云护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：通云护腕
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷护腕 1
+ADDNAMELIST ..\QuestDiary\数据文件\66级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了66级的升级奖励物品：狂雷护腕
+SENDMSG 6 【恭喜】你领取了66级的升级奖励物品：狂雷护腕
+GOTO @BVIPP9
+BREAK
+
+[@GV68]
+#IF
+CHECKLEVELEX = 68
+#ACT
+GOTO @68
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@68]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV68YES
+
+[@GV68YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\68级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了68级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了68级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV70]
+#IF
+CHECKLEVELEX = 70
+#ACT
+GOTO @70
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@70]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV70YES
+
+[@GV70YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：逆火魔戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：逆火魔戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：通云道戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：通云道戒
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战戒 1
+ADDNAMELIST ..\QuestDiary\数据文件\70级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了70级的升级奖励物品：狂雷战戒
+SENDMSG 6 【恭喜】你领取了70级的升级奖励物品：狂雷战戒
+GOTO @BVIPP9
+BREAK
+
+[@GV72]
+#IF
+CHECKLEVELEX = 72
+#ACT
+GOTO @72
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@72]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV72YES
+
+[@GV72YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：逆火腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：逆火腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：通云腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：通云腰带
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷腰带 1
+ADDNAMELIST ..\QuestDiary\数据文件\72级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了72级的升级奖励物品：狂雷腰带
+SENDMSG 6 【恭喜】你领取了72级的升级奖励物品：狂雷腰带
+GOTO @BVIPP9
+BREAK
+
+[@GV74]
+#IF
+CHECKLEVELEX = 74
+#ACT
+GOTO @74
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@74]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV74YES
+
+[@GV74YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 逆火魔靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：逆火魔靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：逆火魔靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 通云道靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：通云道靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：通云道靴
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 狂雷战靴 1
+ADDNAMELIST ..\QuestDiary\数据文件\74级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了74级的升级奖励物品：狂雷战靴
+SENDMSG 6 【恭喜】你领取了74级的升级奖励物品：狂雷战靴
+GOTO @BVIPP9
+BREAK
+
+[@GV76]
+#IF
+CHECKLEVELEX = 76
+#ACT
+GOTO @76
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@76]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV76YES
+
+[@GV76YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者勋章(法) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(法)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(法)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者勋章(道) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(道)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(道)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者勋章(战) 1
+ADDNAMELIST ..\QuestDiary\数据文件\76级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了76级的升级奖励物品：王者勋章(战)
+SENDMSG 6 【恭喜】你领取了76级的升级奖励物品：王者勋章(战)
+GOTO @BVIPP9
+BREAK
+
+[@GV78]
+#IF
+CHECKLEVELEX = 78
+#ACT
+GOTO @78
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@78]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV78YES
+
+[@GV78YES]
+#IF
+checkjob wizard
+gender man
+#ACT
+GIVE 王者魔衣(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob wizard
+gender woman
+#ACT
+GIVE 王者魔衣(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者魔衣(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者魔衣(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender man
+#ACT
+GIVE 王者道袍(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+gender woman
+#ACT
+GIVE 王者道袍(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者道袍(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者道袍(女)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender man
+#ACT
+GIVE 王者战甲(男) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(男)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(男)
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+gender woman
+#ACT
+GIVE 王者战甲(女) 1
+ADDNAMELIST ..\QuestDiary\数据文件\78级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了78级的升级奖励物品：王者战甲(女)
+SENDMSG 6 【恭喜】你领取了78级的升级奖励物品：王者战甲(女)
+GOTO @BVIPP9
+BREAK
+
+[@GV80]
+#IF
+CHECKLEVELEX = 80
+#ACT
+GOTO @80
+BREAK
+#ELSESAY
+你的等级..........!
+
+[@80]
+#IF
+CHECKNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+#ACT
+MESSAGEBOX [提示]:你已经领取过本级的奖励了！
+GOTO @BVIPP9
+BREAK
+#ELSEACT
+GOTO @GV80YES
+
+[@GV80YES]
+#IF
+checkjob wizard
+#ACT
+GIVE 王者之杖 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之杖
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之杖
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob taoist
+#ACT
+GIVE 王者之剑 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之剑
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之剑
+GOTO @BVIPP9
+BREAK
+
+#IF
+checkjob warrior
+#ACT
+GIVE 王者之刃 1
+ADDNAMELIST ..\QuestDiary\数据文件\80级奖励名单.txt
+SENDMSG 0 恭喜会员玩家%s领取了80级的升级奖励物品：王者之刃
+SENDMSG 6 【恭喜】你领取了80级的升级奖励物品：王者之刃
+GOTO @BVIPP9
+BREAK
+}
+
+
+}
+
+
+

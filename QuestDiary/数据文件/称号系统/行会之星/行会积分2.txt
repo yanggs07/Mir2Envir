@@ -1,0 +1,712 @@
+[@行会积分2]
+{
+#IF
+HAVEGUILD
+#ACT
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+MOV S1
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt S1
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt S11
+MOV N1
+MOV N1 S11
+MOV S2
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt S2
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt S12
+MOV N2
+MOV N2 S12
+MOV S3
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt S3
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt S13
+MOV N3
+MOV N3 S13
+MOV S4
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt S4
+MOV S14
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt S14
+MOV N4
+MOV N4 S14
+MOV S5
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt S5
+MOV S15
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt S15
+MOV N5
+MOV N5 S15
+MOV S6
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt S6
+MOV S16
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt S16
+MOV N6
+MOV N6 S16
+MOV S7
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt S7
+MOV S17
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt S17
+MOV N7
+MOV N7 S17
+MOV S8
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt S8
+MOV S18
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt S18
+MOV N8
+MOV N8 S18
+MOV S9
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt S9
+MOV S19
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt S19
+MOV N9
+MOV N9 S19
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt S10
+MOV S20
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt S20
+MOV N10
+MOV N10 S20
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt S11
+MOV S21
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt S21
+MOV N11
+MOV N11 S21
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt S12
+MOV S22
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt S22
+MOV N12
+MOV N12 S22
+MOV S13
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt S13
+MOV S23
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt S23
+MOV N13
+MOV N13 S23
+MOV S14
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt S14
+MOV S24
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt S24
+MOV N14
+MOV N14 S24
+MOV S15
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt S15
+MOV S25
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt S25
+MOV N15
+MOV N15 S25
+MOV S16
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt S16
+MOV S26
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt S26
+MOV N16
+MOV N16 S26
+MOV S17
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt S17
+MOV S27
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt S27
+MOV N17
+MOV N17 S27
+MOV S18
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt S18
+MOV S28
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt S28
+MOV N18
+MOV N18 S28
+MOV S19
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt S19
+MOV S29
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt S29
+MOV N19
+MOV N19 S29
+MOV S20
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt S20
+MOV S30
+GetRandomName ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt S30
+MOV N20
+MOV N20 S30
+GOTO @行会泉水排序1111
+break
+
+#ELSEACT
+break
+
+[@行会泉水排序1111]
+#IF
+equal S1 S0
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+break
+
+#IF
+equal S2 S0
+#ACT
+GOTO @检测泉水~1名
+break
+
+#IF
+equal S3 S0
+#ACT
+GOTO @检测泉水~2名
+break
+
+#IF
+equal S4 S0
+#ACT
+GOTO @检测泉水~3名
+break
+
+#IF
+equal S5 S0
+#ACT
+GOTO @检测泉水~4名
+break
+
+#IF
+equal S6 S0
+#ACT
+GOTO @检测泉水~5名
+break
+
+#IF
+equal S7 S0
+#ACT
+GOTO @检测泉水~6名
+break
+
+#IF
+equal S8 S0
+#ACT
+GOTO @检测泉水~7名
+break
+
+#IF
+equal S9 S0
+#ACT
+GOTO @检测泉水~8名
+break
+
+#IF
+equal S10 S0
+#ACT
+GOTO @检测泉水~9名
+break
+
+#IF
+equal S11 S0
+#ACT
+GOTO @检测泉水~10名
+break
+
+#IF
+equal S12 S0
+#ACT
+GOTO @检测泉水~11名
+break
+
+#IF
+equal S13 S0
+#ACT
+GOTO @检测泉水~12名
+break
+
+#IF
+equal S14 S0
+#ACT
+GOTO @检测泉水~13名
+break
+
+#IF
+equal S15 S0
+#ACT
+GOTO @检测泉水~14名
+break
+
+#IF
+equal S16 S0
+#ACT
+GOTO @检测泉水~15名
+break
+
+#IF
+equal S17 S0
+#ACT
+GOTO @检测泉水~16名
+break
+
+#IF
+equal S18 S0
+#ACT
+GOTO @检测泉水~17名
+break
+
+#IF
+equal S19 S0
+#ACT
+GOTO @检测泉水~18名
+break
+
+#IF
+equal S20 S0
+#ACT
+GOTO @检测泉水~19名
+break
+
+#ELSEACT
+GOTO @检测泉水~20名
+break
+
+[@检测泉水~20名]
+#IF
+LARGE HUMAN 行会积分2 N20
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+GOTO @检测泉水~19名
+break
+
+#ELSEACT
+break
+
+[@检测泉水~19名]
+#IF
+LARGE HUMAN 行会积分2 N19
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+AddTextList <$STR(S19)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+AddTextList <$STR(N19)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+GOTO @检测泉水~18名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+break
+
+[@检测泉水~18名]
+#IF
+LARGE HUMAN 行会积分2 N18
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+AddTextList <$STR(S18)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+AddTextList <$STR(N18)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+GOTO @检测泉水~17名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+break
+
+[@检测泉水~17名]
+#IF
+LARGE HUMAN 行会积分2 N17
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+AddTextList <$STR(S17)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+AddTextList <$STR(N17)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+GOTO @检测泉水~16名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+break
+
+[@检测泉水~16名]
+#IF
+LARGE HUMAN 行会积分2 N16
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+AddTextList <$STR(S16)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+AddTextList <$STR(N16)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+GOTO @检测泉水~15名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+break
+
+[@检测泉水~15名]
+#IF
+LARGE HUMAN 行会积分2 N15
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+AddTextList <$STR(S15)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+AddTextList <$STR(N15)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+GOTO @检测泉水~14名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+break
+
+[@检测泉水~14名]
+#IF
+LARGE HUMAN 行会积分2 N14
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+AddTextList <$STR(S14)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+AddTextList <$STR(N14)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+GOTO @检测泉水~13名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+break
+
+[@检测泉水~13名]
+#IF
+LARGE HUMAN 行会积分2 N13
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+AddTextList <$STR(S13)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+AddTextList <$STR(N13)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+GOTO @检测泉水~12名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+break
+
+[@检测泉水~12名]
+#IF
+LARGE HUMAN 行会积分2 N12
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+AddTextList <$STR(S12)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+AddTextList <$STR(N12)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+GOTO @检测泉水~11名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+break
+
+[@检测泉水~11名]
+#IF
+LARGE HUMAN 行会积分2 N11
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+AddTextList <$STR(S11)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+AddTextList <$STR(N11)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+GOTO @检测泉水~10名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+break
+
+[@检测泉水~10名]
+#IF
+LARGE HUMAN 行会积分2 N10
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+AddTextList <$STR(S10)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+AddTextList <$STR(N10)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+GOTO @检测泉水~9名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+break
+
+[@检测泉水~9名]
+#IF
+LARGE HUMAN 行会积分2 N9
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+AddTextList <$STR(S9)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+AddTextList <$STR(N9)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+GOTO @检测泉水~8名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+break
+
+[@检测泉水~8名]
+#IF
+LARGE HUMAN 行会积分2 N8
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+AddTextList <$STR(S8)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+AddTextList <$STR(N8)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+GOTO @检测泉水~7名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+break
+
+[@检测泉水~7名]
+#IF
+LARGE HUMAN 行会积分2 N7
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+AddTextList <$STR(S7)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+AddTextList <$STR(N7)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+GOTO @检测泉水~6名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+break
+
+[@检测泉水~6名]
+#IF
+LARGE HUMAN 行会积分2 N6
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+AddTextList <$STR(S6)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+AddTextList <$STR(N6)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+GOTO @检测泉水~5名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+break
+
+[@检测泉水~5名]
+#IF
+LARGE HUMAN 行会积分2 N5
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+AddTextList <$STR(S5)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+AddTextList <$STR(N5)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+GOTO @检测泉水~4名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+break
+
+[@检测泉水~4名]
+#IF
+LARGE HUMAN 行会积分2 N4
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+AddTextList <$STR(S4)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+AddTextList <$STR(N4)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+GOTO @检测泉水~3名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+break
+
+[@检测泉水~3名]
+#IF
+LARGE HUMAN 行会积分2 N3
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+AddTextList <$STR(S3)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+AddTextList <$STR(N3)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+GOTO @检测泉水~2名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+break
+
+[@检测泉水~2名]
+#IF
+LARGE HUMAN 行会积分2 N2
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+AddTextList <$STR(S2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+AddTextList <$STR(N2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+GOTO @检测泉水~1名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+break
+
+[@检测泉水~1名]
+#IF
+LARGE HUMAN 行会积分2 N1
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+AddTextList <$STR(S1)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+AddTextList <$STR(N1)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+GOTO @检测泉水~1名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+AddTextList <$STR(S0)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+AddTextList <$HUMAN(行会积分2)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+break
+}

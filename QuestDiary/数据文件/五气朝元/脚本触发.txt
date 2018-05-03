@@ -1,0 +1,317 @@
+[@主号五气升级]
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+MOV <$N(五元播放1)> 0
+MOV <$N(五元播放2)> 0
+MOV <$N(五元播放3)> 0
+MOV <$N(五元播放4)> 0
+MOV <$N(五元播放5)> 0
+MOV <$N(升级开关1)> 0
+MOV <$N(升级开关2)> 0
+MOV <$N(升级开关3)> 0
+MOV <$N(升级开关4)> 0
+MOV <$N(升级开关5)> 0
+
+#IF
+CHECKVAR HUMAN 五元等级1 < 80
+#ACT
+MOV <$N(升级开关1)> 1
+
+#IF
+CHECKVAR HUMAN 五元等级2 < 80
+#ACT
+MOV <$N(升级开关2)> 1
+
+#IF
+CHECKVAR HUMAN 五元等级3 < 80
+#ACT
+MOV <$N(升级开关3)> 1
+
+#IF
+CHECKVAR HUMAN 五元等级4 < 80
+#ACT
+MOV <$N(升级开关4)> 1
+
+#IF
+CHECKVAR HUMAN 五元等级5 < 80
+#ACT
+MOV <$N(升级开关5)> 1
+
+#IF
+EQUAL <$N(升级开关1)> 1
+CHECKVAR HUMAN 五元等级1 < 80
+CHECKKIMNEEDLE 金元之力 <$S(当前数量1)>
+#ACT
+TAKEKIMNEEDLE 金元之力 <$S(当前数量1)>
+CALCVAR HUMAN 五元等级1 + 1
+SAVEVAR HUMAN 五元等级1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放1)> 9
+CHANGEHUMABILITY 22 + 1250 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元金元位升级至：<$HUMAN(五元等级1)>级!
+
+#IF
+EQUAL <$N(升级开关2)> 1
+CHECKVAR HUMAN 五元等级2 < 80
+CHECKKIMNEEDLE 木元之力 <$S(当前数量2)>
+#ACT
+TAKEKIMNEEDLE 木元之力 <$S(当前数量2)>
+CALCVAR HUMAN 五元等级2 + 1
+SAVEVAR HUMAN 五元等级2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放2)> 9
+CHANGEHUMABILITY 17 + 1875 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元木元位升级至：<$HUMAN(五元等级2)>级!
+
+#IF
+EQUAL <$N(升级开关3)> 1
+CHECKVAR HUMAN 五元等级3 < 80
+CHECKKIMNEEDLE 水元之力 <$S(当前数量3)>
+#ACT
+TAKEKIMNEEDLE 水元之力 <$S(当前数量3)>
+CALCVAR HUMAN 五元等级3 + 1
+SAVEVAR HUMAN 五元等级3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放3)> 9
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元水元位升级至：<$HUMAN(五元等级3)>级!
+
+#IF
+EQUAL <$N(升级开关4)> 1
+CHECKVAR HUMAN 五元等级4 < 80
+CHECKKIMNEEDLE 火元之力 <$S(当前数量4)>
+#ACT
+TAKEKIMNEEDLE 火元之力 <$S(当前数量4)>
+CALCVAR HUMAN 五元等级4 + 1
+SAVEVAR HUMAN 五元等级4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放4)> 9
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元火元位升级至：<$HUMAN(五元等级4)>级!
+
+#IF
+EQUAL <$N(升级开关5)> 1
+CHECKVAR HUMAN 五元等级5 < 80
+CHECKKIMNEEDLE 土元之力 <$S(当前数量5)>
+#ACT
+TAKEKIMNEEDLE 土元之力 <$S(当前数量5)>
+CALCVAR HUMAN 五元等级5 + 1
+SAVEVAR HUMAN 五元等级5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放5)> 9
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元土元位升级至：<$HUMAN(五元等级5)>级!
+
+#IF
+EQUAL <$N(升级开关1)> 1
+CHECKVAR HUMAN 五元等级1 < 80
+CHECKKIMNEEDLE 金元之力 1
+NOT CHECKKIMNEEDLE 金元之力 <$S(当前数量1)>
+#ACT
+TAKEKIMNEEDLE 金元之力 1
+CALCVAR HUMAN 五元经验1 + 1
+SAVEVAR HUMAN 五元经验1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放1)> 9
+
+#IF
+EQUAL <$N(升级开关2)> 1
+CHECKVAR HUMAN 五元等级2 < 80
+CHECKKIMNEEDLE 木元之力 1
+NOT CHECKKIMNEEDLE 木元之力 <$S(当前数量2)>
+#ACT
+TAKEKIMNEEDLE 木元之力 1
+CALCVAR HUMAN 五元经验2 + 1
+SAVEVAR HUMAN 五元经验2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放2)> 9
+
+#IF
+EQUAL <$N(升级开关3)> 1
+CHECKVAR HUMAN 五元等级3 < 80
+CHECKKIMNEEDLE 水元之力 1
+NOT CHECKKIMNEEDLE 水元之力 <$S(当前数量3)>
+#ACT
+TAKEKIMNEEDLE 水元之力 1
+CALCVAR HUMAN 五元经验3 + 1
+SAVEVAR HUMAN 五元经验3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放3)> 9
+
+#IF
+EQUAL <$N(升级开关4)> 1
+CHECKVAR HUMAN 五元等级4 < 80
+CHECKKIMNEEDLE 火元之力 1
+NOT CHECKKIMNEEDLE 火元之力 <$S(当前数量4)>
+#ACT
+TAKEKIMNEEDLE 火元之力 1
+CALCVAR HUMAN 五元经验4 + 1
+SAVEVAR HUMAN 五元经验4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放4)> 9
+
+#IF
+EQUAL <$N(升级开关5)> 1
+CHECKVAR HUMAN 五元等级5 < 80
+CHECKKIMNEEDLE 土元之力 1
+NOT CHECKKIMNEEDLE 土元之力 <$S(当前数量5)>
+#ACT
+TAKEKIMNEEDLE 土元之力 1
+CALCVAR HUMAN 五元经验5 + 1
+SAVEVAR HUMAN 五元经验5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+MOV <$N(五元播放5)> 9
+
+#IF
+CHECKVAR HUMAN 五元等级1 < 80
+CHECKVAR HUMAN 五元经验1 > <$S(当前数量1)>
+#ACT
+CALCVAR HUMAN 五元等级1 + 1
+SAVEVAR HUMAN 五元等级1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验1 = 0
+SAVEVAR HUMAN 五元经验1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 22 + 1250 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元金元位升级至：<$HUMAN(五元等级1)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级1 < 80
+CHECKVAR HUMAN 五元经验1 = <$S(当前数量1)>
+#ACT
+CALCVAR HUMAN 五元等级1 + 1
+SAVEVAR HUMAN 五元等级1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验1 = 0
+SAVEVAR HUMAN 五元经验1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 22 + 1250 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元金元位升级至：<$HUMAN(五元等级1)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级2 < 80
+CHECKVAR HUMAN 五元经验2 > <$S(当前数量2)>
+#ACT
+CALCVAR HUMAN 五元等级2 + 1
+SAVEVAR HUMAN 五元等级2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验2 = 0
+SAVEVAR HUMAN 五元经验2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 17 + 1875 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元木元位升级至：<$HUMAN(五元等级2)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级2 < 80
+CHECKVAR HUMAN 五元经验2 = <$S(当前数量2)>
+#ACT
+CALCVAR HUMAN 五元等级2 + 1
+SAVEVAR HUMAN 五元等级2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验2 = 0
+SAVEVAR HUMAN 五元经验2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 17 + 1875 86400000
+CHANGEHUMABILITY 21 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元木元位升级至：<$HUMAN(五元等级2)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级3 < 80
+CHECKVAR HUMAN 五元经验3 > <$S(当前数量3)>
+#ACT
+CALCVAR HUMAN 五元等级3 + 1
+SAVEVAR HUMAN 五元等级3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验3 = 0
+SAVEVAR HUMAN 五元经验3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元水元位升级至：<$HUMAN(五元等级3)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级3 < 80
+CHECKVAR HUMAN 五元经验3 = <$S(当前数量3)>
+#ACT
+CALCVAR HUMAN 五元等级3 + 1
+SAVEVAR HUMAN 五元等级3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验3 = 0
+SAVEVAR HUMAN 五元经验3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元水元位升级至：<$HUMAN(五元等级3)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级4 < 80
+CHECKVAR HUMAN 五元经验4 > <$S(当前数量4)>
+#ACT
+CALCVAR HUMAN 五元等级4 + 1
+SAVEVAR HUMAN 五元等级4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验4 = 0
+SAVEVAR HUMAN 五元经验4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元火元位升级至：<$HUMAN(五元等级4)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级4 < 80
+CHECKVAR HUMAN 五元经验4 = <$S(当前数量4)>
+#ACT
+CALCVAR HUMAN 五元等级4 + 1
+SAVEVAR HUMAN 五元等级4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验4 = 0
+SAVEVAR HUMAN 五元经验4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元火元位升级至：<$HUMAN(五元等级4)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级5 < 80
+CHECKVAR HUMAN 五元经验5 > <$S(当前数量5)>
+#ACT
+CALCVAR HUMAN 五元等级5 + 1
+SAVEVAR HUMAN 五元等级5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验5 = 0
+SAVEVAR HUMAN 五元经验5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元土元位升级至：<$HUMAN(五元等级5)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级5 < 80
+CHECKVAR HUMAN 五元经验5 = <$S(当前数量5)>
+#ACT
+CALCVAR HUMAN 五元等级5 + 1
+SAVEVAR HUMAN 五元等级5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CALCVAR HUMAN 五元经验5 = 0
+SAVEVAR HUMAN 五元经验5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+CHANGEHUMABILITY 21 + 625 86400000
+CHANGEHUMABILITY 23 + 375 86400000
+SENDMSG 0 恭喜：%S将五气朝元土元位升级至：<$HUMAN(五元等级5)>级!
+
+#IF
+CHECKVAR HUMAN 五元等级1 > 79
+#ACT
+MOV <$S(本级提示5)>
+MOV <$S(下级提示5)>
+CALCVAR HUMAN 五元经验1 = 0
+SAVEVAR HUMAN 五元经验1 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+#IF
+CHECKVAR HUMAN 五元等级2 > 79
+#ACT
+MOV <$S(本级提示5)>
+MOV <$S(下级提示5)>
+CALCVAR HUMAN 五元经验2 = 0
+SAVEVAR HUMAN 五元经验2 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+#IF
+CHECKVAR HUMAN 五元等级3 > 79
+#ACT
+MOV <$S(本级提示5)>
+MOV <$S(下级提示5)>
+CALCVAR HUMAN 五元经验3 = 0
+SAVEVAR HUMAN 五元经验3 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+#IF
+CHECKVAR HUMAN 五元等级4 > 79
+#ACT
+MOV <$S(本级提示5)>
+MOV <$S(下级提示5)>
+CALCVAR HUMAN 五元经验4 = 0
+SAVEVAR HUMAN 五元经验4 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+#IF
+CHECKVAR HUMAN 五元等级5 > 79
+#ACT
+MOV <$S(本级提示5)>
+MOV <$S(下级提示5)>
+CALCVAR HUMAN 五元经验5 = 0
+SAVEVAR HUMAN 五元经验5 ..\QuestDiary\数据文件\五气朝元\五元数据.txt
+}

@@ -1,0 +1,207 @@
+[@领取赠方奖励]
+{
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1点数.txt S10
+MOV N10
+MOV N10 S10
+DELAYGOTO 1 @赠送奖励1
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第2名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第2点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 2
+DELAYGOTO 1 @赠送奖励2-3
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第3名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第3点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 3
+DELAYGOTO 1 @赠送奖励2-3
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第4名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第4点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 4
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第5名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第5点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 5
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第6名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第6点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 6
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第7名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第7点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 7
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第8名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第8点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 8
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第9名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第9点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 9
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#IF
+CheckTextList <$STR(S50)> ..\QuestDiary\数据文件\水晶特使\赠送奖励\第10名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第10点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11 10
+DELAYGOTO 1 @赠送奖励4-10
+BREAK
+
+#ELSESAY
+你没有中奖，不能领取奖励！
+#ELSEACT
+BREAK
+
+[@赠送奖励4-10]
+#IF
+CHECKBAGSIZE 2
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留2格以上包裹空间后再来领取奖励！
+
+#IF
+LARGE N10 119
+#ACT
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第4-10名奖励.txt S10
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第<$STR(N11)>点数.txt
+give <$STR(s10)> 1
+SENDMSG 0 恭喜：<$USERNAME>，在传奇之星活动中，获得了奖励：<$STR(S10)>*1!
+BREAK
+
+#ELSEACT
+break
+#ELSESAY
+很遗憾，您上周的赠送数量未达到120，无法领取任何奖励！\
+本轮大奖已经轮空！
+
+[@赠送奖励2-3]
+#IF
+CHECKBAGSIZE 2
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+请预留2格以上包裹空间后再来领取奖励！
+
+#IF
+LARGE N10 119
+#ACT
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第2-3名奖励.txt S10
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第<$STR(N11)>点数.txt
+give <$STR(s10)> 1
+SENDMSG 0 恭喜：<$USERNAME>，在传奇之星活动中，获得了奖励：<$STR(S10)>*1!
+BREAK
+
+#ELSEACT
+break
+#ELSESAY
+很遗憾，您上周的赠送数量未达到120，无法领取任何奖励！\
+本轮大奖已经轮空！
+
+[@赠送奖励1]
+#IF
+CHECKBAGSIZE 4
+#ACT
+#ELSEACT
+break
+#ELSESAY
+请预留4格以上包裹空间后再来领取奖励！
+
+#IF
+LARGE N10 119
+#ACT
+
+#ELSEACT
+break
+#ELSESAY
+很遗憾，您上周的赠送数量未达到120，无法领取任何奖励！\
+本轮大奖已经轮空！
+
+#IF
+LARGE N10 1599
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1名奖励.txt S10
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1点数.txt
+give <$STR(s10)> 2
+SENDMSG 0 恭喜：<$USERNAME>，在传奇之星活动中，获得了奖励：<$STR(S10)>*2!
+BREAK
+
+#ELSEACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1名奖励.txt S10
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\赠送奖励\第1点数.txt
+give <$STR(s10)> 1
+SENDMSG 0 恭喜：<$USERNAME>，在传奇之星活动中，获得了奖励：<$STR(S10)>*1!
+BREAK
+}

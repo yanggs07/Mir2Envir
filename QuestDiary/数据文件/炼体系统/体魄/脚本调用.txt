@@ -1,0 +1,816 @@
+[@体魄正文]
+{
+#IF
+CHECKLEVELEX > 0
+#ACT
+MOV <$N(体魄等级)>
+MOV <$N(体魄按钮1)> 1853
+MOV <$N(体魄按钮2)> 1853
+MOV <$N(体魄按钮3)> 1853
+MOV <$N(体魄按钮4)> 1853
+MOV <$N(体魄按钮5)> 1853
+MOV <$N(体魄按钮6)> 1853
+MOV <$N(体魄按钮7)> 1853
+MOV <$N(体魄按钮8)> 1853
+MOV <$N(体魄按钮9)> 1853
+MOV <$N(体魄按钮10)> 1853
+MOV <$N(体魄按钮11)> 1853
+MOV <$N(体魄特效1)> 1853
+MOV <$N(体魄特效2)> 1853
+MOV <$N(体魄特效3)> 1853
+MOV <$N(体魄特效4)> 1853
+MOV <$N(体魄特效5)> 1853
+MOV <$N(体魄特效6)> 1853
+MOV <$N(体魄特效7)> 1853
+MOV <$N(体魄特效8)> 1853
+MOV <$N(体魄特效9)> 1853
+MOV <$N(体魄特效10)> 1853
+MOV <$N(体魄特效11)> 1853
+MOV S81
+MOV S82
+MOV S83
+MOV S84
+MOV <$S(体魄文字提示1)>
+MOV <$S(体魄文字提示2)>
+MOV <$S(体魄文字提示3)>
+MOV <$S(体魄文字提示4)>
+MOV <$S(体魄文字提示5)>
+MOV <$S(体魄文字提示6)>
+MOV S91
+;以上为默认数据，全部不开通！
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 10
+#ACT
+OPENMERCHANTDLG 52|1897|1|442|274|0|0|30|1|419|27
+BREAK
+#SAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=91;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}/@强体>
+<{i=90;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1894;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣血丹 0#47***;x=80;y=410}>
+
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=257;y=95}>
+<{s=魔血值+80800;x=277;y=110}>
+
+<{s=已升至最高体魄;fc=251;ch=251;cd=251;x=257;y=140}>
+<{s=体魄升阶;fc=251;ch=251;cd=251;x=257;y=200}>
+<{s=当前阶段为：;fc=251;ch=251;cd=251;x=257;y=220}>
+<{s=天人合一;fc=251;ch=251;cd=251;x=330;y=220}>
+<{s=额外获得：;fc=251;ch=251;cd=251;x=257;y=240}>
+<{s=魔血值+2200;x=277;y=260}>
+<{s=已升至最高体魄阶段;fc=251;ch=251;cd=251;x=257;y=290}>
+
+<{i=1880;li=52;w=14;h=14;x=125;y=113;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=153;y=151;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=103;y=147;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=124;y=171;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=172;y=212;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=74;y=209;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=125;y=221;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=153;y=279;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=97;y=271;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=168;y=332;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=1880;li=52;w=14;h=14;x=97;y=325;ei=1900;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 10
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄按钮9)> 1880
+MOV <$N(体魄按钮10)> 1880
+MOV <$N(体魄按钮11)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+MOV <$N(体魄特效9)> 1900
+MOV <$N(体魄特效10)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 10
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄按钮9)> 1880
+MOV <$N(体魄按钮10)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+MOV <$N(体魄特效9)> 1900
+MOV <$N(体魄特效10)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 9
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄按钮9)> 1880
+MOV <$N(体魄按钮10)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+MOV <$N(体魄特效9)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 9
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄按钮9)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+MOV <$N(体魄特效9)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 8
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄按钮9)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 8
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+MOV <$N(体魄特效8)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 7
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄按钮8)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 7
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+MOV <$N(体魄特效7)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 6
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄按钮7)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 6
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+MOV <$N(体魄特效6)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 5
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 5
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+MOV <$N(体魄特效5)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 4
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮5)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 4
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+MOV <$N(体魄特效4)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 3
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄按钮4)> 1880
+MOV <$N(体魄按钮6)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 3
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+MOV <$N(体魄特效3)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 2
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄按钮3)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 2
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄特效1)> 1900
+MOV <$N(体魄特效2)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 1
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄按钮2)> 1880
+MOV <$N(体魄特效1)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 = 1
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+MOV <$N(体魄按钮1)> 1880
+MOV <$N(体魄特效1)> 1900
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKVAR HUMAN 体魄阶段 > 0
+#ACT
+MOV <$N(体魄等级)> 1
+MOV <$N(体魄按钮1)> 1880
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKVAR HUMAN 体魄阶段 < 1
+#ACT
+MOV <$N(体魄等级)> 1
+
+#IF
+CHECKLEVELEX > 0
+CHECKVAR HUMAN 体魄等级 > 0
+#ACT
+OPENMERCHANTDLG 52|1897|1|442|274|0|0|30|1|419|27
+MOV <$S(体魄阶段等级)>
+MOV <$S(体魄需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt <$N(体魄等级)> <$S(体魄阶段等级)> <$S(体魄需求数量)>
+MOV <$S(体魄等级名称)>
+MOV <$S(体魄等级属性)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt <$N(体魄等级)> <$S(体魄等级名称)> <$S(体魄等级属性)>
+INC <$N(体魄等级)> 1
+MOV <$S(体魄下级名称)>
+MOV <$S(体魄下级属性)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt <$N(体魄等级)> <$S(体魄下级名称)> <$S(体魄下级属性)>
+MOV <$S(体魄文字提示1)> 当前阶段为：;fc=251;ch=251;cd=251
+MOV <$S(体魄文字提示2)> <$S(体魄等级名称)>
+MOV <$S(体魄文字提示3)> 额外获得：;fc=251;ch=251;cd=251
+MOV <$S(体魄文字提示4)> 魔血值+
+INC <$S(体魄文字提示4)> <$S(体魄等级属性)>
+MOV <$S(体魄文字提示5)> 下一阶：
+INC <$S(体魄文字提示5)> <$S(体魄下级名称)>
+INC <$S(体魄文字提示5)> ;fc=56;ch=56;cd=56
+MOV <$S(体魄文字提示6)> 魔血值+
+INC <$S(体魄文字提示6)> <$S(体魄下级属性)>
+INC <$S(体魄文字提示6)> ;fc=56;ch=56;cd=56
+MOV P11
+MOV P12
+MOV P11 <$HUMAN(体魄阶段)>
+MOV P12 <$S(体魄阶段等级)>
+MOV <$S(体魄阶段属性)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> <$HUMAN(体魄等级)>
+MOV P13
+MUL P13 <$HUMAN(体魄阶段)> <$S(体魄阶段属性)>
+MOV P14
+MUL P14 <$HUMAN(体魄阶段)> <$S(体魄阶段属性)>
+INC P14 <$S(体魄阶段属性)>
+BREAK
+#SAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=91;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}/@强体>
+<{i=90;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1894;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣血丹 0#47<$S(体魄需求数量)>;x=80;y=410}>
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=260;y=95}>
+
+<{s=魔血值+<$STR(P13)>;x=280;y=110}>
+<{s=下一级：;fc=56;ch=56;cd=56;x=260;y=140}>
+
+<{s=魔血值+<$STR(P14)>;fc=56;ch=56;cd=56;x=280;y=155}>
+<{s=体魄升阶;fc=251;ch=251;cd=251;x=260;y=200}>
+<{s=<$S(体魄文字提示1)>;x=260;y=220}>
+<{s=<$S(体魄文字提示2)>;x=333;y=220}>
+<{s=<$S(体魄文字提示3)>;x=260;y=240}>
+<{s=<$S(体魄文字提示4)>;x=280;y=260}>
+<{s=<$S(体魄文字提示5)>;x=260;y=290}>
+<{s=<$S(体魄文字提示6)>;x=280;y=305}>
+<{s=升阶进度：<$HUMAN(体魄阶段)>#47<$S(体魄阶段等级)>;fc=251;ch=251;cd=251;x=260;y=345}>
+<{i=1898;li=52;w=170;h=13;x=260;y=360}>
+<{type=1;li=52;i=1899;p=<$STR(P11)>;m=<$STR(P12)>;x=260;y=360}>
+<{i=51;li=53;w=30;h=60;s=一键修炼;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=330;y=400}/@体魄修炼>
+
+<{i=1879;li=52;w=14;h=14;x=125;y=113}>
+<{i=<$N(体魄按钮10)>;li=52;w=14;h=14;x=153;y=151;ei=<$N(体魄特效10)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮9)>;li=52;w=14;h=14;x=103;y=147;ei=<$N(体魄特效9)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮8)>;li=52;w=14;h=14;x=124;y=171;ei=<$N(体魄特效8)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮7)>;li=52;w=14;h=14;x=172;y=212;ei=<$N(体魄特效7)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮6)>;li=52;w=14;h=14;x=74;y=209;ei=<$N(体魄特效6)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮5)>;li=52;w=14;h=14;x=125;y=221;ei=<$N(体魄特效5)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮4)>;li=52;w=14;h=14;x=153;y=279;ei=<$N(体魄特效4)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮3)>;li=52;w=14;h=14;x=97;y=271;ei=<$N(体魄特效3)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮2)>;li=52;w=14;h=14;x=168;y=332;ei=<$N(体魄特效2)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮1)>;li=52;w=14;h=14;x=97;y=325;ei=<$N(体魄特效1)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+
+#ELSEACT
+OPENMERCHANTDLG 52|1897|1|442|274|0|0|30|1|419|27
+MOV <$S(体魄阶段等级)>
+MOV <$S(体魄需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt 1 <$S(体魄阶段等级)> <$S(体魄需求数量)>
+MOV P11
+MOV P12
+MOV P11 <$HUMAN(体魄阶段)>
+MOV P12 <$S(体魄阶段等级)>
+MOV <$S(体魄阶段属性)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> 1
+MOV <$S(体魄阶段等级)>
+MOV <$S(体魄需求数量)>
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt 1 <$S(体魄阶段等级)> <$S(体魄需求数量)>
+MOV P13
+MUL P13 <$HUMAN(体魄阶段)> <$S(体魄阶段属性)>
+MOV P14
+MUL P14 <$HUMAN(体魄阶段)> <$S(体魄阶段属性)>
+INC P14 <$S(体魄阶段属性)>
+BREAK
+#ELSESAY
+<{i=91;li=53;w=30;h=60;s=　护体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=40;y=55}/@查看护体>
+<{i=91;li=53;w=30;h=60;s=　强体　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=101;y=55}/@强体>
+<{i=90;li=53;w=30;h=60;s=　体魄　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=162;y=55}>
+<{i=91;li=53;w=30;h=60;s=　洗髓　;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=223;y=55}/@洗髓>
+<{i=1894;li=52;w=30;h=60;x=45;y=400}>
+<{s=圣血丹 0#477;x=80;y=410}>
+<{s=当前修炼获得：;fc=251;ch=251;cd=251;x=260;y=95}>
+
+<{s=魔血值+<$STR(P13)>;x=280;y=110}>
+<{s=下一级：;fc=56;ch=56;cd=56;x=260;y=140}>
+
+<{s=魔血值+<$STR(P14)>;fc=56;ch=56;cd=56;x=280;y=155}>
+<{s=体魄升阶;fc=251;ch=251;cd=251;x=260;y=200}>
+<{s=当前无任何体魄阶段;x=260;y=220}>
+<{s=下一阶：初学乍练 ;fc=56;ch=56;cd=56;x=260;y=290}>
+<{s=魔血值+100;fc=56;ch=56;cd=56;x=280;y=305}>
+<{s=升阶进度：<$HUMAN(体魄阶段)>#47<$S(体魄阶段等级)>;fc=251;ch=251;cd=251;x=260;y=345}>
+<{i=1898;li=52;w=170;h=13;x=260;y=360}>
+<{type=1;li=52;i=1899;p=<$STR(P11)>;m=<$STR(P12)>;x=260;y=360}>
+<{i=51;li=53;w=30;h=60;s=一键修炼;fc=#efc68c;ch=#efc68c;cd=#efc68c;x=330;y=400}/@体魄修炼>
+
+<{i=1879;li=52;w=14;h=14;x=125;y=113}>
+<{i=<$N(体魄按钮10)>;li=52;w=14;h=14;x=153;y=151;ei=<$N(体魄特效10)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮9)>;li=52;w=14;h=14;x=103;y=147;ei=<$N(体魄特效9)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮8)>;li=52;w=14;h=14;x=124;y=171;ei=<$N(体魄特效8)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮7)>;li=52;w=14;h=14;x=172;y=212;ei=<$N(体魄特效7)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮6)>;li=52;w=14;h=14;x=74;y=209;ei=<$N(体魄特效6)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮5)>;li=52;w=14;h=14;x=125;y=221;ei=<$N(体魄特效5)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮4)>;li=52;w=14;h=14;x=153;y=279;ei=<$N(体魄特效4)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮3)>;li=52;w=14;h=14;x=97;y=271;ei=<$N(体魄特效3)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮2)>;li=52;w=14;h=14;x=168;y=332;ei=<$N(体魄特效2)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+<{i=<$N(体魄按钮1)>;li=52;w=14;h=14;x=97;y=325;ei=<$N(体魄特效1)>;eli=52;ec=7;efc=1;eox=-17;eoy=-20}>
+;----------------------------------------------------------------------------------------------------------
+[@体魄修炼]
+#IF
+CHECKVAR HUMAN 体魄等级 > 10
+#ACT
+SENDMSG 5 已升至最高体魄!
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt 1 <$S(体魄阶段)> <$S(体魄需求)>
+MOV <$N(体魄阶段)> 50
+DEC <$N(体魄阶段)> <$HUMAN(体魄阶段)>
+MUL <$N(升级数量)> <$N(体魄阶段)> <$S(体魄需求)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> 1
+MUL <$N(体魄属性)> <$N(体魄阶段)> <$S(体魄阶段属性)>
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+INC <$N(体魄等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt <$HUMAN(体魄等级)> <$S(体魄阶段)> <$S(体魄需求)>
+MOV <$N(体魄阶段)> 0
+INC <$N(体魄阶段)> <$S(体魄阶段)>
+DEC <$N(体魄阶段)> <$HUMAN(体魄阶段)>
+MUL <$N(升级数量)> <$N(体魄阶段)> <$S(体魄需求)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> <$HUMAN(体魄等级)>
+MUL <$N(体魄属性)> <$N(体魄阶段)> <$S(体魄阶段属性)>
+DELAYGOTO 10 @体魄阶段升级
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$N(升级数量)>
+CALCVAR HUMAN 体魄等级 + 1
+SAVEVAR HUMAN 体魄等级 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CALCVAR HUMAN 体魄阶段 = 0
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt 1 <$S(体魄下级名称)> <$S(体魄下级属性)>
+CALCVAR HUMAN 体魄属性 + <$N(体魄属性)>
+CALCVAR HUMAN 体魄属性 + <$S(体魄下级属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+SENDMSG 0 恭喜　%S　体魄成功突破至初学乍练，从此纵横玛法，傲视群雄!
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKVAR HUMAN 体魄阶段 < 199
+CHECKKIMNEEDLE 圣血丹 7
+NOT CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 7
+CALCVAR HUMAN 体魄阶段 + 1
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 + 45
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @体魄正文
+BREAK
+
+[@体魄阶段升级]
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$N(升级数量)>
+CALCVAR HUMAN 体魄等级 + 1
+SAVEVAR HUMAN 体魄等级 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CALCVAR HUMAN 体魄阶段 = 0
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt <$HUMAN(体魄等级)> <$S(体魄下级名称)> <$S(体魄下级属性)>
+SENDMSG 0 恭喜　%S　体魄成功突破至<$S(体魄下级名称)>，从此纵横玛法，傲视群雄!
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 + <$N(体魄属性)>
+CALCVAR HUMAN 体魄属性 + <$S(体魄下级属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+CHECKKIMNEEDLE 圣血丹 <$S(体魄需求)>
+NOT CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$S(体魄需求)>
+CALCVAR HUMAN 体魄阶段 + 1
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> <$HUMAN(体魄等级)>
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 + <$S(体魄阶段属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @体魄正文
+BREAK
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@体魄阶段升级111]
+#IF
+CHECKVAR HUMAN 体魄等级 > 10
+#ACT
+SENDMSG 5 已升至最高体魄!
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+#ACT
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt 1 <$S(体魄阶段)> <$S(体魄需求)>
+MOV <$N(体魄阶段)> 50
+DEC <$N(体魄阶段)> <$HUMAN(体魄阶段)>
+MUL <$N(升级数量)> <$N(体魄阶段)> <$S(体魄需求)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> 1
+MUL <$N(体魄属性)> <$N(体魄阶段)> <$S(体魄阶段属性)>
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+#ACT
+MOV <$N(体魄等级)> <$HUMAN(体魄等级)>
+INC <$N(体魄等级)> 1
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\升级需求.txt <$HUMAN(体魄等级)> <$S(体魄阶段)> <$S(体魄需求)>
+MOV <$N(体魄阶段)> 0
+INC <$N(体魄阶段)> <$S(体魄阶段)>
+DEC <$N(体魄阶段)> <$HUMAN(体魄阶段)>
+MUL <$N(升级数量)> <$N(体魄阶段)> <$S(体魄需求)>
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> <$HUMAN(体魄等级)>
+MUL <$N(体魄属性)> <$N(体魄阶段)> <$S(体魄阶段属性)>
+DELAYGOTO 10 @体魄阶段升级
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$N(升级数量)>
+CALCVAR HUMAN 体魄等级 + 1
+SAVEVAR HUMAN 体魄等级 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CALCVAR HUMAN 体魄阶段 = 0
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt 1 <$S(体魄下级名称)> <$S(体魄下级属性)>
+CALCVAR HUMAN 体魄属性 = <$N(体魄属性)>
+CALCVAR HUMAN 体魄属性 + <$S(体魄下级属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+SENDMSG 0 恭喜　%S　体魄成功突破至初学乍练，从此纵横玛法，傲视群雄!
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 < 1
+CHECKVAR HUMAN 体魄阶段 < 199
+CHECKKIMNEEDLE 圣血丹 7
+NOT CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 7
+CALCVAR HUMAN 体魄阶段 + 1
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 + 20
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @体魄正文
+BREAK
+
+[@体魄阶段升级]
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$N(升级数量)>
+CALCVAR HUMAN 体魄等级 + 1
+SAVEVAR HUMAN 体魄等级 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CALCVAR HUMAN 体魄阶段 = 0
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+GetFileToVar ..\QuestDiary\数据文件\炼体系统\体魄\等级属性.txt <$HUMAN(体魄等级)> <$S(体魄下级名称)> <$S(体魄下级属性)>
+SENDMSG 0 恭喜　%S　体魄成功突破至<$S(体魄下级名称)>，从此纵横玛法，傲视群雄!
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 = <$N(体魄属性)>
+CALCVAR HUMAN 体魄属性 + <$S(体魄下级属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#IF
+CHECKVAR HUMAN 体魄等级 > 0
+CHECKVAR HUMAN 体魄等级 < 11
+CHECKKIMNEEDLE 圣血丹 <$S(体魄需求)>
+NOT CHECKKIMNEEDLE 圣血丹 <$N(升级数量)>
+#ACT
+TAKEKIMNEEDLE 圣血丹 <$S(体魄需求)>
+CALCVAR HUMAN 体魄阶段 + 1
+SAVEVAR HUMAN 体魄阶段 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+GetRandomName ..\QuestDiary\数据文件\炼体系统\体魄\阶段属性.txt <$S(体魄阶段属性)> <$HUMAN(体魄等级)>
+CHANGEHUMABILITY 17 - <$HUMAN(体魄属性)> 86400000
+CALCVAR HUMAN 体魄属性 = <$S(体魄阶段属性)>
+SAVEVAR HUMAN 体魄属性 ..\QuestDiary\数据文件\炼体系统\体魄\当前等级.txt
+CHANGEHUMABILITY 17 + <$HUMAN(体魄属性)> 86400000
+DELAYGOTO 10 @体魄正文
+BREAK
+
+#ELSEACT
+SENDMSG 5 升级材料不够,不能升级.
+DELAYGOTO 10 @体魄正文
+BREAK
+}

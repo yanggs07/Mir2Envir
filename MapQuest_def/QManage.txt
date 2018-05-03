@@ -1,0 +1,3039 @@
+[@RESUME]
+#IF
+#ACT
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　由于您上次使用了离线挂机功能。　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　为防止数据出现错误请重新登陆。　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　不便之处，请谅解。　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+SENDMSG 5 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+KICK
+break
+CLOSE
+
+
+
+
+
+
+
+;[@Startup]
+
+
+[@LOGIN]
+#if
+ISAI
+#ACT
+inc M30 900
+inc M31 300
+#CALL [\假人陪玩\陪练系统.txt] @陪练登陆
+#CALL [\假人陪玩\假人英雄.txt] @假人招英雄
+#CALL [\登陆\个人变量.txt] @个人变量
+#CALL [\登陆\龙啸功加成.txt] @龙啸功加属性
+
+#IF
+#ACT
+#CALL [\登陆\名字排序.txt] @名字排序
+#CALL [\登陆\个人变量.txt] @个人变量
+#CALL [\登陆\登陆脚本.txt] @登陆设置
+GOTO @登陆提示
+DELAYGOTO 10000 @烽火提示
+
+
+
+
+#IF
+#ACT
+QMISSIONGOTO 0 @1
+
+[@假人入会]
+#IF
+ISAI
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人行会.txt S11
+AddGuildMember <$STR(S11)> <$USERNAME>
+BREAK
+
+
+
+[@登陆提示]
+#IF
+CHECKHEARTEXP
+#ACT
+SENDMSG 7 你的心法经验已超过50万，可以使用火龙果进行吸收了！
+#IF
+CHECKLEVELEX = 999
+#ACT
+SENDMSG 7 你的等级已经达到上限999级，将不能再获取经验。
+#IF
+#ACT
+SENDMSG 6 更改攻击模式：CTRL-H
+SENDMSG 6 当前元宝数：<$GAMEGOLD>
+
+[@HEROLOGIN]
+#if
+#act
+ChangeHeroLoyal = 10000
+
+
+
+#IF
+CheckDeputyHero
+#act
+goto @副将登录
+
+
+
+#if
+CheckDeputyHero
+checkherolevel > 997
+CHECKVAR HUMAN 洗灵石 = 0
+#ACT
+CHANGEHEROLEVEL = 997
+
+
+[@副将登录]
+#IF
+CHECKHEROJOB WARRIOR
+CHECKVAR HUMAN 副将战士 = 0
+#act
+calcvar HUMAN 副将战士 = 1
+savevar human 副将战士 ..\QUESTDIARY\雪花制作\副将战士.txt
+READSKILLNG HERO
+GIVE 火龙之心 1 HERO
+GOTO @技能
+GOTO @合击
+GOTO @新手英雄
+#elseact
+goto @副将检测
+
+
+
+
+[@副将检测]
+#IF
+CHECKHEROJOB WIZARD
+CHECKVAR HUMAN 副将法师 = 0
+#act
+calcvar HUMAN 副将法师 = 1
+savevar human 副将法师 ..\QUESTDIARY\雪花制作\副将法师.txt
+READSKILLNG HERO
+GIVE 火龙之心 1 HERO
+GOTO @技能
+GOTO @合击
+GOTO @新手英雄
+#elseact
+goto @副将检测1
+
+[@副将检测1]
+#IF
+CHECKHEROJOB taoist
+CHECKVAR HUMAN 副将道士 = 0
+#act
+calcvar HUMAN 副将道士 = 1
+savevar human 副将道士 ..\QUESTDIARY\雪花制作\副将道士.txt
+READSKILLNG HERO
+GIVE 火龙之心 1 HERO
+GOTO @技能
+GOTO @合击
+GOTO @新手英雄
+
+
+
+
+
+
+[@英雄初级2]
+#if
+checkfenghao 玛法主宰者
+#act
+changeherolevel = 1000 
+changenglevel = 1000 hero
+#elseact
+goto @hero33
+
+
+[@hero33]
+#if
+checkherolevel = 1000 
+#act
+changeherolevel = 999
+goto @hero44
+
+[@hero44]
+#if
+checknglevel = 1000 hero
+#act
+changelevel = 999 hero
+
+
+
+
+
+
+#IF
+CHECKHEROJOB WARRIOR
+CheckDeputyHero
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的副将英雄（战士）已经成功被召唤，如需召唤其他职业的副将英雄，请到人物“出战”页签中选择副将职业。
+BREAK
+#IF
+CHECKHEROJOB wizard
+CheckDeputyHero
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的副将英雄（法师）已经成功被召唤，如需召唤其他职业的副将英雄，请到人物“出战”页签中选择副将职业。
+BREAK
+#IF
+CHECKHEROJOB taoist
+CheckDeputyHero
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的副将英雄（道士）已经成功被召唤，如需召唤其他职业的副将英雄，请到人物“出战”页签中选择副将职业。
+BREAK
+#IF
+CHECKHEROJOB WARRIOR
+CHECKHEROONLINE
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的主将英雄（战士）已经成功被召唤。
+BREAK
+#IF
+CHECKHEROJOB wizard
+CHECKHEROONLINE
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的主将英雄（法师）已经成功被召唤。
+BREAK
+#IF
+CHECKHEROJOB taoist
+CHECKHEROONLINE
+#ACT
+GOTO @检测英雄等级
+SENDMSG 7 您的主将英雄（道士）已经成功被召唤。
+BREAK
+
+
+[@检测英雄等级]
+#iF
+CHECKHEROLEVEL > 999
+#ACT
+GOTO @英雄超999检测
+BREAK
+#ELSEACT
+BREAK
+
+[@英雄超999检测]
+#iF
+CHECKHEROLEVEL > 1000
+#ACT
+CHANGEHEROLEVEL = 1000
+#IF
+CHECKFENGHAO 玛法主宰者　
+#ACT
+BREAK
+#ELSEACT
+CHANGEHEROLEVEL = 999
+BREAK
+
+
+[@烽火提示]
+#IF
+#ACT
+SENDMSG 6 因为烽火传递活动的赐福，你获得的经验将得到提升！
+BREAK
+
+[@道尊称号清空]
+#IF
+CHECKSELFSORT = 4 1
+#ACT
+BREAK
+
+#ELSEACT
+RECYCFENGHAO <$USERNAME> 道尊
+break
+
+[@法圣称号清空]
+#IF
+CHECKSELFSORT = 3 1
+#ACT
+BREAK
+
+#ELSEACT
+RECYCFENGHAO <$USERNAME> 法圣
+break
+
+[@战神称号清空]
+#IF
+CHECKSELFSORT = 2 1
+#ACT
+BREAK
+
+#ELSEACT
+RECYCFENGHAO <$USERNAME> 战神
+break
+
+[@沙巴克城主称号清空]
+#IF
+CHECKFENGHAO 沙巴克城主
+#ACT
+
+#ELSEACT
+break
+
+#IF 
+ISCASTLEMASTER
+#ACT
+break
+
+#ELSEACT
+RECYCFENGHAO <$USERNAME> 沙巴克城主
+break
+
+
+
+[@强力雇佣兵清理]
+#IF
+ISGUILDMASTER
+#ACT
+KILLSLAVE
+break
+
+[@城主检测]
+#IF
+gender man
+checkjob warrior
+#ACT
+MOV N10
+MOV N10 107
+DELAYGOTO 60000 @城主NPC改变
+break
+
+#IF
+gender woman
+checkjob warrior
+#ACT
+MOV N10
+MOV N10 108
+DELAYGOTO 60000 @城主NPC改变
+break
+
+#IF
+gender man
+checkjob wizard
+#ACT
+MOV N10
+MOV N10 109
+DELAYGOTO 60000 @城主NPC改变
+break
+
+#IF
+gender woman
+checkjob wizard
+#ACT
+MOV N10
+MOV N10 110
+DELAYGOTO 60000 @城主NPC改变
+break
+
+
+#IF
+gender man
+checkjob taoist
+#ACT
+MOV N10
+MOV N10 111
+DELAYGOTO 60000 @城主NPC改变
+break
+
+#IF
+gender woman
+checkjob taoist
+#ACT
+MOV N10
+MOV N10 112
+DELAYGOTO 60000 @城主NPC改变
+break
+
+#ELSEACT
+break
+
+[@城主NPC改变]
+#IF
+#ACT
+Gmexecute 删除商人 <$STR(A33)> 3 629 283 1
+Gmexecute 添加商人 <$STR(A33)> 沙巴克城\沙巴克_城主 <$STR(N10)> 0 3 629 283
+MOV A33
+MOV A33 沙巴克城主\
+INC A33 <$LORD>
+break
+
+[@兔财神数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 宠物快乐度 = 0
+SAVEVAR HUMAN 宠物快乐度 ..\QuestDiary\数据文件\兔财神\宠物快乐度.txt
+LOADVAR HUMAN 宠物快乐度 ..\QuestDiary\数据文件\兔财神\宠物快乐度.txt
+BREAK
+
+
+[@怪物献礼数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 挑战点 = 0
+SAVEVAR HUMAN 挑战点 ..\QuestDiary\数据文件\挑战点.txt
+LOADVAR HUMAN 挑战点 ..\QuestDiary\数据文件\挑战点.txt
+CALCVAR HUMAN 挑战点1 = 0
+SAVEVAR HUMAN 挑战点1 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+LOADVAR HUMAN 挑战点1 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+CALCVAR HUMAN 挑战点2 = 0
+SAVEVAR HUMAN 挑战点2 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+LOADVAR HUMAN 挑战点2 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+CALCVAR HUMAN 挑战点3 = 0
+SAVEVAR HUMAN 挑战点3 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+LOADVAR HUMAN 挑战点3 ..\QuestDiary\数据文件\怪物献礼\挑战点.txt
+BREAK
+
+[@每月数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 鲜花数量 = 0
+SAVEVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+LOADVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+BREAK
+
+[@每日数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 龙卫山谷开阔地次数 = 0
+SAVEVAR HUMAN 龙卫山谷开阔地次数 ..\QuestDiary\数据文件\龙卫山谷开阔地次数.TXT
+LOADVAR HUMAN 龙卫山谷开阔地次数 ..\QuestDiary\数据文件\龙卫山谷开阔地次数.TXT
+CALCVAR HUMAN 王者秘境次数 = 0
+SAVEVAR HUMAN 王者秘境次数 ..\QuestDiary\数据文件\王者秘境次数.TXT
+LOADVAR HUMAN 王者秘境次数 ..\QuestDiary\数据文件\王者秘境次数.TXT
+CALCVAR HUMAN 300次内功烟花1 = 0
+SAVEVAR HUMAN 300次内功烟花1 ..\QuestDiary\数据文件\300次内功烟花1.TXT
+LOADVAR HUMAN 300次内功烟花1 ..\QuestDiary\数据文件\300次内功烟花1.TXT
+CALCVAR HUMAN 300次内功烟花 = 0
+SAVEVAR HUMAN 300次内功烟花 ..\QuestDiary\数据文件\300次内功烟花.TXT
+LOADVAR HUMAN 300次内功烟花 ..\QuestDiary\数据文件\300次内功烟花.TXT
+CALCVAR HUMAN 300次烟花 = 0
+SAVEVAR HUMAN 300次烟花 ..\QuestDiary\数据文件\300次烟花.TXT
+LOADVAR HUMAN 300次烟花 ..\QuestDiary\数据文件\300次烟花.TXT
+CALCVAR HUMAN 300次烟花1 = 0
+SAVEVAR HUMAN 300次烟花1 ..\QuestDiary\数据文件\300次烟花1.TXT
+LOADVAR HUMAN 300次烟花1 ..\QuestDiary\数据文件\300次烟花1.TXT
+CALCVAR HUMAN 钢锭礼包 = 0
+SAVEVAR HUMAN 钢锭礼包 ..\QuestDiary\数据文件\钢锭礼包.TXT
+LOADVAR HUMAN 钢锭礼包 ..\QuestDiary\数据文件\钢锭礼包.TXT
+CALCVAR HUMAN 火山赤铜礼包 = 0
+SAVEVAR HUMAN 火山赤铜礼包 ..\QuestDiary\数据文件\火山赤铜礼包.TXT
+LOADVAR HUMAN 火山赤铜礼包 ..\QuestDiary\数据文件\火山赤铜礼包.TXT
+CALCVAR HUMAN 狐王封印活动 = 0
+SAVEVAR HUMAN 狐王封印活动 ..\QuestDiary\数据文件\狐王封印活动.TXT
+LOADVAR HUMAN 狐王封印活动 ..\QuestDiary\数据文件\狐王封印活动.TXT
+CALCVAR HUMAN 火龙树结晶礼包 = 0
+SAVEVAR HUMAN 火龙树结晶礼包 ..\QuestDiary\数据文件\火龙树结晶礼包.TXT
+LOADVAR HUMAN 火龙树结晶礼包 ..\QuestDiary\数据文件\火龙树结晶礼包.TXT
+CALCVAR HUMAN 个人军鼓礼包 = 0
+SAVEVAR HUMAN 个人军鼓礼包 ..\QuestDiary\数据文件\个人军鼓礼包.TXT
+LOADVAR HUMAN 个人军鼓礼包 ..\QuestDiary\数据文件\个人军鼓礼包.TXT
+CALCVAR HUMAN 王者秘境入场券5 = 0
+SAVEVAR HUMAN 王者秘境入场券5 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 王者秘境入场券5 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 功勋令牌99 = 0
+SAVEVAR HUMAN 功勋令牌99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 功勋令牌99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玛法源质99 = 0
+SAVEVAR HUMAN 玛法源质99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玛法源质99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玛法源质20 = 0
+SAVEVAR HUMAN 玛法源质20 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玛法源质20 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 白日门火龙果99 = 0
+SAVEVAR HUMAN 白日门火龙果99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 白日门火龙果99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 白日门火龙果50 = 0
+SAVEVAR HUMAN 白日门火龙果50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 白日门火龙果50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 火龙果99 = 0
+SAVEVAR HUMAN 火龙果99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 火龙果99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 火龙果50 = 0
+SAVEVAR HUMAN 火龙果50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 火龙果50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 火山赤铜499 = 0
+SAVEVAR HUMAN 火山赤铜499 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 火山赤铜499 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 火山赤铜999 = 0
+SAVEVAR HUMAN 火山赤铜999 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 火山赤铜999 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玄铁99 = 0
+SAVEVAR HUMAN 玄铁99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玄铁99 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玄铁50 = 0
+SAVEVAR HUMAN 玄铁50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玄铁50 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玛法碎片999 = 0
+SAVEVAR HUMAN 玛法碎片999 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玛法碎片999 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 玛法碎片1100 = 0
+SAVEVAR HUMAN 玛法碎片1100 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+LOADVAR HUMAN 玛法碎片1100 ..\QuestDiary\数据文件\玛法主宰者\每日回馈\主宰者每日回馈购买.TXT
+CALCVAR HUMAN 英雄强化礼包次数 = 0
+SAVEVAR HUMAN 英雄强化礼包次数 ..\QuestDiary\数据文件\英雄强化礼包次数.txt
+LOADVAR HUMAN 英雄强化礼包次数 ..\QuestDiary\数据文件\英雄强化礼包次数.txt
+CALCVAR HUMAN 抽取极品烟花次数 = 0
+SAVEVAR HUMAN 抽取极品烟花次数 ..\QuestDiary\数据文件\抽取极品烟花次数.txt
+LOADVAR HUMAN 抽取极品烟花次数 ..\QuestDiary\数据文件\抽取极品烟花次数.txt
+CALCVAR HUMAN 金蛇武器豪华礼包 = 0
+SAVEVAR HUMAN 金蛇武器豪华礼包 ..\QuestDiary\数据文件\金蛇武器豪华礼包.txt
+LOADVAR HUMAN 金蛇武器豪华礼包 ..\QuestDiary\数据文件\金蛇武器豪华礼包.txt
+CALCVAR HUMAN 乾坤心动礼包 = 0
+SAVEVAR HUMAN 乾坤心动礼包 ..\QuestDiary\数据文件\乾坤心动礼包.txt
+LOADVAR HUMAN 乾坤心动礼包 ..\QuestDiary\数据文件\乾坤心动礼包.txt
+CALCVAR HUMAN 蛋糕活动次数 = 0
+SAVEVAR HUMAN 蛋糕活动次数 ..\QuestDiary\数据文件\蛋糕活动次数.txt
+LOADVAR HUMAN 蛋糕活动次数 ..\QuestDiary\数据文件\蛋糕活动次数.txt
+CALCVAR HUMAN 烟花礼包次数 = 0
+SAVEVAR HUMAN 烟花礼包次数 ..\QuestDiary\数据文件\烟花礼包次数.txt
+LOADVAR HUMAN 烟花礼包次数 ..\QuestDiary\数据文件\烟花礼包次数.txt
+CALCVAR HUMAN 灵符礼包次数 = 0
+SAVEVAR HUMAN 灵符礼包次数 ..\QuestDiary\数据文件\灵符礼包次数.txt
+LOADVAR HUMAN 灵符礼包次数 ..\QuestDiary\数据文件\灵符礼包次数.txt
+CALCVAR HUMAN 英雄强化礼包次数 = 0
+SAVEVAR HUMAN 英雄强化礼包次数 ..\QuestDiary\数据文件\英雄强化礼包次数.txt
+LOADVAR HUMAN 英雄强化礼包次数 ..\QuestDiary\数据文件\英雄强化礼包次数.txt
+CALCVAR HUMAN 100级发型次数 = 0
+SAVEVAR HUMAN 100级发型次数 ..\QuestDiary\数据文件\100级发型次数.txt
+LOADVAR HUMAN 100级发型次数 ..\QuestDiary\数据文件\100级发型次数.txt
+CALCVAR HUMAN 200级烟花次数 = 0
+SAVEVAR HUMAN 200级烟花次数 ..\QuestDiary\数据文件\200级烟花次数.txt
+LOADVAR HUMAN 200级烟花次数 ..\QuestDiary\数据文件\200级烟花次数.txt
+CALCVAR HUMAN 灵符礼包100次数 = 0
+SAVEVAR HUMAN 灵符礼包100次数 ..\QuestDiary\数据文件\灵符礼包100次数.txt
+LOADVAR HUMAN 灵符礼包100次数 ..\QuestDiary\数据文件\灵符礼包100次数.txt
+CALCVAR HUMAN 主宰者灵珠次数 = 0
+SAVEVAR HUMAN 主宰者灵珠次数 ..\QuestDiary\数据文件\主宰者灵珠次数.txt
+LOADVAR HUMAN 主宰者灵珠次数 ..\QuestDiary\数据文件\主宰者灵珠次数.txt
+CALCVAR HUMAN 王者秘境次数 = 0
+SAVEVAR HUMAN 王者秘境次数 ..\QuestDiary\数据文件\王者秘境次数.txt
+LOADVAR HUMAN 王者秘境次数 ..\QuestDiary\数据文件\王者秘境次数.txt
+CALCVAR HUMAN 玛法碎片感恩礼包 = 0
+SAVEVAR HUMAN 玛法碎片感恩礼包 ..\QuestDiary\数据文件\玛法碎片感恩礼包.txt
+LOADVAR HUMAN 玛法碎片感恩礼包 ..\QuestDiary\数据文件\玛法碎片感恩礼包.txt
+break
+
+
+[@每周数据清空]
+#IF
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\瘟疫沼泽一层次数.txt
+#CALL [\游戏功能\游戏清理\每周清理.txt] @每周数据清空
+break
+
+
+[@主宰日数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 主宰99烟花次数 = 0
+SAVEVAR HUMAN 主宰99烟花次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰99烟花次数.txt
+LOADVAR HUMAN 主宰99烟花次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰99烟花次数.txt
+CALCVAR HUMAN 主宰999灵符次数 = 0
+SAVEVAR HUMAN 主宰999灵符次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰999灵符次数.txt
+LOADVAR HUMAN 主宰999灵符次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰999灵符次数.txt
+CALCVAR HUMAN 主宰大鸿福次数 = 0
+SAVEVAR HUMAN 主宰大鸿福次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰大鸿福次数.txt
+LOADVAR HUMAN 主宰大鸿福次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰大鸿福次数.txt
+CALCVAR HUMAN 主宰小鸿福次数 = 0
+SAVEVAR HUMAN 主宰小鸿福次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰小鸿福次数.txt
+LOADVAR HUMAN 主宰小鸿福次数 ..\QuestDiary\数据文件\玛法主宰者\任务系统\主宰小鸿福次数.txt
+BREAK
+
+[@水晶周数据清空]
+#IF
+#ACT
+CALCVAR HUMAN 赠送水晶数量 = 0
+SAVEVAR HUMAN 赠送水晶数量 ..\QuestDiary\数据文件\水晶特使\赠送水晶数量.txt
+LOADVAR HUMAN 赠送水晶数量 ..\QuestDiary\数据文件\水晶特使\赠送水晶数量.txt
+CALCVAR HUMAN 接收水晶数量 = 0
+SAVEVAR HUMAN 接收水晶数量 ..\QuestDiary\数据文件\水晶特使\接收水晶数量.txt
+LOADVAR HUMAN 接收水晶数量 ..\QuestDiary\数据文件\水晶特使\接收水晶数量.txt
+BREAK
+
+
+
+[@徒弟脱离师傅]
+#IF
+equal <$TDNAME1> A63
+#ACT
+DELAPPRENTICE <$TDNAME1>
+SENDMSG 0 您的大徒弟<$STR(A63)>已经断绝了和你的师徒关闭！
+BREAK
+
+#IF
+equal <$TDNAME2> A63
+#ACT
+DELAPPRENTICE <$TDNAME2>
+SENDMSG 0 您的二徒弟<$STR(A63)>已经断绝了和你的师徒关闭！
+BREAK
+
+#IF
+equal <$TDNAME3> A63
+#ACT
+DELAPPRENTICE <$TDNAME3>
+SENDMSG 0 您的三徒弟<$STR(A63)>已经断绝了和你的师徒关闭！
+BREAK
+
+#IF
+equal <$TDNAME4> A63
+#ACT
+DELAPPRENTICE <$TDNAME4>
+SENDMSG 0 您的四徒弟<$STR(A63)>已经断绝了和你的师徒关闭！
+BREAK
+
+#IF
+equal <$TDNAME5> A63
+#ACT
+DELAPPRENTICE <$TDNAME5>
+SENDMSG 0 您的五徒弟<$STR(A63)>已经断绝了和你的师徒关闭！
+BREAK
+
+#ELSEACT
+BREAK
+
+
+
+[@灵符礼包(任务)]
+#IF
+CHECKBAGSIZE 1
+#ACT
+hcall <$STR(A52)> @赠送灵符礼包成功
+break
+close
+
+#ELSEACT
+hcall <$STR(A52)> @赠送灵符礼包失败
+break
+close
+
+[@赠送灵符礼包失败]
+#ACT
+MESSAGEBOX 对方没有足够数量的包裹空间来接收您的礼物！
+break
+close
+
+[@赠送灵符礼包成功确认]
+#ACT
+GIVEKIMNEEDLE 灵符礼包(任务) <$STR(G21)>
+SENDMSG 7 恭喜:你收到了来自玩家<$STR(A52)>赠送给您的<$STR(G21)>个灵符礼包(任务)！
+break
+close
+
+[@赠送灵符礼包成功]
+#IF
+CHECKKIMNEEDLE 灵符礼包(任务) <$STR(G21)>
+#ACT
+TAKEKIMNEEDLE 灵符礼包(任务) <$STR(G21)>
+hcall <$STR(A53)> @赠送灵符礼包成功确认
+break
+close
+
+#ELSEACT
+MESSAGEBOX 你没有足够数量的灵符礼包(任务)！
+break
+CLOSE
+
+[@赠送烟花(任务)]
+#IF
+CHECKBAGSIZE 1
+#ACT
+hcall <$STR(A52)> @赠送烟花成功
+break
+close
+
+#ELSEACT
+hcall <$STR(A52)> @赠送烟花失败
+break
+close
+
+[@赠送烟花失败]
+#ACT
+MESSAGEBOX 对方没有足够数量的包裹空间来接收您的礼物！
+break
+close
+
+[@赠送烟花成功确认]
+#ACT
+GIVEKIMNEEDLE 烟花(任务) <$STR(G21)>
+SENDMSG 7 恭喜:你收到了来自玩家<$STR(A52)>赠送给您的<$STR(G21)>个烟花(任务)！
+break
+close
+
+#ELSEACT
+break
+CLOSE
+
+[@赠送烟花成功]
+#IF
+CHECKKIMNEEDLE 烟花(任务) <$STR(G21)>
+#ACT
+TAKEKIMNEEDLE 烟花(任务) <$STR(G21)>
+hcall <$STR(A53)> @赠送烟花成功确认
+break
+close
+
+#ELSEACT
+MESSAGEBOX 你没有足够数量的烟花(任务)！
+break
+CLOSE
+
+[@行会之星检测]
+#IF
+EQUAL A60 <$GUILDNAME>
+#ACT
+
+#ELSEACT
+hcall <$STR(A59)> @授予失败1
+BREAK
+close
+
+#IF
+CHECKFENGHAO 行会之星
+#ACT
+hcall <$STR(A59)> @授予失败2
+BREAK
+close
+
+#IF
+CheckLevelEx < 100
+#ACT
+MESSAGEBOX <$STR(A59)>正对你进行任命【行会之星】称号，你是否同意？\ @行会之星确认 @行会之星取消
+break
+
+#ELSEACT
+hcall <$STR(A59)> @授予失败3
+BREAK
+close
+
+[@授予失败4]
+#IF
+#ACT
+MESSAGEBOX 授予失败，<$STR(S31)>拒绝了您的任命！
+break
+CLOSE
+
+[@授予失败3]
+#IF
+#ACT
+MESSAGEBOX 授予失败，<$STR(S31)>等级已经达到100级了！
+break
+CLOSE
+
+[@授予失败2]
+#IF
+#ACT
+MESSAGEBOX 授予失败，<$STR(S31)>已经拥有行会之星称号了！
+break
+CLOSE
+
+[@授予失败1]
+#IF
+#ACT
+MESSAGEBOX 授予失败，<$STR(S31)>不是本行会成员！
+break
+CLOSE
+
+[@授予成功]
+#IF
+SMALL N33 30000
+#ACT
+MESSAGEBOX 行会累积值不足30000!
+MOV S31
+MOV S33
+MOV N33
+BREAK
+CLOSE
+
+#ELSEACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$STR(S31)>.txt S10
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会积分1.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会积分2.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会之星.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会累积值.txt
+GIVEFENGHAO <$STR(S31)> 行会之星 <$USERNAME>
+AddTextList <$STR(S10)> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会之星.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会累积值.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会之星日期.txt
+AddTextList <$GUILDSTARDATE> ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\行会之星日期.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第1名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第1名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第1名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第1名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第2名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第2名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第2名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第2名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第3名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第3名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第3名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第3名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第4名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第4名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第4名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第4名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第5名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第5名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第5名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第5名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第6名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第6名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第6名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第6名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第7名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第7名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第7名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第7名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第8名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第8名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第8名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第8名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第9名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第9名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第9名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第9名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第10名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第10名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第10名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第10名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第11名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第11名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第11名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第11名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第12名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第12名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第12名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第12名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第13名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第13名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第13名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第13名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第14名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第14名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第14名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第14名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第15名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第15名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第15名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第15名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第16名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第16名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第16名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第16名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第17名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第17名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第17名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第17名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第18名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第18名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第18名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第18名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第19名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第19名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第19名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第19名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第20名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第20名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第20名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\上缴排行\第20名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第1名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第2名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第3名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第4名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第5名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第6名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第7名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第8名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第9名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第10名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第11名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第12名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第13名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第14名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第15名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第16名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第17名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第18名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第19名点数.txt
+
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+AddTextList 暂无　　　　　 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+AddTextList 0 ..\QuestDiary\数据文件\称号系统\行会之星\<$GUILDNAME>\泉水排行\第20名点数.txt
+
+BREAK
+CLOSE
+
+[@在线接收鲜花]
+#IF
+EQUAL G22 9999
+#ACT
+CALCVAR HUMAN 鲜花数量 + <$STR(G22)>
+SAVEVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+SENDMSG 7 恭喜:<$STR(A63)>赠送了<$STR(G22)>朵鲜花给你！
+GOTO @称号判定1
+BREAK
+close
+
+#IF
+EQUAL G22 4888
+#ACT
+CALCVAR HUMAN 鲜花数量 + <$STR(G22)>
+SAVEVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+SENDMSG 7 恭喜:<$STR(A63)>赠送了<$STR(G22)>朵鲜花给你！
+GOTO @称号判定2
+BREAK
+close
+
+#IF
+EQUAL G22 2888
+#ACT
+CALCVAR HUMAN 鲜花数量 + <$STR(G22)>
+SAVEVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+SENDMSG 7 恭喜:<$STR(A63)>赠送了<$STR(G22)>朵鲜花给你！
+GOTO @称号判定3
+BREAK
+close
+
+#ELSEACT
+CALCVAR HUMAN 鲜花数量 + <$STR(G22)>
+SAVEVAR HUMAN 鲜花数量 ..\QuestDiary\数据文件\人缘大使\鲜花数量.txt
+SENDMSG 7 恭喜:<$STR(A63)>赠送了<$STR(G22)>朵鲜花给你！
+BREAK
+close
+
+[@称号判定1]
+#IF
+CHECKFENGHAOCOUNT <$USERNAME> < 8
+#ACT
+
+#ELSEACT
+BREAK
+close
+
+#IF
+gender WOMAN
+#ACT
+GIVEFENGHAO <$USERNAME> 倾国倾城
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\倾国倾城\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+#ELSEACT
+GIVEFENGHAO <$USERNAME> 君临天下
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\君临天下\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+[@称号判定2]
+#IF
+CHECKFENGHAOCOUNT <$USERNAME> < 8
+#ACT
+
+#ELSEACT
+BREAK
+close
+
+#IF
+gender WOMAN
+#ACT
+GIVEFENGHAO <$USERNAME> 国色天香
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\国色天香\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+#ELSEACT
+GIVEFENGHAO <$USERNAME> 勇者无敌
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\勇者无敌\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+[@称号判定3]
+#IF
+CHECKFENGHAOCOUNT <$USERNAME> < 8
+#ACT
+
+#ELSEACT
+BREAK
+close
+
+#IF
+gender WOMAN
+#ACT
+GIVEFENGHAO <$USERNAME> 绝代佳人
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\绝代佳人\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+#ELSEACT
+GIVEFENGHAO <$USERNAME> 国士无双
+AddTextList <$USERNAME> ..\QuestDiary\数据文件\称号系统\国士无双\可领名单.txt
+DELUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+ADDUSERDATE ..\QuestDiary\数据文件\称号系统\每月可领取名单.txt
+break
+
+
+
+
+
+[@玛法之星检查]
+#IF
+LARGE HUMAN 接收水晶数量 99
+#ACT
+#ELSEACT
+break
+CLOSE
+
+#IF
+CHECKFENGHAO 传奇之星
+#ACT
+break
+CLOSE
+
+#IF
+CHECKFENGHAO 玛法之星
+#ACT
+break
+CLOSE
+
+#ELSEACT
+GIVEFENGHAO <$USERNAME> 玛法之星
+break
+CLOSE
+
+[@主宰者知己检测]
+#IF
+CHECKFENGHAO 主宰者知己
+#ACT
+hcall <$STR(A58)> @主宰者知己任命失败1
+break
+CLOSE
+
+#IF
+CHECKFENGHAO 玛法主宰者
+#ACT
+hcall <$STR(A58)> @主宰者知己任命失败2
+break
+CLOSE
+
+#IF
+CHECKFENGHAO 玛法主宰者　
+#ACT
+hcall <$STR(A58)> @主宰者知己任命失败2
+break
+CLOSE
+
+#IF
+CHECKMAPNAME Self GA0
+#ACT
+hcall <$STR(A58)> @主宰者知己任命成功
+break
+CLOSE
+
+#ELSEACT
+hcall <$STR(A58)> @主宰者知己任命失败3
+break
+CLOSE
+
+[@主宰者知己任命成功]
+#IF
+#ACT
+GIVEFENGHAOAGREE <$STR(S26)> 1
+break
+CLOSE
+
+[@主宰者知己任命失败1]
+#IF
+#ACT
+MESSAGEBOX 任命失败，<$STR(S26)>已经成为主宰者知己了！
+break
+CLOSE
+
+[@主宰者知己任命失败2]
+#IF
+#ACT
+MESSAGEBOX 任命失败，<$STR(S26)>已经成为玛法主宰者，\无法再成为你的主宰者知己！
+break
+CLOSE
+
+[@主宰者知己任命失败3]
+#IF
+#ACT
+MESSAGEBOX 任命失败，<$STR(S26)>目前不在庄园，无法接受你的任命！
+break
+CLOSE
+
+[@护花使者检测]
+#IF
+CHECKFENGHAO 护花使者
+#ACT
+hcall <$STR(A56)> @护花使者任命失败
+break
+CLOSE
+
+#ELSEACT
+hcall <$STR(A56)> @护花使者任命成功
+break
+CLOSE
+
+[@护花使者任命成功]
+#IF
+#ACT
+GIVEFENGHAOAGREE <$STR(S16)> 14
+break
+CLOSE
+
+[@护花使者任命失败]
+#IF
+#ACT
+MESSAGEBOX 任命失败，<$STR(S16)>已经成为护花使者了！
+break
+CLOSE
+
+[@年货大礼包]
+#IF
+#ACT
+CHANGEEXP + 9000000
+SENDMSG 6 您收到了来自玩家“<$STR(A54)>”赠送给您的新年礼物！且对您献上了真挚的祝福，祝您身体健康，万事如意，生意兴隆，大吉大利！
+break
+
+[@赠送金刚石]
+#IF
+#ACT
+GAMEDIAMOND + <$STR(G23)>
+SENDMSG 5 您收到了来自玩家“<$STR(A51)>”赠送给您的<$STR(G23)>颗金刚石！
+break
+
+
+
+
+
+
+[@宠物放养数据更新]
+#IF
+checknamelist ..\QuestDiary\数据文件\兔财神\皓月\名单.txt
+#ACT
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\兔财神\皓月\第1点数.txt S11
+MOV N10
+MOV N10 S11
+MOV S20
+MOV S20 皓月
+GOTO @宠物放养经验奖励
+GOTO @宠物放养数据更新1
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\兔财神\吉祥\名单.txt
+#ACT
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\兔财神\吉祥\第1点数.txt S11
+MOV N10
+MOV N10 S11
+MOV S20
+MOV S20 吉祥
+GOTO @宠物放养经验奖励
+GOTO @宠物放养数据更新1
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\兔财神\良种\名单.txt
+#ACT
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\兔财神\良种\第1点数.txt S11
+MOV N10
+MOV N10 S11
+MOV S20
+MOV S20 良种
+GOTO @宠物放养经验奖励
+GOTO @宠物放养数据更新1
+break
+
+#IF
+checknamelist ..\QuestDiary\数据文件\兔财神\普通\名单.txt
+#ACT
+MOV S11
+GetRandomName ..\QuestDiary\数据文件\兔财神\普通\第1点数.txt S11
+MOV N10
+MOV N10 S11
+MOV S20
+MOV S20 普通
+GOTO @宠物放养经验奖励
+GOTO @宠物放养数据更新1
+break
+
+#ELSEACT
+break
+
+[@宠物放养经验奖励]
+#IF
+random 20
+#ACT
+CHANGENGEXP + 20111688
+sendmsg 7 恭喜:你获得了:内功经验:20111688
+SENDMSG 0 %S鸿运当头，在和宠物嬉戏的时候获得了内功经验：20111688，并祝全服玩家节日愉快，合家欢乐！
+break
+
+#IF
+random 10
+#ACT
+CHANGENGEXP + 20111688
+sendmsg 7 恭喜:你获得了:内功经验:20111688
+SENDMSG 0 %S鸿运当头，在和宠物嬉戏的时候获得了内功经验：20111688，并祝全服玩家节日愉快，合家欢乐！
+break
+
+#IF
+random 5
+#ACT
+CHANGENGEXP + 20111688
+sendmsg 7 恭喜:你获得了:内功经验:20111688
+SENDMSG 0 %S鸿运当头，在和宠物嬉戏的时候获得了内功经验：20111688，并祝全服玩家节日愉快，合家欢乐！
+break
+
+#ELSEACT
+break
+
+[@宠物放养数据更新1]
+#IF
+LARGE HUMAN 宠物快乐度 N10
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\兔财神\<$STR(S20)>\第1名字.txt
+ADDTEXTLIST <$USERNAME> ..\QuestDiary\数据文件\兔财神\<$STR(S20)>\第1名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\兔财神\<$STR(S20)>\第1点数.txt
+ADDTEXTLIST <$HUMAN(宠物快乐度)> ..\QuestDiary\数据文件\兔财神\<$STR(S20)>\第1点数.txt
+break
+
+#ELSEACT
+break
+
+
+[@OnTimer1]
+#IF
+CHECKSKILLLEVEL 龙卫心法 ? 0
+#ACT
+SENDMSG 0 勇士<$USERNAME>在龙卫信使处自创武学：<$HEARTNAME>，进入了龙卫境界后，主属性大幅提升，从此纵横玛法，傲视群雄！
+SetOffTimer 1
+BREAK
+
+
+
+
+
+
+
+[@王师师傅奖励47]
+#ACT
+CHANGEEXP + 18000000
+SENDMSG 6 你曾经的弟子<$STR(A61)>实力更进一步，比齐国王特奖励你经验值18000000.
+BREAK
+
+[@王师师傅奖励48]
+#ACT
+CHANGEEXP + 20000000
+SENDMSG 6 你曾经的弟子<$STR(A61)>实力更进一步，比齐国王特奖励你经验值20000000.
+BREAK
+
+[@王师师傅奖励49]
+#ACT
+CHANGEEXP + 21000000
+SENDMSG 6 你曾经的弟子<$STR(A61)>实力更进一步，比齐国王特奖励你经验值21000000.
+BREAK
+
+[@王师师傅奖励50]
+#ACT
+CHANGEEXP + 21500000
+SENDMSG 6 你曾经的弟子<$STR(A61)>实力更进一步，比齐国王特奖励你经验值21500000.
+BREAK
+
+
+
+[@主宰者商品刷新提醒]
+#IF
+CHECKFENGHAO 玛法主宰者　
+#ACT
+SENDMSG 7 尊敬的主宰者大人，每日超值优惠商品已刷新。
+BREAK
+
+
+[@进入龙卫入口5触发]
+#IF
+#ACT
+SENDTIMEMSG 龙卫山谷入口五停留剩余时间为：%s…… 900 251 @回龙卫山谷传送员 1
+BREAK
+
+[@进入龙卫入口4触发]
+#IF
+#ACT
+SENDTIMEMSG 龙卫山谷入口四停留剩余时间为：%s…… 900 251 @回龙卫山谷传送员 1
+BREAK
+
+[@进入龙卫入口3触发]
+#IF
+#ACT
+SENDTIMEMSG 龙卫山谷入口三停留剩余时间为：%s…… 900 251 @回龙卫山谷传送员 1
+BREAK
+
+[@进入龙卫入口2触发]
+#IF
+#ACT
+SENDTIMEMSG 龙卫山谷入口二停留剩余时间为：%s…… 900 251 @回龙卫山谷传送员 1
+BREAK
+
+[@进入龙卫入口1触发]
+#IF
+#ACT
+SENDTIMEMSG 龙卫山谷入口一停留剩余时间为：%s…… 900 251 @回龙卫山谷传送员 1
+BREAK
+
+
+
+
+
+
+[@加入行会]
+#IF
+ISAI
+RANDOM 3
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人行会.txt S15
+BREAK
+
+
+
+[@假人说话]
+#IF
+ISAI
+RANDOM 15
+#ACT
+goto @假人聊天
+BREAK
+
+#IF
+ISAI
+RANDOM 15
+#ACT
+goto @假人私聊
+BREAK
+
+#IF
+ISAI
+RANDOM 15
+#ACT
+goto @假人喊话
+BREAK
+
+#IF
+ISAI
+RANDOM 15
+#ACT
+goto @假人传音
+BREAK
+
+
+#IF
+ISAI
+RANDOM 15
+#ACT
+goto @假人文字
+BREAK
+
+[@假人文字]
+#IF
+ISAI
+RANDOM 30
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人说话.txt S5
+SENDMSG 9 %s传音:<$STR(S5)>   151 234
+BREAK
+
+[@假人传音]
+#IF
+ISAI
+RANDOM 30
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人说话.txt S4
+SENDMSG 9 %s传音:<$STR(S4)>   255 253
+BREAK
+[@假人喊话]
+#IF
+ISAI
+RANDOM 25
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人说话.txt S1
+SENDMSG 9 %s:<$STR(S1)>   0 151
+BREAK
+
+[@假人私聊]
+#IF
+ISAI
+RANDOM 25
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人说话.txt S2
+SENDMSG 9 %s:<$STR(S2)>   252 255
+BREAK
+
+[@假人聊天]
+#IF
+ISAI
+RANDOM 20
+#ACT
+GetRandomName ..\QuestDiary\爱拼分享\变量文件\假人说话.txt S3
+SENDMSG 9 %s:<$STR(S3)> 0 255
+BREAK
+
+[@退出行会]
+#IF
+ISAI
+#ACT
+Gmexecute 退出门派
+break
+
+
+
+[@号召假人]
+#IF
+ISAI
+#ACT
+mapmove  <$STR(A491)>  <$STR(g101)>  <$STR(g102)>
+AISTOP
+DELAYGOTO 1000 @改变假模式
+break
+
+
+[@号召假人2]
+#IF
+ISAI
+#ACT
+mapmove  <$STR(A491)>  <$STR(g101)>  <$STR(g102)>
+AISTOP
+DELAYGOTO 1000 @改变假模式
+CHANGEATTATCKMODE  5
+break
+
+
+[@号召假人3]
+#IF
+ISAI
+#ACT
+mapmove  3  625  <$STR(g102)>
+AISTOP
+DELAYGOTO 1000 @改变假模式
+CHANGEATTATCKMODE  5
+break
+
+
+
+[@改变假模式]
+#act
+AISTART
+break
+
+
+
+
+
+
+
+
+
+[@清除指定]
+#IF
+ISAI
+ISONMAP <$STR(A498)>
+#ACT
+KICK 
+BREAK
+
+[@清除全部]
+#IF
+ISAI
+#ACT
+KICK 
+BREAK
+
+
+
+
+[@指定地图马上停止]
+#IF
+ISAI
+ISONMAP <$STR(A492)>
+#ACT
+AISTOP
+BREAK
+[@指定地图马上停止并回城]
+#IF
+ISAI
+ISONMAP <$STR(A492)>
+#ACT
+AISTOP
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\坐标X.txt S10
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\坐标Y.txt S11
+MAPMOVE 3 <$STR(S10)> <$STR(S11)>
+BREAK
+[@马上停止]
+#IF
+ISAI
+#ACT
+AISTOP
+BREAK
+[@马上停止并回城]
+#IF
+ISAI
+#ACT
+AISTOP
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\坐标X.txt S10
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\坐标Y.txt S11
+MAPMOVE 3 <$STR(S10)> <$STR(S11)>
+BREAK
+
+[@指定地图改变模式]
+#IF
+ISAI
+ISONMAP <$STR(A494)>
+#ACT
+CHANGEATTATCKMODE <$STR(G104)>
+BREAK
+[@所有假人改变模式]
+#IF
+ISAI
+#ACT
+CHANGEATTATCKMODE <$STR(G104)>
+BREAK
+[@指定启动]
+#IF
+ISAI
+ISONMAP <$STR(A494)>
+#ACT
+AISTART
+BREAK
+[@全部启动]
+#IF
+ISAI
+#ACT
+AISTART
+BREAK
+
+
+
+
+[@攻打沙城]
+#IF
+ISAI
+CHECKCASTLEWAR 沙巴克 
+random 2
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标X1.txt S18
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标Y1.txt S19
+MAPMOVE 3 <$STR(S18)> <$STR(S19)>
+CHANGEATTATCKMODE 5
+#elesact
+goto @XHZZ
+
+#IF
+ISAI
+CHECKCASTLEWAR 沙巴克 
+random 2
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标X1.txt S18
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标Y1.txt S19
+MAPMOVE 3 <$STR(S18)> <$STR(S19)>
+CHANGEATTATCKMODE 5
+#elesact
+goto @XHZZ1
+
+
+[@XHZZ1]
+#IF
+ISAI
+RANDOM 2
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标X2.txt S28
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标Y2.txt S29
+MAPMOVE new0150 <$STR(S28)> <$STR(S29)>
+CHANGEATTATCKMODE 5
+
+
+
+[@XHZZ]
+#IF
+ISAI
+RANDOM 2
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标X2.txt S28
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\攻城坐标Y2.txt S29
+MAPMOVE new0150 <$STR(S28)> <$STR(S29)>
+CHANGEATTATCKMODE 5
+BREAK
+
+
+
+
+
+
+
+
+[@结束沙城]
+#IF
+ISAI
+#ACT
+goto @假人回城
+break
+
+
+
+
+
+[@假人打怪_1]
+#IF
+ISAI
+#ACT
+MOVR D0 9
+MOVR D1 9
+MOVR D2 9
+MOVR D3 9
+DELAYGOTO 3000 @假人打怪_2
+[@假人打怪_2]
+#IF
+ISAI
+CHECKLEVELEX < 10
+CHECKLEVELEX < 100
+EQUAL D0 3
+#ACT
+MOV D0 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_1
+BREAK
+#IF
+ISAI
+CHECKLEVELEX < 10
+CHECKLEVELEX > 100
+EQUAL D0 5
+#ACT
+MOV D0 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_1
+BREAK
+#IF
+ISAI
+EQUAL D0 7
+#ACT
+MOV D0 0
+AISTART
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 50
+CHECKLEVELEX < 500
+EQUAL D1 3
+#ACT
+MOV D1 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_2
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 50
+CHECKLEVELEX < 500
+EQUAL D1 5
+#ACT
+MOV D1 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_2
+BREAK
+#IF
+ISAI
+EQUAL D1 7
+#ACT
+MOV D1 0
+AISTART
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 200
+CHECKLEVELEX < 1000
+EQUAL D2 3
+#ACT
+MOV D2 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_3
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 200
+CHECKLEVELEX < 1000
+EQUAL D2 5
+#ACT
+MOV D2 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_3
+BREAK
+#IF
+ISAI
+EQUAL D2 7
+#ACT
+MOV D2 0
+AISTART
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 600
+EQUAL D3 3
+#ACT
+MOV D3 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_4
+BREAK
+#IF
+ISAI
+CHECKLEVELEX > 600
+EQUAL D3 5
+#ACT
+MOV D3 0
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\传送时间.txt S20
+DELAYGOTO <$STR(S20)> @假人随机_4
+BREAK
+#IF
+ISAI
+EQUAL D3 7
+#ACT
+MOV D3 0
+AISTART
+BREAK
+
+[@假人随机_1]
+#IF
+ISAI
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\新手地图.txt S16
+MAP <$STR(S16)>
+AISTART
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\回城时间.txt S17
+DELAYGOTO <$STR(S17)> @假人回城
+BREAK
+[@假人随机_2]
+#IF
+ISAI
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\初级地图.txt S16
+MAP <$STR(S16)>
+AISTART
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\回城时间.txt S17
+DELAYGOTO <$STR(S17)> @假人回城
+BREAK
+[@假人随机_3]
+#IF
+ISAI
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\中级地图.txt S16
+MAP <$STR(S16)>
+AISTART
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\回城时间.txt S17
+DELAYGOTO <$STR(S17)> @假人回城
+BREAK
+[@假人随机_4]
+#IF
+ISAI
+#ACT
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\高级地图.txt S16
+MAP <$STR(S16)>
+AISTART
+GetRandomName ..\QuestDiary\假人陪玩\变量文件\回城时间.txt S17
+DELAYGOTO <$STR(S17)> @假人回城
+BREAK
+
+[@假人回城]
+#IF
+ISAI
+RANDOM 10
+#ACT
+GOTO @假人回比奇
+BREAK
+#IF
+RANDOM 10
+#ACT
+GOTO @假人回盟重
+BREAK
+#ELSEACT
+GOTO @随机城市
+BREAK
+
+[@假人回比奇]
+#IF
+ISAI
+RANDOM 5
+#ACT
+MOVR P0 18
+INC P0 319
+MOVR P9 18
+INC P9 260
+MAPMOVE 0 <$STR(P0)> <$STR(P9)>
+BREAK
+#IF
+ISAI
+#ACT
+MOVR P0 18
+INC P0 319
+MOVR P9 18
+INC P9 260
+MAPMOVE 0 <$STR(P0)> <$STR(P9)>
+AISTART
+BREAK
+
+[@假人回盟重]
+#IF
+ISAI
+RANDOM 2
+#ACT
+MOVR P0 18
+INC P0 321
+MOVR P9 18
+INC P9 321
+MAPMOVE 3 <$STR(P0)> <$STR(P9)>
+BREAK
+#IF
+ISAI
+#ACT
+MOVR P0 18
+INC P0 321
+MOVR P9 18
+INC P9 321
+MAPMOVE 3 <$STR(P0)> <$STR(P9)>
+AISTART
+BREAK
+
+[@随机城市]
+#IF
+ISAI
+RANDOM 5
+#ACT
+MOVR P0 18
+INC P0 319
+MOVR P9 18
+INC P9 260
+MAPMOVE 0 <$STR(P0)> <$STR(P9)>
+BREAK
+#IF
+ISAI
+RANDOM 2
+#ACT
+MOVR P0 18
+INC P0 321
+MOVR P9 18
+INC P9 321
+MAPMOVE 3 <$STR(P0)> <$STR(P9)>
+BREAK
+#IF
+ISAI
+RANDOM 5
+#ACT
+MOVR P0 18
+INC P0 319
+MOVR P9 18
+INC P9 260
+MAPMOVE 0 <$STR(P0)> <$STR(P9)>
+AISTART
+BREAK
+#IF
+ISAI
+RANDOM 2
+#ACT
+MOVR P0 18
+INC P0 321
+MOVR P9 18
+INC P9 321
+MAPMOVE 3 <$STR(P0)> <$STR(P9)>
+AISTART
+BREAK
+
+[@mzhx]
+#if
+#act
+mov M40 <$HP>
+mov M41 <$MP>
+mov M42 <$HEROHP>
+mov M43 <$HEROMP>
+mov M44 <$MAXHP>
+mov M45 <$MAXMP>
+mov M46 <$HEROMAXHP>
+mov M47 <$HEROMAXMP>
+goto @hx001
+
+[@hx001]
+#IF
+equal m44 m40
+equal m45 m41
+equal m46 m42
+equal m47 m43
+#ACT
+#elseact
+goto @hx002
+
+[@hx002]
+#if
+insafezone
+#act
+HUMANHP + 200000
+HUMANMP + 200000
+HUMANHP + 200000 HERO
+HUMANMP + 200000 HERO
+
+
+
+
+
+[@ONTIMER2]
+#IF
+CHECKVAR HUMAN 自动主宰 = 开启
+#ACT
+GOTO @主宰自动回收
+#elseact
+CALCVAR HUMAN 自动主宰 = 关闭
+savevar HUMAN 自动主宰 ..\QuestDiary\雪花制作\自动主宰.txt
+
+
+#IF
+CHECKVAR HUMAN 自动传奇 = 开启
+#ACT
+GOTO @传奇自动回收
+#elseact
+CALCVAR HUMAN 自动传奇 = 关闭
+savevar HUMAN 自动传奇 ..\QuestDiary\雪花制作\自动传奇.txt
+
+
+#IF
+CHECKVAR HUMAN 自动皓月 = 开启
+#ACT
+GOTO @皓月自动回收
+#elseact
+CALCVAR HUMAN 自动皓月 = 关闭
+savevar HUMAN 自动皓月 ..\QuestDiary\雪花制作\自动皓月.txt
+
+
+#IF
+CHECKVAR HUMAN 自动皓天 = 开启
+#ACT
+GOTO @皓天自动回收
+#elseact
+CALCVAR HUMAN 自动皓天 = 关闭
+savevar HUMAN 自动皓天 ..\QuestDiary\雪花制作\自动皓天.txt
+
+
+#IF
+CHECKVAR HUMAN 自动皓宇 = 开启
+#ACT
+GOTO @皓宇自动回收
+#elseact
+CALCVAR HUMAN 自动皓宇 = 关闭
+savevar HUMAN 自动皓宇 ..\QuestDiary\雪花制作\自动皓宇.txt
+
+
+
+#IF
+CHECKVAR HUMAN 自动皓尊 = 开启
+#ACT
+GOTO @皓尊自动回收
+#elseact
+CALCVAR HUMAN 自动皓尊 = 关闭
+savevar HUMAN 自动皓尊 ..\QuestDiary\雪花制作\自动皓尊.txt
+
+
+
+
+#IF
+CHECKVAR HUMAN 自动神龙 = 开启
+#ACT
+GOTO @神龙自动回收
+#elseact
+CALCVAR HUMAN 自动神龙 = 关闭
+savevar HUMAN 自动神龙 ..\QuestDiary\雪花制作\自动神龙.txt
+
+
+#IF
+CHECKVAR HUMAN 自动热血 = 开启
+#ACT
+GOTO @热血自动回收
+#elseact
+CALCVAR HUMAN 自动热血 = 关闭
+savevar HUMAN 自动热血 ..\QuestDiary\雪花制作\自动热血.txt
+
+
+#IF
+CHECKVAR HUMAN 自动真龙 = 开启
+#ACT
+GOTO @真龙自动回收
+#elseact
+CALCVAR HUMAN 自动真龙 = 关闭
+savevar HUMAN 自动真龙 ..\QuestDiary\雪花制作\自动真龙.txt
+
+#IF
+CHECKVAR HUMAN 自动天成 = 开启
+#ACT
+GOTO @天成自动回收
+#elseact
+CALCVAR HUMAN 自动天成 = 关闭
+savevar HUMAN 自动天成 ..\QuestDiary\雪花制作\自动天成.txt
+
+#IF
+CHECKVAR HUMAN 自动金蛇 = 开启
+#ACT
+GOTO @金蛇自动回收
+#elseact
+CALCVAR HUMAN 自动金蛇 = 关闭
+savevar HUMAN 自动金蛇 ..\QuestDiary\雪花制作\自动金蛇.txt
+
+#IF
+CHECKVAR HUMAN 自动灵蛇 = 开启
+#ACT
+GOTO @灵蛇自动回收
+#elseact
+CALCVAR HUMAN 自动灵蛇 = 关闭
+savevar HUMAN 自动灵蛇 ..\QuestDiary\雪花制作\自动灵蛇.txt
+
+#IF
+CHECKVAR HUMAN 自动神蛇 = 开启
+#ACT
+GOTO @神蛇自动回收
+#elseact
+CALCVAR HUMAN 自动神蛇 = 关闭
+savevar HUMAN 自动神蛇 ..\QuestDiary\雪花制作\自动神蛇.txt
+
+#IF
+CHECKVAR HUMAN 自动真气石 = 开启
+#ACT
+goto @zdz
+#elseact
+calcvar human 自动真气石 = 关闭
+savevar human 自动真气石 ..\questdiary\雪花制作\自动真气石.txt
+
+
+
+[@主宰自动回收]
+#IF
+CHECKVAR HUMAN 自动主宰 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\主宰.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 5
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1000000000
+GOTO @主宰自动回收
+
+[@传奇自动回收]
+#IF
+CHECKVAR HUMAN 自动传奇 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\传奇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 10
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 1500000000
+GOTO @传奇自动回收
+
+[@皓月自动回收]
+#IF
+CHECKVAR HUMAN 自动皓月 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓月.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 15
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 2000000000
+GOTO @皓月自动回收
+
+
+[@皓天自动回收]
+#IF
+CHECKVAR HUMAN 自动皓天 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓天.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 20
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 2500000000
+GOTO @皓天自动回收
+
+
+[@皓宇自动回收]
+#IF
+CHECKVAR HUMAN 自动皓宇 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓宇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 25
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3000000000
+GOTO @皓宇自动回收
+
+
+[@皓尊自动回收]
+#IF
+CHECKVAR HUMAN 自动皓尊 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\皓尊.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 30
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 3500000000
+GOTO @皓尊自动回收
+
+[@神龙自动回收]
+#IF
+CHECKVAR HUMAN 自动神龙 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 35
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4000000000
+GOTO @神龙自动回收
+
+[@热血自动回收]
+#IF
+CHECKVAR HUMAN 自动热血 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\热血.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 40
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 4500000000
+GOTO @热血自动回收
+
+
+
+[@真龙自动回收]
+#IF
+CHECKVAR HUMAN 自动真龙 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\真龙.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 45
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5000000000
+GOTO @真龙自动回收
+
+
+[@天成自动回收]
+#IF
+CHECKVAR HUMAN 自动天成 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\天成.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 50
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 5500000000
+GOTO @天成自动回收
+
+
+
+[@金蛇自动回收]
+#IF
+CHECKVAR HUMAN 自动金蛇 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\金蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 55
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6000000000
+GOTO @金蛇自动回收
+
+
+
+[@灵蛇自动回收]
+#IF
+CHECKVAR HUMAN 自动灵蛇 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\灵蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 60
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 6500000000
+GOTO @灵蛇自动回收
+
+
+
+[@神蛇自动回收]
+#IF
+CHECKVAR HUMAN 自动神蛇 = 开启
+CHECKBAGITEMS .\QuestDiary\游戏服务\回收装备列表\神蛇.txt 0 S1
+#ACT
+TAKE <$STR(S1)> 1
+CALCVAR HUMAN 守护积分 + 65
+savevar human 守护积分 ..\questdiary\雪花制作\守护积分.txt
+SENDMSG 7 提示：您目前的积分为：<$human(守护积分)>
+CHANGEEXP + 7000000000
+GOTO @神蛇自动回收
+
+[@秘境关闭]
+#if
+isonmap slmj
+#act
+messagebox 神龙秘境活动已经结束，勇士们下次再来吧！
+mapmove 3 330 330
+
+
+
+
+[@fgfgfg]
+#If
+isonmap 0171
+check [65] 1
+checknamelist ..\QuestDiary\数据文件\压注名单.txt
+#ACT
+mov D0 <$STR(G72)>
+playdice 1 @cube_cds
+break
+
+#IF
+isonmap 0171
+#ACT
+mov D0 <$STR(G72)>
+playdice 1 @dutouzi_ll
+#SAY
+正在投骰子。。。\ \
+
+[@cube_cds]
+#IF
+check [65] 0
+#ACT
+goto @dutouzi_ll
+break
+
+;-------------------大中小开始--------
+#IF
+isonmap 0171
+check [65] 1
+equal D0 6
+LARGE N89 0
+LARGE N78 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N78)>
+inc G73 <$STR(N78)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N78)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 5
+LARGE N89 0
+LARGE N78 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N78)>
+inc G73 <$STR(N78)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N78)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 4
+LARGE N90 0
+LARGE N79 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N79)>
+inc G73 <$STR(N79)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N79)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 3
+LARGE N90 0
+LARGE N79 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N79)>
+inc G73 <$STR(N79)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N79)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 2
+LARGE N91 0
+LARGE N80 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N80)>
+inc G73 <$STR(N80)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N80)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 1
+LARGE N91 0
+LARGE N80 2
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N80)>
+inc G73 <$STR(N80)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N80)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+;-------------------大中小结束--------
+;-------------------单双开始--------
+#IF
+isonmap 0171
+check [65] 1
+equal D0 6
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 4
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 2
+LARGE N93 0
+LARGE N82 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N82)>
+inc G73 <$STR(N82)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N82)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 5
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 3
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 1
+LARGE N92 0
+LARGE N81 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N81)>
+inc G73 <$STR(N81)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N81)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+;-------------------单双结束--------
+;-------------------点数开始--------
+#IF
+isonmap 0171
+check [65] 1
+equal D0 1
+LARGE N94 0
+LARGE N83 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N83)>
+inc G73 <$STR(N83)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N83)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 2
+LARGE N95 0
+LARGE N84 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N84)>
+inc G73 <$STR(N84)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N84)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 3
+LARGE N96 0
+LARGE N85 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N85)>
+inc G73 <$STR(N85)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N85)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 4
+LARGE N97 0
+LARGE N86 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N86)>
+inc G73 <$STR(N86)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N86)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 5
+LARGE N98 0
+LARGE N87 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N87)>
+inc G73 <$STR(N87)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N87)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+#IF
+isonmap 0171
+check [65] 1
+equal D0 6
+LARGE N99 0
+LARGE N88 1
+#ACT
+CLEARDELAYGOTO
+GameGold + <$STR(N88)>
+inc G73 <$STR(N88)>
+SENDMSG 6 提示：骰子点数为：<$STR(D0)>点！恭喜你中奖，你获得了<$STR(N88)>元宝的奖励！
+goto @dutouzi_cds-lk
+break
+
+;-------------------点数结束--------
+
+#ELSEACT
+CLEARDELAYGOTO
+Set [65] 0
+mov G71 0
+MOV G78 0
+MOV G79 0
+MOV G80 0
+MOV G81 0
+MOV G82 0
+MOV G83 0
+MOV G84 0
+MOV G85 0
+MOV G86 0
+MOV G87 0
+MOV G88 0
+MOV G89 0
+MOV G90 0
+MOV G91 0
+MOV G92 0
+MOV G93 0
+MOV G94 0
+MOV G95 0
+MOV G96 0
+MOV G97 0
+MOV G98 0
+MOV G99 0
+MOV N71 0
+MOV N78 0
+MOV N79 0
+MOV N80 0
+MOV N81 0
+MOV N82 0
+MOV N83 0
+MOV N84 0
+MOV N85 0
+MOV N86 0
+MOV N87 0
+MOV N88 0
+MOV N89 0
+MOV N90 0
+MOV N91 0
+MOV N92 0
+MOV N93 0
+MOV N94 0
+MOV N95 0
+MOV N96 0
+MOV N97 0
+MOV N98 0
+MOV N99 0
+GOTO @dushuol
+[@dushuol]
+#SAY
+很可惜...\
+骰子的点数是<$STR(D0)> 和你猜的点数不同.\ \ \
+<离 开/@exit>\
+
+[@dutouzi_cds-lk]
+#IF
+check [65] 1
+LARGE N78 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N78)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N79 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N79)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N80 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N80)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N81 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N81)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N82 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N82)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N83 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N83)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N84 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N84)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N85 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N85)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N86 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N86)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N87 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N87)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#IF
+check [65] 1
+LARGE N88 G70
+#ACT
+CLEARDELAYGOTO
+SENDMSG 0 提示：【<$USERNAME>】在赌场赢得<$STR(N88)>元宝，想要发财的快快行动！
+goto @dutouzi_ll
+break
+#ELSEACT
+CLEARDELAYGOTO
+goto @dutouzi_ll
+break
+
+
+[@dutouzi_ll]
+#ACT
+Set [65] 0
+mov G71 0
+MOV G78 0
+MOV G79 0
+MOV G80 0
+MOV G81 0
+MOV G82 0
+MOV G83 0
+MOV G84 0
+MOV G85 0
+MOV G86 0
+MOV G87 0
+MOV G88 0
+MOV G89 0
+MOV G90 0
+MOV G91 0
+MOV G92 0
+MOV G93 0
+MOV G94 0
+MOV G95 0
+MOV G96 0
+MOV G97 0
+MOV G98 0
+MOV G99 0
+MOV N71 0
+MOV N78 0
+MOV N79 0
+MOV N80 0
+MOV N81 0
+MOV N82 0
+MOV N83 0
+MOV N84 0
+MOV N85 0
+MOV N86 0
+MOV N87 0
+MOV N88 0
+MOV N89 0
+MOV N90 0
+MOV N91 0
+MOV N92 0
+MOV N93 0
+MOV N94 0
+MOV N95 0
+MOV N96 0
+MOV N97 0
+MOV N98 0
+MOV N99 0
+CLEARNAMELIST ..\QuestDiary\数据文件\压注名单.txt
+break
+close
+
+
+
+
+
+[@OnTimer1]
+#IF
+ISONMAP MFPDA
+CHECKLEVELEX < 200
+#ACT
+CHANGEEXP + 6000000
+CHANGENGEXP + 3000000
+BREAK
+#ELSEACT
+GOTO @1HUIKAI
+[@1HUIKAI]
+#IF
+ISONMAP MFPDA
+#ACT
+SETOFFTIMER 1
+MESSAGEBOX 你的等级已超过200不能在此处闭关了!
+MAPMOVE 3 330 333
+BREAK
+#ELSEACT
+SETOFFTIMER 1
+
+[@OnTimer2]
+#IF
+ISONMAP MFPDA2
+CHECKLEVELEX < 300
+#ACT
+CHANGEEXP + 10000000
+CHANGENGEXP + 5000000
+BREAK
+#ELSEACT
+GOTO @2HUIKAI
+[@2HUIKAI]
+#IF
+ISONMAP MFPDA2
+#ACT
+SETOFFTIMER 2
+MESSAGEBOX 你的等级已超过300不能在此处闭关了!
+MAPMOVE 3 330 333
+BREAK
+#ELSEACT
+SETOFFTIMER 2
+
+
+[@OnTimer3]
+#IF
+CheckHumInRange self 3 354 337 0
+equal G188 1
+#act
+GAMEGOLD + 1000
+CHANGEEXP + 20000000
+CHANGENGEXP + 10000000
+#elseact
+SetOffTimer 3
+SENDMSG 7 抢水失败,停止获得经验和元宝...
+
+
+[@OnTimer6]
+#IF
+ISONMAP MFPDA1
+#ACT
+GAMEGOLD - 2000
+CHANGEEXP + 30000000
+CHANGENGEXP + 20000000
+BREAK
+#ELSEACT
+GOTO @3HUIKAI
+
+[@3HUIKAI]
+#IF
+ISONMAP MFPDA1
+#ACT
+SETOFFTIMER 6
+MESSAGEBOX 记时经验每一秒需要2000元宝,你没有元宝或者已经用完!
+MAPMOVE 3 330 333
+BREAK
+#ELSEACT
+SETOFFTIMER 6
+
+[@OnTimer7]
+#IF
+ISONMAP MFPDA1
+#ACT
+GAMEGOLD - 4000
+CHANGEEXP + 60000000
+CHANGENGEXP + 30000000
+BREAK
+#ELSEACT
+GOTO @LI1ANJI7
+
+[@OnTimer15]
+#IF
+#ACT
+GAMEGOLD - 1000
+CHANGEHEARTPOINT + 50000
+BREAK
+#ELSEACT
+SETOFFTIMER 15
+BREAK
+
+
+
+
+[@LI1ANJI7]
+#IF
+ISONMAP MFPDA1
+#ACT
+SETOFFTIMER 7
+MESSAGEBOX 记时经验每一秒需要4000元宝,你没有元宝或者已经用完!
+MAPMOVE 3 330 333
+BREAK
+#ELSEACT
+SETOFFTIMER 7
+
+
+[@OnTimer8]
+#IF
+ISONMAP MFPDA1
+CHECKGAMEGOLD > 7999
+#ACT
+GAMEGOLD -  6000
+CHANGEEXP + 100000000
+CHANGENGEXP + 50000000
+BREAK
+#ELSEACT
+GOTO @a952711
+
+[@a952711]
+#IF
+ISONMAP MFPDA1
+#ACT
+SETOFFTIMER 8
+MESSAGEBOX 记时经验每一秒需要6000元宝,你没有元宝或者已经用完!
+MAPMOVE 3 330 333
+BREAK
+#ELSEACT
+SETOFFTIMER 8
+
+
+[@OnTimer20]
+
+#if
+#act
+GAMEGOLD - 1000
+CHANGEHEARTPOINT + 2000000
+CHANGEHEARTPOINT  + 2000000  hero
+BREAK
+
+BREAK
+#ELSEACT
+SETOFFTIMER 6
+
+[@OnTimer11]
+#if
+ISONMAP PK
+#act
+CHANGEEXP + 80000000
+CHANGEEXP + 100000000 hero
+CHANGENGEXP + 2000000
+CHANGEHEARTPOINT + 1000
+CHANGEHEARTPOINT + 1000 hero
+CHANGEHEROPULSEXP + 4000
+BREAK
+#ELSEACT
+SETOFFTIMER 11
+
+
+
+
+
+
+
+[@OnTimer12]
+#IF
+#ACT
+GAMEGOLD - 300
+CHANGENGEXP + 20000000
+BREAK
+#ELSEACT
+#IF
+#ACT
+SETOFFTIMER 12
+MESSAGEBOX 随时泡点每一秒需要300元宝,你没有元宝或者已经用完!。
+BREAK
+#ELSEACT
+SETOFFTIMER 12
+
+
+
+[@OnTimer13]
+#IF
+#ACT
+GAMEGOLD - 500
+CHANGEEXP + 80000000
+CHANGEEXP + 100000000 hero
+CHANGEHEARTPOINT + 5000
+CHANGEHEARTPOINT + 5000 hero
+CHANGEHEROPULSEXP + 10000
+BREAK
+#ELSEACT
+#IF
+#ACT
+SETOFFTIMER 13
+MESSAGEBOX 随时泡点每一秒需要500元宝,你没有元宝或者已经用完!或者你等级超过1300。
+BREAK
+#ELSEACT
+SETOFFTIMER 13
+
+
+[@OnTimer24]
+#if
+CheckHumInRange self apcq 330 330 10
+#act
+CHANGEEXP + 150000000
+CHANGEEXP + 180000000 hero
+CHANGENGEXP + 10000000
+CHANGEHEARTPOINT + 100
+CHANGEHEROPULSEXP + 1000
+BREAK
+#ELSEACT
+SETOFFTIMER 24
+
+
+[@OnTimer28]
+#if
+#act
+CHANGEEXP + 15000000
+CHANGEEXP + 18000000 hero
+CHANGENGEXP + 1000000
+CHANGEHEARTPOINT + 100
+CHANGEHEROPULSEXP + 1000
+BREAK
+#ELSEACT
+SETOFFTIMER 28
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7072 @@
+[@shi]
+
+{
+<真气石升级(三合一)/@^OPENREALLYCOMPOSEDLG> \ 
+<真气石拆解/@^OPENREALLYAPARTDLG>\
+<双属性真气合成(1个辅助材料)/@^OPENCOMPOSEDLG_1>  <物品合成(2个辅助材料)/@^OPENCOMPOSEDLG_2>\
+<物品合成(3个辅助材料)/@^OPENCOMPOSEDLG_3> <物品合成(4个辅助材料)/@^OPENCOMPOSEDLG_4>\
+<物品合成(5个辅助材料)/@^OPENCOMPOSEDLG_5>\
+<真气石凭证兑换真气石/@真气石凭证兑换真气石>        <双属性真气石脚本合成/@双属性真气石脚本合成> \
+<神技真气石脚本合成/@神技真气石脚本合成> \
+<返回/@main>
+
+
+[@神技真气石脚本合成]
+<十步神圣石/@十步神圣石>   <十步抗性石/@十步抗性石>   <十步内力石/@十步内力石> \  
+<天雷神圣石/@天雷神圣石>   <天雷抗性石/@天雷抗性石>   <天雷内力石/@天雷内力石>\
+<回天神圣石/@回天神圣石>   <回天抗性石/@回天抗性石>   <回天内力石/@回天内力石>\
+<嗜血神圣石/@嗜血神圣石>   <嗜血抗性石/@嗜血抗性石>   <嗜血内力石/@嗜血内力石>\
+<复仇神圣石/@复仇神圣石>   <复仇抗性石/@复仇抗性石>   <复仇内力石/@复仇内力石>\
+<毁灭神圣石/@毁灭神圣石>   <毁灭抗性石/@毁灭抗性石>   <毁灭内力石/@毁灭内力石>\
+<刃扇神圣石/@刃扇神圣石>   <刃扇抗性石/@刃扇抗性石>   <刃扇内力石/@刃扇内力石>\
+<返回/@shi>
+
+
+
+
+
+
+[@刃扇内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级刃扇真气石/FCOLOR=253> = <1个五级刃扇内力石/FCOLOR=249>   <兑换/@五级刃扇内力石>\
+<六级内力真气石/FCOLOR=254> + <六级刃扇真气石/FCOLOR=253> = <1个六级刃扇内力石/FCOLOR=249>   <兑换/@六级刃扇内力石>\
+<七级内力真气石/FCOLOR=254> + <七级刃扇真气石/FCOLOR=253> = <1个七级刃扇内力石/FCOLOR=249>   <兑换/@七级刃扇内力石>\
+<八级内力真气石/FCOLOR=254> + <八级刃扇真气石/FCOLOR=253> = <1个八级刃扇内力石/FCOLOR=249>   <兑换/@八级刃扇内力石>\
+<九级内力真气石/FCOLOR=254> + <九级刃扇真气石/FCOLOR=253> = <1个九级刃扇内力石/FCOLOR=249>   <兑换/@九级刃扇内力石>\
+<十级内力真气石/FCOLOR=254> + <十级刃扇真气石/FCOLOR=253> = <1个十级刃扇内力石/FCOLOR=249>   <兑换/@十级刃扇内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级刃扇内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级刃扇真气石 1
+give 五级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：五级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级刃扇内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级刃扇真气石 1
+give 六级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：六级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级刃扇内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级刃扇真气石 1
+give 七级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：七级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级刃扇内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级刃扇真气石 1
+give 八级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：八级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级刃扇内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级刃扇真气石 1
+give 九级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：九级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级刃扇内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级刃扇真气石 1
+give 十级刃扇内力石 1
+goto @刃扇内力石
+SENDMSG 7 恭喜获得：十级刃扇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级刃扇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@刃扇抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级刃扇真气石/FCOLOR=253> = <1个五级刃扇抗性石/FCOLOR=249>   <兑换/@五级刃扇抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级刃扇真气石/FCOLOR=253> = <1个六级刃扇抗性石/FCOLOR=249>   <兑换/@六级刃扇抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级刃扇真气石/FCOLOR=253> = <1个七级刃扇抗性石/FCOLOR=249>   <兑换/@七级刃扇抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级刃扇真气石/FCOLOR=253> = <1个八级刃扇抗性石/FCOLOR=249>   <兑换/@八级刃扇抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级刃扇真气石/FCOLOR=253> = <1个九级刃扇抗性石/FCOLOR=249>   <兑换/@九级刃扇抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级刃扇真气石/FCOLOR=253> = <1个十级刃扇抗性石/FCOLOR=249>   <兑换/@十级刃扇抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级刃扇真气石 1
+give 五级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：六级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级刃扇真气石 1
+give 六级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：六级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级刃扇真气石 1
+give 七级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：七级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级刃扇真气石 1
+give 八级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：八级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级刃扇真气石 1
+give 九级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：九级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级刃扇抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级刃扇真气石 1
+give 十级刃扇抗性石 1
+goto @刃扇抗性石
+SENDMSG 7 恭喜获得：十级刃扇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级刃扇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@刃扇神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级刃扇真气石/FCOLOR=253> = <1个五级刃扇神圣石/FCOLOR=249>   <兑换/@五级刃扇神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级刃扇真气石/FCOLOR=253> = <1个六级刃扇神圣石/FCOLOR=249>   <兑换/@六级刃扇神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级刃扇真气石/FCOLOR=253> = <1个七级刃扇神圣石/FCOLOR=249>   <兑换/@七级刃扇神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级刃扇真气石/FCOLOR=253> = <1个八级刃扇神圣石/FCOLOR=249>   <兑换/@八级刃扇神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级刃扇真气石/FCOLOR=253> = <1个九级刃扇神圣石/FCOLOR=249>   <兑换/@九级刃扇神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级刃扇真气石/FCOLOR=253> = <1个十级刃扇神圣石/FCOLOR=249>   <兑换/@十级刃扇神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级刃扇真气石 1
+give 五级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：六级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级刃扇真气石 1
+give 六级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：六级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级刃扇真气石 1
+give 七级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：七级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级刃扇真气石 1
+give 八级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：八级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级刃扇真气石 1
+give 九级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：九级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级刃扇神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级刃扇真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级刃扇真气石 1
+give 十级刃扇神圣石 1
+goto @刃扇神圣石
+SENDMSG 7 恭喜获得：十级刃扇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级刃扇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+[@毁灭内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级毁灭真气石/FCOLOR=253> = <1个五级毁灭内力石/FCOLOR=249>   <兑换/@五级毁灭内力石>\
+<六级内力真气石/FCOLOR=254> + <六级毁灭真气石/FCOLOR=253> = <1个六级毁灭内力石/FCOLOR=249>   <兑换/@六级毁灭内力石>\
+<七级内力真气石/FCOLOR=254> + <七级毁灭真气石/FCOLOR=253> = <1个七级毁灭内力石/FCOLOR=249>   <兑换/@七级毁灭内力石>\
+<八级内力真气石/FCOLOR=254> + <八级毁灭真气石/FCOLOR=253> = <1个八级毁灭内力石/FCOLOR=249>   <兑换/@八级毁灭内力石>\
+<九级内力真气石/FCOLOR=254> + <九级毁灭真气石/FCOLOR=253> = <1个九级毁灭内力石/FCOLOR=249>   <兑换/@九级毁灭内力石>\
+<十级内力真气石/FCOLOR=254> + <十级毁灭真气石/FCOLOR=253> = <1个十级毁灭内力石/FCOLOR=249>   <兑换/@十级毁灭内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级毁灭内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级毁灭真气石 1
+give 五级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：五级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级毁灭内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级毁灭真气石 1
+give 六级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：六级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级毁灭内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级毁灭真气石 1
+give 七级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：七级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级毁灭内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级毁灭真气石 1
+give 八级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：八级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级毁灭内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级毁灭真气石 1
+give 九级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：九级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级毁灭内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级毁灭真气石 1
+give 十级毁灭内力石 1
+goto @毁灭内力石
+SENDMSG 7 恭喜获得：十级毁灭内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级毁灭内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@毁灭抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级毁灭真气石/FCOLOR=253> = <1个五级毁灭抗性石/FCOLOR=249>   <兑换/@五级毁灭抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级毁灭真气石/FCOLOR=253> = <1个六级毁灭抗性石/FCOLOR=249>   <兑换/@六级毁灭抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级毁灭真气石/FCOLOR=253> = <1个七级毁灭抗性石/FCOLOR=249>   <兑换/@七级毁灭抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级毁灭真气石/FCOLOR=253> = <1个八级毁灭抗性石/FCOLOR=249>   <兑换/@八级毁灭抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级毁灭真气石/FCOLOR=253> = <1个九级毁灭抗性石/FCOLOR=249>   <兑换/@九级毁灭抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级毁灭真气石/FCOLOR=253> = <1个十级毁灭抗性石/FCOLOR=249>   <兑换/@十级毁灭抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级毁灭真气石 1
+give 五级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：五级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级毁灭真气石 1
+give 六级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：六级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级毁灭真气石 1
+give 七级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：七级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级毁灭真气石 1
+give 八级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：八级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级毁灭真气石 1
+give 九级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：九级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级毁灭抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级毁灭真气石 1
+give 十级毁灭抗性石 1
+goto @毁灭抗性石
+SENDMSG 7 恭喜获得：十级毁灭抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级毁灭抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@毁灭神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级毁灭真气石/FCOLOR=253> = <1个五级毁灭神圣石/FCOLOR=249>   <兑换/@五级毁灭神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级毁灭真气石/FCOLOR=253> = <1个六级毁灭神圣石/FCOLOR=249>   <兑换/@六级毁灭神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级毁灭真气石/FCOLOR=253> = <1个七级毁灭神圣石/FCOLOR=249>   <兑换/@七级毁灭神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级毁灭真气石/FCOLOR=253> = <1个八级毁灭神圣石/FCOLOR=249>   <兑换/@八级毁灭神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级毁灭真气石/FCOLOR=253> = <1个九级毁灭神圣石/FCOLOR=249>   <兑换/@九级毁灭神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级毁灭真气石/FCOLOR=253> = <1个十级毁灭神圣石/FCOLOR=249>   <兑换/@十级毁灭神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级毁灭真气石 1
+give 五级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：五级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级毁灭真气石 1
+give 六级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：六级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级毁灭真气石 1
+give 七级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：七级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级毁灭真气石 1
+give 八级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：八级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级毁灭真气石 1
+give 九级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：九级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级毁灭神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级毁灭真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级毁灭真气石 1
+give 十级毁灭神圣石 1
+goto @毁灭神圣石
+SENDMSG 7 恭喜获得：十级毁灭神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级毁灭神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+
+[@复仇内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级复仇真气石/FCOLOR=253> = <1个五级复仇内力石/FCOLOR=249>   <兑换/@五级复仇内力石>\
+<六级内力真气石/FCOLOR=254> + <六级复仇真气石/FCOLOR=253> = <1个六级复仇内力石/FCOLOR=249>   <兑换/@六级复仇内力石>\
+<七级内力真气石/FCOLOR=254> + <七级复仇真气石/FCOLOR=253> = <1个七级复仇内力石/FCOLOR=249>   <兑换/@七级复仇内力石>\
+<八级内力真气石/FCOLOR=254> + <八级复仇真气石/FCOLOR=253> = <1个八级复仇内力石/FCOLOR=249>   <兑换/@八级复仇内力石>\
+<九级内力真气石/FCOLOR=254> + <九级复仇真气石/FCOLOR=253> = <1个九级复仇内力石/FCOLOR=249>   <兑换/@九级复仇内力石>\
+<十级内力真气石/FCOLOR=254> + <十级复仇真气石/FCOLOR=253> = <1个十级复仇内力石/FCOLOR=249>   <兑换/@十级复仇内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级复仇内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级复仇真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：五级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级复仇内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级复仇真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：六级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级复仇内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级复仇真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：七级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级复仇内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级复仇真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：八级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级复仇内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级复仇真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：九级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级复仇内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级复仇真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级复仇内力石 1
+goto @复仇内力石
+SENDMSG 7 恭喜获得：十级复仇内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级复仇内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@复仇抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级复仇真气石/FCOLOR=253> = <1个五级复仇抗性石/FCOLOR=249>   <兑换/@五级复仇抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级复仇真气石/FCOLOR=253> = <1个六级复仇抗性石/FCOLOR=249>   <兑换/@六级复仇抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级复仇真气石/FCOLOR=253> = <1个七级复仇抗性石/FCOLOR=249>   <兑换/@七级复仇抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级复仇真气石/FCOLOR=253> = <1个八级复仇抗性石/FCOLOR=249>   <兑换/@八级复仇抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级复仇真气石/FCOLOR=253> = <1个九级复仇抗性石/FCOLOR=249>   <兑换/@九级复仇抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级复仇真气石/FCOLOR=253> = <1个十级复仇抗性石/FCOLOR=249>   <兑换/@十级复仇抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级复仇抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级复仇真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：五级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级复仇抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级复仇真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：六级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级复仇抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级复仇真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：七级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级复仇抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级复仇真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：八级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级复仇抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级复仇真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：九级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级复仇抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级复仇真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级复仇抗性石 1
+goto @复仇抗性石
+SENDMSG 7 恭喜获得：十级复仇抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级复仇抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@复仇神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级复仇真气石/FCOLOR=253> = <1个五级复仇神圣石/FCOLOR=249>   <兑换/@五级复仇神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级复仇真气石/FCOLOR=253> = <1个六级复仇神圣石/FCOLOR=249>   <兑换/@六级复仇神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级复仇真气石/FCOLOR=253> = <1个七级复仇神圣石/FCOLOR=249>   <兑换/@七级复仇神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级复仇真气石/FCOLOR=253> = <1个八级复仇神圣石/FCOLOR=249>   <兑换/@八级复仇神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级复仇真气石/FCOLOR=253> = <1个九级复仇神圣石/FCOLOR=249>   <兑换/@九级复仇神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级复仇真气石/FCOLOR=253> = <1个十级复仇神圣石/FCOLOR=249>   <兑换/@十级复仇神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级复仇神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级复仇真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：五级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级复仇神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级复仇真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：六级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级复仇神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级复仇真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：七级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级复仇神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级复仇真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：八级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级复仇神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级复仇真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：九级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级复仇神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级复仇真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级复仇神圣石 1
+goto @复仇神圣石
+SENDMSG 7 恭喜获得：十级复仇神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级复仇神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+
+[@嗜血内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级嗜血真气石/FCOLOR=253> = <1个五级嗜血内力石/FCOLOR=249>   <兑换/@五级嗜血内力石>\
+<六级内力真气石/FCOLOR=254> + <六级嗜血真气石/FCOLOR=253> = <1个六级嗜血内力石/FCOLOR=249>   <兑换/@六级嗜血内力石>\
+<七级内力真气石/FCOLOR=254> + <七级嗜血真气石/FCOLOR=253> = <1个七级嗜血内力石/FCOLOR=249>   <兑换/@七级嗜血内力石>\
+<八级内力真气石/FCOLOR=254> + <八级嗜血真气石/FCOLOR=253> = <1个八级嗜血内力石/FCOLOR=249>   <兑换/@八级嗜血内力石>\
+<九级内力真气石/FCOLOR=254> + <九级嗜血真气石/FCOLOR=253> = <1个九级嗜血内力石/FCOLOR=249>   <兑换/@九级嗜血内力石>\
+<十级内力真气石/FCOLOR=254> + <十级嗜血真气石/FCOLOR=253> = <1个十级嗜血内力石/FCOLOR=249>   <兑换/@十级嗜血内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级嗜血内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：五级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级嗜血内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：六级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级嗜血内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：七级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级嗜血内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：八级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级嗜血内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：九级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级嗜血内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级嗜血内力石 1
+goto @嗜血内力石
+SENDMSG 7 恭喜获得：十级嗜血内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级嗜血内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@嗜血抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级嗜血真气石/FCOLOR=253> = <1个五级嗜血抗性石/FCOLOR=249>   <兑换/@五级嗜血抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级嗜血真气石/FCOLOR=253> = <1个六级嗜血抗性石/FCOLOR=249>   <兑换/@六级嗜血抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级嗜血真气石/FCOLOR=253> = <1个七级嗜血抗性石/FCOLOR=249>   <兑换/@七级嗜血抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级嗜血真气石/FCOLOR=253> = <1个八级嗜血抗性石/FCOLOR=249>   <兑换/@八级嗜血抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级嗜血真气石/FCOLOR=253> = <1个九级嗜血抗性石/FCOLOR=249>   <兑换/@九级嗜血抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级嗜血真气石/FCOLOR=253> = <1个十级嗜血抗性石/FCOLOR=249>   <兑换/@十级嗜血抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：五级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：六级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：七级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：八级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：九级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级嗜血抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级嗜血抗性石 1
+goto @嗜血抗性石
+SENDMSG 7 恭喜获得：十级嗜血抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级嗜血抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@嗜血神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级嗜血真气石/FCOLOR=253> = <1个五级嗜血神圣石/FCOLOR=249>   <兑换/@五级嗜血神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级嗜血真气石/FCOLOR=253> = <1个六级嗜血神圣石/FCOLOR=249>   <兑换/@六级嗜血神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级嗜血真气石/FCOLOR=253> = <1个七级嗜血神圣石/FCOLOR=249>   <兑换/@七级嗜血神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级嗜血真气石/FCOLOR=253> = <1个八级嗜血神圣石/FCOLOR=249>   <兑换/@八级嗜血神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级嗜血真气石/FCOLOR=253> = <1个九级嗜血神圣石/FCOLOR=249>   <兑换/@九级嗜血神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级嗜血真气石/FCOLOR=253> = <1个十级嗜血神圣石/FCOLOR=249>   <兑换/@十级嗜血神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：五级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：六级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：七级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：八级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：九级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级嗜血神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级嗜血真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级嗜血神圣石 1
+goto @嗜血神圣石
+SENDMSG 7 恭喜获得：十级嗜血神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级嗜血神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+
+
+[@回天内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级回天真气石/FCOLOR=253> = <1个五级回天内力石/FCOLOR=249>   <兑换/@五级回天内力石>\
+<六级内力真气石/FCOLOR=254> + <六级回天真气石/FCOLOR=253> = <1个六级回天内力石/FCOLOR=249>   <兑换/@六级回天内力石>\
+<七级内力真气石/FCOLOR=254> + <七级回天真气石/FCOLOR=253> = <1个七级回天内力石/FCOLOR=249>   <兑换/@七级回天内力石>\
+<八级内力真气石/FCOLOR=254> + <八级回天真气石/FCOLOR=253> = <1个八级回天内力石/FCOLOR=249>   <兑换/@八级回天内力石>\
+<九级内力真气石/FCOLOR=254> + <九级回天真气石/FCOLOR=253> = <1个九级回天内力石/FCOLOR=249>   <兑换/@九级回天内力石>\
+<十级内力真气石/FCOLOR=254> + <十级回天真气石/FCOLOR=253> = <1个十级回天内力石/FCOLOR=249>   <兑换/@十级回天内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级回天内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级回天真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：六级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级回天内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级回天真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：六级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级回天内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级回天真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：七级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级回天内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级回天真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：八级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级回天内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级回天真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：九级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级回天内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级回天真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级回天内力石 1
+goto @回天内力石
+SENDMSG 7 恭喜获得：十级回天内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级回天内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@回天抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级回天真气石/FCOLOR=253> = <1个五级回天抗性石/FCOLOR=249>   <兑换/@五级回天抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级回天真气石/FCOLOR=253> = <1个六级回天抗性石/FCOLOR=249>   <兑换/@六级回天抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级回天真气石/FCOLOR=253> = <1个七级回天抗性石/FCOLOR=249>   <兑换/@七级回天抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级回天真气石/FCOLOR=253> = <1个八级回天抗性石/FCOLOR=249>   <兑换/@八级回天抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级回天真气石/FCOLOR=253> = <1个九级回天抗性石/FCOLOR=249>   <兑换/@九级回天抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级回天真气石/FCOLOR=253> = <1个十级回天抗性石/FCOLOR=249>   <兑换/@十级回天抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级回天抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级回天真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：五级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级回天抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级回天真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：六级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级回天抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级回天真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：七级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级回天抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级回天真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：八级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级回天抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级回天真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：九级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级回天抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级回天真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级回天抗性石 1
+goto @回天抗性石
+SENDMSG 7 恭喜获得：十级回天抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级回天抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@回天神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级回天真气石/FCOLOR=253> = <1个五级回天神圣石/FCOLOR=249>   <兑换/@五级回天神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级回天真气石/FCOLOR=253> = <1个六级回天神圣石/FCOLOR=249>   <兑换/@六级回天神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级回天真气石/FCOLOR=253> = <1个七级回天神圣石/FCOLOR=249>   <兑换/@七级回天神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级回天真气石/FCOLOR=253> = <1个八级回天神圣石/FCOLOR=249>   <兑换/@八级回天神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级回天真气石/FCOLOR=253> = <1个九级回天神圣石/FCOLOR=249>   <兑换/@九级回天神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级回天真气石/FCOLOR=253> = <1个十级回天神圣石/FCOLOR=249>   <兑换/@十级回天神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级回天神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级回天真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：五级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级回天神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级回天真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：六级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级回天神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级回天真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：七级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级回天神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级回天真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：八级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级回天神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级回天真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：九级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级回天神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级回天真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级回天神圣石 1
+goto @回天神圣石
+SENDMSG 7 恭喜获得：十级回天神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级回天神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+[@天雷内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级天雷真气石/FCOLOR=253> = <1个五级天雷内力石/FCOLOR=249>   <兑换/@五级天雷内力石>\
+<六级内力真气石/FCOLOR=254> + <六级天雷真气石/FCOLOR=253> = <1个六级天雷内力石/FCOLOR=249>   <兑换/@六级天雷内力石>\
+<七级内力真气石/FCOLOR=254> + <七级天雷真气石/FCOLOR=253> = <1个七级天雷内力石/FCOLOR=249>   <兑换/@七级天雷内力石>\
+<八级内力真气石/FCOLOR=254> + <八级天雷真气石/FCOLOR=253> = <1个八级天雷内力石/FCOLOR=249>   <兑换/@八级天雷内力石>\
+<九级内力真气石/FCOLOR=254> + <九级天雷真气石/FCOLOR=253> = <1个九级天雷内力石/FCOLOR=249>   <兑换/@九级天雷内力石>\
+<十级内力真气石/FCOLOR=254> + <十级天雷真气石/FCOLOR=253> = <1个十级天雷内力石/FCOLOR=249>   <兑换/@十级天雷内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级天雷内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级天雷真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级天雷真气石 1
+give 五级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：五级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级天雷内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级天雷真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级天雷真气石 1
+give 六级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：六级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级天雷内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级天雷真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级天雷真气石 1
+give 七级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：七级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级天雷内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级天雷真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级天雷真气石 1
+give 八级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：八级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级天雷内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级天雷真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级天雷真气石 1
+give 九级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：九级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级天雷内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级天雷真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级天雷真气石 1
+give 十级天雷内力石 1
+goto @天雷内力石
+SENDMSG 7 恭喜获得：十级天雷内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级天雷内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@天雷抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级天雷真气石/FCOLOR=253> = <1个五级天雷抗性石/FCOLOR=249>   <兑换/@五级天雷抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级天雷真气石/FCOLOR=253> = <1个六级天雷抗性石/FCOLOR=249>   <兑换/@六级天雷抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级天雷真气石/FCOLOR=253> = <1个七级天雷抗性石/FCOLOR=249>   <兑换/@七级天雷抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级天雷真气石/FCOLOR=253> = <1个八级天雷抗性石/FCOLOR=249>   <兑换/@八级天雷抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级天雷真气石/FCOLOR=253> = <1个九级天雷抗性石/FCOLOR=249>   <兑换/@九级天雷抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级天雷真气石/FCOLOR=253> = <1个十级天雷抗性石/FCOLOR=249>   <兑换/@十级天雷抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级天雷抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级天雷真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级天雷真气石 1
+give 五级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：五级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级天雷抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级天雷真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级天雷真气石 1
+give 六级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：六级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级天雷抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级天雷真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级天雷真气石 1
+give 七级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：七级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级天雷抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级天雷真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级天雷真气石 1
+give 八级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：八级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级天雷抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级天雷真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级天雷真气石 1
+give 九级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：九级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级天雷抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级天雷真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级天雷真气石 1
+give 十级天雷抗性石 1
+goto @天雷抗性石
+SENDMSG 7 恭喜获得：十级天雷抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级天雷抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@天雷神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级天雷真气石/FCOLOR=253> = <1个五级天雷神圣石/FCOLOR=249>   <兑换/@五级天雷神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级天雷真气石/FCOLOR=253> = <1个六级天雷神圣石/FCOLOR=249>   <兑换/@六级天雷神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级天雷真气石/FCOLOR=253> = <1个七级天雷神圣石/FCOLOR=249>   <兑换/@七级天雷神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级天雷真气石/FCOLOR=253> = <1个八级天雷神圣石/FCOLOR=249>   <兑换/@八级天雷神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级天雷真气石/FCOLOR=253> = <1个九级天雷神圣石/FCOLOR=249>   <兑换/@九级天雷神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级天雷真气石/FCOLOR=253> = <1个十级天雷神圣石/FCOLOR=249>   <兑换/@十级天雷神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级天雷神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级天雷真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级天雷真气石 1
+give 五级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：五级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级天雷神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级天雷真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级天雷真气石 1
+give 六级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：六级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级天雷神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级天雷真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级天雷真气石 1
+give 七级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：七级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级天雷神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级天雷真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级天雷真气石 1
+give 八级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：八级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级天雷神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级天雷真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级天雷真气石 1
+give 九级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：九级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级天雷神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级天雷真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级天雷真气石 1
+give 十级天雷神圣石 1
+goto @天雷神圣石
+SENDMSG 7 恭喜获得：十级天雷神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级天雷神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+;----------------------------------------------------------------------------------------------------------------------------------
+
+[@十步内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级十步真气石/FCOLOR=253> = <1个五级十步内力石/FCOLOR=249>   <兑换/@五级十步内力石>\
+<六级内力真气石/FCOLOR=254> + <六级十步真气石/FCOLOR=253> = <1个六级十步内力石/FCOLOR=249>   <兑换/@六级十步内力石>\
+<七级内力真气石/FCOLOR=254> + <七级十步真气石/FCOLOR=253> = <1个七级十步内力石/FCOLOR=249>   <兑换/@七级十步内力石>\
+<八级内力真气石/FCOLOR=254> + <八级十步真气石/FCOLOR=253> = <1个八级十步内力石/FCOLOR=249>   <兑换/@八级十步内力石>\
+<九级内力真气石/FCOLOR=254> + <九级十步真气石/FCOLOR=253> = <1个九级十步内力石/FCOLOR=249>   <兑换/@九级十步内力石>\
+<十级内力真气石/FCOLOR=254> + <十级十步真气石/FCOLOR=253> = <1个十级十步内力石/FCOLOR=249>   <兑换/@十级十步内力石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级十步内力石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级十步真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级十步真气石 1
+give 五级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：五级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级十步内力石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级十步真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级十步真气石 1
+give 六级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：六级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级十步内力石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级十步真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级十步真气石 1
+give 七级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：七级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级十步内力石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级十步真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级十步真气石 1
+give 八级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：八级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级十步内力石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级十步真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级十步真气石 1
+give 九级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：九级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级十步内力石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级十步真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级十步真气石 1
+give 十级十步内力石 1
+goto @十步内力石
+SENDMSG 7 恭喜获得：十级十步内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级十步内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@十步抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级十步真气石/FCOLOR=253> = <1个五级十步抗性石/FCOLOR=249>   <兑换/@五级十步抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级十步真气石/FCOLOR=253> = <1个六级十步抗性石/FCOLOR=249>   <兑换/@六级十步抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级十步真气石/FCOLOR=253> = <1个七级十步抗性石/FCOLOR=249>   <兑换/@七级十步抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级十步真气石/FCOLOR=253> = <1个八级十步抗性石/FCOLOR=249>   <兑换/@八级十步抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级十步真气石/FCOLOR=253> = <1个九级十步抗性石/FCOLOR=249>   <兑换/@九级十步抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级十步真气石/FCOLOR=253> = <1个十级十步抗性石/FCOLOR=249>   <兑换/@十级十步抗性石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级十步抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级十步真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级十步真气石 1
+give 五级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：五级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级十步抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级十步真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级十步真气石 1
+give 六级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：六级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级十步抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级十步真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级十步真气石 1
+give 七级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：七级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级十步抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级十步真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级十步真气石 1
+give 八级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：八级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级十步抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级十步真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级十步真气石 1
+give 九级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：九级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级十步抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级十步真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级十步真气石 1
+give 十级十步抗性石 1
+goto @十步抗性石
+SENDMSG 7 恭喜获得：十级十步抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级十步抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@十步神圣石]
+\ \
+<五级神圣真气石/FCOLOR=254> + <五级十步真气石/FCOLOR=253> = <1个五级十步神圣石/FCOLOR=249>   <兑换/@五级十步神圣石>\
+<六级神圣真气石/FCOLOR=254> + <六级十步真气石/FCOLOR=253> = <1个六级十步神圣石/FCOLOR=249>   <兑换/@六级十步神圣石>\
+<七级神圣真气石/FCOLOR=254> + <七级十步真气石/FCOLOR=253> = <1个七级十步神圣石/FCOLOR=249>   <兑换/@七级十步神圣石>\
+<八级神圣真气石/FCOLOR=254> + <八级十步真气石/FCOLOR=253> = <1个八级十步神圣石/FCOLOR=249>   <兑换/@八级十步神圣石>\
+<九级神圣真气石/FCOLOR=254> + <九级十步真气石/FCOLOR=253> = <1个九级十步神圣石/FCOLOR=249>   <兑换/@九级十步神圣石>\
+<十级神圣真气石/FCOLOR=254> + <十级十步真气石/FCOLOR=253> = <1个十级十步神圣石/FCOLOR=249>   <兑换/@十级十步神圣石>\ \
+<返回/@神技真气石脚本合成>\
+
+[@五级十步神圣石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级十步真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级十步真气石 1
+give 五级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：五级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@六级十步神圣石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级十步真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级十步真气石 1
+give 六级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：六级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级十步神圣石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级十步真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级十步真气石 1
+give 七级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：七级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级十步神圣石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级十步真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级十步真气石 1
+give 八级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：八级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级十步神圣石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级十步真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级十步真气石 1
+give 九级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：九级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@十级十步神圣石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级十步真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级十步真气石 1
+give 十级十步神圣石 1
+goto @十步神圣石
+SENDMSG 7 恭喜获得：十级十步神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级十步神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+
+;-----------------------------------------------------------------------------------------------------------------------------------------------
+
+[@双属性真气石脚本合成]
+<神圣抗性石/@神圣抗性石>   <神圣内力石/@神圣内力石>   <神圣十步石/@神圣十步石>   <神圣天雷石/@神圣天雷石>\
+<神圣回天石/@神圣回天石>   <神圣嗜血石/@神圣嗜血石>   <神圣复仇石/@神圣复仇石>   <神圣毁灭石/@神圣毁灭石>\
+<神圣刃扇石/@神圣刃扇石>\
+
+<抗性神圣石/@抗性神圣石>   <抗性内力石/@抗性内力石>   <抗性十步石/@抗性十步石>   <抗性天雷石/@抗性天雷石>\
+<抗性回天石/@抗性回天石>   <抗性嗜血石/@抗性嗜血石>   <抗性复仇石/@抗性复仇石>   <抗性毁灭石/@抗性毁灭石>\
+<抗性刃扇石/@抗性刃扇石>\
+
+<内力神圣石/@内力神圣石>   <内力抗性石/@内力抗性石>   <内力十步石/@内力十步石>   <内力天雷石/@内力天雷石>\
+<内力回天石/@内力回天石>   <内力嗜血石/@内力嗜血石>   <内力复仇石/@内力复仇石>   <内力毁灭石/@内力毁灭石>\
+<内力刃扇石/@内力刃扇石>         <返回/@shi>\
+
+
+
+
+
+
+[@内力刃扇石]
+\ \
+<五级刃扇真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力刃扇石/FCOLOR=249>   <兑换/@五级内力刃扇石>\
+<六级刃扇真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力刃扇石/FCOLOR=249>   <兑换/@六级内力刃扇石>\
+<七级刃扇真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力刃扇石/FCOLOR=249>   <兑换/@七级内力刃扇石>\
+<八级刃扇真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力刃扇石/FCOLOR=249>   <兑换/@八级内力刃扇石>\
+<九级刃扇真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力刃扇石/FCOLOR=249>   <兑换/@九级内力刃扇石>\
+<十级刃扇真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力刃扇石/FCOLOR=249>   <兑换/@十级内力刃扇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力刃扇石]
+#if
+CHECKKIMNEEDLE 十级刃扇真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级刃扇真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：十级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力刃扇石]
+#if
+CHECKKIMNEEDLE 九级刃扇真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级刃扇真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：九级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力刃扇石]
+#if
+CHECKKIMNEEDLE 八级刃扇真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级刃扇真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：八级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力刃扇石]
+#if
+CHECKKIMNEEDLE 七级刃扇真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级刃扇真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：七级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力刃扇石]
+#if
+CHECKKIMNEEDLE 六级刃扇真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级刃扇真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：六级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力刃扇石]
+#if
+CHECKKIMNEEDLE 五级刃扇真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级刃扇真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级内力刃扇石 1
+goto @内力刃扇石
+SENDMSG 7 恭喜获得：五级内力刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@内力毁灭石]
+\ \
+<五级毁灭真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力毁灭石/FCOLOR=249>   <兑换/@五级内力毁灭石>\
+<六级毁灭真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力毁灭石/FCOLOR=249>   <兑换/@六级内力毁灭石>\
+<七级毁灭真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力毁灭石/FCOLOR=249>   <兑换/@七级内力毁灭石>\
+<八级毁灭真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力毁灭石/FCOLOR=249>   <兑换/@八级内力毁灭石>\
+<九级毁灭真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力毁灭石/FCOLOR=249>   <兑换/@九级内力毁灭石>\
+<十级毁灭真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力毁灭石/FCOLOR=249>   <兑换/@十级内力毁灭石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力毁灭石]
+#if
+CHECKKIMNEEDLE 十级毁灭真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级毁灭真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：十级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力毁灭石]
+#if
+CHECKKIMNEEDLE 九级毁灭真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级毁灭真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：九级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力毁灭石]
+#if
+CHECKKIMNEEDLE 八级毁灭真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级毁灭真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：八级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力毁灭石]
+#if
+CHECKKIMNEEDLE 七级毁灭真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级毁灭真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：七级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力毁灭石]
+#if
+CHECKKIMNEEDLE 六级毁灭真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级毁灭真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：六级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力毁灭石]
+#if
+CHECKKIMNEEDLE 五级毁灭真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级毁灭真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级内力毁灭石 1
+goto @内力毁灭石
+SENDMSG 7 恭喜获得：五级内力毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@内力复仇石]
+\ \
+<五级复仇真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力复仇石/FCOLOR=249>   <兑换/@五级内力复仇石>\
+<六级复仇真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力复仇石/FCOLOR=249>   <兑换/@六级内力复仇石>\
+<七级复仇真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力复仇石/FCOLOR=249>   <兑换/@七级内力复仇石>\
+<八级复仇真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力复仇石/FCOLOR=249>   <兑换/@八级内力复仇石>\
+<九级复仇真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力复仇石/FCOLOR=249>   <兑换/@九级内力复仇石>\
+<十级复仇真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力复仇石/FCOLOR=249>   <兑换/@十级内力复仇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力复仇石]
+#if
+CHECKKIMNEEDLE 十级复仇真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：十级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力复仇石]
+#if
+CHECKKIMNEEDLE 九级复仇真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：九级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力复仇石]
+#if
+CHECKKIMNEEDLE 八级复仇真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：八级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力复仇石]
+#if
+CHECKKIMNEEDLE 七级复仇真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：七级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力复仇石]
+#if
+CHECKKIMNEEDLE 六级复仇真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：六级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力复仇石]
+#if
+CHECKKIMNEEDLE 五级复仇真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级内力复仇石 1
+goto @内力复仇石
+SENDMSG 7 恭喜获得：五级内力复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@内力嗜血石]
+\ \
+<五级嗜血真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力嗜血石/FCOLOR=249>   <兑换/@五级内力嗜血石>\
+<六级嗜血真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力嗜血石/FCOLOR=249>   <兑换/@六级内力嗜血石>\
+<七级嗜血真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力嗜血石/FCOLOR=249>   <兑换/@七级内力嗜血石>\
+<八级嗜血真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力嗜血石/FCOLOR=249>   <兑换/@八级内力嗜血石>\
+<九级嗜血真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力嗜血石/FCOLOR=249>   <兑换/@九级内力嗜血石>\
+<十级嗜血真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力嗜血石/FCOLOR=249>   <兑换/@十级内力嗜血石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力嗜血石]
+#if
+CHECKKIMNEEDLE 十级嗜血真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：十级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力嗜血石]
+#if
+CHECKKIMNEEDLE 九级嗜血真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：九级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力嗜血石]
+#if
+CHECKKIMNEEDLE 八级嗜血真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：八级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力嗜血石]
+#if
+CHECKKIMNEEDLE 七级嗜血真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：七级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力嗜血石]
+#if
+CHECKKIMNEEDLE 六级嗜血真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：六级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力嗜血石]
+#if
+CHECKKIMNEEDLE 五级嗜血真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级内力嗜血石 1
+goto @内力嗜血石
+SENDMSG 7 恭喜获得：五级内力嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@内力回天石]
+\ \
+<五级回天真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力回天石/FCOLOR=249>   <兑换/@五级内力回天石>\
+<六级回天真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力回天石/FCOLOR=249>   <兑换/@六级内力回天石>\
+<七级回天真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力回天石/FCOLOR=249>   <兑换/@七级内力回天石>\
+<八级回天真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力回天石/FCOLOR=249>   <兑换/@八级内力回天石>\
+<九级回天真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力回天石/FCOLOR=249>   <兑换/@九级内力回天石>\
+<十级回天真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力回天石/FCOLOR=249>   <兑换/@十级内力回天石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力回天石]
+#if
+CHECKKIMNEEDLE 十级回天真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：十级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力回天石]
+#if
+CHECKKIMNEEDLE 九级回天真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：九级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力回天石]
+#if
+CHECKKIMNEEDLE 八级回天真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：八级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力回天石]
+#if
+CHECKKIMNEEDLE 七级回天真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：七级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力回天石]
+#if
+CHECKKIMNEEDLE 六级回天真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：六级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力回天石]
+#if
+CHECKKIMNEEDLE 五级回天真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级内力回天石 1
+goto @内力回天石
+SENDMSG 7 恭喜获得：五级内力回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@内力天雷石]
+\ \
+<五级天雷真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力天雷石/FCOLOR=249>   <兑换/@五级内力天雷石>\
+<六级天雷真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力天雷石/FCOLOR=249>   <兑换/@六级内力天雷石>\
+<七级天雷真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力天雷石/FCOLOR=249>   <兑换/@七级内力天雷石>\
+<八级天雷真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力天雷石/FCOLOR=249>   <兑换/@八级内力天雷石>\
+<九级天雷真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力天雷石/FCOLOR=249>   <兑换/@九级内力天雷石>\
+<十级天雷真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力天雷石/FCOLOR=249>   <兑换/@十级内力天雷石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力天雷石]
+#if
+CHECKKIMNEEDLE 十级天雷真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级天雷真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：十级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力天雷石]
+#if
+CHECKKIMNEEDLE 九级天雷真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级天雷真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：九级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力天雷石]
+#if
+CHECKKIMNEEDLE 八级天雷真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级天雷真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：八级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力天雷石]
+#if
+CHECKKIMNEEDLE 七级天雷真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级天雷真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：七级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力天雷石]
+#if
+CHECKKIMNEEDLE 六级天雷真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级天雷真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：六级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力天雷石]
+#if
+CHECKKIMNEEDLE 五级天雷真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级天雷真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级内力天雷石 1
+goto @内力天雷石
+SENDMSG 7 恭喜获得：五级内力天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@内力十步石]
+\ \
+<五级十步真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力十步石/FCOLOR=249>   <兑换/@五级内力十步石>\
+<六级十步真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力十步石/FCOLOR=249>   <兑换/@六级内力十步石>\
+<七级十步真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力十步石/FCOLOR=249>   <兑换/@七级内力十步石>\
+<八级十步真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力十步石/FCOLOR=249>   <兑换/@八级内力十步石>\
+<九级十步真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力十步石/FCOLOR=249>   <兑换/@九级内力十步石>\
+<十级十步真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力十步石/FCOLOR=249>   <兑换/@十级内力十步石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力十步石]
+#if
+CHECKKIMNEEDLE 十级十步真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级十步真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：十级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力十步石]
+#if
+CHECKKIMNEEDLE 九级十步真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级十步真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：九级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力十步石]
+#if
+CHECKKIMNEEDLE 八级十步真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级十步真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：八级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力十步石]
+#if
+CHECKKIMNEEDLE 七级十步真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级十步真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：七级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力十步石]
+#if
+CHECKKIMNEEDLE 六级十步真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级十步真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：六级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力十步石]
+#if
+CHECKKIMNEEDLE 五级十步真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级十步真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级内力十步石 1
+goto @内力十步石
+SENDMSG 7 恭喜获得：五级内力十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@内力抗性石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级内力真气石/FCOLOR=253> = <1个五级内力抗性石/FCOLOR=249>   <兑换/@五级内力抗性石>\
+<六级内力真气石/FCOLOR=254> + <六级内力真气石/FCOLOR=253> = <1个六级内力抗性石/FCOLOR=249>   <兑换/@六级内力抗性石>\
+<七级内力真气石/FCOLOR=254> + <七级内力真气石/FCOLOR=253> = <1个七级内力抗性石/FCOLOR=249>   <兑换/@七级内力抗性石>\
+<八级内力真气石/FCOLOR=254> + <八级内力真气石/FCOLOR=253> = <1个八级内力抗性石/FCOLOR=249>   <兑换/@八级内力抗性石>\
+<九级内力真气石/FCOLOR=254> + <九级内力真气石/FCOLOR=253> = <1个九级内力抗性石/FCOLOR=249>   <兑换/@九级内力抗性石>\
+<十级内力真气石/FCOLOR=254> + <十级内力真气石/FCOLOR=253> = <1个十级内力抗性石/FCOLOR=249>   <兑换/@十级内力抗性石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力抗性石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：十级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力抗性石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：九级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力抗性石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：八级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力抗性石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：七级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力抗性石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：六级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力抗性石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级抗性真气石 1
+give 五级内力抗性石 1
+goto @内力抗性石
+SENDMSG 7 恭喜获得：五级内力抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@内力神圣石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级内力神圣石/FCOLOR=249>   <兑换/@五级内力神圣石>\
+<六级内力真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级内力神圣石/FCOLOR=249>   <兑换/@六级内力神圣石>\
+<七级内力真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级内力神圣石/FCOLOR=249>   <兑换/@七级内力神圣石>\
+<八级内力真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级内力神圣石/FCOLOR=249>   <兑换/@八级内力神圣石>\
+<九级内力真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级内力神圣石/FCOLOR=249>   <兑换/@九级内力神圣石>\
+<十级内力真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级内力神圣石/FCOLOR=249>   <兑换/@十级内力神圣石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级内力神圣石]
+#if
+CHECKKIMNEEDLE 十级内力真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级内力真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：十级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级内力神圣石]
+#if
+CHECKKIMNEEDLE 九级内力真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级内力真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：九级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级内力神圣石]
+#if
+CHECKKIMNEEDLE 八级内力真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级内力真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：八级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级内力神圣石]
+#if
+CHECKKIMNEEDLE 七级内力真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级内力真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：七级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级内力神圣石]
+#if
+CHECKKIMNEEDLE 六级内力真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级内力真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：六级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级内力神圣石]
+#if
+CHECKKIMNEEDLE 五级内力真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级内力真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级内力神圣石 1
+goto @内力神圣石
+SENDMSG 7 恭喜获得：五级内力神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级内力神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+;=------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[@抗性刃扇石]
+\ \
+<五级刃扇真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性刃扇石/FCOLOR=249>   <兑换/@五级抗性刃扇石>\
+<六级刃扇真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性刃扇石/FCOLOR=249>   <兑换/@六级抗性刃扇石>\
+<七级刃扇真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性刃扇石/FCOLOR=249>   <兑换/@七级抗性刃扇石>\
+<八级刃扇真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性刃扇石/FCOLOR=249>   <兑换/@八级抗性刃扇石>\
+<九级刃扇真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性刃扇石/FCOLOR=249>   <兑换/@九级抗性刃扇石>\
+<十级刃扇真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性刃扇石/FCOLOR=249>   <兑换/@十级抗性刃扇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 十级刃扇真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级刃扇真气石 1
+TAKEKIMNEEDLE 十级抗性真气石 1
+give 十级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：十级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 九级刃扇真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级刃扇真气石 1
+TAKEKIMNEEDLE 九级抗性真气石 1
+give 九级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：九级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 八级刃扇真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级刃扇真气石 1
+TAKEKIMNEEDLE 八级抗性真气石 1
+give 八级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：八级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 七级刃扇真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级刃扇真气石 1
+TAKEKIMNEEDLE 七级抗性真气石 1
+give 七级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：七级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 六级刃扇真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级刃扇真气石 1
+TAKEKIMNEEDLE 六级抗性真气石 1
+give 六级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：六级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性刃扇石]
+#if
+CHECKKIMNEEDLE 五级刃扇真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级刃扇真气石 1
+TAKEKIMNEEDLE 五级抗性真气石 1
+give 五级抗性刃扇石 1
+goto @抗性刃扇石
+SENDMSG 7 恭喜获得：五级抗性刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@抗性毁灭石]
+\ \
+<五级毁灭真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性毁灭石/FCOLOR=249>   <兑换/@五级抗性毁灭石>\
+<六级毁灭真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性毁灭石/FCOLOR=249>   <兑换/@六级抗性毁灭石>\
+<七级毁灭真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性毁灭石/FCOLOR=249>   <兑换/@七级抗性毁灭石>\
+<八级毁灭真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性毁灭石/FCOLOR=249>   <兑换/@八级抗性毁灭石>\
+<九级毁灭真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性毁灭石/FCOLOR=249>   <兑换/@九级抗性毁灭石>\
+<十级毁灭真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性毁灭石/FCOLOR=249>   <兑换/@十级抗性毁灭石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 十级毁灭真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级毁灭真气石 1
+TAKEKIMNEEDLE 十级抗性真气石 1
+give 十级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：十级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 九级毁灭真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级毁灭真气石 1
+TAKEKIMNEEDLE 九级抗性真气石 1
+give 九级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：九级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 八级毁灭真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级毁灭真气石 1
+TAKEKIMNEEDLE 八级抗性真气石 1
+give 八级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：八级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 七级毁灭真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级毁灭真气石 1
+TAKEKIMNEEDLE 七级抗性真气石 1
+give 七级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：七级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 六级毁灭真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级毁灭真气石 1
+TAKEKIMNEEDLE 六级抗性真气石 1
+give 六级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：六级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性毁灭石]
+#if
+CHECKKIMNEEDLE 五级毁灭真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级毁灭真气石 1
+TAKEKIMNEEDLE 五级抗性真气石 1
+give 五级抗性毁灭石 1
+goto @抗性毁灭石
+SENDMSG 7 恭喜获得：五级抗性毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@抗性复仇石]
+\ \
+<五级复仇真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性复仇石/FCOLOR=249>   <兑换/@五级抗性复仇石>\
+<六级复仇真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性复仇石/FCOLOR=249>   <兑换/@六级抗性复仇石>\
+<七级复仇真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性复仇石/FCOLOR=249>   <兑换/@七级抗性复仇石>\
+<八级复仇真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性复仇石/FCOLOR=249>   <兑换/@八级抗性复仇石>\
+<九级复仇真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性复仇石/FCOLOR=249>   <兑换/@九级抗性复仇石>\
+<十级复仇真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性复仇石/FCOLOR=249>   <兑换/@十级抗性复仇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性复仇石]
+#if
+CHECKKIMNEEDLE 十级复仇真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：十级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性复仇石]
+#if
+CHECKKIMNEEDLE 九级复仇真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：九级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性复仇石]
+#if
+CHECKKIMNEEDLE 八级复仇真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：八级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性复仇石]
+#if
+CHECKKIMNEEDLE 七级复仇真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：七级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性复仇石]
+#if
+CHECKKIMNEEDLE 六级复仇真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：六级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性复仇石]
+#if
+CHECKKIMNEEDLE 五级复仇真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级抗性复仇石 1
+goto @抗性复仇石
+SENDMSG 7 恭喜获得：五级抗性复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@抗性嗜血石]
+\ \
+<五级嗜血真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性嗜血石/FCOLOR=249>   <兑换/@五级抗性嗜血石>\
+<六级嗜血真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性嗜血石/FCOLOR=249>   <兑换/@六级抗性嗜血石>\
+<七级嗜血真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性嗜血石/FCOLOR=249>   <兑换/@七级抗性嗜血石>\
+<八级嗜血真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性嗜血石/FCOLOR=249>   <兑换/@八级抗性嗜血石>\
+<九级嗜血真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性嗜血石/FCOLOR=249>   <兑换/@九级抗性嗜血石>\
+<十级嗜血真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性嗜血石/FCOLOR=249>   <兑换/@十级抗性嗜血石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 十级嗜血真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：十级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 九级嗜血真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：九级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 八级嗜血真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：八级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 七级嗜血真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：七级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 六级嗜血真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：六级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性嗜血石]
+#if
+CHECKKIMNEEDLE 五级嗜血真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级抗性嗜血石 1
+goto @抗性嗜血石
+SENDMSG 7 恭喜获得：五级抗性嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@抗性回天石]
+\ \
+<五级回天真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性回天石/FCOLOR=249>   <兑换/@五级抗性回天石>\
+<六级回天真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性回天石/FCOLOR=249>   <兑换/@六级抗性回天石>\
+<七级回天真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性回天石/FCOLOR=249>   <兑换/@七级抗性回天石>\
+<八级回天真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性回天石/FCOLOR=249>   <兑换/@八级抗性回天石>\
+<九级回天真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性回天石/FCOLOR=249>   <兑换/@九级抗性回天石>\
+<十级回天真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性回天石/FCOLOR=249>   <兑换/@十级抗性回天石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性回天石]
+#if
+CHECKKIMNEEDLE 十级回天真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：十级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性回天石]
+#if
+CHECKKIMNEEDLE 九级回天真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：九级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性回天石]
+#if
+CHECKKIMNEEDLE 八级回天真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：八级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性回天石]
+#if
+CHECKKIMNEEDLE 七级回天真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：七级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性回天石]
+#if
+CHECKKIMNEEDLE 六级回天真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：六级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性回天石]
+#if
+CHECKKIMNEEDLE 五级回天真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级抗性回天石 1
+goto @抗性回天石
+SENDMSG 7 恭喜获得：五级抗性回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@抗性天雷石]
+\ \
+<五级天雷真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性天雷石/FCOLOR=249>   <兑换/@五级抗性天雷石>\
+<六级天雷真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性天雷石/FCOLOR=249>   <兑换/@六级抗性天雷石>\
+<七级天雷真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性天雷石/FCOLOR=249>   <兑换/@七级抗性天雷石>\
+<八级天雷真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性天雷石/FCOLOR=249>   <兑换/@八级抗性天雷石>\
+<九级天雷真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性天雷石/FCOLOR=249>   <兑换/@九级抗性天雷石>\
+<十级天雷真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性天雷石/FCOLOR=249>   <兑换/@十级抗性天雷石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性天雷石]
+#if
+CHECKKIMNEEDLE 十级天雷真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级天雷真气石 1
+TAKEKIMNEEDLE 十级抗性真气石 1
+give 十级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：十级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性天雷石]
+#if
+CHECKKIMNEEDLE 九级天雷真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级天雷真气石 1
+TAKEKIMNEEDLE 九级抗性真气石 1
+give 九级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：九级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性天雷石]
+#if
+CHECKKIMNEEDLE 八级天雷真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级天雷真气石 1
+TAKEKIMNEEDLE 八级抗性真气石 1
+give 八级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：八级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性天雷石]
+#if
+CHECKKIMNEEDLE 七级天雷真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级天雷真气石 1
+TAKEKIMNEEDLE 七级抗性真气石 1
+give 七级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：七级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性天雷石]
+#if
+CHECKKIMNEEDLE 六级天雷真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级天雷真气石 1
+TAKEKIMNEEDLE 六级抗性真气石 1
+give 六级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：六级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性天雷石]
+#if
+CHECKKIMNEEDLE 五级天雷真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级天雷真气石 1
+TAKEKIMNEEDLE 五级抗性真气石 1
+give 五级抗性天雷石 1
+goto @抗性天雷石
+SENDMSG 7 恭喜获得：五级抗性天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@抗性十步石]
+\ \
+<五级十步真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性十步石/FCOLOR=249>   <兑换/@五级抗性十步石>\
+<六级十步真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性十步石/FCOLOR=249>   <兑换/@六级抗性十步石>\
+<七级十步真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性十步石/FCOLOR=249>   <兑换/@七级抗性十步石>\
+<八级十步真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性十步石/FCOLOR=249>   <兑换/@八级抗性十步石>\
+<九级十步真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性十步石/FCOLOR=249>   <兑换/@九级抗性十步石>\
+<十级十步真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性十步石/FCOLOR=249>   <兑换/@十级抗性十步石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性十步石]
+#if
+CHECKKIMNEEDLE 十级十步真气石 1
+CHECKKIMNEEDLE 十级抗性真气石 1
+#act
+TAKEKIMNEEDLE 十级十步真气石 1
+TAKEKIMNEEDLE 十级抗性真气石 1
+give 十级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：十级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性十步石]
+#if
+CHECKKIMNEEDLE 九级十步真气石 1
+CHECKKIMNEEDLE 九级抗性真气石 1
+#act
+TAKEKIMNEEDLE 九级十步真气石 1
+TAKEKIMNEEDLE 九级抗性真气石 1
+give 九级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：九级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性十步石]
+#if
+CHECKKIMNEEDLE 八级十步真气石 1
+CHECKKIMNEEDLE 八级抗性真气石 1
+#act
+TAKEKIMNEEDLE 八级十步真气石 1
+TAKEKIMNEEDLE 八级抗性真气石 1
+give 八级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：八级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性十步石]
+#if
+CHECKKIMNEEDLE 七级十步真气石 1
+CHECKKIMNEEDLE 七级抗性真气石 1
+#act
+TAKEKIMNEEDLE 七级十步真气石 1
+TAKEKIMNEEDLE 七级抗性真气石 1
+give 七级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：七级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性十步石]
+#if
+CHECKKIMNEEDLE 六级十步真气石 1
+CHECKKIMNEEDLE 六级抗性真气石 1
+#act
+TAKEKIMNEEDLE 六级十步真气石 1
+TAKEKIMNEEDLE 六级抗性真气石 1
+give 六级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：六级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性十步石]
+#if
+CHECKKIMNEEDLE 五级十步真气石 1
+CHECKKIMNEEDLE 五级抗性真气石 1
+#act
+TAKEKIMNEEDLE 五级十步真气石 1
+TAKEKIMNEEDLE 五级抗性真气石 1
+give 五级抗性十步石 1
+goto @抗性十步石
+SENDMSG 7 恭喜获得：五级抗性十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@抗性内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级抗性真气石/FCOLOR=253> = <1个五级抗性内力石/FCOLOR=249>   <兑换/@五级抗性内力石>\
+<六级内力真气石/FCOLOR=254> + <六级抗性真气石/FCOLOR=253> = <1个六级抗性内力石/FCOLOR=249>   <兑换/@六级抗性内力石>\
+<七级内力真气石/FCOLOR=254> + <七级抗性真气石/FCOLOR=253> = <1个七级抗性内力石/FCOLOR=249>   <兑换/@七级抗性内力石>\
+<八级内力真气石/FCOLOR=254> + <八级抗性真气石/FCOLOR=253> = <1个八级抗性内力石/FCOLOR=249>   <兑换/@八级抗性内力石>\
+<九级内力真气石/FCOLOR=254> + <九级抗性真气石/FCOLOR=253> = <1个九级抗性内力石/FCOLOR=249>   <兑换/@九级抗性内力石>\
+<十级内力真气石/FCOLOR=254> + <十级抗性真气石/FCOLOR=253> = <1个十级抗性内力石/FCOLOR=249>   <兑换/@十级抗性内力石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性内力石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：十级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性内力石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：九级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性内力石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：八级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性内力石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：七级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性内力石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：六级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性内力石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级抗性内力石 1
+goto @抗性内力石
+SENDMSG 7 恭喜获得：五级抗性内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@抗性神圣石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级抗性神圣石/FCOLOR=249>   <兑换/@五级抗性神圣石>\
+<六级抗性真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级抗性神圣石/FCOLOR=249>   <兑换/@六级抗性神圣石>\
+<七级抗性真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级抗性神圣石/FCOLOR=249>   <兑换/@七级抗性神圣石>\
+<八级抗性真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级抗性神圣石/FCOLOR=249>   <兑换/@八级抗性神圣石>\
+<九级抗性真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级抗性神圣石/FCOLOR=249>   <兑换/@九级抗性神圣石>\
+<十级抗性真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级抗性神圣石/FCOLOR=249>   <兑换/@十级抗性神圣石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级抗性神圣石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：十级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级抗性神圣石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：九级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级抗性神圣石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：八级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级抗性神圣石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：七级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级抗性神圣石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：六级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级抗性神圣石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级抗性神圣石 1
+goto @抗性神圣石
+SENDMSG 7 恭喜获得：五级抗性神圣石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级抗性神圣石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+
+
+;-=----------------------------------------------------------------------------------------------------------------------------------------------------
+
+[@神圣刃扇石]
+\ \
+<五级刃扇真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣刃扇石/FCOLOR=249>   <兑换/@五级神圣刃扇石>\
+<六级刃扇真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣刃扇石/FCOLOR=249>   <兑换/@六级神圣刃扇石>\
+<七级刃扇真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣刃扇石/FCOLOR=249>   <兑换/@七级神圣刃扇石>\
+<八级刃扇真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣刃扇石/FCOLOR=249>   <兑换/@八级神圣刃扇石>\
+<九级刃扇真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣刃扇石/FCOLOR=249>   <兑换/@九级神圣刃扇石>\
+<十级刃扇真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣刃扇石/FCOLOR=249>   <兑换/@十级神圣刃扇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 十级刃扇真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级刃扇真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：十级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 九级刃扇真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级刃扇真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：九级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 八级刃扇真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级刃扇真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：八级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 七级刃扇真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级刃扇真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：七级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 六级刃扇真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级刃扇真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：六级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣刃扇石]
+#if
+CHECKKIMNEEDLE 五级刃扇真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级刃扇真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级神圣刃扇石 1
+goto @神圣刃扇石
+SENDMSG 7 恭喜获得：五级神圣刃扇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣刃扇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@神圣毁灭石]
+\ \
+<五级毁灭真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣毁灭石/FCOLOR=249>   <兑换/@五级神圣毁灭石>\
+<六级毁灭真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣毁灭石/FCOLOR=249>   <兑换/@六级神圣毁灭石>\
+<七级毁灭真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣毁灭石/FCOLOR=249>   <兑换/@七级神圣毁灭石>\
+<八级毁灭真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣毁灭石/FCOLOR=249>   <兑换/@八级神圣毁灭石>\
+<九级毁灭真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣毁灭石/FCOLOR=249>   <兑换/@九级神圣毁灭石>\
+<十级毁灭真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣毁灭石/FCOLOR=249>   <兑换/@十级神圣毁灭石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 十级毁灭真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级毁灭真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：十级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 九级毁灭真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级毁灭真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：九级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 八级毁灭真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级毁灭真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：八级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 七级毁灭真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级毁灭真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：七级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 六级毁灭真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级毁灭真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：六级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣毁灭石]
+#if
+CHECKKIMNEEDLE 五级毁灭真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级毁灭真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级神圣毁灭石 1
+goto @神圣毁灭石
+SENDMSG 7 恭喜获得：五级神圣毁灭石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣毁灭石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@神圣复仇石]
+\ \
+<五级复仇真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣复仇石/FCOLOR=249>   <兑换/@五级神圣复仇石>\
+<六级复仇真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣复仇石/FCOLOR=249>   <兑换/@六级神圣复仇石>\
+<七级复仇真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣复仇石/FCOLOR=249>   <兑换/@七级神圣复仇石>\
+<八级复仇真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣复仇石/FCOLOR=249>   <兑换/@八级神圣复仇石>\
+<九级复仇真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣复仇石/FCOLOR=249>   <兑换/@九级神圣复仇石>\
+<十级复仇真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣复仇石/FCOLOR=249>   <兑换/@十级神圣复仇石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣复仇石]
+#if
+CHECKKIMNEEDLE 十级复仇真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级复仇真气石 1
+give 十级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：十级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣复仇石]
+#if
+CHECKKIMNEEDLE 九级复仇真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级复仇真气石 1
+give 九级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：九级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣复仇石]
+#if
+CHECKKIMNEEDLE 八级复仇真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级复仇真气石 1
+give 八级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：八级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣复仇石]
+#if
+CHECKKIMNEEDLE 七级复仇真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级复仇真气石 1
+give 七级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：七级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣复仇石]
+#if
+CHECKKIMNEEDLE 六级复仇真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级复仇真气石 1
+give 六级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：六级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣复仇石]
+#if
+CHECKKIMNEEDLE 五级复仇真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级复仇真气石 1
+give 五级神圣复仇石 1
+goto @神圣复仇石
+SENDMSG 7 恭喜获得：五级神圣复仇石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣复仇石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@神圣嗜血石]
+\ \
+<五级嗜血真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣嗜血石/FCOLOR=249>   <兑换/@五级神圣嗜血石>\
+<六级嗜血真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣嗜血石/FCOLOR=249>   <兑换/@六级神圣嗜血石>\
+<七级嗜血真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣嗜血石/FCOLOR=249>   <兑换/@七级神圣嗜血石>\
+<八级嗜血真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣嗜血石/FCOLOR=249>   <兑换/@八级神圣嗜血石>\
+<九级嗜血真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣嗜血石/FCOLOR=249>   <兑换/@九级神圣嗜血石>\
+<十级嗜血真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣嗜血石/FCOLOR=249>   <兑换/@十级神圣嗜血石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 十级嗜血真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级嗜血真气石 1
+give 十级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：十级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 九级嗜血真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级嗜血真气石 1
+give 九级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：九级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 八级嗜血真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级嗜血真气石 1
+give 八级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：八级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 七级嗜血真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级嗜血真气石 1
+give 七级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：七级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 六级嗜血真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级嗜血真气石 1
+give 六级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：六级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣嗜血石]
+#if
+CHECKKIMNEEDLE 五级嗜血真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级嗜血真气石 1
+give 五级神圣嗜血石 1
+goto @神圣嗜血石
+SENDMSG 7 恭喜获得：五级神圣嗜血石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣嗜血石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@神圣回天石]
+\ \
+<五级回天真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣回天石/FCOLOR=249>   <兑换/@五级神圣回天石>\
+<六级回天真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣回天石/FCOLOR=249>   <兑换/@六级神圣回天石>\
+<七级回天真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣回天石/FCOLOR=249>   <兑换/@七级神圣回天石>\
+<八级回天真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣回天石/FCOLOR=249>   <兑换/@八级神圣回天石>\
+<九级回天真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣回天石/FCOLOR=249>   <兑换/@九级神圣回天石>\
+<十级回天真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣回天石/FCOLOR=249>   <兑换/@十级神圣回天石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣回天石]
+#if
+CHECKKIMNEEDLE 十级回天真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级回天真气石 1
+give 十级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：十级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣回天石]
+#if
+CHECKKIMNEEDLE 九级回天真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级回天真气石 1
+give 九级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：九级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣回天石]
+#if
+CHECKKIMNEEDLE 八级回天真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级回天真气石 1
+give 八级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：八级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣回天石]
+#if
+CHECKKIMNEEDLE 七级回天真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级回天真气石 1
+give 七级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：七级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣回天石]
+#if
+CHECKKIMNEEDLE 六级回天真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级回天真气石 1
+give 六级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：六级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣回天石]
+#if
+CHECKKIMNEEDLE 五级回天真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级回天真气石 1
+give 五级神圣回天石 1
+goto @神圣回天石
+SENDMSG 7 恭喜获得：五级神圣回天石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣回天石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@神圣天雷石]
+\ \
+<五级天雷真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣天雷石/FCOLOR=249>   <兑换/@五级神圣天雷石>\
+<六级天雷真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣天雷石/FCOLOR=249>   <兑换/@六级神圣天雷石>\
+<七级天雷真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣天雷石/FCOLOR=249>   <兑换/@七级神圣天雷石>\
+<八级天雷真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣天雷石/FCOLOR=249>   <兑换/@八级神圣天雷石>\
+<九级天雷真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣天雷石/FCOLOR=249>   <兑换/@九级神圣天雷石>\
+<十级天雷真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣天雷石/FCOLOR=249>   <兑换/@十级神圣天雷石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣天雷石]
+#if
+CHECKKIMNEEDLE 十级天雷真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级天雷真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：十级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣天雷石]
+#if
+CHECKKIMNEEDLE 九级天雷真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级天雷真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：九级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣天雷石]
+#if
+CHECKKIMNEEDLE 八级天雷真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级天雷真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：八级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣天雷石]
+#if
+CHECKKIMNEEDLE 七级天雷真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级天雷真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：七级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣天雷石]
+#if
+CHECKKIMNEEDLE 六级天雷真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级天雷真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：六级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣天雷石]
+#if
+CHECKKIMNEEDLE 五级天雷真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级天雷真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级神圣天雷石 1
+goto @神圣天雷石
+SENDMSG 7 恭喜获得：五级神圣天雷石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣天雷石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+
+[@神圣十步石]
+\ \
+<五级十步真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣十步石/FCOLOR=249>   <兑换/@五级神圣十步石>\
+<六级十步真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣十步石/FCOLOR=249>   <兑换/@六级神圣十步石>\
+<七级十步真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣十步石/FCOLOR=249>   <兑换/@七级神圣十步石>\
+<八级十步真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣十步石/FCOLOR=249>   <兑换/@八级神圣十步石>\
+<九级十步真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣十步石/FCOLOR=249>   <兑换/@九级神圣十步石>\
+<十级十步真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣十步石/FCOLOR=249>   <兑换/@十级神圣十步石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣十步石]
+#if
+CHECKKIMNEEDLE 十级十步真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级十步真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：十级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣十步石]
+#if
+CHECKKIMNEEDLE 九级十步真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级十步真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：九级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣十步石]
+#if
+CHECKKIMNEEDLE 八级十步真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级十步真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：八级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣十步石]
+#if
+CHECKKIMNEEDLE 七级十步真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级十步真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：七级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣十步石]
+#if
+CHECKKIMNEEDLE 六级十步真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级十步真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：六级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣十步石]
+#if
+CHECKKIMNEEDLE 五级十步真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级十步真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级神圣十步石 1
+goto @神圣十步石
+SENDMSG 7 恭喜获得：五级神圣十步石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣十步石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@神圣内力石]
+\ \
+<五级内力真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣内力石/FCOLOR=249>   <兑换/@五级神圣内力石>\
+<六级内力真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣内力石/FCOLOR=249>   <兑换/@六级神圣内力石>\
+<七级内力真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣内力石/FCOLOR=249>   <兑换/@七级神圣内力石>\
+<八级内力真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣内力石/FCOLOR=249>   <兑换/@八级神圣内力石>\
+<九级内力真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣内力石/FCOLOR=249>   <兑换/@九级神圣内力石>\
+<十级内力真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣内力石/FCOLOR=249>   <兑换/@十级神圣内力石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣内力石]
+#if
+CHECKKIMNEEDLE 十级神圣真气石 1
+CHECKKIMNEEDLE 十级内力真气石 1
+#act
+TAKEKIMNEEDLE 十级神圣真气石 1
+TAKEKIMNEEDLE 十级内力真气石 1
+give 十级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：十级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣内力石]
+#if
+CHECKKIMNEEDLE 九级神圣真气石 1
+CHECKKIMNEEDLE 九级内力真气石 1
+#act
+TAKEKIMNEEDLE 九级神圣真气石 1
+TAKEKIMNEEDLE 九级内力真气石 1
+give 九级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：九级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣内力石]
+#if
+CHECKKIMNEEDLE 八级神圣真气石 1
+CHECKKIMNEEDLE 八级内力真气石 1
+#act
+TAKEKIMNEEDLE 八级神圣真气石 1
+TAKEKIMNEEDLE 八级内力真气石 1
+give 八级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：八级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣内力石]
+#if
+CHECKKIMNEEDLE 七级神圣真气石 1
+CHECKKIMNEEDLE 七级内力真气石 1
+#act
+TAKEKIMNEEDLE 七级神圣真气石 1
+TAKEKIMNEEDLE 七级内力真气石 1
+give 七级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：七级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣内力石]
+#if
+CHECKKIMNEEDLE 六级神圣真气石 1
+CHECKKIMNEEDLE 六级内力真气石 1
+#act
+TAKEKIMNEEDLE 六级神圣真气石 1
+TAKEKIMNEEDLE 六级内力真气石 1
+give 六级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：六级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣内力石]
+#if
+CHECKKIMNEEDLE 五级神圣真气石 1
+CHECKKIMNEEDLE 五级内力真气石 1
+#act
+TAKEKIMNEEDLE 五级神圣真气石 1
+TAKEKIMNEEDLE 五级内力真气石 1
+give 五级神圣内力石 1
+goto @神圣内力石
+SENDMSG 7 恭喜获得：五级神圣内力石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣内力石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+
+[@神圣抗性石]
+\ \
+<五级抗性真气石/FCOLOR=254> + <五级神圣真气石/FCOLOR=253> = <1个五级神圣抗性石/FCOLOR=249>   <兑换/@五级神圣抗性石>\
+<六级抗性真气石/FCOLOR=254> + <六级神圣真气石/FCOLOR=253> = <1个六级神圣抗性石/FCOLOR=249>   <兑换/@六级神圣抗性石>\
+<七级抗性真气石/FCOLOR=254> + <七级神圣真气石/FCOLOR=253> = <1个七级神圣抗性石/FCOLOR=249>   <兑换/@七级神圣抗性石>\
+<八级抗性真气石/FCOLOR=254> + <八级神圣真气石/FCOLOR=253> = <1个八级神圣抗性石/FCOLOR=249>   <兑换/@八级神圣抗性石>\
+<九级抗性真气石/FCOLOR=254> + <九级神圣真气石/FCOLOR=253> = <1个九级神圣抗性石/FCOLOR=249>   <兑换/@九级神圣抗性石>\
+<十级抗性真气石/FCOLOR=254> + <十级神圣真气石/FCOLOR=253> = <1个十级神圣抗性石/FCOLOR=249>   <兑换/@十级神圣抗性石>\ \
+<返回/@双属性真气石脚本合成>\
+
+
+[@十级神圣抗性石]
+#if
+CHECKKIMNEEDLE 十级抗性真气石 1
+CHECKKIMNEEDLE 十级神圣真气石 1
+#act
+TAKEKIMNEEDLE 十级抗性真气石 1
+TAKEKIMNEEDLE 十级神圣真气石 1
+give 十级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：十级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个十级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@九级神圣抗性石]
+#if
+CHECKKIMNEEDLE 九级抗性真气石 1
+CHECKKIMNEEDLE 九级神圣真气石 1
+#act
+TAKEKIMNEEDLE 九级抗性真气石 1
+TAKEKIMNEEDLE 九级神圣真气石 1
+give 九级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：九级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个九级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@八级神圣抗性石]
+#if
+CHECKKIMNEEDLE 八级抗性真气石 1
+CHECKKIMNEEDLE 八级神圣真气石 1
+#act
+TAKEKIMNEEDLE 八级抗性真气石 1
+TAKEKIMNEEDLE 八级神圣真气石 1
+give 八级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：八级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个八级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+[@七级神圣抗性石]
+#if
+CHECKKIMNEEDLE 七级抗性真气石 1
+CHECKKIMNEEDLE 七级神圣真气石 1
+#act
+TAKEKIMNEEDLE 七级抗性真气石 1
+TAKEKIMNEEDLE 七级神圣真气石 1
+give 七级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：七级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个七级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@六级神圣抗性石]
+#if
+CHECKKIMNEEDLE 六级抗性真气石 1
+CHECKKIMNEEDLE 六级神圣真气石 1
+#act
+TAKEKIMNEEDLE 六级抗性真气石 1
+TAKEKIMNEEDLE 六级神圣真气石 1
+give 六级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：六级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个六级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@五级神圣抗性石]
+#if
+CHECKKIMNEEDLE 五级抗性真气石 1
+CHECKKIMNEEDLE 五级神圣真气石 1
+#act
+TAKEKIMNEEDLE 五级抗性真气石 1
+TAKEKIMNEEDLE 五级神圣真气石 1
+give 五级神圣抗性石 1
+goto @神圣抗性石
+SENDMSG 7 恭喜获得：五级神圣抗性石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处兑换了1个五级神圣抗性石
+BREAK
+#ELSEACT
+messagebox   我需要的物品你没有带来！
+BREAK
+
+
+[@真气石凭证兑换真气石]
+<抗性真气石/@抗性真气石>      <神圣真气石/@神圣真气石>\
+<内力真气石/@内力真气石>      <十步真气石/@十步真气石>\
+<天雷真气石/@天雷真气石>      <回天真气石/@回天真气石>\
+<嗜血真气石/@嗜血真气石>      <复仇真气石/@复仇真气石>\
+<毁灭真气石/@毁灭真气石>      <刀扇真气石/@刀扇真气石>\
+<返回/@shi>
+
+
+
+[@刀扇真气石]
+<使用10个真气石凭证兑换1个一级刀扇真气石/@一级刀扇真气石>\
+<使用20个真气石凭证兑换1个二级刀扇真气石/@二级刀扇真气石>\
+<使用30个真气石凭证兑换1个三级刀扇真气石/@三级刀扇真气石>\
+<使用40个真气石凭证兑换1个四级刀扇真气石/@四级刀扇真气石>\
+<使用50个真气石凭证兑换1个五级刀扇真气石/@五级刀扇真气石>\
+<使用60个真气石凭证兑换1个六级刀扇真气石/@六级刀扇真气石>\
+<使用70个真气石凭证兑换1个七级刀扇真气石/@七级刀扇真气石>\
+<使用80个真气石凭证兑换1个八级刀扇真气石/@八级刀扇真气石>\
+<使用90个真气石凭证兑换1个九级刀扇真气石/@九级刀扇真气石>\
+<使用100个真气石凭证兑换1个十级刀扇真气石/@十级刀扇真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：十级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：九级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：八级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：七级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：六级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：五级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：四级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：三级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：二级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级刀扇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级刀扇真气石 1
+goto @刀扇真气石
+SENDMSG 7 恭喜获得：一级刀扇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级刀扇真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@毁灭真气石]
+<使用10个真气石凭证兑换1个一级毁灭真气石/@一级毁灭真气石>\
+<使用20个真气石凭证兑换1个二级毁灭真气石/@二级毁灭真气石>\
+<使用30个真气石凭证兑换1个三级毁灭真气石/@三级毁灭真气石>\
+<使用40个真气石凭证兑换1个四级毁灭真气石/@四级毁灭真气石>\
+<使用50个真气石凭证兑换1个五级毁灭真气石/@五级毁灭真气石>\
+<使用60个真气石凭证兑换1个六级毁灭真气石/@六级毁灭真气石>\
+<使用70个真气石凭证兑换1个七级毁灭真气石/@七级毁灭真气石>\
+<使用80个真气石凭证兑换1个八级毁灭真气石/@八级毁灭真气石>\
+<使用90个真气石凭证兑换1个九级毁灭真气石/@九级毁灭真气石>\
+<使用100个真气石凭证兑换1个十级毁灭真气石/@十级毁灭真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：十级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：九级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：八级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：七级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：六级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：五级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：四级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：三级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：二级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级毁灭真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级毁灭真气石 1
+goto @毁灭真气石
+SENDMSG 7 恭喜获得：一级毁灭真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级毁灭真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+[@复仇真气石]
+<使用10个真气石凭证兑换1个一级复仇真气石/@一级复仇真气石>\
+<使用20个真气石凭证兑换1个二级复仇真气石/@二级复仇真气石>\
+<使用30个真气石凭证兑换1个三级复仇真气石/@三级复仇真气石>\
+<使用40个真气石凭证兑换1个四级复仇真气石/@四级复仇真气石>\
+<使用50个真气石凭证兑换1个五级复仇真气石/@五级复仇真气石>\
+<使用60个真气石凭证兑换1个六级复仇真气石/@六级复仇真气石>\
+<使用70个真气石凭证兑换1个七级复仇真气石/@七级复仇真气石>\
+<使用80个真气石凭证兑换1个八级复仇真气石/@八级复仇真气石>\
+<使用90个真气石凭证兑换1个九级复仇真气石/@九级复仇真气石>\
+<使用100个真气石凭证兑换1个十级复仇真气石/@十级复仇真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：十级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：九级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：八级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：七级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：六级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：五级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：四级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：三级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：二级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级复仇真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级复仇真气石 1
+goto @复仇真气石
+SENDMSG 7 恭喜获得：一级复仇真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级复仇真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+
+[@嗜血真气石]
+<使用10个真气石凭证兑换1个一级嗜血真气石/@一级嗜血真气石>\
+<使用20个真气石凭证兑换1个二级嗜血真气石/@二级嗜血真气石>\
+<使用30个真气石凭证兑换1个三级嗜血真气石/@三级嗜血真气石>\
+<使用40个真气石凭证兑换1个四级嗜血真气石/@四级嗜血真气石>\
+<使用50个真气石凭证兑换1个五级嗜血真气石/@五级嗜血真气石>\
+<使用60个真气石凭证兑换1个六级嗜血真气石/@六级嗜血真气石>\
+<使用70个真气石凭证兑换1个七级嗜血真气石/@七级嗜血真气石>\
+<使用80个真气石凭证兑换1个八级嗜血真气石/@八级嗜血真气石>\
+<使用90个真气石凭证兑换1个九级嗜血真气石/@九级嗜血真气石>\
+<使用100个真气石凭证兑换1个十级嗜血真气石/@十级嗜血真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：十级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：九级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：八级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：七级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：六级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：五级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：四级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：三级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：二级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级嗜血真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级嗜血真气石 1
+goto @嗜血真气石
+SENDMSG 7 恭喜获得：一级嗜血真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级嗜血真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+[@回天真气石]
+<使用10个真气石凭证兑换1个一级回天真气石/@一级回天真气石>\
+<使用20个真气石凭证兑换1个二级回天真气石/@二级回天真气石>\
+<使用30个真气石凭证兑换1个三级回天真气石/@三级回天真气石>\
+<使用40个真气石凭证兑换1个四级回天真气石/@四级回天真气石>\
+<使用50个真气石凭证兑换1个五级回天真气石/@五级回天真气石>\
+<使用60个真气石凭证兑换1个六级回天真气石/@六级回天真气石>\
+<使用70个真气石凭证兑换1个七级回天真气石/@七级回天真气石>\
+<使用80个真气石凭证兑换1个八级回天真气石/@八级回天真气石>\
+<使用90个真气石凭证兑换1个九级回天真气石/@九级回天真气石>\
+<使用100个真气石凭证兑换1个十级回天真气石/@十级回天真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：十级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：九级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：八级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：七级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：六级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：五级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：四级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：三级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：二级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级回天真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级回天真气石 1
+goto @回天真气石
+SENDMSG 7 恭喜获得：一级回天真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级回天真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@天雷真气石]
+<使用10个真气石凭证兑换1个一级天雷真气石/@一级天雷真气石>\
+<使用20个真气石凭证兑换1个二级天雷真气石/@二级天雷真气石>\
+<使用30个真气石凭证兑换1个三级天雷真气石/@三级天雷真气石>\
+<使用40个真气石凭证兑换1个四级天雷真气石/@四级天雷真气石>\
+<使用50个真气石凭证兑换1个五级天雷真气石/@五级天雷真气石>\
+<使用60个真气石凭证兑换1个六级天雷真气石/@六级天雷真气石>\
+<使用70个真气石凭证兑换1个七级天雷真气石/@七级天雷真气石>\
+<使用80个真气石凭证兑换1个八级天雷真气石/@八级天雷真气石>\
+<使用90个真气石凭证兑换1个九级天雷真气石/@九级天雷真气石>\
+<使用100个真气石凭证兑换1个十级天雷真气石/@十级天雷真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：十级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：九级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：八级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：七级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：六级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：五级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：四级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：三级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：二级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级天雷真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级天雷真气石 1
+goto @天雷真气石
+SENDMSG 7 恭喜获得：一级天雷真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级天雷真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+[@十步真气石]
+<使用10个真气石凭证兑换1个一级十步真气石/@一级十步真气石>\
+<使用20个真气石凭证兑换1个二级十步真气石/@二级十步真气石>\
+<使用30个真气石凭证兑换1个三级十步真气石/@三级十步真气石>\
+<使用40个真气石凭证兑换1个四级十步真气石/@四级十步真气石>\
+<使用50个真气石凭证兑换1个五级十步真气石/@五级十步真气石>\
+<使用60个真气石凭证兑换1个六级十步真气石/@六级十步真气石>\
+<使用70个真气石凭证兑换1个七级十步真气石/@七级十步真气石>\
+<使用80个真气石凭证兑换1个八级十步真气石/@八级十步真气石>\
+<使用90个真气石凭证兑换1个九级十步真气石/@九级十步真气石>\
+<使用100个真气石凭证兑换1个十级十步真气石/@十级十步真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：十级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：九级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：八级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：七级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：六级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：五级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：四级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：三级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：二级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级十步真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级十步真气石 1
+goto @十步真气石
+SENDMSG 7 恭喜获得：一级十步真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级十步真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+[@内力真气石]
+<使用10个真气石凭证兑换1个一级内力真气石/@一级内力真气石>\
+<使用20个真气石凭证兑换1个二级内力真气石/@二级内力真气石>\
+<使用30个真气石凭证兑换1个三级内力真气石/@三级内力真气石>\
+<使用40个真气石凭证兑换1个四级内力真气石/@四级内力真气石>\
+<使用50个真气石凭证兑换1个五级内力真气石/@五级内力真气石>\
+<使用60个真气石凭证兑换1个六级内力真气石/@六级内力真气石>\
+<使用70个真气石凭证兑换1个七级内力真气石/@七级内力真气石>\
+<使用80个真气石凭证兑换1个八级内力真气石/@八级内力真气石>\
+<使用90个真气石凭证兑换1个九级内力真气石/@九级内力真气石>\
+<使用100个真气石凭证兑换1个十级内力真气石/@十级内力真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：十级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：九级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：八级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：七级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：六级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：五级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：四级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：三级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：二级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级内力真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级内力真气石 1
+goto @内力真气石
+SENDMSG 7 恭喜获得：一级内力真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级内力真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+
+
+[@神圣真气石]
+<使用10个真气石凭证兑换1个一级神圣真气石/@一级神圣真气石>\
+<使用20个真气石凭证兑换1个二级神圣真气石/@二级神圣真气石>\
+<使用30个真气石凭证兑换1个三级神圣真气石/@三级神圣真气石>\
+<使用40个真气石凭证兑换1个四级神圣真气石/@四级神圣真气石>\
+<使用50个真气石凭证兑换1个五级神圣真气石/@五级神圣真气石>\
+<使用60个真气石凭证兑换1个六级神圣真气石/@六级神圣真气石>\
+<使用70个真气石凭证兑换1个七级神圣真气石/@七级神圣真气石>\
+<使用80个真气石凭证兑换1个八级神圣真气石/@八级神圣真气石>\
+<使用90个真气石凭证兑换1个九级神圣真气石/@九级神圣真气石>\
+<使用100个真气石凭证兑换1个十级神圣真气石/@十级神圣真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：十级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：九级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：八级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：七级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：六级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：五级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：四级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：三级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：二级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级神圣真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级神圣真气石 1
+goto @神圣真气石
+SENDMSG 7 恭喜获得：一级神圣真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级神圣真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@抗性真气石]
+<使用10个真气石凭证兑换1个一级抗性真气石/@一级抗性真气石>\
+<使用20个真气石凭证兑换1个二级抗性真气石/@二级抗性真气石>\
+<使用30个真气石凭证兑换1个三级抗性真气石/@三级抗性真气石>\
+<使用40个真气石凭证兑换1个四级抗性真气石/@四级抗性真气石>\
+<使用50个真气石凭证兑换1个五级抗性真气石/@五级抗性真气石>\
+<使用60个真气石凭证兑换1个六级抗性真气石/@六级抗性真气石>\
+<使用70个真气石凭证兑换1个七级抗性真气石/@七级抗性真气石>\
+<使用80个真气石凭证兑换1个八级抗性真气石/@八级抗性真气石>\
+<使用90个真气石凭证兑换1个九级抗性真气石/@九级抗性真气石>\
+<使用100个真气石凭证兑换1个十级抗性真气石/@十级抗性真气石>              <返回/@真气石凭证兑换真气石>\
+
+
+[@十级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 100
+#ACT
+TAKEKIMNEEDLE 真气石凭证 100
+give 十级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：十级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个十级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了100个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@九级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 90
+#ACT
+TAKEKIMNEEDLE 真气石凭证 90
+give 九级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：九级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个九级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了90个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@八级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 80
+#ACT
+TAKEKIMNEEDLE 真气石凭证 80
+give 八级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：八级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个八级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了80个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@七级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 70
+#ACT
+TAKEKIMNEEDLE 真气石凭证 70
+give 七级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：七级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个七级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了70个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@六级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 60
+#ACT
+TAKEKIMNEEDLE 真气石凭证 60
+give 六级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：六级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个六级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了60个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@五级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 50
+#ACT
+TAKEKIMNEEDLE 真气石凭证 50
+give 五级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：五级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个五级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了50个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@四级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 40
+#ACT
+TAKEKIMNEEDLE 真气石凭证 40
+give 四级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：四级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个四级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了40个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+[@三级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 30
+#ACT
+TAKEKIMNEEDLE 真气石凭证 30
+give 三级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：三级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个三级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了30个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@二级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 20
+#ACT
+TAKEKIMNEEDLE 真气石凭证 20
+give 二级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：二级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个二级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了20个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+
+[@一级抗性真气石]
+#if
+CHECKKIMNEEDLE 真气石凭证 10
+#ACT
+TAKEKIMNEEDLE 真气石凭证 10
+give 一级抗性真气石 1
+goto @抗性真气石
+SENDMSG 7 恭喜获得：一级抗性真气石
+SENDMSG 0 恭喜：<$USERNAME>在庄园炼气台处使用真气石凭证兑换了1个一级抗性真气石
+BREAK
+#ELSESAY
+如果你已经带来了10个“真气石凭证”，就赶快交给我吧！\ \
+<返回/@shi>\ \
+<离开/@exit>
+
+}

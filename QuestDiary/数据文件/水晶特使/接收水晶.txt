@@ -1,0 +1,499 @@
+[@接收水晶]
+{
+#IF
+#ACT
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+GOTO @接收水晶排行
+break
+
+[@接收水晶排行]
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第1名字.txt
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第1名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第1点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第1名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第1点数.txt
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第2名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第1点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 1
+MOV N12 2
+GOTO @接收第1名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第3名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第2点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 2
+MOV N12 3
+GOTO @接收第2名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第4名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第3点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 3
+MOV N12 4
+GOTO @接收第3名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第5名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第4点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 4
+MOV N12 5
+GOTO @接收第4名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第6名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第5点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 5
+MOV N12 6
+GOTO @接收第5名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第7名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第6点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 6
+MOV N12 7
+GOTO @接收第6名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第8名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第7点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 7
+MOV N12 8
+GOTO @接收第7名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第9名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第8点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 8
+MOV N12 9
+GOTO @接收第8名
+break
+
+#IF
+CheckTextList <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第10名字.txt
+#ACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第9点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 9
+MOV N12 10
+GOTO @接收第9名
+break
+
+#ELSEACT
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第10点数.txt S10
+MOV N10
+MOV N10 S10
+MOV N11
+MOV N12
+MOV N11 10
+MOV N12 11
+GOTO @接收第10名
+break
+
+[@接收第10名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第9名
+break
+
+#ELSEACT
+break
+
+[@接收第9名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第8名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第8名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第7名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第7名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第6名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第6名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第5名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第5名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第4名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第4名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第3名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第3名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第2名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第2名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+DEC N11 1
+DEC N12 1
+MOV S10
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S10
+MOV N10
+MOV N10 S10
+GOTO @接收第1名
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+[@接收第1名]
+#IF
+LARGE HUMAN 接收水晶数量 N10
+#ACT
+MOV S11
+MOV S12
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt S11
+GetRandomName ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt S12
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+ADDTEXTLIST <$STR(S11)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$STR(S12)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N11)>点数.txt
+break
+
+#ELSEACT
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+CLEARNAMELIST ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+MOV S0
+GetRandomName ..\QuestDiary\数据文件\排序\名字排序\<$USERNAME>.txt S0
+ADDTEXTLIST <$STR(S0)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>名字.txt
+ADDTEXTLIST <$HUMAN(接收水晶数量)> ..\QuestDiary\数据文件\水晶特使\接收名单\第<$STR(N12)>点数.txt
+break
+
+}

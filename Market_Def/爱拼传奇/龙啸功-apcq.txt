@@ -1,0 +1,3030 @@
+[@main]
+#IF
+CHECKJOB warrior
+#ACT
+MOV S0
+INC S0 力量
+goto @龙啸功开始
+break
+#IF
+CHECKJOB  wizard
+#ACT
+MOV S0
+INC S0 灵力
+goto @龙啸功开始
+break
+#IF
+CHECKJOB  taoist
+#ACT
+MOV S0
+INC S0 玄术
+goto @龙啸功开始
+break
+#IF
+CHECKJOB ASSASSIN
+#ACT
+MOV S0
+INC S0 刺术
+goto @龙啸功开始
+break
+
+[@龙啸功开始]
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 0
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(未开启)|龙啸功等级:<$HUMAN(龙啸功等级)>╱100|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功一重>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(未开启)|开启条件:龙啸功一重满级;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(未开启)|开启条件:龙啸功二重满级;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 0
+CHECKVAR HUMAN 龙啸功等级 < 100
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov s24 已满级
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已开启)|龙啸功等级:<$HUMAN(龙啸功等级)>╱100|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功一重>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(未开启)|开启条件:龙啸功一重满级;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(未开启)|开启条件:龙啸功二重满级;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 100
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(可开启)|龙啸功等级:<$HUMAN(龙啸功等级)>╱200|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功二重>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(未开启)|开启条件:龙啸功二重满级;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 100
+CHECKVAR HUMAN 龙啸功等级 < 200
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100|开启条件:心法90级;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已开启)|龙啸功等级:<$HUMAN(龙啸功等级)>╱200|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功二重>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(未开启)|开启条件:龙啸功二重满级;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 200
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(可开启)|龙啸功等级:<$HUMAN(龙啸功等级)>╱300|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功三重>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 200
+CHECKVAR HUMAN 龙啸功等级 < 300
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(可开启)|<$HUMAN(龙啸功等级)>╱300|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功三重>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(未开启)|开启条件:龙啸功三重满级;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 300
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(可开启)|<$HUMAN(龙啸功等级)>╱400|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功四重>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 300
+CHECKVAR HUMAN 龙啸功等级 < 400
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(可开启)|<$HUMAN(龙啸功等级)>╱400|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功四重>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(未开启)|开启条件:龙啸功四重满级;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 400
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(已满级)|龙啸功等级:400╱400;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(可开启)|<$HUMAN(龙啸功等级)>╱500|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功五重>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 400
+CHECKVAR HUMAN 龙啸功等级 < 500
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(已满级)|龙啸功等级:400╱400;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(可开启)|<$HUMAN(龙啸功等级)>╱500|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功五重>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(未开启)|开启条件:龙啸功五重满级;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 500
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(已满级)|龙啸功等级:400╱400;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(已满级)|龙啸功等级:500╱500;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(可开启)|<$HUMAN(龙啸功等级)>╱600|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功六重>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+#if
+CHECKVAR HUMAN 龙啸功等级 > 500
+CHECKVAR HUMAN 龙啸功等级 < 600
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(已满级)|龙啸功等级:400╱400;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(已满级)|龙啸功等级:500╱500;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(可开启)|<$HUMAN(龙啸功等级)>╱600|需点星珠:<$STR(m52)>;htfc=249}/@龙啸功六重>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(M27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(M30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(M33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+#if
+CHECKVAR HUMAN 龙啸功等级 = 600
+#act
+OPENMERCHANTDLG 52|890|1|1800|474|0|0|0|1|330|10
+mov s23 未开启
+mov m50 HUMAN 龙啸功等级
+mov m51 HUMAN 龙啸功等级
+mov m52 HUMAN 龙啸功等级
+mov m53 HUMAN 龙啸功等级
+MUL N51 m50 80
+MUL N50 m51 52
+inc m52 20
+#SAY
+\ \ \
+　　　　　　　　   <$USERNAME>\ \ \
+
+<{i=1981;li=52;x=50;y=100;HT=;htfc=243}>
+<{i=1985;li=52;x=260;y=125;HT=;htfc=243}>
+
+<{i=1984;li=52;x=145;y=172;ht=龙啸功一重(已满级)|龙啸功等级:100╱100;htfc=249}>
+
+<{i=1984;li=52;x=195;y=200;ht=龙啸功二重(已满级)|龙啸功等级:200╱200;htfc=249}>
+
+<{i=1984;li=52;x=102;y=215;ht=龙啸功三重(已满级)|龙啸功等级:300╱300;htfc=249}>
+
+<{i=1984;li=52;x=163;y=258;ht=龙啸功四重(已满级)|龙啸功等级:400╱400;htfc=249}>
+
+<{i=1984;li=52;x=212;y=245;ht=龙啸功五重(已满级)|龙啸功等级:500╱500;htfc=249}>
+
+<{i=1984;li=52;x=126;y=293;ht=龙啸功六重(已满级)|龙啸功等级:600╱600;htfc=249}>
+
+<{i=948;li=2000;x=74;y=363;ht=神龙血lv:<$HUMAN(神龙血等级)>|魔血值:<$STR(M21)>|可使用血炎玉升级;htfc=149}/@神龙血>
+
+<{i=950;li=2000;x=127;y=363;ht=裂石百练lv:<$HUMAN(裂石百练等级)>|神圣攻击:<$STR(M24)>|可使用天府竹升级;htfc=149}/@裂石百练>
+
+<{i=954;li=2000;x=180;y=363;ht=金钟护体lv:<$HUMAN(金钟护体等级)>|神圣防御:<$STR(m27)>|可使用太阴莲升级;htfc=149}/@金钟护体>
+
+<{i=956;li=2000;x=233;y=363;ht=锁龙决lv:<$HUMAN(锁龙决等级)>|麻痹强化:<$STR(m30)>|可使用擎羊草升级;htfc=149}/@锁龙决>
+
+<{i=952;li=2000;x=285;y=363;ht=金蝉蜕壳lv:<$HUMAN(金蝉脱壳等级)>|麻痹抗性:<$STR(m33)>|可使用陀罗花升级;htfc=149}/@金蝉蜕壳>
+<{s=功体总属性:;f.se=9;f.bd=1;x=110;y=120;fc=250}>
+<{s=<$STR(S0)>+<$STR(N51)>;f.se=9;f.bd=1;x=110;y=135;fc=251}>
+<{s=(无视所有防御伤害+<$STR(N50)>);f.se=9;f.bd=1;x=110;y=150;fc=251}>
+<{i=1987;li=52;x=94;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=147;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=200;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=253;y=363;ht=;htfc=149}>
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+<{i=1987;li=52;x=308;y=363;ht=;htfc=149}>
+
+
+[@龙啸功六重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+
+[@龙啸功五重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+[@龙啸功四重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+
+[@龙啸功三重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+
+
+[@龙啸功二重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+
+
+
+[@龙啸功一重]
+#if
+CHECKVAR HUMAN 龙啸功等级 = <$STR(M53)>
+CHECKKIMNEEDLE 点星珠 <$STR(M52)>
+#act
+TAKEKIMNEEDLE 点星珠 <$STR(M52)>
+CALCVAR HUMAN 龙啸功等级 + 1
+SAVEVAR HUMAN 龙啸功等级 ..\QuestDiary\活动次数\龙啸功等级.txt
+SENDMSG 7 提示：您的龙啸功获得了提升！
+GOTO @龙啸功开始
+break
+
+
+
+[@神龙血]
+#if
+CHECKVAR HUMAN 神龙血等级 = 0
+#act
+mov m20 10
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 1
+#act
+mov m20 20
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 2
+#act
+mov m20 40
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 3
+#act
+mov m20 60
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 4
+#act
+mov m20 80
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 5
+#act
+mov m20 100
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 6
+#act
+mov m20 120
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 7
+#act
+mov m20 140
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 8
+#act
+mov m20 160
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 9
+#act
+mov m20 180
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 10
+#act
+mov m20 200
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 11
+#act
+mov m20 220
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 12
+#act
+mov m20 240
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 13
+#act
+mov m20 260
+goto @提升吧神龙血
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 14
+#act
+mov m20 280
+goto @提升吧神龙血
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 15
+#act
+mov m20 300
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 16
+#act
+mov m20 350
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 17
+#act
+mov m20 400
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 18
+#act
+mov m20 450
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 19
+#act
+mov m20 500
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 20
+#act
+mov m20 550
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 21
+#act
+mov m20 600
+goto @提升吧神龙血
+break
+
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 22
+#act
+mov m20 650
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 23
+#act
+mov m20 700
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 24
+#act
+mov m20 750
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 25
+#act
+mov m20 800
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 26
+#act
+mov m20 850
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 27
+#act
+mov m20 900
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 28
+#act
+mov m20 950
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 29
+#act
+mov m20 1000
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 30
+#act
+mov m20 1100
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 31
+#act
+mov m20 1200
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 32
+#act
+mov m20 1300
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 33
+#act
+mov m20 1400
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 34
+#act
+mov m20 1500
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 35
+#act
+mov m20 1600
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 36
+#act
+mov m20 1700
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 37
+#act
+mov m20 1800
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 38
+#act
+mov m20 1900
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 39
+#act
+mov m20 2500
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 40
+#act
+mov m20 3000
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 41
+#act
+mov m20 3300
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 42
+#act
+mov m20 3600
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 43
+#act
+mov m20 3900
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 44
+#act
+mov m20 4200
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 45
+#act
+mov m20 4500
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 46
+#act
+mov m20 4800
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 47
+#act
+mov m20 5000
+goto @提升吧神龙血
+break
+
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 48
+#act
+mov m20 5500
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 49
+#act
+mov m20 6000
+goto @提升吧神龙血
+break
+
+#if
+CHECKVAR HUMAN 神龙血等级 = 50
+#act
+mov m20 7000
+goto @提升吧神龙血满级
+break
+
+[@提升吧神龙血满级]
+#if
+#act
+OPENMERCHANTDLG -1|
+#say
+\ \
+<您当前的"神龙血"已满级！！！！！/fcolor=250>\ \
+<您当前的"神龙血"已满级！！！！！/fcolor=250>\ \
+<您当前的"神龙血"已满级！！！！！/fcolor=250>\ \
+
+[@提升吧神龙血]
+#if
+#act
+OPENMERCHANTDLG -1|
+MOV M77 HUMAN 神龙血等级
+mov m21 HUMAN 神龙血等级
+mov m22 HUMAN 神龙血等级
+MUL m21 m21 66
+inc M22 1
+MUL m22 m22 66
+#say
+\ \
+<您当前的神龙血等级为:/fcolor=250> <$HUMAN(神龙血等级)>\
+<当前提升神龙血材料需:/fcolor=254> <$STR(M20)>       <血炎玉/fcolor=249>\ \
+<当前神龙血属性为:/fcolor=249>     <$STR(m21)>       <魔血值/fcolor=251>\
+<下级神龙血属性为:/fcolor=243>     <$STR(m22)>      <魔血值/fcolor=70>\ \
+<我要提升/@提升神龙血>
+
+[@提升神龙血]
+#if
+CHECKVAR HUMAN 神龙血等级 = <$STR(M77)>
+CHECKKIMNEEDLE 血炎玉 <$STR(M20)>
+#act
+TAKEKIMNEEDLE 血炎玉 <$STR(M20)>
+CALCVAR HUMAN 神龙血等级 + 1
+SAVEVAR HUMAN 神龙血等级 ..\QuestDiary\活动次数\神龙血等级.txt
+SENDMSG 7 提示：您的神龙血获得了提升！
+GOTO @神龙血
+break
+
+
+
+
+
+
+
+
+
+
+[@裂石百练]
+#if
+CHECKVAR HUMAN 裂石百练等级 = 0
+#act
+mov m23 10
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 1
+#act
+mov m23 20
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 2
+#act
+mov m23 40
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 3
+#act
+mov m23 60
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 4
+#act
+mov m23 80
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 5
+#act
+mov m23 100
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 6
+#act
+mov m23 120
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 7
+#act
+mov m23 140
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 8
+#act
+mov m23 160
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 9
+#act
+mov m23 180
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 10
+#act
+mov m23 200
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 11
+#act
+mov m23 220
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 12
+#act
+mov m23 240
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 13
+#act
+mov m23 260
+goto @提升吧裂石百练
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 14
+#act
+mov m23 280
+goto @提升吧裂石百练
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 15
+#act
+mov m23 300
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 16
+#act
+mov m23 350
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 17
+#act
+mov m23 400
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 18
+#act
+mov m23 450
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 19
+#act
+mov m23 500
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 20
+#act
+mov m23 550
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 21
+#act
+mov m23 600
+goto @提升吧裂石百练
+break
+
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 22
+#act
+mov m23 650
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 23
+#act
+mov m23 700
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 24
+#act
+mov m23 750
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 25
+#act
+mov m23 800
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 26
+#act
+mov m23 850
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 27
+#act
+mov m23 900
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 28
+#act
+mov m23 950
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 29
+#act
+mov m23 1000
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 30
+#act
+mov m23 1100
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 31
+#act
+mov m23 1200
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 32
+#act
+mov m23 1300
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 33
+#act
+mov m23 1400
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 34
+#act
+mov m23 1500
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 35
+#act
+mov m23 1600
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 36
+#act
+mov m23 1700
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 37
+#act
+mov m23 1800
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 38
+#act
+mov m23 1900
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 39
+#act
+mov m23 2500
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 40
+#act
+mov m23 3000
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 41
+#act
+mov m23 3300
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 42
+#act
+mov m23 3600
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 43
+#act
+mov m23 3900
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 44
+#act
+mov m23 4200
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 45
+#act
+mov m23 4500
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 46
+#act
+mov m23 4800
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 47
+#act
+mov m23 5000
+goto @提升吧裂石百练
+break
+
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 48
+#act
+mov m23 5500
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 49
+#act
+mov m23 6000
+goto @提升吧裂石百练
+break
+
+#if
+CHECKVAR HUMAN 裂石百练等级 = 50
+#act
+mov m23 7000
+goto @提升吧裂石百练满级
+break
+
+
+
+
+[@提升吧裂石百练满级]
+#if
+#act
+OPENMERCHANTDLG -1|
+#say
+\ \
+<您当前的"裂石百练"已满级！！！！！/fcolor=250>\ \
+<您当前的"裂石百练"已满级！！！！！/fcolor=250>\ \
+<您当前的"裂石百练"已满级！！！！！/fcolor=250>\ \
+
+[@提升吧裂石百练]
+#if
+#act
+OPENMERCHANTDLG -1|
+MOV M78 HUMAN 裂石百练等级
+mov m24 HUMAN 裂石百练等级
+mov m25 HUMAN 裂石百练等级
+MUL m24 m24 3500
+inc M25 1
+MUL m25 m25 3500
+#say
+\ \
+<您当前的裂石百练等级为:/fcolor=250> <$HUMAN(裂石百练等级)>\
+<当前提升裂石百练材料需:/fcolor=254> <$STR(M23)>       <天府竹/fcolor=249>\ \
+<当前裂石百练属性为:/fcolor=249>     <$STR(M24)>      <神圣属性/fcolor=251>\
+<下级裂石百练属性为:/fcolor=243>     <$STR(M25)>      <神圣属性/fcolor=70>\ \
+<我要提升/@提升裂石百练>
+
+[@提升裂石百练]
+#if
+CHECKVAR HUMAN 裂石百练等级 = <$STR(M78)>
+CHECKKIMNEEDLE 天府竹 <$STR(M23)>
+#act
+TAKEKIMNEEDLE 天府竹 <$STR(M23)>
+CALCVAR HUMAN 裂石百练等级 + 1
+SAVEVAR HUMAN 裂石百练等级 ..\QuestDiary\活动次数\裂石百练等级.txt
+SENDMSG 7 提示：您的裂石百练获得了提升！
+GOTO @裂石百练
+break
+
+
+[@金钟护体]
+#if
+CHECKVAR HUMAN 金钟护体等级 = 0
+#act
+mov m26 10
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 1
+#act
+mov m26 20
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 2
+#act
+mov m26 40
+mov m27 1000
+mov m28 1500
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 3
+#act
+mov m26 60
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 4
+#act
+mov m26 80
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 5
+#act
+mov m26 100
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 6
+#act
+mov m26 120
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 7
+#act
+mov m26 140
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 8
+#act
+mov m26 160
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 9
+#act
+mov m26 180
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 10
+#act
+mov m26 200
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 11
+#act
+mov m26 220
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 12
+#act
+mov m26 240
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 13
+#act
+mov m26 260
+goto @提升吧金钟护体
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 14
+#act
+mov m26 280
+goto @提升吧金钟护体
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 15
+#act
+mov m26 300
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 16
+#act
+mov m26 350
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 17
+#act
+mov m26 400
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 18
+#act
+mov m26 450
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 19
+#act
+mov m26 500
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 20
+#act
+mov m26 550
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 21
+#act
+mov m26 600
+goto @提升吧金钟护体
+break
+
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 22
+#act
+mov m26 650
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 23
+#act
+mov m26 700
+mov m27 19000
+mov m28 21000
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 24
+#act
+mov m26 750
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 25
+#act
+mov m26 800
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 26
+#act
+mov m26 850
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 27
+#act
+mov m26 900
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 28
+#act
+mov m26 950
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 29
+#act
+mov m26 1000
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 30
+#act
+mov m26 1100
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 31
+#act
+mov m26 1200
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 32
+#act
+mov m26 1300
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 33
+#act
+mov m26 1400
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 34
+#act
+mov m26 1500
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 35
+#act
+mov m26 1600
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 36
+#act
+mov m26 1700
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 37
+#act
+mov m26 1800
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 38
+#act
+mov m26 1900
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 39
+#act
+mov m26 2500
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 40
+#act
+mov m26 3000
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 41
+#act
+mov m26 3300
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 42
+#act
+mov m26 3600
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 43
+#act
+mov m26 3900
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 44
+#act
+mov m26 4200
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 45
+#act
+mov m26 4500
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 46
+#act
+mov m26 4800
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 47
+#act
+mov m26 5000
+goto @提升吧金钟护体
+break
+
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 48
+#act
+mov m26 5500
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 49
+#act
+mov m26 6000
+goto @提升吧金钟护体
+break
+
+#if
+CHECKVAR HUMAN 金钟护体等级 = 50
+#act
+mov m26 7000
+goto @提升吧金钟护体满级
+break
+
+
+
+
+[@提升吧金钟护体满级]
+#if
+#act
+OPENMERCHANTDLG -1|
+#say
+\ \
+<您当前的"金钟护体"已满级！！！！！/fcolor=250>\ \
+<您当前的"金钟护体"已满级！！！！！/fcolor=250>\ \
+<您当前的"金钟护体"已满级！！！！！/fcolor=250>\ \
+
+[@提升吧金钟护体]
+#if
+#act
+OPENMERCHANTDLG -1|
+MOV M79 HUMAN 金钟护体等级
+mov m27 HUMAN 金钟护体等级
+mov m28 HUMAN 金钟护体等级
+MUL m27 m27 3800
+inc M28 1
+MUL m28 m28 3800
+#say
+\ \
+<您当前的金钟护体等级为:/fcolor=250> <$HUMAN(金钟护体等级)>\
+<当前提升金钟护体材料需:/fcolor=254> <$STR(m26)>       <太阴莲/fcolor=249>\ \
+<当前金钟护体属性为:/fcolor=249>     <$STR(m27)>      <神圣防御/fcolor=251>\
+<下级金钟护体属性为:/fcolor=243>     <$STR(m28)>      <神圣防御/fcolor=70>\ \
+<我要提升/@提升金钟护体>
+
+[@提升金钟护体]
+#if
+CHECKVAR HUMAN 金钟护体等级 = <$STR(m79)>
+CHECKKIMNEEDLE 太阴莲 <$STR(m26)>
+#act
+TAKEKIMNEEDLE 太阴莲 <$STR(m26)>
+CALCVAR HUMAN 金钟护体等级 + 1
+SAVEVAR HUMAN 金钟护体等级 ..\QuestDiary\活动次数\金钟护体等级.txt
+SENDMSG 7 提示：您的金钟护体获得了提升！
+GOTO @金钟护体
+break
+
+
+
+
+[@锁龙决]
+#if
+CHECKVAR HUMAN 锁龙决等级 = 0
+#act
+mov m29 10
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 1
+#act
+mov m29 20
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 2
+#act
+mov m29 40
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 3
+#act
+mov m29 60
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 4
+#act
+mov m29 80
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 5
+#act
+mov m29 100
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 6
+#act
+mov m29 120
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 7
+#act
+mov m29 140
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 8
+#act
+mov m29 160
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 9
+#act
+mov m29 180
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 10
+#act
+mov m29 200
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 11
+#act
+mov m29 220
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 12
+#act
+mov m29 240
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 13
+#act
+mov m29 260
+goto @提升吧锁龙决
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 14
+#act
+mov m29 280
+goto @提升吧锁龙决
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 15
+#act
+mov m29 300
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 16
+#act
+mov m29 350
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 17
+#act
+mov m29 400
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 18
+#act
+mov m29 450
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 19
+#act
+mov m29 500
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 20
+#act
+mov m29 550
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 21
+#act
+mov m29 600
+goto @提升吧锁龙决
+break
+
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 22
+#act
+mov m29 650
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 23
+#act
+mov m29 700
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 24
+#act
+mov m29 750
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 25
+#act
+mov m29 800
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 26
+#act
+mov m29 850
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 27
+#act
+mov m29 900
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 28
+#act
+mov m29 950
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 29
+#act
+mov m29 1000
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 30
+#act
+mov m29 1100
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 31
+#act
+mov m29 1200
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 32
+#act
+mov m29 1300
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 33
+#act
+mov m29 1400
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 34
+#act
+mov m29 1500
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 35
+#act
+mov m29 1600
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 36
+#act
+mov m29 1700
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 37
+#act
+mov m29 1800
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 38
+#act
+mov m29 1900
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 39
+#act
+mov m29 2500
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 40
+#act
+mov m29 3000
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 41
+#act
+mov m29 3300
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 42
+#act
+mov m29 3600
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 43
+#act
+mov m29 3900
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 44
+#act
+mov m29 4200
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 45
+#act
+mov m29 4500
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 46
+#act
+mov m29 4800
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 47
+#act
+mov m29 5000
+goto @提升吧锁龙决
+break
+
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 48
+#act
+mov m29 5500
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 49
+#act
+mov m29 6000
+goto @提升吧锁龙决
+break
+
+#if
+CHECKVAR HUMAN 锁龙决等级 = 50
+#act
+mov m29 7000
+goto @提升吧锁龙决满级
+break
+
+
+
+
+[@提升吧锁龙决满级]
+#if
+#act
+OPENMERCHANTDLG -1|
+#say
+\ \
+<您当前的"锁龙决"已满级！！！！！/fcolor=250>\ \
+<您当前的"锁龙决"已满级！！！！！/fcolor=250>\ \
+<您当前的"锁龙决"已满级！！！！！/fcolor=250>\ \
+
+[@提升吧锁龙决]
+#if
+#act
+OPENMERCHANTDLG -1|
+MOV M80 HUMAN 锁龙决等级
+mov m30 HUMAN 锁龙决等级
+mov m31 HUMAN 锁龙决等级
+MUL m30 m30 50
+inc M31 1
+MUL m31 m31 50
+#say
+\ \
+<您当前的锁龙决等级为:/fcolor=250> <$HUMAN(锁龙决等级)>\
+<当前提升锁龙决材料需:/fcolor=254> <$STR(m29)>       <擎羊草/fcolor=249>\ \
+<当前锁龙决属性为:/fcolor=249>     <$STR(m30)>      <麻痹强化/fcolor=251>\
+<下级锁龙决属性为:/fcolor=243>     <$STR(m31)>      <麻痹强化/fcolor=70>\ \
+<我要提升/@提升锁龙决>
+
+[@提升锁龙决]
+#if
+CHECKVAR HUMAN 锁龙决等级 = <$STR(m80)>
+CHECKKIMNEEDLE 擎羊草 <$STR(m29)>
+#act
+TAKEKIMNEEDLE 擎羊草 <$STR(m29)>
+CALCVAR HUMAN 锁龙决等级 + 1
+SAVEVAR HUMAN 锁龙决等级 ..\QuestDiary\活动次数\锁龙决等级.txt
+SENDMSG 7 提示：您的锁龙决获得了提升！
+GOTO @锁龙决
+break
+BREAK
+#ELSEACT
+messagebox  您没有达到我的要求无法升级！
+
+
+[@金蝉蜕壳]
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 0
+#act
+mov m32 10
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 1
+#act
+mov m32 20
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 2
+#act
+mov m32 40
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 3
+#act
+mov m32 60
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 4
+#act
+mov m32 80
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 5
+#act
+mov m32 100
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 6
+#act
+mov m32 120
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 7
+#act
+mov m32 140
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 8
+#act
+mov m32 160
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 9
+#act
+mov m32 180
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 10
+#act
+mov m32 200
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 11
+#act
+mov m32 220
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 12
+#act
+mov m32 240
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 13
+#act
+mov m32 260
+goto @提升吧金蝉脱壳
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 14
+#act
+mov m32 280
+goto @提升吧金蝉脱壳
+break
+
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 15
+#act
+mov m32 300
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 16
+#act
+mov m32 350
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 17
+#act
+mov m32 400
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 18
+#act
+mov m32 450
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 19
+#act
+mov m32 500
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 20
+#act
+mov m32 550
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 21
+#act
+mov m32 600
+goto @提升吧金蝉脱壳
+break
+
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 22
+#act
+mov m32 650
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 23
+#act
+mov m32 700
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 24
+#act
+mov m32 750
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 25
+#act
+mov m32 800
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 26
+#act
+mov m32 850
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 27
+#act
+mov m32 900
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 28
+#act
+mov m32 950
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 29
+#act
+mov m32 1000
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 30
+#act
+mov m32 1100
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 31
+#act
+mov m32 1200
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 32
+#act
+mov m32 1300
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 33
+#act
+mov m32 1400
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 34
+#act
+mov m32 1500
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 35
+#act
+mov m32 1600
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 36
+#act
+mov m32 1700
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 37
+#act
+mov m32 1800
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 38
+#act
+mov m32 1900
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 39
+#act
+mov m32 2500
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 40
+#act
+mov m32 3000
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 41
+#act
+mov m32 3300
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 42
+#act
+mov m32 3600
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 43
+#act
+mov m32 3900
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 44
+#act
+mov m32 4200
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 45
+#act
+mov m32 4500
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 46
+#act
+mov m32 4800
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 47
+#act
+mov m32 5000
+goto @提升吧金蝉脱壳
+break
+
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 48
+#act
+mov m32 5500
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 49
+#act
+mov m32 6000
+goto @提升吧金蝉脱壳
+break
+
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = 50
+#act
+mov m32 7000
+goto @提升吧金蝉脱壳满级
+break
+
+
+
+
+[@提升吧金蝉脱壳满级]
+#if
+#act
+OPENMERCHANTDLG -1|
+#say
+\ \
+<您当前的"金蝉脱壳"已满级！！！！！/fcolor=250>\ \
+<您当前的"金蝉脱壳"已满级！！！！！/fcolor=250>\ \
+<您当前的"金蝉脱壳"已满级！！！！！/fcolor=250>\ \
+
+[@提升吧金蝉脱壳]
+#if
+#act
+OPENMERCHANTDLG -1|
+MOV M81 HUMAN 金蝉脱壳等级
+mov m33 HUMAN 金蝉脱壳等级
+mov m34 HUMAN 金蝉脱壳等级
+MUL m33 m33 50
+inc M34 1
+MUL m34 m34 50
+#say
+\ \
+<您当前的金蝉脱壳等级为:/fcolor=250> <$HUMAN(金蝉脱壳等级)>\
+<当前提升金蝉脱壳材料需:/fcolor=254> <$STR(m32)>       <陀罗花/fcolor=249>\ \
+<当前金蝉脱壳属性为:/fcolor=249>     <$STR(m33)>      <麻痹抗性/fcolor=251>\
+<下级金蝉脱壳属性为:/fcolor=243>     <$STR(m34)>      <麻痹抗性/fcolor=70>\ \
+<我要提升/@提升金蝉脱壳>
+
+[@提升金蝉脱壳]
+#if
+CHECKVAR HUMAN 金蝉脱壳等级 = <$STR(m81)>
+CHECKKIMNEEDLE 陀罗花 <$STR(m32)>
+#act
+TAKEKIMNEEDLE 陀罗花 <$STR(m32)>
+CALCVAR HUMAN 金蝉脱壳等级 + 1
+SAVEVAR HUMAN 金蝉脱壳等级 ..\QuestDiary\活动次数\金蝉脱壳等级.txt
+SENDMSG 7 提示：您的金蝉脱壳获得了提升！
+GOTO @金蝉蜕壳
+break

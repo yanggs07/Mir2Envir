@@ -1,0 +1,7 @@
+;地图号 座标X 座标Y 范围 触发标识 触发条件 触发机率 事件类型
+slmj 25 25 100 -1:10 3:*:0 2 1:@MapEventMine
+sldx 168 13 3 -1:10 4:*:0 2 1:@MapEventWalk
+sldx 168 13 3 -1:10 5:*:0 2 1:@MapEventRun
+
+sldx 51 32 3 -1:10 4:*:0 2 1:@MapEventWalk
+sldx 51 32 3 -1:10 5:*:0 2 1:@MapEventRun

@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 真气石任务 = 1
+CHECKVAR HUMAN 黑熊 < 5
+#ACT
+CALCVAR HUMAN 黑熊 + 1
+savevar human 黑熊 ..\QuestDiary\雪花制作\黑熊.txt
+SENDMSG 7 你已经杀死了<$human(黑熊)>/5个黑熊，收集了<$human(黑熊)>个熊掌！
+
+#IF
+CHECKVAR HUMAN 真气石任务 = 1
+CHECKVAR HUMAN 黑熊 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(黑熊)>/5个黑熊，收集了<$human(黑熊)>个熊掌，可以去找巡逻卫士了！

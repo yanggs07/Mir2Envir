@@ -1,0 +1,36 @@
+[@生命涌动触发]
+{
+#IF
+CHECK [487] 1
+CHECK [491] 0
+CHECKVAR HUMAN 坐骑等级2 > 0
+CHECKVAR HUMAN 坐骑等级2 < 4
+SMALL <$HP> <$MAXHPRATE(20)>
+#ACT
+SET [491] 1
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\生命涌动.txt <$S(坐骑技能2)> <$HUMAN(坐骑等级2)>
+HumanHP + <$S(坐骑技能2)>
+SENDMSG 7 生命涌动生效：生命值瞬间恢复<$S(坐骑技能2)>点，5分钟内不会触发此效果！
+SetOffTimer 25
+SetOnTimer 25 300 1
+BREAK
+}
+
+[@英雄生命涌动触发]
+{
+#IF
+CHECK [487] 1
+CHECK [492] 0
+CHECKHEROONLINE
+CHECKVAR HUMAN 坐骑等级2 > 0
+CHECKVAR HUMAN 坐骑等级2 < 4
+SMALL <$HEROHP> <$HEROMAXHPRATE(20)>
+#ACT
+SET [492] 1
+GetRandomName ..\QuestDiary\数据文件\坐骑系统\生命涌动.txt <$S(坐骑技能2)> <$HUMAN(坐骑等级2)>
+HumanHP + <$S(坐骑技能2)> HERO
+SENDMSG 7 （英雄）生命涌动生效：生命值瞬间恢复<$S(坐骑技能2)>点，5分钟内不会触发此效果！
+SetOffTimer 26
+SetOnTimer 26 300 1
+BREAK
+}

@@ -1,0 +1,14 @@
+[@main]
+#IF
+CHECKVAR HUMAN 除魔内容 = 2
+CHECKVAR HUMAN 魔龙刀兵 < 5
+#ACT
+CALCVAR HUMAN 魔龙刀兵 + 1
+savevar human 魔龙刀兵 ..\QuestDiary\雪花制作\魔龙刀兵.txt
+SENDMSG 7 你已经杀死了<$human(魔龙刀兵)>/5个魔龙刀兵！
+
+#IF
+CHECKVAR HUMAN 除魔内容 = 2
+CHECKVAR HUMAN 魔龙刀兵 = 5
+#act
+SENDMSG 7 你已经杀死了<$human(魔龙刀兵)>/5个魔龙刀兵，赶紧去领取奖励吧！
